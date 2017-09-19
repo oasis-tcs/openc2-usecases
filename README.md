@@ -12,7 +12,7 @@
 
 <p>The purpose of this repository is to support description, elaboration, and review of use cases relevant to the chartered work of the <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=openc2-lang">OpenC2 Language Subcommittee</a>.</p>
 
-<p>The OpenC2 language is a standardized language for the command and control of technologies that provide or support cyber defenses.  The OpenC2 Language Subcommittee is responsible for the development, maintenance, and resolution of comments to the OpenC2 language documentation, including the language specification documents, use cases, JAEN/JADN specification, JSON specification, <a href="https://github.com/oasis-tcs/openc2-glossary">glossary</a>, etc.</p>
+<p>The OpenC2 language is a standardized language for the command and control of technologies that provide or support cyber defenses.  The OpenC2 Language Subcommittee is responsible for the development, maintenance, and resolution of comments to the OpenC2 language documentation, including the language specification documents, use cases, JAEN/<a href="https://github.com/oasis-open/openc2-jadn">JADN</a> specification, JSON specification, <a href="https://github.com/oasis-tcs/openc2-glossary">glossary</a>, etc.</p>
 </div>
 
 <div>
