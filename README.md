@@ -31,7 +31,14 @@
 
 <p>
 This repository is to allow LSC members to contribute in Markdown 
-and use github for change approval and version control.
+and use github for change approval and version control, should they desire.
+The intent is that this is an additonal method for submitting (with OASIS Wiki, 
+documents on OASIS LSC site,
+and googledocs
+also being valid submission methods).
+Members are encouraged to submit use cases in any way they feel comfortable.
+</p>
+<p>
 The organization is such that each member can contribute in a subdirectory with their company name.
 Should the LSC reach consensus on a set of use cases, 
 then another directory can be created for the approved usecases.
@@ -43,6 +50,6 @@ But the main intent is to let members create and share use cases of particular i
 
 <h3>Contact</h3>
 <p>Please send questions or comments about <a href="https://www.oasis-open.org/resources/tcadmin/github-repositories-for-oasis-tc-members-chartered-work">OASIS TC GitHub repositories</a> to <a href="mailto:robin@oasis-open.org">Robin Cover</a> and <a href="mailto:chet.ensign@oasis-open.org">Chet Ensign</a>.  For questions about content in this repository, please contact the Co-Chairs as listed on the the OpenC2 TC's <a href="https://www.oasis-open.org/committees/openc2/">home page</a>, or contact 
-the Language Subcommittee Co-Chairs as listedfon the OpenC2 Language Subcommittee
+the Language Subcommittee Co-Chairs as listed on the OpenC2 Language Subcommittee
 <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=openc2-lang">home page</a>.</p>
 </div>
