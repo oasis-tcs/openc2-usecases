@@ -41,25 +41,25 @@ eg
 ## Description and  Organization 
 The scenarios are:
  * 00.websvr_basecase.md
-  i. the intial condition to start the narrative 
-  i. TL;DR - some resources in a cloud which is accessed from internet via an API
+  + the intial condition to start the narrative 
+  + TL;DR - some resources in a cloud which is accessed from internet via an API
  * 01.xx 
-  i. TL;DR - allow second user access from internet
+  + TL;DR - allow second user access from internet
  * 02.xx 
-  i. TL;DR - increase logging for a particular event
+  + TL;DR - increase logging for a particular event
  * 03.xx 
-  i. TL;DR - some more base case info (more machines not needed for previous use cases)
+  + TL;DR - some more base case info (more machines not needed for previous use cases)
  * 04.xx 
-  i. TL;DR - request metadata about suspicious ip attempting wierd stuff
+  + TL;DR - request metadata about suspicious ip attempting wierd stuff
  * 05.xx 
-  i. TL;DR - query risk manager about effect of current state on loss exceedance curves
+  + TL;DR - query risk manager about effect of current state on loss exceedance curves
  * 06.xx 
-  i. TL;DR - spin up new fw vendor to replace old due to some new attack
+  + TL;DR - spin up new fw vendor to replace old due to some new attack
  * 07.xx 
-  i. TL;DR - some more base case info (more machines not needed for previous use cases)
+  + TL;DR - some more base case info (more machines not needed for previous use cases)
  * 08.xx 
-  i. TL;DR - SBA stix COA to sFractal to mitigate evildomain.com
+  + TL;DR - SBA stix COA to sFractal to mitigate evildomain.com
  * 09.xx 
-  i. TL;DR - some more base case info (more machines not needed for previous use cases)
+  + TL;DR - some more base case info (more machines not needed for previous use cases)
  * 10.xx 
-  i. TL;DR - some neat deception stuff that needs to be thought up
+  + TL;DR - some neat deception stuff that needs to be thought up
