@@ -44,22 +44,22 @@ The scenarios are:
    - the intial condition to start the narrative 
    - TL;DR - some resources in a cloud which is accessed from internet via an API
  * 01.xx 
-  - TL;DR - allow second user access from internet
+   - TL;DR - allow second user access from internet
  * 02.xx 
-  + TL;DR - increase logging for a particular event
+   - TL;DR - increase logging for a particular event
  * 03.xx 
-  + TL;DR - some more base case info (more machines not needed for previous use cases)
+   - TL;DR - some more base case info (more machines not needed for previous use cases)
  * 04.xx 
-  + TL;DR - request metadata about suspicious ip attempting wierd stuff
+   - TL;DR - request metadata about suspicious ip attempting wierd stuff
  * 05.xx 
-  + TL;DR - query risk manager about effect of current state on loss exceedance curves
+   - TL;DR - query risk manager about effect of current state on loss exceedance curves
  * 06.xx 
-  + TL;DR - spin up new fw vendor to replace old due to some new attack
+   - TL;DR - spin up new fw vendor to replace old due to some new attack
  * 07.xx 
-  + TL;DR - some more base case info (more machines not needed for previous use cases)
+   - TL;DR - some more base case info (more machines not needed for previous use cases)
  * 08.xx 
-  + TL;DR - SBA stix COA to sFractal to mitigate evildomain.com
+   - TL;DR - SBA stix COA to sFractal to mitigate evildomain.com
  * 09.xx 
-  + TL;DR - some more base case info (more machines not needed for previous use cases)
+   - TL;DR - some more base case info (more machines not needed for previous use cases)
  * 10.xx 
-  + TL;DR - some neat deception stuff that needs to be thought up
+   - TL;DR - some neat deception stuff that needs to be thought up
