@@ -70,6 +70,10 @@ The scenarios are:
    - TL;DR - some more base case info (more machines not needed for previous use cases)
  * 11.deception.md
    - TL;DR - some neat deception stuff that needs to be thought up
+ * 12.idam_basecase.md
+   - TL;DR - some more base case info (more machines not needed for previous use cases)
+ * 13.idam.md
+   - TL;DR - some idam stuff that needs to be thought up
 
 ## Endnotes
  1. <a name="endnote1">See</a> http://www.agilemodeling.com/artifacts/userStory.htm
