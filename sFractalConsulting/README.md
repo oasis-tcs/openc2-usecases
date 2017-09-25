@@ -41,10 +41,10 @@ eg
 ## Description and  Organization 
 The scenarios are:
  * 00.websvr_basecase.md
-  + the intial condition to start the narrative 
-  + TL;DR - some resources in a cloud which is accessed from internet via an API
+   - the intial condition to start the narrative 
+   - TL;DR - some resources in a cloud which is accessed from internet via an API
  * 01.xx 
-  + TL;DR - allow second user access from internet
+  - TL;DR - allow second user access from internet
  * 02.xx 
   + TL;DR - increase logging for a particular event
  * 03.xx 
