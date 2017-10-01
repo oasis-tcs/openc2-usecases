@@ -35,7 +35,7 @@ The narrative will attempt to be from an OpenC2 paroachial viewpoint - glossing 
 not relevant to OpenC2 and diving deeper into requirements on OpenC2.
 OpenC2 requirements and examples will attempt to be shown on separate referenced pages in
 Agile SDLC (Software Development Life Cycle) 'user story' 
-fomat<sup>[1](#endnote1)</sup>
+format<sup>[1](#endnote1)</sup>
 eg
 > As a {role}, I want {feature} so that {reason}.
 
@@ -74,6 +74,8 @@ The scenarios are:
    - TL;DR - some more base case info (more machines not needed for previous use cases)
  * 13.idam.md
    - TL;DR - some idam stuff that needs to be thought up
+ * 14.init.md
+   - TL;DR - Commands to setup (or re-setup) 01.another_user.md
 
 ## Endnotes
  1. <a name="endnote1">See</a> http://www.agilemodeling.com/artifacts/userStory.htm
