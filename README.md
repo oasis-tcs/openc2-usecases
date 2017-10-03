@@ -30,7 +30,7 @@
 <h3>Further Description of this Repository</h3>
 
 <p>
-This repository is to allow LSC members to contribute in Markdown 
+This repository is to allow LSC members to contribute usecases in Markdown 
 and use github for change approval and version control, should they desire.
 The intent is that this is an additonal method for submitting (with OASIS Wiki, 
 documents on OASIS LSC site,
