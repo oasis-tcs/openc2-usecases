@@ -73,9 +73,9 @@ The scenarios are:
  * 12.idam_basecase.md
    - TL;DR - some more base case info (more machines not needed for previous use cases)
  * 13.idam.md
-   - TL;DR - some idam stuff that needs to be thought up
+   - TL;DR - some idam stuff that needs to be thought up, maybe use KMIP?
  * 14.init.md
-   - TL;DR - Commands to setup (or re-setup) 01.another_user.md
+   - TL;DR - Commands to setup (or re-setup) 01.another_user.md. Note this is a 'build' usecase not an 'incremental' or 'response' use case (and hence my be for distant future, if ever), wrt OpenC2.
 
 ## Endnotes
  1. <a name="endnote1">See</a> http://www.agilemodeling.com/artifacts/userStory.htm
