@@ -76,6 +76,9 @@ The scenarios are:
    - TL;DR - some idam stuff that needs to be thought up, maybe use KMIP?
  * 14.init.md
    - TL;DR - Commands to setup (or re-setup) 01.another_user.md. Note this is a 'build' usecase not an 'incremental' or 'response' use case (and hence my be for distant future, if ever), wrt OpenC2.
+ * 15.abuseJson.md
+   - TL;DR - Abuse cases for Malformed JSON, or malformed OpenC2, or command not supported
+
 
 ## Endnotes
  1. <a name="endnote1">See</a> http://www.agilemodeling.com/artifacts/userStory.htm
