@@ -78,6 +78,24 @@ The scenarios are:
    - TL;DR - Commands to setup (or re-setup) 01.another_user.md. Note this is a 'build' usecase not an 'incremental' or 'response' use case (and hence my be for distant future, if ever), wrt OpenC2.
  * 15.abuseJson.md
    - TL;DR - Abuse cases for Malformed JSON, or malformed OpenC2, or command not supported
+ * 16.iot_basecase.md
+   - the intial condition to start the IoT narrative
+   - TL;DR - a bunch of home IoT devices managed from the internet
+ * 17.no_resp_procid.md
+   - TL;DR - security manager kills rogue process
+ * 18.no_resp_update_sw.md
+   - TL;DR - security manager does mass software update
+ * 19.resp_update_sw.md
+   - TL;DR - security manager does single software update
+ * 20.bad_url.md
+   - TL;DR - security manager adds bad url to webproxy
+ * 21.bad_email.md
+   - TL;DR - security manager quarantines a bad email
+ * 22.bad_file.md
+   - TL;DR - security manager deletes bad file
+ * 23.detonate_file.md
+   - TL;DR - security manager detonates potential malware
+
 
 
 ## Endnotes
