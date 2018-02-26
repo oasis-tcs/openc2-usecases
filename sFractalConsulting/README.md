@@ -95,6 +95,8 @@ The scenarios are:
    - TL;DR - security manager deletes bad file
  * 23.detonate_file.md
    - TL;DR - security manager detonates potential malware
+ * 24.version.md
+   - TL;DR - get OpenC2 version
 
 
 
