@@ -1,0 +1,20 @@
+# 02.endpoint_deny_process_with_hash
+
+This action instructs the operating system or security software on the endpoint to prevent executables with the given hash from being launched. The target device is not specified so the command is expected to apply globally to all available endpoints.
+
+{
+  "action": "deny",
+  "target": {
+    "process": {
+      "executable": {
+        "hashes": {
+          "SHA256": "19ce084ab0599c1659e4ce12ae822bd3"
+        }
+      }
+    }
+  },
+  "actuator": {
+    "endpoint": "my_endpoint_actuator_name"
+  }
+}
+
