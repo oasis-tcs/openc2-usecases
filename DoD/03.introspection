@@ -1,0 +1,57 @@
+# Introspection
+
+## Objective
+This use case describes how an actuator reports its supported capabilities to an orchestrator
+or management console.
+
+## Scenario
+TBS
+
+## OpenC2 JSON Command
+
+```
+{
+    "action": "query",
+    "target": {
+        "openc2": ["versions"]
+    }
+}
+```
+
+## Response
+
+```
+{
+    "status": "200",
+    "results": {
+        "versions": ["1"]
+}
+```
+
+## OpenC2 JSON Command
+
+```
+{
+    "action": "query",
+    "target": {
+        "openc2": ["versions", "schema"]
+    }
+}
+```
+
+## Response
+
+```
+{
+    "status": "200",
+    "results": {
+        "versions": ["1"]
+        "schema": {
+            "meta": {"module": "/oasis/openc2"},
+            "types": [
+<TBS short schema>
+            ]
+        }
+    }
+}
+```
