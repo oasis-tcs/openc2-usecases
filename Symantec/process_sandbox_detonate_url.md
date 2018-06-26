@@ -1,0 +1,22 @@
+
+# process_sandbox_detonate_url.md
+
+This action submits a url for sandbox detonation.
+
+```
+
+{
+  "id": "0eb8e4a0-0fc4-4013-a0d2-05402e43fd9d",
+  "action": "detonate",
+  "target": {
+    "url": {
+      "name": "http://two.village.example.com"
+    }
+  },
+  "actuator": {
+    "process_sandbox": {
+      "asset_id": "sandbox6.example.com"
+    }
+  }
+}
+```
