@@ -17,7 +17,7 @@ This action triggers a scan to locate the windows registry key.
       "asset_id": "string"
     }
   },
-  "options": {
+  "args": {
     "start_time": "2018-06-25T14:47:34.109Z",
     "stop_time": "2018-06-25T14:47:34.109Z",
     "duration": 0,
