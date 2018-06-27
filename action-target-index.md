@@ -44,8 +44,8 @@
 | 5 | ~~disk~~ | ~~Disk~~ | 
 | 6 | ~~disk_partition~~ | ~~Disk-Partition~~ | 
 | 7 | **domain_name** | Domain-Name | [ATT: contain>>domain_name](ATT/01.contain.md)<br>[ATT: allow>>domain_name](ATT/02.allow.md)<br>[sFractalConsulting: deny>>domain_name](sFractalconsulting/20.bad_url.md)<br>[LG: redirect>>domain_name](https://docs.google.com/document/d/19qIzUhDtVAkH_dSFBpK4iHLkk2ohAOk3hF0TbZxiePU/edit?usp=sharing)
-| 8 | ~~email_addr~~ | ~~Email-Addr~~ | 
-| 9 | **email_message** | Email-Message | [sFractalConsulting: delete>>email_message](sFractalconsulting/21.bad_email.md)
+| 8 | **email_addr** | Email-Addr | [Symantec: deny>>email-addr](Symantec/process_email_service_deny_email-addr.md)
+| 9 | **email_message** | Email-Message | [sFractalConsulting: delete>>email_message](sFractalconsulting/21.bad_email.md)<br><br>[Symantec: deny>>email-message](Symantec/process_email_service_deny_email-message.md)
 | 10 | **file** | File | [Phantom: delete>>file](Phantom/04.endpoint_delete_file.md)<br>[sFractalConsulting: delete>>file](sFractalconsulting/22.bad_file.md)<br>[Phantom: delete>>file](https://docs.google.com/document/d/1oBy8y7GPuG1zz_6PiPwt6VHDu1NHNf_qD8fb8jxIFG8/edit?usp=sharing)<br>[Symantec: allow>>file](Symantec/endpoint_allow_file.md)<br>[Symantec: copy>>file](Symantec/endpoint_copy_file.md)<br>[Symantec: delete>>file](Symantec/endpoint_delete_file.md)<br>[Symantec: deny>>file](Symantec/endpoint_deny_file.md)<br>[Symantec: remediate>>file](Symantec/endpoint_remediate_file.md)<br>[Symantec: locate>>file](Symantec/process_anti_virus_scanner_locate_file.md)<br>[Symantec: restore>>file](Symantec/process_anti_virus_scanner_restore_file.md)<br>[Symantec: scan>>file](Symantec/process_anti_virus_scanner_scan_file.md)<br>[Symantec: detonate>>file](Symantec/process_sandbox_detonate_file.md)
 | 11 | **ip_addr** | IP-Addr | [ATT: locate>>ip_addr](ATT/03.locate.md)<br>[LG: deny>>ip_addr](https://docs.google.com/document/d/1TNOwlpFrip29_1lGNW2xIV6GyOZe83J96C2DxdgOwME/edit?usp=sharing)
 | 13 | ~~mac_addr~~ | ~~Mac-Addr~~ | 
