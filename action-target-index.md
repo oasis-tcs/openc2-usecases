@@ -1,38 +1,38 @@
 ## Actions
 | ID | Property Name | Use Case Source |
 |:---|:---|:---|
-| 1 | ~~scan~~ | 
-| 2 | **locate** | [ATT: locate>>ip_addr](ATT/03.locate.md)
-| 3 | **query** | [General: query>>property](General/Example_%20get__property.md)<br>[Phantom: query>>process](Phantom/01.endpoint_list_process.md)<br>[sFractalConsulting: query>>openc2](sFractalconsulting/24.version.md)<br>[General: query>>openc2](https://docs.google.com/document/d/1vF7e9Mp_45u-RuPrbRiIoIUcOmoDCkKEAcJKCr6tvgA/edit?usp=sharing)
+| 1 | **scan** | [Symantec: scan>>file](Symantec/process_anti_virus_scanner_scan_file.md)
+| 2 | **locate** | [ATT: locate>>ip_addr](ATT/03.locate.md)<br>[Symantec: locate>>process](Symantec/endpoint_locate_process.md)<br>[Symantec: locate>>directory](Symantec/process_anti_virus_scanner_locate_directory.md)<br>[Symantec: locate>>file](Symantec/process_anti_virus_scanner_locate_file.md)<br>[Symantec: locate>>windows_registry_key](Symantec/process_anti_virus_scanner_locate_windows_registry_key.md)
+| 3 | **query** | [General: query>>property](General/Example_%20get__property.md)<br>[Phantom: query>>process](Phantom/01.endpoint_list_process.md)<br>[sFractalConsulting: query>>openc2](sFractalconsulting/24.version.md)<br>[General: query>>openc2](https://docs.google.com/document/d/1vF7e9Mp_45u-RuPrbRiIoIUcOmoDCkKEAcJKCr6tvgA/edit?usp=sharing)<br>[Symantec: query>>device](Symantec/endpoint_query_device.md)<br>[Symantec: query>>device](Symantec/endpoint_query_device.md)<br>[Symantec: query>>software](Symantec/endpoint_query_software.md)<br>[Symantec: query>>url](Symantec/network_proxy_query_url.md)
 | 4 | ~~report~~ | 
 | 5 | ~~notify~~ | 
-| 6 | **deny** | [ATT: deny>>ip_connection](ATT/04.deny.md)<br>[Phantom: deny>>process](Phantom/02.endpoint_deny_process_with_hash.md)<br>[STIX: deny>>ip_connection](STIX/01.ipv4_cidr.md)<br>[sFractalConsulting: deny>>ip_connection](sFractalconsulting/01.sensing.md)<br>[sFractalConsulting: deny>>domain_name](sFractalconsulting/20.bad_url.md)<br>[LG: deny>>ip_addr](https://docs.google.com/document/d/1TNOwlpFrip29_1lGNW2xIV6GyOZe83J96C2DxdgOwME/edit?usp=sharing)
+| 6 | **deny** | [ATT: deny>>ip_connection](ATT/04.deny.md)<br>[Phantom: deny>>process](Phantom/02.endpoint_deny_process_with_hash.md)<br>[STIX: deny>>ip_connection](STIX/01.ipv4_cidr.md)<br>[sFractalConsulting: deny>>ip_connection](sFractalconsulting/01.sensing.md)<br>[sFractalConsulting: deny>>domain_name](sFractalconsulting/20.bad_url.md)<br>[LG: deny>>ip_addr](https://docs.google.com/document/d/1TNOwlpFrip29_1lGNW2xIV6GyOZe83J96C2DxdgOwME/edit?usp=sharing)<br>[Symantec: deny>>file](Symantec/endpoint_deny_file.md)<br>[Symantec: deny>>process](Symantec/endpoint_deny_process.md)<br>[Symantec: deny>>url](Symantec/network_proxy_deny_url.md)<br>[Symantec: deny>>email-addr](Symantec/process_email_service_deny_email-addr.md)<br>[Symantec: deny>>email-message](Symantec/process_email_service_deny_email-message.md)
 | 7 | **contain** | [ATT: contain>>domain_name](ATT/01.contain.md)<br>[STIX: contain>>device](STIX/04.quarantive_exfil.md)
-| 8 | **allow** | [ATT: allow>>domain_name](ATT/02.allow.md)<br>[ATT: allow>>ip_connection](ATT/05.allow.md)<br>[sFractalConsulting: allow>>ip_connection](sFractalconsulting/02.another_user.md)
-| 9 | ~~start~~ | 
-| 10 | **stop** | [Phantom: stop>>process](Phantom/03.endpoint_stop_process_by_pid.md)
-| 11 | ~~restart~~ | 
+| 8 | **allow** | [ATT: allow>>domain_name](ATT/02.allow.md)<br>[ATT: allow>>ip_connection](ATT/05.allow.md)<br>[sFractalConsulting: allow>>ip_connection](sFractalconsulting/02.another_user.md)<br>[Symantec: allow>>device](Symantec/endpoint_allow_device.md)<br>[Symantec: allow>>file](Symantec/endpoint_allow_file.md)<br>[Symantec: allow>>url](Symantec/endpoint_allow_url.md)
+| 9 | **start** | [Symantec: start>>process](Symantec/endpoint_start_process.md)
+| 10 | **stop** | [Phantom: stop>>process](Phantom/03.endpoint_stop_process_by_pid.md)<br>[Symantec: stop>>process](Symantec/endpoint_stop_process.md)
+| 11 | **restart** | [Symantec: restart>>device](Symantec/endpoint_restart_device.md)<br>[Symantec: restart>>process](Symantec/endpoint_restart_process.md)
 | 12 | ~~pause~~ | 
 | 13 | ~~resume~~ | 
-| 14 | ~~cancel~~ | 
+| 14 | **cancel** | [Symantec: cancel>>openc2>>command](Symantec/endpoint_cancel_command.md)
 | 15 | ~~set~~ | 
-| 16 | **update** | [sFractalConsulting: update>>software](sFractalconsulting/18.no_resp_update_sw.md)<br>[sFractalConsulting: update>>software](sFractalconsulting/19.resp_update_sw.md)
+| 16 | **update** | [sFractalConsulting: update>>software](sFractalconsulting/18.no_resp_update_sw.md)<br>[sFractalConsulting: update>>software](sFractalconsulting/19.resp_update_sw.md)<br>[Symantec: update>>device](Symantec/endpoint_update_device.md)<br>[Symantec: update>>software](Symantec/endpoint_update_software.md)
 | 17 | ~~move~~ | 
 | 18 | **redirect** | [STIX: redirect>>ip_connection](STIX/02.dns_lookup.md)<br>[LG: redirect>>domain_name](https://docs.google.com/document/d/19qIzUhDtVAkH_dSFBpK4iHLkk2ohAOk3hF0TbZxiePU/edit?usp=sharing)<br>[LG: redirect>>url](https://docs.google.com/document/d/1qh_pcoYNofAleh20vtohSQ0VURhlGDB30-ZOpifFSWo/edit?usp=sharing)
 | 19 | ~~create~~ | 
-| 20 | **delete** | [Phantom: delete>>file](Phantom/04.endpoint_delete_file.md)<br>[STIX: delete>>artifact](STIX/03.malware_hash.md)<br>[sFractalConsulting: delete>>process](sFractalconsulting/17.no_resp_procid.md)<br>[sFractalConsulting: delete>>email_message](sFractalconsulting/21.bad_email.md)<br>[sFractalConsulting: delete>>file](sFractalconsulting/22.bad_file.md)<br>[Phantom: delete>>file](https://docs.google.com/document/d/1oBy8y7GPuG1zz_6PiPwt6VHDu1NHNf_qD8fb8jxIFG8/edit?usp=sharing)
+| 20 | **delete** | [Phantom: delete>>file](Phantom/04.endpoint_delete_file.md)<br>[STIX: delete>>artifact](STIX/03.malware_hash.md)<br>[sFractalConsulting: delete>>process](sFractalconsulting/17.no_resp_procid.md)<br>[sFractalConsulting: delete>>email_message](sFractalconsulting/21.bad_email.md)<br>[sFractalConsulting: delete>>file](sFractalconsulting/22.bad_file.md)<br>[Phantom: delete>>file](https://docs.google.com/document/d/1oBy8y7GPuG1zz_6PiPwt6VHDu1NHNf_qD8fb8jxIFG8/edit?usp=sharing)<br>[Symantec: delete>>device](Symantec/endpoint_delete_device.md)
 | 21 | ~~snapshot~~ | 
-| 22 | ~~detonate~~ | 
-| 23 | ~~restore~~ | 
+| 22 | **detonate** | [Symantec: detonate>>file](Symantec/process_sandbox_detonate_file.md)<br>[Symantec: detonate>>url](Symantec/process_sandbox_detonate_url.md)
+| 23 | **restore** | [Symantec: restore>>file](Symantec/process_anti_virus_scanner_restore_file.md)
 | 24 | ~~save~~ | 
 | 25 | ~~throttle~~ | 
 | 26 | ~~delay~~ | 
 | 27 | ~~substitute~~ | 
-| 28 | ~~copy~~ | 
+| 28 | **copy** | [Symantec: copy>>file](Symantec/endpoint_copy_file.md)
 | 29 | ~~sync~~ | 
-| 30 | ~~investigate~~ | 
+| 30 | **investigate** | [Symantec: investigate>>device](Symantec/endpoint_investigate_device.md)
 | 31 | ~~mitigate~~ | 
-| 32 | ~~remediate~~ | 
+| 32 | **remediate** | [Symantec: remediate>>file](Symantec/endpoint_remediate_file.md)
 
 ## Targets
 | ID | Property Name | Type | Use Case Source |
