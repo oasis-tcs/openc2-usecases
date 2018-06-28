@@ -31,7 +31,7 @@ This action initiates the collection of a file of interest.
       "asset_id": "string"
     }
   },
-  "options": {
+  "args": {
     "start_time": "2018-06-25T13:59:18.332Z",
     "stop_time": "2018-06-25T13:59:18.332Z",
     "duration": 0,

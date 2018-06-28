@@ -14,7 +14,7 @@ This action specifies that the endpoint actuator allow the device back online. e
       "asset_id": "string"
     }
   },
-  "options": {
+  "args": {
     "start_time": "2018-06-25T14:01:03.952Z",
     "stop_time": "2018-06-25T14:01:03.952Z",
     "duration": 0,

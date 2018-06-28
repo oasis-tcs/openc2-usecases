@@ -31,7 +31,7 @@ This action tells openC2 to allow the file on the computer. e.g In an endpoints 
       "asset_id": "string"
     }
   },
-  "options": {
+  "args": {
     "start_time": "2018-06-25T14:01:03.952Z",
     "stop_time": "2018-06-25T14:01:03.952Z",
     "duration": 0,

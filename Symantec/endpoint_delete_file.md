@@ -30,7 +30,7 @@ This action specifies a file to be deleted.
       "asset_id": "string"
     }
   },
-  "options": {
+  "args": {
     "start_time": "2018-06-25T19:31:17.916Z",
     "stop_time": "2018-06-25T19:31:17.916Z",
     "duration": 0,
