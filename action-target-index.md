@@ -38,7 +38,7 @@
 | ID | Property Name | Type | Use Case Source |
 |:---|:---|:---|:---|
 | 1 | **artifact** | Artifact | [STIX: delete>>artifact](STIX/03.malware_hash.md)
-| 2 | ~~command~~ | ~~Command~~ | 
+| 2 | **command** | **Command** | [Symantec: cancel>>command](Symantec/endpoint_cancel_command.md) 
 | 3 | **device** | Device | [STIX: contain>>device](STIX/04.quarantive_exfil.md)<br>[Symantec: allow>>device](Symantec/endpoint_allow_device.md)<br>[Symantec: delete>>device](Symantec/endpoint_delete_device.md)<br>[Symantec: query>>device](Symantec/endpoint_query_device.md)<br>[Symantec: restart>>device](Symantec/endpoint_restart_device.md)<br>[Symantec: update>>device](Symantec/endpoint_update_device.md)<br>[Symantec: contain>>device](Symantec/endpoint_contain_device.md)
 | 4 | **directory** | Directory | [Symantec: locate>>directory](Symantec/process_anti_virus_scanner_locate_directory.md)
 | 5 | ~~disk~~ | ~~Disk~~ | 
