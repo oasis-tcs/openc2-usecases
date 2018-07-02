@@ -19,7 +19,7 @@
 | 16 | **update** | [sFractalConsulting: update>>software](sFractalconsulting/18.no_resp_update_sw.md)<br>[sFractalConsulting: update>>software](sFractalconsulting/19.resp_update_sw.md)<br>[Symantec: update>>device](Symantec/endpoint_update_device.md)<br>[Symantec: update>>software](Symantec/endpoint_update_software.md)
 | 17 | ~~move~~ | 
 | 18 | **redirect** | [STIX: redirect>>ip_connection](STIX/02.dns_lookup.md)<br>[LG: redirect>>domain_name](https://docs.google.com/document/d/19qIzUhDtVAkH_dSFBpK4iHLkk2ohAOk3hF0TbZxiePU/edit?usp=sharing)<br>[LG: redirect>>url](https://docs.google.com/document/d/1qh_pcoYNofAleh20vtohSQ0VURhlGDB30-ZOpifFSWo/edit?usp=sharing)
-| 19 | ~~create~~ | 
+| 19 | **create** | [sFractal: start: vm](sFractalConsulting/25.create_vm.md)
 | 20 | **delete** | [Phantom: delete>>file](Phantom/04.endpoint_delete_file.md)<br>[STIX: delete>>artifact](STIX/03.malware_hash.md)<br>[sFractalConsulting: delete>>process](sFractalconsulting/17.no_resp_procid.md)<br>[sFractalConsulting: delete>>email_message](sFractalconsulting/21.bad_email.md)<br>[sFractalConsulting: delete>>file](sFractalconsulting/22.bad_file.md)<br>[Phantom: delete>>file](https://docs.google.com/document/d/1oBy8y7GPuG1zz_6PiPwt6VHDu1NHNf_qD8fb8jxIFG8/edit?usp=sharing)<br>[Symantec: delete>>device](Symantec/endpoint_delete_device.md)<br>[Symantec: delete>>file](Symantec/endpoint_delete_file.md)
 | 21 | ~~snapshot~~ | 
 | 22 | **detonate** | [Symantec: detonate>>file](Symantec/process_sandbox_detonate_file.md)<br>[Symantec: detonate>>url](Symantec/process_sandbox_detonate_url.md)
