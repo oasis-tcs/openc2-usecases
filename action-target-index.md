@@ -9,8 +9,8 @@
 | 6 | **deny** | [ATT: deny>>ip_connection](ATT/04.deny.md)<br>[Phantom: deny>>process](Phantom/02.endpoint_deny_process_with_hash.md)<br>[STIX: deny>>ip_connection](STIX/01.ipv4_cidr.md)<br>[sFractalConsulting: deny>>ip_connection](sFractalconsulting/01.sensing.md)<br>[sFractalConsulting: deny>>domain_name](sFractalconsulting/20.bad_url.md)<br>[LG: deny>>ip_addr](https://docs.google.com/document/d/1TNOwlpFrip29_1lGNW2xIV6GyOZe83J96C2DxdgOwME/edit?usp=sharing)<br>[Symantec: deny>>file](Symantec/endpoint_deny_file.md)<br>[Symantec: deny>>process](Symantec/endpoint_deny_process.md)<br>[Symantec: deny>>url](Symantec/network_proxy_deny_url.md)<br>[Symantec: deny>>email-addr](Symantec/process_email_service_deny_email-addr.md)<br>[Symantec: deny>>email-message](Symantec/process_email_service_deny_email-message.md)
 | 7 | **contain** | [ATT: contain>>domain_name](ATT/01.contain.md)<br>[STIX: contain>>device](STIX/04.quarantive_exfil.md)<br>[Symantec: contain>>device](Symantec/endpoint_contain_device.md)
 | 8 | **allow** | [ATT: allow>>domain_name](ATT/02.allow.md)<br>[ATT: allow>>ip_connection](ATT/05.allow.md)<br>[sFractalConsulting: allow>>ip_connection](sFractalconsulting/02.another_user.md)<br>[Symantec: allow>>device](Symantec/endpoint_allow_device.md)<br>[Symantec: allow>>file](Symantec/endpoint_allow_file.md)<br>[Symantec: allow>>url](Symantec/endpoint_allow_url.md)
-| 9 | **start** | [Symantec: start>>process](Symantec/endpoint_start_process.md)
-| 10 | **stop** | [Phantom: stop>>process](Phantom/03.endpoint_stop_process_by_pid.md)<br>[Symantec: stop>>process](Symantec/endpoint_stop_process.md)
+| 9 | **start** | [Symantec: start>>process](Symantec/endpoint_start_process.md)<br>[sFractal: start: vm](sFractalConsulting/25.create_vm.md)
+| 10 | **stop** | [Phantom: stop>>process](Phantom/03.endpoint_stop_process_by_pid.md)<br>[Symantec: stop>>process](Symantec/endpoint_stop_process.md)<br>[sFractal: stop: vm](sFractalConsulting/25.create_vm.md)
 | 11 | **restart** | [Symantec: restart>>device](Symantec/endpoint_restart_device.md)<br>[Symantec: restart>>process](Symantec/endpoint_restart_process.md)
 | 12 | ~~pause~~ | 
 | 13 | ~~resume~~ | 
