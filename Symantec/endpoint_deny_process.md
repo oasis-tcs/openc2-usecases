@@ -1,7 +1,7 @@
 
 # endpoint_deny_process.md
 
-This action specifies a process be denied on an endpoint. e.g Prevent process from executing.
+This action specifies a process be denied execution on an endpoint.
 
 ```
 {
@@ -17,6 +17,19 @@ This action specifies a process be denied on an endpoint. e.g Prevent process fr
     "endpoint": {
       "asset_id": "endpoint6.example.com"
     }
+  }
+}
+```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
   }
 }
 ```

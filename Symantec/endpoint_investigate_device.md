@@ -28,3 +28,16 @@ This action gets descriptive data about processes or load point information that
   }
 }
 ```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
+  }
+}
+```

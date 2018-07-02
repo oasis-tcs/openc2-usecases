@@ -43,3 +43,16 @@ This action initiates the collection of a file of interest.
   }
 }
 ```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
+  }
+}
+```

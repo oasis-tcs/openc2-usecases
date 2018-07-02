@@ -20,3 +20,16 @@ This action submits a url for sandbox detonation.
   }
 }
 ```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
+  }
+}
+```

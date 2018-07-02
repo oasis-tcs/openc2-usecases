@@ -1,7 +1,7 @@
 
 # endpoint_restart_process.md
 
-This action specifies a process to start.
+This action specifies a process to restart.
 
 ```
 {
@@ -16,6 +16,19 @@ This action specifies a process to start.
     "endpoint": {
       "asset_id": "endpoint6.example.com"
     }
+  }
+}
+```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
   }
 }
 ```

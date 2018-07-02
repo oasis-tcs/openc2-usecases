@@ -39,3 +39,16 @@ This action restores a file that was previously quarantined or isolated in some 
   }
 }
 ```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
+  }
+}
+```

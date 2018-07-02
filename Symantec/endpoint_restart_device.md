@@ -30,3 +30,16 @@ This action restarts a device based on its asset_id.
   }
 }
 ```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
+  }
+}
+```

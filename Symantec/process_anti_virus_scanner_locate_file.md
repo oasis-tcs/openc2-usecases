@@ -1,7 +1,7 @@
 
 # endpoint_locate_file.md
 
-This action triggers a scan to locate the files location.
+This action triggers a scan to locate the file.
 
 ```
 {
@@ -38,6 +38,19 @@ This action triggers a scan to locate the files location.
     "allow_quick_search": true,
     "scan_network_paths": true,
     "limit_result_count": 0
+  }
+}
+```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
   }
 }
 ```
