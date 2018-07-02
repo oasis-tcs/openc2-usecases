@@ -97,8 +97,10 @@ The scenarios are:
    - TL;DR - security manager detonates potential malware
  * 24.version.md
    - TL;DR - get OpenC2 version
-
-
+ * 25.create_vm.md
+   - TL;DR - create AWS VM
+ * 26.dos_epic.md
+   - TL;DR - epic (ie multiple use cases/stories) about attack response
 
 ## Endnotes
  1. <a name="endnote1">See</a> http://www.agilemodeling.com/artifacts/userStory.htm
