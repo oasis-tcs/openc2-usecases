@@ -40,8 +40,7 @@ This action scans for a particular file using the anti-virus scanner component.
 }
 ```
 
-
-The response is:
+**RESPONSE**
 
 ```
 {
@@ -52,5 +51,4 @@ The response is:
     "command_ref": "string"
   }
 }
-
 ```

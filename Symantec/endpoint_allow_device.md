@@ -22,3 +22,16 @@ This action specifies that the endpoint actuator allow the device back online. e
   }
 }
 ```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
+  }
+}
+```

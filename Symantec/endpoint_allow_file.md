@@ -39,3 +39,16 @@ This action tells openC2 to allow the file on the computer. e.g In an endpoints 
   }
 }
 ```
+
+**RESPONSE**
+
+```
+{
+  "id": "string",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "string"
+  }
+}
+```
