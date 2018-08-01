@@ -16,7 +16,7 @@ This action restores a file that was previously quarantined or isolated in some 
         "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
