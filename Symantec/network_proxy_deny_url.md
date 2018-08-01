@@ -24,11 +24,11 @@ This action specifies a url be blocked from access.
 
 ```
 {
-  "id": "string",
+  "id": "0c4f641d-0cbb-4063-b041-0ec7e718051b",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
