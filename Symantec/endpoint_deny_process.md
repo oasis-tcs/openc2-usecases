@@ -25,11 +25,11 @@ This action specifies a process be denied execution on an endpoint.
 
 ```
 {
-  "id": "string",
+  "id": "0b1fa41e-07d4-4040-9094-028bba12b206",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
