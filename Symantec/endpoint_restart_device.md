@@ -13,7 +13,7 @@ This action restarts a device based on its asset_id.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -35,11 +35,11 @@ This action restarts a device based on its asset_id.
 
 ```
 {
-  "id": "string",
+  "id": "063f2281-002e-40a3-b038-0d14d80ab9ef",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
