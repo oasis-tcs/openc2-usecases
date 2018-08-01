@@ -14,7 +14,7 @@ This action triggers a scan to locate the directory path location.
   },
   "actuator": {
     "process_anti_virus_scanner": {
-      "asset_id": "string"
+      "asset_id": "device6.example.com"
     }
   },
   "args": {
@@ -33,11 +33,11 @@ This action triggers a scan to locate the directory path location.
 
 ```
 {
-  "id": "string",
+  "id": "0e7577bd-0996-4097-900b-05de4bc2a2ec",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
