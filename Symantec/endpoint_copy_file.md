@@ -48,11 +48,11 @@ This action initiates the collection of a file of interest.
 
 ```
 {
-  "id": "string",
+  "id": "04794d16-0dbc-40fd-a099-0151d0a8f025",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
