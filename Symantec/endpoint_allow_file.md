@@ -28,7 +28,7 @@ This action tells openC2 to allow the file on the computer. e.g In an endpoints 
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
