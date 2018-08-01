@@ -27,11 +27,11 @@ This action retrieves all available information on the specified software on the
 
 ```
 {
-  "id": "string",
+  "id": "0145f60f-0a1c-406d-b0a0-06b5ae01fdd7",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
