@@ -16,7 +16,7 @@ This action tells openC2 to allow the file on the computer. e.g In an endpoints 
         "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
