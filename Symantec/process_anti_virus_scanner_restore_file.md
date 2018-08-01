@@ -28,7 +28,7 @@ This action restores a file that was previously quarantined or isolated in some 
   },
   "actuator": {
     "process_anti_virus_scanner": {
-      "asset_id": "string"
+      "asset_id": "device6.example.com"
     }
   },
   "args": {
@@ -44,11 +44,11 @@ This action restores a file that was previously quarantined or isolated in some 
 
 ```
 {
-  "id": "string",
+  "id": "0da8db5b-010f-4056-80a9-0955074dfcb1",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
