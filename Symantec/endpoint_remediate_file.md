@@ -28,7 +28,7 @@ This action remediates the threat.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -51,11 +51,11 @@ This action remediates the threat.
 
 ```
 {
-  "id": "string",
+  "id": "023a0993-03e8-4050-9054-060ccbe25284",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
