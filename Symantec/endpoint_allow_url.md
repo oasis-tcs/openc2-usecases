@@ -25,11 +25,11 @@ This action specifies that specified URL is allowed to be accessed.
 
 ```
 {
-  "id": "string",
+  "id": "07fd56ac-0c44-402f-8072-0e994de48520",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
