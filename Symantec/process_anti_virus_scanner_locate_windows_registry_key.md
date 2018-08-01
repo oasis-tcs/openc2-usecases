@@ -14,7 +14,7 @@ This action triggers a scan to locate the windows registry key.
   },
   "actuator": {
     "process_anti_virus_scanner": {
-      "asset_id": "string"
+      "asset_id": "device6.example.com"
     }
   },
   "args": {
@@ -33,11 +33,11 @@ This action triggers a scan to locate the windows registry key.
 
 ```
 {
-  "id": "string",
+  "id": "0fbfb8fa-0887-40a6-800d-070118482d03",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
