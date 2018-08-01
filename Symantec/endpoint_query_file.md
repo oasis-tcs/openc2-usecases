@@ -51,11 +51,11 @@ This action queries for the existance of a particular file.
 
 ```
 {
-  "id": "string",
+  "id": "0bd579b8-0c7a-40ad-b0a0-07637abe21b8",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
