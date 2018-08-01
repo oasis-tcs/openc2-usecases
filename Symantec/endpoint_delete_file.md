@@ -27,7 +27,7 @@ This action specifies a file to be deleted.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
