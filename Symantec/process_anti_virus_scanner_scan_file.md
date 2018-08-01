@@ -27,7 +27,7 @@ This action scans for a particular file using the anti-virus scanner component.
   },
   "actuator": {
     "process_anti_virus_scanner": {
-      "asset_id": "string"
+      "asset_id": "device6.example.com"
     }
   },
   "args": {
@@ -44,11 +44,11 @@ This action scans for a particular file using the anti-virus scanner component.
 
 ```
 {
-  "id": "string",
+  "id": "0e6c1179-0f35-4076-b0af-003e2f224681",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
