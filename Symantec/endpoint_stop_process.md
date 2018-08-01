@@ -21,7 +21,7 @@ This action stops a specific process.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -44,11 +44,11 @@ This action stops a specific process.
 
 ```
 {
-  "id": "string",
+  "id": "0ce36ce9-033d-4069-901a-04487e4c6e2e",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
