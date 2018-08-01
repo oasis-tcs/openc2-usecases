@@ -28,7 +28,7 @@ This action submits a suspicious file for analysis.
   },
   "actuator": {
     "process_sandbox": {
-      "asset_id": "detonator6.example.com"
+      "asset_id": "sandbox6.example.com"
     }
   },
   "args": {
