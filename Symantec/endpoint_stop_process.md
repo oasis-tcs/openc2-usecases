@@ -13,7 +13,7 @@ This action stops a specific process.
       "extensions": "string",
       "is_hidden": true,
       "pid": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "created": "string",
       "cwd": "string",
       "environment_variables": "string"
