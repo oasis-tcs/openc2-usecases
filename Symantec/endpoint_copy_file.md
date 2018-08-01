@@ -28,7 +28,7 @@ This action initiates the collection of a file of interest.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
