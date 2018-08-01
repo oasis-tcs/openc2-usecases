@@ -12,7 +12,7 @@ This action specifies that the endpoint actuator allow the device back online. e
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "options": {
@@ -32,7 +32,7 @@ This action specifies that the endpoint actuator allow the device back online. e
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
