@@ -49,11 +49,11 @@ This action specifies a file to be deleted.
 
 ```
 {
-  "id": "string",
+  "id": "0969391d-0f18-40a3-8046-05c312e97b5b",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
