@@ -43,11 +43,11 @@ This action specifies a file be denied on an endpoint. e.g Deny file from being 
 
 ```
 {
-  "id": "string",
+  "id": "02b423e8-0375-4039-8097-069aaaf76ef9",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
