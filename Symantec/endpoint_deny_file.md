@@ -27,7 +27,7 @@ This action specifies a file be denied on an endpoint. e.g Deny file from being 
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
