@@ -28,7 +28,7 @@ This action queries for the existance of a particular file.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
