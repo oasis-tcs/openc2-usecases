@@ -14,7 +14,7 @@ This action retrieves all available information on the specified URL on the actu
   },
   "actuator": {
     "network_proxy": {
-      "asset_id": "endpoint6.example.com"
+      "asset_id": "gateway2.example.com"
     }
   }
 }
@@ -24,11 +24,11 @@ This action retrieves all available information on the specified URL on the actu
 
 ```
 {
-  "id": "string",
+  "id": "0f6dc7b5-0cfe-40c2-b032-03dc11e6a308",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

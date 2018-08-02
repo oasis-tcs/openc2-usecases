@@ -13,10 +13,10 @@ This action queries for the existance of a particular file.
       "extensions": "string",
       "hashes": {
         "type": "SHA256",
-        "value": "string"
+        "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
@@ -28,7 +28,7 @@ This action queries for the existance of a particular file.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -51,11 +51,11 @@ This action queries for the existance of a particular file.
 
 ```
 {
-  "id": "string",
+  "id": "0bd579b8-0c7a-40ad-b0a0-07637abe21b8",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

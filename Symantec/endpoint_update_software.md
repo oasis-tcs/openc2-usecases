@@ -27,11 +27,11 @@ This action updates the specified software.
 
 ```
 {
-  "id": "string",
+  "id": "0634fd62-054d-4043-a0a6-08f0a34c6c3b",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

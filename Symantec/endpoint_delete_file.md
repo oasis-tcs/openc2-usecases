@@ -12,10 +12,10 @@ This action specifies a file to be deleted.
       "extensions": "string",
       "hashes": {
         "type": "SHA256",
-        "value": "string"
+        "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
@@ -27,7 +27,7 @@ This action specifies a file to be deleted.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -49,11 +49,11 @@ This action specifies a file to be deleted.
 
 ```
 {
-  "id": "string",
+  "id": "0969391d-0f18-40a3-8046-05c312e97b5b",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

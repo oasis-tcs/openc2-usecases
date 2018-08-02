@@ -12,10 +12,10 @@ This action specifies a file be denied on an endpoint. e.g Deny file from being 
       "extensions": "string",
       "hashes": {
         "type": "SHA256",
-        "value": "string"
+        "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
@@ -27,7 +27,7 @@ This action specifies a file be denied on an endpoint. e.g Deny file from being 
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -43,11 +43,11 @@ This action specifies a file be denied on an endpoint. e.g Deny file from being 
 
 ```
 {
-  "id": "string",
+  "id": "02b423e8-0375-4039-8097-069aaaf76ef9",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

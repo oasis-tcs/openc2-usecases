@@ -13,10 +13,10 @@ This action initiates the collection of a file of interest.
       "extensions": "string",
       "hashes": {
         "type": "SHA256",
-        "value": "string"
+        "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
@@ -28,7 +28,7 @@ This action initiates the collection of a file of interest.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -48,11 +48,11 @@ This action initiates the collection of a file of interest.
 
 ```
 {
-  "id": "string",
+  "id": "04794d16-0dbc-40fd-a099-0151d0a8f025",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

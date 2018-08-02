@@ -13,10 +13,10 @@ This action restores a file that was previously quarantined or isolated in some 
       "extensions": "string",
       "hashes": {
         "type": "SHA256",
-        "value": "string"
+        "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
@@ -28,7 +28,7 @@ This action restores a file that was previously quarantined or isolated in some 
   },
   "actuator": {
     "process_anti_virus_scanner": {
-      "asset_id": "string"
+      "asset_id": "device6.example.com"
     }
   },
   "args": {
@@ -44,11 +44,11 @@ This action restores a file that was previously quarantined or isolated in some 
 
 ```
 {
-  "id": "string",
+  "id": "0da8db5b-010f-4056-80a9-0955074dfcb1",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

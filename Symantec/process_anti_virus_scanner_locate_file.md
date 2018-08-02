@@ -12,10 +12,10 @@ This action triggers a scan to locate the file.
       "extensions": "string",
       "hashes": {
         "type": "SHA256",
-        "value": "string"
+        "value": "dc94bbd73a1fce1b04c663a008408dd209cfe355483eea2044f2a4616aad7110"
       },
       "size": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "name_enc": "string",
       "created": "string",
       "modified": "string",
@@ -27,7 +27,7 @@ This action triggers a scan to locate the file.
   },
   "actuator": {
     "process_anti_virus_scanner": {
-      "asset_id": "string"
+      "asset_id": "device6.example.com"
     }
   },
   "args": {
@@ -46,11 +46,11 @@ This action triggers a scan to locate the file.
 
 ```
 {
-  "id": "string",
+  "id": "062bb458-081e-40d3-a0e8-05326290d542",
   "status": 200,
   "status_text": "string",
   "results": {
-    "command_ref": "string"
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
