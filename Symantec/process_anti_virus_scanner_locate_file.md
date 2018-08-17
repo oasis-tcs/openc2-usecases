@@ -46,7 +46,7 @@ This action triggers a scan to locate the file.
 
 ```
 {
-  "id": "062bb458-081e-40d3-a0e8-05326290d542",
+  "id_ref": "062bb458-081e-40d3-a0e8-05326290d542",
   "status": 200,
   "status_text": "string",
   "results": {

@@ -51,7 +51,7 @@ This action remediates the threat.
 
 ```
 {
-  "id": "023a0993-03e8-4050-9054-060ccbe25284",
+  "id_ref": "023a0993-03e8-4050-9054-060ccbe25284",
   "status": 200,
   "status_text": "string",
   "results": {

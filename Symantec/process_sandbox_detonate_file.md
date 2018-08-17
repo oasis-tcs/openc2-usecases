@@ -44,7 +44,7 @@ This action submits a suspicious file for analysis.
 
 ```
 {
-  "id": "0e2d48bc-07c2-4020-9059-05d88cf31745",
+  "id_ref": "0e2d48bc-07c2-4020-9059-05d88cf31745",
   "status": 200,
   "status_text": "string",
   "results": {

@@ -22,7 +22,7 @@ This action retrieves all available information on the specified device collecte
 
 ```
 {
-  "id": "0efd5c1d-0769-4064-a0a5-0a3adfafd31b",
+  "id_ref": "0efd5c1d-0769-4064-a0a5-0a3adfafd31b",
   "status": 200,
   "status_text": "string",
   "results": {

@@ -33,7 +33,7 @@ This action triggers a scan to locate the windows registry key.
 
 ```
 {
-  "id": "0fbfb8fa-0887-40a6-800d-070118482d03",
+  "id_ref": "0fbfb8fa-0887-40a6-800d-070118482d03",
   "status": 200,
   "status_text": "string",
   "results": {

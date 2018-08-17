@@ -44,7 +44,7 @@ This action restores a file that was previously quarantined or isolated in some 
 
 ```
 {
-  "id": "0da8db5b-010f-4056-80a9-0955074dfcb1",
+  "id_ref": "0da8db5b-010f-4056-80a9-0955074dfcb1",
   "status": 200,
   "status_text": "string",
   "results": {

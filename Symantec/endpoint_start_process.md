@@ -24,7 +24,7 @@ This action specifies a process to start.
 
 ```
 {
-  "id": "04be1c1b-0d81-400b-9085-015a7746e401",
+  "id_ref": "04be1c1b-0d81-400b-9085-015a7746e401",
   "status": 200,
   "status_text": "string",
   "results": {

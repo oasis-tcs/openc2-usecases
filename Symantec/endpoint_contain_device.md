@@ -23,7 +23,7 @@ This action specifies a device enter a quarantine state.
 
 ```
 {
-  "id": "046e5e9d-0a4f-40dd-804d-0ed7d0149441",
+  "id_ref": "046e5e9d-0a4f-40dd-804d-0ed7d0149441",
   "status": 200,
   "status_text": "string",
   "results": {

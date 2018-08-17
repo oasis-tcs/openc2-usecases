@@ -43,7 +43,7 @@ This action specifies a file be denied on an endpoint. e.g Deny file from being 
 
 ```
 {
-  "id": "02b423e8-0375-4039-8097-069aaaf76ef9",
+  "id_ref": "02b423e8-0375-4039-8097-069aaaf76ef9",
   "status": 200,
   "status_text": "string",
   "results": {

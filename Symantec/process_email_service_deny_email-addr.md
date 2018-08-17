@@ -24,7 +24,7 @@ This action specifies an email address be denied.
 
 ```
 {
-  "id": "0ebc6bc6-0cd3-40f1-80f9-0b3a4857d21b",
+  "id_ref": "0ebc6bc6-0cd3-40f1-80f9-0b3a4857d21b",
   "status": 200,
   "status_text": "string",
   "results": {
