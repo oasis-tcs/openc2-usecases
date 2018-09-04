@@ -44,7 +44,7 @@ This action stops a specific process.
 
 ```
 {
-  "id": "0ce36ce9-033d-4069-901a-04487e4c6e2e",
+  "id_ref": "0ce36ce9-033d-4069-901a-04487e4c6e2e",
   "status": 200,
   "status_text": "string",
   "results": {

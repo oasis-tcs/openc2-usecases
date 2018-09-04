@@ -28,7 +28,7 @@ This action triggers a content update session from the update server.
 
 ```
 {
-  "id": "00c74fe8-0d44-40ce-b01b-026e4b3f7c89",
+  "id_ref": "00c74fe8-0d44-40ce-b01b-026e4b3f7c89",
   "status": 200,
   "status_text": "string",
   "results": {

@@ -25,7 +25,7 @@ This action specifies that specified URL is allowed to be accessed.
 
 ```
 {
-  "id": "07fd56ac-0c44-402f-8072-0e994de48520",
+  "id_ref": "07fd56ac-0c44-402f-8072-0e994de48520",
   "status": 200,
   "status_text": "string",
   "results": {

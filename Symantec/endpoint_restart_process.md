@@ -24,7 +24,7 @@ This action specifies a process to restart.
 
 ```
 {
-  "id": "05543c9a-0769-408e-8012-048f65cf275d",
+  "id_ref": "05543c9a-0769-408e-8012-048f65cf275d",
   "status": 200,
   "status_text": "string",
   "results": {

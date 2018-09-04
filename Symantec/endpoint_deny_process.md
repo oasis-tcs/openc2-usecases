@@ -25,7 +25,7 @@ This action specifies a process be denied execution on an endpoint.
 
 ```
 {
-  "id": "0b1fa41e-07d4-4040-9094-028bba12b206",
+  "id_ref": "0b1fa41e-07d4-4040-9094-028bba12b206",
   "status": 200,
   "status_text": "string",
   "results": {

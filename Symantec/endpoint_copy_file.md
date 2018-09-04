@@ -48,7 +48,7 @@ This action initiates the collection of a file of interest.
 
 ```
 {
-  "id": "04794d16-0dbc-40fd-a099-0151d0a8f025",
+  "id_ref": "04794d16-0dbc-40fd-a099-0151d0a8f025",
   "status": 200,
   "status_text": "string",
   "results": {

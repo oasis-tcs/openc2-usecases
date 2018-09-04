@@ -28,7 +28,7 @@ This action specifies that an email matching email-message target values be deni
 
 ```
 {
-  "id": "04b5bf32-0a7f-40bb-8071-05da4da1cda9",
+  "id_ref": "04b5bf32-0a7f-40bb-8071-05da4da1cda9",
   "status": 200,
   "status_text": "string",
   "results": {

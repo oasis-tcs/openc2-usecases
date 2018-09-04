@@ -25,7 +25,7 @@ This action submits a url for sandbox detonation.
 
 ```
 {
-  "id": "0eb8e4a0-0fc4-4013-a0d2-05402e43fd9d",
+  "id_ref": "0eb8e4a0-0fc4-4013-a0d2-05402e43fd9d",
   "status": 200,
   "status_text": "string",
   "results": {

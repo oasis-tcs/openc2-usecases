@@ -24,7 +24,7 @@ This action retrieves all available information on the specified URL on the actu
 
 ```
 {
-  "id": "0f6dc7b5-0cfe-40c2-b032-03dc11e6a308",
+  "id_ref": "0f6dc7b5-0cfe-40c2-b032-03dc11e6a308",
   "status": 200,
   "status_text": "string",
   "results": {

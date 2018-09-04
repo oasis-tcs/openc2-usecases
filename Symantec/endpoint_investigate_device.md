@@ -33,7 +33,7 @@ This action gets descriptive data about processes or load point information that
 
 ```
 {
-  "id": "0b6621e7-0b89-4072-b061-0979a27f40bb",
+  "id_ref": "0b6621e7-0b89-4072-b061-0979a27f40bb",
   "status": 200,
   "status_text": "string",
   "results": {

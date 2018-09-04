@@ -44,7 +44,7 @@ This action tells openC2 to allow the file on the computer. e.g In an endpoints 
 
 ```
 {
-  "id": "019f3756-0aec-4010-a0f5-050ebf2dd680",
+  "id_ref": "019f3756-0aec-4010-a0f5-050ebf2dd680",
   "status": 200,
   "status_text": "string",
   "results": {

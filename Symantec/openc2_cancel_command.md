@@ -17,7 +17,7 @@ This action cancels a previously sent openc2 command.
 
 ```
 {
-  "id": "0a4a7789-011e-40c8-8004-019214987bab",
+  "id_ref": "0a4a7789-011e-40c8-8004-019214987bab",
   "status": 200,
   "status_text": "string",
   "results": {

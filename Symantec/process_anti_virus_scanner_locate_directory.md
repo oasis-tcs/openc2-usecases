@@ -33,7 +33,7 @@ This action triggers a scan to locate the directory path location.
 
 ```
 {
-  "id": "0e7577bd-0996-4097-900b-05de4bc2a2ec",
+  "id_ref": "0e7577bd-0996-4097-900b-05de4bc2a2ec",
   "status": 200,
   "status_text": "string",
   "results": {

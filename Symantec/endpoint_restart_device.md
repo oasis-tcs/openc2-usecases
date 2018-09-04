@@ -35,7 +35,7 @@ This action restarts a device based on its asset_id.
 
 ```
 {
-  "id": "063f2281-002e-40a3-b038-0d14d80ab9ef",
+  "id_ref": "063f2281-002e-40a3-b038-0d14d80ab9ef",
   "status": 200,
   "status_text": "string",
   "results": {

@@ -44,7 +44,7 @@ This action scans for a particular file using the anti-virus scanner component.
 
 ```
 {
-  "id": "0e6c1179-0f35-4076-b0af-003e2f224681",
+  "id_ref": "0e6c1179-0f35-4076-b0af-003e2f224681",
   "status": 200,
   "status_text": "string",
   "results": {
