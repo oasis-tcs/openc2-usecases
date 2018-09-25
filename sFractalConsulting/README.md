@@ -101,6 +101,8 @@ The scenarios are:
    - TL;DR - create AWS VM
  * 26.dos_epic.md
    - TL;DR - epic (ie multiple use cases/stories) about attack response
+ * 27.cancel_command.md
+   - TL;DR - cancel previously issued command
 
 ## Endnotes
  1. <a name="endnote1">See</a> http://www.agilemodeling.com/artifacts/userStory.htm
