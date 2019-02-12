@@ -3,8 +3,8 @@ This use-case shows a working example of a command/response workflow with status
 
 The identifiers used in this example are for illustrative purposes and may not conform to the actual identifier format.
 
-## Initial Command Is Issued
-### Command
+## 1. Initial Command Is Issued
+### 1.1. Command
 ```
 POST /openc2 HTTP/1.1
 Host: oc2consumer.company.net
@@ -13,7 +13,7 @@ Date: Day, DD Mon YYYY HH:MM:SS GMT
 X-Correlation-ID: 0001
 
 {	
-    "command_id": "cmd5"
+    "command_id": "cmd5",
     "action": "scan",
     "target": {
          "file": {...}
@@ -24,7 +24,7 @@ X-Correlation-ID: 0001
 }
 ```
 
-### Response
+### 1.2. Response
 ```
 HTTP/1.1 200 OK
 Date: Day, DD Mon YYYY HH:MM:SS GMT
@@ -36,8 +36,8 @@ X-Correlation-ID: 0001
 }
 ```
 
-## Status Is Requested
-### Command
+## 2. Status Is Requested
+### 2.1. Command
 ```
 POST /openc2 HTTP/1.1
 Host: oc2consumer.company.net
@@ -46,20 +46,52 @@ Date: Day, DD Mon YYYY HH:MM:SS GMT
 X-Correlation-ID: 0002
 
 {	
-    "command_id": "cmd6"
     "action": "query",
+    "target": {
+         "command": "cmd5"
+    },
+    "args": {
+        "response_requested": "status"
+    }
+}
+```
+
+### 2.2. Response
+```
+HTTP/1.1 200 OK
+Date: Day, DD Mon YYYY HH:MM:SS GMT
+Content-type: application/openc2-rsp+json;version=1.0
+X-Correlation-ID: 0002
+
+{	
+    "status": 102,
+    "strings": [...]
+}
+```
+
+## 3. Command Is Canceled
+### 3.1. Command
+```
+POST /openc2 HTTP/1.1
+Host: oc2consumer.company.net
+Content-type: application/openc2-cmd+json;version=1.0
+Date: Day, DD Mon YYYY HH:MM:SS GMT
+X-Correlation-ID: 0003
+
+{	
+    "action": "cancel",
     "target": {
          "command": "cmd5"
     }
 }
 ```
 
-### Response
+### 3.2. Response
 ```
 HTTP/1.1 200 OK
 Date: Day, DD Mon YYYY HH:MM:SS GMT
 Content-type: application/openc2-rsp+json;version=1.0
-X-Correlation-ID: 0002
+X-Correlation-ID: 0003
 
 {	
     "status": 200,
