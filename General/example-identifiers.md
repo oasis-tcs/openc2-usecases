@@ -1,5 +1,7 @@
-# Description
-This use-case shows a working example of a command/response workflow with status requests and updates. The purpose of this example is to explore the use of `request_id` and `command_id`. This example uses HTTPS as the tranfer protocol, which maps `request_id` to `X-Correlation-ID` found in the header. The `command_id` is found in the body of the payload.
+# Identifiers Example
+
+## Description
+This use-case shows a working example of a command/response workflow with status requests and command cancelation. The purpose of this example is to explore the use of `request_id` and `command_id`. This example uses HTTPS as the tranfer protocol, which maps `request_id` to `X-Correlation-ID` found in the header. The `command_id` is found in the body of the payload.
 
 The identifiers used in this example are for illustrative purposes and may not conform to the actual identifier format.
 
