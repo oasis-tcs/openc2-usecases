@@ -25,8 +25,6 @@ X-Correlation-ID: 0001
 ```
 
 ### Response
-Note: I didn't see anywhere in the Language Spec that an "ack" would be represented by a response code 200.
-
 ```
 HTTP/1.1 200 OK
 Date: Day, DD Mon YYYY HH:MM:SS GMT
@@ -34,6 +32,37 @@ Content-type: application/openc2-rsp+json;version=1.0
 X-Correlation-ID: 0001
 
 {	
-    "status": 200
+    "status": 102
+}
+```
+
+## Status Is Requested
+### Command
+```
+POST /openc2 HTTP/1.1
+Host: oc2consumer.company.net
+Content-type: application/openc2-cmd+json;version=1.0
+Date: Day, DD Mon YYYY HH:MM:SS GMT
+X-Correlation-ID: 0002
+
+{	
+    "command_id": "cmd6"
+    "action": "query",
+    "target": {
+         "command": "cmd5"
+    }
+}
+```
+
+### Response
+```
+HTTP/1.1 200 OK
+Date: Day, DD Mon YYYY HH:MM:SS GMT
+Content-type: application/openc2-rsp+json;version=1.0
+X-Correlation-ID: 0002
+
+{	
+    "status": 200,
+    "strings": [...]
 }
 ```
