@@ -13,12 +13,12 @@ This same example could work for create, set, and delete, although certain prope
 ### 1.1.1 OpenC2 Command
 ```
 {
-    "id": "01076931758653239640628182951035",
+    "command_id": "01076931758653239640628182951035",
     "action": "query",
     "target": {
-        "property": {
-            "name": "battery_percentage"
-        }
+        "properties": [
+            "battery_percentage"
+        ]
     },
     "actuator": {
         "endpoint_smart_meter": {
@@ -32,10 +32,11 @@ This same example could work for create, set, and delete, although certain prope
 ### 1.1.2 OpenC2 Response
 ```
 {
-    "id_ref": "01076931758653239640628182951035",
     "status": 200,
     "results": {
-        "battery_percentage": 0.577216
+        "x-acme": {
+            "battery_percentage": 0.577216
+        }
     }
 }
 ```
