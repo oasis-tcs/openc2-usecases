@@ -18,7 +18,11 @@ X-Correlation-ID: 0001
     "command_id": "cmd5",
     "action": "scan",
     "target": {
-         "file": {...}
+         "file": {
+            "hashes": {
+                "sha256": "22fe...6973"
+            }
+        }
     },
     "args": {
         "response_requested": "ack"
@@ -67,7 +71,11 @@ X-Correlation-ID: 0002
 
 {	
     "status": 102,
-    "strings": [...]
+    "results": {
+        "x-acme": {
+            "status": "good"
+        }
+    }
 }
 ```
 
@@ -97,6 +105,10 @@ X-Correlation-ID: 0003
 
 {	
     "status": 200,
-    "strings": [...]
+    "results": {
+        "x-acme": {
+            "status": "command canceled"
+        }
+    }
 }
 ```
