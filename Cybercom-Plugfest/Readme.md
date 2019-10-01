@@ -33,7 +33,7 @@
     * 'investigate' action on 'device' target
     * 'query' action to determine conformance of software inventory to network policy ('scan' isn't right)
 * Network Control (NC) profile - NM Producer, NC Consumer
-    * 'contain' action on device target
+    * 'contain' action on device target  (how is this different from allow and deny?)
     * 'allow' action on device target
     * 'deny' action on device target
 * Endpoint Management (EPM) profile - EPM Producer, Endpoint Consumer
