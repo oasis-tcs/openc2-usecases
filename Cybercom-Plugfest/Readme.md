@@ -30,13 +30,12 @@
 
 ### Network Functions
 * Comply-to-connect (C2C) profile - NM Producer, EPM Consumer
-    * 'contain' action on 'device' target
     * 'investigate' action on 'device' target
     * 'query' action to determine conformance of software inventory to network policy ('scan' isn't right)
 * Network Control (NC) profile - NM Producer, NC Consumer
+    * 'contain' action on device target
     * 'allow' action on device target
     * 'deny' action on device target
-    * 'contain' action on device target
 * Endpoint Management (EPM) profile - EPM Producer, Endpoint Consumer
     * 'query' action on S/W inventory target
     * 'update' action on a S/W target
