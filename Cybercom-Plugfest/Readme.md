@@ -25,18 +25,18 @@
 ### Actor Roles:
 * Network Manager (NM) - orchestrator that receives notifications of new devices.  Producer in C2C profile.
 * Network Controller (NC) - SDN controller or other actuator that changes network configuration to enforce access decisions
-* Endpoint Manager (EPM) - actuator that requests a SWID-formatted inventory.  Consumer in C2C profile, Producer in EPM profile.
-* Endpoint - device that attempts to connect to a network, Consumer in EPM profile
+* Endpoint Manager (EM) - Node that requests a SWID-formatted inventory.  Consumer in C2C profile, Producer in EM profile.
+* Endpoint - device that attempts to connect to a network, Consumer in EM profile
 
 ### Network Functions
-* Comply-to-connect (C2C) profile - NM Producer, EPM Consumer
+* Comply-to-connect (C2C) profile - NM Producer, EM Consumer
     * 'investigate' action on 'device' target
-    * 'query' action to determine conformance of software inventory to network policy
-        * ('scan' isn't right, EPM can't answer the question.  Is there a separate "Policy Repository" server to be queried, or is policy configured into the Network Manager?)
+    * 'query' action to determine conformance of software inventory to network policy?
+        * ('scan' isn't right, EM can't answer the question.  Is there a separate "Policy Repository" server to be queried, or is policy  and decision-making configured into the Network Manager?)
 * Network Control (NC) profile - NM Producer, NC Consumer
     * 'contain' action on device target  (how is this different from allow and deny?)
     * 'allow' action on device target
     * 'deny' action on device target
-* Endpoint Management (EPM) profile - EPM Producer, Endpoint Consumer
+* Endpoint Management (EM) profile - EM Producer, Endpoint Consumer
     * 'query' action on S/W inventory target
     * 'update' action on a S/W target
