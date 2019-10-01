@@ -31,7 +31,8 @@
 ### Network Functions
 * Comply-to-connect (C2C) profile - NM Producer, EPM Consumer
     * 'investigate' action on 'device' target
-    * 'query' action to determine conformance of software inventory to network policy ('scan' isn't right)
+    * 'query' action to determine conformance of software inventory to network policy
+        * ('scan' isn't right, EPM can't answer the question.  Is there a separate "Policy Repository" server to be queried, or is policy configured into the Network Manager?)
 * Network Control (NC) profile - NM Producer, NC Consumer
     * 'contain' action on device target  (how is this different from allow and deny?)
     * 'allow' action on device target
