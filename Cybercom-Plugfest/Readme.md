@@ -24,6 +24,7 @@
 
 ### Actor Roles:
 * Network Manager (NM) - orchestrator that receives notifications of new devices.  Producer in C2C profile.
+* Network Controller (NC) - SDN controller or other actuator that changes network configuration to enforce access decisions
 * Endpoint Manager (EPM) - actuator that requests a SWID-formatted inventory.  Consumer in C2C profile, Producer in EPM profile.
 * Endpoint - device that attempts to connect to a network, Consumer in EPM profile
 
@@ -32,6 +33,7 @@
     * 'contain' action on 'device' target
     * 'investigate' action on 'device' target
     * 'query' action to determine conformance of software inventory to network policy ('scan' isn't right)
+* Network Control (NC) profile - NM Producer, NC Consumer
     * 'allow' action on device target
     * 'deny' action on device target
     * 'contain' action on device target
