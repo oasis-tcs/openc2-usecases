@@ -5,5 +5,5 @@
 4. Hypothetical EM schema created from template.  Actual content depends on Plugfest design sessions.
 
 ## Schema Formats
-1. IDL, Markdown - used in Plugfest whiteboard sessions to design command and response content
+1. Source (IDL, Markdown) - used in Plugfest whiteboard sessions to design command and response content
 2. JSON Schema - generated from 1 using schema translation tool, downloaded by Plugfest participants to validate commands and responses
