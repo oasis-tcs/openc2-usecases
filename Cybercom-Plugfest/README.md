@@ -28,5 +28,5 @@ included:
 
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
-Plugfest Use Cases:
+## Plugfest Use Cases:
 * A. Comply to Connect (C2C)
