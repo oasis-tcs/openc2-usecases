@@ -13,7 +13,7 @@ This action stops a specific process.
       "extensions": "string",
       "is_hidden": true,
       "pid": 0,
-      "name": "string",
+      "name": "netgato.exe",
       "created": "string",
       "cwd": "string",
       "environment_variables": "string"
@@ -21,7 +21,7 @@ This action stops a specific process.
   },
   "actuator": {
     "endpoint": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -38,4 +38,17 @@ This action stops a specific process.
   }
 }
 
+```
+
+**RESPONSE**
+
+```
+{
+  "id_ref": "0ce36ce9-033d-4069-901a-04487e4c6e2e",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
+  }
+}
 ```

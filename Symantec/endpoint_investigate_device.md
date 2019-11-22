@@ -13,7 +13,7 @@ This action gets descriptive data about processes or load point information that
   },
   "actuator": {
     "process_anti_virus_scanner": {
-      "asset_id": "string"
+      "asset_id": "endpoint6.example.com"
     }
   },
   "args": {
@@ -25,6 +25,19 @@ This action gets descriptive data about processes or load point information that
     "include_historical": true,
     "include_prefetch": true,
     "include_loadpoints": true
+  }
+}
+```
+
+**RESPONSE**
+
+```
+{
+  "id_ref": "0b6621e7-0b89-4072-b061-0979a27f40bb",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```

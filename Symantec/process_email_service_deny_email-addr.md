@@ -14,8 +14,21 @@ This action specifies an email address be denied.
   },
   "actuator": {
     "process_email_service": {
-      "asset_id": "mailserver6@village.example.com"
+      "asset_id": "mailserver6.example.com"
     }
+  }
+}
+```
+
+**RESPONSE**
+
+```
+{
+  "id_ref": "0ebc6bc6-0cd3-40f1-80f9-0b3a4857d21b",
+  "status": 200,
+  "status_text": "string",
+  "results": {
+    "command_ref": "INTERNALREFERENCEVALUEABC123"
   }
 }
 ```
