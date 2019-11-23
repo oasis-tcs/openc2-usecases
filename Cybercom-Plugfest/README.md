@@ -40,14 +40,17 @@ to make this list as complete as possible for meeting the attendees needs.
 Immediately following will be scheduling out what to work on during the two days.
 
 ### DoD Comply to Connect
-The DoD CIO and the Chief of CYBERCOM have been tasked (Public Law 114-328-DEC. 23, 2016 Sec 1653) with creating a ‘comply to connect’ policy for all DoD networked devices. They consider a software inventory (termed a Software Bill of Materials or SBOM in many industries. See http://ntia.gov/sbom)an integral part of ‘comply to connect’ since you can’t claim compliance if you don’t know what software is present.
+The DoD CIO and the Chief of CYBERCOM have been tasked (Public Law 114-328-DEC. 23, 2016 Sec 1653) with creating a ‘comply to connect’ policy for all DoD networked devices. They consider a software inventory (termed a Software Bill of Materials or SBOM in many industries. See http://ntia.gov/sbom) an integral part of ‘comply to connect’ since you can’t claim compliance if you don’t know what software is present.
 The use case continues with various actions to be taken based on analyzing the SBoM.
 See LINKHERE for more info.
 
 ### Fill-in-the-blank Comply to Connect
 blah blah on other similar usecases
+
 include ref 4 links to ntia docs
+
 include healthcare scenario
+
 include sFractal scenarios
 
 ## Oasis OpenC2 wrt Plugfest/Hackathon
@@ -70,6 +73,7 @@ Please do a pull request against this page and add yourself to participants sect
 - link to page about Preparation
 - links to OpenC2 specs and works in progress
 - links to OpenC2 opensource code
+- pages about potential test scenarios and code-writing sessions
 
 
 
