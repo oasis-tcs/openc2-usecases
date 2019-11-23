@@ -1,3 +1,77 @@
+# OpenC2 Plugfest / Hackathon
+
+Table of Contents:
+- About
+- Is it Plugfest or Hackathon? BOTH!
+- Who is attending?
+- What usecases addressed?
+- Oasis OpenC2 wrt Plugfest/Hackathon
+- Info for Participants
+- Lessons Learned from Previous Plugfests
+- Resources
+- Outcomes / Post Mortem
+
+## About
+add blah blah
+
+## Is it Plugfest or Hackathon? BOTH!
+This is both a plugfest (testing interoperability of existing implementations)
+and a hackathon (writing software to meet a need).
+Come prepared to participate in either or both.
+
+## Who is attending?
+Although it is not required to announce if you will be attending,
+the hope is many will and include what they will be bringing to the table:
+- Google - put link to plugfest resources being provided
+- GitHub - put link to plugfest resources being provided
+- NSA - ok to put? what bringing?
+- sFractal Consulting - blah blah and link to a package
+- G2 -ok to put? what bringing?
+- AT&T - ok to put? what bringing?
+- Symantec - ok to put? what bringing?
+
+## What usecases addressed?
+It is not required, but hoped, that attendees will publish use cases of interest
+prior to arriving.
+One of the first orders of business will be a brainstorming session
+to make this list as complete as possible for meeting the attendees needs.
+Immediately following will be scheduling out what to work on during the two days.
+
+### DoD Comply to Connect
+"Public Law 114-328-DEC. 23, 2016 Sec 1653
+“The Chief Information Officer of the Department of Defense and the Commander of the United States Cyber Command shall jointly develop …  
+… a comply-to-connect policy that requires systems to automatically comply with the configurations of the networks of the Department as a condition of connecting to such networks” (emphasis added)" which NSA/CyberCom interprets as you send it an OpenC2 'give me your sbom command' and it replies with and SBoM that they happen to want in SWID format
+
+### Fill-in-the-blank Comply to Connect
+
+## Oasis OpenC2 wrt Plugfest/Hackathon
+blah blah on it is open to all and therefore NOT an OASIS meeting where OASIS
+intellectual property sharing rules apply.
+Get better wording from Chet
+
+## Info for Participants
+The slide decks for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315
+
+## Lessons Learned from Previous Plugfests
+
+## Resources
+- link to page about Preparation
+- links to OpenC2 specs and works in progress
+- links to OpenC2 opensource code
+
+
+
+## Outcomes / Post Mortem
+This section is for after the plugfest to document the outcomes relevant to
+the OASIS OpenC2 TC. Reminder to review intellectual property considerations
+prior to entering data here,
+particularly for input from non-TC members
+since they are not bound by sharing agreement.
+
+
+Fix beneath this and put somewhere
+============================
+
 # OpenC2 Plugfest Planning
 
 As discussed at the 18 September TC meeting OpenC2 has been offered the opportunity to run a plug fest hosted
@@ -7,7 +81,7 @@ participation in this event, tentatively planned for the week of 27 January 2020
 A Tech Talk at DreamPort is planned for early November to provide that community information about OpenC2
 and our plans for the plug fest.
 
-TC chair's initial request (19 Sept) for plug fest participation: 
+TC chair's initial request (19 Sept) for plug fest participation:
 https://lists.oasis-open.org/archives/openc2/201909/msg00009.html
 
 TC chair's request (25 Sept) for plug fest use cases and related information:
