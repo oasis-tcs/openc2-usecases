@@ -14,6 +14,8 @@ Table of Contents:
 ## About
 add blah blah
 
+The plugfest/hackathon is open to all and will be at US CYBERCOM’s “Dream Port” facility in Maryland on Jan 27-28. DreamPort is an unclassified CYBERCOM facility  to foster government/industry innovation. Advance registration is required.
+
 ## Is it Plugfest or Hackathon? BOTH!
 This is both a plugfest (testing interoperability of existing implementations)
 and a hackathon (writing software to meet a need).
@@ -38,11 +40,15 @@ to make this list as complete as possible for meeting the attendees needs.
 Immediately following will be scheduling out what to work on during the two days.
 
 ### DoD Comply to Connect
-"Public Law 114-328-DEC. 23, 2016 Sec 1653
-“The Chief Information Officer of the Department of Defense and the Commander of the United States Cyber Command shall jointly develop …  
-… a comply-to-connect policy that requires systems to automatically comply with the configurations of the networks of the Department as a condition of connecting to such networks” (emphasis added)" which NSA/CyberCom interprets as you send it an OpenC2 'give me your sbom command' and it replies with and SBoM that they happen to want in SWID format
+The DoD CIO and the Chief of CYBERCOM have been tasked (Public Law 114-328-DEC. 23, 2016 Sec 1653) with creating a ‘comply to connect’ policy for all DoD networked devices. They consider a software inventory (termed a Software Bill of Materials or SBOM in many industries. See http://ntia.gov/sbom)an integral part of ‘comply to connect’ since you can’t claim compliance if you don’t know what software is present.
+The use case continues with various actions to be taken based on analyzing the SBoM.
+See LINKHERE for more info.
 
 ### Fill-in-the-blank Comply to Connect
+blah blah on other similar usecases
+include ref 4 links to ntia docs
+include healthcare scenario
+include sFractal scenarios
 
 ## Oasis OpenC2 wrt Plugfest/Hackathon
 blah blah on it is open to all and therefore NOT an OASIS meeting where OASIS
@@ -51,6 +57,12 @@ Get better wording from Chet
 
 ## Info for Participants
 The slide decks for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315
+
+https://dreamport.tech/event-open-c2-plug-fest-01272820.php
+
+link to registration page
+
+Please do a pull request against this page and add yourself to participants section
 
 ## Lessons Learned from Previous Plugfests
 
