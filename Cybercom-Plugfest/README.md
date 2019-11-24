@@ -24,8 +24,8 @@ Come prepared to participate in either or both.
 ## Who is attending?
 Although it is not required to announce if you will be attending,
 the hope is many will and include what they will be bringing to the table:
-- Google - put link to plugfest resources being provided
-- GitHub - put link to plugfest resources being provided
+- Google - put link to new page with plugfest resources they are providing
+- GitHub - put link to new page with plugfest resources they are providing
 - NSA - ok to put? what bringing?
 - sFractal Consulting - blah blah and link to a package
 - G2 -ok to put? what bringing?
