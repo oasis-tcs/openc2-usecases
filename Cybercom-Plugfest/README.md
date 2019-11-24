@@ -45,13 +45,21 @@ The use case continues with various actions to be taken based on analyzing the S
 See LINKHERE for more info.
 
 ### Fill-in-the-blank Comply to Connect
-blah blah on other similar usecases
+Fill-in-the-blank comply to connect is a set of usecases for other industries that have similar needs to the DoD use case above. The differences will be in the policy in what the 'acceptance' criteria are and what actions will be taken. The common aspect is a request for a SBoM. In some cases the acceptance criteria may be simply that one exists. In another it may be that it is complete and no known CVE's with CVSS>7 are present. Etc. The DoD use case has a set of actions to be taken that other usecases may use a subset of, or may have unique actions of it's own.
 
 include ref 4 links to ntia docs
 
-include healthcare scenario
+blah blah on other several healthcare usecases
 
-include sFractal scenarios
+include transportaton procurement scenario
+
+include manufacturing scenario
+
+include industrial actuator being added scenario
+
+include ISP/CSP scenario
+
+include sFractal home/small-business scenarios
 
 ## Oasis OpenC2 wrt Plugfest/Hackathon
 blah blah on it is open to all and therefore NOT an OASIS meeting where OASIS
