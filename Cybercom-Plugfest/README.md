@@ -30,7 +30,7 @@ the hope is many will and include what they will be bringing to the table:
 - sFractal Consulting - blah blah and link to a package
 - G2 -ok to put? what bringing?
 - AT&T - ok to put? what bringing?
-- Symantec - ok to put? what bringing?
+- Broadcom/Symantec - ok to put? what bringing?
 
 ## What usecases addressed?
 It is not required, but hoped, that attendees will publish use cases of interest
