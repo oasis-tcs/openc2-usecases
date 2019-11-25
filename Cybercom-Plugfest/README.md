@@ -11,7 +11,7 @@ Table of Contents:
   * [4.4 others go here](#44-add-more-here)
 - [5. Oasis OpenC2 wrt Plugfest/Hackathon](#5-oasis-openc2-wrt-plugfesthackathon)
 - [6. Info for Participants](#6-info-for-participants)
-  * [6.1 OpenC2 Plugfest Planning](##61-openc2-plugfest-planning)
+  * [6.1 OpenC2 Plugfest Planning](#61-openc2-plugfest-planning)
   * [6.2 Lessons learned from previous plugfests](#62-lessons-learned-from-previous-plugfests)
 - [7. Resources](#7-resources)
 - [8. Outcomes / Post Mortem](#8-outcomes--post-mortem)
@@ -174,10 +174,19 @@ For more information about OASIS OpenC2 TC:
 - https://www.oasis-open.org/apps/org/workgroup/openc2/members/roster.php is the current roster
 - Next OpenC2 TC meeting is Wednesday 18-December-2019 at 11AM and 9PM Eastern. The two times are to accomadate worldwide attendance and either may be attended.
 - Contact join@oasis-open.org for more information on joining OASIS OpenC2 TC.
-- https://docs.google.com/document/d/1Bz_WXOiYc9vmMS8rNEP1-ZZgPzdeGoZMN6W5W9GSmdU/edit?usp=sharing is a one-stop-shop google doc of appropriate links
+- https://docs.google.com/document/d/1Bz_WXOiYc9vmMS8rNEP1-ZZgPzdeGoZMN6W5W9GSmdU/edit?usp=sharing is a one-stop-shop google doc of appropriate link
+- Various news and blogs about openc2
+  * https://www.hardenstance.com/a-new-window-into-an-openc2-world/
+  * https://www.csoonline.com/article/3386161/openc2-can-accelerate-security-operations-automation-and-orchestration.html
+  * https://www.youtube.com/watch?v=kCooyNJoOrU
+  * https://www.youtube.com/watch?v=HjMm_6mWePw
+  * https://www.cyberscoop.com/openc2-nsa-open-source-cyber-defense/
 
 For more information about DreamPort:
 - https://dreamport.tech
+
+For more information about DoD Comply to Connect:
+- add links
 
 For more information about SBoM (in Comply2Connect usecases):
 - https://www.ntia.gov/sbom - NTIA Software Transparency Multistakeholder workgroup
@@ -185,6 +194,7 @@ For more information about SBoM (in Comply2Connect usecases):
   + https://www.ntia.gov/files/ntia/publications/ntia_sbom_use_cases_roles_benefits-nov2019.pdf - Roles and Benefits of SBoM Across the Supply Chain
   + https://www.ntia.gov/files/ntia/publications/ntia_sbom_formats_and_standards_whitepaper_-_version_20191025.pdf - Survey of Existing SBOM Formats and Standards
   + https://www.ntia.gov/files/ntia/publications/ntia_sbom_healthcare_poc_report_2019_1001.pdf - Healthcare Proof of Concept Report
+
 
 
 
