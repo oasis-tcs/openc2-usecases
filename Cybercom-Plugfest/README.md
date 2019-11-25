@@ -2,14 +2,14 @@
 
 Table of Contents:
 - [About](#about)
-- Is it Plugfest or Hackathon? BOTH!
-- Who is attending?
-- What usecases addressed?
-- Oasis OpenC2 wrt Plugfest/Hackathon
-- Info for Participants
-- Lessons Learned from Previous Plugfests
-- Resources
-- Outcomes / Post Mortem
+- [Is it Plugfest or Hackathon? BOTH!](#is-it-plugfest-or-hackathon-both)
+- [Who is attending?](#who-is-attending)
+- [What usecases addressed?](#what-usecases-addressed)
+- [Oasis OpenC2 wrt Plugfest/Hackathon](#oasis-openc2-wrt-plugfesthackathon)
+- [Info for Participants](#info-for-participants)
+- [Lessons Learned from Previous Plugfests](#lessons-learned-from-previous-plugfests)
+- [Resources](#resources)
+- [Outcomes / Post Mortem](#outcomes--post-mortem)
 
 ## About
 add blah blah
@@ -75,7 +75,33 @@ link to registration page
 
 Please do a pull request against this page and add yourself to participants section
 
+Information about DreamPort:  https://dreamport.tech/about-us.php
+
+### OpenC2 Plugfest Planning
+
+As discussed at the 18 September TC meeting OpenC2 has been offered the opportunity to run a plug fest hosted
+by US Cyber Command in their public, unclassified DreamPort facility. TC members are encouraged to consider
+participation in this event, tentatively planned for the week of 27 January 2020.
+
+TC chair's initial request (19 Sept) for plug fest participation:
+https://lists.oasis-open.org/archives/openc2/201909/msg00009.html
+
+TC chair's request (25 Sept) for plug fest use cases and related information:
+https://lists.oasis-open.org/archives/openc2/201909/msg00015.html
+
+
 ## Lessons Learned from Previous Plugfests
+The CTI TC published lessons learned from their STIX plugfest, which
+included:
+
+**Issue:** Lack of stable/validated schema and data sets that can be used for all clients and servers
+
+**Action:**
+* Define and maintain a package of downloadable JSON schema and test data that all plugfest/interop participants can use before plugfest.
+* Need common sets of data for all to use for testing.
+* Need sets of data that are unique to vendors or use cases that help provide more robust testing.
+
+This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
 ## Resources
 - link to page about Preparation
@@ -95,36 +121,3 @@ since they are not bound by sharing agreement.
 
 Fix beneath this and put somewhere
 ============================
-
-# OpenC2 Plugfest Planning
-
-As discussed at the 18 September TC meeting OpenC2 has been offered the opportunity to run a plug fest hosted
-by US Cyber Command in their public, unclassified DreamPort facility. TC members are encouraged to consider
-participation in this event, tentatively planned for the week of 27 January 2020.
-
-A Tech Talk at DreamPort is planned for early November to provide that community information about OpenC2
-and our plans for the plug fest.
-
-TC chair's initial request (19 Sept) for plug fest participation:
-https://lists.oasis-open.org/archives/openc2/201909/msg00009.html
-
-TC chair's request (25 Sept) for plug fest use cases and related information:
-https://lists.oasis-open.org/archives/openc2/201909/msg00015.html
-
-Information about DreamPort:  https://dreamport.tech/about-us.php
-
-## Preparation
-The CTI TC published lessons learned from their STIX plugfest, which
-included:
-
-**Issue:** Lack of stable/validated schema and data sets that can be used for all clients and servers
-
-**Action:**
-* Define and maintain a package of downloadable JSON schema and test data that all plugfest/interop participants can use before plugfest.
-* Need common sets of data for all to use for testing.
-* Need sets of data that are unique to vendors or use cases that help provide more robust testing.
-
-This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
-
-## Plugfest Use Cases:
-* A. Comply to Connect (C2C)
