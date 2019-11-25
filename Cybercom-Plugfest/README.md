@@ -117,7 +117,3 @@ the OASIS OpenC2 TC. Reminder to review intellectual property considerations
 prior to entering data here,
 particularly for input from non-TC members
 since they are not bound by sharing agreement.
-
-
-Fix beneath this and put somewhere
-============================
