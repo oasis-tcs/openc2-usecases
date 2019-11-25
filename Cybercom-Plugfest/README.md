@@ -11,7 +11,7 @@ Table of Contents:
 - [Resources](#resources)
 - [Outcomes / Post Mortem](#outcomes--post-mortem)
 
-## About
+## 1. About
 
 OpenC2 is a recently released suite of OASIS specifications that define a standard language for command and control of cyber defense technologies.
 OpenC2 will be running a plug fest / hackathon 27-28 January 2020, hosted by US Cyber Command in their public, unclassified DreamPort facility in Columbia, MD.
