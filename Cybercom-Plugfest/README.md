@@ -11,7 +11,7 @@ Table of Contents:
   * [4.4 others go here](#44-add-more-here)
 - [5. Oasis OpenC2 wrt Plugfest/Hackathon](#5-oasis-openc2-wrt-plugfesthackathon)
 - [6. Info for Participants](#6-info-for-participants)
-  * [6.1 Lessons Learned from Previous Plugfests](#61-lessons-learned-from-previous-plugfests)
+  * [6.1 OpenC2 Plugfest Planning](##61-openc2-plugfest-planning)
   * [6.2 Lessons learned from previous plugfests](#62-lessons-learned-from-previous-plugfests)
 - [7. Resources](#7-resources)
 - [8. Outcomes / Post Mortem](#8-outcomes--post-mortem)
