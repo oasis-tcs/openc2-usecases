@@ -1,15 +1,15 @@
 # OpenC2 Plugfest / Hackathon
 
 Table of Contents:
-- [About](#about)
-- [Is it Plugfest or Hackathon? BOTH!](#is-it-plugfest-or-hackathon-both)
-- [Who is attending?](#who-is-attending)
-- [What usecases addressed?](#what-usecases-addressed)
-- [Oasis OpenC2 wrt Plugfest/Hackathon](#oasis-openc2-wrt-plugfesthackathon)
-- [Info for Participants](#info-for-participants)
-- [Lessons Learned from Previous Plugfests](#lessons-learned-from-previous-plugfests)
-- [Resources](#resources)
-- [Outcomes / Post Mortem](#outcomes--post-mortem)
+- [About](#1-about)
+- [Is it Plugfest or Hackathon? BOTH!](#2-is-it-plugfest-or-hackathon-both)
+- [Who is attending?](#3-who-is-attending)
+- [What usecases addressed?](#4-what-usecases-addressed)
+- [Oasis OpenC2 wrt Plugfest/Hackathon](#5-oasis-openc2-wrt-plugfesthackathon)
+- [Info for Participants](#6-info-for-participants)
+- [Lessons Learned from Previous Plugfests](#7-lessons-learned-from-previous-plugfests)
+- [Resources](#8-resources)
+- [Outcomes / Post Mortem](#9-outcomes--post-mortem)
 
 ## 1. About
 
@@ -34,12 +34,12 @@ The plugfest is NOT an OpenC2 meeting for creating/modifying the OpenC2 specific
 although obviously OpenC2 members are welcome to bring suggestions
 back to OASIS official meetings.
 
-## Is it Plugfest or Hackathon? BOTH!
+## 2. Is it Plugfest or Hackathon? BOTH!
 This is both a plugfest (testing interoperability of existing implementations)
 and a hackathon (writing software to meet a need).
 Come prepared to participate in either or both.
 
-## Who is attending?
+## 3. Who is attending?
 Although it is not required to announce if you will be attending,
 the hope is many will and include what they will be bringing to the table:
 - AT&T
@@ -54,26 +54,26 @@ the hope is many will and include what they will be bringing to the table:
 - sFractal Consulting - blah blah and link to page describing raspberry pi's configs that are being brought by sFractal
 - UNCC
 
-## What usecases addressed?
+## 4. What usecases addressed?
 It is not required, but hoped, that attendees will publish use cases of interest
 prior to arriving.
 One of the first orders of business will be a brainstorming session
 to make this list as complete as possible for meeting the attendees needs.
 Immediately following will be scheduling out what to work on during the two days.
 
-### DoD Comply to Connect
+### 4.1 DoD Comply to Connect
 The DoD CIO and the Chief of CYBERCOM have been tasked (Public Law 114-328-DEC. 23, 2016 Sec 1653) with creating a ‘comply to connect’ policy for all DoD networked devices. They consider a software inventory (termed a Software Bill of Materials or SBOM in many industries. See http://ntia.gov/sbom) an integral part of ‘comply to connect’ since you can’t claim compliance if you don’t know what software is present.
 The use case continues with various actions to be taken based on analyzing the SBoM.
 See LINKHERE for more info.
 
-### Fill-in-the-blank Comply to Connect
-Fill-in-the-blank comply to connect is a set of usecases for other industries that have similar needs to the DoD use case above. The differences will be in the policy in what the 'acceptance' criteria are and what actions will be taken. The common aspect is a request for a SBoM. In some cases the acceptance criteria may be simply that one exists. In another it may be that it is complete and no known CVE's with CVSS>7 are present. Etc. The DoD use case has a set of actions to be taken that other usecases may use a subset of, or may have unique actions of it's own.
+### 4.2 Fill-in-the-blank Comply to Connect
+"Fill-in-the-blank comply to connect" is a set of usecases for other industries that have similar needs to the DoD use case above. The differences will be in the policy in what the 'acceptance' criteria are and what actions will be taken. The common aspect is a request for a SBoM. In some cases the acceptance criteria may be simply that one exists. In another it may be that it is complete and no known CVE's with CVSS>7 are present. Etc. The DoD use case has a set of actions to be taken that other usecases may use a subset of, or may have unique actions of it's own.
 
 include ref 4 links to ntia docs
 
 blah blah on other several healthcare usecases
 
-include transportaton procurement scenario
+include transportation procurement scenario
 
 include manufacturing scenario
 
@@ -83,12 +83,18 @@ include ISP/CSP scenario
 
 include sFractal home/small-business scenarios
 
-## Oasis OpenC2 wrt Plugfest/Hackathon
+### 4.3 sFractal IoT Single Packet Authentication
+put in link to page and a quick overview there
+
+### 4.4 add more here
+others are free to put their needs here
+
+## 5. Oasis OpenC2 wrt Plugfest/Hackathon
 blah blah on it is open to all and therefore NOT an OASIS meeting where OASIS
 intellectual property sharing rules apply.
 Get better wording from Chet
 
-## Info for Participants
+## 6. Info for Participants
 The slide decks from the Nov 5th prep meeting
 (attended by ~35 participants including ~7 OpenC2 TC members) for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315.
 
@@ -110,7 +116,7 @@ of the OpenC2 open source repositories.
 
 https://www.oasis-open.org/news/announcements/three-committee-specifications-approved-by-open-command-and-control-openc2-tc has info on the specifications themselves.
 
-### OpenC2 Plugfest Planning
+### 7. OpenC2 Plugfest Planning
 
 As discussed at the 18 September TC meeting OpenC2 has been offered the opportunity to run a plug fest hosted
 by US Cyber Command in their public, unclassified DreamPort facility. TC members are encouraged to consider
@@ -123,7 +129,7 @@ TC chair's request (25 Sept) for plug fest use cases and related information:
 https://lists.oasis-open.org/archives/openc2/201909/msg00015.html
 
 
-## Lessons Learned from Previous Plugfests
+## 8. Lessons Learned from Previous Plugfests
 The CTI TC published lessons learned from their STIX plugfest, which
 included:
 
@@ -136,7 +142,7 @@ included:
 
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
-## Resources
+## 9. Resources
 Plugfest Preparation:
 - add stuff
 
@@ -177,7 +183,7 @@ For more information about SBoM (in Comply2Connect usecases):
 
 
 
-## Outcomes / Post Mortem
+## 10. Outcomes / Post Mortem
 This section is for after the plugfest to document the outcomes relevant to
 the OASIS OpenC2 TC. Reminder to review intellectual property considerations
 prior to entering data here,
