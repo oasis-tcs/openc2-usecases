@@ -43,9 +43,9 @@ Come prepared to participate in either or both.
 Although it is not required to announce if you will be attending,
 the hope is many will and include what they will be bringing to the table:
 - AT&T
-- Broadcom/Symantec - ok to put? what bringing?
+- Broadcom/Symantec - ok to put? will you bring ICDX?
 - Fornetix
-- G2 -ok to put? what bringing?
+- HII-MDIIS/G2 -ok to put? what bringing? What company name?
 - GitHub - put link to new page with plugfest resources they are providing
 - Google - put link to new page with plugfest resources they are providing
 - NineFX
@@ -137,10 +137,43 @@ included:
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
 ## Resources
-- link to page about Preparation
-- links to OpenC2 specs and works in progress
-- links to OpenC2 opensource code
-- pages about potential test scenarios and code-writing sessions
+Plugfest Preparation:
+- add stuff
+
+More on potential test scenarios and code-writing sessions:
+- add page
+
+Approved OpenC2 Specifications:
+- https://docs.oasis-open.org/openc2/oc2ls/v1.0/cs01/oc2ls-v1.0-cs01.html - Open Command and Control (OpenC2) Language Specification Version 1.0 (need to update this with errata once link is published)
+- https://docs.oasis-open.org/openc2/oc2slpf/v1.0/cs01/oc2slpf-v1.0-cs01.html - Open Command and Control (OpenC2) Profile for Stateless Packet Filtering Version 1.0 (need to update this with errata once link is published)
+- https://docs.oasis-open.org/openc2/oc2slpf/v1.0/cs01/oc2slpf-v1.0-cs01.html - Open Command and Control (OpenC2) Profile for Stateless Packet Filtering Version 1.0 (need to update this with errata once link is published)
+
+OpenC2 Specifications in progress:
+- https://docs.google.com/document/d/1yfiZJLL0S7ENu4RMdSVrWmsetlvFUMN2LZwjZ_3bXg0/edit?usp=sharing - Specification for Transfer of OpenC2 Messages via CoAP
+- link to OpenDxl spec?
+- link to what actuator profiles are in progress?
+
+OpenC2 opensource
+- https://github.com/oasis-tcs?utf8=%E2%9C%93&q=openc2&type=&language= are the "TC" repos (ie open for view to all but only editable by TC members) that contain the markdown versions of the approved specifications as well as work in progress
+- https://github.com/oasis-open?utf8=%E2%9C%93&q=openc2-&type=&language= are the "Open" repos (ie plain old open source that anyone can contribute to)
+- https://github.com/OpenC2-org/other-openc2-work is a list of OpenC2 open source that is not hosted on OASIS.
+
+For more information about OASIS OpenC2 TC:
+- https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=openc2 is the TC public page. Note all work of OASIS is open (ie viewable).
+- https://www.oasis-open.org/apps/org/workgroup/openc2/members/roster.php is the current roster
+- Next OpenC2 TC meeting is Wednesday 18-December-2019 at 11AM and 9PM Eastern. The two times are to accomadate worldwide attendance and either may be attended.
+- Contact join@oasis-open.org for more information on joining OASIS OpenC2 TC.
+- https://docs.google.com/document/d/1Bz_WXOiYc9vmMS8rNEP1-ZZgPzdeGoZMN6W5W9GSmdU/edit?usp=sharing is a one-stop-shop google doc of appropriate links
+
+For more information about DreamPort:
+- https://dreamport.tech
+
+For more information about SBoM (in Comply2Connect usecases):
+- https://www.ntia.gov/sbom - NTIA Software Transparency Multistakeholder workgroup
+  + https://www.ntia.gov/files/ntia/publications/framingsbom_20191112.pdf - Framing Software Component Transparency: Establishing a Common Software Bill of Material (SBOM)
+  + https://www.ntia.gov/files/ntia/publications/ntia_sbom_use_cases_roles_benefits-nov2019.pdf - Roles and Benefits of SBoM Across the Supply Chain
+  + https://www.ntia.gov/files/ntia/publications/ntia_sbom_formats_and_standards_whitepaper_-_version_20191025.pdf - Survey of Existing SBOM Formats and Standards
+  + https://www.ntia.gov/files/ntia/publications/ntia_sbom_healthcare_poc_report_2019_1001.pdf - Healthcare Proof of Concept Report
 
 
 
