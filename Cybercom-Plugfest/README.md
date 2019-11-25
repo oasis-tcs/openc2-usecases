@@ -1,7 +1,7 @@
 # OpenC2 Plugfest / Hackathon
 
 Table of Contents:
-- About
+- [About](#about)
 - Is it Plugfest or Hackathon? BOTH!
 - Who is attending?
 - What usecases addressed?
