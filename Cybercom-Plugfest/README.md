@@ -1,12 +1,12 @@
 # OpenC2 Plugfest / Hackathon
 
 Table of Contents:
-- [About](#1-about)
-- [Is it Plugfest or Hackathon? BOTH!](#2-is-it-plugfest-or-hackathon-both)
-- [Who is attending?](#3-who-is-attending)
-- [What usecases addressed?](#4-what-usecases-addressed)
-- [Oasis OpenC2 wrt Plugfest/Hackathon](#5-oasis-openc2-wrt-plugfesthackathon)
-- [Info for Participants](#6-info-for-participants)
+- [1. About](#1-about)
+- [2. Is it Plugfest or Hackathon? BOTH!](#2-is-it-plugfest-or-hackathon-both)
+- [3. Who is attending?](#3-who-is-attending)
+- [4. What usecases addressed?](#4-what-usecases-addressed)
+- [5. Oasis OpenC2 wrt Plugfest/Hackathon](#5-oasis-openc2-wrt-plugfesthackathon)
+- [6. Info for Participants](#6-info-for-participants)
 - [Lessons Learned from Previous Plugfests](#7-lessons-learned-from-previous-plugfests)
 - [Resources](#8-resources)
 - [Outcomes / Post Mortem](#9-outcomes--post-mortem)
@@ -116,7 +116,7 @@ of the OpenC2 open source repositories.
 
 https://www.oasis-open.org/news/announcements/three-committee-specifications-approved-by-open-command-and-control-openc2-tc has info on the specifications themselves.
 
-### 7. OpenC2 Plugfest Planning
+### 6.1 OpenC2 Plugfest Planning
 
 As discussed at the 18 September TC meeting OpenC2 has been offered the opportunity to run a plug fest hosted
 by US Cyber Command in their public, unclassified DreamPort facility. TC members are encouraged to consider
@@ -129,7 +129,7 @@ TC chair's request (25 Sept) for plug fest use cases and related information:
 https://lists.oasis-open.org/archives/openc2/201909/msg00015.html
 
 
-## 8. Lessons Learned from Previous Plugfests
+### 6.2 Lessons Learned from Previous Plugfests
 The CTI TC published lessons learned from their STIX plugfest, which
 included:
 
@@ -142,7 +142,7 @@ included:
 
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
-## 9. Resources
+## 7. Resources
 Plugfest Preparation:
 - add stuff
 
@@ -183,7 +183,7 @@ For more information about SBoM (in Comply2Connect usecases):
 
 
 
-## 10. Outcomes / Post Mortem
+## 8. Outcomes / Post Mortem
 This section is for after the plugfest to document the outcomes relevant to
 the OASIS OpenC2 TC. Reminder to review intellectual property considerations
 prior to entering data here,
