@@ -16,6 +16,8 @@ add blah blah
 
 The plugfest/hackathon is open to all and will be at US CYBERCOM’s “Dream Port” facility in Maryland on Jan 27-28. DreamPort is an unclassified CYBERCOM facility  to foster government/industry innovation. Advance registration is required.
 
+See https://dreamport.tech/event-open-c2-plug-fest-01272820.php for Dreamport Plugfest announcement.
+
 ## Is it Plugfest or Hackathon? BOTH!
 This is both a plugfest (testing interoperability of existing implementations)
 and a hackathon (writing software to meet a need).
