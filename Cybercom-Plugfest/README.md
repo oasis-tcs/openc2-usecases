@@ -42,7 +42,7 @@ Come prepared to participate in either or both.
 ## Who is attending?
 Although it is not required to announce if you will be attending,
 the hope is many will and include what they will be bringing to the table:
-- AT&T - ok to put? what bringing?
+- AT&T
 - Broadcom/Symantec - ok to put? what bringing?
 - Fornetix
 - G2 -ok to put? what bringing?
