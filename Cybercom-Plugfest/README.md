@@ -12,11 +12,27 @@ Table of Contents:
 - [Outcomes / Post Mortem](#outcomes--post-mortem)
 
 ## About
-add blah blah
 
-The plugfest/hackathon is open to all and will be at US CYBERCOM’s “Dream Port” facility in Maryland on Jan 27-28. DreamPort is an unclassified CYBERCOM facility  to foster government/industry innovation. Advance registration is required.
+OpenC2 is a recently released suite of OASIS specifications that define a standard language for command and control of cyber defense technologies.
+OpenC2 will be running a plug fest / hackathon 27-28 January 2020, hosted by US Cyber Command in their public, unclassified DreamPort facility in Columbia, MD.
+The Plug Fest is open to interested participants, regardless of whether they are OASIS members. The DreamPort facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
+Further details and registration information can be found at DreamPort: https://dreamport.tech/event-open-c2-plug-fest-01272820.php
 
-See https://dreamport.tech/event-open-c2-plug-fest-01272820.php for Dreamport Plugfest announcement.
+Integrate once, reuse everywhere.
+Stop having to know the
+syntax of each different product that’s involved in
+today’s complex, multivendor, security operations environment.
+OpenC2 commoditizes the command and control (C2)
+allowing security teams to automate an orchestrated response
+more efficiently, as well as avoiding vendor lock-in.
+
+A goal of the Plug Fest is to execute use cases using OpenC2 and gather lessons learned about interoperability.
+The plugfest aspect is for testing interworking of existing OpenC2 implementations. Let us know what you have and we will work your implementation into the test plans.
+The hackathon aspect is for improving the interworking of existing OpenC2 implementations,  extending existing implementations (e.g., the many OpenC2 open source projects), and/or creating new implementations of OpenC2.
+
+The plugfest is NOT an OpenC2 meeting for creating/modifying the OpenC2 specifications,
+although obviously OpenC2 members are welcome to bring suggestions
+back to OASIS official meetings.
 
 ## Is it Plugfest or Hackathon? BOTH!
 This is both a plugfest (testing interoperability of existing implementations)
@@ -69,15 +85,26 @@ intellectual property sharing rules apply.
 Get better wording from Chet
 
 ## Info for Participants
-The slide decks for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315
+The slide decks from the Nov 5th prep meeting
+(attended by ~35 participants including ~7 OpenC2 TC members) for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315.
 
+The DreamPort calendar announcement is at
 https://dreamport.tech/event-open-c2-plug-fest-01272820.php
+with links to registration.
 
-link to registration page
+OASIS has created a new mail list for the plug fest, openc2-plugfest-2019@lists.oasis-open.org. The list is open to interested parties regardless of OASIS or TC membership.
+See link on DreamPort calendar page to join.
+
+Registration for the event is at https://dreamport.tech/registration-open-c2-plug-fest-0120.php.
 
 Please do a pull request against this page and add yourself to participants section
 
 Information about DreamPort:  https://dreamport.tech/about-us.php
+
+https://github.com/oasis-open?utf8=%E2%9C%93&q=openc2-&type=&language= are some
+of the OpenC2 open source repositories.
+
+https://www.oasis-open.org/news/announcements/three-committee-specifications-approved-by-open-command-and-control-openc2-tc has info on the specifications themselves.
 
 ### OpenC2 Plugfest Planning
 
