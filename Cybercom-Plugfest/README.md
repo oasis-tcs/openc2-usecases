@@ -51,12 +51,15 @@ the hope is many will and include what they will be bringing to the table:
 - Broadcom/Symantec - ok to put? will you bring ICDX?
 - Fornetix
 - HII-MDIIS/G2 -ok to put? what bringing? What company name?
-- GitHub - put link to new page with plugfest resources they are providing
-- Google - put link to new page with plugfest resources they are providing
+- GitHub - providing these [resources](sbom-github.md) for SBoMs and comply to connect
+- Google - providing these [resources](cloud-google.md) to support plugfest
 - NineFX
 - Net Scout
 - NSA - put link to what bringing
-- sFractal Consulting - blah blah and link to page describing raspberry pi's configs that are being brought by sFractal
+- sFractal Consulting - 1 attendee ready to program in erlang, elixir, or python with the following resources:
+  * [Iot Tests](tests-sFractal-IoT.md) - test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's.
+  * [IoT C2C](uc-sFractal-IoT-C2C.md) - IoT comply to connect use case
+  * [here](uc-sFractal-IoT-SPA.md) - Single Packet Authentication IoT use case
 - UNCC
 
 ## 4. What usecases addressed?
@@ -69,16 +72,19 @@ Immediately following will be scheduling out what to work on during the two days
 ### 4.1 DoD Comply to Connect
 The DoD CIO and the Chief of CYBERCOM have been tasked (Public Law 114-328-DEC. 23, 2016 Sec 1653) with creating a ‘comply to connect’ policy for all DoD networked devices. They consider a software inventory (termed a Software Bill of Materials or SBOM in many industries. See http://ntia.gov/sbom) an integral part of ‘comply to connect’ since you can’t claim compliance if you don’t know what software is present.
 The use case continues with various actions to be taken based on analyzing the SBoM.
-See LINKHERE for more info.
+See [here](uc-A-comply-to-connect.md) for more info.
 
 ### 4.2 Fill-in-the-blank Comply to Connect
 "Fill-in-the-blank comply to connect" is a set of usecases for other industries that have similar needs to the DoD use case above. The differences will be in the policy in what the 'acceptance' criteria are and what actions will be taken. The common aspect is a request for a SBoM. In some cases the acceptance criteria may be simply that one exists. In another it may be that it is complete and no known CVE's with CVSS>7 are present. Etc. The DoD use case has a set of actions to be taken that other usecases may use a subset of, or may have unique actions of it's own.
 
-include ref 4 links to ntia docs
+One area that where comply-to-connect has been receiving more attention is healthcare.
+Wannacry caused serious hospital outages in the UK.
+Even thought the health impact was less in the US, there was still significant
+resources expended in determining whether it would be an impact.
+In another healhcare area, the US FDA has given pre-market guidance (govspeak for "do this or we won't approve you") to medical device makers that SBoMs are required.
+OpenC2 offers one mechanism to retrieve the SBoM for use in either of these cases (vulnerability assessment ala Wannacry or regulatory compliance ala FDA).
 
-blah blah on other several healthcare usecases
-
-include transportation procurement scenario
+Supply chain transparency for software is also receiving increased attention in both automotive and pubic transport.
 
 include manufacturing scenario
 
@@ -89,7 +95,7 @@ include ISP/CSP scenario
 include sFractal home/small-business scenarios
 
 ### 4.3 sFractal IoT Single Packet Authentication
-put in link to page and a quick overview there
+See [here](uc-sFractal-IoT-SPA.md) for the Single Packet Authentication usecase proposed by sFractal.
 
 ### 4.4 add more here
 others are free to put their needs here
