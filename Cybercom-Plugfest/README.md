@@ -59,7 +59,7 @@ the hope is many will and include what they will be bringing to the table:
 - sFractal Consulting - 1 attendee ready to program in erlang, elixir, or python with the following resources:
   * [Iot Tests](tests-sFractal-IoT.md) - test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's.
   * [IoT C2C](uc-sFractal-IoT-C2C.md) - IoT comply to connect use case
-  * [here](uc-sFractal-IoT-SPA.md) - Single Packet Authentication IoT use case
+  * [IoT SPA](uc-sFractal-IoT-SPA.md) - Single Packet Authentication IoT use case
 - UNCC
 
 ## 4. What usecases addressed?
