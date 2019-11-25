@@ -5,11 +5,16 @@ Table of Contents:
 - [2. Is it Plugfest or Hackathon? BOTH!](#2-is-it-plugfest-or-hackathon-both)
 - [3. Who is attending?](#3-who-is-attending)
 - [4. What usecases addressed?](#4-what-usecases-addressed)
+  * [4.1 DoD Comply to Connect](#41-dod-comply-to-connect)
+  * [4.2 Fill-in-the-blank Comply to Connect](#42-fill-in-the-blank-comply-to-connect)
+  * [4.3 sFractal IoT Single Packet Authentication](#43-sfractal-iot-single-packet-authentication)
+  * [4.4 others go here](#44-add-more-here)
 - [5. Oasis OpenC2 wrt Plugfest/Hackathon](#5-oasis-openc2-wrt-plugfesthackathon)
 - [6. Info for Participants](#6-info-for-participants)
-- [Lessons Learned from Previous Plugfests](#7-lessons-learned-from-previous-plugfests)
-- [Resources](#8-resources)
-- [Outcomes / Post Mortem](#9-outcomes--post-mortem)
+  * [6.1 Lessons Learned from Previous Plugfests](#61-lessons-learned-from-previous-plugfests)
+  * [6.2 Lessons learned from previous plugfests](#62-lessons-learned-from-previous-plugfests)
+- [7. Resources](#7-resources)
+- [8. Outcomes / Post Mortem](#8-outcomes--post-mortem)
 
 ## 1. About
 
