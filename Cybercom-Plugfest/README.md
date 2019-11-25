@@ -42,13 +42,17 @@ Come prepared to participate in either or both.
 ## Who is attending?
 Although it is not required to announce if you will be attending,
 the hope is many will and include what they will be bringing to the table:
-- Google - put link to new page with plugfest resources they are providing
-- GitHub - put link to new page with plugfest resources they are providing
-- NSA - ok to put? what bringing?
-- sFractal Consulting - blah blah and link to a package
-- G2 -ok to put? what bringing?
 - AT&T - ok to put? what bringing?
 - Broadcom/Symantec - ok to put? what bringing?
+- Fornetix
+- G2 -ok to put? what bringing?
+- GitHub - put link to new page with plugfest resources they are providing
+- Google - put link to new page with plugfest resources they are providing
+- NineFX
+- Net Scout
+- NSA - put link to what bringing
+- sFractal Consulting - blah blah and link to page describing raspberry pi's configs that are being brought by sFractal
+- UNCC
 
 ## What usecases addressed?
 It is not required, but hoped, that attendees will publish use cases of interest
