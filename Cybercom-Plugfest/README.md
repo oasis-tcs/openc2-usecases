@@ -35,9 +35,8 @@ A goal of the Plug Fest is to execute use cases using OpenC2 and gather lessons 
 The plugfest aspect is for testing interworking of existing OpenC2 implementations. Let us know what you have and we will work your implementation into the test plans.
 The hackathon aspect is for improving the interworking of existing OpenC2 implementations,  extending existing implementations (e.g., the many OpenC2 open source projects), and/or creating new implementations of OpenC2.
 
-The plugfest is NOT an OpenC2 meeting for creating/modifying the OpenC2 specifications,
-although obviously OpenC2 members are welcome to bring suggestions
-back to OASIS official meetings.
+The plugfest is not a meeting of the OASIS OpenC2 Technical Commmittee. It does not count towards voting rights for members of the OpenC2 TC. No work will be done on the OpenC2 specifications themselves
+although OpenC2 members are welcome to bring inspirations or suggestions from the plugfest to the TC. 
 
 ## 2. Is it Plugfest or Hackathon? BOTH!
 This is both a plugfest (testing interoperability of existing implementations)
@@ -100,10 +99,10 @@ See [here](uc-sFractal-IoT-SPA.md) for the Single Packet Authentication usecase 
 ### 4.4 add more here
 others are free to put their needs here
 
-## 5. Oasis OpenC2 wrt Plugfest/Hackathon
-blah blah on it is open to all and therefore NOT an OASIS meeting where OASIS
-intellectual property sharing rules apply.
-Get better wording from Chet
+## 5. OASIS OpenC2 TC relationship to Plugfest/Hackathon
+The OpenC2 plugfest/hackathon is open to all interested participants whether OASIS members or not, and therefore is NOT a meeting of the Technical Committee itself. The OASIS rules governing TC meetings, including provisions of the OASIS IPR policy, do not apply and any outputs from the event are not 'contributions' as defined in OASIS rules. Members of the TC who wish to formally contribute any outputs from the event to the TC must (as with any contribution) be sure that they have sufficient rights in the material to do so. 
+
+OASIS and the OpenC2 TC welcome participation by all interested parties. Participants who are not OASIS members but are interested in joining in the work being done by the TC are welcome to contact the event chairs for information on the opportunities available. 
 
 ## 6. Info for Participants
 The slide decks from the Nov 5th prep meeting
