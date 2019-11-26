@@ -166,9 +166,11 @@ Approved OpenC2 Specifications:
 - https://docs.oasis-open.org/openc2/oc2slpf/v1.0/cs01/oc2slpf-v1.0-cs01.html - Open Command and Control (OpenC2) Profile for Stateless Packet Filtering Version 1.0 (need to update this with errata once link is published)
 
 OpenC2 Specifications in progress:
-- https://docs.google.com/document/d/1yfiZJLL0S7ENu4RMdSVrWmsetlvFUMN2LZwjZ_3bXg0/edit?usp=sharing - Specification for Transfer of OpenC2 Messages via CoAP
-- link to OpenDxl spec?
-- link to what actuator profiles are in progress?
+- https://docs.google.com/document/d/1yfiZJLL0S7ENu4RMdSVrWmsetlvFUMN2LZwjZ_3bXg0 - Specification for Transfer of OpenC2 Messages via CoAP
+- https://github.com/oasis-tcs/openc2-transf-odxl - OpenC2 over OpenDxl spec
+- https://github.com/oasis-tcs/openc2-transf-mqtt - OpenC2 over MQTT spec
+- https://github.com/oasis-open/openc2-custom-aps - Customer Actuator Profiles for anti-malware, email gateway, stateful packet filter. CAPs are precusors to AP specs
+- https://github.com/oasis-open/openc2-iosacl-adapter - tool for converting Cisco Ios commands to OpenC2 commands. Not a spec per se but content will lead to stateful firewall AP specs
 
 OpenC2 opensource
 - https://github.com/oasis-tcs?utf8=%E2%9C%93&q=openc2&type=&language= are the "TC" repos (ie open for view to all but only editable by TC members) that contain the markdown versions of the approved specifications as well as work in progress
