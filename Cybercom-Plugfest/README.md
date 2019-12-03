@@ -13,6 +13,7 @@ Table of Contents:
 - [6. Info for Participants](#6-info-for-participants)
   * [6.1 OpenC2 Plugfest Planning](#61-openc2-plugfest-planning)
   * [6.2 Lessons learned from previous plugfests](#62-lessons-learned-from-previous-plugfests)
+  * [6.3 FAQ](#63-faq)
 - [7. Resources](#7-resources)
 - [8. Outcomes / Post Mortem](#8-outcomes--post-mortem)
 
@@ -151,6 +152,17 @@ included:
 * Need sets of data that are unique to vendors or use cases that help provide more robust testing.
 
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
+
+### 6.3 FAQ
+- Will WiFi be provided? More than one SSID? What networking details?
+  * ????
+- Will wired ethernet be provided? More than one network? What networking details?
+- DHCP or Static IP or choice-of-either? Will IP addresses (or at least ranges) be available prior to arriving to allow preconfiguration (eg only allow access from these ranges)
+- IPV4? IPV6?
+- Will our devices be able to reach the internet? Will ip's/ports need to be prearranged to get thru firewalls?
+- Will our devices be reachable from the internet? Will ip's/ports need to be prearranged to get thru firewalls?
+- Will whiteboards be provided?
+- Will projector be provided?
 
 ## 7. Resources
 Plugfest Preparation:
