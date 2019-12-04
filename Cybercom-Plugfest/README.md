@@ -62,6 +62,25 @@ the hope is many will and include what they will be bringing to the table:
   * [IoT SPA](uc-sFractal-IoT-SPA.md) - Single Packet Authentication IoT use case
 - UNCC
 
+
+
+  | PARTICIPANT |  DESCRIPTION |  USE CASE |  FUNCTION/ ACTIONS |  CONSUMER OR PRODUCER |  POC |  LINK |
+  |-------------|--------------|------------------|---------------------|----------|-----------|-----------|
+  | AT&T | | Cloud based firewall use case | Commands TBD, but will include DENY and ALLOW | Both | Michael Stair||
+  | BluVector | Determines the probability of a file being malicious (or benign) | | None at this time, but potential actions include SCAN, UPDATE| Consumer | Larry Gloss ||
+  | Clear Edge | Integration and System Engineering | | TBD | TBD | Producer ||
+  | Fornetix| Key Orchestration | The Orchestrator will send commands and receive responses from an entity that uses the KMIP standard to manage cypto systems.  From the OpenC2 perspective, the KMIP is the actuator and KMIP abstracts the actual key management from the orchestrator | CREATE, SET, DENY, ALLOW | Both | TBA | |
+  | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actoins include QUERY | Consumer| Brendan O'Connor||
+  | GitHub | Analytic that queries code for a given vulnerabilty (and its varients)| | QUERY | Consumer | Xavier René-Corail||
+  | Google | Google Cloud Platform and Cloud based firewall| NA| Cloud based firewall. Commands TBD but will include DENY and ALLOW | Consumer | Jason Callaway ||
+  |JHU/APL | Integrator | MOSAIC| Will need QUERY, DENY, START, UPDATE, CREATE | Both |||
+  |NSA| Agency within DOD | Comply to Connect | will need QUERY, SCAN, UPDATE, CONTAIN | NA| Joe Brule ||
+  |s-fractal|Test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's to be IoT devices| usecases documented at https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/tests-sFractal-IoT.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-C2C.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-SPA.md | QUERY, ALLOW | Consumer| Duncan Sparrell||
+  | Symantec| Multiple Cyber Security Products | Endpoint Remediation | OpenC2 Integrated in the ICDX product|Consumer| Brian Berliner||
+  |University of Oslo| Academia | Coordinated Response | Implemented the SLPF version 1.0 into the acladapter and implemented a custom actuator profile for some of the cisco poc functions| Both |Vasileios Mavroeidis||
+  
+
+
 ## 4. What usecases addressed?
 It is not required, but hoped, that attendees will publish use cases of interest
 prior to arriving.
