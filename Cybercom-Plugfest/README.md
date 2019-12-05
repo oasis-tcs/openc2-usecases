@@ -69,8 +69,7 @@ the hope is many will and include what they will be bringing to the table:
   |-------------|--------------|------------------|---------------------|----------|-----------|-----------|
   | AT&T | | Cloud based firewall use case | Commands TBD, but will include DENY and ALLOW | Both | Michael Stair||
   | BluVector | Determines the probability of a file being malicious (or benign) | | None at this time, but potential actions include SCAN, UPDATE| Consumer | Larry Gloss ||
-  | Clear Edge | Integration and System Engineering | | TBD | TBD | Producer ||
-  | Draper | Active Cyber Defense of Critical Infastructure (ACDCI) | | Various | Both | Mike Ridge ||
+  | ClearEdge | Integration and System Engineering | TBD | TBD | Producer |Tina Coleman (tcoleman@clearedgeit.com)||
   | Fornetix| Key Orchestration | The Orchestrator will send commands and receive responses from an entity that uses the KMIP standard to manage cypto systems.  From the OpenC2 perspective, the KMIP is the actuator and KMIP abstracts the actual key management from the orchestrator | CREATE, SET, DENY, ALLOW | Both | TBA | |
   | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actoins include QUERY | Consumer| Brendan O'Connor||
   | GitHub | Analytic that queries code for a given vulnerabilty (and its varients)| | QUERY | Consumer | Xavier René-Corail||
@@ -129,7 +128,25 @@ OASIS and the OpenC2 TC welcome participation by all interested parties. Partici
 
 ## 6. Info for Participants
 The slide decks from the Nov 5th prep meeting
-(attended by ~35 participants including ~7 OpenC2 TC members) for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315.
+(attended by ~35 participants including ~7 OpenC2 TC members) 
+for the Dreamport Plugfest/hackathon are posted at OASIS
+
+* **OpenC2 & Plug Fest Overview and Resources** (Joe Brule / David Lemire)  
+https://www.oasis-open.org/committees/document.php?document_id=66231&wg_abbrev=openc2  
+
+* **Symantec ICDx 1.3.1** (Brian Berliner)  
+https://www.oasis-open.org/committees/document.php?document_id=66232&wg_abbrev=openc2  
+
+* **MOSAICS ICS Use Case** (Harley Parkes)  
+https://www.oasis-open.org/committees/document.php?document_id=66233&wg_abbrev=openc2  
+
+* **Tesla Powerwall Proxy** (Efrain Ortiz)  
+https://www.oasis-open.org/committees/document.php?document_id=66234&wg_abbrev=openc2  
+
+* **OpenC2 and KMIP** (Chuck White)  
+https://www.oasis-open.org/committees/document.php?document_id=66235&wg_abbrev=openc2 
+
+Note: There were no slides for Mike Ridge's presentation of a use case for RF monitoring at the Denver Airport.
 
 The DreamPort calendar announcement is at
 https://dreamport.tech/event-open-c2-plug-fest-01272820.php
