@@ -50,6 +50,7 @@ the hope is many will and include what they will be bringing to the table:
 - AT&T
 - Broadcom/Symantec - ok to put? will you bring ICDX?
 - Fornetix
+- Draper - Active Cyber Defense of Critical Infastructure (ACDCI)
 - HII - OpenC2 Integration Framework (OIF) [Orchestrator](https://github.com/oasis-open/openc2-oif-orchestrator) and [Device](https://github.com/oasis-open/openc2-oif-device)
 - GitHub - providing these [resources](sbom-github.md) for SBoMs and comply to connect
 - Google - providing these [resources](cloud-google.md) to support plugfest
@@ -69,6 +70,7 @@ the hope is many will and include what they will be bringing to the table:
   | AT&T | | Cloud based firewall use case | Commands TBD, but will include DENY and ALLOW | Both | Michael Stair||
   | BluVector | Determines the probability of a file being malicious (or benign) | | None at this time, but potential actions include SCAN, UPDATE| Consumer | Larry Gloss ||
   | Clear Edge | Integration and System Engineering | | TBD | TBD | Producer ||
+  | Draper | Active Cyber Defense of Critical Infastructure (ACDCI) | | Various | Both | Mike Ridge ||
   | Fornetix| Key Orchestration | The Orchestrator will send commands and receive responses from an entity that uses the KMIP standard to manage cypto systems.  From the OpenC2 perspective, the KMIP is the actuator and KMIP abstracts the actual key management from the orchestrator | CREATE, SET, DENY, ALLOW | Both | TBA | |
   | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actoins include QUERY | Consumer| Brendan O'Connor||
   | GitHub | Analytic that queries code for a given vulnerabilty (and its varients)| | QUERY | Consumer | Xavier René-Corail||
