@@ -71,8 +71,8 @@ the hope is many will and include what they will be bringing to the table:
   | BluVector | Determines the probability of a file being malicious (or benign) | | None at this time, but potential actions include SCAN, UPDATE| Consumer | Larry Gloss ||
   | ClearEdge | Integration and System Engineering | TBD | TBD | Producer |Tina Coleman (tcoleman@clearedgeit.com)||
   | Fornetix| Key Orchestration | The Orchestrator will send commands and receive responses from an entity that uses the KMIP standard to manage cypto systems.  From the OpenC2 perspective, the KMIP is the actuator and KMIP abstracts the actual key management from the orchestrator | CREATE, SET, DENY, ALLOW | Both | TBA | |
-  | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actoins include QUERY | Consumer| Brendan O'Connor||
-  | GitHub | Analytic that queries code for a given vulnerabilty (and its varients)| | QUERY | Consumer | Xavier René-Corail||
+  | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actions include QUERY | Consumer| Brendan O'Connor||
+  | GitHub | CodeQL: Analytic that queries code for a given vulnerabilty (and its variants)| | QUERY | Consumer | Xavier René-Corail||
   | Google | Google Cloud Platform and Cloud based firewall| NA| Cloud based firewall. Commands TBD but will include DENY and ALLOW | Consumer | Jason Callaway ||
   | HII | OpenC2 Integration Framework (OIF)| Providing a platform for other's use cases| Various | Both | Danny Martinez ||
   |JHU/APL | Integrator | MOSAIC| Will need QUERY, DENY, START, UPDATE, CREATE | Both |||
