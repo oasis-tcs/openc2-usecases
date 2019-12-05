@@ -126,7 +126,25 @@ OASIS and the OpenC2 TC welcome participation by all interested parties. Partici
 
 ## 6. Info for Participants
 The slide decks from the Nov 5th prep meeting
-(attended by ~35 participants including ~7 OpenC2 TC members) for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315.
+(attended by ~35 participants including ~7 OpenC2 TC members) 
+for the Dreamport Plugfest/hackathon are posted at OASIS
+
+* **OpenC2 & Plug Fest Overview and Resources** (Joe Brule / David Lemire)  
+https://www.oasis-open.org/committees/document.php?document_id=66231&wg_abbrev=openc2  
+
+* **Symantec ICDx 1.3.1** (Brian Berliner)  
+https://www.oasis-open.org/committees/document.php?document_id=66232&wg_abbrev=openc2  
+
+* **MOSAICS ICS Use Case** (Harley Parkes)  
+https://www.oasis-open.org/committees/document.php?document_id=66233&wg_abbrev=openc2  
+
+* **Tesla Powerwall Proxy** (Efrain Ortiz)  
+https://www.oasis-open.org/committees/document.php?document_id=66234&wg_abbrev=openc2  
+
+* **OpenC2 and KMIP** (Chuck White)  
+https://www.oasis-open.org/committees/document.php?document_id=66235&wg_abbrev=openc2 
+
+Note: There were no slides for Mike Ridge's presentation of a use case for RF monitoring at the Denver Airport.
 
 The DreamPort calendar announcement is at
 https://dreamport.tech/event-open-c2-plug-fest-01272820.php
