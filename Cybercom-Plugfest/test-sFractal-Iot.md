@@ -4,16 +4,19 @@ Duncan needs to put more stuff here.
 Table of Contents:
 - TL;DR
 - Hardware
+  * Raspberry Pi Zero
+  * Raspberry Pi 3
+  * Raspberry Pi 4
 - Software
-  - Blinky MicroSD
-  - Blinky-SBoM MicroSD
-  - Blinky-SBoM-Phoenix MicroSD
-  - Blinky-SBoM-OpenC2 MicroSD
-  - Sensor with SPA microSD
-  - Actuator with SPA MicroSD
-  - Pi-Hole with OpenC2 MicroSD
-  - OpenC2-enabled pfSense MicroSD
-  - OpenC2-enabled SNORT IDS MicroSD
+  * Blinky MicroSD
+  * Blinky-SBoM MicroSD
+  * Blinky-SBoM-Phoenix MicroSD
+  * Blinky-SBoM-OpenC2 MicroSD
+  * Sensor with SPA microSD
+  * Actuator with SPA MicroSD
+  * Pi-Hole with OpenC2 MicroSD
+  * OpenC2-enabled pfSense MicroSD
+  * OpenC2-enabled SNORT IDS MicroSD
 - Test scenarios
   * blinky/sensor/actuator Comply2Connect "get SBoM"
   * Sensor "change settings"
@@ -28,6 +31,14 @@ TL;DR - indeterminate number of Raspberry Pi's of various flavors (zero, 3, 4) w
 
 ## Hardware
 Duncan needs to put more stuff here on what he's bringing
+### Raspberry Pi Zero
+blah blah ref material + how many bringing + how expect to network
+### Raspberry Pi 3
+blah blah ref material + how many bringing + how expect to network
+### Raspberry Pi 4
+blah blah ref material + how many bringing + how expect to network
+### Peripheral stuff
+Figure outwhat to bring for demo so can see affect
 
 ## Software
 
