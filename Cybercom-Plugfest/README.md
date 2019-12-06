@@ -77,6 +77,7 @@ the hope is many will and include what they will be bringing to the table:
   |NSA| Agency within DOD | Comply to Connect | will need QUERY, SCAN, UPDATE, CONTAIN | NA| Joe Brule ||
   |s-fractal|Test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's to be IoT devices| usecases documented at https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/tests-sFractal-IoT.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-C2C.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-SPA.md | QUERY, ALLOW | Consumer| Duncan Sparrell||
   | Symantec| Multiple Cyber Security Products | Endpoint Remediation | OpenC2 Integrated in the ICDX product|Consumer| Brian Berliner||
+  |United States Army | Unattended sensors, UAV and UTV platforms| RF situational awareness and response| TBD. SOme of hte actions include: SCAN, DELETE, CREATE, LOCATE, DENY, ALLOW. Some of the actuators include RF Transmitter (jamming signals), RF receivers (collect signals of interest) Key management, laser blinders, analytic engines (determine line of bearing) | Both| Mike Ridge||
   |University of Oslo| Academia | Coordinated Response | Implemented the SLPF version 1.0 into the acladapter and implemented a custom actuator profile for some of the cisco poc functions| Both |Vasileios Mavroeidis||
   
 
