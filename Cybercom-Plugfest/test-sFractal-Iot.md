@@ -55,13 +55,16 @@ Blinky is the "Hello World" of Nerves IoT - it just blinks the LED on the Raspbe
 Nerves (https://nerves-project.org/) is for crafting and deploying bulletproof embedded software in Elixir or Erlang.
 
 ### 3.2 Blinky-SBoM MicroSD
-Blinky with SBoM software included as part of creating Blinky so you have the SBoM for Blinky. Similar to Blinky it is only or A/B testing and is step 2 in getting to Blinky-SBoM-OC2. It uses the sbom package on Hex (https://github.com/voltone/sbom).
+Blinky with SBoM software included as part of creating Blinky so you have the SBoM for Blinky. Similar to Blinky it is only for A/B testing and is step 2 in getting to Blinky-SBoM-OC2. It uses the sbom package on Hex (https://github.com/voltone/sbom).
 
 ### 3.3 Blinky-SBoM-Phoenix MicroSD
-...
+Blinky with SBoM and Phoenix software included. Phoenix is a webserver which will be used for OpenC2 API. Similar to Blinky, Blinky-SBoM, this is only for A/B testing and is step 3 in getting to Blinky-SBoM-OC2. For more on Phoenix see https://www.phoenixframework.org.
+
 
 ### 3.4 Blinky-SBoM-OpenC2 MicroSD
-...
+This builds on 3.3 Blinky-SBoM-Phoenix to include a HTTPS OpenC2 transport connection carrying OpenC2 commands to this custom Actuator. The OpenC2 actuator profiles are:
+- Https Api Helloworld Actuator (HAHA) is a very simple actuator that is conformant with the OpenC2 Language Specification but does no actual security functions. It has a Custom Actuator Profile (CAP) and will respond to the query openc2 command with it's profile and schema. It also responds to a custom query extension "query Hello World" with "Hello World" - but that is all it does.
+- SBoM is the (currently custom, but hopefully will be standardized) Actuator Profile to respond to the QUERY SBoM command with a Software Bill of Materials (SBoM) for the entire actuator.
 
 ### 3.5 Sensor with SPA microSD
 blinky but with a psuedo-sensor (switch? thermometer? accelerometer?).
