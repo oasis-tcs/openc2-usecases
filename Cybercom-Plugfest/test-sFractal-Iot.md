@@ -2,34 +2,34 @@
 Duncan needs to put more stuff here.
 
 Table of Contents:
-- [1. TL;DR](#1-tldr)
-- [2. Hardware](#2-hardware)
-  * 2.1 Raspberry Pi Zero
-  * 2.2 Raspberry Pi 3
-  * 2.3 Raspberry Pi 4
+[1. TL;DR](#1-tldr)
+[2. Hardware](#2-hardware)
+* 2.1 Raspberry Pi Zero
+* 2.2 Raspberry Pi 3
+* 2.3 Raspberry Pi 4
   ...
-- [3. Software](#3-software)
-  * 3.1 Blinky MicroSD
-  * 3.2 Blinky-SBoM MicroSD
-  * 3.3 Blinky-SBoM-Phoenix MicroSD
-  * 3.4 Blinky-SBoM-OpenC2 MicroSD
-  * 3.5 Sensor with SPA microSD
-  * 3.6 Actuator with SPA MicroSD
-  * 3.7 Pi-Hole with OpenC2 MicroSD
-  * 3.8 OpenC2-enabled pfSense MicroSD
-  * 3.9 OpenC2-enabled SNORT IDS MicroSD
-  * 3.10 IoTivity microSD
-  * 3.11 IoTivity-SBoM microSD
-  * 3.12 IoTivity-SBoM-OpenC2 microSD
+[3. Software](#3-software)
+* 3.1 Blinky MicroSD
+* 3.2 Blinky-SBoM MicroSD
+* 3.3 Blinky-SBoM-Phoenix MicroSD
+* 3.4 Blinky-SBoM-OpenC2 MicroSD
+* 3.5 Sensor with SPA microSD
+* 3.6 Actuator with SPA MicroSD
+* 3.7 Pi-Hole with OpenC2 MicroSD
+* 3.8 OpenC2-enabled pfSense MicroSD
+* 3.9 OpenC2-enabled SNORT IDS MicroSD
+* 3.10 IoTivity microSD
+* 3.11 IoTivity-SBoM microSD
+* 3.12 IoTivity-SBoM-OpenC2 microSD
   ...
-- [4. Test Scenarios](#4-test-scenarios)
-  * 4.1 blinky/sensor/actuator Comply2Connect "get SBoM"
-  * 4.2 Sensor "change settings"
-  * 4.3 Actuator "change settings"
-  * 4.4 Pi-Hole "blackhole a subdomain"
-  * 4.5 pfSense "add firewall rule"
-  * 4.6 Snort "increase logging"
-  * 4.7 IoTivity
+[4. Test Scenarios](#4-test-scenarios)
+* 4.1 blinky/sensor/actuator Comply2Connect "get SBoM"
+* 4.2 Sensor "change settings"
+* 4.3 Actuator "change settings"
+* 4.4 Pi-Hole "blackhole a subdomain"
+* 4.5 pfSense "add firewall rule"
+* 4.6 Snort "increase logging"
+* 4.7 IoTivity
   ...
 
 
