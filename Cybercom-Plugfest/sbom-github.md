@@ -31,16 +31,21 @@ The use cases for SBoM can be found in the "Roles and Benefits ..." document. Th
 - a non-compliant SBoM (e.g. only 'first-hop' instead of the 'complete' SBoM required by the FDA pre-market guidance)
 - any software components with a pedigree to the DPRK
 
-All of the above require comparing the returned SBoM with data stored in the querying system.
+All of the above require comparing the returned SBoM with data stored in the querying system. It is proposed to include an 'SBoM' feature in the query:features command to obtain the SBoM.
 
 ## Command/Response
 
 - action: query
-- target: features : sbom
+- target: features : "sbom"
   * sbom not currently a feature in the 1.0 Language but proposed to be added
-- args: sbom
-  * sbom not currently an arg in the 1.0 Language but proposed to be added with the type sbom_args which consists of a list of acceptable SBoM formats for the return in priority order. Only one SBoM shall be returned if the consumer has the capability to return more than one format. An empty list means the consumer can choose the format to return
-  * sbom_args = "swid", "sdpx", "cyclonedx"
+- args: "sbom_type" not currently an arg in the 1.0 Language but proposed to be added with the type consists of a list of acceptable SBoM formats for the return in priority order. Only one SBoM shall be returned if the consumer has the capability to return more than one format. An empty list means the consumer can choose the format to return
+  * "sbom_type" = "swid", "sdpx", "cyclonedx"
+- response: "sbom_type" (which one of "swid", "sdpx", "cyclonedx" from args sbom_type)
+- response: "sbom_depth" not currently a response in the 1.0 Language but proposed to be added. sbom_depth is one of:
+  * "complete" - all of the components, and all subcomponents recursively, are included
+  * "unknown" - all components and subcomponents are attempted to be included but some subcomponents did not have SBoMs so there is incomplete information on some components or subcomponents
+  * "one-hop" - just the top level components. The user is expected to look up the subcomponents themselves. A more complete SBoM is preferred but one-hop is better than none
+- response: "manifest" not currently a response in the 1.0 Language but proposed to be added. This is the actual SBoM in machine readable format
 
   Example JSON command:
 ```JSON
@@ -50,7 +55,7 @@ All of the above require comparing the returned SBoM with data stored in the que
       "features": ["sbom"]
       },
     "args": {
-      "sbom_args": ["cyclonedx", "spdx", "swid"]
+      "sbom_type": ["cyclonedx", "spdx", "swid"]
     }
   }
 ```
@@ -60,7 +65,11 @@ An example reply might be:
 ```JSON
 {
     "status": 200,
-    "results": <?xml version="1.0"?><bom serialNumber="9e253f92-4e1c-497e-8f87-50730d24f18a" xmlns="http://cyclonedx.org/schema/bom/1.1"><components><component type="library"><description>Nerves System BR - Buildroot based build platform for Nerves Systems</description><hashes><hash alg="SHA-256">e3fda6bc49f8e3662d37355aad88c0839296597c0b6f6653d21967db1890b038</hash></hashes><licenses><license><id>Apache-2.0</id></license><license><name>GPLv2</name></license></licenses><name>nerves_system_br</name><purl>pkg:hex/nerves_system_br@1.9.5</purl><version>1.9.5</version></component><component type="library"><description>Nerves - Create firmware for embedded devices like Raspberry Pi, BeagleBone Black, and more</description><hashes><hash alg="SHA-256">07079342db3a03d19694118a93f220359fbd94b6e174b98d1ea2709db9e81da9</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>nerves</name><purl>pkg:hex/nerves@1.5.1</purl><version>1.5.1</version></component><component type="library"><description>Socket handling library for Elixir</description><hashes><hash alg="SHA-256">98a2ab20ce17f95fb512c5cadddba32b57273e0d2dba2d2e5f976c5969d0c632</hash></hashes><licenses><license><id>WTFPL</id></license></licenses><name>socket</name><purl>pkg:hex/socket@0.3.13</purl><version>0.3.13</version></component><component type="library"><description>Read and write to U-Boot environment blocks</description><hashes><hash alg="SHA-256">b01e3ec0973e99473234f27839e29e63b5b81eba6a136a18a78d049d4813d6c5</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>uboot_env</name><purl>pkg:hex/uboot_env@0.1.1</purl><version>0.1.1</version></component><component type="library"><description>Nerves Toolchain CTNG - Toolchain Platform</description><hashes><hash alg="SHA-256">452f8589c1a58ac787477caab20a8cfc6671e345837ccc19beefe49ae35ba983</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>nerves_toolchain_ctng</name><purl>pkg:hex/nerves_toolchain_ctng@1.6.0</purl><version>1.6.0</version></component><component type="library"><description>A ring buffer backend for Elixir Logger with IO streaming.</description><hashes><hash alg="SHA-256">b1baddc269099b2afe2ea3a87b8e2b71e57331c0000038ae55090068aac679db</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>ring_logger</name><purl>pkg:hex/ring_logger@0.8.0</purl><version>0.8.0</version></component><component type="library"><description>Nerves System Linter - Lint Nerves System Defconfigs.</description><hashes><hash alg="SHA-256">84e0f63c8ac196b16b77608bbe7df66dcf352845c4e4fb394bffd2b572025413</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>nerves_system_linter</name><purl>pkg:hex/nerves_system_linter@0.3.0</purl><version>0.3.0</version></component><component type="library"><description>DNS library for Elixir using `inet_dns` module.
-
+    "results": {
+      "sbom_type" : "cyclonedx",
+      "sbom_depth" : "one-hop",
+      "manifest" : {
+    <?xml version="1.0"?><bom serialNumber="9e253f92-4e1c-497e-8f87-50730d24f18a" xmlns="http://cyclonedx.org/schema/bom/1.1"><components><component type="library"><description>Nerves System BR - Buildroot based build platform for Nerves Systems</description><hashes><hash alg="SHA-256">e3fda6bc49f8e3662d37355aad88c0839296597c0b6f6653d21967db1890b038</hash></hashes><licenses><license><id>Apache-2.0</id></license><license><name>GPLv2</name></license></licenses><name>nerves_system_br</name><purl>pkg:hex/nerves_system_br@1.9.5</purl><version>1.9.5</version></component><component type="library"><description>Nerves - Create firmware for embedded devices like Raspberry Pi, BeagleBone Black, and more</description><hashes><hash alg="SHA-256">07079342db3a03d19694118a93f220359fbd94b6e174b98d1ea2709db9e81da9</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>nerves</name><purl>pkg:hex/nerves@1.5.1</purl><version>1.5.1</version></component><component type="library"><description>Socket handling library for Elixir</description><hashes><hash alg="SHA-256">98a2ab20ce17f95fb512c5cadddba32b57273e0d2dba2d2e5f976c5969d0c632</hash></hashes><licenses><license><id>WTFPL</id></license></licenses><name>socket</name><purl>pkg:hex/socket@0.3.13</purl><version>0.3.13</version></component><component type="library"><description>Read and write to U-Boot environment blocks</description><hashes><hash alg="SHA-256">b01e3ec0973e99473234f27839e29e63b5b81eba6a136a18a78d049d4813d6c5</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>uboot_env</name><purl>pkg:hex/uboot_env@0.1.1</purl><version>0.1.1</version></component><component type="library"><description>Nerves Toolchain CTNG - Toolchain Platform</description><hashes><hash alg="SHA-256">452f8589c1a58ac787477caab20a8cfc6671e345837ccc19beefe49ae35ba983</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>nerves_toolchain_ctng</name><purl>pkg:hex/nerves_toolchain_ctng@1.6.0</purl><version>1.6.0</version></component><component type="library"><description>A ring buffer backend for Elixir Logger with IO streaming.</description><hashes><hash alg="SHA-256">b1baddc269099b2afe2ea3a87b8e2b71e57331c0000038ae55090068aac679db</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>ring_logger</name><purl>pkg:hex/ring_logger@0.8.0</purl><version>0.8.0</version></component><component type="library"><description>Nerves System Linter - Lint Nerves System Defconfigs.</description><hashes><hash alg="SHA-256">84e0f63c8ac196b16b77608bbe7df66dcf352845c4e4fb394bffd2b572025413</hash></hashes><licenses><license><id>Apache-2.0</id></license></licenses><name>nerves_system_linter</name><purl>pkg:hex/nerves_system_linter@0.3.0</purl><version>0.3.0</version></component><component type="library"><description>DNS library for Elixir using `inet_dns` module.
+  }
 }
 ```
