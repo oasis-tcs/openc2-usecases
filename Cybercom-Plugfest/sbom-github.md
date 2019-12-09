@@ -31,7 +31,7 @@ All of the above require comparing the returned SBoM with data stored in the que
 - response: "sbom_type" (which one of "swid", "sdpx", "cyclonedx" from args sbom_type)
 - response: "sbom_depth" not currently a response in the 1.0 Language but proposed to be added. sbom_depth is one of:
   * "complete" - all of the components, and all subcomponents recursively, are included
-  * "unknown" - all components and subcomponents are attempted to be included but some subcomponents did not have SBoMs so there is incomplete information on some components or subcomponents
+  * "unknown" - all components and subcomponents are attempted to be included but the software producer did not know the full SBoM of some subcomponents because they did not have SBoMs. So there is incomplete information on some components or subcomponents
   * "one-hop" - just the top level components. The user is expected to look up the subcomponents themselves. A more complete SBoM is preferred but one-hop is better than none
 - response: "manifest" not currently a response in the 1.0 Language but proposed to be added. This is the actual SBoM in machine readable format
 
