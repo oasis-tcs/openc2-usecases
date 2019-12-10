@@ -60,4 +60,4 @@ An example reply might be:
     }
 }
 ```
-Note this particular example is XML jammed into JSON so probably not escaped correctly.
+Note this particular example is XML jammed into JSON so probably not escaped correctly. This is the actual CycloneDx SBoM for a Raspberry Pi running "blinky" (the IoT equivilent to "Hello World" - it blinks the one LED on a Raspberry Pi)
