@@ -1,0 +1,11 @@
+{
+  "action": "deny",
+  "target": {
+    "file": {
+      "hashes": {
+        "sha1": "f46ed7e88334a4d3debaa8cfa842727cb66e997f",
+        "sha256": "5c2d6daaf85a710605678f8e7ef0b725b33303f3234197b9dc4b46196734a4f0"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "action": "allow",
+  "target": {
+    "ipv6_net": "ff02::6"
+  }
+}

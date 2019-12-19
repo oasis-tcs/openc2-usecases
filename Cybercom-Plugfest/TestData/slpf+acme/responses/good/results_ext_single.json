@@ -1,0 +1,13 @@
+{
+  "status": 200,
+  "status_text": "Some description",
+  "results": {
+    "x-mycompany": {
+      "stuff": {
+        "some": 100,
+        "values": [ true, false ],
+        "defined": "by the profile docs"
+      }
+    }
+  }
+}
