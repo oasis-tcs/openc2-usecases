@@ -1,0 +1,11 @@
+{
+  "action": "query",
+  "target": {
+    "features": [ "profiles", "versions", "pairs", "rate_limit" ]
+  },
+  "args": {
+    "x-mycompany/foo;bar": {
+      "debug_logging": true
+    }
+  }
+}

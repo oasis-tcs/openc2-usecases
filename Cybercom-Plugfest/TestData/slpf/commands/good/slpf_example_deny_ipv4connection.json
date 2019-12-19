@@ -1,0 +1,18 @@
+{
+  "action": "deny",
+  "target": {
+    "ipv4_connection": {
+      "protocol": "tcp",
+      "src_port": 21
+    }
+  },
+  "args": {
+    "slpf": {
+      "drop_process":  "false_ack",
+      "direction": "egress"
+    }
+  },
+  "actuator": {
+    "slpf": {}
+  }
+}

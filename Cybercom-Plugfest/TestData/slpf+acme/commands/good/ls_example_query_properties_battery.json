@@ -1,0 +1,11 @@
+{
+  "action": "query",
+  "target": {
+    "properties": ["battery"]
+  },
+  "actuator": {
+    "x-esm": {
+      "asset_id": "TGEadsasd"
+    }
+  }
+}

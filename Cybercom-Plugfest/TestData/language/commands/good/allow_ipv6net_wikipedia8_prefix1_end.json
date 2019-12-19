@@ -1,0 +1,6 @@
+{
+  "action": "allow",
+  "target": {
+    "ipv6_net": "2001:db8:1234:ffff:ffff:ffff:ffff:ffff"
+  }
+}

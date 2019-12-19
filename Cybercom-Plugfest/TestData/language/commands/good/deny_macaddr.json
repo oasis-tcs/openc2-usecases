@@ -1,0 +1,6 @@
+{
+  "action": "deny",
+  "target": {
+    "mac_addr": "8c:85:90:72:31:af"
+  }
+}

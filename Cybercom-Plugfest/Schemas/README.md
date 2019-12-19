@@ -1,6 +1,6 @@
 # Schemas
 Schemas for three types of OpenC2 actuator devices,
-as described in https://github.com/oasis-open/openc2-custom-aps/tree/master/Test:
+as described in https://github.com/oasis-tcs/openc2-usecases/tree/master/Cybercom-Plugfest/TestData:
 
 **Language**,  
 **SLPF**, and  
