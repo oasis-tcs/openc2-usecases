@@ -1,4 +1,4 @@
-# OpenC2 v1.0.1 Test Data
+# OpenC2 v1.0.1 Test Data for Plugfest
 
 These tests apply to the OpenC2 Language Specification CS02 (version 1.0.1).
 
@@ -29,19 +29,10 @@ into OpenC2.
 
 * oc2ls-v1.0.1-acme: Component schema = OpenC2 LS CS02 + SLPF + Acme types, manually combined
 
-## Changes from previous tests:
-**commands/good:**  
-* **deny_uri_actuator_multiple** - move to bad, multiple actuators not allowed in v1.0, proposed for v1.1
-* **query_features_ext_args_all** - move to bad, upper-case characters not allowed
+4. <New Actuator A> ...
 
-**commands/bad:**  
+Commands and responses for plugfest use case A ...
 
-**responses/good:**  
-* **results_empty** - move to bad - results must not be empty if present
-
-**responses/bad:**  
-* **query_features_all_badprofile** - move to good - "myextension" is OK in v1.0 (must be URI in v1.1)
-* **status_asdouble** - move to good - JSON has no integer type, 200 and 200.0 are the same number.
 
 ## New tests
 * **query_slpf_pairs_bad_action_rsp** - slpf/response/bad - action not supported in SLPF
@@ -50,7 +41,7 @@ into OpenC2.
 * **long_name_x80** - language-anything/commands/bad - long property names - property names must be 1-32 characters.
 * **long_name_x244** - language-anything/commands/bad - very long property names
 
-### Implausible tests
+## Implausible tests
 These tests pass a generic Language+Anything schema, but there is no plausible use case for validating them
 as correct OpenC2 commands and responses.
 They illustrate the difference between a generic schema and profiles used by OpenC2 Producers and Consumers.
