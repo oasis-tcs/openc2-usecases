@@ -1,7 +1,6 @@
 # OpenC2 v1.0.1 Test Data
 
-These tests apply to the approved OpenC2 Language Specification version 1.0, plus a set of errata (bug fixes)
-currently under consideration by the Language subcommittee.
+These tests apply to the OpenC2 Language Specification CS02 (version 1.0.1).
 
 OpenC2 test items (commands and responses) are organized by actuator type, which determines whether a given item
 is considered good or bad. Each actuator implements a component schema that is derived from one or more profiles.
@@ -12,23 +11,23 @@ Example actuator types are:
 This component accepts every command and response defined in the OpenC2 Language Specification,
 and no Actuator Profiles.
 
-* oc2ls-v1.0.1: Component schema = OpenC2 v1.0 Language Spec + errata
+* oc2ls-v1.0.1: Component schema = OpenC2 Language Spec CS02
 
 **2. SLPF**
 
 This component accepts commands and responses defined in the OpenC2 Stateless Packet Filtering profile.  Language
 elements not used by the SLPF profile are not accepted.
 
-* oc2slpf-v1.0.1: Component schema = OpenC2 SLPF Profile + errata
+* oc2slpf-v1.0.1: Component schema = OpenC2 SLPF Profile
 
-**3. SLPF + Acme**
+**3. Language + SLPF + Acme**
 
 This component accepts every command and response defined in the Language Specification and SLPF profile,
 plus some additional hypothetical actuator profiles.  Schema serves as an example of how
 commands and responses needed to support new use cases (such as a Powerwall home battery) are integrated
 into OpenC2.
 
-* oc2slpf-v1.0.1-acme: Component schema = OpenC2 LS version 1.0 + errata + SLPF + Acme types, manually combined
+* oc2ls-v1.0.1-acme: Component schema = OpenC2 LS CS02 + SLPF + Acme types, manually combined
 
 ## Changes from previous tests:
 **commands/good:**  
