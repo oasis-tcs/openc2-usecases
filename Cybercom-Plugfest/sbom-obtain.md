@@ -1,4 +1,4 @@
-# GitHub SBoM support
+# Obtain SBoM step of various use cases
 
 ## Background
 
