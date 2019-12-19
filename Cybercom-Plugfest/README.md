@@ -37,7 +37,7 @@ The plugfest aspect is for testing interworking of existing OpenC2 implementatio
 The hackathon aspect is for improving the interworking of existing OpenC2 implementations,  extending existing implementations (e.g., the many OpenC2 open source projects), and/or creating new implementations of OpenC2.
 
 The plugfest is not a meeting of the OASIS OpenC2 Technical Commmittee. It does not count towards voting rights for members of the OpenC2 TC. No work will be done on the OpenC2 specifications themselves
-although OpenC2 members are welcome to bring inspirations or suggestions from the plugfest to the TC. 
+although OpenC2 members are welcome to bring inspirations or suggestions from the plugfest to the TC.
 
 ## 2. Is it Plugfest or Hackathon? BOTH!
 This is both a plugfest (testing interoperability of existing implementations)
@@ -50,7 +50,7 @@ the hope is many will and include what they will be bringing to the table:
 - AT&T
 - Broadcom/Symantec - ok to put? will you bring ICDX?
 - DoD - Active Cyber Defense of Critical Infastructure (ACDCI)
-- Fornetix - 
+- Fornetix -
 - GitHub - providing these [resources](sbom-github.md) for SBoMs and comply to connect
 - Google - providing these [resources](cloud-google.md) to support plugfest
 - NineFX
@@ -79,7 +79,7 @@ the hope is many will and include what they will be bringing to the table:
   |s-fractal|Test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's to be IoT devices| usecases documented at https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/tests-sFractal-IoT.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-C2C.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-SPA.md | QUERY, ALLOW | Consumer| Duncan Sparrell||
   | Symantec| Multiple Cyber Security Products | Endpoint Remediation | OpenC2 Integrated in the ICDX product|Consumer| Brian Berliner||
   |University of Oslo| Academia | Coordinated Response | Implemented the SLPF version 1.0 into the acladapter and implemented a custom actuator profile for some of the cisco poc functions| Both |Vasileios Mavroeidis||
-  
+
 
 
 ## 4. What usecases addressed?
@@ -121,13 +121,13 @@ See [here](uc-sFractal-IoT-SPA.md) for the Single Packet Authentication usecase 
 others are free to put their needs here
 
 ## 5. OASIS OpenC2 TC relationship to Plugfest/Hackathon
-The OpenC2 plugfest/hackathon is open to all interested participants whether OASIS members or not, and therefore is NOT a meeting of the Technical Committee itself. The OASIS rules governing TC meetings, including provisions of the OASIS IPR policy, do not apply and any outputs from the event are not 'contributions' as defined in OASIS rules. Members of the TC who wish to formally contribute any outputs from the event to the TC must (as with any contribution) be sure that they have sufficient rights in the material to do so. 
+The OpenC2 plugfest/hackathon is open to all interested participants whether OASIS members or not, and therefore is NOT a meeting of the Technical Committee itself. The OASIS rules governing TC meetings, including provisions of the OASIS IPR policy, do not apply and any outputs from the event are not 'contributions' as defined in OASIS rules. Members of the TC who wish to formally contribute any outputs from the event to the TC must (as with any contribution) be sure that they have sufficient rights in the material to do so.
 
-OASIS and the OpenC2 TC welcome participation by all interested parties. Participants who are not OASIS members but are interested in joining in the work being done by the TC are welcome to contact the event chairs for information on the opportunities available. 
+OASIS and the OpenC2 TC welcome participation by all interested parties. Participants who are not OASIS members but are interested in joining in the work being done by the TC are welcome to contact the event chairs for information on the opportunities available.
 
 ## 6. Info for Participants
 The slide decks from the Nov 5th prep meeting
-(attended by ~35 participants including ~7 OpenC2 TC members) 
+(attended by ~35 participants including ~7 OpenC2 TC members)
 for the Dreamport Plugfest/hackathon are posted at OASIS
 
 * **OpenC2 & Plug Fest Overview and Resources** (Joe Brule / David Lemire)  
@@ -143,7 +143,7 @@ https://www.oasis-open.org/committees/document.php?document_id=66233&wg_abbrev=o
 https://www.oasis-open.org/committees/document.php?document_id=66234&wg_abbrev=openc2  
 
 * **OpenC2 and KMIP** (Chuck White)  
-https://www.oasis-open.org/committees/document.php?document_id=66235&wg_abbrev=openc2 
+https://www.oasis-open.org/committees/document.php?document_id=66235&wg_abbrev=openc2
 
 Note: There were no slides for Mike Ridge's presentation of a use case for RF monitoring at the Denver Airport.
 
@@ -201,6 +201,7 @@ This repository includes use case descriptions, schemas, and test data (good and
 - Will our devices be reachable from the internet? Will ip's/ports need to be prearranged to get thru firewalls?
 - Will whiteboards be provided?
 - Will projector be provided?
+- will certificates be needed for interworking (eg for https mutual authentication)? If so - how arrange?
 
 ## 7. Resources
 Plugfest Preparation:
