@@ -1,10 +1,10 @@
-/* Generated from schema\oc2sbom-v1.1.jadn, Fri Dec 20 14:10:00 2019 */
+/* Generated from schema\oc2sbom-v1.1.jadn, Fri Dec 20 15:53:48 2019 */
 
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://oasis-open.org/openc2/oc2sbom/v1.1",
   "title": "Software Bill of Materials",
-  "description": "Query an actuator for its SBOM",
+  "description": "Query an actuator for its Software Bill of Materials",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -200,8 +200,15 @@
       "maxProperties": 1,
       "properties": {
         "type": {
-          "$ref": "#/definitions/SBOM-Type",
-          "description": ""
+          "type": "array",
+          "description": "",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "$ref": "#/definitions/SBOM-Type",
+            "description": ""
+          }
         }
       }
     },

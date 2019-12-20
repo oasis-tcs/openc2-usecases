@@ -1,11 +1,11 @@
-<!-- Generated from schema\oc2sbom-v1.1.jadn, Fri Dec 20 14:10:00 2019-->
+<!-- Generated from schema\oc2sbom-v1.1.jadn, Fri Dec 20 15:53:48 2019-->
 ## Schema
 | . | . |
 | ---: | :--- |
 | **title:** | Software Bill of Materials |
 | **module:** | http://oasis-open.org/openc2/oc2sbom/v1.1 |
 | **patch:** | 0-wd01 |
-| **description:** | Query an actuator for its SBOM |
+| **description:** | Query an actuator for its Software Bill of Materials |
 | **exports:** | OpenC2-Command, OpenC2-Response |
 | **imports:** | **ls**:&nbsp;http://oasis-open.org/openc2/oc2ls-types/v1.1 |
 
@@ -77,7 +77,7 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **type** | SBOM-Type | 1 |  |
+| 1 | **type** | SBOM-Type unique | 1..10 |  |
 
 **_Type: P-Results (Record)_**
 

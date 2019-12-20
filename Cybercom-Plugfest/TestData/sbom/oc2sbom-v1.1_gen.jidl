@@ -1,9 +1,9 @@
-/* Generated from schema\oc2sbom-v1.1.jadn, Fri Dec 20 14:10:00 2019 */
+/* Generated from schema\oc2sbom-v1.1.jadn, Fri Dec 20 15:53:48 2019 */
 
        title: Software Bill of Materials
       module: http://oasis-open.org/openc2/oc2sbom/v1.1
        patch: 0-wd01
- description: Query an actuator for its SBOM
+ description: Query an actuator for its Software Bill of Materials
      exports: ['OpenC2-Command', 'OpenC2-Response']
      imports: {'ls': 'http://oasis-open.org/openc2/oc2ls-types/v1.1'}
 
@@ -54,7 +54,7 @@ Targets-Query = Enumerated {
 }
 
 P-Target = Choice {                          // SBOM-defined target(s)
-     1 type            SBOM-Type
+     1 type            SBOM-Type [0..10] unique
 }
 
 P-Results = Record {                         // SBOM data object of the requested type

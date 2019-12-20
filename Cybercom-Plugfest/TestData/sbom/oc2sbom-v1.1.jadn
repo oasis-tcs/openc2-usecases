@@ -56,7 +56,7 @@
   ]],
 
   ["P-Target", "Choice", [], "SBOM-defined target(s)", [
-    [1, "type", "SBOM-Type", [], ""]
+    [1, "type", "SBOM-Type", ["]10", "q"], ""]
   ]],
 
   ["P-Results", "Record", [], "SBOM data object of the requested type", [

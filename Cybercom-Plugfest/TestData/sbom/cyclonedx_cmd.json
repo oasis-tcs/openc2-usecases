@@ -2,7 +2,7 @@
   "action": "query",
   "target": {
     "sbom": {
-      "type": "CycloneDX"
+      "type": ["CycloneDX", "SPDX","SWID"]
     }
   }
 }
