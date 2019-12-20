@@ -69,6 +69,7 @@ Following the profile creation recipe https://github.com/oasis-open/openc2-custo
 #### 1) pick a namespace: `http://oasis-open.org/openc2/oc2sbom/v1.1`
 #### 2) pick a property ID/Name: `1027, sbom`
 #### 3) copy the Language Profile into the SBOM Profile, delete everything not used, add SBOM hooks:
+https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/TestData/sbom/oc2sbom-v1.1_gen.jidl
 #### 4) Add SBOM-specific definitions:
 
 ```text
@@ -95,7 +96,8 @@ SBOM-Depth = Enumerated {
 }
 ```
 
-#### 5) Generate JSON schema from the property definitions: https://github.com/oasis-tcs/openc2-usecases/tree/master/Cybercom-Plugfest/TestData/sbom
+#### 5) Generate JSON schema from the property definitions:
+https://github.com/oasis-tcs/openc2-usecases/tree/master/Cybercom-Plugfest/TestData/sbom
 
 #### 6) Create example Commmand and Response, validate against JSON schema:
 
