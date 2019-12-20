@@ -1,0 +1,80 @@
+{
+ "meta": {
+  "module": "http://oasis-open.org/openc2/oc2sbom/v1.1",
+  "patch": "0-wd01",
+  "title": "Software Bill of Materials",
+  "description": "Query an actuator for its Software Bill of Materials",
+  "imports": {"ls": "http://oasis-open.org/openc2/oc2ls-types/v1.1"},
+  "exports": ["OpenC2-Command", "OpenC2-Response"]
+ },
+
+ "types": [
+   ["OpenC2-Command", "Record", [], "", [
+    [1, "action", "Action", [], "The task or activity to be performed"],
+    [2, "target", "Target", [], "The object referenced by the Action"],
+    [3, "args", "Args", ["[0"], "Additional information that applies to the Command"],
+    [4, "actuator", "Actuator", ["[0"], "The profile that defines the Command"],
+    [5, "command_id", "ls:Command-ID", ["[0"], "An identifier of this Command"]
+  ]],
+
+  ["OpenC2-Response", "Map", [], "", [
+    [1, "status", "ls:Status-Code", [], "Integer status code"],
+    [2, "status_text", "String", ["[0"], "Free-form description of the Response status"],
+    [3, "results", "Results", ["[0"], "Results returned by the invoked Command"]
+  ]],
+
+  ["Action", "Enumerated", [], "Actions used in this profile", [
+    [3, "query", "Initiate a request for information"]
+  ]],
+
+  ["Target", "Choice", [], "Targets used in this profile", [
+    [9, "features", "ls:Features", [], "A set of items used with the query Action to determine an Actuator's capabilities"],
+    [1027, "sbom", "P-Target", ["<"], "Targets defined in this profile"]
+  ]],
+
+  ["Actuator", "Map", ["{1"], "", [
+  ]],
+
+  ["Args", "Map", ["{1"], "", [
+  ]],
+
+  ["Results", "Map", ["{1"], "Response Results", [
+    [1, "versions", "ls:Version", ["[0", "]10", "q"], "List of OpenC2 language versions supported by this Actuator"],
+    [2, "profiles", "ls:Namespace", ["[0", "]0", "q"], "List of profiles supported by this Actuator"],
+    [3, "pairs", "Action-Targets", ["[0"], "List of targets applicable to each supported Action"],
+    [4, "rate_limit", "Number", ["{0", "[0"], "Maximum number of requests per minute supported by design or policy"],
+    [1027, "sbom", "P-Results", ["[0", "<"], "Results defined in this profile"]
+  ]],
+
+  ["Action-Targets", "Map", [], "Targets applicable to each action", [
+    [3, "query", "Targets-Query", ["[1", "]10", "q"], ""]
+  ]],
+
+  ["Targets-Query", "Enumerated", [], "", [
+    [1, "features", ""],
+    [2, "sbom", ""]
+  ]],
+
+  ["P-Target", "Choice", [], "SBOM-defined target(s)", [
+    [1, "type", "SBOM-Type", [], ""]
+  ]],
+
+  ["P-Results", "Record", [], "SBOM data object of the requested type", [
+    [1, "type", "SBOM-Type", [], ""],
+    [2, "depth", "SBOM-Depth", [], ""],
+    [3, "manifest", "ls:Artifact", [], ""]
+  ]],
+
+  ["SBOM-Type", "Enumerated", [], "", [
+    [1, "CycloneDX", ""],
+    [2, "SPDX", ""],
+    [3, "SWID", ""]
+  ]],
+
+  ["SBOM-Depth", "Enumerated", [], "", [
+    [1, "complete", "All components and subcomponents, recursively, are included"],
+    [2, "unknown", "All components and subcomponents are attempted but some are unknown"],
+    [3, "one-hop", "Just top level components are included"]
+  ]]
+ ]
+}

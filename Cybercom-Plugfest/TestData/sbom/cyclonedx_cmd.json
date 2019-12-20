@@ -1,0 +1,8 @@
+{
+  "action": "query",
+  "target": {
+    "sbom": {
+      "type": "CycloneDX"
+    }
+  }
+}

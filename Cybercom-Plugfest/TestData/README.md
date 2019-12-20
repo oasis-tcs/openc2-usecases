@@ -29,7 +29,7 @@ into OpenC2.
 
 * oc2ls-v1.0.1-acme: Component schema = OpenC2 LS CS02 + SLPF + Acme types, manually combined
 
-4. <New Actuator A> ...
+**4. <New Actuator A> ...**
 
 Commands and responses for plugfest use case A ...
 

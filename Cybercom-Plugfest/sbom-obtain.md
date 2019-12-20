@@ -61,3 +61,126 @@ An example reply might be:
 }
 ```
 Note this particular example is XML jammed into JSON so probably not escaped correctly. This is the actual CycloneDx SBoM for a Raspberry Pi running "blinky" (the IoT equivilent to "Hello World" - it blinks the one LED on a Raspberry Pi)
+
+========================= Proposed Update ======================
+
+Following the profile creation recipe https://github.com/oasis-open/openc2-custom-aps/tree/master/Schema-Template:
+
+### 1) pick a namespace: `http://oasis-open.org/openc2/oc2sbom/v1.1`
+### 2) pick a property ID/Name: `1027, sbom`
+### 3) copy the Language Profile into the SBOM Profile, delete everything not used, add SBOM hooks:
+
+```text
+       title: Software Bill of Materials
+      module: http://oasis-open.org/openc2/oc2sbom/v1.1
+       patch: 0-wd01
+ description: Query an actuator for its SBOM
+     exports: ['OpenC2-Command', 'OpenC2-Response']
+     imports: {'ls': 'http://oasis-open.org/openc2/oc2ls-types/v1.1'}
+
+OpenC2-Command = Record {
+     1 action          Action,                   // The task or activity to be performed
+     2 target          Target,                   // The object referenced by the Action
+     3 args            Args optional,            // Additional information that applies to the Command
+     4 actuator        Actuator optional,        // The profile that defines the Command
+     5 command_id      ls:Command-ID optional    // An identifier of this Command
+}
+
+OpenC2-Response = Map {
+     1 status          ls:Status-Code,           // Integer status code
+     2 status_text     String optional,          // Free-form description of the Response status
+     3 results         Results optional          // Results returned by the invoked Command
+}
+
+Action = Enumerated {                        // Actions used in this profile
+     3 query                                     // Initiate a request for information
+}
+
+Target = Choice {                            // Targets used in this profile
+     9 features        ls:Features,              // A set of items used with the query Action to determine an Actuator's capabilities
+  1027 sbom/           P-Target                  // Targets defined in this profile
+}
+
+Actuator = Map{1..*} {
+}
+
+Args = Map{1..*} {
+}
+
+Results = Map{1..*} {                        // Response Results
+     1 versions        ls:Version [0..10] unique, // List of OpenC2 language versions supported by this Actuator
+     2 profiles        ls:Namespace [0..*] unique, // List of profiles supported by this Actuator
+     3 pairs           Action-Targets optional,  // List of targets applicable to each supported Action
+     4 rate_limit      Number{0..*} optional,    // Maximum number of requests per minute supported by design or policy
+  1027 sbom/           P-Results optional        // Results defined in this profile
+}
+
+Action-Targets = Map {                       // Targets applicable to each action
+     3 query           Targets-Query [1..10] unique
+}
+
+Targets-Query = Enumerated {
+     1 features,
+     2 sbom
+}
+```
+
+### 4) Add SBOM-specific definitions:
+
+```text
+P-Target = Choice {                          // SBOM-defined target(s)
+     1 type            SBOM-Type
+}
+
+P-Results = Record {                         // SBOM data object of the requested type
+     1 type            SBOM-Type,
+     2 depth           SBOM-Depth,
+     3 manifest        ls:Artifact
+}
+
+SBOM-Type = Enumerated {
+     1 CycloneDX,
+     2 SPDX,
+     3 SWID
+}
+
+SBOM-Depth = Enumerated {
+     1 complete,                                 // All components and subcomponents, recursively, are included
+     2 unknown,                                  // All components and subcomponents are attempted but some are unknown
+     3 one-hop                                   // Just top level components are included
+}
+```
+
+### 5) Generate JSON schema from the property definitions: https://github.com/oasis-tcs/openc2-usecases/tree/master/Cybercom-Plugfest/TestData/sbom
+
+### 6) Create example Commmand and Response, validate against JSON schema:
+
+**Command:**
+```json
+{
+  "action": "query",
+  "target": {
+    "sbom": {
+      "type": "CycloneDX"
+    }
+  }
+}
+```
+**Response**:
+```json
+{
+  "status": 200,
+  "results": {
+    "sbom": {
+      "type": "CycloneDX",
+      "depth": "one-hop",
+      "manifest": {
+        "mime_type": "application/cyclonedx+xml",
+        "payload": {
+          "bin": "PD94bWwgdmVyc2lvbj0nMS4wJz8+PGJvbSBzZXJpYWxOdW1iZXI9JzllMjUzZjkyLTRlMWMtNDk3ZS04Zjg3LTUwNzMwZDI0ZjE4YScgeG1sbnM9J2h0dHA6Ly9jeWNsb25lZHgub3JnL3NjaGVtYS9ib20vMS4xJz48Y29tcG9uZW50cz48Y29tcG9uZW50IHR5cGU9J2xpYnJhcnknPjxkZXNjcmlwdGlvbj5OZXJ2ZXMgU3lzdGVtIEJSIC0gQnVpbGRyb290IGJhc2VkIGJ1aWxkIHBsYXRmb3JtIGZvciBOZXJ2ZXMgU3lzdGVtczwvZGVzY3JpcHRpb24+PGhhc2hlcz48aGFzaCBhbGc9J1NIQS0yNTYnPmUzZmRhNmJjNDlmOGUzNjYyZDM3MzU1YWFkODhjMDgzOTI5NjU5N2MwYjZmNjY1M2QyMTk2N2RiMTg5MGIwMzg8L2hhc2g+PC9oYXNoZXM+PGxpY2Vuc2VzPjxsaWNlbnNlPjxpZD5BcGFjaGUtMi4wPC9pZD48L2xpY2Vuc2U+PGxpY2Vuc2U+PG5hbWU+R1BMdjI8L25hbWU+PC9saWNlbnNlPjwvbGljZW5zZXM+PG5hbWU+bmVydmVzX3N5c3RlbV9icjwvbmFtZT48cHVybD5wa2c6aGV4L25lcnZlc19zeXN0ZW1fYnJAMS45LjU8L3B1cmw+PHZlcnNpb24+MS45LjU8L3ZlcnNpb24+PC9jb21wb25lbnQ+PGNvbXBvbmVudCB0eXBlPSdsaWJyYXJ5Jz48ZGVzY3JpcHRpb24+TmVydmVzIC0gQ3JlYXRlIGZpcm13YXJlIGZvciBlbWJlZGRlZCBkZXZpY2VzIGxpa2UgUmFzcGJlcnJ5IFBpLCBCZWFnbGVCb25lIEJsYWNrLCBhbmQgbW9yZTwvZGVzY3JpcHRpb24+PGhhc2hlcz48aGFzaCBhbGc9J1NIQS0yNTYnPjA3MDc5MzQyZGIzYTAzZDE5Njk0MTE4YTkzZjIyMDM1OWZiZDk0YjZlMTc0Yjk4ZDFlYTI3MDlkYjllODFkYTk8L2hhc2g+PC9oYXNoZXM+PGxpY2Vuc2VzPjxsaWNlbnNlPjxpZD5BcGFjaGUtMi4wPC9pZD48L2xpY2Vuc2U+PC9saWNlbnNlcz48bmFtZT5uZXJ2ZXM8L25hbWU+PHB1cmw+cGtnOmhleC9uZXJ2ZXNAMS41LjE8L3B1cmw+PHZlcnNpb24+MS41LjE8L3ZlcnNpb24+PC9jb21wb25lbnQ+PGNvbXBvbmVudCB0eXBlPSdsaWJyYXJ5Jz48ZGVzY3JpcHRpb24+U29ja2V0IGhhbmRsaW5nIGxpYnJhcnkgZm9yIEVsaXhpcjwvZGVzY3JpcHRpb24+PGhhc2hlcz48aGFzaCBhbGc9J1NIQS0yNTYnPjk4YTJhYjIwY2UxN2Y5NWZiNTEyYzVjYWRkZGJhMzJiNTcyNzNlMGQyZGJhMmQyZTVmOTc2YzU5NjlkMGM2MzI8L2hhc2g+PC9oYXNoZXM+PGxpY2Vuc2VzPjxsaWNlbnNlPjxpZD5XVEZQTDwvaWQ+PC9saWNlbnNlPjwvbGljZW5zZXM+PG5hbWU+c29ja2V0PC9uYW1lPjxwdXJsPnBrZzpoZXgvc29ja2V0QDAuMy4xMzwvcHVybD48dmVyc2lvbj4wLjMuMTM8L3ZlcnNpb24+PC9jb21wb25lbnQ+PGNvbXBvbmVudCB0eXBlPSdsaWJyYXJ5Jz48ZGVzY3JpcHRpb24+UmVhZCBhbmQgd3JpdGUgdG8gVS1Cb290IGVudmlyb25tZW50IGJsb2NrczwvZGVzY3JpcHRpb24+PGhhc2hlcz48aGFzaCBhbGc9J1NIQS0yNTYnPmIwMWUzZWMwOTczZTk5NDczMjM0ZjI3ODM5ZTI5ZTYzYjViODFlYmE2YTEzNmExOGE3OGQwNDlkNDgxM2Q2YzU8L2hhc2g+PC9oYXNoZXM+PGxpY2Vuc2VzPjxsaWNlbnNlPjxpZD5BcGFjaGUtMi4wPC9pZD48L2xpY2Vuc2U+PC9saWNlbnNlcz48bmFtZT51Ym9vdF9lbnY8L25hbWU+PHB1cmw+cGtnOmhleC91Ym9vdF9lbnZAMC4xLjE8L3B1cmw+PHZlcnNpb24+MC4xLjE8L3ZlcnNpb24+PC9jb21wb25lbnQ+PGNvbXBvbmVudCB0eXBlPSdsaWJyYXJ5Jz48ZGVzY3JpcHRpb24+TmVydmVzIFRvb2xjaGFpbiBDVE5HIC0gVG9vbGNoYWluIFBsYXRmb3JtPC9kZXNjcmlwdGlvbj48aGFzaGVzPjxoYXNoIGFsZz0nU0hBLTI1Nic+NDUyZjg1ODljMWE1OGFjNzg3NDc3Y2FhYjIwYThjZmM2NjcxZTM0NTgzN2NjYzE5YmVlZmU0OWFlMzViYTk4MzwvaGFzaD48L2hhc2hlcz48bGljZW5zZXM+PGxpY2Vuc2U+PGlkPkFwYWNoZS0yLjA8L2lkPjwvbGljZW5zZT48L2xpY2Vuc2VzPjxuYW1lPm5lcnZlc190b29sY2hhaW5fY3RuZzwvbmFtZT48cHVybD5wa2c6aGV4L25lcnZlc190b29sY2hhaW5fY3RuZ0AxLjYuMDwvcHVybD48dmVyc2lvbj4xLjYuMDwvdmVyc2lvbj48L2NvbXBvbmVudD48Y29tcG9uZW50IHR5cGU9J2xpYnJhcnknPjxkZXNjcmlwdGlvbj5BIHJpbmcgYnVmZmVyIGJhY2tlbmQgZm9yIEVsaXhpciBMb2dnZXIgd2l0aCBJTyBzdHJlYW1pbmcuPC9kZXNjcmlwdGlvbj48aGFzaGVzPjxoYXNoIGFsZz0nU0hBLTI1Nic+YjFiYWRkYzI2OTA5OWIyYWZlMmVhM2E4N2I4ZTJiNzFlNTczMzFjMDAwMDAzOGFlNTUwOTAwNjhhYWM2NzlkYjwvaGFzaD48L2hhc2hlcz48bGljZW5zZXM+PGxpY2Vuc2U+PGlkPkFwYWNoZS0yLjA8L2lkPjwvbGljZW5zZT48L2xpY2Vuc2VzPjxuYW1lPnJpbmdfbG9nZ2VyPC9uYW1lPjxwdXJsPnBrZzpoZXgvcmluZ19sb2dnZXJAMC44LjA8L3B1cmw+PHZlcnNpb24+MC44LjA8L3ZlcnNpb24+PC9jb21wb25lbnQ+PGNvbXBvbmVudCB0eXBlPSdsaWJyYXJ5Jz48ZGVzY3JpcHRpb24+TmVydmVzIFN5c3RlbSBMaW50ZXIgLSBMaW50IE5lcnZlcyBTeXN0ZW0gRGVmY29uZmlncy48L2Rlc2NyaXB0aW9uPjxoYXNoZXM+PGhhc2ggYWxnPSdTSEEtMjU2Jz44NGUwZjYzYzhhYzE5NmIxNmI3NzYwOGJiZTdkZjY2ZGNmMzUyODQ1YzRlNGZiMzk0YmZmZDJiNTcyMDI1NDEzPC9oYXNoPjwvaGFzaGVzPjxsaWNlbnNlcz48bGljZW5zZT48aWQ+QXBhY2hlLTIuMDwvaWQ+PC9saWNlbnNlPjwvbGljZW5zZXM+PG5hbWU+bmVydmVzX3N5c3RlbV9saW50ZXI8L25hbWU+PHB1cmw+cGtnOmhleC9uZXJ2ZXNfc3lzdGVtX2xpbnRlckAwLjMuMDwvcHVybD48dmVyc2lvbj4wLjMuMDwvdmVyc2lvbj48L2NvbXBvbmVudD48Y29tcG9uZW50IHR5cGU9J2xpYnJhcnknPjxkZXNjcmlwdGlvbj5ETlMgbGlicmFyeSBmb3IgRWxpeGlyIHVzaW5nIGBpbmV0X2Ruc2AgbW9kdWxlLiIgbmFtZT0iQ295b3RlIFNlcnZpY2VzLCBJbmMuIiByZWdpZD0ibXljb3lvdGUuY29tIiByb2xlPSJkaXN0cmlidXRvciIvPiA8TGluayByZWw9ImxpY2Vuc2UiIGhyZWY9Ind3dy5nbnUub3JnL2xpY2Vuc2VzL2dwbC50eHQiLz4gPE1ldGEgYWN0aXZhdGlvblN0YXR1cz0idHJpYWwiIHByb2R1Y3Q9IlJvYWRydW5uZXIgRGV0ZWN0b3IiIGNvbGxvcXVpYWxWZXJzaW9uPSIyMDEzIiBlZGl0aW9uPSJjb3lvdGUiIHJldmlzaW9uPSJzcDEiLz4gPFBheWxvYWQ+IDxEaXJlY3Rvcnkgcm9vdD0iJXByb2dyYW1kYXRhJSIgbmFtZT0icnJkZXRlY3RvciI+IDxGaWxlIG5hbWU9InJyZGV0ZWN0b3IuZXhlIiBzaXplPSI1MzI3MTIiIFNIQTI1NjpoYXNoPSJhMzE0ZmMyZGM2NjNhZTdhNmI2YmM2Nzg3NTk0MDU3Mzk2ZTZiM2Y1NjljZDUwZmQ1ZGRiNGQxYmJhZmQyYjZhIi8+IDwvRGlyZWN0b3J5PiA8L1BheWxvYWQ+IDwvU29mdHdhcmVJZGVudGl0eT4"
+        }
+      }
+    }
+  }
+}
+```

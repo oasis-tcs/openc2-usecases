@@ -1,0 +1,438 @@
+/* Generated from schema\oc2sbom-v1.1.jadn, Fri Dec 20 14:10:00 2019 */
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://oasis-open.org/openc2/oc2sbom/v1.1",
+  "title": "Software Bill of Materials",
+  "description": "Query an actuator for its SBOM",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "openc2_command": {
+      "$ref": "#/definitions/OpenC2-Command"
+    },
+    "openc2_response": {
+      "$ref": "#/definitions/OpenC2-Response"
+    }
+  },
+  "definitions": {
+    "OpenC2-Command": {
+      "title": "OpenC2 Command",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action",
+        "target"
+      ],
+      "properties": {
+        "action": {
+          "$ref": "#/definitions/Action",
+          "description": "The task or activity to be performed"
+        },
+        "target": {
+          "$ref": "#/definitions/Target",
+          "description": "The object referenced by the Action"
+        },
+        "args": {
+          "$ref": "#/definitions/Args",
+          "description": "Additional information that applies to the Command"
+        },
+        "actuator": {
+          "$ref": "#/definitions/Actuator",
+          "description": "The profile that defines the Command"
+        },
+        "command_id": {
+          "$ref": "#/definitions/Command-ID",
+          "description": "An identifier of this Command"
+        }
+      }
+    },
+    "OpenC2-Response": {
+      "title": "OpenC2 Response",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status-Code",
+          "description": "Integer status code"
+        },
+        "status_text": {
+          "type": "string",
+          "description": "Free-form description of the Response status"
+        },
+        "results": {
+          "$ref": "#/definitions/Results",
+          "description": "Results returned by the invoked Command"
+        }
+      }
+    },
+    "Action": {
+      "title": "Action",
+      "type": "string",
+      "description": "Actions used in this profile",
+      "oneOf": [
+        {
+          "const": "query",
+          "description": "Initiate a request for information"
+        }
+      ]
+    },
+    "Target": {
+      "title": "Target",
+      "type": "object",
+      "description": "Targets used in this profile",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "features": {
+          "$ref": "#/definitions/Features",
+          "description": "A set of items used with the query Action to determine an Actuator's capabilities"
+        },
+        "sbom": {
+          "$ref": "#/definitions/P-Target",
+          "description": "Targets defined in this profile"
+        }
+      }
+    },
+    "Actuator": {
+      "title": "Actuator",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {}
+    },
+    "Args": {
+      "title": "Args",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {}
+    },
+    "Results": {
+      "title": "Results",
+      "type": "object",
+      "description": "Response Results",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "versions": {
+          "type": "array",
+          "description": "List of OpenC2 language versions supported by this Actuator",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "$ref": "#/definitions/Version",
+            "description": "List of OpenC2 language versions supported by this Actuator"
+          }
+        },
+        "profiles": {
+          "type": "array",
+          "description": "List of profiles supported by this Actuator",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Namespace",
+            "description": "List of profiles supported by this Actuator"
+          }
+        },
+        "pairs": {
+          "$ref": "#/definitions/Action-Targets",
+          "description": "List of targets applicable to each supported Action"
+        },
+        "rate_limit": {
+          "type": "number",
+          "description": "Maximum number of requests per minute supported by design or policy",
+          "minimum": 0
+        },
+        "sbom": {
+          "$ref": "#/definitions/P-Results",
+          "description": "Results defined in this profile"
+        }
+      }
+    },
+    "Action-Targets": {
+      "title": "Action Targets",
+      "type": "object",
+      "description": "Targets applicable to each action",
+      "additionalProperties": false,
+      "required": [
+        "query"
+      ],
+      "properties": {
+        "query": {
+          "type": "array",
+          "description": "",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "$ref": "#/definitions/Targets-Query",
+            "description": ""
+          }
+        }
+      }
+    },
+    "Targets-Query": {
+      "title": "Targets Query",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "features",
+          "description": ""
+        },
+        {
+          "const": "sbom",
+          "description": ""
+        }
+      ]
+    },
+    "P-Target": {
+      "title": "P Target",
+      "type": "object",
+      "description": "SBOM-defined target(s)",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/SBOM-Type",
+          "description": ""
+        }
+      }
+    },
+    "P-Results": {
+      "title": "P Results",
+      "type": "object",
+      "description": "SBOM data object of the requested type",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "depth",
+        "manifest"
+      ],
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/SBOM-Type",
+          "description": ""
+        },
+        "depth": {
+          "$ref": "#/definitions/SBOM-Depth",
+          "description": ""
+        },
+        "manifest": {
+          "$ref": "#/definitions/Artifact",
+          "description": ""
+        }
+      }
+    },
+    "SBOM-Type": {
+      "title": "SBOM Type",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "CycloneDX",
+          "description": ""
+        },
+        {
+          "const": "SPDX",
+          "description": ""
+        },
+        {
+          "const": "SWID",
+          "description": ""
+        }
+      ]
+    },
+    "SBOM-Depth": {
+      "title": "SBOM Depth",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "complete",
+          "description": "All components and subcomponents, recursively, are included"
+        },
+        {
+          "const": "unknown",
+          "description": "All components and subcomponents are attempted but some are unknown"
+        },
+        {
+          "const": "one-hop",
+          "description": "Just top level components are included"
+        }
+      ]
+    },
+    "Status-Code": {
+      "title": "Status Code",
+      "type": "integer",
+      "oneOf": [
+        {
+          "const": 102,
+          "description": "Processing - an interim Response used to inform the Producer that the Consumer has accepted the Command but has not yet completed it"
+        },
+        {
+          "const": 200,
+          "description": "OK - the Command has succeeded"
+        },
+        {
+          "const": 201,
+          "description": "Created - the Command has succeeded and a new resource has been created as a result of it"
+        },
+        {
+          "const": 400,
+          "description": "Bad Request - the Consumer cannot process the Command due to something that is perceived to be a Producer error (e.g., malformed Command syntax)"
+        },
+        {
+          "const": 401,
+          "description": "Unauthorized - the Command Message lacks valid authentication credentials for the target resource or authorization has been refused for the submitted credentials"
+        },
+        {
+          "const": 403,
+          "description": "Forbidden - the Consumer understood the Command but refuses to authorize it"
+        },
+        {
+          "const": 404,
+          "description": "Not Found - the Consumer has not found anything matching the Command"
+        },
+        {
+          "const": 500,
+          "description": "Internal Error - the Consumer encountered an unexpected condition that prevented it from performing the Command"
+        },
+        {
+          "const": 501,
+          "description": "Not Implemented - the Consumer does not support the functionality required to perform the Command"
+        },
+        {
+          "const": 503,
+          "description": "Service Unavailable - the Consumer is currently unable to perform the Command due to a temporary overloading or maintenance of the Consumer"
+        }
+      ]
+    },
+    "Artifact": {
+      "title": "Artifact",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "mime_type": {
+          "type": "string",
+          "description": "Permitted values specified in the IANA Media Types registry, [RFC6838]"
+        },
+        "payload": {
+          "$ref": "#/definitions/Payload",
+          "description": "Choice of literal content or URL"
+        },
+        "hashes": {
+          "$ref": "#/definitions/Hashes",
+          "description": "Hashes of the payload content"
+        }
+      }
+    },
+    "Features": {
+      "title": "Features",
+      "type": "array",
+      "description": "An array of zero to ten names used to query an Actuator for its supported capabilities.",
+      "uniqueItems": true,
+      "maxItems": 10,
+      "items": {
+        "$ref": "#/definitions/Feature"
+      }
+    },
+    "URI": {
+      "title": "URI",
+      "type": "string",
+      "description": "Uniform Resource Identifier, [RFC3986]",
+      "format": "uri"
+    },
+    "Feature": {
+      "title": "Feature",
+      "type": "string",
+      "description": "Specifies the results to be returned from a query features Command",
+      "oneOf": [
+        {
+          "const": "versions",
+          "description": "List of OpenC2 Language versions supported by this Actuator"
+        },
+        {
+          "const": "profiles",
+          "description": "List of profiles supported by this Actuator"
+        },
+        {
+          "const": "pairs",
+          "description": "List of supported Actions and applicable Targets"
+        },
+        {
+          "const": "rate_limit",
+          "description": "Maximum number of Commands per minute supported by design or policy"
+        },
+        {
+          "const": "args",
+          "description": "List of supported Command Argumemnts"
+        }
+      ]
+    },
+    "Hashes": {
+      "title": "Hashes",
+      "type": "object",
+      "description": "Cryptographic Hash values",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "md5": {
+          "type": "string",
+          "description": "MD5 hash as defined in [RFC1321]",
+          "contentEncoding": "base16"
+        },
+        "sha1": {
+          "type": "string",
+          "description": "SHA1 hash as defined in [RFC6234]",
+          "contentEncoding": "base16"
+        },
+        "sha256": {
+          "type": "string",
+          "description": "SHA256 hash as defined in [RFC6234]",
+          "contentEncoding": "base16"
+        }
+      }
+    },
+    "Payload": {
+      "title": "Payload",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "bin": {
+          "type": "string",
+          "description": "Specifies the data contained in the artifact",
+          "contentEncoding": "base64url"
+        },
+        "url": {
+          "$ref": "#/definitions/URI",
+          "description": "MUST be a valid URL that resolves to the un-encoded content"
+        }
+      }
+    },
+    "Version": {
+      "title": "Version",
+      "type": "string",
+      "description": "Major.Minor version number"
+    },
+    "Namespace": {
+      "title": "Namespace",
+      "type": "string",
+      "description": "Unique name of an Actuator Profile",
+      "format": "uri"
+    },
+    "Command-ID": {
+      "title": "Command ID",
+      "type": "string",
+      "description": "Command Identifier",
+      "pattern": "^\\S{0,36}$"
+    }
+  }
+}
