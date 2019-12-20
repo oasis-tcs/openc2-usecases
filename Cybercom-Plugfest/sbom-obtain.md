@@ -66,8 +66,10 @@ Note this particular example is XML jammed into JSON so probably not escaped cor
 
 Following the profile creation recipe https://github.com/oasis-open/openc2-custom-aps/tree/master/Schema-Template:
 
-#### 1) pick a namespace: `http://oasis-open.org/openc2/oc2sbom/v1.1`
-#### 2) pick a property ID/Name: `1027, sbom`
+#### 1) pick a namespace:
+http://oasis-open.org/openc2/oc2sbom/v1.1
+#### 2) pick a property ID/Name:
+1027, sbom
 #### 3) copy the Language Profile into the SBOM Profile, delete everything not used, add SBOM hooks:
 https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/TestData/sbom/oc2sbom-v1.1_gen.jidl
 #### 4) Add SBOM-specific definitions:
