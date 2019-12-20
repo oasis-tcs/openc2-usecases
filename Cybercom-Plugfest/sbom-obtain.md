@@ -62,70 +62,14 @@ An example reply might be:
 ```
 Note this particular example is XML jammed into JSON so probably not escaped correctly. This is the actual CycloneDx SBoM for a Raspberry Pi running "blinky" (the IoT equivilent to "Hello World" - it blinks the one LED on a Raspberry Pi)
 
-========================= Proposed Update ======================
+## Proposed Update
 
 Following the profile creation recipe https://github.com/oasis-open/openc2-custom-aps/tree/master/Schema-Template:
 
-### 1) pick a namespace: `http://oasis-open.org/openc2/oc2sbom/v1.1`
-### 2) pick a property ID/Name: `1027, sbom`
-### 3) copy the Language Profile into the SBOM Profile, delete everything not used, add SBOM hooks:
-
-```text
-       title: Software Bill of Materials
-      module: http://oasis-open.org/openc2/oc2sbom/v1.1
-       patch: 0-wd01
- description: Query an actuator for its SBOM
-     exports: ['OpenC2-Command', 'OpenC2-Response']
-     imports: {'ls': 'http://oasis-open.org/openc2/oc2ls-types/v1.1'}
-
-OpenC2-Command = Record {
-     1 action          Action,                   // The task or activity to be performed
-     2 target          Target,                   // The object referenced by the Action
-     3 args            Args optional,            // Additional information that applies to the Command
-     4 actuator        Actuator optional,        // The profile that defines the Command
-     5 command_id      ls:Command-ID optional    // An identifier of this Command
-}
-
-OpenC2-Response = Map {
-     1 status          ls:Status-Code,           // Integer status code
-     2 status_text     String optional,          // Free-form description of the Response status
-     3 results         Results optional          // Results returned by the invoked Command
-}
-
-Action = Enumerated {                        // Actions used in this profile
-     3 query                                     // Initiate a request for information
-}
-
-Target = Choice {                            // Targets used in this profile
-     9 features        ls:Features,              // A set of items used with the query Action to determine an Actuator's capabilities
-  1027 sbom/           P-Target                  // Targets defined in this profile
-}
-
-Actuator = Map{1..*} {
-}
-
-Args = Map{1..*} {
-}
-
-Results = Map{1..*} {                        // Response Results
-     1 versions        ls:Version [0..10] unique, // List of OpenC2 language versions supported by this Actuator
-     2 profiles        ls:Namespace [0..*] unique, // List of profiles supported by this Actuator
-     3 pairs           Action-Targets optional,  // List of targets applicable to each supported Action
-     4 rate_limit      Number{0..*} optional,    // Maximum number of requests per minute supported by design or policy
-  1027 sbom/           P-Results optional        // Results defined in this profile
-}
-
-Action-Targets = Map {                       // Targets applicable to each action
-     3 query           Targets-Query [1..10] unique
-}
-
-Targets-Query = Enumerated {
-     1 features,
-     2 sbom
-}
-```
-
-### 4) Add SBOM-specific definitions:
+#### 1) pick a namespace: `http://oasis-open.org/openc2/oc2sbom/v1.1`
+#### 2) pick a property ID/Name: `1027, sbom`
+#### 3) copy the Language Profile into the SBOM Profile, delete everything not used, add SBOM hooks:
+#### 4) Add SBOM-specific definitions:
 
 ```text
 P-Target = Choice {                          // SBOM-defined target(s)
@@ -151,9 +95,9 @@ SBOM-Depth = Enumerated {
 }
 ```
 
-### 5) Generate JSON schema from the property definitions: https://github.com/oasis-tcs/openc2-usecases/tree/master/Cybercom-Plugfest/TestData/sbom
+#### 5) Generate JSON schema from the property definitions: https://github.com/oasis-tcs/openc2-usecases/tree/master/Cybercom-Plugfest/TestData/sbom
 
-### 6) Create example Commmand and Response, validate against JSON schema:
+#### 6) Create example Commmand and Response, validate against JSON schema:
 
 **Command:**
 ```json
