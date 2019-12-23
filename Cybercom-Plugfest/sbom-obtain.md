@@ -62,9 +62,9 @@ An example reply might be:
 ```
 Note this particular example is XML jammed into JSON so probably not escaped correctly. This is the actual CycloneDx SBoM for a Raspberry Pi running "blinky" (the IoT equivilent to "Hello World" - it blinks the one LED on a Raspberry Pi)
 
-## Proposed Update
+## Proposed change:
 
-Following the profile creation recipe https://github.com/oasis-open/openc2-custom-aps/tree/master/Schema-Template:
+Following the OpenC2 v1.1 profile creation recipe https://github.com/oasis-open/openc2-custom-aps/tree/master/Schema-Template:
 
 #### 1) Pick a namespace:
 http://oasis-open.org/openc2/oc2sbom/v1.1
@@ -76,7 +76,7 @@ https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/TestD
 
 ```text
 P-Target = Choice {                          // SBOM-defined target(s)
-     1 type            SBOM-Type
+     1 type            SBOM-Type [0..10] unique
 }
 
 P-Results = Record {                         // SBOM data object of the requested type
