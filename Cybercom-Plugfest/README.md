@@ -211,15 +211,27 @@ And there are plenty of restaurants nearby for lunch. 
 
 ### 6.4 FAQ
 - Will WiFi be provided? More than one SSID? What networking details?
-  * ????
+  * The UMBC facility provides a single WiFi network that will be readily
+  accessible to plug fest participants.
 - Will wired ethernet be provided? More than one network? What networking details?
+  * The UMBC facility is providing wired Ethernet drops and switches for each of the two
+  rooms allocated for our event. The WiFi and the wired Ethernet are all on the same LAN.
 - DHCP or Static IP or choice-of-either? Will IP addresses (or at least ranges) be available prior to arriving to allow preconfiguration (eg only allow access from these ranges)
+  * UMBC is mapping public ports to static LAN IPs sufficient to connect to 20 devices on ports 80 and 443.
 - IPV4? IPV6?
-- Will our devices be able to reach the internet? Will ip's/ports need to be prearranged to get thru firewalls?
-- Will our devices be reachable from the internet? Will ip's/ports need to be prearranged to get thru firewalls?
+  * IPv4 has been tested.  If anyone actually requires IPv6 please speak up and we'll see if it's available.
+- Will our devices be able to reach the internet? Will IPs/ports need to be prearranged to get thru firewalls?
+  * The facility freely permits outbound traffic to Internet sites, and this has been tested by NSA OpenC2 team.
+  No special prearrangements are required.
+- Will our devices be reachable from the internet? Will IPs/ports need to be prearranged to get thru firewalls?
+  * See above; support for 20 devices has been arranged. More can be added if there is demand.
 - Will whiteboards be provided?
+  * One room has "whiteboard walls", the other room has some whiteboards; there are also flip-chart easels.
 - Will projector be provided?
-- will certificates be needed for interworking (eg for https mutual authentication)? If so - how arrange?
+  * There is a project and screen in one room; the NSA OpenC2 team is also arranging for a monitor per
+  work table for display purposes.
+- Will certificates be needed for interworking (e.g., for HTTPS mutual authentication)? If so - how arrange?
+  * Nothing has been arranged to supply certificates at this time.
 
 ## 7. Resources
 Plugfest Preparation:
