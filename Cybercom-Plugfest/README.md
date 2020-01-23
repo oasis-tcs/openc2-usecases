@@ -13,16 +13,21 @@ Table of Contents:
 - [6. Info for Participants](#6-info-for-participants)
   * [6.1 OpenC2 Plugfest Planning](#61-openc2-plugfest-planning)
   * [6.2 Lessons learned from previous plugfests](#62-lessons-learned-from-previous-plugfests)
-  * [6.3 FAQ](#63-faq)
+  * [6.3 About The Facility](#63-about-the-facility)
+  * [6.4 FAQ](#64-faq)
 - [7. Resources](#7-resources)
 - [8. Outcomes / Post Mortem](#8-outcomes--post-mortem)
 
 ## 1. About
 
 OpenC2 is a recently released suite of OASIS specifications that define a standard language for command and control of cyber defense technologies.
-OpenC2 will be running a plug fest / hackathon 27-28 January 2020, hosted by US Cyber Command in their public, unclassified DreamPort facility in Columbia, MD.
+OpenC2 will be running a plug fest / hackathon 27-28 January 2020, sponsored by US Cyber Command 
+and hosted in the nearby [UMBC Training](https://umbctraining.com/) facility in Columbia, MD.
 The Plug Fest is open to interested participants, regardless of whether they are OASIS members. The DreamPort facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
 Further details and registration information can be found at DreamPort: https://dreamport.tech/event-open-c2-plug-fest-01272820.php
+
+[Google Maps link](https://www.google.com/maps/place/UMBC+Training+Centers/@39.177432,-76.8033375,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7e0f2a23f6065:0x6211ab036d384b90!8m2!3d39.177432!4d-76.8011488)
+for the UBMC Training facility
 
 Integrate once, reuse everywhere.
 Stop having to know the
@@ -191,7 +196,20 @@ included:
 
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
-### 6.3 FAQ
+### 6.3 About The Facility
+
+The UMBC Training facility we'll be using has allocated us two rooms, 
+each of which can accommodate 30-35ish people. We'll have tables & chairs, 
+white boards, flip-chart easels, and wireless and wired network connections 
+with Internet access to support our efforts. We are arranging 10-12 monitors 
+to assign to tables for display purposes (but you can also bring one if you wish).
+
+The facility has a nice break room with beverages and snacks (and pretty good coffee). 
+There is plenty of (free) parking. Note that the facility entrance is on the side 
+away from Columbia Gateway Drive, facing inward toward the shared parking lot. 
+And there are plenty of restaurants nearby for lunch. 
+
+### 6.4 FAQ
 - Will WiFi be provided? More than one SSID? What networking details?
   * ????
 - Will wired ethernet be provided? More than one network? What networking details?
