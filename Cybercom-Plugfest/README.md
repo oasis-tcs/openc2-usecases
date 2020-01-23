@@ -13,16 +13,24 @@ Table of Contents:
 - [6. Info for Participants](#6-info-for-participants)
   * [6.1 OpenC2 Plugfest Planning](#61-openc2-plugfest-planning)
   * [6.2 Lessons learned from previous plugfests](#62-lessons-learned-from-previous-plugfests)
-  * [6.3 FAQ](#63-faq)
+  * [6.3 About The Facility](#63-about-the-facility)
+  * [6.4 FAQ](#64-faq)
 - [7. Resources](#7-resources)
 - [8. Outcomes / Post Mortem](#8-outcomes--post-mortem)
 
 ## 1. About
 
 OpenC2 is a recently released suite of OASIS specifications that define a standard language for command and control of cyber defense technologies.
-OpenC2 will be running a plug fest / hackathon 27-28 January 2020, hosted by US Cyber Command in their public, unclassified DreamPort facility in Columbia, MD.
-The Plug Fest is open to interested participants, regardless of whether they are OASIS members. The DreamPort facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
+The [OpenC2 Technical Committee](https://www.oasis-open.org/committees/openc2) (TC) 
+is running a plug fest / hackathon on 27-28 January 2020, sponsored by US Cyber Command 
+and hosted in the nearby [UMBC Training](https://umbctraining.com/) facility in Columbia, MD.
+The Plug Fest is open to interested participants, regardless of whether they are OASIS members. 
+The UMBC facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
+
 Further details and registration information can be found at DreamPort: https://dreamport.tech/event-open-c2-plug-fest-01272820.php
+
+A [Google Maps link](https://www.google.com/maps/place/UMBC+Training+Centers/@39.177432,-76.8033375,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7e0f2a23f6065:0x6211ab036d384b90!8m2!3d39.177432!4d-76.8011488)
+for the UBMC Training facility
 
 Integrate once, reuse everywhere.
 Stop having to know the
@@ -151,14 +159,15 @@ The DreamPort calendar announcement is at
 https://dreamport.tech/event-open-c2-plug-fest-01272820.php
 with links to registration.
 
-OASIS has created a new mail list for the plug fest, openc2-plugfest-2019@lists.oasis-open.org. The list is open to interested parties regardless of OASIS or TC membership.
-See link on DreamPort calendar page to join.
+OASIS has created a new mail list for the plug fest, openc2-plugfest-2019@lists.oasis-open.org. The list is open to interested parties regardless of OASIS or TC membership. There is no archive for the plug fest mail list.
 
 Registration for the event is at https://dreamport.tech/registration-open-c2-plug-fest-0120.php.
 
 Please do a pull request against this page and add yourself to participants section
 
 Information about DreamPort:  https://dreamport.tech/about-us.php
+
+Information about UMBC Training:  https://umbctraining.com/
 
 https://github.com/oasis-open?utf8=%E2%9C%93&q=openc2-&type=&language= are some
 of the OpenC2 open source repositories.
@@ -191,17 +200,42 @@ included:
 
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
-### 6.3 FAQ
+### 6.3 About The Facility
+
+The UMBC Training facility we'll be using has allocated us two rooms, 
+each of which can accommodate 30-35ish people. We'll have tables & chairs, 
+white boards, flip-chart easels, and wireless and wired network connections 
+with Internet access to support our efforts. We are arranging 10-12 monitors 
+to assign to tables for display purposes (but you can also bring one if you wish).
+
+The facility has a nice break room with beverages and snacks (and pretty good coffee). 
+There is plenty of (free) parking. Note that the facility entrance is on the side 
+away from Columbia Gateway Drive, facing inward toward the shared parking lot. 
+And there are plenty of restaurants nearby for lunch. 
+
+### 6.4 FAQ
 - Will WiFi be provided? More than one SSID? What networking details?
-  * ????
+  * The UMBC facility provides a single WiFi network that will be readily
+  accessible to plug fest participants.
 - Will wired ethernet be provided? More than one network? What networking details?
+  * The UMBC facility is providing wired Ethernet drops and switches for each of the two
+  rooms allocated for our event. The WiFi and the wired Ethernet are all on the same LAN.
 - DHCP or Static IP or choice-of-either? Will IP addresses (or at least ranges) be available prior to arriving to allow preconfiguration (eg only allow access from these ranges)
+  * UMBC is mapping public ports to static LAN IPs sufficient to connect to 20 devices on ports 80 and 443.
 - IPV4? IPV6?
-- Will our devices be able to reach the internet? Will ip's/ports need to be prearranged to get thru firewalls?
-- Will our devices be reachable from the internet? Will ip's/ports need to be prearranged to get thru firewalls?
+  * IPv4 has been tested.  If anyone actually requires IPv6 please speak up and we'll see if it's available.
+- Will our devices be able to reach the internet? Will IPs/ports need to be prearranged to get thru firewalls?
+  * The facility freely permits outbound traffic to Internet sites, and this has been tested by NSA OpenC2 team.
+  No special prearrangements are required.
+- Will our devices be reachable from the internet? Will IPs/ports need to be prearranged to get thru firewalls?
+  * See above; support for 20 devices has been arranged. More can be added if there is demand.
 - Will whiteboards be provided?
+  * One room has "whiteboard walls", the other room has some whiteboards; there are also flip-chart easels.
 - Will projector be provided?
-- will certificates be needed for interworking (eg for https mutual authentication)? If so - how arrange?
+  * There is a project and screen in one room; the NSA OpenC2 team is also arranging for a monitor per
+  work table for display purposes.
+- Will certificates be needed for interworking (e.g., for HTTPS mutual authentication)? If so - how arrange?
+  * Nothing has been arranged to supply certificates at this time.
 
 ## 7. Resources
 Plugfest Preparation:
