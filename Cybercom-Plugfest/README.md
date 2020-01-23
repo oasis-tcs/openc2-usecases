@@ -21,12 +21,15 @@ Table of Contents:
 ## 1. About
 
 OpenC2 is a recently released suite of OASIS specifications that define a standard language for command and control of cyber defense technologies.
-OpenC2 will be running a plug fest / hackathon 27-28 January 2020, sponsored by US Cyber Command 
+The [OpenC2 Technical Committee](https://www.oasis-open.org/committees/openc2) (TC) 
+is running a plug fest / hackathon on 27-28 January 2020, sponsored by US Cyber Command 
 and hosted in the nearby [UMBC Training](https://umbctraining.com/) facility in Columbia, MD.
-The Plug Fest is open to interested participants, regardless of whether they are OASIS members. The DreamPort facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
+The Plug Fest is open to interested participants, regardless of whether they are OASIS members. 
+The UMBC facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
+
 Further details and registration information can be found at DreamPort: https://dreamport.tech/event-open-c2-plug-fest-01272820.php
 
-[Google Maps link](https://www.google.com/maps/place/UMBC+Training+Centers/@39.177432,-76.8033375,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7e0f2a23f6065:0x6211ab036d384b90!8m2!3d39.177432!4d-76.8011488)
+A [Google Maps link](https://www.google.com/maps/place/UMBC+Training+Centers/@39.177432,-76.8033375,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7e0f2a23f6065:0x6211ab036d384b90!8m2!3d39.177432!4d-76.8011488)
 for the UBMC Training facility
 
 Integrate once, reuse everywhere.
@@ -156,14 +159,15 @@ The DreamPort calendar announcement is at
 https://dreamport.tech/event-open-c2-plug-fest-01272820.php
 with links to registration.
 
-OASIS has created a new mail list for the plug fest, openc2-plugfest-2019@lists.oasis-open.org. The list is open to interested parties regardless of OASIS or TC membership.
-See link on DreamPort calendar page to join.
+OASIS has created a new mail list for the plug fest, openc2-plugfest-2019@lists.oasis-open.org. The list is open to interested parties regardless of OASIS or TC membership. There is no archive for the plug fest mail list.
 
 Registration for the event is at https://dreamport.tech/registration-open-c2-plug-fest-0120.php.
 
 Please do a pull request against this page and add yourself to participants section
 
 Information about DreamPort:  https://dreamport.tech/about-us.php
+
+Information about UMBC Training:  https://umbctraining.com/
 
 https://github.com/oasis-open?utf8=%E2%9C%93&q=openc2-&type=&language= are some
 of the OpenC2 open source repositories.
