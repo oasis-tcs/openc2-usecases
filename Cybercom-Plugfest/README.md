@@ -48,7 +48,7 @@ The plugfest is not a meeting of the OASIS OpenC2 Technical Commmittee. It does 
 although OpenC2 members are welcome to bring inspirations or suggestions from the plugfest to the TC.
 
 ## 2. Is it Plugfest or Hackathon? BOTH!
-This is both a plugfest (testing interoperability of existing implementations)
+It is both a plugfest (testing interoperability of existing implementations)
 and a hackathon (writing software to meet a need).
 Come prepared to participate in either or both.
 
@@ -56,9 +56,9 @@ Come prepared to participate in either or both.
 Although it is not required to announce if you will be attending,
 the hope is many will and include what they will be bringing to the table:
 - AT&T
-- Broadcom/Symantec - ok to put? will you bring ICDX?
+- Broadcom/Symantec
 - DoD - Active Cyber Defense of Critical Infastructure (ACDCI)
-- Fornetix -
+- Fornetix
 - GitHub - providing these [resources](sbom-github.md) for SBoMs and comply to connect
 - Google - providing these [resources](cloud-google.md) to support plugfest
 - NineFX
@@ -69,8 +69,9 @@ the hope is many will and include what they will be bringing to the table:
   * [IoT C2C](uc-sFractal-IoT-C2C.md) - IoT comply to connect use case
   * [IoT SPA](uc-sFractal-IoT-SPA.md) - Single Packet Authentication IoT use case
 - UNCC
+- University of Oslo
 
-
+### Details
 
   | PARTICIPANT |  DESCRIPTION |  USE CASE |  FUNCTION/ ACTIONS |  CONSUMER OR PRODUCER |  POC |  LINK |
   |-------------|--------------|------------------|---------------------|----------|-----------|-----------|
@@ -86,11 +87,11 @@ the hope is many will and include what they will be bringing to the table:
   | NSA | OpenC2 Integration Framework (OIF)| Providing a platform for other's use cases| Various | Both | Danny Martinez ||
   |s-fractal|Test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's to be IoT devices| usecases documented at https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/tests-sFractal-IoT.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-C2C.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-SPA.md | QUERY, ALLOW | Consumer| Duncan Sparrell||
   | Symantec| Multiple Cyber Security Products | Endpoint Remediation | OpenC2 Integrated in the ICDX product|Consumer| Brian Berliner||
-  |University of Oslo| Academia | Coordinated Response | Implemented the SLPF version 1.0 into the acladapter and implemented a custom actuator profile for some of the cisco poc functions| Both |Vasileios Mavroeidis||
+  |University of Oslo| Academia | Firewalls & Coordinated Response | Implemented the SLPF version 1.0 into the [iosacl-adapter](https://github.com/oasis-open/openc2-iosacl-adapter) for command and control of Cisco ACLs| Both |Vasileios Mavroeidis|[PoC](https://github.com/oasis-open/openc2-iosacl-adapter) and [Plugfest Use Case](https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-January)|
 
 
 
-## 4. What usecases addressed?
+## 4. What use cases are addressed?
 It is not required, but hoped, that attendees will publish use cases of interest
 prior to arriving.
 One of the first orders of business will be a brainstorming session
@@ -125,7 +126,12 @@ include sFractal home/small-business scenarios
 ### 4.3 sFractal IoT Single Packet Authentication
 See [here](uc-sFractal-IoT-SPA.md) for the Single Packet Authentication usecase proposed by sFractal.
 
-### 4.4 add more here
+### 4.4 Firewall Configuration and Management
+
+- University of Oslo: The use case of UiO includes a prototype implementation of the OASIS OpenC2 SLPF version 1.0 with the purpose of controling Access Control Lists (firewall capability) in Cisco devices (e.g., routers, L3 switches, firewalls). In their use case a Cisco Cloud Service Router (CSR1000V with Cisco IOS XE Software, Version 16.12.01a) in the Google Cloud Platform is controlled. The use case is available [HERE](https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-January). The PoC is available [HERE](https://github.com/oasis-open/openc2-iosacl-adapter). In their use case, an idea of how to enable coordinated response via OpenC2 is presented, even though it is out of OpenC2 scope (at this moment).
+
+
+### 4.5 add more here
 others are free to put their needs here
 
 ## 5. OASIS OpenC2 TC relationship to Plugfest/Hackathon
