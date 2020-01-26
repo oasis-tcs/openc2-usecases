@@ -1,0 +1,6 @@
+{
+  "action": "allow",
+  "target": {
+    "ipv6_net": "64:ff9b::/96"
+  }
+}

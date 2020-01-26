@@ -1,0 +1,30 @@
+{
+  "status": 200,
+  "status_text": "OK",
+  "results": {
+    "versions": [
+      "1.0-draft-2019-02"
+    ],
+    "profiles": [
+      "myextension"
+    ],
+    "pairs": {
+      "query": [
+        "features"
+      ],
+      "deny": [
+        "file"
+      ],
+      "allow": [
+        "file",
+        "device"
+      ],
+      "remediate": [
+        "file"
+      ],
+      "contain": [
+        "device"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "action": "start",
+  "target": {
+    "x-acme:container": {
+      "container_id": "E57C0116-D291-4AF3-BEF9-0F5B604A2C85"
+    }
+  },
+  "actuator": {
+    "x-mycompany": {
+      "asset_id": "dc81da11-e208-4464-8bd3-7a4deb93abf1"
+    }
+  }
+}

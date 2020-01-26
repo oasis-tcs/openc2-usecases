@@ -1,0 +1,288 @@
+{
+ "meta": {
+  "module": "http://oasis-open.org/openc2/oc2ls/v1.0.1/acme/cmd",
+  "patch": "0",
+  "title": "SLPF + Acme schema - Command",
+  "description": "OpenC2 LS version 1.0 + errata + SLPF + Acme types",
+  "exports": ["OpenC2-Command"],
+  "config": {
+   "$FS": ":",
+   "$FieldName": "^[a-z][-_:a-z0-9]{0,31}$"
+  }
+ },
+
+ "types": [
+  ["OpenC2-Command", "Record", [], "", [
+    [1, "action", "Action", [], "The task or activity to be performed (i.e., the 'verb')."],
+    [2, "target", "Target", [], "The object of the Action. The Action is performed on the Target."],
+    [3, "args", "Args", ["[0"], "Additional information that applies to the Command."],
+    [4, "actuator", "Actuator", ["[0"], "The subject of the Action. The Actuator executes the Action on the Target."],
+    [5, "command_id", "String", ["[0"], "An identifier of this Command."]
+  ]],
+
+  ["Action", "Enumerated", [], "", [
+    [1, "scan", "Systematic examination of some aspect of the entity or its environment."],
+    [2, "locate", "Find an object physically, logically, functionally, or by organization."],
+    [3, "query", "Initiate a request for information."],
+    [6, "deny", "Prevent a certain event or action from completion, such as preventing a flow from reaching a destination or preventing access."],
+    [7, "contain", "Isolate a file, process, or entity so that it cannot modify or access assets or processes."],
+    [8, "allow", "Permit access to or execution of a Target."],
+    [9, "start", "Initiate a process, application, system, or activity."],
+    [10, "stop", "Halt a system or end an activity."],
+    [11, "restart", "Stop then start a system or an activity."],
+    [14, "cancel", "Invalidate a previously issued Action."],
+    [15, "set", "Change a value, configuration, or state of a managed entity."],
+    [16, "update", "Instruct a component to retrieve, install, process, and operate in accordance with a software update, reconfiguration, or other update."],
+    [18, "redirect", "Change the flow of traffic to a destination other than its original destination."],
+    [19, "create", "Add a new entity of a known type (e.g., data, files, directories)."],
+    [20, "delete", "Remove an entity (e.g., data, files, flows)."],
+    [22, "detonate", "Execute and observe the behavior of a Target (e.g., file, hyperlink) in an isolated environment."],
+    [23, "restore", "Return a system to a previously known state."],
+    [28, "copy", "Duplicate an object, file, data flow, or artifact."],
+    [30, "investigate", "Task the recipient to aggregate and report information as it pertains to a security event or incident."],
+    [32, "remediate", "Task the recipient to eliminate a vulnerability or attack point."]
+  ]],
+
+  ["Target", "Choice", [], "OpenC2 Target datatypes", [
+    [1, "artifact", "Artifact", [], "An array of bytes representing a file-like object or a link to that object."],
+    [2, "command", "String", [], "A reference to a previously issued Command."],
+    [3, "device", "Device", [], "The properties of a hardware device."],
+    [7, "domain_name", "Domain-Name", [], "A network domain name."],
+    [8, "email_addr", "Email-Addr", [], "A single email address."],
+    [9, "features", "Features", [], "A set of items used with the query Action to determine an Actuator's capabilities."],
+    [10, "file", "File", [], "Properties of a file."],
+    [11, "idn_domain_name", "IDN-Domain-Name", [], "An internationalized domain name."],
+    [12, "idn_email_addr", "IDN-Email-Addr", [], "A single internationalized email address."],
+    [13, "ipv4_net", "IPv4-Net", [], "An IPv4 address range including CIDR prefix length."],
+    [14, "ipv6_net", "IPv6-Net", [], "An IPv6 address range including prefix length."],
+    [15, "ipv4_connection", "IPv4-Connection", [], "A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol"],
+    [16, "ipv6_connection", "IPv6-Connection", [], "A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol"],
+    [20, "iri", "IRI", [], "An internationalized resource identifier (IRI)."],
+    [17, "mac_addr", "MAC-Addr", [], "A Media Access Control (MAC) address - EUI-48 or EUI-64 as defined in [[EUI]](#eui)"],
+    [18, "process", "Process", [], "Common properties of an instance of a computer program as executed on an operating system."],
+    [25, "properties", "Properties", [], "Data attribute associated with an Actuator"],
+    [19, "uri", "URI", [], "A uniform resource identifier (URI)."],
+    [900, "slpf:rule_number", "Rule-ID", [], "Immutable identifier assigned when a rule is created. Identifies a rule to be deleted"],
+    [901, "x-acme:features", "Acme-Features", [], "Bad design - no reason to duplicate Features in acme profile"],
+    [902, "x-acme:container", "Acme-Container", [], "Hypothetical container target"]
+  ]],
+
+  ["Args", "Map", ["{1"], "", [
+    [1, "start_time", "Date-Time", ["[0"], "The specific date/time to initiate the Command"],
+    [2, "stop_time", "Date-Time", ["[0"], "The specific date/time to terminate the Command"],
+    [3, "duration", "Duration", ["[0"], "The length of time for an Command to be in effect"],
+    [4, "response_requested", "Response-Type", ["[0"], "The type of Response required for the Command: `none`, `ack`, `status`, `complete`."],
+    [1024, "slpf", "P-Args", ["[0", "<"], "Command arguments defined in the SLPF actuator profile"],
+    [3011, "x-acme", "P-Args$acme", ["[0", "<"], "Command arguments from the hypothetical Acme profile"],
+    [3012, "x-mycompany", "P-Args$myco", ["[0", "<"], "Command arguments from the hypothetical My Company profile"],
+    [3013, "x-mycompany_with_underscore", "P-Args$myco2", ["[0", "<"], "Command arguments from the hypothetical My Company 2 profile"],
+    [3014, "x-example", "P-Args$example", ["[0", "<"], "Command arguments from the hypothetical Example profile"],
+    [3020, "x-395", "P-Args$395", ["[0", "<"], "Results from the hypothetical 395 company profile"]
+  ]],
+
+  ["Actuator", "Choice", [], "", [
+    [1024, "slpf", "P-Actuator", ["[0", "<"], "Specifiers defined in the SLPF actuator profile"],
+    [3010, "x-esm", "P-Actuator$esm", ["[0", "<"], "Specifiers from the hypothetical Energy Storage Manager profile"],
+    [3012, "x-mycompany", "P-Actuator$myco", ["[0", "<"], "Results from the hypothetical My Company profile"]
+  ]],
+
+  ["Artifact", "Record", ["{1"], "", [
+    [1, "mime_type", "String", ["[0"], "Permitted values specified in the IANA Media Types registry, [[RFC6838]](#rfc6838)"],
+    [2, "payload", "Payload", ["[0"], "Choice of literal content or URL"],
+    [3, "hashes", "Hashes", ["[0"], "Hashes of the payload content"]
+  ]],
+
+  ["Device", "Map", ["{1"], "", [
+    [1, "hostname", "Hostname", ["[0"], "A hostname that can be used to connect to this device over a network"],
+    [2, "idn_hostname", "IDN-Hostname", ["[0"], "An internationalized hostname that can be used to connect to this device over a network"],
+    [3, "device_id", "String", ["[0"], "An identifier that refers to this device within an inventory or management system"]
+  ]],
+
+  ["Domain-Name", "String", ["/hostname"], "[[RFC1034]](#rfc1034), Section 3.5"],
+
+  ["Email-Addr", "String", ["/email"], "Email address, [[RFC5322]](#rfc5322), Section 3.4.1"],
+
+  ["Features", "ArrayOf", ["*Feature", "{0", "}10", "q"], "An array of zero to ten names used to query an Actuator for its supported capabilities."],
+
+  ["File", "Map", ["{1"], "", [
+    [1, "name", "String", ["[0"], "The name of the file as defined in the file system"],
+    [2, "path", "String", ["[0"], "The absolute path to the location of the file in the file system"],
+    [3, "hashes", "Hashes", ["[0"], "One or more cryptographic hash codes of the file contents"]
+  ]],
+
+  ["IDN-Domain-Name", "String", ["/idn-hostname"], "Internationalized Domain Name, [[RFC5890]](#rfc5890), Section 2.3.2.3."],
+
+  ["IDN-Email-Addr", "String", ["/idn-email"], "Internationalized email address, [[RFC6531]](#rfc6531)"],
+
+  ["IPv4-Net", "Array", ["/ipv4-net"], "", [
+    [1, "ipv4_addr", "IPv4-Addr", [], "IPv4 address as defined in [[RFC0791]](#rfc0791)"],
+    [2, "prefix_length", "Integer", ["[0"], "CIDR prefix-length. If omitted, refers to a single host address."]
+  ]],
+
+  ["IPv4-Connection", "Record", ["{1"], "5-tuple that specifies a tcp/ip connection", [
+    [1, "src_addr", "IPv4-Net", ["[0"], "IPv4 source address range"],
+    [2, "src_port", "Port", ["[0"], "source service per [[RFC6335]](#rfc6335)"],
+    [3, "dst_addr", "IPv4-Net", ["[0"], "IPv4 destination address range"],
+    [4, "dst_port", "Port", ["[0"], "destination service per [[RFC6335]](#rfc6335)"],
+    [5, "protocol", "L4-Protocol", ["[0"], "layer 4 protocol (e.g., TCP) - see [Section 3.4.2.10](#34210-l4-protocol)"]
+  ]],
+
+  ["IPv6-Net", "Array", ["/ipv6-net"], "", [
+    [1, "ipv6_addr", "IPv6-Addr", [], "IPv6 address as defined in [[RFC8200]](#rfc8200)"],
+    [2, "prefix_length", "Integer", ["[0"], "prefix length. If omitted, refers to a single host address."]
+  ]],
+
+  ["IPv6-Connection", "Record", ["{1"], "5-tuple that specifies a tcp/ip connection", [
+    [1, "src_addr", "IPv6-Net", ["[0"], "IPv6 source address range"],
+    [2, "src_port", "Port", ["[0"], "source service per [[RFC6335]](#rfc6335)"],
+    [3, "dst_addr", "IPv6-Net", ["[0"], "IPv6 destination address range"],
+    [4, "dst_port", "Port", ["[0"], "destination service per [[RFC6335]](#rfc6335)"],
+    [5, "protocol", "L4-Protocol", ["[0"], "layer 4 protocol (e.g., TCP) - [Section 3.4.2.10](#34210-l4-protocol)"]
+  ]],
+
+  ["IRI", "String", ["/iri"], "Internationalized Resource Identifier, [[RFC3987]](#rfc3987)."],
+
+  ["MAC-Addr", "Binary", ["/eui"], "Media Access Control / Extended Unique Identifier address - EUI-48 or EUI-64 as defined in [[EUI]](#eui)."],
+
+  ["Process", "Map", ["{1"], "", [
+    [1, "pid", "Integer", ["[0", "{0"], "Process ID of the process"],
+    [2, "name", "String", ["[0"], "Name of the process"],
+    [3, "cwd", "String", ["[0"], "Current working directory of the process"],
+    [4, "executable", "File", ["[0"], "Executable that was executed to start the process"],
+    [5, "parent", "Process", ["[0"], "Process that spawned this one"],
+    [6, "command_line", "String", ["[0"], "The full command line invocation used to start this process, including all arguments"]
+  ]],
+
+  ["Properties", "ArrayOf", ["*String", "{1", "q"], "A list of names that uniquely identify properties of an Actuator."],
+
+  ["URI", "String", ["/uri"], "Uniform Resource Identifier, [[RFC3986]](#rfc3986)."],
+
+  ["Date-Time", "Integer", ["{0"], "Date and Time"],
+
+  ["Duration", "Integer", ["{0"], "A length of time"],
+
+  ["Feature", "Enumerated", [], "Specifies the results to be returned from a query features Command", [
+    [1, "versions", "List of OpenC2 Language versions supported by this Actuator"],
+    [2, "profiles", "List of profiles supported by this Actuator"],
+    [3, "pairs", "List of supported Actions and applicable Targets"],
+    [4, "rate_limit", "Maximum number of Commands per minute supported by design or policy"]
+  ]],
+
+  ["Hashes", "Map", ["{1"], "Cryptographic Hash values", [
+    [1, "md5", "Binary", ["[0", "/x"], "MD5 hash as defined in [[RFC1321]](#rfc1321)"],
+    [2, "sha1", "Binary", ["[0", "/x"], "SHA1 hash as defined in [[RFC6234]](#rfc6234)"],
+    [3, "sha256", "Binary", ["[0", "/x"], "SHA256 hash as defined in [[RFC6234]](#rfc6234)"]
+  ]],
+
+  ["Hostname", "String", ["/hostname"], "Internet host name as specified in [[RFC1123]](#rfc1123)"],
+
+  ["IDN-Hostname", "String", ["/idn-hostname"], "Internationalized Internet host name as specified in [[RFC5890]](#rfc5890), Section 2.3.2.3."],
+
+  ["IPv4-Addr", "Binary", ["/ipv4-addr"], "32 bit IPv4 address as defined in [[RFC0791]](#rfc0791)"],
+
+  ["IPv6-Addr", "Binary", ["/ipv6-addr"], "128 bit IPv6 address as defined in [[RFC8200]](#rfc8200)"],
+
+  ["L4-Protocol", "Enumerated", [], "Value of the protocol (IPv4) or next header (IPv6) field in an IP packet. Any IANA value, [RFC5237]", [
+    [1, "icmp", "Internet Control Message Protocol - [[RFC0792]](#rfc0792)"],
+    [6, "tcp", "Transmission Control Protocol - [[RFC0793]](#rfc0793)"],
+    [17, "udp", "User Datagram Protocol - [[RFC0768]](#rfc0768)"],
+    [132, "sctp", "Stream Control Transmission Protocol - [[RFC4960]](#rfc4960)"]
+  ]],
+
+  ["Payload", "Choice", [], "", [
+    [1, "bin", "Binary", [], "Specifies the data contained in the artifact"],
+    [2, "url", "URI", [], "MUST be a valid URL that resolves to the un-encoded content"]
+  ]],
+
+  ["Port", "Integer", ["{0", "}65535"], "Transport Protocol Port Number, [[RFC6335]](#rfc6335)"],
+
+  ["Response-Type", "Enumerated", [], "", [
+    [0, "none", "No response"],
+    [1, "ack", "Respond when Command received"],
+    [2, "status", "Respond with progress toward Command completion"],
+    [3, "complete", "Respond when all aspects of Command completed"]
+  ]],
+
+  ["Rule-ID", "Integer", [], "Access rule identifier"],
+
+  ["P-Args", "Map", ["{1"], "SLPF command arguments", [
+    [1024, "drop_process", "Drop-Process", ["[0"], "Specifies how to handle denied packets"],
+    [1025, "persistent", "Boolean", ["[0"], "Normal operations assume any changes to a device are to be implemented persistently. Setting the persistent modifier to FALSE results in a change that is not persistent in the event of a reboot or restart"],
+    [1026, "direction", "Direction", ["[0"], "Specifies whether to apply rules to incoming or outgoing traffic. If omitted, rules are applied to both"],
+    [1027, "insert_rule", "Rule-ID", ["[0"], "Specifies the identifier of the rule within a list, typically used in a top-down rule list"]
+  ]],
+
+  ["Drop-Process", "Enumerated", [], "", [
+    [1, "none", "Drop the packet and do not send a notification to the source of the packet"],
+    [2, "reject", "Drop the packet and send an ICMP host unreachable (or equivalent) to the source of the packet"],
+    [3, "false_ack", "Drop the traffic and send a false acknowledgment"]
+  ]],
+
+  ["Direction", "Enumerated", [], "", [
+    [1, "both", "Apply rules to all traffic"],
+    [2, "ingress", "Apply rules to incoming traffic only"],
+    [3, "egress", "Apply rules to outgoing traffic only"]
+  ]],
+
+  ["P-Actuator", "Map", [], "SLPF actuator specifiers", [
+    [1, "hostname", "String", ["[0"], "RFC 1123 hostname (can be a domain name or IP address) for a particular device with SLPF functionality"],
+    [2, "named_group", "String", ["[0"], "User defined collection of devices with SLPF functionality"],
+    [3, "asset_id", "String", ["[0"], "Unique identifier for a particular SLPF"],
+    [4, "asset_tuple", "String", ["[0", "]10"], "Unique tuple identifier for a particular SLPF consisting of a list of up to 10 strings"]
+  ]],
+
+  ["P-Args$acme", "Map", ["{1"], "Acme command arguments", [
+    [1, "firewall_status", "Status$acme", ["[0"], ""]
+  ]],
+
+  ["Status$acme", "Enumerated", [], "", [
+    [0, "off", ""],
+    [1, "on", ""]
+  ]],
+
+  ["P-Args$myco", "Map", ["{1"], "My Company command arguments", [
+    [1, "debug_logging", "Boolean", ["[0"], ""]
+  ]],
+
+  ["P-Actuator$myco", "Map", ["{1"], "My Company actuator specifiers", [
+    [1, "asset_id", "UUID", ["[0"], ""]
+  ]],
+
+  ["P-Args$myco2", "Map", ["{1"], "My Company 2 command arguments", [
+    [1, "debug_logging", "Boolean", ["[0"], ""]
+  ]],
+
+  ["P-Args$example", "Map", ["{1"], "Example command arguments", [
+    [1, "async", "Boolean", ["[0"], ""],
+    [2, "webhook_id", "UUID", ["[0"], ""]
+  ]],
+
+  ["P-Args$395", "Map", ["{1"], "395 Company command arguments", [
+    [1, "debug_logging", "Boolean", ["[0"], ""]
+  ]],
+
+  ["P-Actuator$esm", "Map", [], "", [
+    [1, "asset_id", "String", ["[0"], "Unique identifier for a particular SLPF"]
+  ]],
+
+  ["Acme-Features", "Map", [], "", [
+    [1, "features", "Acme-Feature-List", [], ""]
+  ]],
+
+  ["Acme-Feature-List", "ArrayOf", ["*Acme-Feature"], ""],
+
+  ["Acme-Feature", "Enumerated", [], "", [
+    [1, "versions", "List of OpenC2 Language versions supported by this Actuator"],
+    [2, "profiles", "List of profiles supported by this Actuator"],
+    [3, "pairs", "List of supported Actions and applicable Targets"],
+    [4, "rate_limit", "Maximum number of Commands per minute supported by design or policy"],
+    [5, "schema", "Actuator Schema"]
+  ]],
+
+  ["Acme-Container", "Record", [], "", [
+    [1, "container_id", "UUID", [], ""]
+  ]],
+
+  ["UUID", "String", [], ""]
+ ]
+}

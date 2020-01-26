@@ -1,0 +1,17 @@
+{
+  "action": "deny",
+  "target": {
+    "ipv6_net": "3ffe:1900:4545:3:200:f8ff:fe21:67cf"
+  },
+  "args": {
+    "response_requested": "none",
+    "slpf": {
+      "direction": "ingress"
+    }
+  },
+  "actuator": {
+    "slpf": {
+      "named_group": "perimeter"
+    }
+  }
+}
