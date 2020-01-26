@@ -21,10 +21,10 @@ Table of Contents:
 ## 1. About
 
 OpenC2 is a recently released suite of OASIS specifications that define a standard language for command and control of cyber defense technologies.
-The [OpenC2 Technical Committee](https://www.oasis-open.org/committees/openc2) (TC) 
-is running a plug fest / hackathon on 27-28 January 2020, sponsored by US Cyber Command 
+The [OpenC2 Technical Committee](https://www.oasis-open.org/committees/openc2) (TC)
+is running a plug fest / hackathon on 27-28 January 2020, sponsored by US Cyber Command
 and hosted in the nearby [UMBC Training](https://umbctraining.com/) facility in Columbia, MD.
-The Plug Fest is open to interested participants, regardless of whether they are OASIS members. 
+The Plug Fest is open to interested participants, regardless of whether they are OASIS members.
 The UMBC facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
 
 Further details and registration information can be found at DreamPort: https://dreamport.tech/event-open-c2-plug-fest-01272820.php
@@ -51,6 +51,14 @@ although OpenC2 members are welcome to bring inspirations or suggestions from th
 It is both a plugfest (testing interoperability of existing implementations)
 and a hackathon (writing software to meet a need).
 Come prepared to participate in either or both.
+
+For more on Plugfest activities
+and how you can help realtime during the plugfest
+- see [PlugFestActivites](plugfest-activities.md)
+
+For more on Hackathon activities
+and how you can help realtime during the plugfest
+- see [HackathonActivites](hackathon-activities.md)
 
 ## 3. Who is attending?
 Although it is not required to announce if you will be attending,
@@ -212,15 +220,15 @@ This repository includes use case descriptions, schemas, and test data (good and
 
 ### 6.3 About The Facility
 
-The UMBC Training facility we'll be using has allocated us two rooms, 
-each of which can accommodate 30-35ish people. We'll have tables & chairs, 
-white boards, flip-chart easels, and wireless and wired network connections 
-with Internet access to support our efforts. We are arranging 10-12 monitors 
+The UMBC Training facility we'll be using has allocated us two rooms,
+each of which can accommodate 30-35ish people. We'll have tables & chairs,
+white boards, flip-chart easels, and wireless and wired network connections
+with Internet access to support our efforts. We are arranging 10-12 monitors
 to assign to tables for display purposes (but you can also bring one if you wish).
 
-The facility has a nice break room with beverages and snacks (and pretty good coffee). 
-There is plenty of (free) parking. Note that the facility entrance is on the side 
-away from Columbia Gateway Drive, facing inward toward the shared parking lot. 
+The facility has a nice break room with beverages and snacks (and pretty good coffee).
+There is plenty of (free) parking. Note that the facility entrance is on the side
+away from Columbia Gateway Drive, facing inward toward the shared parking lot.
 And there are plenty of restaurants nearby for lunch. 
 
 ### 6.4 FAQ
