@@ -77,6 +77,9 @@ the hope is many will and include what they will be bringing to the table:
   |-------------|--------------|------------------|---------------------|----------|-----------|-----------|
   | AT&T | | Cloud based firewall use case | Commands TBD, but will include DENY and ALLOW | Both | Michael Stair||
   | BluVector | Determines the probability of a file being malicious (or benign) | | None at this time, but potential actions include SCAN, UPDATE| Consumer | Larry Gloss ||
+  |BAE| | Unmanned Terrestrial Vehicle use case| TBS, this use case will investigate the use of CAN BUS message transport| TBD|Bridgette Townsend||
+  | Clear Edge | Integration and System Engineering | | TBD | TBD | Producer ||
+  |Clarity Cyber ||'Denver Airport'. This is an RF situational awareness use case consisting of unattended sensors, unmanned aerial vehicles and a controller. |Some of the functions include Detection of signals of interest, direction finding, jamming hostile signals.  The OpenC2 actions inlcude LOCATE< DENY, ALLOW, REPORT, SET, CONTAIN, INVESTIGATE| The team will focus on the OpenC2 consumers.  Will probably use the OIF orchestrator to produce commands| Mike Ridge||
   | ClearEdge | Integration and System Engineering | TBD | TBD | Producer |Tina Coleman (tcoleman@clearedgeit.com)||
   | Fornetix| Key Orchestration | The Orchestrator will send commands and receive responses from an entity that uses the KMIP standard to manage cypto systems.  From the OpenC2 perspective, the KMIP is the actuator and KMIP abstracts the actual key management from the orchestrator | CREATE, SET, DENY, ALLOW | Both | TBA | |
   | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actions include QUERY | Consumer| Brendan O'Connor||
