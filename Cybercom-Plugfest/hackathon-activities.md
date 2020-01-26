@@ -6,9 +6,11 @@ It is a place to see where you can help, or ask if you need help.
 Table of Contents:
 - [1. Intro](#1-intro)
 - [2. Testing](#2-testing)
-  * [2.1 Broadcom/Symantec ICDX Testing](21-broadcom-symantec-icdx-testing)
-  * [2.2 AWS/GCP Openc2](22-aws-gcp-openc2)
-  * [2.3 add more](23-add-more)
+  * [2.1 Postman](21-postman)
+  * [2.2 Broadcom/Symantec ICDX Testing](22-broadcom-symantec-icdx-testing)
+  * [2.3 AWS/GCP Openc2](23-aws-gcp-openc2)
+  * [2.4 add more](24-add-more)
+  * [2.5 add more](25-add-more)
 - [3. Integration](#3-integration)
   * [3.1 Interoperability](31-interoperability)
   * [3.2 Among plugfest/hackathon](32-among-plugfest-hackathon)
@@ -59,18 +61,28 @@ Everybody can always use more help testing.
 Walk around to hackathon participants and to
 plugfest participants and ask how you can help.
 
-### 2.1 Broadcom/Symantec ICDX Testing
+### 2.2 Postman
+Any OpenC2 consumers being worked on should be able to be accessed using
+Postman (https://www.getpostman.com/).
+All projects would welcome cold eyes helping test their interfaces.
+And its a good learning experience to boot.
+
+If you aren't familar with Postman - ask around and someone here will help you
+
+### 2.2 Broadcom/Symantec ICDX Testing
 Syantec couldn't attend but has ICDX setup to test
 and is available to consult via phone and email.
 Help them setup and show off OpenC2 capability.
 
-### 2.2 AWS/GCP Openc2
+### 2.3 AWS/GCP Openc2
 Various project (put in links - if none here ask Duncan)
 use AWS or GCP or other clouds.
 AddLink and AddLink can be used to control AWS and/or GCP.
 From your laptop, test these yourself and set up some cloud resources.
 
-### 2.3 add more
+### 2.4 add more
+
+### 2.5 add more
 
 ## 3. Integration
 
