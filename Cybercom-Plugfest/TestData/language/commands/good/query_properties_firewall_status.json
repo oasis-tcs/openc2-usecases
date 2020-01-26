@@ -1,0 +1,8 @@
+{
+  "action": "query",
+  "target": {
+    "properties": [
+      "firewall_status"
+    ]
+  }
+}

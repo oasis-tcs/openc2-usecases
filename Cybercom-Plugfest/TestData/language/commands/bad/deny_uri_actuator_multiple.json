@@ -1,0 +1,14 @@
+{
+  "action": "deny",
+  "target": {
+    "uri": "https://example.com"
+  },
+  "actuator": {
+    "slpf": {
+      "asset_id": "123456"
+    },
+    "x-acme": {
+      "endpoint_id": "567890"
+    }
+  }
+}

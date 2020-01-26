@@ -1,0 +1,6 @@
+{
+  "action": "allow",
+  "target": {
+    "ipv6_net": "::1/128"
+  }
+}

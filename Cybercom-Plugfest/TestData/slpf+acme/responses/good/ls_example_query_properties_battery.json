@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "results": {
+    "x-esm": {
+      "battery": {
+        "capacity": 0.577216,
+        "charged_at": 1547506988,
+        "status": 12,
+        "mode": {
+          "output": "high",
+          "supported": [ "high", "trickle" ]
+        },
+        "visible_on_display": true
+      },
+      "asset_id": "TGEadsasd"
+    }
+  }
+}

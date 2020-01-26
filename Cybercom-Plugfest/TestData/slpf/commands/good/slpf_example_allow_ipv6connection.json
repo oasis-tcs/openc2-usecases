@@ -1,0 +1,13 @@
+{
+  "action": "allow",
+  "target": {
+    "ipv6_connection": {
+      "protocol": "tcp",
+      "dst_addr": "3ffe:1900:4545:3::f8ff:fe21:67cf",
+      "src_port": 21
+    }
+  },
+  "actuator": {
+    "slpf": {}
+  }
+}

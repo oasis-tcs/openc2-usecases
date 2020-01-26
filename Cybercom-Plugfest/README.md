@@ -13,16 +13,24 @@ Table of Contents:
 - [6. Info for Participants](#6-info-for-participants)
   * [6.1 OpenC2 Plugfest Planning](#61-openc2-plugfest-planning)
   * [6.2 Lessons learned from previous plugfests](#62-lessons-learned-from-previous-plugfests)
-  * [6.3 FAQ](#63-faq)
+  * [6.3 About The Facility](#63-about-the-facility)
+  * [6.4 FAQ](#64-faq)
 - [7. Resources](#7-resources)
 - [8. Outcomes / Post Mortem](#8-outcomes--post-mortem)
 
 ## 1. About
 
 OpenC2 is a recently released suite of OASIS specifications that define a standard language for command and control of cyber defense technologies.
-OpenC2 will be running a plug fest / hackathon 27-28 January 2020, hosted by US Cyber Command in their public, unclassified DreamPort facility in Columbia, MD.
-The Plug Fest is open to interested participants, regardless of whether they are OASIS members. The DreamPort facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
+The [OpenC2 Technical Committee](https://www.oasis-open.org/committees/openc2) (TC) 
+is running a plug fest / hackathon on 27-28 January 2020, sponsored by US Cyber Command 
+and hosted in the nearby [UMBC Training](https://umbctraining.com/) facility in Columbia, MD.
+The Plug Fest is open to interested participants, regardless of whether they are OASIS members. 
+The UMBC facility and the Plug Fest are unclassified, and there is no restriction to U.S. organizations or individuals.
+
 Further details and registration information can be found at DreamPort: https://dreamport.tech/event-open-c2-plug-fest-01272820.php
+
+A [Google Maps link](https://www.google.com/maps/place/UMBC+Training+Centers/@39.177432,-76.8033375,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7e0f2a23f6065:0x6211ab036d384b90!8m2!3d39.177432!4d-76.8011488)
+for the UBMC Training facility
 
 Integrate once, reuse everywhere.
 Stop having to know the
@@ -37,10 +45,10 @@ The plugfest aspect is for testing interworking of existing OpenC2 implementatio
 The hackathon aspect is for improving the interworking of existing OpenC2 implementations,  extending existing implementations (e.g., the many OpenC2 open source projects), and/or creating new implementations of OpenC2.
 
 The plugfest is not a meeting of the OASIS OpenC2 Technical Commmittee. It does not count towards voting rights for members of the OpenC2 TC. No work will be done on the OpenC2 specifications themselves
-although OpenC2 members are welcome to bring inspirations or suggestions from the plugfest to the TC. 
+although OpenC2 members are welcome to bring inspirations or suggestions from the plugfest to the TC.
 
 ## 2. Is it Plugfest or Hackathon? BOTH!
-This is both a plugfest (testing interoperability of existing implementations)
+It is both a plugfest (testing interoperability of existing implementations)
 and a hackathon (writing software to meet a need).
 Come prepared to participate in either or both.
 
@@ -48,41 +56,46 @@ Come prepared to participate in either or both.
 Although it is not required to announce if you will be attending,
 the hope is many will and include what they will be bringing to the table:
 - AT&T
-- Broadcom/Symantec - ok to put? will you bring ICDX?
+- Broadcom/Symantec
+- DoD - Active Cyber Defense of Critical Infastructure (ACDCI)
 - Fornetix
-- HII-MDIIS/G2 -ok to put? what bringing? What company name?
 - GitHub - providing these [resources](sbom-github.md) for SBoMs and comply to connect
 - Google - providing these [resources](cloud-google.md) to support plugfest
 - NineFX
 - Net Scout
-- NSA - put link to what bringing
+- NSA - OpenC2 Integration Framework (OIF) [Orchestrator](https://github.com/oasis-open/openc2-oif-orchestrator) and [Device](https://github.com/oasis-open/openc2-oif-device)
 - sFractal Consulting - 1 attendee ready to program in erlang, elixir, or python with the following resources:
   * [Iot Tests](tests-sFractal-IoT.md) - test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's.
   * [IoT C2C](uc-sFractal-IoT-C2C.md) - IoT comply to connect use case
   * [IoT SPA](uc-sFractal-IoT-SPA.md) - Single Packet Authentication IoT use case
 - UNCC
+- University of Oslo
 
-
+### Details
 
   | PARTICIPANT |  DESCRIPTION |  USE CASE |  FUNCTION/ ACTIONS |  CONSUMER OR PRODUCER |  POC |  LINK |
   |-------------|--------------|------------------|---------------------|----------|-----------|-----------|
   | AT&T | | Cloud based firewall use case | Commands TBD, but will include DENY and ALLOW | Both | Michael Stair||
   | BluVector | Determines the probability of a file being malicious (or benign) | | None at this time, but potential actions include SCAN, UPDATE| Consumer | Larry Gloss ||
+  |BAE| | Unmanned Terrestrial Vehicle use case| TBS, this use case will investigate the use of CAN BUS message transport| TBD|Bridgette Townsend||
   | Clear Edge | Integration and System Engineering | | TBD | TBD | Producer ||
+  |Clarity Cyber ||'Denver Airport'. This is an RF situational awareness use case consisting of unattended sensors, unmanned aerial vehicles and a controller. |Some of the functions include Detection of signals of interest, direction finding, jamming hostile signals.  The OpenC2 actions inlcude LOCATE< DENY, ALLOW, REPORT, SET, CONTAIN, INVESTIGATE| The team will focus on the OpenC2 consumers.  Will probably use the OIF orchestrator to produce commands| Mike Ridge||
+  | ClearEdge | Integration and System Engineering | TBD | TBD | Producer |Tina Coleman (tcoleman@clearedgeit.com)||
   | Fornetix| Key Orchestration | The Orchestrator will send commands and receive responses from an entity that uses the KMIP standard to manage cypto systems.  From the OpenC2 perspective, the KMIP is the actuator and KMIP abstracts the actual key management from the orchestrator | CREATE, SET, DENY, ALLOW | Both | TBA | |
-  | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actoins include QUERY | Consumer| Brendan O'Connor||
-  | GitHub | Analytic that queries code for a given vulnerabilty (and its varients)| | QUERY | Consumer | Xavier René-Corail||
+  | GitHub | Provides information on open source dependencies and other information contained within a software bill of materials |Supports software bill of materials for Comply to connect use  case | None at this time, but potential actions include QUERY | Consumer| Brendan O'Connor||
+  | GitHub | CodeQL: Analytic that queries code for a given vulnerabilty (and its variants)| | QUERY | Consumer | Xavier René-Corail||
   | Google | Google Cloud Platform and Cloud based firewall| NA| Cloud based firewall. Commands TBD but will include DENY and ALLOW | Consumer | Jason Callaway ||
   |JHU/APL | Integrator | MOSAIC| Will need QUERY, DENY, START, UPDATE, CREATE | Both |||
-  |NSA| Agency within DOD | Comply to Connect | will need QUERY, SCAN, UPDATE, CONTAIN | NA| Joe Brule ||
+  | NSA | Agency within DOD | Comply to Connect | will need QUERY, SCAN, UPDATE, CONTAIN | NA| Joe Brule ||
+  | NSA | OpenC2 Integration Framework (OIF)| Providing a platform for other's use cases| Various | Both | Danny Martinez ||
   |s-fractal|Test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's to be IoT devices| usecases documented at https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/tests-sFractal-IoT.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-C2C.md, https://github.com/oasis-tcs/openc2-usecases/blob/master/Cybercom-Plugfest/uc-sFractal-IoT-SPA.md | QUERY, ALLOW | Consumer| Duncan Sparrell||
   | Symantec| Multiple Cyber Security Products | Endpoint Remediation | OpenC2 Integrated in the ICDX product|Consumer| Brian Berliner||
   |United States Army | Unattended sensors, UAV and UTV platforms| RF situational awareness and response| TBD. SOme of hte actions include: SCAN, DELETE, CREATE, LOCATE, DENY, ALLOW. Some of the actuators include RF Transmitter (jamming signals), RF receivers (collect signals of interest) Key management, laser blinders, analytic engines (determine line of bearing) | Both| Mike Ridge||
-  |University of Oslo| Academia | Coordinated Response | Implemented the SLPF version 1.0 into the acladapter and implemented a custom actuator profile for some of the cisco poc functions| Both |Vasileios Mavroeidis||
-  
+  |University of Oslo| Academia | Firewalls & Coordinated Response | Implemented the SLPF version 1.0 into the [iosacl-adapter](https://github.com/oasis-open/openc2-iosacl-adapter) for command and control of Cisco ACLs| Both |Vasileios Mavroeidis|[PoC](https://github.com/oasis-open/openc2-iosacl-adapter) and [Plugfest Use Case](https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-January)|
 
 
-## 4. What usecases addressed?
+
+## 4. What use cases are addressed?
 It is not required, but hoped, that attendees will publish use cases of interest
 prior to arriving.
 One of the first orders of business will be a brainstorming session
@@ -117,30 +130,54 @@ include sFractal home/small-business scenarios
 ### 4.3 sFractal IoT Single Packet Authentication
 See [here](uc-sFractal-IoT-SPA.md) for the Single Packet Authentication usecase proposed by sFractal.
 
-### 4.4 add more here
+### 4.4 Firewall Configuration and Management
+
+- University of Oslo: The use case of UiO includes a prototype implementation of the OASIS OpenC2 SLPF version 1.0 with the purpose of controling Access Control Lists (firewall capability) in Cisco devices (e.g., routers, L3 switches, firewalls). In their use case a Cisco Cloud Service Router (CSR1000V with Cisco IOS XE Software, Version 16.12.01a) in the Google Cloud Platform is controlled. The use case is available [HERE](https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-January). The PoC is available [HERE](https://github.com/oasis-open/openc2-iosacl-adapter). In their use case, an idea of how to enable coordinated response via OpenC2 is presented, even though it is out of OpenC2 scope (at this moment).
+
+
+### 4.5 add more here
 others are free to put their needs here
 
 ## 5. OASIS OpenC2 TC relationship to Plugfest/Hackathon
-The OpenC2 plugfest/hackathon is open to all interested participants whether OASIS members or not, and therefore is NOT a meeting of the Technical Committee itself. The OASIS rules governing TC meetings, including provisions of the OASIS IPR policy, do not apply and any outputs from the event are not 'contributions' as defined in OASIS rules. Members of the TC who wish to formally contribute any outputs from the event to the TC must (as with any contribution) be sure that they have sufficient rights in the material to do so. 
+The OpenC2 plugfest/hackathon is open to all interested participants whether OASIS members or not, and therefore is NOT a meeting of the Technical Committee itself. The OASIS rules governing TC meetings, including provisions of the OASIS IPR policy, do not apply and any outputs from the event are not 'contributions' as defined in OASIS rules. Members of the TC who wish to formally contribute any outputs from the event to the TC must (as with any contribution) be sure that they have sufficient rights in the material to do so.
 
-OASIS and the OpenC2 TC welcome participation by all interested parties. Participants who are not OASIS members but are interested in joining in the work being done by the TC are welcome to contact the event chairs for information on the opportunities available. 
+OASIS and the OpenC2 TC welcome participation by all interested parties. Participants who are not OASIS members but are interested in joining in the work being done by the TC are welcome to contact the event chairs for information on the opportunities available.
 
 ## 6. Info for Participants
 The slide decks from the Nov 5th prep meeting
-(attended by ~35 participants including ~7 OpenC2 TC members) for the Dreamport Plugfest/hackathon are at https://www.oasis-open.org/apps/org/workgroup/openc2/documents.php?folder_id=3315.
+(attended by ~35 participants including ~7 OpenC2 TC members)
+for the Dreamport Plugfest/hackathon are posted at OASIS
+
+* **OpenC2 & Plug Fest Overview and Resources** (Joe Brule / David Lemire)  
+https://www.oasis-open.org/committees/document.php?document_id=66231&wg_abbrev=openc2  
+
+* **Symantec ICDx 1.3.1** (Brian Berliner)  
+https://www.oasis-open.org/committees/document.php?document_id=66232&wg_abbrev=openc2  
+
+* **MOSAICS ICS Use Case** (Harley Parkes)  
+https://www.oasis-open.org/committees/document.php?document_id=66233&wg_abbrev=openc2  
+
+* **Tesla Powerwall Proxy** (Efrain Ortiz)  
+https://www.oasis-open.org/committees/document.php?document_id=66234&wg_abbrev=openc2  
+
+* **OpenC2 and KMIP** (Chuck White)  
+https://www.oasis-open.org/committees/document.php?document_id=66235&wg_abbrev=openc2
+
+Note: There were no slides for Mike Ridge's presentation of a use case for RF monitoring at the Denver Airport.
 
 The DreamPort calendar announcement is at
 https://dreamport.tech/event-open-c2-plug-fest-01272820.php
 with links to registration.
 
-OASIS has created a new mail list for the plug fest, openc2-plugfest-2019@lists.oasis-open.org. The list is open to interested parties regardless of OASIS or TC membership.
-See link on DreamPort calendar page to join.
+OASIS has created a new mail list for the plug fest, openc2-plugfest-2019@lists.oasis-open.org. The list is open to interested parties regardless of OASIS or TC membership. There is no archive for the plug fest mail list.
 
 Registration for the event is at https://dreamport.tech/registration-open-c2-plug-fest-0120.php.
 
 Please do a pull request against this page and add yourself to participants section
 
 Information about DreamPort:  https://dreamport.tech/about-us.php
+
+Information about UMBC Training:  https://umbctraining.com/
 
 https://github.com/oasis-open?utf8=%E2%9C%93&q=openc2-&type=&language= are some
 of the OpenC2 open source repositories.
@@ -173,16 +210,42 @@ included:
 
 This repository includes use case descriptions, schemas, and test data (good and bad) for use by participants prior to the event.
 
-### 6.3 FAQ
+### 6.3 About The Facility
+
+The UMBC Training facility we'll be using has allocated us two rooms, 
+each of which can accommodate 30-35ish people. We'll have tables & chairs, 
+white boards, flip-chart easels, and wireless and wired network connections 
+with Internet access to support our efforts. We are arranging 10-12 monitors 
+to assign to tables for display purposes (but you can also bring one if you wish).
+
+The facility has a nice break room with beverages and snacks (and pretty good coffee). 
+There is plenty of (free) parking. Note that the facility entrance is on the side 
+away from Columbia Gateway Drive, facing inward toward the shared parking lot. 
+And there are plenty of restaurants nearby for lunch. 
+
+### 6.4 FAQ
 - Will WiFi be provided? More than one SSID? What networking details?
-  * ????
+  * The UMBC facility provides a single WiFi network that will be readily
+  accessible to plug fest participants.
 - Will wired ethernet be provided? More than one network? What networking details?
+  * The UMBC facility is providing wired Ethernet drops and switches for each of the two
+  rooms allocated for our event. The WiFi and the wired Ethernet are all on the same LAN.
 - DHCP or Static IP or choice-of-either? Will IP addresses (or at least ranges) be available prior to arriving to allow preconfiguration (eg only allow access from these ranges)
+  * UMBC is mapping public ports to static LAN IPs sufficient to connect to 20 devices on ports 80 and 443.
 - IPV4? IPV6?
-- Will our devices be able to reach the internet? Will ip's/ports need to be prearranged to get thru firewalls?
-- Will our devices be reachable from the internet? Will ip's/ports need to be prearranged to get thru firewalls?
+  * IPv4 has been tested.  If anyone actually requires IPv6 please speak up and we'll see if it's available.
+- Will our devices be able to reach the internet? Will IPs/ports need to be prearranged to get thru firewalls?
+  * The facility freely permits outbound traffic to Internet sites, and this has been tested by NSA OpenC2 team.
+  No special prearrangements are required.
+- Will our devices be reachable from the internet? Will IPs/ports need to be prearranged to get thru firewalls?
+  * See above; support for 20 devices has been arranged. More can be added if there is demand.
 - Will whiteboards be provided?
+  * One room has "whiteboard walls", the other room has some whiteboards; there are also flip-chart easels.
 - Will projector be provided?
+  * There is a project and screen in one room; the NSA OpenC2 team is also arranging for a monitor per
+  work table for display purposes.
+- Will certificates be needed for interworking (e.g., for HTTPS mutual authentication)? If so - how arrange?
+  * Nothing has been arranged to supply certificates at this time.
 
 ## 7. Resources
 Plugfest Preparation:

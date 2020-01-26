@@ -1,0 +1,7 @@
+{
+  "action": "deny",
+  "target": {
+    "uri": "https://example.com"
+  },
+  "actuator": {}
+}
