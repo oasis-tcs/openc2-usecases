@@ -6,20 +6,26 @@ It is a place to see where you can help, or ask if you need help.
 Table of Contents:
 - [1. Intro](#1-intro)
 - [2. Testing](#2-testing)
-  * [2.1 Postman](21-postman)
-  * [2.2 Broadcom/Symantec ICDX Testing](22-broadcom-symantec-icdx-testing)
-  * [2.3 AWS/GCP Openc2](23-aws-gcp-openc2)
-  * [2.4 add more](24-add-more)
-  * [2.5 add more](25-add-more)
+  * [2.1 Postman](#21-postman)
+  * [2.2 Broadcom/Symantec ICDX Testing](#22-broadcom-symantec-icdx-testing)
+  * [2.3 AWS/GCP Openc2](#23-aws-gcp-openc2)
+  * [2.4 add more](#24-add-more)
+  * [2.5 add more](#25-add-more)
 - [3. Integration](#3-integration)
-  * [3.1 Interoperability](31-interoperability)
-  * [3.2 Among plugfest/hackathon](32-among-plugfest-hackathon)
-  * [3.3 with other standards](33-with-other-standards)
-    + [3.3.1 KMIP](331-kmip)
-    + [3.3.2 SBOM](332-sbom)
-    + [3.3.3 STIX](333-stix)
-    + [3.3.4 CACAO](334-cacao)
-    + [3.3.5 OCA](335-oca)
+  * [3.1 Interoperability](#31-interoperability)
+  * [3.2 Among plugfest/hackathon](#32-among-plugfest-hackathon)
+  * [3.3 with other standards](#33-with-other-standards)
+    + [3.3.1 KMIP](#331-kmip)
+    + [3.3.2 SBOM](#332-sbom)
+    + [3.3.3 STIX](#333-stix)
+    + [3.3.4 CACAO](#334-cacao)
+    + [3.3.5 OCA](#335-oca)
+  * [3.4 OpenC2 HaHa Server](#34-openc2-haha-server)
+    + [3.4.1 Cloud HaHa](#341-cloud-haha)
+    + [3.4.2 Raspberry Pi HaHa](#342 Raspberry-Pi-HaHa)
+    + [3.4.3 Elixir HaHa Vulnerabilities](#343-elixir-haha-vulnerabilities)
+  * [3.5 OpenC2 PiHole](#35-openc2-pihole)
+  * [3.6 OpenC2 Raspberry Pi Firewall and IDS](#36-openc2-raspberry-pi-firewall-and-ids)
 - [4. Hardware](#4-hardware)
 - [5. Software](#5-Software)
 - [6. Learning/Teaching](#6-learning-teaching)
@@ -105,10 +111,65 @@ The Open Cybersecurity Alliance (https://opencybersecurityalliance.org/)
 
 bring interoperability and data sharing across cybersecurity products
 
+### 3.4 OpenC2 HaHa Server
+Https Api Helloworld Actuator (HAHA)
+is a very simple actuator
+that is conformant with the 1.0 OpenC2 Language Specification
+but does no actual security functions.
+It has a Custom Actuator Profile (CAP)
+and will respond to the query openc2 command with it's profile and schema.
+It also responds to a custom query extension
+"query Hello World" with "Hello World" - but that is all it does.
 
+Various implementations of HaHa may exist.
+One is in the elixir portion of the lycan-beam opensource repo -
+https://github.com/oasis-open/openc2-lycan-beam/tree/master/haha
+
+#### 3.4.1 Cloud HaHa
+Actually that code currently has a tiny bit more to show
+how to put stub functions
+in for other actions, and to have something to play with at plugfest.
+
+Duncan would be happy to help anyone install this on their machines to play with.
+
+Ideally someone would volunteer to figure out a script
+to (1) create some cloud VM's, either AWS or GCP, using openc2 commands in
+https://github.com/newcontext-oss/openc2-aws-actuator
+and then (2)run this code to be an HaHa server in the cloud.
+
+If the above is accomplished, then the HaHa code base could be modified to
+simulate whatever command-consumers are required by other projects
+
+#### 3.4.2 Raspberry Pi HaHa
+
+#### 3.4.3 Elixir HaHa Vulnerabilities
+
+
+https://github.com/oasis-open/openc2-lycan-beam/network/alerts
+
+### 3.5 OpenC2 PiHole
+See https://pi-hole.net/.
+First step is to set up one of Duncan's Raspberry Pi's to be a PiHole
+(DNS sinkhole to block malicious ads).
+Next step is to figure out the OpenC2 commands. Then we need to "openc2-ize"
+the raspberry pi which would probably
+be via python lycan since pihole is in python.
+
+
+### 3.6 OpenC2 Raspberry Pi Firewall and IDS
+
+See https://www.instructables.com/id/Raspberry-Pi-Firewall-and-Intrusion-Detection-Syst/
+and then figure out how to make it work via OpenC2 commands.
+First step is figure out the OpenC2 commands. Then we need to "openc2-ize"
+the raspberry pi which could be via either python, java, or elixir lycans.
 
 ## 4. Hardware
-add links of sfractal (and others if have) raspberry pi's, lights, buzzers etc
+add links of sfractal (and others if have) raspberry pi's, lights, buzzers etc.
+
+Duncan is bring various Raspberry Pi's and peripherals
+(blinky lights, buzzer, breadboard kits, soldering iron, etc).
+He's happy to let people help out making them do demo-ey things
+using OpenC2 (probably more work with the hardware than the OC2 part).
 
 ## 5. Software
 make subsections for python/java/beam and link to various projects
