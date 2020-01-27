@@ -125,10 +125,20 @@ Various implementations of HaHa may exist.
 One is in the elixir portion of the lycan-beam opensource repo -
 https://github.com/oasis-open/openc2-lycan-beam/tree/master/haha
 
-#### 3.4.1 Cloud HaHa
 Actually that code currently has a tiny bit more to show
 how to put stub functions
 in for other actions, and to have something to play with at plugfest.
+
+To understand what it does, you might want to start by looking at the
+[test data](https://github.com/oasis-open/openc2-lycan-beam/tree/master/haha/elixir/test/data) which consists of OpenC2 commands,
+e.g. [query_features_pairs.json](https://github.com/oasis-open/openc2-lycan-beam/tree/master/haha/elixir/test/data/query_features_pairs.json),
+and of OpenC2 responses
+e.g. [query_features_pairs_reply.json](https://github.com/oasis-open/openc2-lycan-beam/tree/master/haha/elixir/test/data/query_features_pairs_reply.json).
+If there isn't a 'reply' file, then the reply is
+[./test/data/ok_reply.json](ok_reply.json).
+The files starting with err are for testing error conditions
+
+#### 3.4.1 Cloud HaHa
 
 Duncan would be happy to help anyone install this on their machines to play with.
 
