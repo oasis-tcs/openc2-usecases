@@ -151,11 +151,19 @@ If the above is accomplished, then the HaHa code base could be modified to
 simulate whatever command-consumers are required by other projects
 
 #### 3.4.2 Raspberry Pi HaHa
+Duncan hoped to have this up prior to hackathon but now will be
+finished during hackathon
 
 #### 3.4.3 Elixir HaHa Vulnerabilities
+Serendipitously the code in 3.4 has some known vulnerabilities
+in the javascipt templates for html.
+Note the html part of the responses is not needed for the OpenC2 API.
+It does help with debugging and the vulnerabilities were left in
+for the comply-to-connect use case.
 
-
+See
 https://github.com/oasis-open/openc2-lycan-beam/network/alerts
+for the vulnerability alerts.
 
 ### 3.5 OpenC2 PiHole
 See https://pi-hole.net/.
@@ -180,6 +188,9 @@ Duncan is bring various Raspberry Pi's and peripherals
 (blinky lights, buzzer, breadboard kits, soldering iron, etc).
 He's happy to let people help out making them do demo-ey things
 using OpenC2 (probably more work with the hardware than the OC2 part).
+
+See https://github.com/elixir-circuits/circuits_quickstart for a good place to
+start. It can be hooked to the elixir HaHa in 3.4
 
 ## 5. Software
 make subsections for python/java/beam and link to various projects
