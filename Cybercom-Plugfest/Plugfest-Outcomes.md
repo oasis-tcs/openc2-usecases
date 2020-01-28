@@ -106,7 +106,7 @@ s.
 * Demonstrated?
 * Interworked?
 
-## Project: Dynamic Recognition of Actuator Capabilities (UK Mod / CACI UI)
+## Project: Dynamic Recognition of Actuator Capabilities (UK Mod / CACI UK)
 
 *Description:* this project ...
 
