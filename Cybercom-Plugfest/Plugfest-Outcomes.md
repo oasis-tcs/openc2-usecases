@@ -120,18 +120,18 @@ Several aspects:
 *State:*
 
 * State before plugfest
-  + openc2 haha/sbom/blink server running on laptop on HTTP (not OC2 compliant HTTPS)
+  + openc2 haha/sbom/blink server running on laptop on HTTP (not OC2-compliant HTTPS)
   + blinky running on raspberry pi's - but not yet OpenC2 controlled
 * State at end of plugfest
   + HTTPS was added - alot of issues with certs, headers, and stuff that really wasn't OC2 but impeded
-  + other people accessed HaHa & SBOM using postman. Accessing from HI OIF did not work due to header issues. Accessing from NineFX code worked if all the cert checks were disabled
+  + other people accessed HaHa & SBOM using postman. Accessing from HII OIF did not work due to header issues. Accessing from NineFX code worked if all the cert checks were disabled
 * Everything used was open source
 * Demonstrated - yes
 * Interworked:
-  + Yes via HTTP (non compliant with OC2 Transport Spec) using Postman
-  + Yes via HTTPS using postman (probably not OC2 compliant, not clear on header issues)
+  + Yes via HTTP (non-compliant with OC2 Transport Spec) using Postman
+  + Yes via HTTPS using postman (probably not OC2-compliant, not clear on header issues)
   + Sort of Yes from NineFX code (custom response header issues on sFractal side)
-  + No from HI OIF
+  + No from HII OIF
 
 ## Project: Dynamic Recognition of Actuator Capabilities (UK Mod / CACI UK)
 
