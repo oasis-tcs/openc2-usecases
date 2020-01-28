@@ -1,12 +1,20 @@
 # Participation
 
-Summary: 
+## Summary: 
 
 * X people
 * Y Companies / Organizations
 * Countries
 
-Companies / Organizations Participating
+## Programming Languages Used
+
+Python, Erlang, Elixer, ...
+
+## Transfer Protocols Used
+
+HTTP, HTTPS, OpenDXL, MQTT, ...
+
+## Companies / Organizations Participating
 
 * AT&T
 * BAE Systems
@@ -29,6 +37,8 @@ Companies / Organizations Participating
 * *others TBSL*
 
 # Projects / BoF Groups
+
+If writing up a project, please capture the initial (start of plug fest) and final (end of plug fest) state of your project, so that we have some indication of progress made during the event.
 
 ## Project: OpenC2 Cloud Compute Actuator
 *Description:* The project implements an actuator to create and control cloud VM
