@@ -40,7 +40,7 @@ HTTP, HTTPS, OpenDXL, MQTT, ...
 
 If writing up a project, please capture the initial (start of plug fest) and final (end of plug fest) state of your project, so that we have some indication of progress made during the event.
 
-## Project: OpenC2 Cloud Compute Actuator
+## Project: OpenC2 Cloud Compute Actuator (New Context)
 *Description:* The project implements an actuator to create and control cloud VM
 s.
 
@@ -51,7 +51,7 @@ s.
 * Demonstrated? yes
 * Interworked? no, no other implementations available
 
-## Project 1: Name1
+## Project: OpenC2 Integration Framework (OIF) Orchestrator (NSA OpenC2 Team)
 
 *Description:* this project ...
 
@@ -62,7 +62,128 @@ s.
 * Demonstrated?
 * Interworked?
 
-## Project 2: Name2
+## Project: Cloud Firewall Common Command (AT&T / UNC / UOslo / ...)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: OpenC2 on CANBUS (BAE Systems)
+
+*Description:* this project ...
+
+*State:*
+* Described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Unified Cyber Defense Platform (Northrup Grumman)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: HaHa Actuator on Raspberry Pi (sFractal Consulting)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Dynamic Recognition of Actuator Capabilities (UK Mod / CACI UI)
+
+*Description:* this project ...
+
+*State:*
+* Described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Erlang-based Command Generator (NineFX)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Web-based Command Generator (Hereuco)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Vector-based Malware Classifier (BluVector)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: VirusTotal Malware Check (Google)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Endpoint File Blacklist and Device Quarantine (Symantec ICDx)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Consumer/Orchestrator Handling Multiple Responses (Symantec ICDx)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Blinky Light Board (NSA OpenC2 Team)
 
 *Description:* this project ...
 
@@ -75,7 +196,7 @@ s.
 
 # Scenarios
 
-## Scenario 1: Name1
+## Scenario: Active Cyber Defense of Critical Infrastructure (ACDCI) (Clarity Cyber / NSA OpenC2 Team)
 
 *Description:* this project ...
 
