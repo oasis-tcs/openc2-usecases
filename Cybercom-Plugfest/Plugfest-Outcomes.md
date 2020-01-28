@@ -8,8 +8,20 @@ Summary:
 
 Companies / Organizations Participating
 
-* Company1
-* Company2
+* AT&T
+* sFractal Consulting
+* Huntington-Ingalls
+* U.S. Department of Defense
+* U.K. Ministry of Defense
+* Northrup Grumman
+* Clarity Cyber
+* New Context
+* Saltstack
+* Google
+* University of Oslo
+* University of North Carolina
+* National Security Agency
+* others TBSL
 
 # Projects
 
