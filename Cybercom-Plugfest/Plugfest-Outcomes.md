@@ -147,14 +147,14 @@ Several aspects:
 
 ## Project: Erlang-based Command Generator (NineFX)
 
-*Description:* this project ...
+*Description:* BEAM (Erlang/Elixir) OpenC2 SDK
 
 *State:*
-* At plugfest / described
-* Initial / Final State
-* Releaseability: open source vs. proprietary
-* Demonstrated?
-* Interworked?
+* A set of libaries to facilitate OpenC2 producer actions.
+* Initial State: Proof of Concept
+* Releaseability: open source
+* Demonstrated: Yes
+* Interworked: NEC's SPLF firewall over HTTPS with client certificate authentication, HII Blinky IoT over Google Cloud Platform (GCP)
 
 ## Project: Web-based Command Generator (Hereuco)
 
