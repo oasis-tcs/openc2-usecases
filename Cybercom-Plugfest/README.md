@@ -76,8 +76,10 @@ the hope is many will and include what they will be bringing to the table:
   * [Iot Tests](tests-sFractal-IoT.md) - test rigs sFractal will be bringing to plugfest consisting of a bunch of preprogrammed Raspberry Pi's.
   * [IoT C2C](uc-sFractal-IoT-C2C.md) - IoT comply to connect use case
   * [IoT SPA](uc-sFractal-IoT-SPA.md) - Single Packet Authentication IoT use case
-- UNCC
+- UNC (Chapel Hill)
 - University of Oslo
+- NEC/CDI
+- New Context
 
 ### Details
 
@@ -100,7 +102,7 @@ the hope is many will and include what they will be bringing to the table:
   | Symantec| Multiple Cyber Security Products | Endpoint Remediation | OpenC2 Integrated in the ICDX product|Consumer| Brian Berliner||
   |United States Army | Unattended sensors, UAV and UTV platforms| RF situational awareness and response| TBD. SOme of hte actions include: SCAN, DELETE, CREATE, LOCATE, DENY, ALLOW. Some of the actuators include RF Transmitter (jamming signals), RF receivers (collect signals of interest) Key management, laser blinders, analytic engines (determine line of bearing) | Both| Mike Ridge||
   |University of Oslo| Academia | Firewalls & Coordinated Response | Implemented the SLPF version 1.0 into the [iosacl-adapter](https://github.com/oasis-open/openc2-iosacl-adapter) for command and control of Cisco ACLs| Both |Vasileios Mavroeidis|[PoC](https://github.com/oasis-open/openc2-iosacl-adapter) and [Plugfest Use Case](https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-January)|
-
+  |University of North Carolina at Chapel Hill| Academia | Firewalls & Coordinated Response | Implemented the SLPF version 1.0 in [iptables](https://github.com/alevere/openc2-python-slpf-iptables) for command and control of iptables| Consumer | Alex Everett||
 
 
 ## 4. What use cases are addressed?
