@@ -4,7 +4,7 @@
 
 * X people
 * Y Companies / Organizations
-* Countries
+* 3? Countries (Norway, UK, USA)
 
 ## Programming Languages Used
 
