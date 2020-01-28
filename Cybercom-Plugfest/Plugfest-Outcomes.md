@@ -46,7 +46,7 @@ to support project development during and after the plugfest.
 
 *State:*
 * Initial / Final State: API functions available with manual URL typing.  Web-based UI is planned.
-* Releaseability: open source [OpenC2 Schema Tools](#)
+* Releaseability: open source [OpenC2 Schema Tools]
      * [Presentation](https://drive.google.com/open?id=1VAMWY9JriFjKNzbRXSz6ZjeVk-oOyYn4XKHP3CouiCI)
      * [API Definition](https://drive.google.com/open?id=1b3XKWbPP41qXPBlrM8BUgPyesmBV7UNz9tllR9frzXo)
      * [Plugfest Schemas](https://github.com/oasis-open/openc2-custom-aps/tree/master/Schema-Template) v1.0.1/Separate/JADN
