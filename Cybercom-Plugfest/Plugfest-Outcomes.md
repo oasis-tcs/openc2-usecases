@@ -29,11 +29,11 @@ HTTP, HTTPS, OpenDXL, MQTT, ...
 * NineFX
 * Northrup Grumman
 * Saltstack
+* sFractal Consulting
 * U.K. Ministry of Defense
 * U.S. Department of Defense
 * University of North Carolina
 * University of Oslo
-* sFractal Consulting
 * *others TBSL*
 
 # Projects / BoF Groups
