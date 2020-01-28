@@ -25,6 +25,7 @@ HTTP, HTTPS, OpenDXL, MQTT, ...
 * Hereuco
 * Huntington-Ingalls
 * National Security Agency
+* NEC Corporation
 * New Context
 * NineFX
 * Northrup Grumman
