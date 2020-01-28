@@ -9,7 +9,7 @@ Table of Contents:
   * [2.1 Postman](#21-postman)
   * [2.2 Broadcom/Symantec ICDX Testing](#22-broadcom-symantec-icdx-testing)
   * [2.3 AWS/GCP Openc2](#23-aws-gcp-openc2)
-  * [2.4 add more](#24-add-more)
+  * [2.4 iptables on EC2](#24-add-more)
   * [2.5 add more](#25-add-more)
 - [3. Integration](#3-integration)
   * [3.1 Interoperability](#31-interoperability)
@@ -86,7 +86,8 @@ use AWS or GCP or other clouds.
 AddLink and AddLink can be used to control AWS and/or GCP.
 From your laptop, test these yourself and set up some cloud resources.
 
-### 2.4 add more
+### 2.4 iptables
+Try to issue commands to an EC2 instances at https://github.com/alevere/openc2-python-slpf-iptables
 
 ### 2.5 add more
 
