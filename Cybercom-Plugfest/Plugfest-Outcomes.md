@@ -9,19 +9,23 @@ Summary:
 Companies / Organizations Participating
 
 * AT&T
-* sFractal Consulting
-* Huntington-Ingalls
-* U.S. Department of Defense
-* U.K. Ministry of Defense
-* Northrup Grumman
+* BAE Systems
+* BluVector
+* CACI UK
 * Clarity Cyber
-* New Context
-* Saltstack
 * Google
-* University of Oslo
-* University of North Carolina
+* Huntington-Ingalls
 * National Security Agency
-* others TBSL
+* New Context
+* NineFX
+* Northrup Grumman
+* Saltstack
+* U.K. Ministry of Defense
+* U.S. Department of Defense
+* University of North Carolina
+* University of Oslo
+* sFractal Consulting
+* *others TBSL*
 
 # Projects / BoF Groups
 
