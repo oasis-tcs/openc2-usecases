@@ -30,6 +30,18 @@ Companies / Organizations Participating
 
 # Projects / BoF Groups
 
+## Project: OpenC2 Cloud Compute Actuator
+*Description:* The project implements an actuator to create and control cloud VM
+s.
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontex
+t-oss/openc2-aws-actuator)
+* Demonstrated? yes
+* Interworked? no, no other implementations available
+
 ## Project 1: Name1
 
 *Description:* this project ...
