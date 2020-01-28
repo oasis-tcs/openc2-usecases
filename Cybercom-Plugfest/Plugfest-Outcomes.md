@@ -1,12 +1,20 @@
 # Participation
 
-Summary:
+## Summary:
 
 * X people
 * Y Companies / Organizations
 * 3? Countries (Norway, UK, USA)
 
-Companies / Organizations Participating
+## Programming Languages Used
+
+Python, Erlang, Elixer, ...
+
+## Transfer Protocols Used
+
+HTTP, HTTPS, OpenDXL, MQTT, ...
+
+## Companies / Organizations Participating
 
 * AT&T
 * BAE Systems
@@ -30,19 +38,20 @@ Companies / Organizations Participating
 
 # Projects / BoF Groups
 
-## Project: OpenC2 Cloud Compute Actuator
+If writing up a project, please capture the initial (start of plug fest) and final (end of plug fest) state of your project, so that we have some indication of progress made during the event.
+
+## Project: OpenC2 Cloud Compute Actuator (New Context)
 *Description:* The project implements an actuator to create and control cloud VM
 s.
 
 *State:*
 * At plugfest / described
 * Initial / Final State
-* Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontex
-t-oss/openc2-aws-actuator)
+* Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontext-oss/openc2-aws-actuator)
 * Demonstrated? yes
 * Interworked? no, no other implementations available
 
-## Project 1: Name1
+## Project: OpenC2 Integration Framework (OIF) Orchestrator (NSA OpenC2 Team)
 
 *Description:* this project ...
 
@@ -53,7 +62,128 @@ t-oss/openc2-aws-actuator)
 * Demonstrated?
 * Interworked?
 
-## Project 2: Name2
+## Project: Cloud Firewall Common Command (AT&T / UNC / UOslo / ...)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: OpenC2 on CANBUS (BAE Systems)
+
+*Description:* this project ...
+
+*State:*
+* Described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Unified Cyber Defense Platform (Northrup Grumman)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: HaHa Actuator on Raspberry Pi (sFractal Consulting)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Dynamic Recognition of Actuator Capabilities (UK Mod / CACI UI)
+
+*Description:* this project ...
+
+*State:*
+* Described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Erlang-based Command Generator (NineFX)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Web-based Command Generator (Hereuco)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Vector-based Malware Classifier (BluVector)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: VirusTotal Malware Check (Google)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Endpoint File Blacklist and Device Quarantine (Symantec ICDx)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Consumer/Orchestrator Handling Multiple Responses (Symantec ICDx)
+
+*Description:* this project ...
+
+*State:*
+* At plugfest / described
+* Initial / Final State
+* Releaseability: open source vs. proprietary
+* Demonstrated?
+* Interworked?
+
+## Project: Blinky Light Board (NSA OpenC2 Team)
 
 *Description:* this project ...
 
@@ -86,7 +216,7 @@ source code. See https://github.com/oasis-open/openc2-lycan-beam/tree/master/hah
 
 # Scenarios
 
-## Scenario 1: Name1
+## Scenario: Active Cyber Defense of Critical Infrastructure (ACDCI) (Clarity Cyber / NSA OpenC2 Team)
 
 *Description:* this project ...
 
