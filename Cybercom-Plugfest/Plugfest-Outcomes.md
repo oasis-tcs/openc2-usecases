@@ -1,6 +1,6 @@
 # Participation
 
-## Summary: 
+## Summary:
 
 * X people
 * Y Companies / Organizations
@@ -110,14 +110,28 @@ s.
 
 ## Project: HaHa Actuator on Raspberry Pi (sFractal Consulting)
 
-*Description:* this project ...
+*Description:* This project is based on the HaHa elixir open
+source code. See https://github.com/oasis-open/openc2-lycan-beam/tree/master/haha/elixir.
+Several aspects:
+* HaHa/SBOM/Blinky actuator running on laptop
+* Blinky running on Raspberry Pi Zero
+* Blinky running on Raspberry Pi 4
 
 *State:*
-* At plugfest / described
-* Initial / Final State
-* Releaseability: open source vs. proprietary
-* Demonstrated?
-* Interworked?
+
+* State before plugfest
+  + openc2 haha/sbom/blink server running on laptop on HTTP (not OC2 compliant HTTPS)
+  + blinky running on raspberry pi's - but not yet OpenC2 controlled
+* State at end of plugfest
+  + HTTPS was added - alot of issues with certs, headers, and stuff that really wasn't OC2 but impeded
+  + other people accessed HaHa & SBOM using postman. Accessing from HI OIF did not work due to header issues. Accessing from NineFX code worked if all the cert checks were disabled
+* Everything used was open source
+* Demonstrated - yes
+* Interworked:
+  + Yes via HTTP (non compliant with OC2 Transport Spec) using Postman
+  + Yes via HTTPS using postman (probably not OC2 compliant, not clear on header issues)
+  + Sort of Yes from NineFX code (custom response header issues on sFractal side)
+  + No from HI OIF
 
 ## Project: Dynamic Recognition of Actuator Capabilities (UK Mod / CACI UK)
 
@@ -321,7 +335,7 @@ Ipv4net should be clarified as ANY->ipv4net AND ipv4net->ANY : 2 rules
 
 *Source*:  Multiple groups.
 
-*Description:* PF participants had numerous interworking issues relating to informtion in HTTP headers vs. OpenC2 message content. 
+*Description:* PF participants had numerous interworking issues relating to informtion in HTTP headers vs. OpenC2 message content.
 
 *Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of plug fest attempts to achieve interoperability between a variety of implementations. Potential changes include simplifying the content type to simply be "JSON", and adding OpenC2 version information and command IDs into the message content.  This may fold back into the definition of OpenC2 messages in the Language Specification.
 
@@ -348,4 +362,3 @@ Ipv4net should be clarified as ANY->ipv4net AND ipv4net->ANY : 2 rules
 *Description:* while doing X, we discovered Y ...
 
 *Potential Solutions*: suggestions for resolutions or work-arounds developed
-
