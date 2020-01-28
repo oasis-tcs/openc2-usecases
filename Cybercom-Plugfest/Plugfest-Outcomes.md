@@ -157,13 +157,13 @@ Ipv4net should be clarified as ANY->ipv4net AND ipv4net->ANY : 2 rules
 
 *Potential Solutions*: suggestions for resolutions or work-arounds developed
 
-## Issue 11: Content Balance Between Transfer Protocol and Message Content
+## Issue 11: Content Balance Between HTTPS Headers and OpenC2 Message Content
 
 *Source*:  Multiple groups.
 
 *Description:* PF participants had numerous interworking issues relating to informtion in HTTP headers vs. OpenC2 message content. 
 
-*Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of attempts to achieve interoperability between a variety of implementations.
+*Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of plug fest attempts to achieve interoperability between a variety of implementations. Potential changes include simplifying the content type to simply be "JSON", and adding OpenC2 version information and command IDs into the message content.  This may fold back into the definition of OpenC2 messages in the Language Specification.
 
 ## Issue N: NameN
 
