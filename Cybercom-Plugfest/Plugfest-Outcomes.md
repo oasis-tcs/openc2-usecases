@@ -1,12 +1,20 @@
 # Participation
 
-Summary:
+## Summary: 
 
 * X people
 * Y Companies / Organizations
 * 3? Countries (Norway, UK, USA)
 
-Companies / Organizations Participating
+## Programming Languages Used
+
+Python, Erlang, Elixer, ...
+
+## Transfer Protocols Used
+
+HTTP, HTTPS, OpenDXL, MQTT, ...
+
+## Companies / Organizations Participating
 
 * AT&T
 * BAE Systems
@@ -30,6 +38,8 @@ Companies / Organizations Participating
 
 # Projects / BoF Groups
 
+If writing up a project, please capture the initial (start of plug fest) and final (end of plug fest) state of your project, so that we have some indication of progress made during the event.
+
 ## Project: OpenC2 Cloud Compute Actuator
 *Description:* The project implements an actuator to create and control cloud VM
 s.
@@ -37,8 +47,7 @@ s.
 *State:*
 * At plugfest / described
 * Initial / Final State
-* Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontex
-t-oss/openc2-aws-actuator)
+* Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontext-oss/openc2-aws-actuator)
 * Demonstrated? yes
 * Interworked? no, no other implementations available
 
