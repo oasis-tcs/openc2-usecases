@@ -47,8 +47,7 @@ s.
 *State:*
 * At plugfest / described
 * Initial / Final State
-* Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontex
-t-oss/openc2-aws-actuator)
+* Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontext-oss/openc2-aws-actuator)
 * Demonstrated? yes
 * Interworked? no, no other implementations available
 
