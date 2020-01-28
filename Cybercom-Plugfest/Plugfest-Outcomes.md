@@ -157,13 +157,13 @@ Ipv4net should be clarified as ANY->ipv4net AND ipv4net->ANY : 2 rules
 
 *Potential Solutions*: suggestions for resolutions or work-arounds developed
 
-## Issue N: NameN
+## Issue 11: Content Balance Between Transfer Protocol and Message Content
 
-*Source*:  (who / what group identified this issue)
+*Source*:  Multiple groups.
 
-*Description:* while doing X, we discovered Y ...
+*Description:* PF participants had numerous interworking issues relating to informtion in HTTP headers vs. OpenC2 message content. 
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of attempts to achieve interoperability between a variety of implementations.
 
 ## Issue N: NameN
 
