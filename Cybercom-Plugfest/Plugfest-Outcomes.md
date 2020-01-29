@@ -136,14 +136,20 @@ Several aspects:
 
 ## Project: Dynamic Recognition of Actuator Capabilities (UK Mod / CACI UK)
 
-*Description:* this project ...
+A demo application for connecting to actuators during the event. Our use case is to provide a theoretical user a GUI which allows them to execute a course of action. The application automatically populates the actuator's capabilities, and then builds and executes an OpenC2 request. We used query features to get the profile and then built the profile up via the GUI as form elements.
+
+We will explore whether it is possible to share further work on actuator auto-discovery using MDNS and MANET data distribution protocols. 
 
 *State:*
-* Described
-* Initial / Final State
-* Releaseability: open source vs. proprietary
-* Demonstrated?
-* Interworked?
+* State before plugfest
+  + Incomplete implementation for discovering actuators and executing actions
+* State at end of plugfest
+  + Still not complete but much closer, could discover actuators, configure a profile and then execute actions against a target using 3rd party actuators
+* Not open sourced but will be soon.
+* Demonstrated - yes (slides)
+* Interworked:
+  + Yes via HTTP to 3 actuators (Bluevector, Denver Airport Demo and Blinking Lights)
+
 
 ## Project: Erlang-based Command Generator (NineFX)
 
