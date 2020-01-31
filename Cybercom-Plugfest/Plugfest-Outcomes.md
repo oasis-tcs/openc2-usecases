@@ -2,9 +2,9 @@
 
 ## Summary:
 
-* X people
-* Y Companies / Organizations
-* 3? Countries (Norway, UK, USA)
+* Approximately 50 people
+* 28 Companies / Organizations
+* 3 Countries (Norway, UK, USA)
 
 ## Programming Languages Used
 
@@ -12,25 +12,34 @@ Python, Erlang, Elixer, ...
 
 ## Transfer Protocols Used
 
-HTTP, HTTPS, OpenDXL, MQTT, ...
+HTTP, HTTPS, OpenDXL, MQTT, GCP Pub/Sub, ...
 
 ## Companies / Organizations Participating
 
+* APS Global
 * AT&T
 * BAE Systems
+* BLS Government Services (BLSGVT)
 * BluVector
 * CACI UK
 * Clarity Cyber
+* Derigo Technology
+* EverWatch
+* Fuse Solutions
 * Google
 * Hereuco
-* Huntington-Ingalls
-* National Security Agency
+* Huntington Ingalls Industries
 * NEC Corporation
+* NETSCOUT
+* National Security Agency
 * New Context
 * NineFX
 * Northrup Grumman
+* OASIS
+* QoSient
 * Saltstack
 * sFractal Consulting
+* TC9
 * U.K. Ministry of Defense
 * U.S. Department of Defense
 * University of North Carolina
