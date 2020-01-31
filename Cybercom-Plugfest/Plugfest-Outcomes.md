@@ -1,3 +1,76 @@
+# Table Of Contents
+
+-   [Participation](#participation)
+    -   [Summary:](#summary)
+    -   [Programming Languages Used](#programming-languages-used)
+    -   [Transfer Protocols Used](#transfer-protocols-used)
+    -   [Companies / Organizations
+        Participating](#companies-organizations-participating)
+-   [Projects / BoF Groups](#projects-bof-groups)
+    -   [Project: OpenC2 Schema Tools](#project-openc2-schema-tools)
+    -   [Project: OpenC2 Cloud Compute Actuator (New
+        Context)](#project-openc2-cloud-compute-actuator-new-context)
+    -   [Project: OpenC2 Integration Framework (OIF) Orchestrator (NSA
+        OpenC2
+        Team)](#project-openc2-integration-framework-oif-orchestrator-nsa-openc2-team)
+    -   [Project: Cloud Firewall Common Command (AT&T / UNC / UOslo /
+        ...)](#project-cloud-firewall-common-command-att-unc-uoslo)
+    -   [Project: OpenC2 on CANBUS (BAE
+        Systems)](#project-openc2-on-canbus-bae-systems)
+    -   [Project: Unified Cyber Defense Platform (Northrup
+        Grumman)](#project-unified-cyber-defense-platform-northrup-grumman)
+    -   [Project: HaHa Actuator on Raspberry Pi (sFractal
+        Consulting)](#project-haha-actuator-on-raspberry-pi-sfractal-consulting)
+    -   [Project: Dynamic Recognition of Actuator Capabilities (UK Mod /
+        CACI
+        UK)](#project-dynamic-recognition-of-actuator-capabilities-uk-mod-caci-uk)
+    -   [Project: Erlang-based Command Generator
+        (NineFX)](#project-erlang-based-command-generator-ninefx)
+    -   [Project: Web-based Command Generator
+        (Hereuco)](#project-web-based-command-generator-hereuco)
+    -   [Project: Vector-based Malware Classifier
+        (BluVector)](#project-vector-based-malware-classifier-bluvector)
+    -   [Project: VirusTotal Malware Check
+        (Google)](#project-virustotal-malware-check-google)
+    -   [Project: OpenC2 Producer/Consumer using Yuuki (NSA OpenC2
+        Team)](#project-openc2-producerconsumer-using-yuuki-nsa-openc2-team)
+    -   [Project: Endpoint File Blacklist and Device Quarantine
+        (Symantec
+        ICDx)](#project-endpoint-file-blacklist-and-device-quarantine-symantec-icdx)
+    -   [Project: Consumer/Orchestrator Handling Multiple Responses
+        (Symantec
+        ICDx)](#project-consumerorchestrator-handling-multiple-responses-symantec-icdx)
+    -   [Project: Blinky Light Board (NSA OpenC2
+        Team)](#project-blinky-light-board-nsa-openc2-team)
+-   [Scenarios](#scenarios)
+    -   [Scenario: Active Cyber Defense of Critical Infrastructure
+        (ACDCI) (Clarity Cyber / NSA OpenC2
+        Team)](#scenario-active-cyber-defense-of-critical-infrastructure-acdci-clarity-cyber-nsa-openc2-team)
+    -   [Scenario 2: Name2](#scenario-2-name2)
+-   [Issues Identified](#issues-identified)
+    -   [Issue 1: Authentication](#issue-1-authentication)
+    -   [Issue 2: Limited data in responses from
+        actuators](#issue-2-limited-data-in-responses-from-actuators)
+    -   [Issue 3: Temporal Requirements - Start /
+        Stop](#issue-3-temporal-requirements---start-stop)
+    -   [Issue 4: Multiple Targets or Similar
+        Commands](#issue-4-multiple-targets-or-similar-commands)
+    -   [Issue 5: Logging per rule?](#issue-5-logging-per-rule)
+    -   [Issue 6: Comment on Rule](#issue-6-comment-on-rule)
+    -   [Issue 7: Clarify ipv4net](#issue-7-clarify-ipv4net)
+    -   [Issue 8: Transfer Response Handling when "Response =
+        NONE"](#issue-8-transfer-response-handling-when-response-none)
+    -   [Issue 9: Forward packet/duplicate
+        packet/offload](#issue-9-forward-packetduplicate-packetoffload)
+    -   [Issue 10: What knows the security-group name and priority to
+        use?](#issue-10-what-knows-the-security-group-name-and-priority-to-use)
+    -   [Issue 11: Content Balance Between HTTPS Headers and OpenC2
+        Message
+        Content](#issue-11-content-balance-between-https-headers-and-openc2-message-content)
+    -   [Issue N: NameN](#issue-n-namen)
+    -   [Issue N: NameN](#issue-n-namen-1)
+    -   [Issue N: NameN](#issue-n-namen-2)
+
 # Participation
 
 ## Summary:
