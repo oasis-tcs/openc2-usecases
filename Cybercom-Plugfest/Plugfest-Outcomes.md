@@ -217,16 +217,20 @@ We will explore whether it is possible to share further work on actuator auto-di
 * Demonstrated?
 * Interworked?
 
+
 ## Project: Blinky Light Board (NSA OpenC2 Team)
 
-*Description:* this project ...
+*Description:* This project demonstrates the ability to send OpenC2 commands from an Orchestrator to an OpenC2 Actuator
+using a Raspberry Pi device to perform a flashing of lights on a hardware board with WS-2811 LED Flashing Lights.
 
 *State:*
-* At plugfest / described
-* Initial / Final State
-* Releaseability: open source vs. proprietary
-* Demonstrated?
-* Interworked?
+* Presented at plugfest:  Please see two architecture documents with 
+titles "Remote Activation of Flashing Lights1" and 
+"Remote Activation of Flashing Lights2"
+* Initial State: No lights flashing / Final State:  Sequences of lights flashing
+* Releaseability: open source
+* Demonstrated?  Yes
+* Interworked?  Yes
 
 # Scenarios
 
