@@ -14,7 +14,7 @@
         OpenC2
         Team)](#project-openc2-integration-framework-oif-orchestrator-nsa-openc2-team)
     -   [Project: Cloud Firewall Common Command (AT&T / UNC / UOslo /
-        ...)](#project-cloud-firewall-common-command-att-unc-uoslo)
+        ...)](#project-cloud-firewall-common-command-att--unc--uoslo--)
     -   [Project: OpenC2 on CANBUS (BAE
         Systems)](#project-openc2-on-canbus-bae-systems)
     -   [Project: Unified Cyber Defense Platform (Northrup
@@ -23,7 +23,7 @@
         Consulting)](#project-haha-actuator-on-raspberry-pi-sfractal-consulting)
     -   [Project: Dynamic Recognition of Actuator Capabilities (UK Mod /
         CACI
-        UK)](#project-dynamic-recognition-of-actuator-capabilities-uk-mod-caci-uk)
+        UK)](#project-dynamic-recognition-of-actuator-capabilities-uk-mod--caci-uk)
     -   [Project: Erlang-based Command Generator
         (NineFX)](#project-erlang-based-command-generator-ninefx)
     -   [Project: Web-based Command Generator
@@ -52,7 +52,7 @@
     -   [Issue 2: Limited data in responses from
         actuators](#issue-2-limited-data-in-responses-from-actuators)
     -   [Issue 3: Temporal Requirements - Start /
-        Stop](#issue-3-temporal-requirements---start-stop)
+        Stop](#issue-3-temporal-requirements---start--stop)
     -   [Issue 4: Multiple Targets or Similar
         Commands](#issue-4-multiple-targets-or-similar-commands)
     -   [Issue 5: Logging per rule?](#issue-5-logging-per-rule)
