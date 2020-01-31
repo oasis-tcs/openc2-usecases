@@ -5,7 +5,7 @@
     -   [Programming Languages Used](#programming-languages-used)
     -   [Transfer Protocols Used](#transfer-protocols-used)
     -   [Companies / Organizations
-        Participating](#companies-organizations-participating)
+        Participating](#companies--organizations-participating)
 -   [Projects / BoF Groups](#projects-bof-groups)
     -   [Project: OpenC2 Schema Tools](#project-openc2-schema-tools)
     -   [Project: OpenC2 Cloud Compute Actuator (New
@@ -45,7 +45,7 @@
 -   [Scenarios](#scenarios)
     -   [Scenario: Active Cyber Defense of Critical Infrastructure
         (ACDCI) (Clarity Cyber / NSA OpenC2
-        Team)](#scenario-active-cyber-defense-of-critical-infrastructure-acdci-clarity-cyber-nsa-openc2-team)
+        Team)](#scenario-active-cyber-defense-of-critical-infrastructure-acdci-clarity-cyber--nsa-openc2-team)
     -   [Scenario 2: Name2](#scenario-2-name2)
 -   [Issues Identified](#issues-identified)
     -   [Issue 1: Authentication](#issue-1-authentication)
