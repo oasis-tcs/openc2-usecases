@@ -234,16 +234,23 @@ titles "Remote Activation of Flashing Lights1" and
 
 # Scenarios
 
+
 ## Scenario: Active Cyber Defense of Critical Infrastructure (ACDCI) (Clarity Cyber / NSA OpenC2 Team)
 
-*Description:* this project ...
+*Description:* This project demonstrates the ability to send OpenC2 commands from an python-based 
+OpenC2 Producer to an OpenC2 Consumer to a series of nine actuators. It is intended to model
+an implementation of a system to defend a geographic area from hostile drone intrusions, but 
+is adaptable to other scenarios.
 
 *State:*
-* At plugfest / described
-* Initial / Final State
-* Releaseability: open source vs. proprietary
-* Demonstrated?
-* Interworked?
+* Presented at Plugfest: Please see multiple architecture documents with 
+titles "OpenC2 Active Cyber Defense of Critical Infrastructure (ACDCI)", "ACDCI Use case using Google
+Kubernetes Engine (GKE)", "GCP Kubernetes Nodes with GKE for NS3 Simulator", "Active Cyber Defense of 
+Critical Infrastructure (ACDCI) Use Case.
+* Initial / Final State:  ACDCI actuators received and processed commands from multiple OpenC2 Producers
+* Releaseability: open source
+* Demonstrated: Yes
+* Interworked: Yes
 
 ## Scenario 2: Name2
 
