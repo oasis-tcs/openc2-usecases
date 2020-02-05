@@ -260,7 +260,7 @@ We will explore whether it is possible to share further work on actuator auto-di
 *Description:* BluVector's prototype OpenC2 interface enables producers to look up a file hash on a BluVector sensor and retrieve malware analysis results. 
 
 *State:*
-* At plugfest / described: BluVector builds a next-generation intrusion detection system used by analysts to detect, triage and respond to threats like ransomware, fileless malware and zero-day malware. Our detection stack includes a machine learning engine to identify malicious files. The prototype OpenC2 interface allows producers to retrieve analysis results for a file.
+* At plugfest: BluVector builds a next-generation intrusion detection system used by analysts to detect, triage and respond to threats like ransomware, fileless malware and zero-day malware. Our detection stack includes a machine learning engine to identify malicious files. The prototype OpenC2 interface allows producers to retrieve analysis results for a file, and was available for any plugfest participant to query.
 * Initial / Final State
    initial: prototype OpenC2 interface for 'query' action
    final: added support for 'query features' and tested interoperability with several Plugfest participants
