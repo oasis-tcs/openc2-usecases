@@ -257,14 +257,16 @@ We will explore whether it is possible to share further work on actuator auto-di
 
 ## Project: Vector-based Malware Classifier (BluVector)
 
-*Description:* this project ...
+*Description:* BluVector's prototype OpenC2 interface enables producers to look up a file hash on a BluVector sensor and retrieve malware analysis results. 
 
 *State:*
-* At plugfest / described
+* At plugfest / described: BluVector builds a next-generation intrusion detection system used by analysts to detect, triage and respond to threats like ransomware, fileless malware and zero-day malware. Our detection stack includes a machine learning engine to identify malicious files. The prototype OpenC2 interface allows producers to retrieve analysis results for a file.
 * Initial / Final State
-* Releaseability: open source vs. proprietary
-* Demonstrated?
-* Interworked?
+   initial: prototype OpenC2 interface for 'query' action
+   final: added support for 'query features' and tested interoperability with several Plugfest participants
+* Releaseability: Proprietary
+* Demonstrated: Introduced BluVector OpenC2 interface to several Plugfest participants
+* Interworked: Used an OpenC2 command generator to send an identical OpenC2 'query' command to both Google/VirusTotal and BluVector and received results from both consumers.
 
 ## Project: VirusTotal Malware Check (Google)
 
