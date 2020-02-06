@@ -169,6 +169,18 @@ s.
 * Demonstrated?
 * Interworked?
 
+### SLPF sub-project: FirewallD as SLPF actuator over HTTPS
+
+*Description:* Implements SLPF actuator profile using HTTPS transport for [FirewallD](https://firewalld.org/), using broker with possibly multiple FirewallD instances.
+
+*State:*
+ * Before PlugFest: some basic library for OpenC2 processing, broker and actuator commands, rudimentary allow/deny functionality
+ * After PlugFest: interoperable version with JADN schema validation, adhering more coherently to spec (e.g., properly implementing `query` action). HTTPS authentication with client X.509 certificates. Unit tests for more commands. 
+ * To-Do: responding to actions more properly (have issues related to communication model).
+* Releaseability: Available at [GitHub](https://github.com/korc/openc2-firewalld)
+* Demonstrated: yes
+* Interworked: worked together with OpenDXL fabric and NineFX producer
+
 ## Project: OpenC2 on CANBUS (BAE Systems)
 
 *Description:* this project ...
