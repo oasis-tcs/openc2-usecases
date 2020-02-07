@@ -145,7 +145,7 @@ s.
 * Initial / Final State
 * Releaseability: open source [OpenC2-aws-actuator](https://github.com/newcontext-oss/openc2-aws-actuator)
 * Demonstrated? yes
-* Interworked? no, no other implementations available
+* Interworked? yes, schema written for OIF and interoperated with
 
 ## Project: OpenC2 Integration Framework (OIF) Orchestrator (NSA OpenC2 Team)
 
