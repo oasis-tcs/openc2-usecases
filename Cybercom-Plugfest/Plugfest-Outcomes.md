@@ -73,7 +73,9 @@
 
 # Participation
 
-## Summary:
+[Introduction & Agenda (Joe Brule, OpenC2 TC co-chair)](OpenC2_PlugFest_Brule_Intro.pdf)
+
+## Summary
 
 * Approximately 50 people
 * 28 Companies / Organizations
