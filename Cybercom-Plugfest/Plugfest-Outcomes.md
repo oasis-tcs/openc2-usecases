@@ -210,7 +210,10 @@ s.
 * Interworked?
 
 *Presentation*
-* [UCAP -- Unified Cyber Defense Platform](Briefings/20-0061_Final_UCAP_for_OpenC2_Plug_Fest_2020.pptx)
+* [UCAP -- Unified Cyber Defense Platform](Briefings/20-0061_Final_UCAP_for_OpenC2_Plug_Fest_2020.pptx) -- 
+the PowerPoint version of this presentation is
+linked in order to preserve access to the slide 
+notes that add extra detail.
 
 ## Project: HaHa Actuator on Raspberry Pi (sFractal Consulting)
 
