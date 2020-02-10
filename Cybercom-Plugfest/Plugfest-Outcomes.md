@@ -59,7 +59,7 @@
     -   [Issue 6: Comment on Rule](#issue-6-comment-on-rule)
     -   [Issue 7: Clarify ipv4net](#issue-7-clarify-ipv4net)
     -   [Issue 8: Transfer Response Handling when "Response =
-        NONE"](#issue-8-transfer-response-handling-when-response-none)
+        NONE"](https://github.com/dlemire60/openc2-usecases/blob/master/Cybercom-Plugfest/Plugfest-Outcomes.md#issue-8-transfer-response-handling-when-response--none)
     -   [Issue 9: Forward packet/duplicate
         packet/offload](#issue-9-forward-packetduplicate-packetoffload)
     -   [Issue 10: What knows the security-group name and priority to
