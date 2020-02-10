@@ -169,6 +169,10 @@ s.
 * Demonstrated?
 * Interworked?
 
+*Presentations*
+* [Firewall Team Results Day 1](Briefings/PlugFest_FWs_DayOne.pdf)
+* [Firewall Team Results Day 2](Briefings/PlugFest_FWs_DayTwo.pdf)
+
 ### SLPF sub-project: FirewallD as SLPF actuator over HTTPS
 
 *Description:* Implements SLPF actuator profile using HTTPS transport for [FirewallD](https://firewalld.org/), using broker with possibly multiple FirewallD instances.
@@ -202,6 +206,9 @@ s.
 * Releaseability: open source vs. proprietary
 * Demonstrated?
 * Interworked?
+
+*Presentation*
+* [UCAP -- Unified cyber Defense Platform](Briefings/20-0061_Final_UCAP_for_OpenC2_Plug_Fest_2020.pptx)
 
 ## Project: HaHa Actuator on Raspberry Pi (sFractal Consulting)
 
@@ -243,6 +250,9 @@ We will explore whether it is possible to share further work on actuator auto-di
 * Demonstrated - yes (slides)
 * Interworked:
   + Yes via HTTP to 3 actuators (Bluevector, Denver Airport Demo and Blinking Lights)
+
+*Presentation*
+* [Dynamic Recognition of Actuator Capabilities](Briefings/OpenC2_Plugfest_UK_MoD.pdf)
 
 
 ## Project: Erlang-based Command Generator (NineFX)
@@ -348,9 +358,12 @@ titles "Remote Activation of Flashing Lights1" and
 
 ## Scenario: Active Cyber Defense of Critical Infrastructure (ACDCI) (Clarity Cyber / NSA OpenC2 Team)
 
-*Description:* This project demonstrates the ability to send OpenC2 commands from an python-based 
-OpenC2 Producer to an OpenC2 Consumer to a series of nine actuators. It is intended to model
-an implementation of a system to defend a geographic area from hostile drone intrusions, but 
+*Description:* This project demonstrates the ability to 
+send OpenC2 commands from an python-based 
+OpenC2 Producer to an OpenC2 Consumer to 
+a series of nine actuators. It is intended to model
+an implementation of a system to defend a geographic 
+area from hostile drone intrusions, but 
 is adaptable to other scenarios.
 
 *State:*
@@ -362,6 +375,9 @@ Critical Infrastructure (ACDCI) Use Case.
 * Releaseability: open source
 * Demonstrated: Yes
 * Interworked: Yes
+
+*Presentation:*
+* [Active Cyber Defense of Critical Infrastructure (ACDCI)](Briefings/OpenC2_PlugFest_ACDCI.pdf)
 
 ## Scenario 2: Name2
 
