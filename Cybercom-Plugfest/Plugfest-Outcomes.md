@@ -1,7 +1,7 @@
 # Table Of Contents
 
 -   [Participation](#participation)
-    -   [Summary:](#summary)
+    -   [Summary](#summary)
     -   [Programming Languages Used](#programming-languages-used)
     -   [Transfer Protocols Used](#transfer-protocols-used)
     -   [Companies / Organizations
