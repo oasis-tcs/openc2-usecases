@@ -273,14 +273,14 @@ We will explore whether it is possible to share further work on actuator auto-di
 
 ## Project: Web-based Command Generator (Hereuco)
 
-*Description:* this project ...
+*Description:* A general purpose Web-based Commnad Generator created by Hereuco.  Supports JSON serialization and is compliant with version 1.0 of the language specification.    
 
 *State:*
-* At plugfest / described
-* Initial / Final State
-* Releaseability: open source vs. proprietary
-* Demonstrated?
-* Interworked?
+* At plugfest / described: The Hereuco command generator is a general purpose OpenC2 producer and has an extensive set of commands to a Tesla power wall.    
+* Initial / Final State:  The command generator was reformatted to support the 'query file' command to BluVector and Virustotal.  At the conclusion of the plug fest, the command generator was more concise and interoperable with the BluVector and Virustotal actuators.  
+* Releaseability: This is an opensource effort.  The code is available at https://github.com/netcoredor/OpenC2-FileQuery-PoC 
+* Demonstrated:  Hereuco demonstrated the 'query file' OpenC2 command was agnostic of BluVector and Virustotal.  
+* Interworked: Yes.
 
 ## Project: Vector-based Malware Classifier (BluVector)
 
@@ -310,7 +310,7 @@ We will explore whether it is possible to share further work on actuator auto-di
 
 *Description:* This project demonstrates the ability to send
 OpenC2 commands from an Yuuki-based OpenC2 Producer to an OpenC2 Consumer 
-to an ACME Road Runner Actuator.
+to an ACME Road Runner Actuator. The Yuuki-based OpenC2 Producer is based on the multiple dispatch on type approach.
 
 *State:*
 
@@ -323,10 +323,22 @@ title "OpenC2 Producer Consumer using Yuuki"
 
 ## Project: Endpoint File Blacklist and Device Quarantine (Symantec ICDx)
 
-*Description:* this project ...
+*Description:*  ICDx stands for "Integrated Cyber Defense Exchange" and is our product that integrates all of the other Symantec
+products together. OpenC2 is a key part of that. We have branded our OpenC2 support in ICDx as an "Action Adapter" service, since it transparently adapts a standard OpenC2 Command (the "action") into whatever API the backend Symantec Product actually requires. As such, ICDx allows us to support a single API (OpenC2-based) that can be sent to multiple Symantec Products able to process the command in parallel, and aggregate the multiple Responses back to the caller. All while preserving the HTTPS compliance required by the OpenC2 1.0 specification.
 
 *State:*
-* At plugfest / described
+* At plugfest / described: The ICDx OpenC2 Lab that was available at the PlugFest consists of three machines running on GCP:
+
+**An ICDx 1.3.1 server.** 
+For our use, it is an OpenC2 Consumer (which also supports the Orchestration to multiple Symantec Products when multiple Action Adapters have been configured).
+
+**A Symantec Endpoint Protection Manager 14.2 server.** This is Symantec's premium endpoint security management solution for Enterprises. We call it "SEPM" for short. It implements a robust API that is not at all OpenC2 compliant. Our OpenC2 Action Adapter for SEPM makes it OpenC2-compliant.
+
+**A Windows computer**  (as a "client" to SEPM; what OpenC2 calls a "device") that we can put into Quarantine using an OpenC2
+"contain/device" command. It's got a Web Server, which will go offline once the Quarantine command takes effect. 
+
+More detailed explanations and examples are available at:  
+
 * Initial / Final State
 * Releaseability: open source vs. proprietary
 * Demonstrated?
@@ -334,10 +346,14 @@ title "OpenC2 Producer Consumer using Yuuki"
 
 ## Project: Consumer/Orchestrator Handling Multiple Responses (Symantec ICDx)
 
-*Description:* this project ...
+*Description:*  ICDx supports the ability to send a single OpenC2 Command to as many Actuators ("Action Adapters") that are able to process it... in parallel... and will aggregate the results back to the caller transparently through the original HTTPS request, in order to be spe-compliant. To do this, we use a RabbitMQ bus to broadcast the command to all registered actuators,
+then collect the responses asynchronously before returning to the caller/Producer. This is a bit beyond the OpenC2 1.0 spec, but we felt that it would make the dissemination of important Cybersecurity Actions much more efficient in a large company.
 
 *State:*
-* At plugfest / described
+* At plugfest / described:   For the Plug Fest, the ICDx Lab server was configured to have two actuators. As such, all commands sent will be broadcast to two SEPM servers in parallel always (for purposes of the Plug Fest, the command is sent to the exact same SEPM server with just a different name).
+
+More detailed explanations and examples are available at:  
+
 * Initial / Final State
 * Releaseability: open source vs. proprietary
 * Demonstrated?
