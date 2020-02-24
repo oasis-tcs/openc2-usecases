@@ -189,7 +189,9 @@ s.
 
 ## Project: OpenC2 on CANBUS (BAE Systems)
 
-*Description:* this project ...
+*Description:* 
+
+A proof of concept (POC) implementation for mitigating an attack on a CAN BUS network using the open command and control (OpenC2) standard. The purpose is to leverage the OpenC2 standard for receiving and interpreting commands to counter vehicular intrusion events. The primary goal was to use a unified language and common format for reporting adversarial event notifications to a (conceptually) centralized security management and monitoring console. 
 
 *State:*
 * Described
