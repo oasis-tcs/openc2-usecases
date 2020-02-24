@@ -15,8 +15,8 @@
         Team)](#project-openc2-integration-framework-oif-orchestrator-nsa-openc2-team)
     -   [Project: Cloud Firewall Common Command (AT&T / UNC / UOslo /
         ...)](#project-cloud-firewall-common-command-att--unc--uoslo--)
-    -   [Project: OpenC2 on CANBUS (BAE
-        Systems)](#project-openc2-on-canbus-bae-systems)
+    -   [Project: OpenC2 on CAN bus (BAE
+        Systems)](#project-openc2-on-can-bus-bae-systems)
     -   [Project: Unified Cyber Defense Platform (Northrup
         Grumman)](#project-unified-cyber-defense-platform-northrup-grumman)
     -   [Project: HaHa Actuator on Raspberry Pi (sFractal
@@ -187,11 +187,11 @@ s.
 * Demonstrated: yes
 * Interworked: worked together with OpenDXL fabric and NineFX producer
 
-## Project: OpenC2 on CANBUS (BAE Systems)
+## Project: OpenC2 on CAN Bus (BAE Systems)
 
 *Description:* 
 
-A proof of concept (POC) implementation for mitigating an attack on a CAN BUS network using the open command and control (OpenC2) standard. The purpose is to leverage the OpenC2 standard for receiving and interpreting commands to counter vehicular intrusion events. The primary goal was to use a unified language and common format for reporting adversarial event notifications to a (conceptually) centralized security management and monitoring console. 
+A proof of concept (POC) implementation for mitigating an attack on a [CAN bus](https://en.wikipedia.org/wiki/CAN_bus) network using the open command and control (OpenC2) standard. The purpose is to leverage the OpenC2 standard for receiving and interpreting commands to counter vehicular intrusion events. The primary goal was to use a unified language and common format for reporting adversarial event notifications to a (conceptually) centralized security management and monitoring console. 
 
 *State:*
 * Described
