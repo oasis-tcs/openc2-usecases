@@ -517,9 +517,11 @@ Ipv4net should be clarified as ANY->ipv4net AND ipv4net->ANY : 2 rules
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ... (conflict between OpenC2 command selecting the "repsonse = NONE" option whereas the HTTP transfer protocols *requires* a response.
+*Description:* There is a conflict between OpenC2 command selecting the "response = NONE" option, whereas the HTTP transfer protocol *requires* a response.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* HTTPS Transfer Specification [Issue #105](https://github.com/oasis-tcs/openc2-impl-https/issues/105): Handling Response = None
 
 ## Issue 9: Forward packet/duplicate packet/offload
 
