@@ -495,9 +495,13 @@ command to specify whether or not a Consumer should log a command.
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* It would be useful for an OpenC2 command to include
+an option that allows for a rule comment or rule description such as 
+`ticket 40342322` or `dev web to dev db`. 
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #115](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/115): SLPF Rule Comment or Description
 
 ## Issue 7: Clarify ipv4net
 
