@@ -554,9 +554,11 @@ Priority and Order
 
 *Source*:  Multiple groups.
 
-*Description:* PF participants had numerous interworking issues relating to informtion in HTTP headers vs. OpenC2 message content.
+*Description:* PF participants had numerous interworking issues relating to information in HTTP headers vs. OpenC2 message content.
 
-*Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of plug fest attempts to achieve interoperability between a variety of implementations. Potential changes include simplifying the content type to simply be "JSON", and adding OpenC2 version information and command IDs into the message content.  This may fold back into the definition of OpenC2 messages in the Language Specification.
+*Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of plug fest attempts to achieve interoperability between a variety of implementations. Potential changes include simplifying the content type to simply be "JSON", and adding OpenC2 version information and command IDs into the message content.  This may fold back into the definition of OpenC2 messages in the Language Specification. Discussion is captured in the following issue:
+
+* Language Specification [Issue #353](https://github.com/oasis-tcs/openc2-oc2ls/issues/353): Multiple responses and Messages
 
 ## Issue N: NameN
 
