@@ -436,13 +436,18 @@ defines a method for a consumer to digitally sign an OpenC2 request. Full descri
 
 ## Issue 2: Limited data in responses from actuators
 
-Rules, which actuator, support for temporal?  (may need to break this into multiple issues)
-
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Multiple difficulties for the Producer in 
+determining status when multiple Consumers respond to the 
+same command.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issues:
+
+* Language Specification [Issue #350](https://github.com/oasis-tcs/openc2-oc2ls/issues/350): Query for Pairs
+* Language Specification [Issue #353](https://github.com/oasis-tcs/openc2-oc2ls/issues/353): Multiple responses and Messages
+* Stateless Packet Filter [Issue #122](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/122): SLPF Response (ambiguity at producer regarding which actuator responded)
+* Stateless Packet Filter Issue #TBD (regarding "query" "pairs")
 
 ## Issue 3: Temporal Requirements - Start / Stop
 
