@@ -476,7 +476,7 @@ defining time constraints for an action would be useful.
 addresses and ports.  However, the majority of firewalls/SLPFs support a list for each field (e.g. allow IPv4-a and IPv4-b to talk to IPv4-c on ports 80,443).  It would be useful to 
 extend the SLFP to support this use case. Applies to ipv4_net, ipv4_connection, ipv6_net, and ipv6_connection targets.
 
-*Potential Solutions*: Details are provided in the following issues:
+*Potential Solutions*: Details are provided in the following issue:
 
 * Stateless Packet Filter [Issue #118](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/118): Support multiple IP addresses, ports
 
@@ -484,9 +484,12 @@ extend the SLFP to support this use case. Applies to ipv4_net, ipv4_connection, 
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* It would be useful to have flexibility for an OpenC2 
+command to specify whether or not a Consumer should log a command.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #114](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/114): Logging
 
 ## Issue 6: Comment on Rule
 
