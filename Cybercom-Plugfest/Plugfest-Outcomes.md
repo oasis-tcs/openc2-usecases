@@ -559,27 +559,3 @@ Priority and Order
 *Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of plug fest attempts to achieve interoperability between a variety of implementations. Potential changes include simplifying the content type to simply be "JSON", and adding OpenC2 version information and command IDs into the message content.  This may fold back into the definition of OpenC2 messages in the Language Specification. Discussion is captured in the following issue:
 
 * Language Specification [Issue #353](https://github.com/oasis-tcs/openc2-oc2ls/issues/353): Multiple responses and Messages
-
-## Issue N: NameN
-
-*Source*:  (who / what group identified this issue)
-
-*Description:* while doing X, we discovered Y ...
-
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
-
-## Issue N: NameN
-
-*Source*:  (who / what group identified this issue)
-
-*Description:* while doing X, we discovered Y ...
-
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
-
-## Issue N: NameN
-
-*Source*:  (who / what group identified this issue)
-
-*Description:* while doing X, we discovered Y ...
-
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
