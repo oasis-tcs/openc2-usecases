@@ -453,9 +453,15 @@ same command.
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Current state of time arguments is very limited:
+(start, stop, duration). A more refined / flexible way of 
+defining time constraints for an action would be useful.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issues:
+
+* Language Specification [Issue #347](https://github.com/oasis-tcs/openc2-oc2ls/issues/347): Temporality - time args
+* Stateless Packet Filter [Issue #123](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/123): Temporal Periodicity
+ 
 
 ## Issue 4: Multiple Targets or Similar Commands
 
