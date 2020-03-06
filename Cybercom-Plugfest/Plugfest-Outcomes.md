@@ -358,7 +358,7 @@ using a Raspberry Pi device to perform a flashing of lights on a hardware board 
 * Interworked?  Yes
 
 *Presentation:* 
-* [Remote Activation of Flashing Lights](Remote Activation of Flashing Lights.pdf)
+* [Remote Activation of Flashing Lights](Briefings/Remote_Activation_of_Flashing_Lights.pdf)
 
 
 # Scenarios
