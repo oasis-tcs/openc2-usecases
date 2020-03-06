@@ -527,9 +527,13 @@ Ipv4net should be clarified as ANY->ipv4net AND ipv4net->ANY : 2 rules
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* A proposal to add actions to redirect or copy
+traffic to the SLPF.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #120](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/120): 
+Consider Packet Redirect and Packet Copy actions
 
 ## Issue 10: What knows the security-group name and priority to use?
 
