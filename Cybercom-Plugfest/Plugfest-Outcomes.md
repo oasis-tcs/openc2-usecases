@@ -428,9 +428,11 @@ Critical Infrastructure (ACDCI) Use Case.
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Consumers need confidence in the source of commands they receive.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: propose that the TCS consider expanding 
+section 3.2.4 Authentication to include a subsection that 
+defines a method for a consumer to digitally sign an OpenC2 request. Full description in [Issue #103](https://github.com/oasis-tcs/openc2-impl-https/issues/103) for the [HTTPS Transfer Specification](https://github.com/oasis-tcs/openc2-impl-https).
 
 ## Issue 2: Limited data in responses from actuators
 
