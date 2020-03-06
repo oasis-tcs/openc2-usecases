@@ -467,9 +467,13 @@ defining time constraints for an action would be useful.
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Presently, the SLPF expects a pair of IP 
+addresses and ports.  However, the majority of firewalls/SLPFs support a list for each field (e.g. allow IPv4-a and IPv4-b to talk to IPv4-c on ports 80,443).  It would be useful to 
+extend the SLFP to support this use case. Applies to ipv4_net, ipv4_connection, ipv6_net, and ipv6_connection targets.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issues:
+
+* Stateless Packet Filter [Issue #118](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/118): Support multiple IP addresses, ports
 
 ## Issue 5: Logging per rule?
 
