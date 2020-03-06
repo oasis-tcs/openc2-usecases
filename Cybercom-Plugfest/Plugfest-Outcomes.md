@@ -539,9 +539,16 @@ Consider Packet Redirect and Packet Copy actions
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Many cloud providers utilize priority to determine 
+which rule applies. Often this is an integer between 0-65535 with 0 
+being the first evaluation and 65535 the last. We should consider 
+order as a command argument. For instance, an allow at priority 1000 
+is evaluated before a deny at order 2000.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #116](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/116): 
+Priority and Order
 
 ## Issue 11: Content Balance Between HTTPS Headers and OpenC2 Message Content
 
