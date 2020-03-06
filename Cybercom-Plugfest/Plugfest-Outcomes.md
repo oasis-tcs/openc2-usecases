@@ -428,51 +428,80 @@ Critical Infrastructure (ACDCI) Use Case.
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Consumers need confidence in the source of 
+commands they receive. Propose that the TC consider expanding 
+[HTTPS Transfer Specification](https://github.com/oasis-tcs/openc2-impl-https),
+section 3.2.4 Authentication, to 
+include a subsection that defines a method for a consumer to 
+digitally sign an OpenC2 request.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*:  Details are provided in the following issue:
+
+* HTTPS Transfer Specification [Issue #103](https://github.com/oasis-tcs/openc2-impl-https/issues/103): Authentication of OpenC2 Message
 
 ## Issue 2: Limited data in responses from actuators
 
-Rules, which actuator, support for temporal?  (may need to break this into multiple issues)
-
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Multiple difficulties for the Producer in 
+determining status when multiple Consumers respond to the 
+same command.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issues:
+
+* Language Specification [Issue #350](https://github.com/oasis-tcs/openc2-oc2ls/issues/350): Query for Pairs
+* Language Specification [Issue #353](https://github.com/oasis-tcs/openc2-oc2ls/issues/353): Multiple responses and Messages
+* Stateless Packet Filter [Issue #122](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/122): SLPF Response (ambiguity at producer regarding which actuator responded)
+* Stateless Packet Filter Issue #TBD (regarding "query" "pairs")
 
 ## Issue 3: Temporal Requirements - Start / Stop
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Current state of time arguments is very limited:
+(start, stop, duration). A more refined / flexible way of 
+defining time constraints for an action would be useful.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issues:
+
+* Language Specification [Issue #347](https://github.com/oasis-tcs/openc2-oc2ls/issues/347): Temporality - time args
+* Stateless Packet Filter [Issue #123](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/123): Temporal Periodicity
+ 
 
 ## Issue 4: Multiple Targets or Similar Commands
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Presently, the SLPF expects a pair of IP 
+addresses and ports.  However, the majority of firewalls/SLPFs support a list for each field (e.g. allow IPv4-a and IPv4-b to talk to IPv4-c on ports 80,443).  It would be useful to 
+extend the SLFP to support this use case. Applies to ipv4_net, ipv4_connection, ipv6_net, and ipv6_connection targets.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #118](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/118): Support multiple IP addresses, ports
 
 ## Issue 5: Logging per rule?
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* It would be useful to have flexibility for an OpenC2 
+command to specify whether or not a Consumer should log a command.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #114](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/114): Logging
 
 ## Issue 6: Comment on Rule
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* It would be useful for an OpenC2 command to include
+an option that allows for a rule comment or rule description such as 
+`ticket 40342322` or `dev web to dev db`. 
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #115](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/115): SLPF Rule Comment or Description
 
 ## Issue 7: Clarify ipv4net
 
@@ -488,54 +517,45 @@ Ipv4net should be clarified as ANY->ipv4net AND ipv4net->ANY : 2 rules
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ... (conflict between OpenC2 command selecting the "repsonse = NONE" option whereas the HTTP transfer protocols *requires* a response.
+*Description:* There is a conflict between OpenC2 command selecting the "response = NONE" option, whereas the HTTP transfer protocol *requires* a response.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* HTTPS Transfer Specification [Issue #105](https://github.com/oasis-tcs/openc2-impl-https/issues/105): Handling Response = None
 
 ## Issue 9: Forward packet/duplicate packet/offload
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* A proposal to add actions to redirect or copy
+traffic to the SLPF.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #120](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/120): 
+Consider Packet Redirect and Packet Copy actions
 
 ## Issue 10: What knows the security-group name and priority to use?
 
 *Source*:  Firewall / Packet Filtering BoF
 
-*Description:* while doing X, we discovered Y ...
+*Description:* Many cloud providers utilize priority to determine 
+which rule applies. Often this is an integer between 0-65535 with 0 
+being the first evaluation and 65535 the last. We should consider 
+order as a command argument. For instance, an allow at priority 1000 
+is evaluated before a deny at order 2000.
 
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+*Potential Solutions*: Details are provided in the following issue:
+
+* Stateless Packet Filter [Issue #116](https://github.com/oasis-tcs/openc2-apsc-stateless-packet-filter/issues/116): 
+Priority and Order
 
 ## Issue 11: Content Balance Between HTTPS Headers and OpenC2 Message Content
 
 *Source*:  Multiple groups.
 
-*Description:* PF participants had numerous interworking issues relating to informtion in HTTP headers vs. OpenC2 message content.
+*Description:* PF participants had numerous interworking issues relating to information in HTTP headers vs. OpenC2 message content.
 
-*Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of plug fest attempts to achieve interoperability between a variety of implementations. Potential changes include simplifying the content type to simply be "JSON", and adding OpenC2 version information and command IDs into the message content.  This may fold back into the definition of OpenC2 messages in the Language Specification.
+*Potential Solutions*: revisit the decisions made for the v1.0  HTTPS specification for such information elements as the CommandID, content type, etc., based on results of plug fest attempts to achieve interoperability between a variety of implementations. Potential changes include simplifying the content type to simply be "JSON", and adding OpenC2 version information and command IDs into the message content.  This may fold back into the definition of OpenC2 messages in the Language Specification. Discussion is captured in the following issue:
 
-## Issue N: NameN
-
-*Source*:  (who / what group identified this issue)
-
-*Description:* while doing X, we discovered Y ...
-
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
-
-## Issue N: NameN
-
-*Source*:  (who / what group identified this issue)
-
-*Description:* while doing X, we discovered Y ...
-
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
-
-## Issue N: NameN
-
-*Source*:  (who / what group identified this issue)
-
-*Description:* while doing X, we discovered Y ...
-
-*Potential Solutions*: suggestions for resolutions or work-arounds developed
+* Language Specification [Issue #353](https://github.com/oasis-tcs/openc2-oc2ls/issues/353): Multiple responses and Messages
