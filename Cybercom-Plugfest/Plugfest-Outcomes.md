@@ -309,7 +309,7 @@ We will explore whether it is possible to share further work on actuator auto-di
 ## Project: OpenC2 Producer/Consumer using Yuuki (NSA OpenC2 Team)
 
 *Description:* This project demonstrates the ability to send
-OpenC2 commands from a Yuuki-based OpenC2 Producer to a Yuuki-based OpenC2 Consumer fronting an ACME Road Runner Actuator.
+OpenC2 commands from a [Yuuki](https://github.com/oasis-open/openc2-yuuki)-based OpenC2 Producer to a Yuuki-based OpenC2 Consumer fronting an ACME Road Runner Actuator, and receive corresponding responses. The Yuuki-base Producer also commanded Consumers from other plug fest participants.
 
 *State:*
 
@@ -318,7 +318,7 @@ OpenC2 commands from a Yuuki-based OpenC2 Producer to a Yuuki-based OpenC2 Consu
   * Final State:  OpenC2 Commands Sent/OpenC2 Responses Received
 * Releaseability: open source
 * Demonstrated: Yes
-* Interworked: Yes
+* Interworked: Producer: Yes / Consumer: No
 
 *Presentation:* 
 * [Yuuki Producer / Consumer architecture diagram](Briefings/OpenC2_Yuuki_Producer_Consumer_Diagram4.pdf)
