@@ -311,17 +311,23 @@ We will explore whether it is possible to share further work on actuator auto-di
 ## Project: OpenC2 Producer/Consumer using Yuuki (NSA OpenC2 Team)
 
 *Description:* This project demonstrates the ability to send
-OpenC2 commands from an Yuuki-based OpenC2 Producer to an OpenC2 Consumer 
-to an ACME Road Runner Actuator. The Yuuki-based OpenC2 Producer is based on the multiple dispatch on type approach.
+OpenC2 commands from a [Yuuki](https://github.com/oasis-open/openc2-yuuki)-based 
+OpenC2 Producer to a Yuuki-based OpenC2 Consumer fronting an ACME Road Runner Actuator, 
+and receive corresponding responses. The Yuuki-based OpenC2 Consumer is based on 
+the multiple dispatch on type approach. The Yuuki-based Producer also commanded Consumers 
+from other plug fest participants.
 
 *State:*
 
-* Presented at Plugfest:  Please see architecture documents with 
-title "OpenC2 Producer Consumer using Yuuki"
-* Initial / Final State:  OpenC2 Commands Sent/OpenC2 Responses Received
+* Presented at Plugfest:  The Yuuki-based Producer and Consumer were present at the plug fest.
+  * Initial State:  OpenC2 Commands Sent/OpenC2 Responses Received
+  * Final State:  OpenC2 Commands Sent/OpenC2 Responses Received
 * Releaseability: open source
 * Demonstrated: Yes
-* Interworked: Yes
+* Interworked: Producer: Yes / Consumer: No
+
+*Presentation:* 
+* [Yuuki Producer / Consumer architecture diagram](Briefings/OpenC2_Yuuki_Producer_Consumer_Diagram4.pdf)
 
 ## Project: Endpoint File Blacklist and Device Quarantine (Symantec ICDx)
 
