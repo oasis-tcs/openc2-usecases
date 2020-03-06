@@ -350,13 +350,16 @@ title "OpenC2 Producer Consumer using Yuuki"
 using a Raspberry Pi device to perform a flashing of lights on a hardware board with WS-2811 LED Flashing Lights.
 
 *State:*
-* Presented at plugfest:  Please see two architecture documents with 
-titles "Remote Activation of Flashing Lights1" and 
-"Remote Activation of Flashing Lights2"
-* Initial State: No lights flashing / Final State:  Sequences of lights flashing
+* Presented at plugfest:  This project was presented at the plug fest.
+  * Initial State: No lights flashing
+  * Final State:  Multiple producers successfully commanded the device
 * Releaseability: open source
 * Demonstrated?  Yes
 * Interworked?  Yes
+
+*Presentation:* 
+* [Remote Activation of Flashing Lights](Remote Activation of Flashing Lights.pdf)
+
 
 # Scenarios
 
