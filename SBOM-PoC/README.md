@@ -37,7 +37,8 @@ Since this PoC is mashup of several efforts,
 this page will just link
 
 # 4 - Work Plan
-blah blah on how organized. Crib from NTIA SBOM Healthcare PoC and use their terminology and definitions (eg iterations, waves, ...)
+blah blah on how organized. Crib from NTIA SBOM Healthcare PoC and use their terminology and definitions (eg iterations, waves, ...).
+In addition, define use cases and scenarios and how pairwise pyramid will work 
 
 # 5 -
 .
