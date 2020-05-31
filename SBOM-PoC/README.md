@@ -21,7 +21,8 @@ See [Section 4](#4-work-plan) 4 on how the work will be organized
 
 See Sections 5 - N on blah blah with the details
 
-
+## 1.1 Vision
+put vision here
 
 # 2 - Organizations Participating
 Here is the list of organizations who have agreed to participate, hotlinked to pages showing what they are interested in and what they plan to contribute to this effort.
