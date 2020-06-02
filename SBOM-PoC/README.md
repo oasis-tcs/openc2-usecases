@@ -22,9 +22,26 @@ See [Section 4](#4-work-plan) 4 on how the work will be organized
 See Sections 5 - N on blah blah with the details
 
 ## 1.1 Vision
-put vision here.
-Many organizations from different efforts (eg OpenC2, SBOM, ...).
-Many piece parts interworking showing scenarios/use cases.
+The vision of this activity is that it will prove several concepts
+associated with several independent efforts (e.g. OpenC2, NTIA SBOM, ...).
+This work is intended to be virtual
+(ie no physical meetings needed)
+and consist of many pairwise
+interworking steps growing to larger many-party working scenarios or use cases.
+Examples of scenarios include:
+- an automated response to an attack on a device which did not create an SBOM. See https://youtu.be/9KnagMQ6SNI at ~3 min 10 sec as example
+- a device coming online in a network, it's SBOM being queried with OpenC2, and:
+    - device does not have SBOM, so orchestrator denies access to network
+    - device has SBOM, sense making looks up components and discovers vulnerabilities exist, so orchestrator:
+       - sandboxes device,
+       - automagically installs component updates (including updating SBOM,
+       - allows access to network
+    - device has SBOM, sense making looks up components and discovers vulnerabilities exist, so orchestrator allows access
+- ditto previous with mud (either standalone or in combination with OpenC2)
+- an automated response to an attack on a device which did create an SBOM, and had automated update when CVE annouced . See  https://youtu.be/9KnagMQ6SNI at ~4 min 50 sec as example
+
+EDITOR's NOTE: Duncan action item to make one video for scenarios above, and to remake as scenarios evolve as new organizations contribute
+
 
 # 2 - Organizations Participating
 Here is the list of organizations who have agreed to participate, hotlinked to pages showing what they are interested in and what they plan to contribute to this effort.
