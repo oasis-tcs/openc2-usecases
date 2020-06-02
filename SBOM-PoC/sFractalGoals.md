@@ -45,7 +45,7 @@ to make the world a safer place, which all these efforts do.
 - show the value of virtual plugfest/hackathons for Proof of concept
 - using both "good" and "vulnerable" SBOMs, show the value of the SBOM by using orchestration to 'connect' the 'good' SBOM while "fixing" or "sandboxing" the vulnerable devices with the vulnerable SbomG
 - evangelize SBOM to the other groups involved
-- out out a report similar to https://www.ntia.gov/files/ntia/publications/ntia_sbom_healthcare_poc_report_2019_1001.pdf
+- put out a report similar to https://www.ntia.gov/files/ntia/publications/ntia_sbom_healthcare_poc_report_2019_1001.pdf
 
 ### 2.3-IACD Goals & Objectives
 [Integrated Adaptive Cyber Defense]() (IACD) is a strategy and framework to adopt an vendor-agnostic, extensible, adaptive, commercial off-the-shelf (COTS)-based approach to cybersecurity operations. IACD's goal is to dramatically change the timeline and effectiveness of cyber defense via integration, automation, orchestration and sharing of machine-readable cyber threat information.
