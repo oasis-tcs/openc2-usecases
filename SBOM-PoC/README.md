@@ -26,19 +26,27 @@ put vision here
 
 # 2 - Organizations Participating
 Here is the list of organizations who have agreed to participate, hotlinked to pages showing what they are interested in and what they plan to contribute to this effort.
-- [sFractal Consulting](./sFractalConsultingGoals)
-- [NSA](./NSAGoals)
-- [Huntington Ingalls Industries](./HIIGoals)
-- [New Context](./NewContextGoals)
+- [sFractal Consulting](./sFractalGoals.md)
+- [NSA](./NSAGoals.md)
+- [Huntington Ingalls Industries](./HIIGoals.md)
+- [New Context](./NewContextGoals.md)
 
 
 # 3 - Goals and Objectives
-Since this PoC is mashup of several efforts,
-this page will just link
+This effort is a mashup of several efforts
+by a combination of many organizations,
+all with goals related to one or more of the efforts.
+The organization goals/objectives pages (see [Section 2](#2-organizations-participating))
+will be combined into individual pages per effort:
+- [OpenC2 Plugfest/Hackathon Goals & Objectives](./Oc2Goals.md)
+- [NTIA SBOM Transfer PoC Goals & Objectives](./SbomGoals.md)
+- [IACD Goals & Objectives](./IacdGoals.md)
+- [CACAO Goals & Objectives](./CacaoGoals.md)
+- [Opencyber Security Alliance Goals & Objectives](./OcaGoals.md)
 
 # 4 - Work Plan
 blah blah on how organized. Crib from NTIA SBOM Healthcare PoC and use their terminology and definitions (eg iterations, waves, ...).
-In addition, define use cases and scenarios and how pairwise pyramid will work 
+In addition, define use cases and scenarios and how pairwise pyramid will work
 
 # 5 -
 .
