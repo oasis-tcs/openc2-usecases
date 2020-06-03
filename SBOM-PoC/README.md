@@ -39,6 +39,10 @@ Examples of scenarios include:
     - device has SBOM, sense making looks up components and discovers vulnerabilities exist, so orchestrator allows access
 - ditto previous with mud (either standalone or in combination with OpenC2)
 - an automated response to an attack on a device which did create an SBOM, and had automated update when CVE annouced . See  https://youtu.be/9KnagMQ6SNI at ~4 min 50 sec as example
+- the Denver Airport Scenarios from Jan Plugfest
+- the firewall scenarios from the Jan Plugfest
+- setting up the (multi-)cloud instances using OpenC2 (using New Context and AT&T opensource)
+- some megascenario combining them all
 
 EDITOR's NOTE: Duncan action item to make one video for scenarios above, and to remake as scenarios evolve as new organizations contribute
 
