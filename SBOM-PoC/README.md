@@ -13,7 +13,7 @@ This SBOM PoC is (at least conceptually in Duncan's head) a combination of sever
 See [Section 3](#3-goals-and-objectives)
 for goals and objectives of each of these.
 
-See [Section 2](#2-organizations-participating)
+See [Section 2](#2---organizations-participating)
 for organizations participating
 and how their goals tie to these efforts.
 
@@ -53,6 +53,7 @@ Here is the list of organizations who have agreed to participate, hotlinked to p
 - [NSA](./NSAGoals.md)
 - [Huntington Ingalls Industries](./HIIGoals.md)
 - [New Context](./NewContextGoals.md)
+- [NineFx](./NineFx.md)
 
 
 # 3 - Goals and Objectives
