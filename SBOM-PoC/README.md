@@ -62,7 +62,10 @@ is being called Phase 1 with the hope
 there will be follow on work after TDD that can be accomplished virtually.
 
 # 2 - Organizations Participating
-Here is the list of organizations who have agreed to participate, hotlinked to pages showing what they are interested in and what they plan to contribute to this effort.
+Here is the list of organizations who have agreed to participate,
+in order of volunteering to participate in PoC,
+hotlinked to pages showing what they are interested in
+and what they plan to contribute to this effort:
 - [sFractal Consulting](./sFractalGoals.md)
 - [NSA](./NSAGoals.md)
 - [Huntington Ingalls Industries](./HIIGoals.md)
