@@ -83,8 +83,15 @@ will be combined into individual pages per effort:
 - [Opencyber Security Alliance Goals & Objectives](./OcaGoals.md)
 
 # 4 - Work Plan
-blah blah on how organized. Crib from NTIA SBOM Healthcare PoC and use their terminology and definitions (eg iterations, waves, ...).
-In addition, define use cases and scenarios and how pairwise pyramid will work
+The work will be organized using the following terms,
+mostly cribbed from SBOM Healthcare PoC:
+- Phase 1- The work done virtually from now until [TTD-PlugfestHackathon](https://github.com/sparrell/openc2-lsc-usecases/tree/master/TTD-PlugfestHackathon)
+- Sprint - the interval between the biweekly status meeting (e.g 4-June-2020 to 18-June-2020)
+- Interval - An interval consists of several sprints. Phase 1 will be broken into at least 3 intervals described [here](./WorkPlanIntervals.md) with discrete objectives (e.g. interval 1 focus is on 'within an organization', interval 2 on between an organization lab and a cloud, interval 3 on org1-cloud-org2, ...)
+- Wave - a subset of an interval meeting a subset of the objectives. An Interval is broken into waves usually due to different organizations having deliverables arriving at different times. E.g. in the Healthcare SBOM PoC, Interval 1 was broken into two waves so the initial 13 MDD SBOMs could start being evaluated by the HDOs without having to wait for the 'wave 2' SBOMs.
+- Use case/Scenario - for this effort, the terms will be used somewhat interchangeably to describe the scenarios being simulated in this PoC to simulate the real life uses of the concepts trying to be proved. The expectation is the scenarios will start out simply in pair-wise interactions and grow to complex scenarios involving all aspects of the IACD architecture (ie sensing, sense-making, decision making, acting) showing cyber defense at machine speed.
+
+See the [Work Plan](./WorkPlan.md) for more details.
 
 # 5 -
 .
