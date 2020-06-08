@@ -1,5 +1,10 @@
 # Table Of Contents
-need to do this
+- [1. Intro](#1---intro)
+- [1.1 SBOM-PoC#11-vision](SBOM-PoC#11-vision)
+- [2. Organizations Participating](#2---organizations-participating)
+- [3. Goals and Objectives](#3---goals-and-objectives)
+- [4. Work Plan](4---work-plan)
+- 5. ...
 
 # 1 - Intro
 This SBOM PoC is (at least conceptually in Duncan's head) a combination of several efforts:
@@ -10,12 +15,12 @@ This SBOM PoC is (at least conceptually in Duncan's head) a combination of sever
   - [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) playbook PoC
   - [Open Cybersecurity Alliance](https://opencybersecurityalliance.org/) PoC
 
-See [Section 3](#3-goals-and-objectives)
-for goals and objectives of each of these.
-
 See [Section 2](#2---organizations-participating)
 for organizations participating
 and how their goals tie to these efforts.
+
+See [Section 3](#3---goals-and-objectives)
+for goals and objectives of each of these.
 
 See [Section 4](#4-work-plan) 4 on how the work will be organized
 
@@ -44,8 +49,17 @@ Examples of scenarios include:
 - setting up the (multi-)cloud instances using OpenC2 (using New Context and AT&T opensource)
 - some megascenario combining them all
 
-EDITOR's NOTE: Duncan action item to make one video for scenarios above, and to remake as scenarios evolve as new organizations contribute
-
+This effort is scheduled from June thru October 25, 2020
+and will terminate just prior to
+[TTD-PlugfestHackathon](https://github.com/sparrell/openc2-lsc-usecases/tree/master/TTD-PlugfestHackathon)
+at
+[Tech Transfer Days](https://techtransferdays.org/)
+where a physical in-person meetup/mashup will
+hopefully repeat the virtual accomplishments
+and further advance the work with aspects that require being on the same LAN.
+The effort from now until October
+is being called Phase 1 with the hope
+there will be follow on work after TDD that can be accomplished virtually.
 
 # 2 - Organizations Participating
 Here is the list of organizations who have agreed to participate, hotlinked to pages showing what they are interested in and what they plan to contribute to this effort.
