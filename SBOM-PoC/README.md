@@ -1,5 +1,10 @@
 # Table Of Contents
-need to do this
+- [1. Intro](#1---intro)
+- [1.1 SBOM-PoC#11-vision](SBOM-PoC#11-vision)
+- [2. Organizations Participating](#2---organizations-participating)
+- [3. Goals and Objectives](#3---goals-and-objectives)
+- [4. Work Plan](4---work-plan)
+- 5. ...
 
 # 1 - Intro
 This SBOM PoC is (at least conceptually in Duncan's head) a combination of several efforts:
@@ -10,12 +15,12 @@ This SBOM PoC is (at least conceptually in Duncan's head) a combination of sever
   - [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) playbook PoC
   - [Open Cybersecurity Alliance](https://opencybersecurityalliance.org/) PoC
 
-See [Section 3](#3-goals-and-objectives)
-for goals and objectives of each of these.
-
 See [Section 2](#2---organizations-participating)
 for organizations participating
 and how their goals tie to these efforts.
+
+See [Section 3](#3---goals-and-objectives)
+for goals and objectives of each of these.
 
 See [Section 4](#4-work-plan) 4 on how the work will be organized
 
@@ -44,8 +49,17 @@ Examples of scenarios include:
 - setting up the (multi-)cloud instances using OpenC2 (using New Context and AT&T opensource)
 - some megascenario combining them all
 
-EDITOR's NOTE: Duncan action item to make one video for scenarios above, and to remake as scenarios evolve as new organizations contribute
-
+This effort is scheduled from June thru October 25, 2020
+and will terminate just prior to
+[TTD-PlugfestHackathon](https://github.com/sparrell/openc2-lsc-usecases/tree/master/TTD-PlugfestHackathon)
+at
+[Tech Transfer Days](https://techtransferdays.org/)
+where a physical in-person meetup/mashup will
+hopefully repeat the virtual accomplishments
+and further advance the work with aspects that require being on the same LAN.
+The effort from now until October
+is being called Phase 1 with the hope
+there will be follow on work after TDD that can be accomplished virtually.
 
 # 2 - Organizations Participating
 Here is the list of organizations who have agreed to participate, hotlinked to pages showing what they are interested in and what they plan to contribute to this effort.
@@ -69,8 +83,15 @@ will be combined into individual pages per effort:
 - [Opencyber Security Alliance Goals & Objectives](./OcaGoals.md)
 
 # 4 - Work Plan
-blah blah on how organized. Crib from NTIA SBOM Healthcare PoC and use their terminology and definitions (eg iterations, waves, ...).
-In addition, define use cases and scenarios and how pairwise pyramid will work
+The work will be organized using the following terms,
+mostly cribbed from SBOM Healthcare PoC:
+- Phase 1- The work done virtually from now until [TTD-PlugfestHackathon](https://github.com/sparrell/openc2-lsc-usecases/tree/master/TTD-PlugfestHackathon)
+- Sprint - the interval between the biweekly status meeting (e.g 4-June-2020 to 18-June-2020)
+- Interval - An interval consists of several sprints. Phase 1 will be broken into at least 3 intervals described [here](./WorkPlanIntervals.md) with discrete objectives (e.g. interval 1 focus is on 'within an organization', interval 2 on between an organization lab and a cloud, interval 3 on org1-cloud-org2, ...)
+- Wave - a subset of an interval meeting a subset of the objectives. An Interval is broken into waves usually due to different organizations having deliverables arriving at different times. E.g. in the Healthcare SBOM PoC, Interval 1 was broken into two waves so the initial 13 MDD SBOMs could start being evaluated by the HDOs without having to wait for the 'wave 2' SBOMs.
+- Use case/Scenario - for this effort, the terms will be used somewhat interchangeably to describe the scenarios being simulated in this PoC to simulate the real life uses of the concepts trying to be proved. The expectation is the scenarios will start out simply in pair-wise interactions and grow to complex scenarios involving all aspects of the IACD architecture (ie sensing, sense-making, decision making, acting) showing cyber defense at machine speed.
+
+See the [Work Plan](./WorkPlan.md) for more details.
 
 # 5 -
 .
