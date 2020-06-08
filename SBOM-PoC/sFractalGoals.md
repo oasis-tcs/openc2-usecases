@@ -100,3 +100,4 @@ with an additional goals of:
 - blinkyhaha SBOM creation - one-hop, complete, and various 'vulnerable' SBOMs to drive different behaviours by orchestrators
 - interworking/integration with whatever willing to talk to blinkyhaha
 - effort in support of meeting all the goals in [Section 2](#2-goals-objectives)
+- work with One Planet Education Network on sensors and on education aspects
