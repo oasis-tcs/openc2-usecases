@@ -7,7 +7,7 @@
 - 5. ...
 
 # 1 - Intro
-This SBOM PoC is (at least conceptually in Duncan's head) a combination of several efforts:
+This SBOM Proof of Concept (PoC) is (at least conceptually in Duncan's head) a combination of several efforts:
 - OpenC2 virtual plugfest/hackathon in preparation for [TTD-PlugfestHackathon](../TTD-PlugfestHackathon/)
 - NTIA SBOM Transfer PoC - see [here](https://www.ntia.gov/sbom) and [here](https://www.ntia.gov/SoftwareTransparency)
 - others TBD including potentially
