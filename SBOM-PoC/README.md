@@ -7,8 +7,23 @@
 - 5. ...
 
 # 1 - Intro
-This SBOM Proof of Concept (PoC) is (at least conceptually in Duncan's head) a combination of several efforts:
-- OpenC2 virtual plugfest/hackathon in preparation for [TTD-PlugfestHackathon](../TTD-PlugfestHackathon/)
+The Software Bill Of Materials (SBOM) Proof of Concept (PoC)
+sets out to prove several concepts e.g.
+- SBOMs
+   - may be used in protecting organizational systems, networks, data, and users
+   - may be created
+   - may be obtained
+   - may be used to make security decisions
+- Openc2
+   - may be used in protecting organizational systems, networks, data, and users
+   - may be used to obtain SBOMs
+   - may be used to command and control security functions
+- CACAO playbooks
+   - may be used in protecting organizational systems, networks, data, and users
+   - may be used to identify, create, document, and test detection, investigation, prevention, mitigation, and remediation steps
+
+This SBOM PoC is a combination of several efforts:
+- OpenC2 virtual plugfest/hackathon 
 - NTIA SBOM Transfer PoC - see [here](https://www.ntia.gov/sbom) and [here](https://www.ntia.gov/SoftwareTransparency)
 - others TBD including potentially
    - [Integrated Adaptive Cyber Defense or IACD](https://www.iacdautomate.org/) SOAR PoC showing playbooks and automated orchestration
