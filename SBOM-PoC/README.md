@@ -67,9 +67,10 @@ Examples of scenarios include:
 Scenarios will have plans (e.g. see
 [need to add plan link](./sFractalScenarios/README.md#31---comply-to-connect))
 including flowchart (e.g.
-![comply to connect flow](./sFractalScenarios/sFractal.cacao.1.png))
+![comply to connect flow](./sFractalScenarios/sFractal.1.png) with draw.io
+[source](./sFractalScenarios/sFractal.1.drawio))
 human readable (e.g.
-  [sFractal Scenario 1](./sFractalScenarios/README.md#31---comply-to-connect))
+[sFractal Scenario 1](./sFractalScenarios/README.md#31---comply-to-connect))
 and CACAO playbooks (e.g.
 [need to add CACAO link](./sFractalScenarios/README.md#31---comply-to-connect)).
 

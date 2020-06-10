@@ -48,7 +48,7 @@ blah blah on work plan has specific tasks to make specific scenarios in specific
 This is a collection of scenarios that follow the general flow shown in
 Figure 3.1-1:
 <p align="center">
-![Comply to Connect Flow](./sFractal.cacao.1.png)
+![Comply to Connect Flow](./sFractal.1.png)
 Figure 3.1-1:
 </p>
 
