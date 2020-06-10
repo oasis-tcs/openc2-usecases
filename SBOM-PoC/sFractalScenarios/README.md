@@ -92,3 +92,6 @@ Other scenarios derived from this scenario:
 - SBOM via public URL or via email
 - MUD discovery of SBOM
 side note - add ids to risk mitigation choices
+
+The next evolution of these scenarios it to interwork with OIF
+as orchestrator to validate OIF and blinkyhaha interwork.
