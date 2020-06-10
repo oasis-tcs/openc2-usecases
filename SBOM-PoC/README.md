@@ -68,7 +68,7 @@ Scenarios will have plans (e.g. see
 [sFractal Scenario 1 work plan](./sFractalScenarios/workPlan.1.md))
 including flowchart (e.g.
 <p align="center">
-![Comply to Connect Flow](./sFractal.1.png)
+![Comply to Connect Flow](./sFractalScenarios/sFractal.1.png)
 sFractal Scenario 1
 Figure 3.1-1:
 </p>
