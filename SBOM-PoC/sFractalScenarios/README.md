@@ -1,7 +1,7 @@
 # Table Of Contents
 - [1 Intro](#1---intro)
 - [2 Scenario Planning](#2---scenario-planning)
-- [## 3 - Scenarios](#3---scenarios)
+- [3 - Scenarios](#3---scenarios)
 - []()
 
 
@@ -43,8 +43,11 @@ blah blah on work plan has specific tasks to make specific scenarios in specific
 
 ### 3.1 - Comply to Connect
 This is a collection of scenarios that follow the general flow shown in
-Figure 3.1-1
+Figure 3.1-1:
+<p align="center">
 ![Comply to Connect Flow](./sFractal.cacao.1.png)
+Figure 3.1-1:
+</p>
 
 This is a collection of scenarios that differ by the details
 in the blocks, or different devices are use, or differ by what is used as the orchestrator or what policies are in the orchestrator.
