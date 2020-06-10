@@ -1,7 +1,10 @@
 # Table Of Contents
 - [1 Intro](#1---intro)
 - [2 Scenario Planning](#2---scenario-planning)
-- [3 - Scenarios](#3---scenarios)
+- [3 Scenarios](#3---scenarios)
+- [3.1 Comply to Connect](#31---comply-to-connect)
+- [3.1.1 Comply to Connect sFractal Scenario 1](#311---comply-to-connect-sfractal-scenario-1)
+- []()
 - []()
 
 
@@ -62,7 +65,7 @@ Another example is the 'obtain current SBOM' may be done by:
 - email request to the supplier followed by supplier emailing SBOM back
 - ...
 
-### 3.1,1 - Comply to Connect sFractal Scenario 1
+### 3.1.1 - Comply to Connect sFractal Scenario 1
 
 The as-built architecture is:
 - make a picture
