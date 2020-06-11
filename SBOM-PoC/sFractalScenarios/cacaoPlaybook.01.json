@@ -155,11 +155,6 @@ Actions
  ],
  "command": {
  "url": "http://www.siem-example.com/path/to/IOC",
- "auth": "<some auth data>",
-draft-security-playbooks-v1.0-wd02 Working Draft 02
-Standards Track Draft Copyright © OASIS Open 2020. All Rights Reserved.
-21 April 2020 Page 54 of 64
-
 "args": ["address=$$data_exfil_site"]
 "number_of_siem_matches": "<total number of flows found>"
 },
