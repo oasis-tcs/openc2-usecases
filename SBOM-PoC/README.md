@@ -23,7 +23,7 @@ sets out to prove several concepts e.g.
    - may be used to identify, create, document, and test detection, investigation, prevention, mitigation, and remediation steps
 
 This SBOM PoC is a combination of several efforts:
-- OpenC2 virtual plugfest/hackathon 
+- OpenC2 virtual plugfest/hackathon
 - NTIA SBOM Transfer PoC - see [here](https://www.ntia.gov/sbom) and [here](https://www.ntia.gov/SoftwareTransparency)
 - others TBD including potentially
    - [Integrated Adaptive Cyber Defense or IACD](https://www.iacdautomate.org/) SOAR PoC showing playbooks and automated orchestration
@@ -63,6 +63,19 @@ Examples of scenarios include:
 - the firewall scenarios from the Jan Plugfest
 - setting up the (multi-)cloud instances using OpenC2 (using New Context and AT&T opensource)
 - some megascenario combining them all
+
+Scenarios will have plans (e.g. see
+[sFractal Scenario 1 work plan](./sFractalScenarios/workPlan.1.md))
+including flowchart (e.g.
+
+![Comply to Connect Flow](./sFractalScenarios/sFractal.1.png)
+
+with draw.io
+[source](./sFractalScenarios/sFractal.1.drawio)),
+human readable scenario (e.g.
+[sFractal Scenario 1](./sFractalScenarios/README.md#31---comply-to-connect))
+and CACAO playbooks (e.g.
+[sFractal playbook 1](./sFractalScenarios/cacaoPlaybook.01.json)).
 
 This effort is scheduled from June thru October 25, 2020
 and will terminate just prior to
