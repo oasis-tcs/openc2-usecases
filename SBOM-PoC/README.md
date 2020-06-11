@@ -1,6 +1,6 @@
 # Table Of Contents
 - [1. Intro](#1---intro)
-- [1.1 SBOM-PoC#11-vision](SBOM-PoC#11-vision)
+- [1.1 Vision](#11-vision)
 - [2. Organizations Participating](#2---organizations-participating)
 - [3. Goals and Objectives](#3---goals-and-objectives)
 - [4. Work Plan](4---work-plan)
