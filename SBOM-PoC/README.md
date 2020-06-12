@@ -102,7 +102,12 @@ and what they plan to contribute to this effort:
 - [One Planet Education Network](./OnePlanetGoals.md)
 - [AT&T](AttGoals.md)
 - [mudmaker.org](MudMakerGoals.md)
+- [Ion Channel](IonChannelGoals.md)
+- [Unisys](UnisysGoals.md)
 
+Editor's Note - This list probably needs to move to it's own page
+since it will probably grow to 50+ entries.
+And Goals-per-organization will need to move to a subdirectory
 
 # 3 - Goals and Objectives
 This effort is a mashup of several efforts
