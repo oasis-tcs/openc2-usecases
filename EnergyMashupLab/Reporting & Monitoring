@@ -37,18 +37,18 @@ specify and retrieve a report on power grid status and power flows.
 
 <http://docs.oasis-open.org/energyinterop/ei/v1.0/os/energyinterop-v1.0-os.html#_Toc388604017>
 
-The Energy Interoperation report service can define a report on the fly, or can
+The Energy Interoperation (EI) report service can define a report on the fly, or can
 reference a standard well-known report. It also supports the notion of a CPS
 knowing its baseline, and being able to report variance from that baseline.
 
-EI Reports are simple Streams with some metadata identifying the report and a
+EI Reports are simple Streams (as defined in WS-Calendar) with some metadata identifying the report and a
 collection of Intervals containing the Payloads for each [measurement]. Reports
 can be of the past, the present, or the future. A Report appears as a series of
 [measurements] in the past. A Snap is a Report made as of a single moment. A
 Projection is in the same form as a report, but it includes projections of what
 will be in the future, including a confidence level in the payload.
 
-EI Reported values be Actual, Summed (across several sources), Derived based on
+EI Reported values can be Actual, Summed (across several sources), Derived based on
 remote system knowledge) Mean (over a specified period), Peak, or Projected.
 
 The OBIX specification, used to interact with many CPS in critical facilities,
