@@ -25,7 +25,7 @@ be immediate (what is going on now), delayed (report back at 3:00 or in two
 hours), triggered (report if this ever happens). It may be rate driven (report
 if this happens more then 5 times an hour or 5 times a minute). It may track
 longer term monitoring, and the monitoring could be event based (count each time
-you see this) or episodic (right down the flow rate every five minutes). The
+you see this) or episodic (record the flow rate every five minutes). The
 monitoring period could be fixed (watch this and report back at 5:00) or polled
 (watch this and I will come back later to get a report). The polled monitoring
 could be perpetual AND time limited (watch this and I will come back later to
