@@ -1,4 +1,4 @@
-# Energy Mashup Lab
+# Energy Mashup Lab & Operational Technology
 
 OpenC2 is intended in part as a cybersecurity command language for Operational Technology (OT), sometimes known as the Internet of Things (IOT). Traditional cybersecurity commands are focused on the typical networks of file servers, database servers, web servers, and personal devices. Cybersecurity commands from firewall directives to interdiction of malware in documents have as their goal the protection of those administrative and data services. The communications requirements and systems architectures of OT are quite different than those of administrative systems, and the services provided by OT are far more diverse. The security directives for each type of OT system are just now being defined.
 
