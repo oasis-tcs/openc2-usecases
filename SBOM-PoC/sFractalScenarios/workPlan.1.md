@@ -24,6 +24,29 @@ Staying with same flow but with different components (e.g. OPEN sensor replacing
 ## 2 - As-Built Architecture
 need a picture with just a human, a laptop, and a blinkyhaha
 
+Th sFractal architecture (collaborations shown later) will evolve as follows:
+<p align="center">
+![Laptop to RPi via USB](./arch.01.trivial.pi.lan.png)
+Figure 2-1
+
+![Lan to multiple Pi's](./arch.02.pi.lan.png)
+Figure 2-2
+
+![Cloud](./arch.03.cloud.init.png)
+Figure 2-3
+
+![Cloud Applications](./arch.04.cloud.securityMgr.png)
+Figure 2-4
+
+![Cloud/BlinkyHaHa](./arch.05.cloud.blinky.png)
+Figure 2-5
+
+![Security Controls](./arch.06.security.controls.png)
+Figure 2-6
+
+
+</p>
+
 ## 3 - Flow
 
 <p align="center">
