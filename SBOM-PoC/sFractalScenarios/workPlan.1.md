@@ -28,6 +28,7 @@ sFractal Scenario 1.1.1 is:
 
 The sFractal architecture (collaborations shown later) will evolve as follows:
 <p align="center">
+
 ![Laptop to RPi via USB](./arch.01.trivial.pi.lan.png)
 Figure 2-1
 
