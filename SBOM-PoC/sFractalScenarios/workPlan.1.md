@@ -2,27 +2,59 @@
 add toc
 
 ## 1 - Intro
-blah blah
+Scenarios have many dimensions:
+- sFractal-alone or sFractal in collaboration with others
+- component architecture
+- flow (ie operational concept to be proved)
+- configuration
 
-sFractak Scenario 1.1.1 is:
-- Flow/Architecture sFractal 1 i.e.
-   - [Flow 1 - Comply to Connect](./sFractal.1.png)
-- Architecture Components sFractal 1.1
-   - see section 2
-   - need to add picture
-   - on one lan in sFractal lab
-- Configuration sFractal 1.1.1-n
-   - 1.1.1 is sunny day
+A numbering scheme will be trialed to see if it
+makes it easier.
+sFractal Scenario 1.1.1 is:
+- Participants (ie sFractal)
+- Architecture (ie sFractal 1 is [sFractal Arch 1](./arch.01.trivial.pi.lan.png)). See Section 2 for the architectures to be used
+- Flow (ie sFractal 1.1 is  [Flow 1 - Comply to Connect](./sFractal.1.png).See ...
+- Configuration
+   - sFractal 1.1.1 is sunny day. Ie on the flow:
       - Precheck passes
       - SBOM exists
       - SBOM passes license checks
       - SBOM passes vulnerability checks (ie has no known vulnerabilities)
-    - 1.1.2-n various rainy days - precheck fails, sbom nonexistent, licensing issue, sbom vulnerabilities, exercise the different risk detection mitigations (trouble ticket, deny access, extra IDS monitoring, sandbox, initiate investigation). Main configuration change is different SBOMs.
+    - 1.1.2-1.1.n are various rainy days - precheck fails, sbom nonexistent, licensing issue, sbom vulnerabilities, exercise the different risk detection mitigations (trouble ticket, deny access, extra IDS monitoring, sandbox, initiate investigation). Main configuration change is different SBOMs.
 
-Staying with same flow but with different components (e.g. OPEN sensor replacing blinkyhaha or orchestrator being software in cloud instead human) is a different "second digit" scenario e.g.{add link}
+## 2 - Component Architecture
 
-## 2 - As-Built Architecture
-need a picture with just a human, a laptop, and a blinkyhaha
+### 2.1 - sFractal Architectures
+
+The sFractal architecture (collaborations shown later) will evolve as follows:
+<p align="center">
+![Laptop to RPi via USB](./arch.01.trivial.pi.lan.png)
+Figure 2-1
+
+![Lan to multiple Pi's](./arch.02.pi.lan.png)
+Figure 2-2
+
+![Cloud](./arch.03.cloud.init.png)
+Figure 2-3
+
+![Cloud Applications](./arch.04.cloud.securityMgr.png)
+Figure 2-4
+
+![Cloud/BlinkyHaHa](./arch.05.cloud.blinky.png)
+Figure 2-5
+
+![Security Controls](./arch.06.security.controls.png)
+Figure 2-6
+
+
+</p>
+
+### 2.2 - sFractal/HII Architectures
+several dimensions:
+- OIF-producer as "security manager"
+- OIF-device as device in addition to Blinky
+- Yukki ?
+- schema generator?
 
 ## 3 - Flow
 
@@ -43,14 +75,19 @@ Figure 3.1-1:
 ## 5 - Playbook
 - CACAO playbook at [sFractal playbook 1](./cacaoPlaybook.01.json)
 
-## 6 - Status
+## 6 - Tasks
+- make sboms for all blinkyhaha
+- https setup for https openc2 BlinkyHaHa
+- code MQTT for BlinkyHaHa
+
+## 7 - Status
 As of 6/10/20
 
 Still planning
 
-## 7 - Next Steps and Schedule
+## 8 - Next Steps and Schedule
 still planning
 
-## 8 - Results
+## 9 - Results
 
 None yet
