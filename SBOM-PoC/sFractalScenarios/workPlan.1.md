@@ -1,4 +1,4 @@
-# Scenario 1.1.1 Comply-to-connect in lab, human handwaving
+# sFractal Work Plan
 add toc
 
 ## 1 - Intro
