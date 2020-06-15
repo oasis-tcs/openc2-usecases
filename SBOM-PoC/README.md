@@ -37,7 +37,7 @@ and how their goals tie to these efforts.
 See [Section 3](#3---goals-and-objectives)
 for goals and objectives of each of these.
 
-See [Section 4](#4-work-plan) 4 on how the work will be organized
+See [Section 4](#4-work-plan) on how the work will be organized
 
 See Sections 5 - N on blah blah with the details
 
