@@ -40,7 +40,7 @@ A series of virtual plugfest use cases to demonstrate interoperability showcasin
 18. OIF sends OpenC2 command to Blinky MaHa Using a Raspberry Pi 4 card.
 19. OIF Orchestrator commanding our Blinky Light Board and a Blinky MaHa in a physical networking setup within HII.
 20. OIF Orchestrator commanding a Blinky MaHa on LAN network over the Internet.
-
+21. Implementation of a compact, binary serialization *(e.g., CBOR, Protobuf)"
 
 ### 2.2-NTIA SBOM Exchange PoC Goals & Objectives
 
