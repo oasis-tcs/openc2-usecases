@@ -45,6 +45,7 @@ A series of virtual plugfest use cases to demonstrate interoperability showcasin
 ### 2.2-NTIA SBOM Exchange PoC Goals & Objectives
 
 1. OIF retrieves SBOM from Blinky HaHa.
+2. OIF retrieves SBOM from Blinky MaHa.
 
 ### 2.3-IACD Goals & Objectives
 
