@@ -12,7 +12,7 @@ Table of Contents
 
 ## 1-Introduction
 
-fill in
+Huntington Ingalls Industries Technical Solutions Division (HII-TSD) provides Cyber Support Services to various customers. 
 
 ## 2-Goals & Objectives
 
