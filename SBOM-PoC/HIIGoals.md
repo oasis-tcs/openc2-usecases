@@ -46,6 +46,10 @@ A series of virtual plugfest use cases to demonstrate interoperability showcasin
 
 1. OIF retrieves SBOM from Blinky HaHa.
 2. OIF retrieves SBOM from Blinky MaHa.
+3. Using both "good" and "vulnerable" SBOMs, show the value of the SBOM by using the OIF orchestrator
+to 'connect' the 'good' SBOM while "fixing" or "sandboxing" the vulnerable OpenC2 devices with the vulnerable Sbom
+
+
 
 ### 2.3-IACD Goals & Objectives
 
@@ -53,7 +57,11 @@ TBD
 
 ### 2.4-CACAO Goals & Objectives
 
-TBD
+Collaborative Automated Course of Action Operations (CACAO) is a specification for implementing course-of-action playbooks for cybersecurity operations. Ideally CACAO would be used for the security policy driving the decision making in the automated response to the SBOM as part of the PoC. Goals for CACAO would include:
+
+1. OIF retrieves SBOM from Blinky HaHa and the OIF orchestrator exercises a course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM. 
+2. OIF retrieves SBOM from Blinky MaHa and the OIF orchestrator exercises a course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM.
+
 
 ### 2.5-Open Cybersecurity Alliance Goals & Objectives
 
