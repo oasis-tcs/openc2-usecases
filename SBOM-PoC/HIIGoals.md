@@ -53,7 +53,14 @@ to 'connect' the 'good' SBOM while "fixing" or "sandboxing" the vulnerable OpenC
 
 ### 2.3-IACD Goals & Objectives
 
-TBD
+Integrated Adaptive Cyber Defense (IACD) is a strategy and framework to adopt an vendor-agnostic, extensible, adaptive, commercial off-the-shelf (COTS)-based approach to cybersecurity operations. IACD's goal is to dramatically change the timeline and effectiveness of cyber defense via integration, automation, orchestration and sharing of machine-readable cyber threat information.  
+
+Many of the OpenC2 goals are consistent with IACD goals.  The IACD has technical communities which work together for the development of Protection Profiles for Security Orchestration, Automation, and Response (SOAR) Applications.  There is an OpenC2 Actuator Profile subcommittee that is creating and maintaining actuator profiles which define the OpenC2 message elements applicable to specific cyber defense functions.  
+
+1.  OpenC2 actuator profiles will be created to perform specific cyber defense functions.
+2.  OpenC2 actuator profiles will be exercised to perform specific cyber defense functions.
+
+
 
 ### 2.4-CACAO Goals & Objectives
 
