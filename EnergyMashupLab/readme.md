@@ -9,3 +9,5 @@ OpenC2 commands are directed to discrete sets of functions grouped as a cyber-de
 So, too, an OT system may support multiple actuator profiles. An OT system may support a traditional Profile such as the Stateless Packet Filter Profile as well as OT specific services. 
 
 In some circumstances, even revealing which Actuator Profiles are present may present security issues; the presence of certain profiles may reveal the location of the critical infrastructure which may catalog them for a physical attack rather than a cyberattack.
+
+OpenC2 defines a Control interface for Actuators but does not define their Inputs and Outputs. See [Reporting Context](Reporting%20Context.jpg) for an example sensing/monitoring environment using OpenC2.
