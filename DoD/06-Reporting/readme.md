@@ -7,7 +7,7 @@ and an example JSON serialization.  We combined these elements to create a schem
 in an OpenC2 actuator profile for Reporting.  That process resulted in come observations
 related to the example serializations:
 
-1. The "file binding" from the description is represented by the XML element "<CheckingFile id=...>".
+1. The "file binding" from the description is represented by the XML element "\<CheckingFile id=...\>".
 Type names never appear in JSON data, so XML element names are used as schema type names.
 Where Type names differ from names used in the description, the latter may be included in
 schema comments. Attribute names appear in both XML and JSON data, and where they conflict
