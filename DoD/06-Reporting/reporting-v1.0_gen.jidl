@@ -1,0 +1,73 @@
+/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Wed Jun 24 10:58:29 2020 */
+
+      module: http://scapstandards.com/monitoring_overlay/0.1
+     exports: ['Monitoring-Overlay']
+
+Monitoring-Overlay = Record {
+     1 id              String /uri,              // This file
+     2 schema          String /uri,              // Monitoring Overlay schema
+     3 fileVersion     Integer,                  // Version of this file (should this be included in id?)
+     4 bindings        CheckingFile [1..*]       // Bindings to content
+}
+
+CheckingFile = Record {
+     1 contentFile     FileIdentifier,
+     2 periods         Period [1..*]
+}
+
+Period = Record {
+     1 when            Periodicity,
+     2 checks          CheckIdentifier [1..*]
+}
+
+Periodicity = Record {
+     1 on_connect      Condition,
+     2 on_change       Condition,
+     3 recurring       Interval [1..*]           // Should this be optional (check only on connection or change)?
+}
+
+Condition = Enumerated {
+     1 never,
+     2 always,
+     3 missed                                    // Only if a recurring check was missed
+}
+
+Interval = Choice {
+     1 monthly         Monthly,
+     2 weekly          Weekly,
+     3 daily           Daily,
+     4 hourly          Hourly,
+     5 minutely        Minutely
+}
+
+Monthly = Record {
+     1 months          Integer,                  // Number of months between checks
+     2 day             Integer,                  // Day of month to check
+     3 time            TimeOfDay [1..*]          // Time of day to run the check
+}
+
+Weekly = Record {
+     1 weeks           Integer,                  // Number of weeks between checks
+     2 day             Integer,                  // Day of week to check: 1=Sunday
+     3 time            TimeOfDay [1..*]          // Time of day to run the check
+}
+
+Daily = Record {
+     1 days            Integer,                  // Number of days between checks
+     2 time            TimeOfDay [1..*]          // Time of day to run the check
+}
+
+Hourly = Record {
+     1 hours           Integer,                  // Number of hours between checks
+     2 minutes         Integer [1..*]            // Minutes past the hour
+}
+
+Minutely = Record {
+     1 minutes         Integer                   // Number of minutes between checks
+}
+
+FileIdentifier = String
+
+CheckIdentifier = String
+
+TimeOfDay = Integer                          // Seconds since midnight

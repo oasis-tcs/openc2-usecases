@@ -1,0 +1,303 @@
+/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Wed Jun 24 10:58:29 2020 */
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://scapstandards.com/monitoring_overlay/0.1",
+  "title": "",
+  "$ref": "#/definitions/Monitoring-Overlay",
+  "definitions": {
+    "Monitoring-Overlay": {
+      "title": "Monitoring Overlay",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schema",
+        "fileVersion",
+        "bindings"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "This file",
+          "format": "uri"
+        },
+        "schema": {
+          "type": "string",
+          "description": "Monitoring Overlay schema",
+          "format": "uri"
+        },
+        "fileVersion": {
+          "type": "integer",
+          "description": "Version of this file (should this be included in id?)"
+        },
+        "bindings": {
+          "type": "array",
+          "description": "Bindings to content",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/CheckingFile",
+            "description": "Bindings to content"
+          }
+        }
+      }
+    },
+    "CheckingFile": {
+      "title": "CheckingFile",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contentFile",
+        "periods"
+      ],
+      "properties": {
+        "contentFile": {
+          "$ref": "#/definitions/FileIdentifier",
+          "description": ""
+        },
+        "periods": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Period",
+            "description": ""
+          }
+        }
+      }
+    },
+    "Period": {
+      "title": "Period",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "when",
+        "checks"
+      ],
+      "properties": {
+        "when": {
+          "$ref": "#/definitions/Periodicity",
+          "description": ""
+        },
+        "checks": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/CheckIdentifier",
+            "description": ""
+          }
+        }
+      }
+    },
+    "Periodicity": {
+      "title": "Periodicity",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "on_connect",
+        "on_change",
+        "recurring"
+      ],
+      "properties": {
+        "on_connect": {
+          "$ref": "#/definitions/Condition",
+          "description": ""
+        },
+        "on_change": {
+          "$ref": "#/definitions/Condition",
+          "description": ""
+        },
+        "recurring": {
+          "type": "array",
+          "description": "Should this be optional (check only on connection or change)?",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Interval",
+            "description": "Should this be optional (check only on connection or change)?"
+          }
+        }
+      }
+    },
+    "Condition": {
+      "title": "Condition",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "never",
+          "description": ""
+        },
+        {
+          "const": "always",
+          "description": ""
+        },
+        {
+          "const": "missed",
+          "description": "Only if a recurring check was missed"
+        }
+      ]
+    },
+    "Interval": {
+      "title": "Interval",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "monthly": {
+          "$ref": "#/definitions/Monthly",
+          "description": ""
+        },
+        "weekly": {
+          "$ref": "#/definitions/Weekly",
+          "description": ""
+        },
+        "daily": {
+          "$ref": "#/definitions/Daily",
+          "description": ""
+        },
+        "hourly": {
+          "$ref": "#/definitions/Hourly",
+          "description": ""
+        },
+        "minutely": {
+          "$ref": "#/definitions/Minutely",
+          "description": ""
+        }
+      }
+    },
+    "Monthly": {
+      "title": "Monthly",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "months",
+        "day",
+        "time"
+      ],
+      "properties": {
+        "months": {
+          "type": "integer",
+          "description": "Number of months between checks"
+        },
+        "day": {
+          "type": "integer",
+          "description": "Day of month to check"
+        },
+        "time": {
+          "type": "array",
+          "description": "Time of day to run the check",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/TimeOfDay",
+            "description": "Time of day to run the check"
+          }
+        }
+      }
+    },
+    "Weekly": {
+      "title": "Weekly",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "weeks",
+        "day",
+        "time"
+      ],
+      "properties": {
+        "weeks": {
+          "type": "integer",
+          "description": "Number of weeks between checks"
+        },
+        "day": {
+          "type": "integer",
+          "description": "Day of week to check: 1=Sunday"
+        },
+        "time": {
+          "type": "array",
+          "description": "Time of day to run the check",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/TimeOfDay",
+            "description": "Time of day to run the check"
+          }
+        }
+      }
+    },
+    "Daily": {
+      "title": "Daily",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "days",
+        "time"
+      ],
+      "properties": {
+        "days": {
+          "type": "integer",
+          "description": "Number of days between checks"
+        },
+        "time": {
+          "type": "array",
+          "description": "Time of day to run the check",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/TimeOfDay",
+            "description": "Time of day to run the check"
+          }
+        }
+      }
+    },
+    "Hourly": {
+      "title": "Hourly",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hours",
+        "minutes"
+      ],
+      "properties": {
+        "hours": {
+          "type": "integer",
+          "description": "Number of hours between checks"
+        },
+        "minutes": {
+          "type": "array",
+          "description": "Minutes past the hour",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "description": "Minutes past the hour"
+          }
+        }
+      }
+    },
+    "Minutely": {
+      "title": "Minutely",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minutes"
+      ],
+      "properties": {
+        "minutes": {
+          "type": "integer",
+          "description": "Number of minutes between checks"
+        }
+      }
+    },
+    "FileIdentifier": {
+      "title": "FileIdentifier",
+      "type": "string"
+    },
+    "CheckIdentifier": {
+      "title": "CheckIdentifier",
+      "type": "string"
+    },
+    "TimeOfDay": {
+      "title": "TimeOfDay",
+      "type": "integer",
+      "description": "Seconds since midnight"
+    }
+  }
+}
