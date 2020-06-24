@@ -1,0 +1,79 @@
+{
+	"monitoring_overlay_id": "example.org-TestMonitoringOverlayFile",
+	"schema_version": "MonitoringOverlayJSONSchema0.1.schema.json",
+	"file_version": "1",
+	"checking_files": [{
+			"file_id": "xccdf_org.example_benchmark_example1",
+			"periods": [{
+					"on_connect": null,
+					"check_ids": ["Rule_A", "Rule_B"]
+				},
+				{
+					"monthly": {
+						"every_x_months": 3,
+						"day_of_month": 31,
+						"time": "01:00",
+						"on_connect": "AFTER_MISS"
+					},
+					"check_ids": ["Rule_C"]
+				},
+				{
+					"monthly": {
+						"every_x_months": 1,
+						"day_of_month": 15,
+						"time": "01:20",
+						"on_connect": "AFTER_MISS"
+					},
+					"check_ids": ["Rule_D", "Rule_E"]
+				},
+				{
+					"weekly": {
+						"every_x_weeks": 2,
+						"day_of_week": 2,
+						"time": "12:15",
+						"on_connect": "AFTER_MISS"
+					},
+					"check_ids": ["Rule_G"]
+				},
+				{
+					"daily": {
+						"every_x_days": 3,
+						"time": "01:30",
+						"on_connect": "TRUE"
+					},
+					"check_ids": ["Rule_H", "Rule_I"]
+				}
+			]
+		},
+		{
+			"file_id": "oval.org.example_definitions",
+			"periods": [{
+					"daily": {
+						"every_x_days": 1,
+						"time": "1:30",
+						"on_connect": "TRUE"
+					},
+					"check_ids": ["Def_Z", "Def_Y", "Def_X"]
+				},
+				{
+					"hourly": {
+						"every_x_hours": 2,
+						"on_connect": "FALSE"
+					},
+					"check_ids": ["Def_W"]
+				},
+				{
+					"minutely": {
+						"every_x_minutes": 20,
+						"on_connect": "FALSE"
+					},
+					"check_ids": ["Def_V"]
+				},
+				{
+					"on_change": null,
+					"check_ids": ["Def_U", "Def_T", "Def_S"]
+				}
+			]
+		}
+	]
+}

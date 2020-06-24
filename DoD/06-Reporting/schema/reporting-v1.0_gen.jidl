@@ -1,0 +1,69 @@
+/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Wed Jun 24 16:53:32 2020 */
+
+      module: http://scapstandards.com/monitoring_overlay/0.1
+     exports: ['Monitoring-Overlay']
+
+Monitoring-Overlay = Record {
+     1 monitoring_overlay_id String /uri,        // This file
+     2 schema_version  String /uri,              // Monitoring Overlay schema
+     3 file_version    Integer,                  // Version of this file (should this be included in id?)
+     4 checking_files  CheckingFile [1..*]       // Bindings to content
+}
+
+CheckingFile = Record {                      // File Binding
+     1 file_id         FileIdentifier,
+     2 periods         Period [1..*]
+}
+
+Period = Map {                               // Periodicity Block
+     1 check_ids       CheckIdentifier [1..*],
+     2 on_connect      Condition optional,
+     3 on_change       Condition optional,
+     4 interval        Interval optional
+}
+
+Condition = Enumerated {
+     1 NO,                                       // Default if not present
+     2 YES,                                      // Don't use 'TRUE' string to avoid confusion with boolean true.
+     3 AFTER_MISS                                // Only if a recurring check was missed
+}
+
+Interval = Choice {
+     1 monthly         Monthly,
+     2 weekly          Weekly,
+     3 daily           Daily,
+     4 hourly          Hourly,
+     5 minutely        Minutely
+}
+
+Monthly = Record {
+     1 every_x_months  Integer,                  // Number of months between checks
+     2 day_of_month    Integer,                  // Day of month to check
+     3 time            TimeOfDay optional        // Time of day to run the check
+}
+
+Weekly = Record {
+     1 every_x_weeks   Integer,                  // Number of weeks between checks
+     2 day_of_week     Integer,                  // Day of week to check: 1=Sunday
+     3 time            TimeOfDay optional        // Time of day to run the check
+}
+
+Daily = Record {
+     1 every_x_days    Integer,                  // Number of days between checks
+     2 time            TimeOfDay optional        // Time of day to run the check
+}
+
+Hourly = Record {
+     1 every_x_hours   Integer,                  // Number of hours between checks
+     2 minutes         Integer optional          // Minutes past the hour
+}
+
+Minutely = Record {
+     1 every_x_minutes Integer                   // Number of minutes between checks
+}
+
+FileIdentifier = String
+
+CheckIdentifier = String
+
+TimeOfDay = String

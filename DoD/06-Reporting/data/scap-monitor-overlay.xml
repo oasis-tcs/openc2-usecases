@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<MonitoringOverlay id="example.org-TestMonitoringOverlayFile"
+		   schemaVersion="http://scapstandards.com/monitoring_overlay/0.1"
+		   fileVersion="1"
+		   xmlns="http://scapstandards.com/monitoring_overlay/0.1">
+  <CheckingFile id="xccdf_org.example_benchmark_example1">
+    <Period>
+      <OnConnect/>
+      <Check id="Rule_A"/>
+      <Check id="Rule_B"/>
+      <!-- Check rules A and B whenever a device binds to a collector -->
+    </Period>
+    <Period>
+      <Monthly every_x_months="3" day_of_month="31" time="01:00"
+on_connect="AFTER_MISS"/>
+      <Check id="Rule_C"/>
+      <!-- Check rule C on the last day of every quarter at 1AM. Check immediately on
+connect if assessment is missed. -->
+    </Period>
+    <Period>
+      <Monthly every_x_months="1" day_of_month="15" time="01:10"
+on_connect="AFTER_MISS"/>
+      <Check id="Rule_D"/>
+      <Check id="Rule_E"/>
+      <!-- Check rules D and E monthly on the 15th day of the month at 1:10 AM. Check
+immediately on connect if assessment is missed  -->
+    </Period>
+    <!-- Rule F is not listed despite being in the file. It would be checked during
+the baseline assessment, but never reassessed -->
+    <Period>
+      <Weekly every_x_weeks="2" day_of_week="2" time="12:15" on_connect="AFTER_MISS"/>
+      <Check id="Rule_G"/>
+      <!-- Check rule G bi-weekly on Mondays (day 2) at 12:15 PM. Check immediately on
+connect if assessment is missed -->
+    </Period>
+    <Period>
+      <Daily every_x_days="3" time="01:30" on_connect="TRUE"/>
+      <Check id="Rule_H"/>
+      <Check id="Rule_I"/>
+      <!-- Check rules H and I every 3 days at 1:30 AM. Also check immediately on
+connect (regardless of whether a check was missed). -->
+    </Period>
+  </CheckingFile>
+  <CheckingFile id="oval.org.example_definitions">
+    <Period>
+      <Daily every_x_days="1" time="1:30" on_connect="TRUE"/>
+      <Check id="Def_Z"/>
+      <Check id="Def_Y"/>
+      <Check id="Def_X"/>
+      <!-- Check OVAL definitions X, Y, and Z daily at 1:30. Also check immediately on
+connect (regardless of whether a check was missed). -->
+    </Period>
+    <Period>
+      <Hourly every_x_hours="2" on_connect="FALSE"/>
+      <Check id="Def_W"/>
+      <!-- Check definition W every 2 hours (at the start of the hour). Do not check
+on connection, even if checks were missed. -->
+    </Period>
+    <Period>
+      <Minutely every_x_minutes="20" on_connect="FALSE"/>
+      <Check id="Def_V"/>
+      <!-- Check definition V every 20 minutes. Do not check on connection, even if
+checks were missed -->
+    </Period>
+    <Period>
+      <OnChange/>
+      <Check id="Def_U"/>
+      <Check id="Def_T"/>
+      <Check id="Def_S"/>
+      <!-- Monitor definitions S, T, and U in real time (or as close thereto as
+practical) -->
+    </Period>
+  </CheckingFile>
+</MonitoringOverlay>

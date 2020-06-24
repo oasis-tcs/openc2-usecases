@@ -1,0 +1,59 @@
+{
+ "meta": {
+   "module": "http://scapstandards.com/monitoring_overlay/0.1",
+   "exports": ["Monitoring-Overlay"]
+ },
+ "types": [
+  ["Monitoring-Overlay", "Record", [], "", [
+    [1, "monitoring_overlay_id", "String", ["/uri"], "This file"],
+    [2, "schema_version", "String", ["/uri"], "Monitoring Overlay schema"],
+    [3, "file_version", "Integer", [], "Version of this file (should this be included in id?)"],
+    [4, "checking_files", "CheckingFile", ["]0"], "Bindings to content"]
+  ]],
+  ["CheckingFile", "Record", [], "File Binding", [
+    [1, "file_id", "FileIdentifier", [], ""],
+    [2, "periods", "Period", ["]0"], ""]
+  ]],
+  ["Period", "Map", [], "Periodicity Block", [
+    [1, "check_ids", "CheckIdentifier", ["]0"], ""],
+    [2, "on_connect", "Condition", ["[0"], ""],
+    [3, "on_change", "Condition", ["[0"], ""],
+    [4, "interval", "Interval", ["[0"], ""]
+  ]],
+  ["Condition", "Enumerated", [], "", [
+    [1, "NO", "Default if not present"],
+    [2, "YES", "Don't use 'TRUE' string to avoid confusion with boolean true."],
+    [3, "AFTER_MISS", "Only if a recurring check was missed"]
+  ]],
+  ["Interval", "Choice", [], "", [
+    [1, "monthly", "Monthly", [], ""],
+    [2, "weekly", "Weekly", [], ""],
+    [3, "daily", "Daily", [], ""],
+    [4, "hourly", "Hourly", [], ""],
+    [5, "minutely", "Minutely", [], ""]
+  ]],
+  ["Monthly", "Record", [], "", [
+    [1, "every_x_months", "Integer", [], "Number of months between checks"],
+    [2, "day_of_month", "Integer", [], "Day of month to check"],
+    [3, "time", "TimeOfDay", ["[0"], "Time of day to run the check"]
+  ]],
+  ["Weekly", "Record", [], "", [
+    [1, "every_x_weeks", "Integer", [], "Number of weeks between checks"],
+    [2, "day_of_week", "Integer", [], "Day of week to check: 1=Sunday"],
+    [3, "time", "TimeOfDay", ["[0"], "Time of day to run the check"]
+  ]],
+  ["Daily", "Record", [], "", [
+    [1, "every_x_days", "Integer", [], "Number of days between checks"],
+    [2, "time", "TimeOfDay", ["[0"], "Time of day to run the check"]
+  ]],
+  ["Hourly", "Record", [], "", [
+    [1, "every_x_hours", "Integer", [], "Number of hours between checks"],
+    [2, "minutes", "Integer", ["[0"], "Minutes past the hour"]
+  ]],
+  ["Minutely", "Record", [], "", [
+    [1, "every_x_minutes", "Integer", [], "Number of minutes between checks"]
+  ]],
+  ["FileIdentifier", "String", [], ""],
+  ["CheckIdentifier", "String", [], ""],
+  ["TimeOfDay", "String", [], ""]
+]}
