@@ -18,4 +18,4 @@ example_json = codec.encode('Monitoring-Overlay', example)
 jschema = json.loads(jadn.translate.json_schema_dumps(schema))
 
 # Validate example serialization with JSON Schema
-jsonschema.Draft7Validator(jschema).validate(example_json)
+jsonschema.Draft7Validator(jschema).validate(example)

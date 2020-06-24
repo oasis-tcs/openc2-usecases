@@ -15,12 +15,10 @@ the schema must resolve the difference.  This will require changes to the serial
 examples: XML can use a "file_id" attribute or JSON can use an "id" property to hold the
 "identifier for a specific file containing check content"
 
-
 2. The periodicity statement contains both standalone "on-connect" and "on-change" elements plus
 time intervals that include an on-connect subfield.  We believe the interval subfield can be
 removed without loss of generality: the on-connect behavior of a periodicity block should not
-depend on where in the block it is specified.  The schema refactors the periodicity block to
-contain:
+depend on where in the block it is specified. The schema refactors the periodicity block to contain:
 
     * the list of checks
     * the on-connect behavior
@@ -41,7 +39,9 @@ source (.jadn) and the generated JSON Schema (.json).
 
 The resulting JSON serialization [reporting-example](data/reporting-example1.json)
 is contained in the data directory along with the original JSON serialization
-(scap-monitor-overlay) for comparison.
+(scap-monitor-overlay) for comparison. The desired result of both is shown in Fig.1:
+
+![Fig 1](monitor_events.png).
 
 The Python [test_reporting](test_reporting.py) script validates the JSON serialization
 against the schema.
