@@ -1,3 +1,4 @@
+/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Thu Jun 25 14:57:28 2020 */
 
       module: http://scapstandards.com/monitoring_overlay/0.1
      exports: ['Monitoring-Overlay']
@@ -23,8 +24,8 @@ Period = Map {                               // Periodicity Block
 
 Condition = Enumerated {
      1 NO,                                       // Default if not present
-     2 YES,                                      // Don't use 'TRUE' string to avoid confusion with boolean true.
-     3 AFTER_MISS                                // Only if a recurring check was missed
+     2 ALWAYS,                                   // Don't use 'TRUE' string to avoid confusion with boolean true.
+     3 ON_MISS                                   // Only if a recurring check was missed
 }
 
 Interval = Choice {

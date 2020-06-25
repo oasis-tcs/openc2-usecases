@@ -22,8 +22,8 @@
   ]],
   ["Condition", "Enumerated", [], "", [
     [1, "NO", "Default if not present"],
-    [2, "YES", "Don't use 'TRUE' string to avoid confusion with boolean true."],
-    [3, "AFTER_MISS", "Only if a recurring check was missed"]
+    [2, "ALWAYS", "Don't use 'TRUE' string to avoid confusion with boolean true."],
+    [3, "ON_MISS", "Only if a recurring check was missed"]
   ]],
   ["Interval", "Choice", [], "", [
     [1, "monthly", "Monthly", [], ""],

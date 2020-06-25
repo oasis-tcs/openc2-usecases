@@ -1,4 +1,4 @@
-/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Wed Jun 24 16:53:32 2020 */
+/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Thu Jun 25 14:57:28 2020 */
 
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -108,11 +108,11 @@
           "description": "Default if not present"
         },
         {
-          "const": "YES",
+          "const": "ALWAYS",
           "description": "Don't use 'TRUE' string to avoid confusion with boolean true."
         },
         {
-          "const": "AFTER_MISS",
+          "const": "ON_MISS",
           "description": "Only if a recurring check was missed"
         }
       ]

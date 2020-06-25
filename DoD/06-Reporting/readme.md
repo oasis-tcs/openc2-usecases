@@ -31,7 +31,7 @@ is not present in the JSON example.
 
 4. The on_connect value *null* is a different type than "AFTER_MISS" (a string), and "TRUE"
 (a string that could be confused with the boolean *true*.)  The schema uses an enumeration
-of three values "NO", "YES", and "AFTER_MISS" for consistency.
+of three values "NO", "ALWAYS", and "ON_MISS" for consistency.
 
 The resulting schema is contained in the schema directory:
 [reporting-v1.0_gen.jidl](schema/reporting-v1.0_gen.jidl), along with machine-readable
