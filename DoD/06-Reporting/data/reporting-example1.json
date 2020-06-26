@@ -1,6 +1,6 @@
 {
     "monitoring_overlay_id": "example.org-TestMonitoringOverlayFile",
-    "schema_version": "MonitoringOverlayJSONSchema0.1.schema.json",
+    "schema_version": "http://scapstandards.com/monitoring_overlay/0.1",
     "file_version": 1,
     "checking_files": [
         {

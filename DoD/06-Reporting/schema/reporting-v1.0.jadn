@@ -5,8 +5,8 @@
  },
  "types": [
   ["Monitoring-Overlay", "Record", [], "", [
-    [1, "monitoring_overlay_id", "String", ["/uri"], "This file"],
-    [2, "schema_version", "String", ["/uri"], "Monitoring Overlay schema"],
+    [1, "monitoring_overlay_id", "String", [], "This file (should all file IDs be uri format?)"],
+    [2, "schema_version", "String", ["/uri"], "URI of monitoring_overlay schema"],
     [3, "file_version", "Integer", [], "Version of this file (should this be included in id?)"],
     [4, "checking_files", "CheckingFile", ["]0"], "Bindings to content"]
   ]],

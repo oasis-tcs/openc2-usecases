@@ -1,4 +1,4 @@
-/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Thu Jun 25 14:57:28 2020 */
+/* Generated from C:\Users\David\PycharmProjects\jadn-sw\scripts\schema\reporting-v1.0.jadn, Fri Jun 26 10:14:59 2020 */
 
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -19,12 +19,11 @@
       "properties": {
         "monitoring_overlay_id": {
           "type": "string",
-          "description": "This file",
-          "format": "uri"
+          "description": "This file (should all file IDs be uri format?)"
         },
         "schema_version": {
           "type": "string",
-          "description": "Monitoring Overlay schema",
+          "description": "URI of monitoring_overlay schema",
           "format": "uri"
         },
         "file_version": {
