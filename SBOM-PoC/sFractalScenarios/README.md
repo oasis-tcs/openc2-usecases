@@ -25,6 +25,28 @@ sets out to prove several concepts e.g.
    - may be used to identify, create, document, and test detection, investigation, prevention, mitigation, and remediation steps
 
 ## 2 - Scenario Planning
+The IoT resouces being supplied include BlinkyHaHa and variants:
+- different IoT functions
+   - Blinky - light various lights
+   - Slinky - GPS sensor (ie locate the slinky)
+   - Stinky - detect gasses
+   - Clinky - mechanical
+   - RinkyDinky - Rube Goldberg
+   - Thinky -
+   - Winky -
+   - Finky -
+- different OpenC2 Transport
+   - HaHa HTTP
+   - HaHa HTTPS
+   - MaHa MQTT
+   - MaHa MTTT over TLS
+- different SBOMs
+   - one-hop
+   - multi-hop incomplete
+   - complete full SBOM
+   - Hinky - vulnerable SBOMs to trigger Comply2Connect error
+
+ OnePlanetGoals
 Scenario planning is not correct name for this Section
 
 blah blah on how each scenario is it's own subdirectory and
