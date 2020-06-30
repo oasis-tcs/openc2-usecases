@@ -58,7 +58,7 @@ A series of virtual plugfest use cases to demonstrate interoperability showcasin
 
 19. OIF Orchestrator commanding a Blinky MaHa on LAN network over the Internet using the MQTT transport mechanism.
 
-20. Implementation of a compact, binary serialization *(e.g., CBOR, Protobuf)".  (There may be more information to add here from Dave, Joe and Celeste?)
+20. Implementation of a compact, binary serialization *(e.g., CBOR, Protobuf)".   (There may be more information to add here from Dave, Joe and Celeste?)
 
 ### 2.2-NTIA SBOM Exchange PoC Goals & Objectives
 
