@@ -77,9 +77,15 @@ Figure 3.1-1:
 - CACAO playbook at [sFractal playbook 1](./cacaoPlaybook.01.json)
 
 ## 6 - Tasks
+- make work plan, scenarios, Architectures
 - make sboms for all blinkyhaha
 - https setup for https openc2 BlinkyHaHa
 - code MQTT for BlinkyHaHa
+- https://www.openhab.org/about/who-we-are.html
+- how use google credits
+- how switch between aws/gcp using https://github.com/newcontext-oss/openc2-aws-actuator and or https://github.com/att/openc2-aws
+- update https://github.com/sparrell/SBoM-by-example/blob/master/blinky_how_to.md
+- how to use https://github.com/oasis-open/openc2-lycan-python
 
 ## 7 - Status
 As of 6/10/20
