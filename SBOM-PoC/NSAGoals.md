@@ -90,11 +90,11 @@ Collaborative Automated Course of Action Operations (CACAO) is a specification f
 
 The Open Cybersecurity Alliance (OCA) Project is comprised of global like-minded cybersecurity vendors, end users, thought leaders and individuals who are interested in fostering an open cybersecurity ecosystem, where products from all vendors and software publishers can freely exchange information, insights, analytics, and orchestrated response, via commonly developed code and tooling, using mutually agreed upon technologies, data standards, and procedures. The Open Cybersecurity Alliance (OCA) is an open cybersecurity ecosystem for vendor-agnostic interworking and data sharing using open standards like STIX and OpenC2. The OCA project will make use of the OpenC2 standard to communicate with endpoint devices for automated remediation activities.
 
-1. OIF retrieves Software Bill of Materials (SBOM) from endpoint device called Blinky HaHa provided by OCA Sponsor SFractal Consulting LLC. The OIF orchestrator exercises a remedial course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM.
+1. OIF retrieves Software Bill of Materials (SBOM) from endpoint device called Blinky HaHa provided by OCA Sponsor SFractal Consulting LLC. The OIF orchestrator exercises a remedial sequence of OpenC2 commands based on the content of the retrieved SBOM.
 
-2. OIF retrieves Software Bill of Materials (SBOM) from endpoint device called Blinky MaHa using the MQTT transport mechanism provided by OCA Sponsor SFractal Consulting LLC. The OIF orchestrator exercises a remedial course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM.
+2. OIF retrieves Software Bill of Materials (SBOM) from endpoint device called Blinky MaHa using the MQTT transport mechanism provided by OCA Sponsor SFractal Consulting LLC. The OIF orchestrator exercises a remedial sequence of OpenC2 commands based on the content of the retrieved SBOM.
 
-3. OIF retrieves Software Bill of Materials (SBOM) from an endpoint device provided by another OCA sponsor. The OIF orchestrator exercises a remedial course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM.
+3. OIF retrieves Software Bill of Materials (SBOM) from an endpoint device provided by another OCA sponsor. The OIF orchestrator exercises a remedial sequence of OpenC2 commands based on the content of the retrieved SBOM.
 
 ## 3-NSA Contributions to PoC
 
