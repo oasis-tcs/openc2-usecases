@@ -8,6 +8,7 @@ Table of Contents
    - [2.3-IACD Goals & Objectives](2.3-iacd-goals-objectives)
    - [2.4-CACAO Goals & Objectives](2.4-cacao-goals-objectives)
    - [2.5-Open Cybersecurity Alliance Goals & Objectives](2.5-open-cybersecurity-alliance-goals-objectives)
+   - [2.6-SCAP Goals & Objectives](2.6-scap-goals-objectives)
 - [3-NSA Contributions to PoC](3-nsa-contributions-to-poc)
 
 ## 1-Introduction
@@ -34,6 +35,15 @@ feel free to crib from sFractal
 ### 2.5-Open Cybersecurity Alliance Goals & Objectives
 decide if should delete this section or fill in.
 feel free to crib from sFractal
+
+### 2.6-SCAP Goals & Objectives
+Develop OpenC2 profiles to support interactions within the [SCAPv2](https://csrc.nist.gov/projects/security-content-automation-protocol-v2/)
+[Data Collection Architecture](../DoD/07-scap/scap-v2-data-collection-architecture.md).  The architecture has two main use cases:
+
+* Point-in-time Information Collection
+* Ongoing Monitoring Against a Baseline
+
+An initial PoC could demonstrate an Application collecting SBoM information from a Manager or Repository using OpenC2.
 
 ## 3-NSA Contributions to PoC
 fill in
