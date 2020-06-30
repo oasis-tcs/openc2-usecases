@@ -25,16 +25,25 @@ sets out to prove several concepts e.g.
    - may be used to identify, create, document, and test detection, investigation, prevention, mitigation, and remediation steps
 
 ## 2 - Scenario Planning
-The IoT resouces being supplied include BlinkyHaHa and variants:
+### 2.1 - Resources
+The IoT resources being supplied include BlinkyHaHa and variants:
 - different IoT functions
-   - Blinky - light various lights
-   - Slinky - GPS sensor (ie locate the slinky)
-   - Stinky - detect gasses
+   - Blinky/Twinkly - turn on/off various LED strips/arrays
+   - Slinky - location/GPS sensor (ie locate the slinky)
+   - Stinky - detect gasses (eg propane)
+   - Sinky - soil moisture senors
    - Clinky - mechanical
-   - RinkyDinky - Rube Goldberg
-   - Thinky -
-   - Winky -
-   - Finky -
+   - Thinky - Logic controls
+   - Plinky - control music box
+   - Winky - CO2 Sensor
+   - Linky - open/close connections and network extensions (e.g. OPEN LoRa or LongFi)
+
+   - RinkyDinky - Rube Goldberg combo of many actuators/sensors
+
+   - Hinky - vulnerable SBOMs to trigger Comply2Connect error
+   - Finky - compromised system
+
+   - Binky, Brinkly, Crinklely, Flinky, Frinky, Ginky, Glinky, Grinky, Jinky, Minky, Ninky, Pinky, Prinkly, Sminkly, Sinkly, Slinky, Swinky, Scinky, Tinkley, Vinky - TBD 
 - different OpenC2 Transport
    - HaHa HTTP
    - HaHa HTTPS
@@ -46,8 +55,8 @@ The IoT resouces being supplied include BlinkyHaHa and variants:
    - complete full SBOM
    - Hinky - vulnerable SBOMs to trigger Comply2Connect error
 
- OnePlanetGoals
-Scenario planning is not correct name for this Section
+
+### 2.2 - Scenarios
 
 blah blah on how each scenario is it's own subdirectory and
 consists of a text explanation in the README,
@@ -62,6 +71,8 @@ a heirarchical list of the scenarios sFractal intends to be involved in
 (maybe this belongs up a level and is for everybody's scenarios?)
 
 blah blah on work plan has specific tasks to make specific scenarios in specific configurations work.
+
+blah blah blah on how scenarios start as just sFractal, then various sFracal/one-company (e.g sFractal/HII, sFractal/Open, sFractal/...), and then build to more complex multi-company scenarios.
 
 
 ## 3 - Scenarios
