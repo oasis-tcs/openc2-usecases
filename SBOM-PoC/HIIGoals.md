@@ -63,8 +63,10 @@ A series of virtual plugfest use cases to demonstrate interoperability showcasin
 
 ### 2.2-NTIA SBOM Exchange PoC Goals & Objectives
 
-1. OIF retrieves Software Bill of Materials (SBOM) from Blinky HaHa.
-2. OIF retrieves Software Bill of Materials (SBOM) from Blinky MaHa.
+1. Demonstrate the concept of SBOM exchange using OpenC2 with HTTP, HTTPS transport mechanisms when the Blinky HaHa device has SBOM resident within device and device has an OpenC2 interface.
+
+2. Demonstrate the concept of SBOM exchange using OpenC2 with MQTT transport mechanisms when the Blinky MaHa device has SBOM resident within device and device has an OpenC2 interface.
+
 3. Using both "good" and "vulnerable" SBOMs, show the value of the SBOM by using the OIF orchestrator
 to 'connect' the 'good' Software Bill of Materials (SBOM) while "fixing" or "sandboxing" the vulnerable OpenC2 devices with the vulnerable SBOM.
 
