@@ -28,7 +28,8 @@ sets out to prove several concepts e.g.
 ### 2.1 - Resources
 The IoT resources being supplied include BlinkyHaHa and variants:
 - different IoT functions
-   - Blinky/Twinkly - turn on/off various LED strips/arrays
+   - Blinky - turn on/off various LED strips/arrays.
+   - Twinkly - Twinkly is Blinky's digital twin. It runs in the cloud instead of on a Raspberry Pi and it's lights are LiveView graphics on a webpage instead of physical LED's.
    - Slinky - location/GPS sensor (ie locate the slinky)
    - Stinky - detect gasses (eg propane)
    - Sinky - soil moisture senors
@@ -43,7 +44,7 @@ The IoT resources being supplied include BlinkyHaHa and variants:
    - Hinky - vulnerable SBOMs to trigger Comply2Connect error
    - Finky - compromised system
 
-   - Binky, Brinkly, Crinklely, Flinky, Frinky, Ginky, Glinky, Grinky, Jinky, Minky, Ninky, Pinky, Prinkly, Sminkly, Sinkly, Slinky, Swinky, Scinky, Tinkley, Vinky - TBD 
+   - Binky, Brinkly, Crinklely, Flinky, Frinky, Ginky, Glinky, Grinky, Jinky, Minky, Ninky, Pinky, Prinkly, Sminkly, Sinkly, Slinky, Swinky, Scinky, Tinkley, Vinky - TBD
 - different OpenC2 Transport
    - HaHa HTTP
    - HaHa HTTPS
@@ -54,6 +55,8 @@ The IoT resources being supplied include BlinkyHaHa and variants:
    - multi-hop incomplete
    - complete full SBOM
    - Hinky - vulnerable SBOMs to trigger Comply2Connect error
+- hardware instantiation or digital-twin in cloud
+   - add a link to a file of it's own explaining?
 
 
 ### 2.2 - Scenarios

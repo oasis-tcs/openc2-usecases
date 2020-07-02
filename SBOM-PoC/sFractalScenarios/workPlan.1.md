@@ -88,9 +88,9 @@ Figure 3.1-1:
 - how to use https://github.com/oasis-open/openc2-lycan-python
 
 ## 7 - Status
-As of 6/10/20
+- 6/29/20 - integration tests at HII. Discovered issues. Got prelimary talking but didn't get to actual scenarios (eg getting an SBOM or lighting a LED)
+- 6/10/20 - Still planning
 
-Still planning
 
 ## 8 - Next Steps and Schedule
 still planning
