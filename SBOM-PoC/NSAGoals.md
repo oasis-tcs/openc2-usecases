@@ -12,7 +12,7 @@ Table of Contents
 
 ## 1-Introduction
 
-TBS  (Dave, Joe and Celeste may have specific information that they wish to state in the intro?)
+TBS  (Dave, Bo, Joe and Celeste may have specific information that they wish to state in the intro?)
 
 ## 2-Goals & Objectives
 
@@ -74,9 +74,9 @@ Integrated Adaptive Cyber Defense (IACD) is a strategy and framework to adopt an
 
 Many of the OpenC2 goals are consistent with IACD goals. The IACD has technical communities which work together for the development of Protection Profiles for Security Orchestration, Automation, and Response (SOAR) Applications. There is an OpenC2 Actuator Profile subcommittee that is creating and maintaining actuator profiles which define the OpenC2 message elements applicable to specific cyber defense functions.
 
-1. OpenC2 actuator profiles will be created to perform specific cyber defense functions. (There may be more information to add here from Dave, Joe and Celeste?)
+1. OpenC2 actuator profiles will be created to perform specific cyber defense functions. (There may be more information to add here from Dave, Bo, Joe and Celeste?)
 
-2. OpenC2 actuator profiles will be exercised to perform specific cyber defense functions. (There may be more information to add here from Dave, Joe and Celeste?)
+2. OpenC2 actuator profiles will be exercised to perform specific cyber defense functions. (There may be more information to add here from Dave, Bo, Joe and Celeste?)
 
 ### 2.4-CACAO Goals & Objectives
 
@@ -106,4 +106,4 @@ The Open Cybersecurity Alliance (OCA) Project is comprised of global like-minded
 
 4. Yuuki actuators provided to other virtual plugfest participants as test devices for interworking using OpenC2.
 
-5. TBS  (Dave, Joe and Celeste may have specific information that they wish to state as NSA Contributions to PoC?)
+5. TBS  (Dave, Bo, Joe and Celeste may have specific information that they wish to state as NSA Contributions to PoC?)
