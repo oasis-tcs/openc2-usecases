@@ -88,8 +88,18 @@ Figure 3.1-1:
 - how to use https://github.com/oasis-open/openc2-lycan-python
 
 ## 7 - Status
-- 6/29/20 - integration tests at HII. Discovered issues. Got prelimary talking but didn't get to actual scenarios (eg getting an SBOM or lighting a LED)
-- 6/10/20 - Still planning
+- 18-Jun to 2-Jul-2020 Sprint
+   - created repo's for
+      - BlinkyMaHa - MQTT version of BlinkyHaHa
+      - TwinklyHaHa - Digital Twin of BlinkyHaHa (ie in cloud instead of on Raspberry Pi, LiveView graphics instead of LEDs)
+      - TwinklyMaHa - Digital Twin of BlinkyMaHa (ie in cloud instead of on Raspberry Pi, LiveView graphics instead of LEDs)
+      - SbomPoc-sFractal as status page for plugfest/hackathon/PoC
+   - added Phoenix subdir to lycan-elixir with learnings from BlinkyHaHa
+   - added Tortoise subdir to lycan-elixir to get started on MQTT
+   - 6/29/20 - integration tests at HII. Discovered issues. Got prelimary talking but didn't get to actual scenarios (eg getting an SBOM or lighting a LED)
+   - updated BlinkyHaHa repo to current versions. Got it working in sFractal Lab
+- 4-Jun to 18-Jun-2020 Sprint
+   - 6/10/20 - Still planning
 
 
 ## 8 - Next Steps and Schedule
