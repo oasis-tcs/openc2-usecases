@@ -8,12 +8,7 @@ No MQTT topics-names or topic-filters are defined on the server itself; they are
 
 ## Insecure Access:
 
-To keep malicious bots from spamming the broker, the access details are obfuscated a bit:
-
-* **IP Address** : 34.86.117.1** (Friday the **th)
-* **Port** : 1*** (Please look up the standardized non-TLS port for MQTT protocol)
-* **User** : p*** (First word of the name of the OpenC2 Hackathon Event)
-* **PW** : f*** (Second word that follows the user name above)
+To keep malicious bots from spamming the broker, look for the credentials as a pinned message in the OpenC2 Slack or Discord channels. You will need the IP, Port, User, and Password to connect to the broker; Please reach out with any questions.
 
 ## TLS Access:
 
@@ -59,11 +54,11 @@ touch mqtt_config.py
 
 **mqtt_config.py**
 ```python
-YOUR_NAME_PREFIX = # Your name, Eg "/johnd/"
-broker_ip = "34.86.117.1**"
-broker_port = 1***
-user_name = 'p***'
-user_pw   = 'f***'
+YOUR_NAME_PREFIX = # Your name, Eg "johnd/"
+broker_ip = "*.*.*.*"
+broker_port = ****
+user_name = '****'
+user_pw   = '****'
 ```
 
 **mqtt_subscriber.py**
