@@ -26,16 +26,16 @@ Please sandbox all of your tests by prefixing your name to all topic-names and t
 For example, please use this format (with your name):
 
 ```
-/patrickc/oc2_cmd/
-/patrickc/
-/patrickc/foo/bar
+patrickc/oc2/cmd/
+patrickc/#
+patrickc/foo/bar
 ```
 
 Do not use:
 ```
-/oc2_cmd/
-/
-/foo/bar
+oc2/cmd/
+#
+foo/bar
 ```
 
 
@@ -75,7 +75,7 @@ import mqtt_config as config
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
-    client.subscribe(config.YOUR_NAME_PREFIX + "/oc2/cmd")
+    client.subscribe(config.YOUR_NAME_PREFIX + "oc2/cmd")
 
 def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
@@ -110,8 +110,9 @@ query_features = {
         }
     }
 
-publish.single(config.YOUR_NAME_PREFIX + "/oc2/cmd", payload=str(query_features), qos=0, retain=False, hostname=config.broker_ip,
-    port=config.broker_port, client_id="", keepalive=60, will=None, auth=login, tls=None)
+publish.single(config.YOUR_NAME_PREFIX + "oc2/cmd", payload=str(query_features), qos=0,
+    retain=False, hostname=config.broker_ip, port=config.broker_port, client_id="", 
+    keepalive=60, will=None, auth=login, tls=None)
 ```
 
 Now start the subscriber in one shell, then run the publisher in another, eg:
