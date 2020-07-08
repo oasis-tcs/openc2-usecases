@@ -53,6 +53,10 @@ touch mqtt_config.py
 ```
 
 **mqtt_config.py**
+
+If your code might be stored on GitHub or other public location, please ensure that it does not contain
+[access credentials](https://geekflare.com/github-credentials-scanner/)
+([CWE](https://cwe.mitre.org/data/definitions/798.html)).  Your mqtt_config.py should obtain credentials from a local configuration file, environment variable, etc.
 ```python
 YOUR_NAME_PREFIX = # Your name, Eg "johnd/"
 broker_ip = "*.*.*.*"
