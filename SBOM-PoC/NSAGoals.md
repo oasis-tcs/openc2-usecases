@@ -43,7 +43,10 @@ Develop OpenC2 profiles to support interactions within the [SCAPv2](https://csrc
 * Point-in-time Information Collection
 * Ongoing Monitoring Against a Baseline
 
-An initial PoC could demonstrate an Application collecting SBoM information from a Manager or Repository using OpenC2.
+An initial PoC could demonstrate an Application collecting SBoM information from a Manager or Repository using OpenC2, in accordance with
+the [SCAP Data Collection Prototype](https://docs.google.com/presentation/d/1ClBV7UYL05QeiGNaufvcsMe44egZ3Gpar3IWLNZ6MlA).  The SCAP "Application"
+corresponds to the "Obtain Current SBOM" box in the SBOM PoC [scenario flowchart](https://github.com/oasis-tcs/openc2-usecases/tree/master/SBOM-PoC#11-vision)
+and is a great example of how PoC components/interactions are defined and how questions to be addressed by the PoC are identified.
 
 ## 3-NSA Contributions to PoC
 fill in
