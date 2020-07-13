@@ -132,5 +132,6 @@ mostly cribbed from SBOM Healthcare PoC:
 
 See the [Work Plan](./WorkPlan.md) for more details.
 
-# 5 -
-.
+# 5 - Participants
+
+The [Plugfest Players](https://github.com/oasis-tcs/openc2-usecases/wiki/OpenC2-Plugfest-Players) Wiki is a place to advertise and coordinate test interactions.
