@@ -99,7 +99,13 @@ The Open Cybersecurity Alliance (OCA) Project is comprised of global like-minded
 2. OIF retrieves Software Bill of Materials (SBOM) from endpoint device called Blinky MaHa provided by OCA Sponsor SFractal Consulting LLC. The OIF orchestrator exercises a remedial sequence of OpenC2 commands based on the content of the retrieved SBOM.
 3. OIF retrieves Software Bill of Materials (SBOM) from an endpoint device provided by another OCA sponsor.  The OIF orchestrator exercises sequence of OpenC2 commands based on the content of the retrieved SBOM. 
 
+### 2.6-SCAP Goals & Objectives
 
+Develop OpenC2 profiles to support interactions within the SCAPv2 Data Collection Architecture. The architecture has two main use cases:
+
+Point-in-time Information Collection
+Ongoing Monitoring Against a Baseline
+An initial PoC could demonstrate an Application collecting SBoM information from a Manager or Repository using OpenC2, in accordance with the SCAP Prototype Architecture. The SCAP "Application" corresponds to the "Obtain Current SBOM" box in the SBOM PoC scenario flowchart and is a great example of how PoC components/interactions are defined and how questions to be addressed by the PoC are identified.
 
 ## 3-HII Contributions to PoC
 
