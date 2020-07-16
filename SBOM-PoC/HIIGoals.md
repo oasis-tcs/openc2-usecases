@@ -80,8 +80,14 @@ Many of the OpenC2 goals are consistent with IACD goals.  The IACD has technical
 
 1.  OpenC2 actuator profiles will be created to perform specific cyber defense functions.
 2.  OpenC2 actuator profiles will be exercised to perform specific cyber defense functions.
+3.  OpenC2 actuator profiles will be created for the OIF to collect information from a OpenC2 consumer and return that information in an OpenC2 response in the  Software Package Data Exchange® (SPDX®) standard.
 
+The Software Package Data Exchange® (SPDX®) standard is an open standard for communicating software bill of material information, including components, licenses, 
+copyrights, and security references. SPDX reduces redundant work by providing a common format for companies and communities to share important data, thereby streamlining and improving compliance. 
 
+4.    OpenC2 actuator profiles will be created for the OIF to collect information from a OpenC2 consumer and return that information in an OpenC2 response in the CycloneDX format.                                             
+
+CycloneDX is a lightweight software bill-of-material (SBOM) specification designed for use in application security contexts and supply chain component analysis. 
 
 ### 2.4-CACAO Goals & Objectives
 
@@ -99,13 +105,71 @@ The Open Cybersecurity Alliance (OCA) Project is comprised of global like-minded
 2. OIF retrieves Software Bill of Materials (SBOM) from endpoint device called Blinky MaHa provided by OCA Sponsor SFractal Consulting LLC. The OIF orchestrator exercises a remedial sequence of OpenC2 commands based on the content of the retrieved SBOM.
 3. OIF retrieves Software Bill of Materials (SBOM) from an endpoint device provided by another OCA sponsor.  The OIF orchestrator exercises sequence of OpenC2 commands based on the content of the retrieved SBOM. 
 
-### 2.6-SCAP Goals & Objectives
+### 2.6- Security Content Automation Protocol (SCAP) 2.0 Goals & Objectives
 
-Develop OpenC2 profiles to support interactions within the SCAPv2 Data Collection Architecture. The architecture has two main use cases:
+Develop OpenC2 actuator profiles to support interactions within the SCAPv2 Data Collection Architecture. The architecture has two main use cases:
 
-Point-in-time Information Collection
-Ongoing Monitoring Against a Baseline
-An initial PoC could demonstrate an Application collecting SBoM information from a Manager or Repository using OpenC2, in accordance with the SCAP Prototype Architecture. The SCAP "Application" corresponds to the "Obtain Current SBOM" box in the SBOM PoC scenario flowchart and is a great example of how PoC components/interactions are defined and how questions to be addressed by the PoC are identified.
+Use Case #1   Point-in-time Information Collection
+
+1.  An OpenC2 SCAP actuator profile will be created for the OIF to collect information from an OpenC2 consumer about an enterprise asset using the HTTP or HTTPS transport mechanisms.   
+
+2.  An OpenC2 SCAP actuator profile will be created for the OIF to collect information from an OpenC2 consumer about an enterprise asset using the MQTT transport mechanism.  
+
+3.  An OpenC2 SCAP actuator profile will be created for the OIF to collect information from an OpenC2 consumer about an enterprise asset using the OpenDXL transport mechanism.  
+
+4.  An OpenC2 SCAP actuator profile will be created for the OIF to receive information about an enterprise asset in a report contained 
+within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format using the HTTP or HTTPS transport mechanisms.  
+
+5.  An OpenC2 SCAP actuator profile will be created for the OIF to receive information about an enterprise asset in a report contained 
+within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format using the MQTT transport mechanism.  
+
+6.  An OpenC2 SCAP actuator profile will be created for the OIF to receive information about an enterprise asset in a report contained 
+within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format using the OpenDXL transport mechanism.  
+
+ 
+
+Use Case #2  Ongoing Monitoring Against a Baseline Use Case
+
+7.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor changes in information coming from an OpenC2 consumer about changes to an enterprise asset using the HTTP or HTTPS transport mechanisms.   
+
+8.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor changes in information coming from an OpenC2 consumer about changes to an enterprise asset using the MQTT transport mechanism.   
+
+9.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor changes in information coming from an OpenC2 consumer about changes to an enterprise asset using the OpenDXL transport mechanism.   
+
+10.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor enterprise assets for changes in the collected information summarized 
+in a report contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP 
+or HTTPS transport mechanisms to perform periodic monitoring and to return an OpenC2 response containing a summary report.  
+
+11.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor enterprise assets for changes in the collected information summarized 
+in a report contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to perform periodic monitoring and to return an OpenC2 response containing a summary report. 
+
+12.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor enterprise assets for changes in the collected information summarized 
+in a report contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to perform periodic monitoring and to return an OpenC2 response containing a summary report. 
+
+13.  The OIF shall use a subscription management algorithm implemented using a publish/subscribe mechanism to ensure that summary reports containing changes of enterprise information received from OpenC2 consumers are delivered to appropriate parties.
+
+14.  The OIF shall monitor OpenC2 consumers and their connections to enterprise assets for liveness.
+
+15.  The OIF shall monitor OpenC2 consumers and their connections to enterprise assets for component failure. 
+
+16.  The OpenC2 schemas developed for the SCAP 2.0 actuator profiles shall be extensible to accommodate new capabilities and asset types.
+
+17.  The OIF shall store enterprise asset reports in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format for long-term tracking of asset information to support forensic and historical analysis.  
+
+18.  The OIF shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the HTTP 
+or HTTPS transport mechanisms.
+
+19.  The OIF shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the MQTT transport mechanism.
+
+20.  The OIF shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the OpenDXL transport mechanism.
+
+21.  The OIF shall receive an Open C2 response from an OpenC2 consumer designating an unknown asset type when an assessment instruction cannot be mapped to an enterprise asset type.  
+
+
+The International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 19770-2:2015 
+Software Identification (SWID) Tag standard [4] provides a data format to express endpoint software metadata that can be 
+shared across the network to identify installed software and inform endpoint posture assessments. 
+
 
 ## 3-HII Contributions to PoC
 
