@@ -8,6 +8,7 @@ Table of Contents
    - [2.3-IACD Goals & Objectives](2.3-iacd-goals-objectives)
    - [2.4-CACAO Goals & Objectives](2.4-cacao-goals-objectives)
    - [2.5-Open Cybersecurity Alliance Goals & Objectives](2.5-open-cybersecurity-alliance-goals-objectives)
+   - [2.6-Security Content Automation Protocol (SCAP) 2.0 Goals & Objectives](2.6-security-content-automation-protocol)
 - [3-HII Contributions to PoC](3-hii-contributions-to-poc)
 
 ## 1-Introduction
