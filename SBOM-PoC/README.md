@@ -4,7 +4,7 @@
 - [2. Organizations Participating](#2---organizations-participating)
 - [3. Goals and Objectives](#3---goals-and-objectives)
 - [4. Work Plan](4---work-plan)
-- 5. ...
+- [5. Participants](#5---participants)
 
 # 1 - Intro
 The Software Bill Of Materials (SBOM) Proof of Concept (PoC)
