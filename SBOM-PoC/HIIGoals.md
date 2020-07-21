@@ -206,13 +206,28 @@ Use Case #4   Identifying Vulnerable Endpoints
 Use Case #5   Preventing Installation of Unauthorized or Corrupted Software 
 
 
+34.  An OpenC2 SCAP actuator profile will be created for the OIF to update an endpoint with software and patches.  The integrity of the updates shall be verified by using corpus tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to perform installation of authorized software updates.  
+
+35.  An OpenC2 SCAP actuator profile will be created for the OIF to update an endpoint with software and patches.  The integrity of the updates shall be verified by using corpus tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanisms to perform installation of authorized software updates.  
+
+36.  An OpenC2 SCAP actuator profile will be created for the OIF to update an endpoint with software and patches.  The integrity of the updates shall be verified by using corpus tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanisms to perform installation of authorized software updates.  
 
 
 Use Case #6   Preventing the Execution of Corrupted Software
 
+using SWID tags to convey important information about the characteristics of installed software. Specifically, the ability to store and compare cryptographic hashes of installed executable software is a useful method to identify potential tampering or unauthorized changes.  primary and supplemental SWID tag    prevent execution of files that have been infected by malware or otherwise modified without authorization.    primary and supplemental SWID tag 
 
+37.  An OpenC2 SCAP actuator profile will be created for the OIF to identify potential tampering or unauthorized changes to an endpoint.  The integrity of the endpoint software baseline shall be verified by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to detect unauthorized changes to an endpoint.  
 
+38.  An OpenC2 SCAP actuator profile will be created for the OIF to identify potential tampering or unauthorized changes to an endpoint.  The integrity of the endpoint software baseline shall be verified by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to detect unauthorized changes to an endpoint.  
 
+39.  An OpenC2 SCAP actuator profile will be created for the OIF to identify potential tampering or unauthorized changes to an endpoint.  The integrity of the endpoint software baseline shall be verified by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to detect unauthorized changes to an endpoint.  
+
+40.  An OpenC2 SCAP actuator profile will be created for the OIF to prevent execution of files on an endpoint that have been infected by malware or otherwise modified without authorization.  The identification of the infected files shall be performed by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to prevent execution of infected files on an endpoint.  
+
+41.  An OpenC2 SCAP actuator profile will be created for the OIF to prevent execution of files on an endpoint that have been infected by malware or otherwise modified without authorization.  The identification of the infected files shall be performed by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to prevent execution of infected files on an endpoint.   
+
+42.  An OpenC2 SCAP actuator profile will be created for the OIF to prevent execution of files on an endpoint that have been infected by malware or otherwise modified without authorization.  The identification of the infected files shall be performed by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to prevent execution of infected files on an endpoint.  
 
 Use Case #7   Preventing Vulnerable Devices from Accessing Network Resources
 
