@@ -102,8 +102,8 @@ CycloneDX is a lightweight software bill-of-material (SBOM) specification design
 
 Collaborative Automated Course of Action Operations (CACAO) is a specification for implementing course-of-action playbooks for cybersecurity operations. Ideally CACAO would be used for the security policy driving the decision making in the automated response to the SBOM as part of the PoC. Goals for CACAO would include:
 
-1. OIF retrieves Software Bill of Materials (SBOM) from Blinky HaHa and the OIF orchestrator exercises a course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM. 
-2. OIF retrieves Software Bill of Materials (SBOM) from Blinky MaHa and the OIF orchestrator exercises a course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM.
+1. OIF retrieves Software Bill of Materials (SBOM) from Blinky HaHa and the OIF orchestrator simulates the automated execution of a course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM. 
+2. OIF retrieves Software Bill of Materials (SBOM) from Blinky MaHa and the OIF orchestrator simulates the automated execution of a course of action consisting of a sequence of OpenC2 commands based on the content of the retrieved SBOM.
 
 
 ### 2.5-Open Cybersecurity Alliance Goals & Objectives
