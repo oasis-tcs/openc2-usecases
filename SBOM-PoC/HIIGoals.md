@@ -129,7 +129,7 @@ within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (
 
  
 
-Use Case #2  Ongoing Monitoring Against a Baseline Use Case
+Use Case #2  Ongoing Monitoring Against a Baseline
 
 7.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor changes in information coming from an OpenC2 consumer about changes to an enterprise asset using the HTTP or HTTPS transport mechanisms.   
 
@@ -147,29 +147,69 @@ in a report contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Sof
 12.  An OpenC2 SCAP actuator profile will be created for the OIF to monitor enterprise assets for changes in the collected information summarized 
 in a report contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to perform periodic monitoring and to return an OpenC2 response containing a summary report. 
 
-13.  The OIF shall use a subscription management algorithm implemented using a publish/subscribe mechanism to ensure that summary reports containing changes of enterprise information received from OpenC2 consumers are delivered to appropriate parties.
+13.  The OIF SCAP actuator profile shall use a subscription management algorithm implemented using a publish/subscribe mechanism to ensure that summary reports containing changes of enterprise information received from OpenC2 consumers are delivered to appropriate parties.
 
-14.  The OIF shall monitor OpenC2 consumers and their connections to enterprise assets for liveness.
+14.  The OIF SCAP actuator profile shall monitor OpenC2 consumers and their connections to enterprise assets for liveness.
 
-15.  The OIF shall monitor OpenC2 consumers and their connections to enterprise assets for component failure. 
+15.  The OIF SCAP actuator profile shall monitor OpenC2 consumers and their connections to enterprise assets for component failure. 
 
 16.  The OpenC2 schemas developed for the SCAP 2.0 actuator profiles shall be extensible to accommodate new capabilities and asset types.
 
-17.  The OIF shall store enterprise asset reports in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format for long-term tracking of asset information to support forensic and historical analysis.  
+17.  The OIF SCAP actuator profile shall store enterprise asset reports in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format for long-term tracking of asset information to support forensic and historical analysis.  
 
-18.  The OIF shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the HTTP 
+18.  The OIF SCAP actuator profile shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the HTTP 
 or HTTPS transport mechanisms.
 
-19.  The OIF shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the MQTT transport mechanism.
+19.  The OIF SCAP actuator profile shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the MQTT transport mechanism.
 
-20.  The OIF shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the OpenDXL transport mechanism.
+20.  The OIF SCAP actuator profile shall send different assessment instructions to OpenC2 consumers based on enterprise asset type using the OpenDXL transport mechanism.
 
-21.  The OIF shall receive an Open C2 response from an OpenC2 consumer designating an unknown asset type when an assessment instruction cannot be mapped to an enterprise asset type.  
+21.  The OIF SCAP actuator profile shall receive an Open C2 response from an OpenC2 consumer designating an unknown asset type when an assessment instruction cannot be mapped to an enterprise asset type.  
 
 
 The International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 19770-2:2015 
 Software Identification (SWID) Tag standard [4] provides a data format to express endpoint software metadata that can be 
 shared across the network to identify installed software and inform endpoint posture assessments. 
+
+Use Case #3   Ensuring that Products are Properly Patched 
+
+22.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints having installed software products that are missing one or more patches.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to return an OpenC2 response containing a summary report.  
+
+23.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints having installed software products that are missing one or more patches.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to return an OpenC2 response containing a summary report.  
+
+24.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints having installed software products that are missing one or more patches.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to return an OpenC2 response containing a summary report. 
+
+25.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints to determine that all prerequisite patches are installed before installing any new patches.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to return an OpenC2 response containing a summary report.  
+
+26.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints to determine that all prerequisite patches are installed before installing any new patches.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to return an OpenC2 response containing a summary report.  
+
+27.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints to determine that all prerequisite patches are installed before installing any new patches.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to return an OpenC2 response containing a summary report. 
+ 
+28.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints to determine if a missing patch has been superseded by a newer patch.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to return an OpenC2 response containing a summary report.  
+
+29.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints to determine if a missing patch has been superseded by a newer patch.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to return an OpenC2 response containing a summary report.  
+
+30.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints to determine if a missing patch has been superseded by a newer patch.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to return an OpenC2 response containing a summary report. 
+
+
+Use Case #4   Identifying Vulnerable Endpoints
+
+
+
+
+Use Case #5   Preventing Installation of Unauthorized or Corrupted Software 
+
+
+
+
+Use Case #6   Preventing the Execution of Corrupted Software
+
+
+
+
+
+Use Case #7   Preventing Vulnerable Devices from Accessing Network Resources
+
 
 
 ## 3-HII Contributions to PoC
