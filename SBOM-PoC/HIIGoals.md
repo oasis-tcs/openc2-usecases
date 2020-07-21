@@ -23,45 +23,52 @@ A series of virtual plugfest use cases to demonstrate interoperability showcasin
 
 1. OIF Orchestrator interworks to a Single External Plugfest Actuator.
 
-    1a. Specific External Plugfest Actuator Blinky HaHa using the HTTP or HTTPS transport mechanism to receive OpenC2 commands from OIF.
+    1a. Specific External Plugfest Actuator Blinky HaHa to receive OpenC2 commands from OIF using the HTTP or HTTPS transport mechanism.
+    
+    1b. Specific External Plugfest Actuator Blinky MaHa to receive OpenC2 commands from OIF using the MQTT transport mechanism.
 
 2. OIF Orchestrator interworks to Multiple External Plugfest Actuators.
 
 3. OIF Orchestrator interworks to a Single Yuuki Actuator.
 
-4. OIF Orchestrator interworks to Multiple Yuuki Actuators.
+    3a. OIF Orchestrator interworks to Multiple Yuuki Actuators.
 
-5. OIF Orchestrator interworks to a Single OIF Actuators.
+4. OIF Orchestrator interworks to a Single OIF Actuators.
 
-6. OIF Orchestrator interworks to Multiple OIF Actuators.
+    4a. OIF Orchestrator interworks to Multiple OIF Actuators.
 
-7. OIF Orchestrator commanding our Blinky Light Board and a Blinky MaHa using the MQTT transport mechanism in a physical networking setup within HII.
+5. OIF Orchestrator commanding multiple OIF Devices in a virtual networking setup on one machine.
 
-8. OIF retrieves Software Bill of Materials (SBOM) from Blinky HaHa using the HTTP or HTTPS transport mechanism.
+    5a. OIF Orchestrator commanding multiple OIF Devices in a physical networking setup on multiple machines.
 
-9. OIF sends OpenC2 command to Blinky HaHa using a Raspberry Pi Zero card using the HTTP or HTTPS transport mechanism.
+    5b. OIF Orchestrator commanding our Blinky Light Board and a Blinky MaHa using the MQTT transport mechanism in a physical networking setup within HII.
+    
+    5c. OIF Orchestrator commanding our Blinky Light Board and a Blinky HaHa using the HTTP or HTTPS transport mechanism in a physical networking setup within HII.
 
-10. OIF sends OpenC2 command to Blinky HaHa using a Raspberry Pi 4 card using the HTTP or HTTPS transport mechanism.
+6. OIF retrieves Software Bill of Materials (SBOM) from Blinky HaHa using the HTTP or HTTPS transport mechanism.
 
-11. OIF Orchestrator commanding multiple OIF Devices in a virtual networking setup on one machine.
+    6a. OIF retrieves SBOM from Blinky MaHa using the MQTT transport mechanism.
 
-12. OIF Orchestrator commanding multiple OIF Devices in a physical networking setup on multiple machines.
+7. OIF sends OpenC2 command to Blinky HaHa using a Raspberry Pi Zero card using the HTTP or HTTPS transport mechanism.
 
-13. OIF Orchestrator commanding our Blinky Light Board and a Blinky HaHa in a physical networking setup within HII using the HTTP or HTTPS transport mechanism.
+    7a. OIF sends OpenC2 command to Blinky HaHa using a Raspberry Pi 4 card using the HTTP or HTTPS transport mechanism.
+    
+    7b. OIF sends OpenC2 command to Blinky MaHa Using a Raspberry Pi Zero card using the MQTT transport mechanism.
 
-14. OIF Orchestrator commanding a Blinky HaHa on LAN network over the Internet using the HTTP or HTTPS transport mechanism.
+    7c. OIF sends OpenC2 command to Blinky MaHa Using a Raspberry Pi 4 card using the MQTT transport mechanism.
 
-15. Specific External Plugfest Actuator Blinky MaHa to receive OpenC2 commands from OIF using the MQTT transport mechanism.
+8. OIF Orchestrator commanding multiple OIF Devices in a virtual networking setup on one machine.
 
-16. OIF retrieves SBOM from Blinky MaHa using the MQTT transport mechanism.
+    8a. OIF Orchestrator commanding multiple OIF Devices in a physical networking setup on multiple machines.
 
-17. OIF sends OpenC2 command to Blinky MaHa Using a Raspberry Pi Zero card using the MQTT transport mechanism.
+9. OIF Orchestrator commanding a Blinky HaHa on LAN network over the Internet using the HTTP or HTTPS transport mechanism.
 
-18. OIF sends OpenC2 command to Blinky MaHa Using a Raspberry Pi 4 card using the MQTT transport mechanism.
+    9a. OIF Orchestrator commanding a Blinky MaHa on LAN network over the Internet using the MQTT transport mechanism.
 
-19. OIF Orchestrator commanding a Blinky MaHa on LAN network over the Internet using the MQTT transport mechanism.
+10. Implementation of a compact, binary serialization *(e.g., CBOR, Protobuf)". 
 
-20. Implementation of a compact, binary serialization *(e.g., CBOR, Protobuf)". 
+
+
 
 ### 2.2-NTIA SBOM Exchange PoC Goals & Objectives
 
