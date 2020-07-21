@@ -193,7 +193,13 @@ Use Case #3   Ensuring that Products are Properly Patched
 
 
 Use Case #4   Identifying Vulnerable Endpoints
+ 
 
+31.  An OpenC2 SCAP actuator profile will be created for the OIF to identify vulnerable endpoints by performing automated correlation of information published by vulnerability information sources to an inventory report about an endpoint.  The endpoint inventory report shall be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to publish a summary report about the endpoint vulnerabilities.  
+
+32.  An OpenC2 SCAP actuator profile will be created for the OIF to identify vulnerable endpoints by performing automated correlation of information published by vulnerability information sources to an inventory report about an endpoint.  The endpoint inventory report shall be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to publish a summary report about the endpoint vulnerabilities.  
+
+33.  An OpenC2 SCAP actuator profile will be created for the OIF to identify vulnerable endpoints by performing automated correlation of information published by vulnerability information sources to an inventory report about an endpoint.  The endpoint inventory report shall be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to publish a summary report about the endpoint vulnerabilities.  
 
 
 
