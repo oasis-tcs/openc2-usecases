@@ -1,10 +1,11 @@
 # Table Of Contents
 - [1. Intro](#1---intro)
-- [1.1 Vision](#11-vision)
+  - [1.1 Vision](#11-vision)
+  - [1.2 Communications & Coordination](#12-communications--coordination)
 - [2. Organizations Participating](#2---organizations-participating)
 - [3. Goals and Objectives](#3---goals-and-objectives)
 - [4. Work Plan](4---work-plan)
-- 5. ...
+- [5. Participants](#5---participants)
 
 # 1 - Intro
 The Software Bill Of Materials (SBOM) Proof of Concept (PoC)
@@ -88,6 +89,29 @@ and further advance the work with aspects that require being on the same LAN.
 The effort from now until October
 is being called Phase 1 with the hope
 there will be follow on work after TDD that can be accomplished virtually.
+
+## 1.2 Communications & Coordination
+
+**Communications Options** for Plug Fest participants:
+
+- OASIS-managed mail list:  `openc2-plugfest-2019@lists.oasis-open.org` -- Originally 
+established for the January 2020 plug fest, we are continuing to use this list for the 
+new event. If you wish to be added to (or removed from) the list, contact David Lemire
+(`david.lemire@hii-tsd.com`) for assistance
+
+- Plugfest channel on Discord:  The HII software team maintains a Discord server, and 
+we've established a channel for the plugfest. This channel is open to non-OASIS member 
+plug fest participants.. To request a link to join the server, 
+contact David Lemire (`david.lemire@hii-tsd.com`) or Danny Martinez (`danny.martinez@hii-tsd.com`)
+
+- Plugfest channel on Slack:  the OpenC2 TC has a Slack community and there is a
+plugfest channel there. Unfortunately this option is limited to plugfest 
+participants who are also OpenC2 TC members.
+
+**Coordination Meeting**: There is a bi-weekly coordination meeting conducted via WebEx 
+every other Thursday at 11:00 am EDT.  Contact David Lemire (`david.lemire@hii-tsd.com`) 
+to request an invititation to the meeting series.  Planned meeting dates are 30 July, 
+13 August, 27 August, ...
 
 # 2 - Organizations Participating
 Here is the list of organizations who have agreed to participate,
