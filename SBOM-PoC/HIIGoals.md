@@ -167,10 +167,6 @@ or HTTPS transport mechanisms.
 21.  The OIF SCAP actuator profile shall receive an Open C2 response from an OpenC2 consumer designating an unknown asset type when an assessment instruction cannot be mapped to an enterprise asset type.  
 
 
-The International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 19770-2:2015 
-Software Identification (SWID) Tag standard [4] provides a data format to express endpoint software metadata that can be 
-shared across the network to identify installed software and inform endpoint posture assessments. 
-
 Use Case #3   Ensuring that Products are Properly Patched 
 
 22.  An OpenC2 SCAP actuator profile will be created for the OIF to receive a report about endpoints having installed software products that are missing one or more patches.  This report will be contained within an OpenC2 response in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to return an OpenC2 response containing a summary report.  
