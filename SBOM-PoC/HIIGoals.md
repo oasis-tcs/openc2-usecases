@@ -211,8 +211,6 @@ Use Case #5   Preventing Installation of Unauthorized or Corrupted Software
 
 Use Case #6   Preventing the Execution of Corrupted Software
 
-using SWID tags to convey important information about the characteristics of installed software. Specifically, the ability to store and compare cryptographic hashes of installed executable software is a useful method to identify potential tampering or unauthorized changes.  primary and supplemental SWID tag    prevent execution of files that have been infected by malware or otherwise modified without authorization.    primary and supplemental SWID tag 
-
 37.  An OpenC2 SCAP actuator profile will be created for the OIF to identify potential tampering or unauthorized changes to an endpoint.  The integrity of the endpoint software baseline shall be verified by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to detect unauthorized changes to an endpoint.  
 
 38.  An OpenC2 SCAP actuator profile will be created for the OIF to identify potential tampering or unauthorized changes to an endpoint.  The integrity of the endpoint software baseline shall be verified by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the MQTT transport mechanism to detect unauthorized changes to an endpoint.  
@@ -226,9 +224,6 @@ using SWID tags to convey important information about the characteristics of ins
 42.  An OpenC2 SCAP actuator profile will be created for the OIF to prevent execution of files on an endpoint that have been infected by malware or otherwise modified without authorization.  The identification of the infected files shall be performed by using primary and supplemental tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the OpenDXL transport mechanism to prevent execution of infected files on an endpoint.  
 
 Use Case #7   Preventing Vulnerable Devices from Accessing Network Resources
-
-Through the use of well-formed SWID tags, network access decision points are able to collect validation information quickly and accurately, 
-enabling the organization to help prevent the connection of endpoints that represent a potential threat.  SWID tags provides a technology-neutral way to verify a device’s compliance with certain configuration policies 
 
 43.  An OpenC2 SCAP actuator profile will be created for the OIF to deny the connection of devices that represent a potential threat. The verification of the device’s compliance with configuration policies shall be performed by using SWID tags in the (ISO/IEC)19770-2:2015 Software Identification (SWID) Tag standard format.  The OIF will use the HTTP or HTTPS transport mechanisms to prevent vulnerable devices from accessing network resources.  
 
