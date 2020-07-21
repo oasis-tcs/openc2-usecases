@@ -101,8 +101,9 @@ new event. If you wish to be added to (or removed from) the list, contact David 
 
 - Plugfest channel on Discord:  The HII software team maintains a Discord server, and 
 we've established a channel for the plugfest. This channel is open to non-OASIS member 
-plug fest participants.. To request a link to join the server, 
-contact David Lemire (`david.lemire@hii-tsd.com`) or Danny Martinez (`danny.martinez@hii-tsd.com`)
+plug fest participants. A [Discord account](https://discord.com/register) is required. 
+To request a link to join the server, contact David Lemire (`david.lemire@hii-tsd.com`) 
+or Danny Martinez (`danny.martinez@hii-tsd.com`)
 
 - Plugfest channel on Slack:  the OpenC2 TC has a Slack community and there is a
 plugfest channel there. Unfortunately this option is limited to plugfest 
