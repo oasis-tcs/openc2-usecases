@@ -39,6 +39,7 @@ If you are using the OpenDXL client libraries mentioned above, they accept the d
 1. Navigate to the samples directory:
     * Replace the dxlclient.config with the one you received
     * Place the keys you recieved there as well
+    * Open dxlclient.config and ensure the certificate file names are correct
 1. Run the program:
     * ```python basic/event_example.py```
     * You should see a count of about 1000 messages sent/received. If not, something isn't right.
