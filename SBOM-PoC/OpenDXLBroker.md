@@ -59,11 +59,11 @@ If you are using the OpenDXL client libraries mentioned above, they accept the d
 
 Use one of the following commands to create your key and Certificate Signing Request. Be sure and use your name. Send **client.csr** to the OpenC2 Team to get it signed, do NOT send your private key **client.key**.
 
-* Encrypt the private key with a passphrase:
+* No passphrase:
 ```bash
     openssl req -out client.csr -subj "/CN=YOUR_NAME_HERE" -new -newkey rsa:2048 -nodes -keyout client.key
 ```
-* No passphrase:
+* Encrypt the private key with a passphrase:
 ```bash
     openssl req -out MY_CSR -subj "/CN=YOUR_NAME_HERE" -new -newkey rsa:2048 -keyout client.key
 ```
