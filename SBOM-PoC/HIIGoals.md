@@ -67,7 +67,15 @@ A series of virtual plugfest use cases to demonstrate interoperability showcasin
 
 10. Implementation of a compact, binary serialization *(e.g., CBOR, Protobuf)". 
 
+11.  The OIF orchestrator will implement the use of Concise Binary Object Representation (CBOR) to express SWID information in CoSWID tags to define an OIF device. 
 
+12.  The OIF orchestrator will implement the use of primary CoSWID tags to identify and describe an installed software component on an OIF device.
+
+13.  The OIF orchestrator will implement the use of patch CoSWID tags to identify and describe an installed software patch on an OIF device.
+
+14.  The OIF orchestrator will implement the use of corpus CoSWID tags to identify and describe an installed software component in its pre-installation state on an OIF device.
+
+15.  The OIF orchestrator will implement the use of supplemental CoSWID tags to record metedata about a software component on an OIF device without modifying CoSWID primary or patch tags.
 
 
 ### 2.2-NTIA SBOM Exchange PoC Goals & Objectives
