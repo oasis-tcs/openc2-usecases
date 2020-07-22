@@ -26,12 +26,14 @@ However you proceed, you'll receive **client.zip** that contains:
 
 ## Connect
 
-If you are using the OpenDXL client libraries mentioned above, they accept the dxlclient.config file your received above. The quickest Python Hello World program is [here](https://github.com/opendxl/opendxl-client-python/blob/master/examples/basic/event_example.py), but you can just follow these steps:
+If you are using the OpenDXL client libraries mentioned above, they accept the dxlclient.config file you received above. The quickest Python Hello World program is [here](https://github.com/opendxl/opendxl-client-python/blob/master/examples/basic/event_example.py), but you can just follow these steps:
 
 1. Create a new folder and activate a python virtual env
     * ```mkdir dxl_hello_world && cd dxl_hello_world```
     * ```python -m venv venv && source venv/bin/activate```
 1. Download the [latest Python OpenDXL Client](https://github.com/opendxl/opendxl-client-python/releases/download/5.6.0.3/dxlclient-python-sdk-5.6.0.3.zip), then extract the zip file.
+    * ```wget https://github.com/opendxl/opendxl-client-python/releases/download/5.6.0.3/dxlclient-python-sdk-5.6.0.3.zip```
+    * ```unzip dxlclient-python-sdk-5.6.0.3.zip```
 1. Navigate to the lib folder
     * ```pip install dxlclient-5.6.0.2.zip```
 1. Navigate to the samples directory:
