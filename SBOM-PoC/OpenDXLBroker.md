@@ -1,6 +1,6 @@
 # OpenDXL Broker 
 
-An OpenDXL Broker is available for all PlugFest participants to connect with and expirement on. There are great open source client libraries available to hit the ground running in [Python](https://github.com/opendxl/opendxl-client-python) and [Java](https://github.com/opendxl/opendxl-client-java). DXL is a cousin of MQTT that is secure by default, [among other differences](https://github.com/opendxl/opendxl-broker/wiki/Comparison-with-MQTT), so please read on to learn how to connect.
+An OpenDXL Broker is available for all PlugFest participants to connect with and experiment on. There are great open source client libraries available to hit the ground running in [Python](https://github.com/opendxl/opendxl-client-python) and [Java](https://github.com/opendxl/opendxl-client-java). DXL is a cousin of MQTT that is secure by default, [among other differences](https://github.com/opendxl/opendxl-broker/wiki/Comparison-with-MQTT), so please read on to learn how to connect.
 
 # Connecting To The Broker
 
