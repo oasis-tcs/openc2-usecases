@@ -4,7 +4,7 @@ An OpenDXL Broker is available for all PlugFest participants to connect with and
 
 # Connecting To The Broker
 
-## Authentication
+## Step 1 : Authentication
 
 The OpenDXL Broker requires mutual authentication. In short, you must connect to the broker with a PKI certificate signed by the broker's self-generated Certificate Authority. Luckily, this is a straighforward process. There are two methods:
 
@@ -12,19 +12,22 @@ The OpenDXL Broker requires mutual authentication. In short, you must connect to
 
 or
 
-* Request a signed key package. This is easier, but exposes your private key.
+* Request a complete key package that's already signed. This is easier, but not secure, because your private key is exposed (created by the OpenC2 Team).
 
 However you proceed, you'll receive **client.zip** that contains:
 
 | File | Description |
 | ------ | ----------- |
-| ca-broker.crt   | The broker's certificate. |
+| ca-bundle.crt   | The broker's certificate. |
 | client.crt      | Your signed client certificate. | 
 | dxlclient.config | The broker's IP and port. If using the OpenDXL client libraries mentioned above, this config is generated for them specifically. |
 | client.key | Your private client key, if you didn't generate your own CSR. |
 
 
-## Connect
+## Step 2 : Connect
+
+* IP Address : Look in your dxlclient.config
+* Port : Look in your dxlclient.config
 
 If you are using the OpenDXL client libraries mentioned above, they accept the dxlclient.config file you received above. The quickest Python Hello World program is [here](https://github.com/opendxl/opendxl-client-python/blob/master/examples/basic/event_example.py), but you can just follow these steps:
 
@@ -40,7 +43,7 @@ If you are using the OpenDXL client libraries mentioned above, they accept the d
 1. Insert your config and keys:
     * ```cd ../sample/```
     * Replace **dxlclient.config** with the one you received
-    * Place the key files there. **ca-broker.crt client.crt client.key**
+    * Place the key files there. **ca-bundle.crt client.crt client.key**
     * Open **dxlclient.config** and ensure the key file names match.
 1. Run the program:
     * ```python basic/event_example.py```
