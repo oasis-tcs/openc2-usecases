@@ -43,7 +43,10 @@ If you are using the OpenDXL client libraries mentioned above, they accept the d
 1. Insert your config and keys:
     * ```cd ../sample/```
     * Replace **dxlclient.config** with the one you received
-    * Place the key files there. **ca-bundle.crt client.crt client.key**
+    * Place the key files there.
+        * **ca-bundle.crt**
+        * **client.crt**
+        * **client.key**
     * Open **dxlclient.config** and ensure the key file names match.
 1. Run the program:
     * ```python basic/event_example.py```
