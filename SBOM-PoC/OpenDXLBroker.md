@@ -19,9 +19,9 @@ However you proceed, you'll receive **client.zip** that contains:
 | File | Description |
 | ------ | ----------- |
 | ca-bundle.crt   | The broker's certificate. |
-| client.crt      | Your signed client certificate. | 
-| dxlclient.config | The broker's IP and port. If using the OpenDXL client libraries mentioned above, this config is generated for them specifically. |
+| client.crt      | Your signed client certificate. |
 | client.key | Your private client key, if you didn't generate your own CSR. |
+| dxlclient.config | The broker's IP and port. If using the OpenDXL client libraries mentioned above, this config is generated for them specifically. |
 
 
 ## Step 2 : Connect
