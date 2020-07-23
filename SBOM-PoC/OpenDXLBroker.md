@@ -53,7 +53,24 @@ If you are using the OpenDXL client libraries mentioned above, they accept the d
     * ```deactivate```
 
 
+## Sandboxing
 
+Please sandbox all of your tests by prefixing your name or company to all topic-names and topic-filters. This is not for privacy, but to avoid unknowingly spamming anyone who subscribed to a topic you publish to.
+
+For example, please use this format (with your name, company, etc):
+
+```
+patrickc/oc2/cmd/
+patrickc/#
+patrickc/foo/bar
+```
+
+Do not use:
+```
+oc2/cmd/
+#
+foo/bar
+```
 
 ## Create your own private key and CSR
 
