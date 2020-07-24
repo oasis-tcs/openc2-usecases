@@ -6,14 +6,37 @@ An OpenDXL Broker is available for all PlugFest participants to connect with and
 
 ## Step 1 : Authentication
 
-The OpenDXL Broker requires mutual authentication. In short, you must connect to the broker with a PKI certificate signed by the broker's self-generated Certificate Authority. Luckily, this is a straighforward process. There are two methods:
+The OpenDXL Broker requires mutual authentication. In short, you must connect to the broker with a PKI certificate signed by the broker's self-generated Certificate Authority. Luckily, this is a straighforward process. There are a few methods to get a signed key/cert package, shown in order of ease:
 
-* [Create your own CSR](#create-your-own-private-key-and-csr) (Certificate Signing Request), then send it to the OpenC2 Team to sign and return to you. Following the instructions below, only send **client.csr**. Do not send your private key (**client.key**).
+_Remember to look in Slack/Discord for a pinned message with the connection details, not shown here._
 
-or
+### Option A: Web Console
+Login to the broker's web console and create a signed key package to download:
+1. In a browser, go to https://<BROKER_IP>:8443 and click through your browser's security warnings.
+2. Login with USERNAME/PW.
+3. On the left, click on the "Certificate Management" Icon.
+4. Enter:
+   * Configureation Type: ```Client Configuration```
+   * Common Name: ```Your name or company name```
+5. Click "Generate". Done!
 
-* Request a complete key package that's already signed. This is easier, but not secure, because your private key is exposed (created by the OpenC2 Team).
+### Option B: Ask
+* Reach out on Slack/Discord for a complete key package that's already signed.
 
+### Option C: Command Line Utility
+If you download the [OpenDXL Python Client](https://github.com/opendxl/opendxl-client-python), it comes with a simple command line utility for this task. You can get a signed key package (as in Option A), or submit your own Certificate Signing Request if you're [using your own private key and cert](#create-your-own-private-key-and-csr).
+* This will retrieve a complete signed key package:
+
+    ```dxlclient provisionconfig ./ BROKER_IP YOUR_NAME_OR_COMPANY_NAME```
+    
+* This will use your own Certificate Signing Request supplied as **client.csr**
+   
+   ```dxlclient provisionconfig -r ./ BROKER_IP client.csr```
+   
+In both cases, you'll be prompted for the USERNAME and PW.
+
+
+### Client.zip
 However you proceed, you'll receive **client.zip** that contains:
 
 | File | Description |
@@ -77,7 +100,7 @@ foo/bar
 
 ## Create your own private key and CSR
 
-Use one of the following commands to create your key and Certificate Signing Request. Be sure and use your name. Send **client.csr** to the OpenC2 Team to get it signed, do NOT send your private key **client.key**.
+Use one of the following commands to create your key and Certificate Signing Request. Be sure and use your name.
 
 * No passphrase:
 ```bash
