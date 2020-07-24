@@ -16,7 +16,7 @@ Login to the broker's web console and create a signed key package to download:
 2. Login with USERNAME/PW.
 3. On the left, click on the "Certificate Management" Icon.
 4. Enter:
-   * Configureation Type: ```Client Configuration```
+   * Configuration Type: ```Client Configuration```
    * Common Name: ```Your name or company name```
 5. Click "Generate". Done!
 
