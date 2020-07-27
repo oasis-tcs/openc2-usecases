@@ -265,13 +265,13 @@ Use Case #7   Preventing Vulnerable Devices from Accessing Network Resources
 Goals and Objectives    |  Single Goal Test Status | Integration Testing with Multiple Goals Status | System Level Testing   | Acceptance Testing Status  |
 
 
-|OpenC2 Virtual Plugfest/
+OpenC2 Virtual Plugfest/
 
 Hackathon Goals &
 
 Objectives
 
-|-----------------------|--------------------------|-----------------------------------------------------|------------------------------|-----------------------|
+|-----------------------|--------------------------|----------------------------------------------------|------------------------------|-----------------------|
 
 Goal 1
 
