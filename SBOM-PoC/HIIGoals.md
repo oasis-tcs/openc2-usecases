@@ -8,8 +8,9 @@ Table of Contents
    - [2.3-IACD Goals & Objectives](2.3-iacd-goals-objectives)
    - [2.4-CACAO Goals & Objectives](2.4-cacao-goals-objectives)
    - [2.5-Open Cybersecurity Alliance Goals & Objectives](2.5-open-cybersecurity-alliance-goals-objectives)
-   - [2.6-Security Content Automation Protocol (SCAP) 2.0 Goals & Objectives](2.6-security-content-automation-protocol)
+   - [2.6-Security Content Automation Protocol (SCAP) 2.0 Goals & Objectives](2.6-security-content-automation-protocol-(scap)-2.0-goals-objectives )
 - [3-HII Contributions to PoC](3-hii-contributions-to-poc)
+- [4-HII Testing Matrix for Goals and Objectives](4-hii-testing-matrix-for-goals-and-objectives)
 
 ## 1-Introduction
 
@@ -258,6 +259,8 @@ Use Case #7   Preventing Vulnerable Devices from Accessing Network Resources
 
 4.  Yuuki actuators provided to other virtual plugfest participants as test devices for interworking using OpenC2.
 
+
+## 4-HII Testing Matrix for Goals & Objectives
 
 | Goals and Objectives  | Single Goal Test Status  | Integration Testing with Multiple Goals Status | System Level Testing   | Acceptance Testing Status of Goal  |
 |OpenC2 Virtual Plugfest/
