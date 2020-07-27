@@ -262,14 +262,17 @@ Use Case #7   Preventing Vulnerable Devices from Accessing Network Resources
 
 ## 4-HII Testing Matrix for Goals & Objectives
 
-| Goals and Objectives  | Single Goal Test Status  | Integration Testing with Multiple Goals Status | System Level Testing   | Acceptance Testing Status of Goal  |
+| Goals and Objectives  
+
+|                       |   Single Goal Test Status| Integration Testing with Multiple Goals Status | System Level Testing   | Acceptance Testing Status of Goal  |
 
 
 |OpenC2 Virtual Plugfest/
 Hackathon Goals & 
-Objectives              |--------------------------|------------------------------------------------|------------------------|------------------------------------|
+Objectives
+|-----------------------|--------------------------|------------------------------------------------|------------------------|------------------------------------|
 
-| Goal 1                |                          |                                                |                        |                                    |
+| Goal 1 ---------------|--------------------------|------------------------------------------------|------------------------|------------------------------------|
 
 | Goal 1a               |                          |                                                |                        |                                    |
 
