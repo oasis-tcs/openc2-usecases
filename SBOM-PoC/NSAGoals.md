@@ -18,23 +18,24 @@ fill in
 ## 2-Goals & Objectives
 
 ### 2.1-OpenC2 Virtual Plugfest/Hackathon Goals & Objectives
+
 fill in - feel free to crib from sFractal
 
 ### 2.2-NTIA SBOM Exchange PoC Goals & Objectives
-decide if should delete this section or fill in.
-feel free to crib from sFractal
+
+decide if should delete this section or fill in. feel free to crib from sFractal
 
 ### 2.3-IACD Goals & Objectives
-decide if should delete this section or fill in.
-feel free to crib from sFractal
+
+decide if should delete this section or fill in. feel free to crib from sFractal
 
 ### 2.4-CACAO Goals & Objectives
-decide if should delete this section or fill in.
-feel free to crib from sFractal
+
+decide if should delete this section or fill in. feel free to crib from sFractal
 
 ### 2.5-Open Cybersecurity Alliance Goals & Objectives
-decide if should delete this section or fill in.
-feel free to crib from sFractal
+
+decide if should delete this section or fill in. feel free to crib from sFractal
 
 ### 2.6-SCAP Goals & Objectives
 Develop OpenC2 profiles to support interactions within the [SCAPv2](https://csrc.nist.gov/projects/security-content-automation-protocol-v2/)
@@ -49,4 +50,5 @@ corresponds to the "Obtain Current SBOM" box in the SBOM PoC [scenario flowchart
 and is a great example of how PoC components/interactions are defined and how questions to be addressed by the PoC are identified.
 
 ## 3-NSA Contributions to PoC
+
 fill in
