@@ -6,14 +6,37 @@ It's a RabbitMQ server configured for MQTT, and will be up 24/7 except for any m
 
 No MQTT topics-names or topic-filters are defined on the server itself; they are ephemeral, defined on-the-fly by clients that publish and subscribe. Please see the notes below about sandboxing your tests.
 
+_Remember to look in Slack/Discord for a pinned message with the connection details, not shown here._
+
 ## Insecure Access:
 
-To keep malicious bots from spamming the broker, look for the credentials as a pinned message in the OpenC2 Slack or Discord channels. You will need the IP, Port, User, and Password to connect to the broker; Please reach out with any questions.
+With the IP, Port, User, and Password, you can use any MQTT client to connect to the broker over an unencrypted TCP connection. Look at the [Hello World section below](#example-hello-world) for an example.
 
 ## TLS Access:
 
-Coming soon.
-
+There are two ways to connect with TLS. These options assume you are using the Hello World example below.
+### Option A: Less Secure
+If you aren't concerned with the broker's identity, just add a basic ssl context:
+```python
+import ssl
+# ... client already created
+context = ssl.create_default_context()
+context.check_hostname = False
+context.verify_mode = ssl.CERT_NONE
+client.tls_set_context(context)
+# ... now connect client
+```
+### Option B: More Secure
+To verify the server's identity, you'll need its CA certificate:
+```python
+import ssl
+# ... client already created
+CA_CERTS = 'path/to/ca-broker.crt'
+context = ssl.create_default_context()
+context.load_verify_locations(cafile=CA_CERTS)
+client.tls_set_context(context)
+# ... now connect client
+```
 ## Sandboxing
 
 Please sandbox all of your tests by prefixing your name to all topic-names and topic-filters. This is not for privacy, but to avoid unknowingly spamming anyone who subscribed to a topic you publish to.
