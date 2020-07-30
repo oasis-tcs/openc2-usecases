@@ -3,29 +3,29 @@
 ## Sprint ending 30-Jul
 ### BlinkyHaHa
 - done
-   o http OpenC2 - hello world, sbom, blinky lights
-   o see https://youtu.be/RcnRFfFtKQY - changes were done with OpenC2 commands via Postman
+   + http OpenC2 - hello world, sbom, blinky lights
+   + see https://youtu.be/RcnRFfFtKQY - changes were done with OpenC2 commands via Postman
 - WIP
-   o delving into deeper SBOM
+   + delving into deeper SBOM
 
 ### TwinklyHaHa
 - done
-   o http OpenC2 - hello world, sbom, blinky local webpage
-   o demo?
+   + http OpenC2 - hello world, sbom, blinky local webpage
+   + demo?
 - WIP
-   o putting on GCP
+   + putting on GCP
 
 ### TwinklyMaHa
 - done
-   o blinky local webpage
+   + blinky local webpage
 - WIP
-   o MQTT
-   o putting on GCP
+   + MQTT
+   + putting on GCP
 
 ### One Planet Interworking
 - WIP
-   o obtained sensor DIY kits
-   o obtained network DIY kits
+   + obtained sensor DIY kits
+   + obtained network DIY kits
 
 
 ## Sprint ending 16-Jul
