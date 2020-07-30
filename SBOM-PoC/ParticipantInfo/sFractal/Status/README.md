@@ -3,7 +3,7 @@
 ## Sprint ending 30-Jul
 ### BlinkyHaHa
 - done
-   o http OpenC2 - hello world, sbom, blinky lights
+   + http OpenC2 - hello world, sbom, blinky lights
    o see https://youtu.be/RcnRFfFtKQY - changes were done with OpenC2 commands via Postman
 - WIP
    o delving into deeper SBOM
