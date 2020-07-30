@@ -66,21 +66,21 @@ Examples of scenarios include:
 - some megascenario combining them all
 
 Scenarios will have plans (e.g. see
-[sFractal Scenario 1 work plan](./sFractalScenarios/workPlan.1.md))
+[sFractal Scenario 1 work plan](./ParticipantInfo/sFractal/workPlan.1.md))
 including flowchart (e.g.
 
-![Comply to Connect Flow](./sFractalScenarios/sFractal.1.png)
+![Comply to Connect Flow](./ParticipantInfo/sFractal/sFractal.1.png)
 
 with draw.io
-[source](./sFractalScenarios/sFractal.1.drawio)),
+[source](./ParticipantInfo/sFractal/sFractal.1.drawio)),
 human readable scenario (e.g.
-[sFractal Scenario 1](./sFractalScenarios/README.md#31---comply-to-connect))
+[sFractal Scenario 1](./ParticipantInfo/sFractal/README.md#31---comply-to-connect))
 and CACAO playbooks (e.g.
-[sFractal playbook 1](./sFractalScenarios/cacaoPlaybook.01.json)).
+[sFractal playbook 1](./ParticipantInfo/sFractal/cacaoPlaybook.01.json)).
 
 This effort is scheduled from June thru October 25, 2020
 and will terminate just prior to
-[TTD-PlugfestHackathon](https://github.com/sparrell/openc2-lsc-usecases/tree/master/TTD-PlugfestHackathon)
+[TTD-PlugfestHackathon](../TTD-PlugfestHackathon)
 at
 [Tech Transfer Days](https://techtransferdays.org/)
 where a physical in-person meetup/mashup will
@@ -94,24 +94,24 @@ there will be follow on work after TDD that can be accomplished virtually.
 
 **Communications Options** for Plug Fest participants:
 
-- OASIS-managed mail list:  `openc2-plugfest-2019@lists.oasis-open.org` -- Originally 
-established for the January 2020 plug fest, we are continuing to use this list for the 
+- OASIS-managed mail list:  `openc2-plugfest-2019@lists.oasis-open.org` -- Originally
+established for the January 2020 plug fest, we are continuing to use this list for the
 new event. If you wish to be added to (or removed from) the list, contact David Lemire
 (`david.lemire@hii-tsd.com`) for assistance
 
-- Plugfest channel on Discord:  The HII software team maintains a Discord server, and 
-we've established a channel for the plugfest. This channel is open to non-OASIS member 
-plug fest participants. A [Discord account](https://discord.com/register) is required. 
-To request a link to join the server, contact David Lemire (`david.lemire@hii-tsd.com`) 
+- Plugfest channel on Discord:  The HII software team maintains a Discord server, and
+we've established a channel for the plugfest. This channel is open to non-OASIS member
+plug fest participants. A [Discord account](https://discord.com/register) is required.
+To request a link to join the server, contact David Lemire (`david.lemire@hii-tsd.com`)
 or Danny Martinez (`danny.martinez@hii-tsd.com`)
 
 - Plugfest channel on Slack:  the OpenC2 TC has a Slack community and there is a
-plugfest channel there. Unfortunately this option is limited to plugfest 
+plugfest channel there. Unfortunately this option is limited to plugfest
 participants who are also OpenC2 TC members.
 
-**Coordination Meeting**: There is a bi-weekly coordination meeting conducted via WebEx 
-every other Thursday at 11:00 am EDT.  Contact David Lemire (`david.lemire@hii-tsd.com`) 
-to request an invititation to the meeting series.  Planned meeting dates are 30 July, 
+**Coordination Meeting**: There is a bi-weekly coordination meeting conducted via WebEx
+every other Thursday at 11:00 am EDT.  Contact David Lemire (`david.lemire@hii-tsd.com`)
+to request an invititation to the meeting series.  Planned meeting dates are 30 July,
 13 August, 27 August, ...
 
 # 2 - Organizations Participating
