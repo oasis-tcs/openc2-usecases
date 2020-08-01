@@ -1,0 +1,75 @@
+       title: "OpenC2 LED Display Actuator Profile"
+      module: "http://oasis-open.org/openc2/blinky/v1.0"
+ description: "Adapted from the OpenC2 Language Profile version 1.1"
+     imports: {"ls": "http://oasis-open.org/openc2/oc2ls-types/v1.1"}
+     exports: ["OpenC2-Command", "OpenC2-Response"]
+
+OpenC2-Command = Record                           // The Command defines an Action to be performed on a Target
+   1 action           Action                      // The task or activity to be performed (i.e., the 'verb').
+   2 target           Target                      // The object of the Action. The Action is performed on the Target.
+   3 args             Args optional               // Additional information that applies to the Command.
+   4 actuator         Actuator optional           // The subject of the Action. The Actuator executes the Action on the Target.
+   5 command_id       ls:Command-ID optional      // An identifier of this Command.
+
+OpenC2-Response = Record
+   1 status           ls:Status-Code              // An integer status code.
+   2 status_text      String optional             // A free-form human-readable description of the Response status.
+   3 results          Results optional            // Map of key:value pairs that contain additional results based on the invoking Command.
+
+Action = Enumerated
+   3 query                                        // Initiate a request for information.
+  15 set                                          // Change a value, configuration, or state of a managed entity.
+
+Target = Choice
+   9 features         ls:Features                 // A set of items used with the query Action to determine an Actuator's capabilities.
+2000 blinky/          AP-Target                   // Profile-defined targets
+
+Actuator = Map{1..*}
+
+Args = Map{1..*}
+   1 start_time       ls:Date-Time optional       // The specific date/time to initiate the Command
+   2 stop_time        ls:Date-Time optional       // The specific date/time to terminate the Command
+2000 blinky/          AP-Args                     // Profile-defined command arguments
+
+Results = Map{1..*}                               // Response Results
+   1 versions         ls:Version unique [0..10]   // List of OpenC2 language versions supported by this Actuator
+   2 profiles         ls:Namespace unique [0..*]  // List of profiles supported by this Actuator
+   3 pairs            Action-Targets optional     // List of targets applicable to each supported Action
+   5 args             Enumerated(Enum[Args]) [0..*]// List of supported Command Arguments
+2000 blinky/          AP-Results                  // Profile-defined response results
+
+Action-Targets = Map{1..*}                        // Map of each action supported by this actuator to the list of targets applicable to that action.
+   3 query            Targets-query unique [0..10]
+  15 set              Targets-set unique [0..10]
+
+Targets-query = Enumerated                        // All targets supported by this actuator's query command
+   1 features
+   2 blinky/device
+
+Targets-set = Enumerated                          // All targets supported by this actuator's set command
+   1 blinky/display
+
+AP-Target = Choice                                // Profile-defined targets
+   1 device           Enumerated(Enum[Blinky-Device])// Device properties to return
+   2 display          Blinky-Display
+
+AP-Specifiers = Map{1..*}                         // Profile-defined actuator specifiers
+
+AP-Args = Map{1..*}                               // Profile-defined command arguments
+
+AP-Results = Map{1..*}                            // Profile-defined response results
+   1 device           Blinky-Device
+
+Blinky-Device = Map                               // Types of device parameters to return
+   1 resolution       String                      // width x height
+
+Blinky-Display = Map                              // Types of patterns to display
+   1 predefined       Canned-Displays             // Pre-defined patterns to display
+   2 image            ls:Artifact                 // Still image file
+   3 animation        ls:Artifact                 // Moving image file
+
+Canned-Displays = Enumerated
+   1 orange
+   2 purple
+   3 rainbow                                      // color-cycling
+   4 space-invaders                               // animation
