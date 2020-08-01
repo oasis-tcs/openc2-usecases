@@ -32,7 +32,7 @@ Additional actions and targets may be added later.
 
 * Copy the Actuator Profile
 [Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template_gen.jidl)
-to a new schema file ['blinky.jidl'](blinky.jidl).
+to a new schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Delete all of the actions, targets, and args that are not used.
 * Fill in the **blinky** property name where shown in the tables
 * Customize the Action-Target list to reflect the above pairs.
@@ -42,11 +42,11 @@ We specified two profile-specific targets (device and display) above.  Define th
 the desired response format for these commands in AP-Results.
 
 After defining the device-specific content, the blinky profile schema should look like
-[blinky IDL](blinky.jidl). This schema, in text or table ([blinky MD](blinky.md)) format, would be included in the
+[blinky IDL](blinky/blinky.jidl). This schema, in text or table ([blinky MD](blinky/blinky.md)) format, would be included in the
 actuator profile document.
 
 Producers and actuator devices would use a machine-readable complete schema
-[blinky_resolved.jadn](blinky_resolved.jadn) which has all referenced definitions copied from the language spec.
+[blinky_resolved.jadn](blinky/blinky_resolved.jadn) which has all referenced definitions copied from the language spec.
 Example commands and responses can be validated using complete schema [blinky_resolved.json](blinky.json)
 in JSON Schema format.
 If a query features schema command is added to the language spec, Producers will be able to retrieve the

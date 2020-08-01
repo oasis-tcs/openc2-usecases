@@ -1,0 +1,14 @@
+{
+  "action": "set",
+  "target": {
+    "blinky": {
+      "display": {
+        "image": {
+          "payload": {
+            "url": "https://www.example.com/smile.jpg"
+          }
+        }
+      }
+    }
+  }
+}
