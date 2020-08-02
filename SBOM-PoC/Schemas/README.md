@@ -9,16 +9,16 @@ of cybersecurity functionality.
 Following the Sparrell naming scheme we'll call this the "[blinky](https://github.com/sparrell/BlinkyHaHa)"
 profile, but it is intended to support a range of LED matrix displays including the Sparrell device.
 
-#### 1. Select Names
+* **Project Name:** blinky
+
+#### 1. Select Namespace and Property Name
 The mechanism used to reference definitions from other documents is described in the OpenC2
 [Namespace Registry](https://github.com/oasis-open/openc2-custom-aps/blob/master/namespace-registry.md).
-We are creating the blinky profile, which initially does not need to reference other actuator profiles. But it
-needs its own namespace so that it can be referenced by other documents, and for testing it needs a provisional
+The namespace allows this profile to be referenced by other documents, and for testing it needs a
 property name used in the OpenC2 actuator, target, args, and results lists.
-Select a namespace using the registry examples:
 
-* **Namespace:** http://oasis-open.org/openc2/custom/blinky/v1.0
 * **Property Name:** blinky
+* **Namespace:** http://oasis-open.org/openc2/custom/blinky/v1.0
 
 #### 2. Select Actions and Targets
 Define an initial set of commands that accomplish the goals of the profile.
@@ -35,7 +35,7 @@ Additional actions and targets may be defined later.
 [Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template_gen.jidl)
 to a new schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Delete all of the actions, targets, and args that are not used.
-* Fill in **blinky** where "xyz" appears in the template.
+* Replace "xyz" with the property name "blinky" everywhere it appears in the template.
 * Customize the Action-Target list to reflect the commands from step 2.
 
 #### 4. Define profile-specific types
@@ -72,9 +72,9 @@ section 3.1.4 (Extensions) and Annex C.  Version 1.1 of the LS is expected to co
 section and align the examples with the JSON Pointer standard (RFC 6901) and the Namespace Registry.
 
 Summary:
-1) Property names do not contain special characters such as colon or slash
-2) JSON Pointers (strings that contain property names separated by slashes, e.g., "abc/def/gx")
-refer to namespaced properties (as in the results returned from query features pairs)
-3) There is no distinction between propery names for types defined in standard or custom profiles.
-Properties named any or all of "blinky", "x-blinky", "led", "src", "dst", etc. may refer to types defined in
-"http://oasis-open.org/openc2/custom/blinky/v1.0".
+1) Property names do not contain special characters such as colon or slash.
+2) A JSON Pointer is a string containing property names separated by slashes, e.g., "abc/def/gh". A pointer
+string is used to refer to properties with namespaced types, such as the results returned by query features pairs.
+3) There is no distinction between property names for standard or custom profiles.
+Properties named "blinky", "x-blinky", "led", "src", "dst", etc. may all be used by a schema to reference
+types defined in "http://oasis-open.org/openc2/custom/blinky/v1.0".
