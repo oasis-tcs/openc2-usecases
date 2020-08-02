@@ -266,14 +266,22 @@
       "maxProperties": 1,
       "properties": {
         "device": {
-          "type": "string",
+          "type": "array",
           "description": "Device properties to return",
-          "oneOf": [
-            {
-              "const": "resolution",
-              "description": "width x height"
-            }
-          ]
+          "minItems": 1,
+          "maxItems": 100,
+          "items": {
+            "oneOf": [
+              {
+                "const": "product",
+                "description": "Descriptive name of actuator device"
+              },
+              {
+                "const": "resolution",
+                "description": "width x height"
+              }
+            ]
+          }
         },
         "display": {
           "$ref": "#/definitions/Blinky-Display",
@@ -313,10 +321,16 @@
       "description": "Types of device parameters to return",
       "additionalProperties": false,
       "required": [
+        "product",
         "resolution"
       ],
       "maxProperties": 100,
       "properties": {
+        "product": {
+          "type": "string",
+          "description": "Descriptive name of actuator device",
+          "maxLength": 255
+        },
         "resolution": {
           "type": "string",
           "description": "width x height",

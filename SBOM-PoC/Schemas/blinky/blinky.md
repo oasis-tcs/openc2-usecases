@@ -86,7 +86,7 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **device** | Enumerated(Enum[Blinky-Device]) | 1 | Device properties to return |
+| 1 | **device** | ArrayOf(Enum[Blinky-Device]){1..*} | 1 | Device properties to return |
 | 2 | **display** | Blinky-Display | 1 |  |
 
 **_Type: AP-Specifiers (Map{1..*})_**
@@ -109,7 +109,8 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **resolution** | String | 1 | width x height |
+| 1 | **product** | String | 1 | Descriptive name of actuator device |
+| 2 | **resolution** | String | 1 | width x height |
 
 **_Type: Blinky-Display (Map)_**
 

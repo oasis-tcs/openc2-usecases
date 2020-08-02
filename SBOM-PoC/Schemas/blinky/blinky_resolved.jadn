@@ -62,7 +62,7 @@
   ]],
 
   ["AP-Target", "Choice", [], "Profile-defined targets", [
-    [1, "device", "Enumerated", ["#Blinky-Device"], "Device properties to return"],
+    [1, "device", "ArrayOf", ["*#Blinky-Device", "{1"], "Device properties to return"],
     [2, "display", "Blinky-Display", [], ""]
   ]],
 
@@ -73,7 +73,8 @@
   ]],
 
   ["Blinky-Device", "Map", [], "Types of device parameters to return", [
-    [1, "resolution", "String", [], "width x height"]
+    [1, "product", "String", [], "Descriptive name of actuator device"],
+    [2, "resolution", "String", [], "width x height"]
   ]],
 
   ["Blinky-Display", "Map", [], "Types of patterns to display", [
