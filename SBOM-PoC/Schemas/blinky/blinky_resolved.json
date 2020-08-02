@@ -102,21 +102,10 @@
         }
       }
     },
-    "Actuator": {
-      "title": "Actuator",
-      "type": "object",
-      "additionalProperties": false,
-      "minProperties": 1,
-      "maxProperties": 100,
-      "properties": {}
-    },
     "Args": {
       "title": "Args",
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "blinky"
-      ],
       "minProperties": 1,
       "maxProperties": 100,
       "properties": {
@@ -134,14 +123,24 @@
         }
       }
     },
+    "Actuator": {
+      "title": "Actuator",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "blinky": {
+          "$ref": "#/definitions/AP-Specifiers",
+          "description": "Profile-defined command arguments"
+        }
+      }
+    },
     "Results": {
       "title": "Results",
       "type": "object",
       "description": "Response Results",
       "additionalProperties": false,
-      "required": [
-        "blinky"
-      ],
       "minProperties": 1,
       "maxProperties": 100,
       "properties": {
@@ -289,6 +288,14 @@
         }
       }
     },
+    "AP-Specifiers": {
+      "title": "AP Specifiers",
+      "type": "object",
+      "description": "Profile-defined actuator specifiers",
+      "additionalProperties": false,
+      "maxProperties": 100,
+      "properties": {}
+    },
     "AP-Args": {
       "title": "AP Args",
       "type": "object",
@@ -303,9 +310,6 @@
       "type": "object",
       "description": "Profile-defined response results",
       "additionalProperties": false,
-      "required": [
-        "device"
-      ],
       "minProperties": 1,
       "maxProperties": 100,
       "properties": {
@@ -320,10 +324,7 @@
       "type": "object",
       "description": "Types of device parameters to return",
       "additionalProperties": false,
-      "required": [
-        "product",
-        "resolution"
-      ],
+      "minProperties": 1,
       "maxProperties": 100,
       "properties": {
         "product": {
@@ -343,12 +344,8 @@
       "type": "object",
       "description": "Types of patterns to display",
       "additionalProperties": false,
-      "required": [
-        "predefined",
-        "image",
-        "animation"
-      ],
-      "maxProperties": 100,
+      "minProperties": 1,
+      "maxProperties": 1,
       "properties": {
         "predefined": {
           "$ref": "#/definitions/Canned-Displays",

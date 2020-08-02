@@ -24,19 +24,20 @@ Target = Choice
    9 features         ls:Features                      // A set of items used with the query Action to determine an Actuator's capabilities.
 2000 blinky/          AP-Target                        // Profile-defined targets
 
-Actuator = Map{1..*}
-
 Args = Map{1..*}
    1 start_time       ls:Date-Time optional            // The specific date/time to initiate the Command
    2 stop_time        ls:Date-Time optional            // The specific date/time to terminate the Command
-2000 blinky/          AP-Args                          // Profile-defined command arguments
+2000 blinky/          AP-Args optional                 // Profile-defined command arguments
+
+Actuator = Choice
+2000 blinky/          AP-Specifiers                    // Profile-defined command arguments
 
 Results = Map{1..*}                                    // Response Results
    1 versions         ls:Version unique [0..10]        // List of OpenC2 language versions supported by this Actuator
    2 profiles         ls:Namespace unique [0..*]       // List of profiles supported by this Actuator
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-2000 blinky/          AP-Results                       // Profile-defined response results
+2000 blinky/          AP-Results optional              // Profile-defined response results
 
 Action-Targets = Map{1..*}                             // Map of each action supported by this actuator to the list of targets applicable to that action.
    3 query            Targets-query unique [0..10]
@@ -53,18 +54,18 @@ AP-Target = Choice                                     // Profile-defined target
    1 device           ArrayOf(Enum[Blinky-Device]){1..*}// Device properties to return
    2 display          Blinky-Display
 
-AP-Specifiers = Map{1..*}                              // Profile-defined actuator specifiers
+AP-Specifiers = Map                                    // Profile-defined actuator specifiers
 
 AP-Args = Map{1..*}                                    // Profile-defined command arguments
 
 AP-Results = Map{1..*}                                 // Profile-defined response results
-   1 device           Blinky-Device
+   1 device           Blinky-Device optional
 
-Blinky-Device = Map                                    // Types of device parameters to return
-   1 product          String                           // Descriptive name of actuator device
-   2 resolution       String                           // width x height
+Blinky-Device = Map{1..*}                              // Types of device parameters to return
+   1 product          String optional                  // Descriptive name of actuator device
+   2 resolution       String optional                  // width x height
 
-Blinky-Display = Map                                   // Types of patterns to display
+Blinky-Display = Choice                                // Types of patterns to display
    1 predefined       Canned-Displays                  // Pre-defined patterns to display
    2 image            ls:Artifact                      // Still image file
    3 animation        ls:Artifact                      // Moving image file

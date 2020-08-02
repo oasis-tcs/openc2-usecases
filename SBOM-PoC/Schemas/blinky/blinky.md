@@ -39,18 +39,19 @@
 | 9 | **features** | ls:Features | 1 | A set of items used with the query Action to determine an Actuator's capabilities. |
 | 2000 | **blinky/** | AP-Target | 1 | Profile-defined targets |
 
-**_Type: Actuator (Map{1..*})_**
-
-| ID | Name | Type | # | Description |
-| ---: | :--- | :--- | ---: | :--- |
-
 **_Type: Args (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **start_time** | ls:Date-Time | 0..1 | The specific date/time to initiate the Command |
 | 2 | **stop_time** | ls:Date-Time | 0..1 | The specific date/time to terminate the Command |
-| 2000 | **blinky/** | AP-Args | 1 | Profile-defined command arguments |
+| 2000 | **blinky/** | AP-Args | 0..1 | Profile-defined command arguments |
+
+**_Type: Actuator (Choice)_**
+
+| ID | Name | Type | # | Description |
+| ---: | :--- | :--- | ---: | :--- |
+| 2000 | **blinky/** | AP-Specifiers | 1 | Profile-defined command arguments |
 
 **_Type: Results (Map{1..*})_**
 
@@ -60,7 +61,7 @@
 | 2 | **profiles** | ls:Namespace unique | 0..* | List of profiles supported by this Actuator |
 | 3 | **pairs** | Action-Targets | 0..1 | List of targets applicable to each supported Action |
 | 5 | **args** | Enumerated(Enum[Args]) | 0..* | List of supported Command Arguments |
-| 2000 | **blinky/** | AP-Results | 1 | Profile-defined response results |
+| 2000 | **blinky/** | AP-Results | 0..1 | Profile-defined response results |
 
 **_Type: Action-Targets (Map{1..*})_**
 
@@ -89,7 +90,7 @@
 | 1 | **device** | ArrayOf(Enum[Blinky-Device]){1..*} | 1 | Device properties to return |
 | 2 | **display** | Blinky-Display | 1 |  |
 
-**_Type: AP-Specifiers (Map{1..*})_**
+**_Type: AP-Specifiers (Map)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
@@ -103,16 +104,16 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **device** | Blinky-Device | 1 |  |
+| 1 | **device** | Blinky-Device | 0..1 |  |
 
-**_Type: Blinky-Device (Map)_**
+**_Type: Blinky-Device (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **product** | String | 1 | Descriptive name of actuator device |
-| 2 | **resolution** | String | 1 | width x height |
+| 1 | **product** | String | 0..1 | Descriptive name of actuator device |
+| 2 | **resolution** | String | 0..1 | width x height |
 
-**_Type: Blinky-Display (Map)_**
+**_Type: Blinky-Display (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
