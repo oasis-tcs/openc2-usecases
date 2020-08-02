@@ -43,15 +43,25 @@ We specified two profile-specific targets (device and display) above.  Define th
 the desired response format for these commands in AP-Results.
 
 After defining the device-specific content, the blinky profile schema should look like
-[blinky IDL](blinky/blinky.jidl). This schema, in text or table ([blinky MD](blinky/blinky.md)) format,
+[blinky.jidl](blinky/blinky.jidl). This schema, in text or table ([blinky.md](blinky/blinky.md)) format,
 forms the basis for the actuator profile document.
 
-Producers and Consumer devices would use a machine-readable complete schema
+#### 5. Generate device schemas
+Producers and Consumer devices use a machine-readable complete schema
 [blinky_resolved.jadn](blinky/blinky_resolved.jadn) which has all referenced definitions copied from their source documents.
 Example commands and responses can be validated using complete schema in either JADN or JSON Schema
 ([blinky_resolved.json](blinky.json)) format. If a "query features schema" command is added to the language spec,
 Producers will be able to retrieve an actuator's machine-readable schema to determine its capabilities. The resolved
 schemas for most actuators are expected to include elements from multiple profiles.
+
+The resolved schemas can be created by hand from the actuator profile and language spec schemas, or generated using
+JADN processing tools.
+
+#### 6. Create test data
+Create four directories "Bad-command", "Bad-response", "Good-command", "Good-response" in the directory containing
+the resolved schema. Create test commands and responses in these locations based on whether the schema should detect
+them as valid or invalid. Using a standard directory structure allows a test harness to locate and validate
+test data for multiple profiles.
 
 **Note on data formats:**
 
@@ -63,7 +73,8 @@ section and align the examples with the JSON Pointer standard (RFC 6901) and the
 
 Summary:
 1) Property names do not contain special characters such as colon or slash
-2) JSON Pointers ("abc/def") refer to namespaced properties (as in the results returned from query features pairs)
+2) JSON Pointers (strings that contain property names separated by slashes, e.g., "abc/def/gx")
+refer to namespaced properties (as in the results returned from query features pairs)
 3) There is no distinction between propery names for types defined in standard or custom profiles.
 Properties named any or all of "blinky", "x-blinky", "led", "src", "dst", etc. may refer to types defined in
 "http://oasis-open.org/openc2/custom/blinky/v1.0".
