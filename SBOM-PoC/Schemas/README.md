@@ -65,6 +65,10 @@ test data for multiple profiles.
 
 #### 7. Validate test data
 The Python script [test-poc.py](test-poc.py) will validate test data against the schema for all projects.
+Before running the script, you should obtain a GitHub
+[personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+and save it in environment variable "GitHubToken".  (Or if you have already created a token, modify the script
+to use it.) Using a token significantly increases the GitHub request rate limit.
 
 **Note on data formats:**
 
