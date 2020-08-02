@@ -63,6 +63,9 @@ the resolved schema. Create test commands and responses in these locations based
 them as valid or invalid. Using a standard directory structure allows a test harness to locate and validate
 test data for multiple profiles.
 
+#### 7. Validate test data
+The Python script [test-poc.py](test-poc.py) will validate test data against the schema for all projects.
+
 **Note on data formats:**
 
 The January Plugfest used [Test Data](https://github.com/oasis-open/openc2-custom-aps/tree/master/Test) extrapolated
