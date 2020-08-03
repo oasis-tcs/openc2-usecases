@@ -1,0 +1,8 @@
+{
+  "status": 200,
+  "results": {
+    "pairs": {
+      "query": ["features", "blinky/device"]
+    }
+  }
+}
