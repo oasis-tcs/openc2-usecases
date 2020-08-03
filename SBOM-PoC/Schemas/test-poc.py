@@ -54,8 +54,8 @@ def run_test(tdir):                     # Check correct validation of good and b
                 files = {e['name']: e['download_url'] for e in fdir if e['type'] == 'file'}
                 for n, (fn, url) in enumerate(files.items(), start=1):
                     print(f'{n:>4} {fn:<50}', end='')
-                    instance = {'openc2_' + cr: gh_get(url)}    # Read message, label it as command/response for schema
                     try:
+                        instance = {'openc2_' + cr: gh_get(url)}  # Read message, wrap it as command or response
                         validate(instance, json_schema, format_checker=draft7_format_checker)
                         tcount[pdir] += 1
                         ecount[pdir] += 1 if gb == 'Bad' else 0
