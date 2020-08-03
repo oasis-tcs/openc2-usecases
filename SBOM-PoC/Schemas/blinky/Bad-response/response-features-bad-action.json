@@ -1,0 +1,10 @@
+{
+  "status": 200,
+  "results": {
+    "pairs": {
+      "query": ["features", "blinky/device"],
+      "set": ["blinky/display"],
+      "deny": ["ipv4_connection"]
+    }
+  }
+}

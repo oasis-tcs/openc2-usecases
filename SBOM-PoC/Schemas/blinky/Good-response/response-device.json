@@ -1,0 +1,11 @@
+{
+  "status": 200,
+  "results": {
+    "blinky": {
+      "device": {
+        "product": "BlinkMaster 2000",
+        "resolution": "128x64"
+      }
+    }
+  }
+}
