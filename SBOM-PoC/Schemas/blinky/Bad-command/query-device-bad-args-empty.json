@@ -1,0 +1,9 @@
+{
+  "action": "query",
+  "target": {
+    "blinky": {
+      "device": ["product", "resolution"]
+    }
+  },
+  "args": {}
+}
