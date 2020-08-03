@@ -30,12 +30,13 @@ Args = Map{1..*}
 2000 blinky/          AP-Args optional                 // Profile-defined command arguments
 
 Actuator = Choice
-2000 blinky/          AP-Specifiers                    // Profile-defined command arguments
+2000 blinky/          AP-Specifiers                    // Profile-defined actuator specifiers
 
 Results = Map{1..*}                                    // Response Results
    1 versions         ls:Version unique [0..10]        // List of OpenC2 language versions supported by this Actuator
    2 profiles         ls:Namespace unique [0..*]       // List of profiles supported by this Actuator
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
+   4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
 2000 blinky/          AP-Results optional              // Profile-defined response results
 
@@ -54,9 +55,9 @@ AP-Target = Choice                                     // Profile-defined target
    1 device           ArrayOf(Enum[Blinky-Device]){1..*}// Device properties to return
    2 display          Blinky-Display
 
-AP-Specifiers = Map                                    // Profile-defined actuator specifiers
-
 AP-Args = Map{1..*}                                    // Profile-defined command arguments
+
+AP-Specifiers = Map                                    // Profile-defined actuator specifiers
 
 AP-Results = Map{1..*}                                 // Profile-defined response results
    1 device           Blinky-Device optional

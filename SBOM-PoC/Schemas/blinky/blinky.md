@@ -51,7 +51,7 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 2000 | **blinky/** | AP-Specifiers | 1 | Profile-defined command arguments |
+| 2000 | **blinky/** | AP-Specifiers | 1 | Profile-defined actuator specifiers |
 
 **_Type: Results (Map{1..*})_**
 
@@ -60,6 +60,7 @@
 | 1 | **versions** | ls:Version unique | 0..10 | List of OpenC2 language versions supported by this Actuator |
 | 2 | **profiles** | ls:Namespace unique | 0..* | List of profiles supported by this Actuator |
 | 3 | **pairs** | Action-Targets | 0..1 | List of targets applicable to each supported Action |
+| 4 | **rate_limit** | Number{0.0..*} | 0..1 | Maximum number of requests per minute supported by design or policy |
 | 5 | **args** | Enumerated(Enum[Args]) | 0..* | List of supported Command Arguments |
 | 2000 | **blinky/** | AP-Results | 0..1 | Profile-defined response results |
 
@@ -90,12 +91,12 @@
 | 1 | **device** | ArrayOf(Enum[Blinky-Device]){1..*} | 1 | Device properties to return |
 | 2 | **display** | Blinky-Display | 1 |  |
 
-**_Type: AP-Specifiers (Map)_**
+**_Type: AP-Args (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 
-**_Type: AP-Args (Map{1..*})_**
+**_Type: AP-Specifiers (Map)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |

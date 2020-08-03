@@ -19,19 +19,25 @@ def gh_get(url):                        # Read contents from GitHub API
     return entry
 
 
-def find_tests(api_url, testdirs):      # Search for GitHub folders containing schemas and test data
-    dir = gh_get(api_url)
-    dirs =  {e['name']: e['url'] for e in dir if e['type'] == 'dir'}
-    if 'Good-command' in dirs:          # Folder name indicates test data
-        files = {e['name']: e['download_url'] for e in dir if e['type'] == 'file'}
-        json_url = [u for f, u in files.items() if os.path.splitext(f)[1] == '.json']
-        if len(json_url) == 1:          # Must have exactly one .json file
-            testdirs.append({'dirs': dirs, 'files': files, 'schema': json_url[0]})
+def find_tests(api_url):    # Search for GitHub folders containing schemas and test data
+
+    def _ft(url, tests):        # Internal recursive search
+        gdir = gh_get(url)
+        dirs = {e['name']: e['url'] for e in gdir if e['type'] == 'dir'}
+        if 'Good-command' in dirs:      # Folder name indicates test data
+            files = {e['name']: e['download_url'] for e in gdir if e['type'] == 'file'}
+            json_url = [u for f, u in files.items() if os.path.splitext(f)[1] == '.json']
+            if len(json_url) == 1:      # Must have exactly one .json file
+                tests.append({'dirs': dirs, 'files': files, 'schema': json_url[0]})
+            else:
+                print('Did not find json schema in dir', gdir['name'])
         else:
-            print('Did not find json schema in dir', dir['name'])
-    else:
-        for child in dirs.values():
-            find_tests(child, testdirs)
+            for child in dirs.values():
+                _ft(child, tests)
+
+    test_list = []              # Initialize, build test list, and return it
+    _ft(api_url, test_list)
+    return test_list
 
 
 def run_test(tdir):                     # Check correct validation of good and bad commands and responses
@@ -49,12 +55,13 @@ def run_test(tdir):                     # Check correct validation of good and b
                 for n, (fn, url) in enumerate(files.items(), start=1):
                     print(f'{n:>4} {fn:<50}', end='')
                     instance = {'openc2_' + cr: gh_get(url)}    # Read message, label it as command/response for schema
-                    tcount[pdir] += 1
                     try:
                         validate(instance, json_schema, format_checker=draft7_format_checker)
+                        tcount[pdir] += 1
                         ecount[pdir] += 1 if gb == 'Bad' else 0
                         print()
                     except ValidationError as e:
+                        tcount[pdir] += 1
                         ecount[pdir] += 1 if gb == 'Good' else 0
                         print(f' Fail: {e.message}')
                     except json.decoder.JSONDecodeError as e:
@@ -66,7 +73,5 @@ def run_test(tdir):                     # Check correct validation of good and b
 
 print(f'Test Data: {base}')
 auth = {'Authorization': 'token ' + os.environ['GitHubToken']}
-tests = []
-find_tests(base, tests)
-for test in tests:
+for test in find_tests(base):
     run_test(test)

@@ -132,7 +132,7 @@
       "properties": {
         "blinky": {
           "$ref": "#/definitions/AP-Specifiers",
-          "description": "Profile-defined command arguments"
+          "description": "Profile-defined actuator specifiers"
         }
       }
     },
@@ -168,6 +168,10 @@
         "pairs": {
           "$ref": "#/definitions/Action-Targets",
           "description": "List of targets applicable to each supported Action"
+        },
+        "rate_limit": {
+          "type": "number",
+          "description": "Maximum number of requests per minute supported by design or policy"
         },
         "args": {
           "type": "array",
@@ -288,20 +292,20 @@
         }
       }
     },
-    "AP-Specifiers": {
-      "title": "AP Specifiers",
-      "type": "object",
-      "description": "Profile-defined actuator specifiers",
-      "additionalProperties": false,
-      "maxProperties": 100,
-      "properties": {}
-    },
     "AP-Args": {
       "title": "AP Args",
       "type": "object",
       "description": "Profile-defined command arguments",
       "additionalProperties": false,
       "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {}
+    },
+    "AP-Specifiers": {
+      "title": "AP Specifiers",
+      "type": "object",
+      "description": "Profile-defined actuator specifiers",
+      "additionalProperties": false,
       "maxProperties": 100,
       "properties": {}
     },

@@ -38,13 +38,14 @@
   ]],
 
   ["Actuator", "Choice", [], "", [
-    [2000, "blinky", "AP-Specifiers", ["<"], "Profile-defined command arguments"]
+    [2000, "blinky", "AP-Specifiers", ["<"], "Profile-defined actuator specifiers"]
   ]],
 
   ["Results", "Map", ["{1"], "Response Results", [
     [1, "versions", "Version", ["q", "[0", "]10"], "List of OpenC2 language versions supported by this Actuator"],
     [2, "profiles", "Namespace", ["q", "[0", "]0"], "List of profiles supported by this Actuator"],
     [3, "pairs", "Action-Targets", ["[0"], "List of targets applicable to each supported Action"],
+    [4, "rate_limit", "Number", ["y0.0", "[0"], "Maximum number of requests per minute supported by design or policy"],
     [5, "args", "Enumerated", ["#Args", "[0", "]0"], "List of supported Command Arguments"],
     [2000, "blinky", "AP-Results", ["[0", "<"], "Profile-defined response results"]
   ]],
@@ -68,9 +69,9 @@
     [2, "display", "Blinky-Display", [], ""]
   ]],
 
-  ["AP-Specifiers", "Map", [], "Profile-defined actuator specifiers", []],
-
   ["AP-Args", "Map", ["{1"], "Profile-defined command arguments", []],
+
+  ["AP-Specifiers", "Map", [], "Profile-defined actuator specifiers", []],
 
   ["AP-Results", "Map", ["{1"], "Profile-defined response results", [
     [1, "device", "Blinky-Device", ["[0"], ""]
