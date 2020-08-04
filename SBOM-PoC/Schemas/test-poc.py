@@ -65,7 +65,7 @@ def run_test(tdir):                     # Check correct validation of good and b
                         ecount[pdir] += 1 if gb == 'Good' else 0
                         print(f' Fail: {e.message}')
                     except json.decoder.JSONDecodeError as e:
-                        print(f' Bad JSON: {e.msg} "{e.doc}" |')
+                        print(f' Bad JSON: {e.msg} "{e.doc}"')
             else:
                 print(pdir, 'No tests')
     print('\nValidation Errors:', {k: str(dict(ecount)[k]) + '/' + str(dict(tcount)[k]) for k in tcount})

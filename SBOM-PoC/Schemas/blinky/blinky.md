@@ -68,17 +68,17 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 3 | **query** | Targets-query unique | 0..10 |  |
-| 15 | **set** | Targets-set unique | 0..10 |  |
+| 3 | **query** | Target-query unique | 1..* |  |
+| 15 | **set** | Target-set unique | 1..* |  |
 
-**_Type: Targets-query (Enumerated)_**
+**_Type: Target-query (Enumerated)_**
 
 | ID | Name | Description |
 | ---: | :--- | :--- |
 | 1 | **features** |  |
 | 2 | **blinky/device** |  |
 
-**_Type: Targets-set (Enumerated)_**
+**_Type: Target-set (Enumerated)_**
 
 | ID | Name | Description |
 | ---: | :--- | :--- |

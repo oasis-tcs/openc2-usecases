@@ -32,15 +32,15 @@ Additional actions and targets may be defined later.
 #### 3. Create the blinky schema from the Profile Template
 
 * Copy the Actuator Profile
-[Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template_gen.jidl)
-to a new schema file ['blinky.jidl'](blinky/blinky.jidl).
+[Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template.jidl)
+to the project schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Delete all of the actions, targets, and args that are not used.
 * Replace "xyz" with the property name "blinky" everywhere it appears in the template.
-* Customize the Action-Target list to reflect the commands from step 2.
+* Customize the Action-Target list to reflect the commands from step 2. ([Show](images/ap-template-pairs.jpg))
 
 #### 4. Define profile-specific types
 We specified two profile-specific targets (device and display) above.  Define their contents in AP-Target.  Define
-the desired response format for these commands in AP-Results.
+the desired response format for these commands in AP-Results. ([Show](images/ap-template-device.jpg))
 
 After defining the device-specific content, the blinky profile schema should look like
 [blinky.jidl](blinky/blinky.jidl). This schema, in text or table ([blinky.md](blinky/blinky.md)) format,

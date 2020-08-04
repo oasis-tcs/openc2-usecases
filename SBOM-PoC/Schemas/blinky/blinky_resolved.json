@@ -207,6 +207,10 @@
       "type": "object",
       "description": "Map of each action supported by this actuator to the list of targets applicable to that action.",
       "additionalProperties": false,
+      "required": [
+        "query",
+        "set"
+      ],
       "minProperties": 1,
       "maxProperties": 100,
       "properties": {
@@ -215,9 +219,8 @@
           "description": "",
           "uniqueItems": true,
           "minItems": 1,
-          "maxItems": 10,
           "items": {
-            "$ref": "#/definitions/Targets-query",
+            "$ref": "#/definitions/Target-query",
             "description": ""
           }
         },
@@ -226,16 +229,15 @@
           "description": "",
           "uniqueItems": true,
           "minItems": 1,
-          "maxItems": 10,
           "items": {
-            "$ref": "#/definitions/Targets-set",
+            "$ref": "#/definitions/Target-set",
             "description": ""
           }
         }
       }
     },
-    "Targets-query": {
-      "title": "Targets query",
+    "Target-query": {
+      "title": "Target query",
       "type": "string",
       "description": "All targets supported by this actuator's query command",
       "oneOf": [
@@ -249,8 +251,8 @@
         }
       ]
     },
-    "Targets-set": {
-      "title": "Targets set",
+    "Target-set": {
+      "title": "Target set",
       "type": "string",
       "description": "All targets supported by this actuator's set command",
       "oneOf": [

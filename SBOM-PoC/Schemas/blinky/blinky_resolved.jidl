@@ -40,14 +40,14 @@ Results = Map{1..*}                                    // Response Results
 2000 blinky/          AP-Results optional              // Profile-defined response results
 
 Action-Targets = Map{1..*}                             // Map of each action supported by this actuator to the list of targets applicable to that action.
-   3 query            Targets-query unique [0..10]
-  15 set              Targets-set unique [0..10]
+   3 query            Target-query unique [1..*]
+  15 set              Target-set unique [1..*]
 
-Targets-query = Enumerated                             // All targets supported by this actuator's query command
+Target-query = Enumerated                              // All targets supported by this actuator's query command
    1 features
    2 blinky/device
 
-Targets-set = Enumerated                               // All targets supported by this actuator's set command
+Target-set = Enumerated                                // All targets supported by this actuator's set command
    1 blinky/display
 
 AP-Target = Choice                                     // Profile-defined targets
