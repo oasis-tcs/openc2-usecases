@@ -51,7 +51,7 @@ Target-set = Enumerated                                // All targets supported 
    1 blinky/display
 
 AP-Target = Choice                                     // Profile-defined targets
-   1 device           ArrayOf(Enum[Blinky-Device]){1..*}// Device properties to return
+   1 device           ArrayOf(Enum[Blinky-Device]){1..*} unique// Device properties to return
    2 display          Blinky-Display
 
 AP-Args = Map{1..*}                                    // Profile-defined command arguments

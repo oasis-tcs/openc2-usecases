@@ -273,6 +273,7 @@
         "device": {
           "type": "array",
           "description": "Device properties to return",
+          "uniqueItems": true,
           "minItems": 1,
           "maxItems": 100,
           "items": {

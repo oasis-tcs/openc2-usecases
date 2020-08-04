@@ -88,7 +88,7 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **device** | ArrayOf(Enum[Blinky-Device]){1..*} | 1 | Device properties to return |
+| 1 | **device** | ArrayOf(Enum[Blinky-Device]){1..*} unique | 1 | Device properties to return |
 | 2 | **display** | Blinky-Display | 1 |  |
 
 **_Type: AP-Args (Map{1..*})_**
