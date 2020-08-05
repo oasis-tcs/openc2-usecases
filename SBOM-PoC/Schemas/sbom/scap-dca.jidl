@@ -1,0 +1,101 @@
+       title: "SCAP v2 Data Collection Architecture Prototype"
+      module: "http://oasis-open.org/openc2/custom/scap/v0.1"
+
+ReportRequest = Record
+   1 task       AssessmentInstructions
+
+QueryRequest = Record
+   1 task       AssessmentInstructions
+
+CancelRequest = Record
+   1 id         RequestId
+
+RequestAcknowledgement = Record
+   1 accept     RequestAccept
+   2 err        RequestError
+
+ReportResultsEvent = Record
+   1 requestId  RequestId
+   2 results    Results
+
+QueryResultsEvent = Record
+   1 requestId  RequestId
+   2 results    Results
+
+Results = Choice                        // Are these separate or returned together?
+   1 compliance ComplianceResults       // evaluation of whether conditions are met
+   2 state      StateResults            // observation
+
+ManagerResponseAccept = Record
+   1 id         TransactionId
+
+ManagerResponseReject = Record
+   1 reason     RejectCode
+   2 info       String
+
+RejectCode = Enumerated
+  34 Unknown Asset
+  55 Unknown Method
+
+AssessmentInstructions = Record                         // (From Architecture Doc)
+   1 request_id                 RequestId               // Assigned by Manager / Empty when submitted?
+   2 targeting_expression       TargetingExpression     // filters limit scope of assessment
+   3 time_bounds                TimeBounds
+   4 collection_methods         ArrayOf(CollectionTriple) optional
+   5 result_format              ResultFormatAndFilter optional
+   6 collection_parameters      CollectionParameters optional   // fpr repo-stored results
+
+TargetingExpression = Record
+   1 assets                 ArrayOf(AssetId)
+   2 orgs                   ArrayOf(OrganizationalUnit)
+   3 software               ArrayOf(SoftwareIdentifier)
+   4 ...                                                    // other characteristics
+
+TimeBounds = Record
+   1 oldest                 Duration optional       // threshold for cached results
+   2 latest_acceptable      Duration optional       // result must be returned even if incomplete
+   3 refresh                Boolean optional        // attempt to refresh cache
+
+CollectionTriple = Array
+   1 pce                    PCEId
+   2 check_system           CheckSystem
+   3 check_type             CheckType
+
+CheckSystem = Enumerated        // Specifies Collector/PCX Capabilities
+   1 sys1
+   2 sys2
+
+CheckType = Enumerated          // Specifies Collector/PCX Capabilities
+   1 type1
+   2 type2
+
+BoundAssetList = Record
+   1 collector_id           CollectorId
+   2 assets                 ArrayOf(AssetId)
+
+CollectorScope = Record
+   1 collector_id           CollectorId
+   2 engines                ArrayOf(PCEId)
+
+TargetingInstruction = Record
+   1 assets                 ArrayOf(AssetId)
+
+CollectionMethod = Record
+
+ResultsFormat = Enumerated      // Compliance information?
+   1 format1
+   2 format2
+
+CollectionFormat = Enumerated   // State information?
+   1 format1
+   2 format2
+
+RequestId = String
+
+NodeId = String
+
+AssetId = String
+
+Duration = Integer      // seconds, or ISO 8601 string, or ?
+
+PCEId = String
