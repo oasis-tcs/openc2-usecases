@@ -50,7 +50,7 @@
     [2000, "blinky", "AP-Results", ["[0", "<"], "Profile-defined response results"]
   ]],
 
-  ["Action-Targets", "Map", ["{1"], "Map of each action supported by this actuator to the list of targets applicable to that action.", [
+  ["Action-Targets", "Map", [], "Map of each action supported by this actuator to the list of targets applicable to that action.", [
     [3, "query", "Target-query", ["q", "]0"], ""],
     [15, "set", "Target-set", ["q", "]0"], ""]
   ]],

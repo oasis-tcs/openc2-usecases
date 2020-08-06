@@ -64,7 +64,7 @@
 | 5 | **args** | Enumerated(Enum[Args]) | 0..* | List of supported Command Arguments |
 | 2000 | **blinky/** | AP-Results | 0..1 | Profile-defined response results |
 
-**_Type: Action-Targets (Map{1..*})_**
+**_Type: Action-Targets (Map)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |

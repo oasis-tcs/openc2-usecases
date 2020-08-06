@@ -211,7 +211,6 @@
         "query",
         "set"
       ],
-      "minProperties": 1,
       "maxProperties": 100,
       "properties": {
         "query": {
