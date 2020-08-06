@@ -11,11 +11,11 @@ profile, but it is intended to support a range of LED matrix displays including 
 
 * **Project Name:** blinky
 
-#### 1. Select Namespace and Property Name
+#### 1. Select Property Name and Namespace
+The profile's property name is used in the OpenC2 actuator, target, args, and results lists.
+The namespace allows this schema to be referenced from other documents.
 The mechanism used to reference definitions from other documents is described in the OpenC2
 [Namespace Registry](https://github.com/oasis-open/openc2-custom-aps/blob/master/namespace-registry.md).
-The namespace allows this profile to be referenced by other documents, and for testing it needs a
-property name used in the OpenC2 actuator, target, args, and results lists.
 
 * **Property Name:** blinky
 * **Namespace:** http://oasis-open.org/openc2/custom/blinky/v1.0
@@ -33,7 +33,7 @@ Additional actions and targets may be defined later.
 
 * Copy the Actuator Profile
 [Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template.jidl)
-to the project schema file ['blinky.jidl'](blinky/blinky.jidl).
+to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Delete all of the actions, targets, and args that are not used.
 * Replace "xyz" with the property name "blinky" everywhere it appears in the template.
 * Customize the Action-Target list to reflect the commands from step 2. ([Show](images/ap-template-pairs.jpg))
@@ -48,27 +48,28 @@ forms the basis for the actuator profile document.
 
 #### 5. Generate device schemas
 Producers and Consumer devices use a machine-readable complete schema
-[blinky_resolved.jadn](blinky/blinky_resolved.jadn) which has all referenced definitions copied from their source documents.
-Example commands and responses can be validated using complete schema in either JADN or JSON Schema
-([blinky_resolved.json](blinky.json)) format. If a "query features schema" command is added to the language spec,
-Producers will be able to retrieve an actuator's machine-readable schema to determine its capabilities. The resolved
-schemas for most actuators are expected to include elements from multiple profiles.
+[blinky_resolved.jadn](blinky/blinky_resolved.jadn) which includes referenced definitions copied from their source documents.
+Example commands and responses can be validated using the resolved schema in either JADN or JSON Schema
+([blinky_resolved.json](blinky.json)) format.
+The resolved schema is generated using JADN software, or it can be created manually by copying definitions
+from the actuator profile and language spec schemas.
 
-The resolved schemas can be created by hand from the actuator profile and language spec schemas, or generated using
-JADN processing tools.
+Most actuators are expected to support multiple profiles. The "Actuator" type in the resolved schema contains
+the list of property names for supported profiles; this list is also returned by the "query features profiles"
+command. If a "query features schema" command is added to the language spec,
+Producers will be able to retrieve an actuator's resolved schema to determine its capabilities.
 
 #### 6. Create test data
-Create four directories "Bad-command", "Bad-response", "Good-command", "Good-response" in the directory containing
-the resolved schema. Create test commands and responses in these locations based on whether the schema should detect
-them as valid or invalid. Using a standard directory structure allows a test harness to locate and validate
-test data for multiple profiles.
+Create four directories "Good-command", "Good-response", "Bad-command", and "Bad-response" in the directory
+containing the resolved schema. Create good and invalid test messages in these locations.
+Using a standard directory structure allows testing software to locate and validate test data for multiple profiles.
 
 #### 7. Validate test data
 The Python script [test-poc.py](test-poc.py) will validate test data against the schema for all projects.
-Before running the script, you should obtain a GitHub
+Before running the script, obtain a GitHub
 [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 and save it in environment variable "GitHubToken".  (Or if you have already created a token, modify the script
-to use it.) Using a token significantly increases the GitHub request rate limit.
+to use it.) Without a token the GitHub request rate is severely limited.
 
 **Note on data formats:**
 
