@@ -8,6 +8,8 @@
 - [5. Participants](#5---participants)
 
 # 1 - Intro
+![Plugfest](./Plugfest.png)
+
 The Software Bill Of Materials (SBOM) Proof of Concept (PoC)
 sets out to prove several concepts e.g.
 - SBOMs
