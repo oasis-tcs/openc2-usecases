@@ -17,15 +17,19 @@ The namespace allows this schema to be referenced from other documents.
 The mechanism used to reference definitions from other documents is described in the OpenC2
 [Namespace Registry](https://github.com/oasis-open/openc2-custom-aps/blob/master/namespace-registry.md).
 
-* **Property Name:** blinky
+Note that the property name is not tied to the name of the project or the profile. Although
+we are calling this the "blinky" profile, we will use a shorter property name "led" to refer to that profile
+in commands and responses.
+
+* **Property Name:** led
 * **Namespace:** http://oasis-open.org/openc2/custom/blinky/v1.0
 
 #### 2. Select Actions and Targets
 Define an initial set of commands that accomplish the goals of the profile.
 
 * query features: required by OpenC2
-* query blinky/device: We want to know something about the physical or virtual actuator.
-* set blinky/display: We want the actuator to display something.
+* query led/device: We want to know something about the physical or virtual actuator.
+* set led/display: We want the actuator to display something.
 
 Additional actions and targets may be defined later.
 
@@ -35,7 +39,7 @@ Additional actions and targets may be defined later.
 [Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template.jidl)
 to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Delete all of the actions, targets, and args that are not used.
-* Replace "xyz" with the property name "blinky" everywhere it appears in the template.
+* Replace "xyz" with the property name "led" everywhere it appears in the template.
 * Customize the Action-Target list to reflect the commands from step 2. ([Show](images/ap-template-pairs.jpg))
 
 #### 4. Define profile-specific types

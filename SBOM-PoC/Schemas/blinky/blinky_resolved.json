@@ -96,8 +96,8 @@
           "$ref": "#/definitions/Features",
           "description": "A set of items used with the query Action to determine an Actuator's capabilities."
         },
-        "blinky": {
-          "$ref": "#/definitions/BLINKY-Target",
+        "led": {
+          "$ref": "#/definitions/LED-Target",
           "description": "Profile-defined targets"
         }
       }
@@ -117,8 +117,8 @@
           "$ref": "#/definitions/Date-Time",
           "description": "The specific date/time to terminate the Command"
         },
-        "blinky": {
-          "$ref": "#/definitions/BLINKY-Args",
+        "led": {
+          "$ref": "#/definitions/LED-Args",
           "description": "Profile-defined command arguments"
         }
       }
@@ -130,8 +130,8 @@
       "minProperties": 1,
       "maxProperties": 1,
       "properties": {
-        "blinky": {
-          "$ref": "#/definitions/BLINKY-Specifiers",
+        "led": {
+          "$ref": "#/definitions/LED-Specifiers",
           "description": "Actuator specifiers defined in this profile"
         }
       }
@@ -191,14 +191,14 @@
                 "description": "The specific date/time to terminate the Command"
               },
               {
-                "const": "blinky",
+                "const": "led",
                 "description": "Profile-defined command arguments"
               }
             ]
           }
         },
-        "blinky": {
-          "$ref": "#/definitions/BLINKY-Results",
+        "led": {
+          "$ref": "#/definitions/LED-Results",
           "description": "Profile-defined response results"
         }
       }
@@ -241,7 +241,7 @@
           "description": ""
         },
         {
-          "const": "blinky/device",
+          "const": "led/device",
           "description": ""
         }
       ]
@@ -262,13 +262,13 @@
       "description": "All targets supported by this actuator's set command",
       "oneOf": [
         {
-          "const": "blinky/display",
+          "const": "led/display",
           "description": ""
         }
       ]
     },
-    "BLINKY-Target": {
-      "title": "BLINKY Target",
+    "LED-Target": {
+      "title": "LED Target",
       "type": "object",
       "description": "Profile-defined targets",
       "additionalProperties": false,
@@ -295,13 +295,13 @@
           }
         },
         "display": {
-          "$ref": "#/definitions/Blinky-Display",
+          "$ref": "#/definitions/Led-Display",
           "description": ""
         }
       }
     },
-    "BLINKY-Args": {
-      "title": "BLINKY Args",
+    "LED-Args": {
+      "title": "LED Args",
       "type": "object",
       "description": "Profile-defined command arguments",
       "additionalProperties": false,
@@ -309,16 +309,16 @@
       "maxProperties": 100,
       "properties": {}
     },
-    "BLINKY-Specifiers": {
-      "title": "BLINKY Specifiers",
+    "LED-Specifiers": {
+      "title": "LED Specifiers",
       "type": "object",
       "description": "Profile-defined actuator specifiers",
       "additionalProperties": false,
       "maxProperties": 100,
       "properties": {}
     },
-    "BLINKY-Results": {
-      "title": "BLINKY Results",
+    "LED-Results": {
+      "title": "LED Results",
       "type": "object",
       "description": "Profile-defined response results",
       "additionalProperties": false,
@@ -326,13 +326,13 @@
       "maxProperties": 100,
       "properties": {
         "device": {
-          "$ref": "#/definitions/Blinky-Device",
+          "$ref": "#/definitions/Led-Device",
           "description": ""
         }
       }
     },
-    "Blinky-Device": {
-      "title": "Blinky Device",
+    "Led-Device": {
+      "title": "Led Device",
       "type": "object",
       "description": "Types of device parameters to return",
       "additionalProperties": false,
@@ -351,8 +351,8 @@
         }
       }
     },
-    "Blinky-Display": {
-      "title": "Blinky Display",
+    "Led-Display": {
+      "title": "Led Display",
       "type": "object",
       "description": "Types of patterns to display",
       "additionalProperties": false,

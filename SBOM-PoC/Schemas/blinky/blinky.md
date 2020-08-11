@@ -37,7 +37,7 @@
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 9 | **features** | ls:Features | 1 | A set of items used with the query Action to determine an Actuator's capabilities. |
-| 2000 | **blinky/** | BLINKY-Target | 1 | Profile-defined targets |
+| 2000 | **led/** | LED-Target | 1 | Profile-defined targets |
 
 **_Type: Args (Map{1..*})_**
 
@@ -45,13 +45,13 @@
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **start_time** | ls:Date-Time | 0..1 | The specific date/time to initiate the Command |
 | 2 | **stop_time** | ls:Date-Time | 0..1 | The specific date/time to terminate the Command |
-| 2000 | **blinky/** | BLINKY-Args | 0..1 | Profile-defined command arguments |
+| 2000 | **led/** | LED-Args | 0..1 | Profile-defined command arguments |
 
 **_Type: Actuator (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 2000 | **blinky/** | BLINKY-Specifiers | 1 | Actuator specifiers defined in this profile |
+| 2000 | **led/** | LED-Specifiers | 1 | Actuator specifiers defined in this profile |
 
 **_Type: Results (Map{1..*})_**
 
@@ -62,7 +62,7 @@
 | 3 | **pairs** | Action-Targets | 0..1 | List of targets applicable to each supported Action |
 | 4 | **rate_limit** | Number{0.0..*} | 0..1 | Maximum number of requests per minute supported by design or policy |
 | 5 | **args** | Enumerated(Enum[Args]) | 0..* | List of supported Command Arguments |
-| 2000 | **blinky/** | BLINKY-Results | 0..1 | Profile-defined response results |
+| 2000 | **led/** | LED-Results | 0..1 | Profile-defined response results |
 
 **_Type: Action-Targets (Map)_**
 
@@ -76,7 +76,7 @@
 | ID | Name | Description |
 | ---: | :--- | :--- |
 | 1 | **features** |  |
-| 2 | **blinky/device** |  |
+| 2 | **led/device** |  |
 
 
 | Type Name | Type Definition | Description |
@@ -87,39 +87,39 @@
 
 | ID | Name | Description |
 | ---: | :--- | :--- |
-| 1 | **blinky/display** |  |
+| 1 | **led/display** |  |
 
-**_Type: BLINKY-Target (Choice)_**
-
-| ID | Name | Type | # | Description |
-| ---: | :--- | :--- | ---: | :--- |
-| 1 | **device** | ArrayOf(Enum[Blinky-Device]){1..*} unique | 1 | Device properties to return |
-| 2 | **display** | Blinky-Display | 1 |  |
-
-**_Type: BLINKY-Args (Map{1..*})_**
+**_Type: LED-Target (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
+| 1 | **device** | ArrayOf(Enum[Led-Device]){1..*} unique | 1 | Device properties to return |
+| 2 | **display** | Led-Display | 1 |  |
 
-**_Type: BLINKY-Specifiers (Map)_**
+**_Type: LED-Args (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 
-**_Type: BLINKY-Results (Map{1..*})_**
+**_Type: LED-Specifiers (Map)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **device** | Blinky-Device | 0..1 |  |
 
-**_Type: Blinky-Device (Map{1..*})_**
+**_Type: LED-Results (Map{1..*})_**
+
+| ID | Name | Type | # | Description |
+| ---: | :--- | :--- | ---: | :--- |
+| 1 | **device** | Led-Device | 0..1 |  |
+
+**_Type: Led-Device (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **product** | String | 0..1 | Descriptive name of actuator device |
 | 2 | **resolution** | String | 0..1 | width x height |
 
-**_Type: Blinky-Display (Choice)_**
+**_Type: Led-Display (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
