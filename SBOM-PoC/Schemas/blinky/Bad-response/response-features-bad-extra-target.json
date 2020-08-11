@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "results": {
+    "pairs": {
+      "query": ["features", "email"],
+      "set": ["blinky/display", "blinky/device"]
+    }
+  }
+}

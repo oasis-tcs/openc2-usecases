@@ -22,15 +22,15 @@ Action = Enumerated
 
 Target = Choice
    9 features         ls:Features                      // A set of items used with the query Action to determine an Actuator's capabilities.
-2000 blinky/          AP-Target                        // Profile-defined targets
+2000 blinky/          BLINKY-Target                    // Profile-defined targets
 
 Args = Map{1..*}
    1 start_time       ls:Date-Time optional            // The specific date/time to initiate the Command
    2 stop_time        ls:Date-Time optional            // The specific date/time to terminate the Command
-2000 blinky/          AP-Args optional                 // Profile-defined command arguments
+2000 blinky/          BLINKY-Args optional             // Profile-defined command arguments
 
 Actuator = Choice
-2000 blinky/          AP-Specifiers                    // Profile-defined actuator specifiers
+2000 blinky/          BLINKY-Specifiers                // Actuator specifiers defined in this profile
 
 Results = Map{1..*}                                    // Response Results
    1 versions         ls:Version unique [0..10]        // List of OpenC2 language versions supported by this Actuator
@@ -38,7 +38,7 @@ Results = Map{1..*}                                    // Response Results
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
    4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-2000 blinky/          AP-Results optional              // Profile-defined response results
+2000 blinky/          BLINKY-Results optional          // Profile-defined response results
 
 Action-Targets = Map                                   // Map of each action supported by this actuator to the list of targets applicable to that action.
    3 query            Target-query unique [2..2]
@@ -53,15 +53,15 @@ Target-set-list = ArrayOf(Target-set){1..1} unique
 Target-set = Enumerated                                // All targets supported by this actuator's set command
    1 blinky/display
 
-AP-Target = Choice                                     // Profile-defined targets
+BLINKY-Target = Choice                                 // Profile-defined targets
    1 device           ArrayOf(Enum[Blinky-Device]){1..*} unique// Device properties to return
    2 display          Blinky-Display
 
-AP-Args = Map{1..*}                                    // Profile-defined command arguments
+BLINKY-Args = Map{1..*}                                // Profile-defined command arguments
 
-AP-Specifiers = Map                                    // Profile-defined actuator specifiers
+BLINKY-Specifiers = Map                                // Profile-defined actuator specifiers
 
-AP-Results = Map{1..*}                                 // Profile-defined response results
+BLINKY-Results = Map{1..*}                             // Profile-defined response results
    1 device           Blinky-Device optional
 
 Blinky-Device = Map{1..*}                              // Types of device parameters to return

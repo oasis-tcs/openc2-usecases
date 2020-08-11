@@ -37,7 +37,7 @@
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 9 | **features** | ls:Features | 1 | A set of items used with the query Action to determine an Actuator's capabilities. |
-| 2000 | **blinky/** | AP-Target | 1 | Profile-defined targets |
+| 2000 | **blinky/** | BLINKY-Target | 1 | Profile-defined targets |
 
 **_Type: Args (Map{1..*})_**
 
@@ -45,13 +45,13 @@
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **start_time** | ls:Date-Time | 0..1 | The specific date/time to initiate the Command |
 | 2 | **stop_time** | ls:Date-Time | 0..1 | The specific date/time to terminate the Command |
-| 2000 | **blinky/** | AP-Args | 0..1 | Profile-defined command arguments |
+| 2000 | **blinky/** | BLINKY-Args | 0..1 | Profile-defined command arguments |
 
 **_Type: Actuator (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 2000 | **blinky/** | AP-Specifiers | 1 | Profile-defined actuator specifiers |
+| 2000 | **blinky/** | BLINKY-Specifiers | 1 | Actuator specifiers defined in this profile |
 
 **_Type: Results (Map{1..*})_**
 
@@ -62,7 +62,7 @@
 | 3 | **pairs** | Action-Targets | 0..1 | List of targets applicable to each supported Action |
 | 4 | **rate_limit** | Number{0.0..*} | 0..1 | Maximum number of requests per minute supported by design or policy |
 | 5 | **args** | Enumerated(Enum[Args]) | 0..* | List of supported Command Arguments |
-| 2000 | **blinky/** | AP-Results | 0..1 | Profile-defined response results |
+| 2000 | **blinky/** | BLINKY-Results | 0..1 | Profile-defined response results |
 
 **_Type: Action-Targets (Map)_**
 
@@ -89,24 +89,24 @@
 | ---: | :--- | :--- |
 | 1 | **blinky/display** |  |
 
-**_Type: AP-Target (Choice)_**
+**_Type: BLINKY-Target (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **device** | ArrayOf(Enum[Blinky-Device]){1..*} unique | 1 | Device properties to return |
 | 2 | **display** | Blinky-Display | 1 |  |
 
-**_Type: AP-Args (Map{1..*})_**
+**_Type: BLINKY-Args (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 
-**_Type: AP-Specifiers (Map)_**
+**_Type: BLINKY-Specifiers (Map)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 
-**_Type: AP-Results (Map{1..*})_**
+**_Type: BLINKY-Results (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
