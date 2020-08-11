@@ -93,8 +93,8 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **device** | ArrayOf(Enum[Led-Device]){1..*} unique | 1 | Device properties to return |
-| 2 | **display** | Led-Display | 1 |  |
+| 1 | **device** | ArrayOf(Enum[Device]){1..*} unique | 1 | Device properties to return |
+| 2 | **display** | Display | 1 |  |
 
 **_Type: LED-Args (Map{1..*})_**
 
@@ -110,16 +110,16 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **device** | Led-Device | 0..1 |  |
+| 1 | **device** | Device | 0..1 |  |
 
-**_Type: Led-Device (Map{1..*})_**
+**_Type: Device (Map{1..*})_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **product** | String | 0..1 | Descriptive name of actuator device |
 | 2 | **resolution** | String | 0..1 | width x height |
 
-**_Type: Led-Display (Choice)_**
+**_Type: Display (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |

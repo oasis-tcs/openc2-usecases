@@ -53,21 +53,21 @@ Target-set = Enumerated                                // All targets supported 
    1 led/display
 
 LED-Target = Choice                                    // Profile-defined targets
-   1 device           ArrayOf(Enum[Led-Device]){1..*} unique// Device properties to return
-   2 display          Led-Display
+   1 device           ArrayOf(Enum[Device]){1..*} unique// Device properties to return
+   2 display          Display
 
 LED-Args = Map{1..*}                                   // Profile-defined command arguments
 
 LED-Specifiers = Map                                   // Profile-defined actuator specifiers
 
 LED-Results = Map{1..*}                                // Profile-defined response results
-   1 device           Led-Device optional
+   1 device           Device optional
 
-Led-Device = Map{1..*}                                 // Types of device parameters to return
+Device = Map{1..*}                                     // Types of device parameters to return
    1 product          String optional                  // Descriptive name of actuator device
    2 resolution       String optional                  // width x height
 
-Led-Display = Choice                                   // Types of patterns to display
+Display = Choice                                       // Types of patterns to display
    1 predefined       Canned-Displays                  // Pre-defined patterns to display
    2 image            Artifact                         // Still image file
    3 animation        Artifact                         // Moving image file

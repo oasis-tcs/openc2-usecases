@@ -295,7 +295,7 @@
           }
         },
         "display": {
-          "$ref": "#/definitions/Led-Display",
+          "$ref": "#/definitions/Display",
           "description": ""
         }
       }
@@ -326,13 +326,13 @@
       "maxProperties": 100,
       "properties": {
         "device": {
-          "$ref": "#/definitions/Led-Device",
+          "$ref": "#/definitions/Device",
           "description": ""
         }
       }
     },
-    "Led-Device": {
-      "title": "Led Device",
+    "Device": {
+      "title": "Device",
       "type": "object",
       "description": "Types of device parameters to return",
       "additionalProperties": false,
@@ -351,8 +351,8 @@
         }
       }
     },
-    "Led-Display": {
-      "title": "Led Display",
+    "Display": {
+      "title": "Display",
       "type": "object",
       "description": "Types of patterns to display",
       "additionalProperties": false,

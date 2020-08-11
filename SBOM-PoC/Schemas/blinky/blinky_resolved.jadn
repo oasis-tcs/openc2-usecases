@@ -67,8 +67,8 @@
   ]],
 
   ["LED-Target", "Choice", [], "Profile-defined targets", [
-    [1, "device", "ArrayOf", ["*#Led-Device", "{1", "q"], "Device properties to return"],
-    [2, "display", "Led-Display", [], ""]
+    [1, "device", "ArrayOf", ["*#Device", "{1", "q"], "Device properties to return"],
+    [2, "display", "Display", [], ""]
   ]],
 
   ["LED-Args", "Map", ["{1"], "Profile-defined command arguments", []],
@@ -76,15 +76,15 @@
   ["LED-Specifiers", "Map", [], "Profile-defined actuator specifiers", []],
 
   ["LED-Results", "Map", ["{1"], "Profile-defined response results", [
-    [1, "device", "Led-Device", ["[0"], ""]
+    [1, "device", "Device", ["[0"], ""]
   ]],
 
-  ["Led-Device", "Map", ["{1"], "Types of device parameters to return", [
+  ["Device", "Map", ["{1"], "Types of device parameters to return", [
     [1, "product", "String", ["[0"], "Descriptive name of actuator device"],
     [2, "resolution", "String", ["[0"], "width x height"]
   ]],
 
-  ["Led-Display", "Choice", [], "Types of patterns to display", [
+  ["Display", "Choice", [], "Types of patterns to display", [
     [1, "predefined", "Canned-Displays", [], "Pre-defined patterns to display"],
     [2, "image", "Artifact", [], "Still image file"],
     [3, "animation", "Artifact", [], "Moving image file"]
