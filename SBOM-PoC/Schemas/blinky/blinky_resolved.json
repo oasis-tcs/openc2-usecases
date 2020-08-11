@@ -97,7 +97,7 @@
           "description": "A set of items used with the query Action to determine an Actuator's capabilities."
         },
         "led": {
-          "$ref": "#/definitions/LED-Target",
+          "$ref": "#/definitions/AP-Target",
           "description": "Profile-defined targets"
         }
       }
@@ -118,7 +118,7 @@
           "description": "The specific date/time to terminate the Command"
         },
         "led": {
-          "$ref": "#/definitions/LED-Args",
+          "$ref": "#/definitions/AP-Args",
           "description": "Profile-defined command arguments"
         }
       }
@@ -131,7 +131,7 @@
       "maxProperties": 1,
       "properties": {
         "led": {
-          "$ref": "#/definitions/LED-Specifiers",
+          "$ref": "#/definitions/AP-Specifiers",
           "description": "Actuator specifiers defined in this profile"
         }
       }
@@ -198,7 +198,7 @@
           }
         },
         "led": {
-          "$ref": "#/definitions/LED-Results",
+          "$ref": "#/definitions/AP-Results",
           "description": "Profile-defined response results"
         }
       }
@@ -267,8 +267,8 @@
         }
       ]
     },
-    "LED-Target": {
-      "title": "LED Target",
+    "AP-Target": {
+      "title": "AP Target",
       "type": "object",
       "description": "Profile-defined targets",
       "additionalProperties": false,
@@ -300,8 +300,8 @@
         }
       }
     },
-    "LED-Args": {
-      "title": "LED Args",
+    "AP-Args": {
+      "title": "AP Args",
       "type": "object",
       "description": "Profile-defined command arguments",
       "additionalProperties": false,
@@ -309,16 +309,16 @@
       "maxProperties": 100,
       "properties": {}
     },
-    "LED-Specifiers": {
-      "title": "LED Specifiers",
+    "AP-Specifiers": {
+      "title": "AP Specifiers",
       "type": "object",
       "description": "Profile-defined actuator specifiers",
       "additionalProperties": false,
       "maxProperties": 100,
       "properties": {}
     },
-    "LED-Results": {
-      "title": "LED Results",
+    "AP-Results": {
+      "title": "AP Results",
       "type": "object",
       "description": "Profile-defined response results",
       "additionalProperties": false,

@@ -21,15 +21,15 @@ Action = Enumerated
 
 Target = Choice
    9 features         Features                         // A set of items used with the query Action to determine an Actuator's capabilities.
-2000 led/             LED-Target                       // Profile-defined targets
+2000 led/             AP-Target                        // Profile-defined targets
 
 Args = Map{1..*}
    1 start_time       Date-Time optional               // The specific date/time to initiate the Command
    2 stop_time        Date-Time optional               // The specific date/time to terminate the Command
-2000 led/             LED-Args optional                // Profile-defined command arguments
+2000 led/             AP-Args optional                 // Profile-defined command arguments
 
 Actuator = Choice
-2000 led/             LED-Specifiers                   // Actuator specifiers defined in this profile
+2000 led/             AP-Specifiers                    // Actuator specifiers defined in this profile
 
 Results = Map{1..*}                                    // Response Results
    1 versions         Version unique [0..10]           // List of OpenC2 language versions supported by this Actuator
@@ -37,7 +37,7 @@ Results = Map{1..*}                                    // Response Results
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
    4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-2000 led/             LED-Results optional             // Profile-defined response results
+2000 led/             AP-Results optional              // Profile-defined response results
 
 Action-Targets = Map                                   // Map of each action supported by this actuator to the list of targets applicable to that action.
    3 query            Target-query unique [2..2]
@@ -52,15 +52,15 @@ Target-set-list = ArrayOf(Target-set){1..1} unique
 Target-set = Enumerated                                // All targets supported by this actuator's set command
    1 led/display
 
-LED-Target = Choice                                    // Profile-defined targets
+AP-Target = Choice                                     // Profile-defined targets
    1 device           ArrayOf(Enum[Device]){1..*} unique// Device properties to return
    2 display          Display
 
-LED-Args = Map{1..*}                                   // Profile-defined command arguments
+AP-Args = Map{1..*}                                    // Profile-defined command arguments
 
-LED-Specifiers = Map                                   // Profile-defined actuator specifiers
+AP-Specifiers = Map                                    // Profile-defined actuator specifiers
 
-LED-Results = Map{1..*}                                // Profile-defined response results
+AP-Results = Map{1..*}                                 // Profile-defined response results
    1 device           Device optional
 
 Device = Map{1..*}                                     // Types of device parameters to return

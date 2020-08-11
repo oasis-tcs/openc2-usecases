@@ -1,5 +1,4 @@
 # OpenC2 v1.1 Plugfest Schemas
-
 The [Custom Actuator Profiles](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/README.md)
 document provides an overview of creating and using actuator profile schemas.
 This document illustrates creating a schema for a new actuator profile, using an OpenC2 controller for
@@ -43,13 +42,10 @@ to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Customize the Action-Target list to reflect the commands from step 2. ([Show](images/ap-template-pairs.jpg))
 
 #### 4. Define profile-specific types
-We specified two profile-specific targets (device and display) above.  Define their contents as fields of LED-Target.
-Define the desired response format for these commands as fields of LED-Results. ([Show](images/ap-template-device.jpg)).
-Note that the four top-level profile-specific types LED-Target, LED-Args, LED-Specifiers, and LED-Results are by convention
-named with the property name LED. There is no naming convention for profile-defined types below the top level; use
-names that are descriptive with or without the property name.  This example defines a "Device" type, which also
-happens to be the name of an OpenC2 Target. Namspacing (ls:Device vs. led:Device) allows both definitions to be
-used without conflict.
+We specified two profile-specific targets (device and display) above.  Define their contents as fields of AP-Target.
+Define the desired response format for these commands as fields of AP-Results. ([Show](images/ap-template-device.jpg)).
+Note that this example defines a "Device" type, which also happens to be the name of an OpenC2 Target.
+Namspaced type references (ls:Device) allows both definitions to be used without conflict.
 
 After defining the device-specific content, the blinky profile schema should look like
 [blinky.jidl](blinky/blinky.jidl). This schema, in text or table ([blinky.md](blinky/blinky.md)) format,
