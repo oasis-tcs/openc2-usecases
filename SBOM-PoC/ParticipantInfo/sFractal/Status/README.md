@@ -5,8 +5,25 @@
 - :soon: - not under active development yet
 - :alien: - need assistance from others
 
+## Table of Contents
+- Sprint ending 12-Aug
+   + Devices
+      - BlinkyHaHa
+      - TwinklyHaHa
+      - TwinklyMaHa
+      - BlinkyMaHa
+      - BlinkyDaHa, TwinklyDaHa
+      - Stinky-XaHa
+   + Interworking
+      - HII/sFractal
+      - OPEN/sFractal
+      - others/sFractal
+   + Status
+      - status.sbom.sfractal.com
+
 ## Sprint ending 12-Aug
-### BlinkyHaHa
+### Devices
+#### BlinkyHaHa
 - Raspberry Pi (ie physical device), Http, OpenC2, SBOM
 - :white_check_mark: http OpenC2 "hello world"
 - :white_check_mark: http OpenC2 SBOM
@@ -18,7 +35,7 @@
 - :soon: connecting to internet for interworking - future unless someone wants and can help me do it in reasonably secure way
 - :alien: - need someone else to build one and validate
 
-### TwinklyHaHa
+#### TwinklyHaHa
 - cloud web page, Http, OpenC2, SBOM
 - :white_check_mark: twinkly webpage
 - :white_check_mark: http OpenC2 "hello world"
@@ -27,7 +44,7 @@
 - :white_check_mark: works locally
 - :construction: GCP
 
-### TwinklyMaHa
+#### TwinklyMaHa
 - cloud web page, MQTT, OpenC2, SBOM
 - :white_check_mark: twinkly webpage locally
 - :new: :white_check_mark: twinkly webpage GCP
@@ -38,19 +55,23 @@
 - :construction: MQTT GCP
 - :construction: test rig (ie a Producer to test the consumers)
 
-### BlinkyMaHa
+#### BlinkyMaHa
 - Raspberry Pi (ie physical device), MQTT, OpenC2, SBOM
 - :soon: (after TwinklyMaHa)
 
-### BlinkyDaHa, TwinklyDaHa
+#### BlinkyDaHa, TwinklyDaHa
 - OpenDxl versions of Blinky and TwinklyDaHa
 - :soon: (after GCP, MAHA, HAHA's)
-
-### Stinky-XaHa
+#### Stinky-XaHa
 - :soon: - versions of all devices above, but with alternate fictional SBOMs to simulate vulnerable devices
-### Cloudy-XaHa
+#### Cloudy-XaHa
 - :soon: - versions of the digital twins with true cloud SBOMs instead of digital twin of Raspberry Pi SBOM (eg Ubuntu SBOM instead of Nerves Buildroot SBOM, Phoenix LiveView SBOM instead of Blinkchain LED SBOM)
 
+### Interworking
+#### HII/sFractal
+#### OPEN/sFractal
+#### others/sFractal
+- let me know who else wants to interwork
 
 ### status.sbom.sfractal.com
 - :construction: - website for overall plugfest status
