@@ -161,7 +161,7 @@
           "uniqueItems": true,
           "minItems": 1,
           "items": {
-            "$ref": "#/definitions/Namespace",
+            "$ref": "#/definitions/FieldName",
             "description": "List of profiles supported by this Actuator"
           }
         },
@@ -171,7 +171,8 @@
         },
         "rate_limit": {
           "type": "number",
-          "description": "Maximum number of requests per minute supported by design or policy"
+          "description": "Maximum number of requests per minute supported by design or policy",
+          "minimum": 0.0
         },
         "args": {
           "type": "array",
@@ -217,21 +218,16 @@
           "type": "array",
           "description": "",
           "uniqueItems": true,
-          "minItems": 1,
+          "minItems": 2,
+          "maxItems": 2,
           "items": {
             "$ref": "#/definitions/Target-query",
             "description": ""
           }
         },
         "set": {
-          "type": "array",
-          "description": "",
-          "uniqueItems": true,
-          "minItems": 1,
-          "items": {
-            "$ref": "#/definitions/Target-set",
-            "description": ""
-          }
+          "$ref": "#/definitions/Target-set-list",
+          "description": ""
         }
       }
     },
@@ -249,6 +245,16 @@
           "description": ""
         }
       ]
+    },
+    "Target-set-list": {
+      "title": "Target set list",
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "$ref": "#/definitions/Target-set"
+      }
     },
     "Target-set": {
       "title": "Target set",
@@ -556,12 +562,12 @@
       "description": "Major.Minor version number",
       "maxLength": 255
     },
-    "Namespace": {
-      "title": "Namespace",
+    "FieldName": {
+      "title": "FieldName",
       "type": "string",
-      "description": "Unique name of an Actuator Profile",
-      "format": "uri",
-      "maxLength": 255
+      "description": "Property name syntax, match $FieldName if configured",
+      "maxLength": 255,
+      "pattern": "^[a-z][_A-Za-z0-9]{0,31}$"
     },
     "Command-ID": {
       "title": "Command ID",

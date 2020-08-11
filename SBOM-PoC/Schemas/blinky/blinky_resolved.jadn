@@ -1,5 +1,5 @@
 {
- "meta": {
+ "info": {
   "module": "http://oasis-open.org/openc2/blinky/v1.0",
   "title": "OpenC2 LED Display Actuator Profile",
   "description": "Adapted from the OpenC2 Language Profile version 1.1",
@@ -43,7 +43,7 @@
 
   ["Results", "Map", ["{1"], "Response Results", [
     [1, "versions", "Version", ["q", "[0", "]10"], "List of OpenC2 language versions supported by this Actuator"],
-    [2, "profiles", "Namespace", ["q", "[0", "]0"], "List of profiles supported by this Actuator"],
+    [2, "profiles", "FieldName", ["q", "[0", "]0"], "List of profiles supported by this Actuator"],
     [3, "pairs", "Action-Targets", ["[0"], "List of targets applicable to each supported Action"],
     [4, "rate_limit", "Number", ["y0.0", "[0"], "Maximum number of requests per minute supported by design or policy"],
     [5, "args", "Enumerated", ["#Args", "[0", "]0"], "List of supported Command Arguments"],
@@ -51,14 +51,16 @@
   ]],
 
   ["Action-Targets", "Map", [], "Map of each action supported by this actuator to the list of targets applicable to that action.", [
-    [3, "query", "Target-query", ["q", "]0"], ""],
-    [15, "set", "Target-set", ["q", "]0"], ""]
+    [3, "query", "Target-query", ["q", "[2", "]2"], ""],
+    [15, "set", "Target-set-list", [], ""]
   ]],
 
   ["Target-query", "Enumerated", [], "All targets supported by this actuator's query command", [
     [1, "features", ""],
     [2, "blinky/device", ""]
   ]],
+
+  ["Target-set-list", "ArrayOf", ["*Target-set", "{1", "}1", "q"], "", []],
 
   ["Target-set", "Enumerated", [], "All targets supported by this actuator's set command", [
     [1, "blinky/display", ""]
@@ -141,7 +143,7 @@
 
   ["Version", "String", [], "Major.Minor version number", []],
 
-  ["Namespace", "String", ["/uri"], "Unique name of an Actuator Profile", []],
+  ["FieldName", "String", ["%^[a-z][_A-Za-z0-9]{0,31}$"], "Property name syntax, match $FieldName if configured", []],
 
   ["Command-ID", "String", ["%^\\S{0,36}$"], "Command Identifier", []]
  ]

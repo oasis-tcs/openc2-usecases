@@ -58,7 +58,7 @@
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **versions** | ls:Version unique | 0..10 | List of OpenC2 language versions supported by this Actuator |
-| 2 | **profiles** | ls:Namespace unique | 0..* | List of profiles supported by this Actuator |
+| 2 | **profiles** | ls:FieldName unique | 0..* | List of profiles supported by this Actuator |
 | 3 | **pairs** | Action-Targets | 0..1 | List of targets applicable to each supported Action |
 | 4 | **rate_limit** | Number{0.0..*} | 0..1 | Maximum number of requests per minute supported by design or policy |
 | 5 | **args** | Enumerated(Enum[Args]) | 0..* | List of supported Command Arguments |
@@ -68,8 +68,8 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 3 | **query** | Target-query unique | 1..* |  |
-| 15 | **set** | Target-set unique | 1..* |  |
+| 3 | **query** | Target-query unique | 2..2 |  |
+| 15 | **set** | Target-set-list | 1 |  |
 
 **_Type: Target-query (Enumerated)_**
 
@@ -77,6 +77,11 @@
 | ---: | :--- | :--- |
 | 1 | **features** |  |
 | 2 | **blinky/device** |  |
+
+
+| Type Name | Type Definition | Description |
+| :--- | :--- | :--- |
+| **Target-set-list** | ArrayOf(Target-set){1..1} unique |  |
 
 **_Type: Target-set (Enumerated)_**
 

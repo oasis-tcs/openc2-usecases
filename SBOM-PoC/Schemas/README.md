@@ -50,7 +50,7 @@ forms the basis for the actuator profile document.
 Producers and Consumer devices use a machine-readable complete schema
 [blinky_resolved.jadn](blinky/blinky_resolved.jadn) which includes referenced definitions copied from their source documents.
 Example commands and responses can be validated using the resolved schema in either JADN or JSON Schema
-([blinky_resolved.json](blinky.json)) format.
+([blinky_resolved.json](blinky/blinky_resolved.json)) format.
 The resolved schema is generated using JADN software, or it can be created manually by copying definitions
 from the actuator profile and language spec schemas.
 
