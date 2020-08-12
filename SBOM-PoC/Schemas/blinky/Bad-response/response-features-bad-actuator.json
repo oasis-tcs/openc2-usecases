@@ -2,7 +2,7 @@
   "status": 200,
   "results": {
     "pairs": {
-      "query": ["features", "blinky/device"],
+      "query": ["features", "led/device"],
       "set": ["stinky/display"]
     }
   }

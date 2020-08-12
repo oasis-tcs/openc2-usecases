@@ -2,8 +2,8 @@
   "status": 200,
   "results": {
     "pairs": {
-      "query": ["features", "blinky/device"],
-      "set": ["blinky/display"]
+      "query": ["features", "led/device"],
+      "set": ["led/display"]
     }
   }
 }

@@ -5,5 +5,5 @@
       "device": ["product", "resolution"]
     }
   },
-  "actuator": "blinky"
+  "actuator": "led"
 }

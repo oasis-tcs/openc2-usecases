@@ -3,7 +3,7 @@
   "results": {
     "pairs": {
       "query": ["features"],
-      "set": ["blinky/display"]
+      "set": ["led/display"]
     }
   }
 }
