@@ -21,25 +21,25 @@ There are 24 types of sFractal devices which consist of 4 environments by 3 tran
    + MUD
 
 ## Table of Contents
-- Sprint ending 12-Aug
-   + 1. Devices
-      - 1.1 BlinkyHaHa
-      - 1.2 TwinklyHaHa
-      - 1.3 TwinklyMaHa
-      - 1.4 BlinkyMaHa
-      - 1.5 X-DaHa
-      - 1.6 Stinky-X
-      - 1.7 Cloudy-X
-      - 1.8 MUD
-   + 2. Interworking
-      - 2.1 HII/sFractal
-      - 2.2 OPEN/sFractal
-      - 2.3 others/sFractal
-   + 3. Status
+- [Sprint ending 12-Aug](#sprint-ending-12-aug)
+   + [1. Devices](#1-devices)
+      - [1.1 BlinkyHaHa](#11-blinkyhaha)
+      - [1.2 TwinklyHaHa](#12-twinklyhaha)
+      - [1.3 TwinklyMaHa](#13-twinklymaha)
+      - [1.4 BlinkyMaHa](#14-blinkymaha)
+      - [1.5 X-DaHa](#15-x-daha)
+      - [1.6 Stinky-X](#16-stinky-x)
+      - [1.7 Cloudy-X](#17-cloudy-x)
+      - [1.8 MUD](#18-mud)
+   + [2. Interworking](#2-interworking)
+      - [2.1 HII/sFractal](#21-hiisfractal)
+      - [2.2 OPEN/sFractal](#22-opensfractal)
+      - [2.3 others/sFractal](#223-otherssfractal)
+   + [3. Status](#3-statussbomsfractalcom)
       - status.sbom.sfractal.com
 
 ## Sprint ending 12-Aug
-### Devices
+### 1. Devices
 #### 1.1 BlinkyHaHa
 - Raspberry Pi (ie physical device), Http, OpenC2, SBOM
 - :white_check_mark: http OpenC2 "hello world"
