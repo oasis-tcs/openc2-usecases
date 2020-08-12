@@ -3,7 +3,7 @@ The [Custom Actuator Profiles](https://github.com/oasis-open/openc2-custom-aps/b
 document provides an overview of creating and using actuator profile schemas.
 This document illustrates creating a schema for a new actuator profile, using an OpenC2 controller for
 [LED display panels](https://www.amazon.com/panels-digital-module-display-P3-19296mm/dp/B079JSKF21)
-as an example. Using a toy example separates the mechanics of profile creation from unnecessary consideration of
+as an example. Using a toy example separates the mechanics of profile creation from unnecessary consideration
 of cybersecurity functionality.
 Following the Sparrell naming scheme we'll call this the "[blinky](https://github.com/sparrell/BlinkyHaHa)"
 profile, but it is intended to support a range of LED matrix displays including the Sparrell device.
@@ -21,7 +21,7 @@ we are calling this the "blinky" profile, we will use a shorter property name "l
 in commands and responses.
 
 * **Property Name:** led
-* **Namespace:** http://oasis-open.org/openc2/custom/blinky/v1.0
+* **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.0
 
 #### 2. Select Actions and Targets
 Define an initial set of commands that accomplish the goals of the profile.
@@ -37,7 +37,8 @@ Additional actions and targets may be defined later.
 * Copy the Actuator Profile
 [Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template.jidl)
 to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
-* Delete all of the actions, targets, and args that are not used.
+* Delete all unused profiles from "imports". Do not delete "ls" (Language Spec Types).
+* Delete all unused actions, targets, and args.
 * Replace "xyz" with the property name "led" everywhere it appears in the template.
 * Customize the Action-Target list to reflect the commands from step 2. ([Show](images/ap-template-pairs.jpg))
 

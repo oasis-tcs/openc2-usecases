@@ -1,12 +1,12 @@
 {
   "action": "query",
   "target": {
-    "blinky": {
+    "led": {
       "device": ["product", "resolution"]
     }
   },
   "args": {
-    "blinky": {
+    "led": {
       "direction": "ingress"
     }
   }

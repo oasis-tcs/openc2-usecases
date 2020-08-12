@@ -1,7 +1,7 @@
 {
   "action": "set",
   "target": {
-    "blinky": {
+    "led": {
       "display": {
         "image": {
           "payload": {

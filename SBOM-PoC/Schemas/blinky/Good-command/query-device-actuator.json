@@ -1,11 +1,11 @@
 {
   "action": "query",
   "target": {
-    "blinky": {
+    "led": {
       "device": ["product", "resolution"]
     }
   },
   "actuator": {
-    "blinky": {}
+    "led": {}
   }
 }
