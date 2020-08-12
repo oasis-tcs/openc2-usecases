@@ -1,29 +1,46 @@
 # sFractal status
+The following marks will be used to show status:
 - :new: - new status
 - :white_check_mark: - done
 - :construction: - under active development
 - :soon: - not under active development yet
 - :alien: - need assistance from others
 
+There are 24 types of sFractal devices which consist of 4 environments by 3 transports by (w or wo) MUD.
+- Environment
+   + Blinky-X (Raspberry Pi)
+   + Twinkly-x (Blinky twin in the cloud),
+   + Cloudy-X (Twinkly with correct cloud SBOM instead of Raspberry Pi SBOM)
+   + Stinky-X (versions of other varieties with a fictional SBOMs to drive vulnerablity use cases)
+- Transports
+   + X-HaHa - HTTP
+   + X-MaHa - MQTT
+   + X-DaHa - OpenDxl
+- MUD
+   + wo MUD
+   + MUD
+
 ## Table of Contents
 - Sprint ending 12-Aug
-   + Devices
-      - BlinkyHaHa
-      - TwinklyHaHa
-      - TwinklyMaHa
-      - BlinkyMaHa
-      - BlinkyDaHa, TwinklyDaHa
-      - Stinky-XaHa
-   + Interworking
-      - HII/sFractal
-      - OPEN/sFractal
-      - others/sFractal
-   + Status
+   + 1. Devices
+      - 1.1 BlinkyHaHa
+      - 1.2 TwinklyHaHa
+      - 1.3 TwinklyMaHa
+      - 1.4 BlinkyMaHa
+      - 1.5 X-DaHa
+      - 1.6 Stinky-X
+      - 1.7 Cloudy-X
+      - 1.8 MUD
+   + 2. Interworking
+      - 2.1 HII/sFractal
+      - 2.2 OPEN/sFractal
+      - 2.3 others/sFractal
+   + 3. Status
       - status.sbom.sfractal.com
 
 ## Sprint ending 12-Aug
 ### Devices
-#### BlinkyHaHa
+#### 1.1 BlinkyHaHa
 - Raspberry Pi (ie physical device), Http, OpenC2, SBOM
 - :white_check_mark: http OpenC2 "hello world"
 - :white_check_mark: http OpenC2 SBOM
@@ -35,7 +52,7 @@
 - :soon: connecting to internet for interworking - future unless someone wants and can help me do it in reasonably secure way
 - :alien: - need someone else to build one and validate
 
-#### TwinklyHaHa
+#### 1.2 TwinklyHaHa
 - cloud web page, Http, OpenC2, SBOM
 - :white_check_mark: twinkly webpage
 - :white_check_mark: http OpenC2 "hello world"
@@ -44,7 +61,7 @@
 - :white_check_mark: works locally
 - :construction: GCP
 
-#### TwinklyMaHa
+#### 1.3 TwinklyMaHa
 - cloud web page, MQTT, OpenC2, SBOM
 - :white_check_mark: twinkly webpage locally
 - :new: :white_check_mark: twinkly webpage GCP
@@ -55,25 +72,37 @@
 - :construction: MQTT GCP
 - :construction: test rig (ie a Producer to test the consumers)
 
-#### BlinkyMaHa
+#### 1.4 BlinkyMaHa
 - Raspberry Pi (ie physical device), MQTT, OpenC2, SBOM
 - :soon: (after TwinklyMaHa)
 
-#### BlinkyDaHa, TwinklyDaHa
+#### 1.5 X-DaHa
 - OpenDxl versions of Blinky and TwinklyDaHa
 - :soon: (after GCP, MAHA, HAHA's)
-#### Stinky-XaHa
+#### 1.6 Stinky-X
 - :soon: - versions of all devices above, but with alternate fictional SBOMs to simulate vulnerable devices
-#### Cloudy-XaHa
+#### 1.7 Cloudy-X
 - :soon: - versions of the digital twins with true cloud SBOMs instead of digital twin of Raspberry Pi SBOM (eg Ubuntu SBOM instead of Nerves Buildroot SBOM, Phoenix LiveView SBOM instead of Blinkchain LED SBOM)
+#### 1.8 MUD
+- :soon: - versions of all of the above with MUD interface
 
-### Interworking
-#### HII/sFractal
-#### OPEN/sFractal
-#### others/sFractal
-- let me know who else wants to interwork
+### 2. Interworking
+#### 2.1 HII/sFractal
+- :white_check_mark: - BlinkyHaHa sanity test with OIF orchestrator
+- :alien: more complete BlinkyHaHa testing
+- :new: :white_check_mark: - TwinklyMaHa using HII MQTT broker
+- :alien: :construction: - TwinklyMaHa OIF testing
+- :construction: - schema generator testing
+#### 2.2 OPEN/sFractal
+- :white_check_mark: - obtained sensor DIY kits
+- :white_check_mark: - obtained network DIY kits
+- :construction: - build kits and integrate
+- :soon: - SBOM analysis
+- :soon: - OpenC2 analysis
+#### 2.23 others/sFractal
+- :soon: - let me know who else wants to interwork
 
-### status.sbom.sfractal.com
+### 3. status.sbom.sfractal.com
 - :construction: - website for overall plugfest status
 
 ## Sprint ending 30-Jul
