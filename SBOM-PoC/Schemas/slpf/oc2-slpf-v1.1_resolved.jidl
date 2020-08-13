@@ -101,7 +101,7 @@ AP-Specifiers = Map                                    // Profile-defined actuat
    4 asset_tuple      String optional                  // Unique tuple identifier for a particular SLPF consisting of a list of up to 10 strings
 
 AP-Results = Map{1..*}                                 // Profile-defined response results
-   1 rule_number      Rule-ID                          // Rule identifier returned from allow or deny Command
+   1 rule_number      Rule-ID optional                 // Rule identifier returned from allow or deny Command
 
 Rule-ID = Integer                                      // Access rule identifier
 

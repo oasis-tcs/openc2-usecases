@@ -498,9 +498,6 @@
       "type": "object",
       "description": "Profile-defined response results",
       "additionalProperties": false,
-      "required": [
-        "rule_number"
-      ],
       "minProperties": 1,
       "maxProperties": 100,
       "properties": {

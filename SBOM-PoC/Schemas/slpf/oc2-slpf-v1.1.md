@@ -159,7 +159,7 @@
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
-| 1 | **rule_number** | Rule-ID | 1 | Rule identifier returned from allow or deny Command |
+| 1 | **rule_number** | Rule-ID | 0..1 | Rule identifier returned from allow or deny Command |
 
 
 | Type Name | Type Definition | Description |

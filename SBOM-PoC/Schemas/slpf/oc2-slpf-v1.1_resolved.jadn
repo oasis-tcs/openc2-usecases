@@ -122,7 +122,7 @@
   ]],
 
   ["AP-Results", "Map", ["{1"], "Profile-defined response results", [
-    [1, "rule_number", "Rule-ID", [], "Rule identifier returned from allow or deny Command"]
+    [1, "rule_number", "Rule-ID", ["[0"], "Rule identifier returned from allow or deny Command"]
   ]],
 
   ["Rule-ID", "Integer", [], "Access rule identifier", []],
