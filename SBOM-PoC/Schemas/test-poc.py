@@ -13,18 +13,17 @@ Use credential stored in environment variable "GitHubToken" to prevent rate limi
 base = 'https://api.github.com/repos/oasis-tcs/openc2-usecases/contents/SBOM-PoC/Schemas/'
 
 
-def gh_get(url):                        # Read contents from GitHub API
+def gh_get(url):            # Read contents from GitHub API
     with urlopen(Request(url, headers=auth)) as e:
         entry = json.loads(e.read().decode())
     return entry
 
 
 def find_tests(api_url):    # Search for GitHub folders containing schemas and test data
-
-    def _ft(url, tests):        # Internal recursive search
+    def _ft(url, tests):    # Internal recursive search
         gdir = gh_get(url)
         dirs = {e['name']: e['url'] for e in gdir if e['type'] == 'dir'}
-        if 'Good-command' in dirs:      # Folder name indicates test data
+        if 'Good-command' in dirs:      # Directory name indicates test data
             files = {e['name']: e['download_url'] for e in gdir if e['type'] == 'file'}
             json_url = [u for f, u in files.items() if os.path.splitext(f)[1] == '.json']
             if len(json_url) == 1:      # Must have exactly one .json file
@@ -35,16 +34,16 @@ def find_tests(api_url):    # Search for GitHub folders containing schemas and t
             for child in dirs.values():
                 _ft(child, tests)
 
-    test_list = []              # Initialize, build test list, and return it
+    test_list = []          # Initialize, build test list, and return it
     _ft(api_url, test_list)
     return test_list
 
 
-def run_test(tdir):                     # Check correct validation of good and bad commands and responses
+def run_test(tdir):         # Check correct validation of good and bad commands and responses
     json_schema = gh_get(tdir['schema'])
-    print(f'   Schema: {json_schema["$id"]}\n')
-    tcount = defaultdict(int)           # Total instances tested
-    ecount = defaultdict(int)           # Error instances
+    print(f'\nSchema: {json_schema["$id"]}')
+    tcount = defaultdict(int)       # Total instances tested
+    ecount = defaultdict(int)       # Error instances
     for cr in ('command', 'response'):
         for gb in ('Good', 'Bad'):
             pdir = f'{gb}-{cr}'
@@ -72,6 +71,6 @@ def run_test(tdir):                     # Check correct validation of good and b
 
 
 print(f'Test Data: {base}')
-auth = {'Authorization': 'token ' + os.environ['GitHubToken']}
+auth = {'Authorization': f'token {os.environ["GitHubToken"]}'}
 for test in find_tests(base):
     run_test(test)

@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://oasis-open.org/openc2/blinky/v1.0",
-  "title": "OpenC2 LED Display Actuator Profile",
-  "description": "Adapted from the OpenC2 Language Profile version 1.1",
+  "$id": "https://oasis-open.org/openc2/blinky-device/v1.0",
+  "title": "OpenC2 LED Display Device Schema",
+  "description": "OpenC2 v1.1 schema for devices that support the Blinky actuator profile",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -96,8 +96,8 @@
           "$ref": "#/definitions/Features",
           "description": "A set of items used with the query Action to determine an Actuator's capabilities."
         },
-        "led": {
-          "$ref": "#/definitions/AP-Target",
+        "blinky": {
+          "$ref": "#/definitions/AP-Target$led",
           "description": "Profile-defined targets"
         }
       }
@@ -117,8 +117,8 @@
           "$ref": "#/definitions/Date-Time",
           "description": "The specific date/time to terminate the Command"
         },
-        "led": {
-          "$ref": "#/definitions/AP-Args",
+        "blinky": {
+          "$ref": "#/definitions/AP-Args$led",
           "description": "Profile-defined command arguments"
         }
       }
@@ -130,8 +130,8 @@
       "minProperties": 1,
       "maxProperties": 1,
       "properties": {
-        "led": {
-          "$ref": "#/definitions/AP-Specifiers",
+        "blinky": {
+          "$ref": "#/definitions/AP-Specifiers$led",
           "description": "Actuator specifiers defined in this profile"
         }
       }
@@ -191,14 +191,14 @@
                 "description": "The specific date/time to terminate the Command"
               },
               {
-                "const": "led",
+                "const": "blinky",
                 "description": "Profile-defined command arguments"
               }
             ]
           }
         },
-        "led": {
-          "$ref": "#/definitions/AP-Results",
+        "blinky": {
+          "$ref": "#/definitions/AP-Results$led",
           "description": "Profile-defined response results"
         }
       }
@@ -206,69 +206,38 @@
     "Action-Targets": {
       "title": "Action Targets",
       "type": "object",
-      "description": "Map of each action supported by this actuator to the list of targets applicable to that action.",
+      "description": "Targets applicable to each action supported by this device",
       "additionalProperties": false,
-      "required": [
-        "query",
-        "set"
-      ],
       "maxProperties": 100,
       "properties": {
         "query": {
-          "type": "array",
-          "description": "",
-          "uniqueItems": true,
-          "minItems": 2,
-          "maxItems": 2,
-          "items": {
-            "$ref": "#/definitions/Target-query",
-            "description": ""
-          }
+          "oneOf": [
+            {
+              "const": "features",
+              "description": "A set of items used with the query Action to determine an Actuator's capabilities."
+            },
+            {
+              "const": "blinky",
+              "description": "Profile-defined targets"
+            }
+          ]
         },
         "set": {
-          "$ref": "#/definitions/Target-set-list",
-          "description": ""
+          "oneOf": [
+            {
+              "const": "features",
+              "description": "A set of items used with the query Action to determine an Actuator's capabilities."
+            },
+            {
+              "const": "blinky",
+              "description": "Profile-defined targets"
+            }
+          ]
         }
       }
     },
-    "Target-query": {
-      "title": "Target query",
-      "type": "string",
-      "description": "All targets supported by this actuator's query command",
-      "oneOf": [
-        {
-          "const": "features",
-          "description": ""
-        },
-        {
-          "const": "led/device",
-          "description": ""
-        }
-      ]
-    },
-    "Target-set-list": {
-      "title": "Target set list",
-      "type": "array",
-      "uniqueItems": true,
-      "minItems": 1,
-      "maxItems": 1,
-      "items": {
-        "$ref": "#/definitions/Target-set"
-      }
-    },
-    "Target-set": {
-      "title": "Target set",
-      "type": "string",
-      "description": "All targets supported by this actuator's set command",
-      "oneOf": [
-        {
-          "const": "led/display",
-          "description": ""
-        }
-      ]
-    },
-    "AP-Target": {
-      "title": "AP Target",
+    "AP-Target$led": {
+      "title": "AP Target$led",
       "type": "object",
       "description": "Profile-defined targets",
       "additionalProperties": false,
@@ -295,13 +264,13 @@
           }
         },
         "display": {
-          "$ref": "#/definitions/Display",
+          "$ref": "#/definitions/Display$led",
           "description": ""
         }
       }
     },
-    "AP-Args": {
-      "title": "AP Args",
+    "AP-Args$led": {
+      "title": "AP Args$led",
       "type": "object",
       "description": "Profile-defined command arguments",
       "additionalProperties": false,
@@ -309,16 +278,16 @@
       "maxProperties": 100,
       "properties": {}
     },
-    "AP-Specifiers": {
-      "title": "AP Specifiers",
+    "AP-Specifiers$led": {
+      "title": "AP Specifiers$led",
       "type": "object",
       "description": "Profile-defined actuator specifiers",
       "additionalProperties": false,
       "maxProperties": 100,
       "properties": {}
     },
-    "AP-Results": {
-      "title": "AP Results",
+    "AP-Results$led": {
+      "title": "AP Results$led",
       "type": "object",
       "description": "Profile-defined response results",
       "additionalProperties": false,
@@ -326,13 +295,13 @@
       "maxProperties": 100,
       "properties": {
         "device": {
-          "$ref": "#/definitions/Device",
+          "$ref": "#/definitions/Device$led",
           "description": ""
         }
       }
     },
-    "Device": {
-      "title": "Device",
+    "Device$led": {
+      "title": "Device$led",
       "type": "object",
       "description": "Types of device parameters to return",
       "additionalProperties": false,
@@ -351,8 +320,8 @@
         }
       }
     },
-    "Display": {
-      "title": "Display",
+    "Display$led": {
+      "title": "Display$led",
       "type": "object",
       "description": "Types of patterns to display",
       "additionalProperties": false,
@@ -360,7 +329,7 @@
       "maxProperties": 1,
       "properties": {
         "predefined": {
-          "$ref": "#/definitions/Canned-Displays",
+          "$ref": "#/definitions/Canned-Displays$led",
           "description": "Pre-defined patterns to display"
         },
         "image": {
@@ -373,8 +342,8 @@
         }
       }
     },
-    "Canned-Displays": {
-      "title": "Canned Displays",
+    "Canned-Displays$led": {
+      "title": "Canned Displays$led",
       "type": "string",
       "oneOf": [
         {

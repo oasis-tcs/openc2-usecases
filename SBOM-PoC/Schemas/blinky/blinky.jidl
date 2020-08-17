@@ -1,20 +1,8 @@
        title: "OpenC2 LED Display Actuator Profile"
-      module: "http://oasis-open.org/openc2/blinky/v1.0"
- description: "Adapted from the OpenC2 Language Profile version 1.1"
-     imports: {"ls": "http://oasis-open.org/openc2/oc2ls-types/v1.1"}
-     exports: ["OpenC2-Command", "OpenC2-Response"]
-
-OpenC2-Command = Record                                // The Command defines an Action to be performed on a Target
-   1 action           Action                           // The task or activity to be performed (i.e., the 'verb').
-   2 target           Target                           // The object of the Action. The Action is performed on the Target.
-   3 args             Args optional                    // Additional information that applies to the Command.
-   4 actuator         Actuator optional                // The subject of the Action. The Actuator executes the Action on the Target.
-   5 command_id       ls:Command-ID optional           // An identifier of this Command.
-
-OpenC2-Response = Record
-   1 status           ls:Status-Code                   // An integer status code.
-   2 status_text      String optional                  // A free-form human-readable description of the Response status.
-   3 results          Results optional                 // Map of key:value pairs that contain additional results based on the invoking Command.
+      module: "https://oasis-open.org/openc2/blinky/v1.1"
+ description: "Derived from OpenC2 v1.1 Actuator Profile Template"
+     imports: {"ls": "https://oasis-open.org/openc2/oc2ls-types/v1.1"}
+     exports: ["AP-Target", "AP-Args", "AP-Specifiers", "AP-Results"]
 
 Action = Enumerated
    3 query                                             // Initiate a request for information.
@@ -22,15 +10,15 @@ Action = Enumerated
 
 Target = Choice
    9 features         ls:Features                      // A set of items used with the query Action to determine an Actuator's capabilities.
-2000 led/             AP-Target                        // Profile-defined targets
+   0 ap_name/         AP-Target                        // Profile-defined targets
 
 Args = Map{1..*}
    1 start_time       ls:Date-Time optional            // The specific date/time to initiate the Command
    2 stop_time        ls:Date-Time optional            // The specific date/time to terminate the Command
-2000 led/             AP-Args optional                 // Profile-defined command arguments
+   0 ap_name/         AP-Args optional                 // Profile-defined command arguments
 
 Actuator = Choice
-2000 led/             AP-Specifiers                    // Actuator specifiers defined in this profile
+   0 ap_name/         AP-Specifiers                    // Actuator specifiers defined in this profile
 
 Results = Map{1..*}                                    // Response Results
    1 versions         ls:Version unique [0..10]        // List of OpenC2 language versions supported by this Actuator
@@ -38,20 +26,7 @@ Results = Map{1..*}                                    // Response Results
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
    4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-2000 led/             AP-Results optional              // Profile-defined response results
-
-Action-Targets = Map                                   // Map of each action supported by this actuator to the list of targets applicable to that action.
-   3 query            Target-query unique [2..2]
-  15 set              Target-set-list
-
-Target-query = Enumerated                              // All targets supported by this actuator's query command
-   1 features
-   2 led/device
-
-Target-set-list = ArrayOf(Target-set){1..1} unique
-
-Target-set = Enumerated                                // All targets supported by this actuator's set command
-   1 led/display
+   0 ap_name/         AP-Results optional              // Profile-defined response results
 
 AP-Target = Choice                                     // Profile-defined targets
    1 device           ArrayOf(Enum[Device]){1..*} unique// Device properties to return

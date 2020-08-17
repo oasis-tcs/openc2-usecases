@@ -10,17 +10,11 @@ profile, but it is intended to support a range of LED matrix displays including 
 
 * **Project Name:** blinky
 
-#### 1. Select Property Name and Namespace
-The profile's property name is used in the OpenC2 actuator, target, args, and results lists.
-The namespace allows this schema to be referenced from other documents.
+#### 1. Select Namespace
+The profile's namespace allows this schema to be referenced from other documents.
 The mechanism used to reference definitions from other documents is described in the OpenC2
 [Namespace Registry](https://github.com/oasis-open/openc2-custom-aps/blob/master/namespace-registry.md).
 
-Note that the property name is not tied to the name of the project or the profile. Although
-we are calling this the "blinky" profile, we will use a shorter property name "led" to refer to that profile
-in commands and responses.
-
-* **Property Name:** led
 * **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.0
 
 #### 2. Select Actions and Targets
@@ -39,8 +33,6 @@ Additional actions and targets may be defined later.
 to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Delete all unused profiles from "imports". Do not delete "ls" (Language Spec Types).
 * Delete all unused actions, targets, and args.
-* Replace "xyz" with the property name "led" everywhere it appears in the template.
-* Customize the Action-Target list to reflect the commands from step 2. ([Show](images/ap-template-pairs.jpg))
 
 #### 4. Define profile-specific types
 We specified two profile-specific targets (device and display) above.  Define their contents as fields of AP-Target.
@@ -53,12 +45,23 @@ After defining the device-specific content, the blinky profile schema should loo
 forms the basis for the actuator profile document.
 
 #### 5. Generate device schemas
-Producers and Consumer devices use a machine-readable complete schema
-[blinky_resolved.jadn](blinky/blinky_resolved.jadn) which includes referenced definitions copied from their source documents.
+Once the actuator profile has been created, we can generate a schema for a device that supports this and other profiles.
+For that, the OpenC2 language specification needs to assign the property name used to reference it.
+Note that the property name is not tied to the name of the project.
+Although we are calling this the "blinky" profile, we can use a shorter property name "led" to refer to it
+in commands and responses.
+
+* **Property Name:** led
+
+Producers and Consumer devices use a machine-readable device schema
+[blinky_resolved.jadn](blinky/blinky_resolved.jadn) which includes all referenced definitions copied from their source documents.
 Example commands and responses can be validated using the resolved schema in either JADN or JSON Schema
 ([blinky_resolved.json](blinky/blinky_resolved.json)) format.
 The resolved schema is generated using JADN software, or it can be created manually by copying definitions
 from the actuator profile and language spec schemas.
+The simplest case is a device that supports a single profile. Replace the id and name (0, ap_name) placeholders
+with actual values (2000, led) in Target, Args, Specifiers, and Results,
+and the device schema is ready to use.
 
 Most actuators are expected to support multiple profiles. The "Actuator" type in the resolved schema contains
 the list of property names for supported profiles; this list is also returned by the "query features profiles"
