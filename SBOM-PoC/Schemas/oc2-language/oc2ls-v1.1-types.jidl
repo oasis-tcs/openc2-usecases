@@ -1,0 +1,127 @@
+       title: "OpenC2 Language Common Types"
+      module: "https://oasis-open.org/openc2/oc2ls-types/v1.1"
+     version: "0-wd01"
+ description: "Common Types from the OpenC2 Language Specification version 1.1.  These definitions are referenced by or copied into Profiles"
+
+Status-Code = Enumerated.ID
+ 102                                                   // Processing:: an interim Response used to inform the Producer that the Consumer has accepted the Command but has not yet completed it
+ 200                                                   // OK:: the Command has succeeded
+ 201                                                   // Created:: the Command has succeeded and a new resource has been created as a result of it
+ 400                                                   // Bad Request:: the Consumer cannot process the Command due to something that is perceived to be a Producer error (e.g., malformed Command syntax)
+ 401                                                   // Unauthorized:: the Command Message lacks valid authentication credentials for the target resource or authorization has been refused for the submitted credentials
+ 403                                                   // Forbidden:: the Consumer understood the Command but refuses to authorize it
+ 404                                                   // Not Found:: the Consumer has not found anything matching the Command
+ 500                                                   // Internal Error:: the Consumer encountered an unexpected condition that prevented it from performing the Command
+ 501                                                   // Not Implemented:: the Consumer does not support the functionality required to perform the Command
+ 503                                                   // Service Unavailable:: the Consumer is currently unable to perform the Command due to a temporary overloading or maintenance of the Consumer
+
+Artifact = Record{1..*}
+   1 mime_type        String optional                  // Permitted values specified in the IANA Media Types registry, [RFC6838]
+   2 payload          Payload optional                 // Choice of literal content or URL
+   3 hashes           Hashes optional                  // Hashes of the payload content
+
+Device = Map{1..*}
+   1 hostname         Hostname optional                // A hostname that can be used to connect to this device over a network
+   2 idn_hostname     IDN-Hostname optional            // An internationalized hostname that can be used to connect to this device over a network
+   3 device_id        String optional                  // An identifier that refers to this device within an inventory or management system
+
+Domain-Name = String /hostname                         // [RFC1034], Section 3.5
+
+Email-Addr = String /email                             // Email address - [RFC5322], Section 3.4.1
+
+Features = ArrayOf(Feature){0..10} unique              // An array of zero to ten names used to query an Actuator for its supported capabilities.
+
+File = Map{1..*}
+   1 name             String optional                  // The name of the file as defined in the file system
+   2 path             String optional                  // The absolute path to the location of the file in the file system
+   3 hashes           Hashes optional                  // One or more cryptographic hash codes of the file contents
+
+IDN-Domain-Name = String /idn-hostname                 // Internationalized Domain Name - [RFC5890], Section 2.3.2.3
+
+IDN-Email-Addr = String /idn-email                     // Internationalized email address - [RFC6531]
+
+IPv4-Net = Array /ipv4-net                             // IPv4 address and prefix length
+   1  IPv4-Addr                                        // ipv4_addr:: IPv4 address as defined in [RFC0791]
+   2  Integer optional                                 // prefix_length:: CIDR prefix-length. If omitted, refers to a single host address.
+
+IPv4-Connection = Record{1..*}                         // 5-tuple that specifies a tcp/ip connection
+   1 src_addr         IPv4-Net optional                // IPv4 source address range
+   2 src_port         Port optional                    // Source service per [RFC6335]
+   3 dst_addr         IPv4-Net optional                // IPv4 destination address range
+   4 dst_port         Port optional                    // Destination service per [RFC6335]
+   5 protocol         L4-Protocol optional             // Layer 4 protocol (e.g., TCP) - see L4-Protocol section
+
+IPv6-Net = Array /ipv6-net                             // IPv6 address and prefix length
+   1  IPv6-Addr                                        // ipv6_addr:: IPv6 address as defined in [RFC8200]
+   2  Integer optional                                 // prefix_length:: prefix length. If omitted, refers to a single host address
+
+IPv6-Connection = Record{1..*}                         // 5-tuple that specifies a tcp/ip connection
+   1 src_addr         IPv6-Net optional                // IPv6 source address range
+   2 src_port         Port optional                    // Source service per [RFC6335]
+   3 dst_addr         IPv6-Net optional                // IPv6 destination address range
+   4 dst_port         Port optional                    // Destination service per [RFC6335]
+   5 protocol         L4-Protocol optional             // Layer 4 protocol (e.g., TCP) - [Section 3.4.2.10]
+
+IRI = String /iri                                      // Internationalized Resource Identifier, [RFC3987]
+
+MAC-Addr = Binary /eui                                 // Media Access Control / Extended Unique Identifier address - EUI-48 or EUI-64 as defined in [EUI]
+
+Process = Map{1..*}
+   1 pid              Integer{0..*} optional           // Process ID of the process
+   2 name             String optional                  // Name of the process
+   3 cwd              String optional                  // Current working directory of the process
+   4 executable       File optional                    // Executable that was executed to start the process
+   5 parent           Process optional                 // Process that spawned this one
+   6 command_line     String optional                  // The full command line invocation used to start this process, including all arguments
+
+Properties = ArrayOf(String){1..*} unique              // A list of names that uniquely identify properties of an Actuator.
+
+URI = String /uri                                      // Uniform Resource Identifier, [RFC3986]
+
+Date-Time = Integer{0..*}                              // Date and Time
+
+Duration = Integer{0..*}                               // A length of time
+
+Feature = Enumerated                                   // Specifies the results to be returned from a query features Command
+   1 versions                                          // List of OpenC2 Language versions supported by this Actuator
+   2 profiles                                          // List of profiles supported by this Actuator
+   3 pairs                                             // List of supported Actions and applicable Targets
+   4 rate_limit                                        // Maximum number of Commands per minute supported by design or policy
+   5 args                                              // List of supported Command Argumemnts
+
+Hashes = Map{1..*}                                     // Cryptographic hash values
+   1 md5              Binary{16..16} /x optional       // MD5 hash as defined in [RFC1321]
+   2 sha1             Binary{20..20} /x optional       // SHA1 hash as defined in [RFC6234]
+   3 sha256           Binary{32..32} /x optional       // SHA256 hash as defined in [RFC6234]
+
+Hostname = String /hostname                            // Internet host name as specified in [RFC1123]
+
+IDN-Hostname = String /idn-hostname                    // Internationalized Internet host name as specified in [RFC5890], Section 2.3.2.3
+
+IPv4-Addr = Binary /ipv4-addr                          // 32 bit IPv4 address as defined in [RFC0791]
+
+IPv6-Addr = Binary /ipv6-addr                          // 128 bit IPv6 address as defined in [RFC8200]
+
+L4-Protocol = Enumerated                               // Value of the protocol (IPv4) or next header (IPv6) field in an IP packet. Any IANA value, [RFC5237]
+   1 icmp                                              // Internet Control Message Protocol - [RFC0792]
+   6 tcp                                               // Transmission Control Protocol - [RFC0793]
+  17 udp                                               // User Datagram Protocol - [RFC0768]
+ 132 sctp                                              // Stream Control Transmission Protocol - [RFC4960]
+
+Payload = Choice
+   1 bin              Binary                           // Specifies the data contained in the artifact
+   2 url              URI                              // MUST be a valid URL that resolves to the un-encoded content
+
+Port = Integer{0..65535}                               // Transport Protocol Port Number, [RFC6335]
+
+Response-Type = Enumerated
+   0 none                                              // No response
+   1 ack                                               // Respond when Command received
+   2 status                                            // Respond with progress toward Command completion
+   3 complete                                          // Respond when all aspects of Command completed
+
+Version = String                                       // Major.Minor version number
+
+FieldName = String (%^[a-z][_A-Za-z0-9]{0,31}$%)       // Property name syntax, match $FieldName if configured
+
+Command-ID = String (%^\S{0,36}$%)                     // Command Identifier

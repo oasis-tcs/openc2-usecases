@@ -19,23 +19,25 @@ profile, but it is intended to support a range of LED matrix displays including 
 #### 1. Select Namespace
 The profile's namespace allows it to be referenced from other documents.
 Select a namespace for this profile as described in the OpenC2
-[Namespace Registry](https://github.com/oasis-open/openc2-custom-aps/blob/master/namespace-registry.md).
+[Namespace Registry](https://github.com/oasis-tcs/oc2arch/blob/master/namespace-registry.md):
 
+* **Specification:** Hello-World LED Display Custom Actuator Profile
 * **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.1
 
 #### 2. Select Actions and Targets
-Define an initial set of commands that accomplish the goals of the profile.
+Define an initial set of commands that accomplish the goals of the profile. "ap_name" indicates this profile; an
+actual name is assigned when this profile is used in a device schema (step 5).
 
 * query features: required by OpenC2
-* query led/device: We want to know something about the physical or virtual actuator.
-* set led/display: We want the actuator to display something.
+* query ap_name/device: We want to know something about the physical or virtual actuator.
+* set ap_name/display: We want the actuator to display something.
 
 Additional actions and targets may be defined later.
 
 #### 3. Create the blinky profile schema
 
-* Copy the Actuator Profile
-[Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template.jidl)
+* Copy the
+[Actuator Profile Template](oc2-language/oc2ls-v1.1-ap-template.jidl)
 to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
 * Delete all unused actions, targets, and args.
 
@@ -50,36 +52,48 @@ After defining the device-specific content, the blinky profile schema should loo
 forms the basis for the actuator profile document.
 
 #### 5. Generate device schemas
-Once the actuator profile has been created, we can generate a schema for a device that supports this and other profiles.
-Each profile needs to be assigned a namespace id (NSID) and a profile id/name pair.
+Once the actuator profile has been created, we can generate a schema for a device starting with the
+[Device Template](oc2-language/oc2ls-v1.1-lang.jidl).
+Note that the Device Template is just the OpenC2 Language schema with placeholders for actuator profiles. Deleting
+the profile placeholders results in a hypothetical "OpenC2 device" schema, a producer or consumer that
+supports everything defined in the language spec and nothing else. Standardizing such a device would require a
+profile that specified conforming behavior for *every* language element. Real actuator profiles have more limited scope.
+
 The OpenC2 language specification contains a list of profile ids/names;
-choose nonconflicting values for each of the new profiles supported by the device.
+choose nonconflicting values for each of the profiles supported by the device.
 NSIDs are local to the device schema and may be chosen arbitrarily.
-A profile name may be used as its NSID, but NSIDs should be short. Choose a different NSID to illustrate
-that they aren't required to be the same:
+A profile name may be used as its NSID, but NSIDs should be short. Assign an NSID other than the profile name
+to illustrate the difference:
 
-* **Namespace ID:** led
 * **Profile ID, Name:** 2000, blinky
+* **Namespace ID:** led
 
-Replace the id and name (0, ap_name) placeholders with actual values (2000, blinky) for each supported profile
-in Target, Args, Specifiers, and Results. Replace nsid placeholders with the nsids chosen for each supported profile
-in the "imports" data and in AP-Target, AP-Args, AP-Specifiers and AP-Results.
+In the device schema:
 
-Producer and Consumer devices use a "resolved" device schema
-[blinky_resolved.jadn](blinky/blinky_resolved.jadn) which includes all referenced definitions copied from their source documents.
-Example commands and responses can be validated using the resolved schema in either JADN or JSON Schema
-([blinky_resolved.json](blinky/blinky_resolved.json)) format.
-The resolved schema is normally generated automatically by schema tools, but can be created manually by copying
-definitions from the referenced actuator profile and language spec schemas.
+* delete actions, targets, args and results that are not used by any of the referenced profiles.
+* in Target, Args, Specifiers, and Results replace the id and name (0, ap_name) placeholders
+with actual values (e.g., 2000, blinky) chosen for each supported profile.
+* in AP-Target, AP-Args, AP-Specifiers and AP-Results, and in the "imports" section, replace the nsid placeholders
+with the NSIDs for each supported profile.
+ 
+After deleting unused language elements and filling in profile data, the example should look like the
+[device-b schema](blinky/device-b.jidl).
 
-After resolving the referenced type definitions, the device schema is ready to use.
+#### 6. Resolve device schema
+With suitable infrastructure the "device-b" schema could be used as-is, with the device retrieving all referenced
+type definitions by namespace. But without dynamic resolution infrastructure we can copy all referenced definitions
+into a single schema ([device-b_resolved](blinky/device-b_resolved.jidl)).
+The resolved schema is normally generated using schema tools, but can be created by manually copying
+definitions from the referenced actuator profile and language spec schemas.  (For testing convenience the resolved
+schema may also be stored in machine-readable [JADN](blinky/device-b_resolved.jadn) and
+[JSON Schema](blinky/device-b_resolved.json) formats.
 
-#### 6. Create test data
+#### 7. Create test data
 Create four directories "Good-command", "Good-response", "Bad-command", and "Bad-response" in the directory
 containing the resolved schema. Create good and invalid test messages in these locations.
 Using a standard directory structure allows testing software to locate and validate test data for multiple profiles.
 
-#### 7. Validate test data
+#### 8. Validate test data
 The Python script [test-poc.py](test-poc.py) will validate test data against the schema for all projects.
 Before running the script, obtain a GitHub
 [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
