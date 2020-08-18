@@ -1,7 +1,13 @@
 # OpenC2 v1.1 Plugfest Schemas
-The [Custom Actuator Profiles](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/README.md)
-document provides an overview of creating and using actuator profile schemas.
-This document illustrates creating a schema for a new actuator profile, using an OpenC2 controller for
+
+Expanding on the actuator profile
+[overview](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/README.md),
+this document steps through the process of creating a new actuator profile and then using that profile to create
+a device schema to support development and interoperability testing:
+
+![](images/ap-process.jpg)
+
+It uses an OpenC2 controller for
 [LED display panels](https://www.amazon.com/panels-digital-module-display-P3-19296mm/dp/B079JSKF21)
 as an example. Using a toy example separates the mechanics of profile creation from unnecessary consideration
 of cybersecurity functionality.
@@ -11,11 +17,11 @@ profile, but it is intended to support a range of LED matrix displays including 
 * **Project Name:** blinky
 
 #### 1. Select Namespace
-The profile's namespace allows this schema to be referenced from other documents.
-The mechanism used to reference definitions from other documents is described in the OpenC2
+The profile's namespace allows it to be referenced from other documents.
+Select a namespace for this profile as described in the OpenC2
 [Namespace Registry](https://github.com/oasis-open/openc2-custom-aps/blob/master/namespace-registry.md).
 
-* **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.0
+* **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.1
 
 #### 2. Select Actions and Targets
 Define an initial set of commands that accomplish the goals of the profile.
@@ -26,12 +32,11 @@ Define an initial set of commands that accomplish the goals of the profile.
 
 Additional actions and targets may be defined later.
 
-#### 3. Create the blinky schema from the Profile Template
+#### 3. Create the blinky profile schema
 
 * Copy the Actuator Profile
 [Template](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/v1.1/IDL/oc2ls-v1.1-ap-template.jidl)
 to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
-* Delete all unused profiles from "imports". Do not delete "ls" (Language Spec Types).
 * Delete all unused actions, targets, and args.
 
 #### 4. Define profile-specific types
@@ -46,27 +51,28 @@ forms the basis for the actuator profile document.
 
 #### 5. Generate device schemas
 Once the actuator profile has been created, we can generate a schema for a device that supports this and other profiles.
-For that, the OpenC2 language specification needs to assign the property name used to reference it.
-Note that the property name is not tied to the name of the project.
-Although we are calling this the "blinky" profile, we can use a shorter property name "led" to refer to it
-in commands and responses.
+Each profile needs to be assigned a namespace id (NSID) and a profile id/name pair.
+The OpenC2 language specification contains a list of profile ids/names;
+choose nonconflicting values for each of the new profiles supported by the device.
+NSIDs are local to the device schema and may be chosen arbitrarily.
+A profile name may be used as its NSID, but NSIDs should be short. Choose a different NSID to illustrate
+that they aren't required to be the same:
 
-* **Property Name:** led
+* **Namespace ID:** led
+* **Profile ID, Name:** 2000, blinky
 
-Producers and Consumer devices use a machine-readable device schema
+Replace the id and name (0, ap_name) placeholders with actual values (2000, blinky) for each supported profile
+in Target, Args, Specifiers, and Results. Replace nsid placeholders with the nsids chosen for each supported profile
+in the "imports" data and in AP-Target, AP-Args, AP-Specifiers and AP-Results.
+
+Producer and Consumer devices use a "resolved" device schema
 [blinky_resolved.jadn](blinky/blinky_resolved.jadn) which includes all referenced definitions copied from their source documents.
 Example commands and responses can be validated using the resolved schema in either JADN or JSON Schema
 ([blinky_resolved.json](blinky/blinky_resolved.json)) format.
-The resolved schema is generated using JADN software, or it can be created manually by copying definitions
-from the actuator profile and language spec schemas.
-The simplest case is a device that supports a single profile. Replace the id and name (0, ap_name) placeholders
-with actual values (2000, led) in Target, Args, Specifiers, and Results,
-and the device schema is ready to use.
+The resolved schema is normally generated automatically by schema tools, but can be created manually by copying
+definitions from the referenced actuator profile and language spec schemas.
 
-Most actuators are expected to support multiple profiles. The "Actuator" type in the resolved schema contains
-the list of property names for supported profiles; this list is also returned by the "query features profiles"
-command. If a "query features schema" command is added to the language spec,
-Producers will be able to retrieve an actuator's resolved schema to determine its capabilities.
+After resolving the referenced type definitions, the device schema is ready to use.
 
 #### 6. Create test data
 Create four directories "Good-command", "Good-response", "Bad-command", and "Bad-response" in the directory
