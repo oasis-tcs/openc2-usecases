@@ -9,6 +9,7 @@ Table of Contents
    - [2.4-CACAO Goals & Objectives](2.4-cacao-goals-objectives)
    - [2.5-Open Cybersecurity Alliance Goals & Objectives](2.5-open-cybersecurity-alliance-goals-objectives)
    - [2.6-Erlang Ecosystem Foundation Security Working Group Goals & Objectives](2.6-erlang-ecosystem-foundation-security-working-group-goals-objectives)
+   - [2.7-SCAPv2 Goals](2.7-scapv2-goals)
 - [3-sFractal Contributions to PoC](3-sfractal-contributions-to-poc)
 
 ## 1-Introduction
@@ -93,6 +94,13 @@ with an additional goals of:
 - proving in SBOM tools in rebar3 and Hex build tools
 - establishing base of SBOMs for common BEAM applications, at least those used in PoC like Nerves
 - open source elixir code for OpenC2 interface
+
+### 2.7-SCAPv2 Goals
+- show value of SCAPv2
+- show how SCAPv2 fits in IACD
+- show how SCAPv2 fits in OCA
+- show how OpenC2 can be used in SCAPv2 Scenarios
+- show how SBOM can SCAPv2 data
 
 ## 3-sFractal Contributions to PoC
 - evangelism of PoC to all the organizations sFractal is a member of (OASIS OpenC2 TC, NTIA SBOM, IACD, OASIS CACAO TC, Open Cybersecurity Alliance, Erlang Ecosystem Foundation Security Working Group)
