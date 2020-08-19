@@ -121,18 +121,19 @@ Here is the list of organizations who have agreed to participate,
 in order of volunteering to participate in PoC,
 hotlinked to pages showing what they are interested in
 and what they plan to contribute to this effort:
-- [sFractal Consulting](./sFractalGoals.md)
-- [NSA](./NSAGoals.md)
-- [Huntington Ingalls Industries](./HIIGoals.md)
-- [New Context](./NewContextGoals.md)
-- [NineFx](./NineFx.md)
-- [One Planet Education Network](./OnePlanetGoals.md)
-- [AT&T](AttGoals.md)
-- [mudmaker.org](MudMakerGoals.md)
-- [Ion Channel](IonChannelGoals.md)
-- [Unisys](UnisysGoals.md)
-- [BTS](BtsGoals.md)
-- [Google](GoogleGoals.md)
+- [sFractal Consulting](./ParticipantInfo/sFractalGoals.md)
+- [NSA](./ParticipantInfo/NSAGoals.md)
+- [Huntington Ingalls Industries](./ParticipantInfo/HIIGoals.md)
+- [New Context](./ParticipantInfo/NewContextGoals.md)
+- [NineFx](./ParticipantInfo/NineFx.md)
+- [One Planet Education Network](./ParticipantInfo/OnePlanetGoals.md)
+- [AT&T](./ParticipantInfo/AttGoals.md)
+- [mudmaker.org](./ParticipantInfo/MudMakerGoals.md)
+- [Ion Channel](./ParticipantInfo/IonChannelGoals.md)
+- [Unisys](./ParticipantInfo/UnisysGoals.md)
+- [BTS](./ParticipantInfo/BtsGoals.md)
+- [Google](./ParticipantInfo/GoogleGoals.md)
+- [Podii](./ParticipantInfo/PodiiGoals.md)
 
 Editor's Note - This list probably needs to move to it's own page
 since it will probably grow to 50+ entries.
