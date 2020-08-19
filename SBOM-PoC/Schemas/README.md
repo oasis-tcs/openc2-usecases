@@ -1,5 +1,4 @@
 # OpenC2 v1.1 Plugfest Schemas
-
 Expanding on the actuator profile
 [overview](https://github.com/oasis-open/openc2-custom-aps/blob/master/Schema-Template/README.md),
 this document steps through the process of creating a new actuator profile and then using that profile to create
@@ -17,16 +16,16 @@ profile, but it is intended to support a range of LED matrix displays including 
 * **Project Name:** blinky
 
 #### 1. Select Namespace
-The profile's namespace allows it to be referenced from other documents.
-Select a namespace for this profile as described in the OpenC2
+OpenC2 (and other specifications) reference each actuator profile's definitions using its unique identifier,
+aka namespace. Select a namespace for this profile as described in the OpenC2
 [Namespace Registry](https://github.com/oasis-tcs/oc2arch/blob/master/namespace-registry.md):
 
 * **Specification:** Hello-World LED Display Custom Actuator Profile
 * **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.1
 
 #### 2. Select Actions and Targets
-Define an initial set of commands that accomplish the goals of the profile. "ap_name" indicates "this profile";
-the names for profile-defined types are determined by the OpenC2 language schema (step 5).
+Define an initial set of commands that accomplish the goals of the profile. Here "ap_name" means "this profile",
+since the name referencing this profile is defined (and can be changed) by the OpenC2 language schema (step 5).
 
 * query features: required by OpenC2
 * query ap_name/device: We want to know something about the physical or virtual actuator.
@@ -35,7 +34,6 @@ the names for profile-defined types are determined by the OpenC2 language schema
 Additional actions and targets may be defined later.
 
 #### 3. Create the blinky profile schema
-
 * Copy the
 [Actuator Profile Template](oc2-language/oc2ls-v1.1-ap-template.jidl)
 to the project's schema file 'blinky.jidl'.
@@ -44,17 +42,23 @@ to the project's schema file 'blinky.jidl'.
 The lists published in an actuator profile select which OpenC2 types are used. Types are defined
 in the language specification and cannot be modified by profiles. Comments may describe any profile-specific
 meaning of OpenC2-defined types.
+
 #### 4. Define profile-specific types
-We specified two profile-defined targets (device and display) above.  Define their contents as fields of AP-Target.
+We mentioned two profile-defined targets (device and display) above.  Define their contents as fields of AP-Target.
 Define the desired response format for these commands as fields of AP-Results. ([Show](images/ap-template-device.jpg)).
 Note that this example defines a "Device" type, which also happens to be the name of an OpenC2 Target.
-Namspaced type references (ls:Device) allows both definitions to be used without conflict.
+Namspaced type references (ls:Device, led:Device) allows both definitions to be used without conflict.
 
-The "Pairs" type is an ad-hoc way for the profile to express the "query features pairs" response as a type definition.
-It is a set of strings, each of which contains the name of an action followed by the targets applicable to that
-action. The Pairs type is never used in messages, but the strings can be used by a Producer or Consumer to construct
-the Map returned by "query features pairs". Delete all actions not supported by the profile, and add the fields of
-Target and AP-Target (preceded by /) applicable to that action.
+The first section of the profile is a set of string enumerations (Action, Target, Args, Specifiers, Results, Pairs)
+that are not referenced by other types. They represent information about a profile that does not appear in
+OpenC2 messages. Omitting a name from the Action/Target/Args/Specifiers/Results lists indicates that the device
+using the profile does not support it. The Pairs list allows a Producer or Consumer to construct the Map
+returned by "query features pairs". It is a set of strings, each containing an action followed by the targets
+applicable to that action, equivalent to the Map returned by "query features pairs". The Pairs type is ad-hoc;
+its name is not reserved and JADN does not define a standard way to convert it to a pairs result.
+
+* In Pairs, delete all actions not supported by the profile and add the fields of Target and AP-Target
+(preceded by /) applicable to that action.
 
 After defining the device-specific content, the blinky profile schema should look like
 [blinky.jidl](blinky/blinky.jidl). This schema, in text or table ([blinky.md](blinky/blinky.md)) format,
