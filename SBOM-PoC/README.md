@@ -129,10 +129,10 @@ and what they plan to contribute to this effort:
 - [One Planet Education Network](./OnePlanetGoals.md)
 - [AT&T](AttGoals.md)
 - [mudmaker.org](MudMakerGoals.md)
-- [Ion Channel](IonChannelGoals.md)
-- [Unisys](UnisysGoals.md)
-- [BTS](BtsGoals.md)
-- [Google](GoogleGoals.md)
+- [Ion Channel](./ParticipantInfo/IonChannelGoals.md)
+- [Unisys](./ParticipantInfo/UnisysGoals.md)
+- [BTS](./ParticipantInfo/BtsGoals.md)
+- [Google](./ParticipantInfo/GoogleGoals.md)
 - [Podii](./ParticipantInfo/PodiiGoals.md)
 
 Editor's Note - This list probably needs to move to it's own page
