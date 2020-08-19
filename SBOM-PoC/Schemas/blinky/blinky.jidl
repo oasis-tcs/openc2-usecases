@@ -1,12 +1,12 @@
        title: "OpenC2 LED Display Actuator Profile"
-      module: "https://oasis-open.org/openc2/blinky/v1.1"
+      module: "https://oasis-open.org/openc2/custom/blinky/v1.1"
  description: "Derived from OpenC2 v1.1 Actuator Profile Template"
      imports: {"ls": "https://oasis-open.org/openc2/oc2ls-types/v1.1"}
      exports: ["AP-Target", "AP-Args", "AP-Specifiers", "AP-Results"]
 
 Action = Enumerated
-   3 query
-  15 set
+   3 query                                             // Collect information about the blinky device
+  15 set                                               // Display something on the device
 
 Target = Enumerated
    9 features
@@ -28,9 +28,13 @@ Results = Enumerated
    5 args
    0 ap_name
 
+Pairs = Enumerated
+   3 query: features, /device
+  15 set: /display
+
 AP-Target = Choice                                     // Profile-defined targets
    1 device           ArrayOf(Enum[Device]){1..*} unique// Device properties to return
-   2 display          Display
+   2 display          Display                          // Content to be displayed
 
 AP-Args = Map{1..*}                                    // Profile-defined command arguments
 
@@ -39,7 +43,7 @@ AP-Specifiers = Map                                    // Profile-defined actuat
 AP-Results = Map{1..*}                                 // Profile-defined response results
    1 device           Device optional
 
-Device = Map{1..*}                                     // Types of device parameters to return
+Device = Map{1..*}                                     // Information about the device
    1 product          String optional                  // Descriptive name of actuator device
    2 resolution       String optional                  // width x height
 

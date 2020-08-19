@@ -66,6 +66,28 @@ Results = Enumerated
    5 args
    0 ap_name
 
+Pairs = Enumerated
+   1 scan
+   2 locate
+   3 query: features, /foo, /bar
+   6 deny: ipv4_net, /bar
+   7 contain
+   8 allow: ipv4_net, /bar
+   9 start
+  10 stop
+  11 restart
+  14 cancel
+  15 set
+  16 update
+  18 redirect
+  19 create
+  20 delete
+  22 detonate
+  23 restore
+  28 copy
+  30 investigate
+  32 remediate
+
 AP-Target = Choice                                     // Profile-defined targets
    1 foo              String
    2 bar              ls:URI

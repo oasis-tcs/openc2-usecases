@@ -25,8 +25,8 @@ Select a namespace for this profile as described in the OpenC2
 * **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.1
 
 #### 2. Select Actions and Targets
-Define an initial set of commands that accomplish the goals of the profile. "ap_name" indicates this profile; an
-actual name is assigned when this profile is used in a device schema (step 5).
+Define an initial set of commands that accomplish the goals of the profile. "ap_name" indicates "this profile";
+the names for profile-defined types are determined by the OpenC2 language schema (step 5).
 
 * query features: required by OpenC2
 * query ap_name/device: We want to know something about the physical or virtual actuator.
@@ -38,14 +38,23 @@ Additional actions and targets may be defined later.
 
 * Copy the
 [Actuator Profile Template](oc2-language/oc2ls-v1.1-ap-template.jidl)
-to the project's schema file ['blinky.jidl'](blinky/blinky.jidl).
-* Delete all unused actions, targets, and args.
+to the project's schema file 'blinky.jidl'.
+* Delete all unused actions, targets, args and results from the template lists.
 
+The lists published in an actuator profile select which OpenC2 types are used. Types are defined
+in the language specification and cannot be modified by profiles. Comments may describe any profile-specific
+meaning of OpenC2-defined types.
 #### 4. Define profile-specific types
-We specified two profile-specific targets (device and display) above.  Define their contents as fields of AP-Target.
+We specified two profile-defined targets (device and display) above.  Define their contents as fields of AP-Target.
 Define the desired response format for these commands as fields of AP-Results. ([Show](images/ap-template-device.jpg)).
 Note that this example defines a "Device" type, which also happens to be the name of an OpenC2 Target.
 Namspaced type references (ls:Device) allows both definitions to be used without conflict.
+
+The "Pairs" type is an ad-hoc way for the profile to express the "query features pairs" response as a type definition.
+It is a set of strings, each of which contains the name of an action followed by the targets applicable to that
+action. The Pairs type is never used in messages, but the strings can be used by a Producer or Consumer to construct
+the Map returned by "query features pairs". Delete all actions not supported by the profile, and add the fields of
+Target and AP-Target (preceded by /) applicable to that action.
 
 After defining the device-specific content, the blinky profile schema should look like
 [blinky.jidl](blinky/blinky.jidl). This schema, in text or table ([blinky.md](blinky/blinky.md)) format,
@@ -114,4 +123,4 @@ Summary:
 string is used to refer to properties with namespaced types, such as the results returned by query features pairs.
 3) There is no distinction between property names for standard or custom profiles.
 Properties named "blinky", "x-blinky", "led", "src", "dst", etc. may all be used by a schema to reference
-types defined in "http://oasis-open.org/openc2/custom/blinky/v1.0".
+types defined in the "http://oasis-open.org/openc2/custom/blinky/v1.1" namespace.

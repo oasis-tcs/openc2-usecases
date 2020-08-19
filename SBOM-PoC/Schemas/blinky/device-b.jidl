@@ -1,5 +1,5 @@
        title: "OpenC2 LED Display Device Schema"
-      module: "https://oasis-open.org/openc2/blinky-device/v1.0"
+      module: "https://example.org/blinky-device/v1.1"
  description: "OpenC2 v1.1 schema for devices that support the Blinky actuator profile"
      imports: {"ls": "https://oasis-open.org/openc2/oc2ls-types/v1.1", "led": "https://oasis-open.org/openc2/blinky/v1.1"}
      exports: ["OpenC2-Command", "OpenC2-Response"]

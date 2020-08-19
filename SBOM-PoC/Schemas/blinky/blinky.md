@@ -2,7 +2,7 @@
 | . | . |
 | ---: | :--- |
 | **title:** | OpenC2 LED Display Actuator Profile |
-| **module:** | https://oasis-open.org/openc2/blinky/v1.1 |
+| **module:** | https://oasis-open.org/openc2/custom/blinky/v1.1 |
 | **description:** | Derived from OpenC2 v1.1 Actuator Profile Template |
 | **imports:** | **ls**:&nbsp;https://oasis-open.org/openc2/oc2ls-types/v1.1 |
 | **exports:** | AP-Target, AP-Args, AP-Specifiers, AP-Results |
@@ -11,8 +11,8 @@
 
 | ID | Name | Description |
 | ---: | :--- | :--- |
-| 3 | **query** |  |
-| 15 | **set** |  |
+| 3 | **query** | Collect information about the blinky device |
+| 15 | **set** | Display something on the device |
 
 **_Type: Target (Enumerated)_**
 
@@ -46,12 +46,19 @@
 | 5 | **args** |  |
 | 0 | **ap_name** |  |
 
+**_Type: Pairs (Enumerated)_**
+
+| ID | Name | Description |
+| ---: | :--- | :--- |
+| 3 | **query: features, /device** |  |
+| 15 | **set: /display** |  |
+
 **_Type: AP-Target (Choice)_**
 
 | ID | Name | Type | # | Description |
 | ---: | :--- | :--- | ---: | :--- |
 | 1 | **device** | ArrayOf(Enum[Device]){1..*} unique | 1 | Device properties to return |
-| 2 | **display** | Display | 1 |  |
+| 2 | **display** | Display | 1 | Content to be displayed |
 
 **_Type: AP-Args (Map{1..*})_**
 
