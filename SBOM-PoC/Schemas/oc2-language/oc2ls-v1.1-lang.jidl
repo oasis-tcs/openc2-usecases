@@ -78,6 +78,6 @@ Results = Map{1..*}                                    // Response Results
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
    0 ap_name/         nsid1:AP-Results optional        // Profile-defined results
 
-Action-Targets = MapOf(Action, Targets){1..*}          // Map of actions to targets
+Action-Targets = MapOf(Action, Targets){1..*}          // Targets applicable to each action supported by this device
 
-Targets = ArrayOf(Pointer[Target]){1..0} unique        // List of Targets
+Targets = ArrayOf(Pointer[Target]){1..*} unique        // Target pointers

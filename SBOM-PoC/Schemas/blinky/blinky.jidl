@@ -5,28 +5,28 @@
      exports: ["AP-Target", "AP-Args", "AP-Specifiers", "AP-Results"]
 
 Action = Enumerated
-   3 query                                             // Initiate a request for information.
-  15 set                                               // Change a value, configuration, or state of a managed entity.
+   3 query
+  15 set
 
-Target = Choice
-   9 features         ls:Features                      // A set of items used with the query Action to determine an Actuator's capabilities.
-   0 ap_name/         AP-Target                        // Profile-defined targets
+Target = Enumerated
+   9 features
+   0 ap_name
 
-Args = Map{1..*}
-   1 start_time       ls:Date-Time optional            // The specific date/time to initiate the Command
-   2 stop_time        ls:Date-Time optional            // The specific date/time to terminate the Command
-   0 ap_name/         AP-Args optional                 // Profile-defined command arguments
+Args = Enumerated
+   1 start_time
+   2 stop_time
+   0 ap_name
 
-Actuator = Choice
-   0 ap_name/         AP-Specifiers                    // Actuator specifiers defined in this profile
+Actuator = Enumerated
+   0 ap_name
 
-Results = Map{1..*}                                    // Response Results
-   1 versions         ls:Version unique [0..10]        // List of OpenC2 language versions supported by this Actuator
-   2 profiles         ls:FieldName unique [0..*]       // List of profiles supported by this Actuator
-   3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
-   4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
-   5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-   0 ap_name/         AP-Results optional              // Profile-defined response results
+Results = Enumerated
+   1 versions
+   2 profiles
+   3 pairs
+   4 rate_limit
+   5 args
+   0 ap_name
 
 AP-Target = Choice                                     // Profile-defined targets
    1 device           ArrayOf(Enum[Device]){1..*} unique// Device properties to return

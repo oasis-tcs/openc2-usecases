@@ -11,40 +11,40 @@
 
 | ID | Name | Description |
 | ---: | :--- | :--- |
-| 3 | **query** | Initiate a request for information. |
-| 15 | **set** | Change a value, configuration, or state of a managed entity. |
+| 3 | **query** |  |
+| 15 | **set** |  |
 
-**_Type: Target (Choice)_**
+**_Type: Target (Enumerated)_**
 
-| ID | Name | Type | # | Description |
-| ---: | :--- | :--- | ---: | :--- |
-| 9 | **features** | ls:Features | 1 | A set of items used with the query Action to determine an Actuator's capabilities. |
-| 0 | **ap_name/** | AP-Target | 1 | Profile-defined targets |
+| ID | Name | Description |
+| ---: | :--- | :--- |
+| 9 | **features** |  |
+| 0 | **ap_name** |  |
 
-**_Type: Args (Map{1..*})_**
+**_Type: Args (Enumerated)_**
 
-| ID | Name | Type | # | Description |
-| ---: | :--- | :--- | ---: | :--- |
-| 1 | **start_time** | ls:Date-Time | 0..1 | The specific date/time to initiate the Command |
-| 2 | **stop_time** | ls:Date-Time | 0..1 | The specific date/time to terminate the Command |
-| 0 | **ap_name/** | AP-Args | 0..1 | Profile-defined command arguments |
+| ID | Name | Description |
+| ---: | :--- | :--- |
+| 1 | **start_time** |  |
+| 2 | **stop_time** |  |
+| 0 | **ap_name** |  |
 
-**_Type: Actuator (Choice)_**
+**_Type: Actuator (Enumerated)_**
 
-| ID | Name | Type | # | Description |
-| ---: | :--- | :--- | ---: | :--- |
-| 0 | **ap_name/** | AP-Specifiers | 1 | Actuator specifiers defined in this profile |
+| ID | Name | Description |
+| ---: | :--- | :--- |
+| 0 | **ap_name** |  |
 
-**_Type: Results (Map{1..*})_**
+**_Type: Results (Enumerated)_**
 
-| ID | Name | Type | # | Description |
-| ---: | :--- | :--- | ---: | :--- |
-| 1 | **versions** | ls:Version unique | 0..10 | List of OpenC2 language versions supported by this Actuator |
-| 2 | **profiles** | ls:FieldName unique | 0..* | List of profiles supported by this Actuator |
-| 3 | **pairs** | Action-Targets | 0..1 | List of targets applicable to each supported Action |
-| 4 | **rate_limit** | Number{0.0..*} | 0..1 | Maximum number of requests per minute supported by design or policy |
-| 5 | **args** | Enumerated(Enum[Args]) | 0..* | List of supported Command Arguments |
-| 0 | **ap_name/** | AP-Results | 0..1 | Profile-defined response results |
+| ID | Name | Description |
+| ---: | :--- | :--- |
+| 1 | **versions** |  |
+| 2 | **profiles** |  |
+| 3 | **pairs** |  |
+| 4 | **rate_limit** |  |
+| 5 | **args** |  |
+| 0 | **ap_name** |  |
 
 **_Type: AP-Target (Choice)_**
 
