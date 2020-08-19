@@ -121,7 +121,7 @@ Here is the list of organizations who have agreed to participate,
 in order of volunteering to participate in PoC,
 hotlinked to pages showing what they are interested in
 and what they plan to contribute to this effort:
-- [sFractal Consulting](./sFractalGoals.md)
+- [sFractal Consulting](./ParticipantInfo/sFractalGoals.md)
 - [NSA](./NSAGoals.md)
 - [Huntington Ingalls Industries](./HIIGoals.md)
 - [New Context](./NewContextGoals.md)
@@ -133,7 +133,7 @@ and what they plan to contribute to this effort:
 - [Unisys](UnisysGoals.md)
 - [BTS](BtsGoals.md)
 - [Google](GoogleGoals.md)
-- [Podii](PodiiGoals.md)
+- [Podii](./ParticipantInfo/PodiiGoals.md)
 
 Editor's Note - This list probably needs to move to it's own page
 since it will probably grow to 50+ entries.
