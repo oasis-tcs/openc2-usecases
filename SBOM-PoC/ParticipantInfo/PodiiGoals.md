@@ -1,4 +1,4 @@
-# sFractal Goals & Objectives
+# Podii Goals & Objectives
 
 Table of Contents
 - [1-Introduction](#1-introduction)
