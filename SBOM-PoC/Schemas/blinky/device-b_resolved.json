@@ -1,0 +1,561 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.org/blinky-device/v1.1",
+  "title": "OpenC2 LED Display Device Schema",
+  "description": "OpenC2 v1.1 schema for devices that support the Blinky actuator profile",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "openc2_command": {
+      "$ref": "#/definitions/OpenC2-Command"
+    },
+    "openc2_response": {
+      "$ref": "#/definitions/OpenC2-Response"
+    }
+  },
+  "definitions": {
+    "OpenC2-Command": {
+      "title": "OpenC2 Command",
+      "type": "object",
+      "description": "The Command defines an Action to be performed on a Target",
+      "additionalProperties": false,
+      "required": [
+        "action",
+        "target"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "action": {
+          "$ref": "#/definitions/Action",
+          "description": "The task or activity to be performed (i.e., the 'verb')."
+        },
+        "target": {
+          "$ref": "#/definitions/Target",
+          "description": "The object of the Action. The Action is performed on the Target."
+        },
+        "args": {
+          "$ref": "#/definitions/Args",
+          "description": "Additional information that applies to the Command."
+        },
+        "actuator": {
+          "$ref": "#/definitions/Actuator",
+          "description": "The subject of the Action. The Actuator executes the Action on the Target."
+        },
+        "command_id": {
+          "$ref": "#/definitions/Command-ID",
+          "description": "An identifier of this Command."
+        }
+      }
+    },
+    "OpenC2-Response": {
+      "title": "OpenC2 Response",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status-Code",
+          "description": "An integer status code."
+        },
+        "status_text": {
+          "type": "string",
+          "description": "A free-form human-readable description of the Response status.",
+          "maxLength": 255
+        },
+        "results": {
+          "$ref": "#/definitions/Results",
+          "description": "Map of key:value pairs that contain additional results based on the invoking Command."
+        }
+      }
+    },
+    "Action": {
+      "title": "Action",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "query",
+          "description": "Initiate a request for information."
+        },
+        {
+          "const": "set",
+          "description": "Change a value, configuration, or state of a managed entity."
+        }
+      ]
+    },
+    "Target": {
+      "title": "Target",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "features": {
+          "$ref": "#/definitions/Features",
+          "description": "A set of items used with the query Action to determine an Actuator's capabilities."
+        },
+        "blinky": {
+          "$ref": "#/definitions/AP-Target$led",
+          "description": "Profile-defined targets"
+        }
+      }
+    },
+    "Args": {
+      "title": "Args",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "start_time": {
+          "$ref": "#/definitions/Date-Time",
+          "description": "The specific date/time to initiate the Command"
+        },
+        "stop_time": {
+          "$ref": "#/definitions/Date-Time",
+          "description": "The specific date/time to terminate the Command"
+        },
+        "blinky": {
+          "$ref": "#/definitions/AP-Args$led",
+          "description": "Profile-defined command arguments"
+        }
+      }
+    },
+    "Actuator": {
+      "title": "Actuator",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "blinky": {
+          "$ref": "#/definitions/AP-Specifiers$led",
+          "description": "Actuator specifiers defined in this profile"
+        }
+      }
+    },
+    "Results": {
+      "title": "Results",
+      "type": "object",
+      "description": "Response Results",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "versions": {
+          "type": "array",
+          "description": "List of OpenC2 language versions supported by this Actuator",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "$ref": "#/definitions/Version",
+            "description": "List of OpenC2 language versions supported by this Actuator"
+          }
+        },
+        "profiles": {
+          "type": "array",
+          "description": "List of profiles supported by this Actuator",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/FieldName",
+            "description": "List of profiles supported by this Actuator"
+          }
+        },
+        "pairs": {
+          "$ref": "#/definitions/Action-Targets",
+          "description": "List of targets applicable to each supported Action"
+        },
+        "rate_limit": {
+          "type": "number",
+          "description": "Maximum number of requests per minute supported by design or policy",
+          "minimum": 0.0
+        },
+        "args": {
+          "type": "array",
+          "description": "List of supported Command Arguments",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "description": "List of supported Command Arguments",
+            "oneOf": [
+              {
+                "const": "start_time",
+                "description": "The specific date/time to initiate the Command"
+              },
+              {
+                "const": "stop_time",
+                "description": "The specific date/time to terminate the Command"
+              },
+              {
+                "const": "blinky",
+                "description": "Profile-defined command arguments"
+              }
+            ]
+          }
+        },
+        "blinky": {
+          "$ref": "#/definitions/AP-Results$led",
+          "description": "Profile-defined response results"
+        }
+      }
+    },
+    "Action-Targets": {
+      "title": "Action Targets",
+      "type": "object",
+      "description": "Targets applicable to each action supported by this device",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "query": {
+          "$ref": "#/definitions/Targets"
+        },
+        "set": {
+          "$ref": "#/definitions/Targets"
+        }
+      }
+    },
+    "Targets": {
+      "title": "Targets",
+      "type": "array",
+      "description": "Target pointers",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "$ref": "#/definitions/Target$Pointer"
+      }
+    },
+    "AP-Target$led": {
+      "title": "AP Target$led",
+      "type": "object",
+      "description": "Profile-defined targets",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "device": {
+          "type": "array",
+          "description": "Device properties to return",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 100,
+          "items": {
+            "oneOf": [
+              {
+                "const": "product",
+                "description": "Descriptive name of actuator device"
+              },
+              {
+                "const": "resolution",
+                "description": "width x height"
+              }
+            ]
+          }
+        },
+        "display": {
+          "$ref": "#/definitions/Display$led",
+          "description": "Content to be displayed"
+        }
+      }
+    },
+    "AP-Args$led": {
+      "title": "AP Args$led",
+      "type": "object",
+      "description": "Profile-defined command arguments",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {}
+    },
+    "AP-Specifiers$led": {
+      "title": "AP Specifiers$led",
+      "type": "object",
+      "description": "Profile-defined actuator specifiers",
+      "additionalProperties": false,
+      "maxProperties": 100,
+      "properties": {}
+    },
+    "AP-Results$led": {
+      "title": "AP Results$led",
+      "type": "object",
+      "description": "Profile-defined response results",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "device": {
+          "$ref": "#/definitions/Device$led",
+          "description": ""
+        }
+      }
+    },
+    "Device$led": {
+      "title": "Device$led",
+      "type": "object",
+      "description": "Information about the device",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "product": {
+          "type": "string",
+          "description": "Descriptive name of actuator device",
+          "maxLength": 255
+        },
+        "resolution": {
+          "type": "string",
+          "description": "width x height",
+          "maxLength": 255
+        }
+      }
+    },
+    "Display$led": {
+      "title": "Display$led",
+      "type": "object",
+      "description": "Types of patterns to display",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "predefined": {
+          "$ref": "#/definitions/Canned-Displays$led",
+          "description": "Pre-defined patterns to display"
+        },
+        "image": {
+          "$ref": "#/definitions/Artifact",
+          "description": "Still image file"
+        },
+        "animation": {
+          "$ref": "#/definitions/Artifact",
+          "description": "Moving image file"
+        }
+      }
+    },
+    "Canned-Displays$led": {
+      "title": "Canned Displays$led",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "orange",
+          "description": ""
+        },
+        {
+          "const": "purple",
+          "description": ""
+        },
+        {
+          "const": "rainbow",
+          "description": "color-cycling"
+        },
+        {
+          "const": "space-invaders",
+          "description": "animation"
+        }
+      ]
+    },
+    "Status-Code": {
+      "title": "Status Code",
+      "type": "integer",
+      "oneOf": [
+        {
+          "const": 102,
+          "description": "Processing - an interim Response used to inform the Producer that the Consumer has accepted the Command but has not yet completed it"
+        },
+        {
+          "const": 200,
+          "description": "OK - the Command has succeeded"
+        },
+        {
+          "const": 201,
+          "description": "Created - the Command has succeeded and a new resource has been created as a result of it"
+        },
+        {
+          "const": 400,
+          "description": "Bad Request - the Consumer cannot process the Command due to something that is perceived to be a Producer error (e.g., malformed Command syntax)"
+        },
+        {
+          "const": 401,
+          "description": "Unauthorized - the Command Message lacks valid authentication credentials for the target resource or authorization has been refused for the submitted credentials"
+        },
+        {
+          "const": 403,
+          "description": "Forbidden - the Consumer understood the Command but refuses to authorize it"
+        },
+        {
+          "const": 404,
+          "description": "Not Found - the Consumer has not found anything matching the Command"
+        },
+        {
+          "const": 500,
+          "description": "Internal Error - the Consumer encountered an unexpected condition that prevented it from performing the Command"
+        },
+        {
+          "const": 501,
+          "description": "Not Implemented - the Consumer does not support the functionality required to perform the Command"
+        },
+        {
+          "const": 503,
+          "description": "Service Unavailable - the Consumer is currently unable to perform the Command due to a temporary overloading or maintenance of the Consumer"
+        }
+      ]
+    },
+    "Artifact": {
+      "title": "Artifact",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "mime_type": {
+          "type": "string",
+          "description": "Permitted values specified in the IANA Media Types registry, [RFC6838]",
+          "maxLength": 255
+        },
+        "payload": {
+          "$ref": "#/definitions/Payload",
+          "description": "Choice of literal content or URL"
+        },
+        "hashes": {
+          "$ref": "#/definitions/Hashes",
+          "description": "Hashes of the payload content"
+        }
+      }
+    },
+    "Features": {
+      "title": "Features",
+      "type": "array",
+      "description": "An array of zero to ten names used to query an Actuator for its supported capabilities.",
+      "uniqueItems": true,
+      "maxItems": 10,
+      "items": {
+        "$ref": "#/definitions/Feature"
+      }
+    },
+    "URI": {
+      "title": "URI",
+      "type": "string",
+      "description": "Uniform Resource Identifier, [RFC3986]",
+      "format": "uri",
+      "maxLength": 255
+    },
+    "Date-Time": {
+      "title": "Date Time",
+      "type": "integer",
+      "description": "Date and Time",
+      "minimum": 0
+    },
+    "Feature": {
+      "title": "Feature",
+      "type": "string",
+      "description": "Specifies the results to be returned from a query features Command",
+      "oneOf": [
+        {
+          "const": "versions",
+          "description": "List of OpenC2 Language versions supported by this Actuator"
+        },
+        {
+          "const": "profiles",
+          "description": "List of profiles supported by this Actuator"
+        },
+        {
+          "const": "pairs",
+          "description": "List of supported Actions and applicable Targets"
+        },
+        {
+          "const": "rate_limit",
+          "description": "Maximum number of Commands per minute supported by design or policy"
+        },
+        {
+          "const": "args",
+          "description": "List of supported Command Argumemnts"
+        }
+      ]
+    },
+    "Hashes": {
+      "title": "Hashes",
+      "type": "object",
+      "description": "Cryptographic hash values",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "md5": {
+          "type": "string",
+          "description": "MD5 hash as defined in [RFC1321]",
+          "contentEncoding": "base16"
+        },
+        "sha1": {
+          "type": "string",
+          "description": "SHA1 hash as defined in [RFC6234]",
+          "contentEncoding": "base16"
+        },
+        "sha256": {
+          "type": "string",
+          "description": "SHA256 hash as defined in [RFC6234]",
+          "contentEncoding": "base16"
+        }
+      }
+    },
+    "Payload": {
+      "title": "Payload",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "bin": {
+          "type": "string",
+          "description": "Specifies the data contained in the artifact",
+          "contentEncoding": "base64url"
+        },
+        "url": {
+          "$ref": "#/definitions/URI",
+          "description": "MUST be a valid URL that resolves to the un-encoded content"
+        }
+      }
+    },
+    "Version": {
+      "title": "Version",
+      "type": "string",
+      "description": "Major.Minor version number",
+      "maxLength": 255
+    },
+    "FieldName": {
+      "title": "FieldName",
+      "type": "string",
+      "description": "Property name syntax, match $FieldName if configured",
+      "maxLength": 255,
+      "pattern": "^[a-z][_A-Za-z0-9]{0,31}$"
+    },
+    "Command-ID": {
+      "title": "Command ID",
+      "type": "string",
+      "description": "Command Identifier",
+      "maxLength": 255,
+      "pattern": "^\\S{0,36}$"
+    },
+    "Target$Pointer": {
+      "title": "Target$Pointer",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "features",
+          "description": "A set of items used with the query Action to determine an Actuator's capabilities."
+        },
+        {
+          "const": "blinky/device",
+          "description": "Device properties to return"
+        },
+        {
+          "const": "blinky/display",
+          "description": "Content to be displayed"
+        }
+      ]
+    }
+  }
+}
