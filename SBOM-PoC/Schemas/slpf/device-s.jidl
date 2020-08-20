@@ -2,6 +2,7 @@
       module: "https://oasis-open.org/openc2/slpf-device/v1.1"
  description: "OpenC2 v1.1 schema for devices that support the Blinky actuator profile"
      imports: {"ls": "https://oasis-open.org/openc2/oc2ls-types/v1.1", "slpf": "https://oasis-open.org/openc2/oc2slpf/v1.1"}
+     exports: ["OpenC2-Command", "OpenC2-Response"]
 
 OpenC2-Command = Record
    1 action           Action                           // The task or activity to be performed

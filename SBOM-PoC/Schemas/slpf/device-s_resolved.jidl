@@ -1,3 +1,175 @@
        title: "Stateless Packet Filtering Device Schema"
       module: "https://oasis-open.org/openc2/slpf-device/v1.1"
  description: "OpenC2 v1.1 schema for devices that support the Blinky actuator profile"
+     exports: ["OpenC2-Command", "OpenC2-Response"]
+
+OpenC2-Command = Record
+   1 action           Action                           // The task or activity to be performed
+   2 target           Target                           // The object referenced by the Action
+   3 args             Args optional                    // Additional information that applies to the Command
+   4 actuator         Actuator optional                // The profile that defines the Command
+   5 command_id       Command-ID optional              // An identifier of this Command
+
+OpenC2-Response = Map
+   1 status           Status-Code                      // Integer status code
+   2 status_text      String optional                  // Free-form description of the Response status
+   3 results          Results optional                 // Results returned by the invoked Command
+
+Action = Enumerated                                    // Actions used in this profile
+   3 query                                             // Initiate a request for information
+   6 deny                                              // Prevent a certain event or action from completion, such as preventing a flow from reaching a destination or preventing access
+   8 allow                                             // Permit access to or execution of a Target
+  16 update                                            // Instruct a component to retrieve, install, process, and operate in accordance with a software update, reconfiguration, or other update
+  20 delete                                            // Remove an entity (e.g., data, files, flows)
+
+Target = Choice                                        // Targets used in this profile
+   9 features         Features                         // A set of items used with the query Action to determine an Actuator's capabilities
+  10 file             File                             // Properties of a file
+  13 ipv4_net         IPv4-Net                         // An IPv4 address range including CIDR prefix length
+  14 ipv6_net         IPv6-Net                         // An IPv6 address range including prefix length
+  15 ipv4_connection  IPv4-Connection                  // A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol
+  16 ipv6_connection  IPv6-Connection                  // A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol
+1024 slpf/            AP-Target$slpf                   // Targets defined in this profile
+
+Args = Map{1..*}
+   1 start_time       Date-Time optional               // The specific date/time to initiate the Command
+   2 stop_time        Date-Time optional               // The specific date/time to terminate the Command
+   3 duration         Duration optional                // The length of time for an Command to be in effect
+   4 response_requested Response-Type optional         // The type of Response required for the Command: none, ack, status, complete
+1024 slpf/            AP-Args$slpf optional            // Command Arguments defined in this profile
+
+Actuator = Map{1..*}
+1024 slpf/            AP-Specifiers$slpf optional      // Actuator Specifiers defined in this profile
+
+Results = Map{1..*}                                    // Response Results
+   1 versions         Version unique [0..10]           // List of OpenC2 language versions supported by this Actuator
+   2 profiles         FieldName unique [0..*]          // List of profiles supported by this Actuator
+   3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
+   4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
+   5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
+1024 slpf/            AP-Results$slpf optional         // Results defined in this profile
+
+Action-Targets = MapOf(Action, Targets){1..*}          // Targets applicable to each action supported by this device
+
+Targets = ArrayOf(Target$Pointer){1..*} unique         // Target pointers
+
+AP-Target$slpf = Choice                                // Profile-defined targets
+   1 rule_number      Rule-ID$slpf                     // Immutable identifier assigned when a rule is created. Identifies a rule to be deleted.
+
+AP-Args$slpf = Map{1..*}                               // Profile-defined command arguments
+   1 drop_process     Drop-Process$slpf optional       // Specifies how to handle denied packets
+   2 persistent       Boolean optional                 // Normal operations assume any changes to a device are to be implemented persistently. Setting the persistent modifier to FALSE results in a change that is not persistent in the event of a reboot or restart
+   3 direction        Direction$slpf optional          // Specifies whether to apply rules to incoming or outgoing traffic. If omitted, rules are applied to ingress packets
+   4 insert_rule      Rule-ID$slpf optional            // Specifies the identifier of the rule within a list, typically used in a top-down rule list
+   5 logged           Boolean optional                 // Specifies if a log entry should be recorded as traffic matches the rule. The manner and mechanism for recording these entries is implementation specific and not defined by this specification.
+
+Drop-Process$slpf = Enumerated
+   1 none                                              // Drop the packet and do not send a notification to the source of the packet
+   2 reject                                            // Drop the packet and send an ICMP host unreachable (or equivalent) to the source of the packet
+   3 false_ack                                         // Drop the traffic and send a false acknowledgment
+
+Direction$slpf = Enumerated
+   1 both                                              // Apply rules to all traffic
+   2 ingress                                           // Apply rules to incoming traffic only
+   3 egress                                            // Apply rules to outgoing traffic only
+
+AP-Specifiers$slpf = Map                               // Profile-defined actuator specifiers
+   1 hostname         String optional                  // [RFC1123] hostname (can be a domain name or IP address) for a particular device with SLPF functionality
+   2 named_group      String optional                  // User defined collection of devices with SLPF functionality
+   3 asset_id         String optional                  // Unique identifier for a particular SLPF
+   4 asset_tuple      String optional                  // Unique tuple identifier for a particular SLPF consisting of a list of up to 10 strings
+
+AP-Results$slpf = Map{1..*}                            // Profile-defined response results
+   1 rule_number      Rule-ID$slpf optional            // Rule identifier returned from allow or deny Command
+
+Rule-ID$slpf = Integer                                 // Access rule identifier
+
+Status-Code = Enumerated.ID
+ 102                                                   // Processing:: an interim Response used to inform the Producer that the Consumer has accepted the Command but has not yet completed it
+ 200                                                   // OK:: the Command has succeeded
+ 201                                                   // Created:: the Command has succeeded and a new resource has been created as a result of it
+ 400                                                   // Bad Request:: the Consumer cannot process the Command due to something that is perceived to be a Producer error (e.g., malformed Command syntax)
+ 401                                                   // Unauthorized:: the Command Message lacks valid authentication credentials for the target resource or authorization has been refused for the submitted credentials
+ 403                                                   // Forbidden:: the Consumer understood the Command but refuses to authorize it
+ 404                                                   // Not Found:: the Consumer has not found anything matching the Command
+ 500                                                   // Internal Error:: the Consumer encountered an unexpected condition that prevented it from performing the Command
+ 501                                                   // Not Implemented:: the Consumer does not support the functionality required to perform the Command
+ 503                                                   // Service Unavailable:: the Consumer is currently unable to perform the Command due to a temporary overloading or maintenance of the Consumer
+
+Features = ArrayOf(Feature){0..10} unique              // An array of zero to ten names used to query an Actuator for its supported capabilities.
+
+File = Map{1..*}
+   1 name             String optional                  // The name of the file as defined in the file system
+   2 path             String optional                  // The absolute path to the location of the file in the file system
+   3 hashes           Hashes optional                  // One or more cryptographic hash codes of the file contents
+
+IPv4-Net = Array /ipv4-net                             // IPv4 address and prefix length
+   1  IPv4-Addr                                        // ipv4_addr:: IPv4 address as defined in [RFC0791]
+   2  Integer optional                                 // prefix_length:: CIDR prefix-length. If omitted, refers to a single host address.
+
+IPv4-Connection = Record{1..*}                         // 5-tuple that specifies a tcp/ip connection
+   1 src_addr         IPv4-Net optional                // IPv4 source address range
+   2 src_port         Port optional                    // Source service per [RFC6335]
+   3 dst_addr         IPv4-Net optional                // IPv4 destination address range
+   4 dst_port         Port optional                    // Destination service per [RFC6335]
+   5 protocol         L4-Protocol optional             // Layer 4 protocol (e.g., TCP) - see L4-Protocol section
+
+IPv6-Net = Array /ipv6-net                             // IPv6 address and prefix length
+   1  IPv6-Addr                                        // ipv6_addr:: IPv6 address as defined in [RFC8200]
+   2  Integer optional                                 // prefix_length:: prefix length. If omitted, refers to a single host address
+
+IPv6-Connection = Record{1..*}                         // 5-tuple that specifies a tcp/ip connection
+   1 src_addr         IPv6-Net optional                // IPv6 source address range
+   2 src_port         Port optional                    // Source service per [RFC6335]
+   3 dst_addr         IPv6-Net optional                // IPv6 destination address range
+   4 dst_port         Port optional                    // Destination service per [RFC6335]
+   5 protocol         L4-Protocol optional             // Layer 4 protocol (e.g., TCP) - [Section 3.4.2.10]
+
+Date-Time = Integer{0..*}                              // Date and Time
+
+Duration = Integer{0..*}                               // A length of time
+
+Feature = Enumerated                                   // Specifies the results to be returned from a query features Command
+   1 versions                                          // List of OpenC2 Language versions supported by this Actuator
+   2 profiles                                          // List of profiles supported by this Actuator
+   3 pairs                                             // List of supported Actions and applicable Targets
+   4 rate_limit                                        // Maximum number of Commands per minute supported by design or policy
+   5 args                                              // List of supported Command Argumemnts
+
+Hashes = Map{1..*}                                     // Cryptographic hash values
+   1 md5              Binary{16..16} /x optional       // MD5 hash as defined in [RFC1321]
+   2 sha1             Binary{20..20} /x optional       // SHA1 hash as defined in [RFC6234]
+   3 sha256           Binary{32..32} /x optional       // SHA256 hash as defined in [RFC6234]
+
+IPv4-Addr = Binary /ipv4-addr                          // 32 bit IPv4 address as defined in [RFC0791]
+
+IPv6-Addr = Binary /ipv6-addr                          // 128 bit IPv6 address as defined in [RFC8200]
+
+L4-Protocol = Enumerated                               // Value of the protocol (IPv4) or next header (IPv6) field in an IP packet. Any IANA value, [RFC5237]
+   1 icmp                                              // Internet Control Message Protocol - [RFC0792]
+   6 tcp                                               // Transmission Control Protocol - [RFC0793]
+  17 udp                                               // User Datagram Protocol - [RFC0768]
+ 132 sctp                                              // Stream Control Transmission Protocol - [RFC4960]
+
+Port = Integer{0..65535}                               // Transport Protocol Port Number, [RFC6335]
+
+Response-Type = Enumerated
+   0 none                                              // No response
+   1 ack                                               // Respond when Command received
+   2 status                                            // Respond with progress toward Command completion
+   3 complete                                          // Respond when all aspects of Command completed
+
+Version = String                                       // Major.Minor version number
+
+FieldName = String (%^[a-z][_A-Za-z0-9]{0,31}$%)       // Property name syntax, match $FieldName if configured
+
+Command-ID = String (%^\S{0,36}$%)                     // Command Identifier
+
+Target$Pointer = Enumerated
+   1 features                                          // A set of items used with the query Action to determine an Actuator's capabilities
+   2 file                                              // Properties of a file
+   3 ipv4_net                                          // An IPv4 address range including CIDR prefix length
+   4 ipv6_net                                          // An IPv6 address range including prefix length
+   5 ipv4_connection                                   // A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol
+   6 ipv6_connection                                   // A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol
+   7 slpf/rule_number                                  // Immutable identifier assigned when a rule is created. Identifies a rule to be deleted.
