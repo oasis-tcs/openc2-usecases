@@ -93,18 +93,20 @@ After deleting unused language elements and filling in profile data, the example
 [device-b schema](blinky/device-b.jidl).
 
 #### 6. Resolve device schema
-With suitable infrastructure the "device-b" schema could be used as-is, with the device retrieving all referenced
-type definitions by namespace. But without dynamic resolution infrastructure we can copy all referenced definitions
-into a single schema ([device-b_resolved](blinky/device-b_resolved.jidl)).
-The resolved schema is normally generated using schema tools, but can be created by manually copying
-definitions from the referenced actuator profile and language spec schemas.  (For testing convenience the resolved
-schema may also be stored in machine-readable [JADN](blinky/device-b_resolved.jadn) and
+With suitable infrastructure the "device-b" schema is used directly, with the device retrieving all referenced
+type definitions by namespace. If the device cannot resolve references it will need a single schema
+([device-b_resolved](blinky/device-b_resolved.jidl)) containing all referenced definitions.
+The resolved schema is normally generated using schema tools, but can be created manually by copying
+definitions from the referenced schemas. For testing convenience the resolved
+schema may also be stored in machine-readable [JADN](blinky/device-b_resolved.jadn) or
 [JSON Schema](blinky/device-b_resolved.json) formats.
 
 #### 7. Create test data
 Create four directories "Good-command", "Good-response", "Bad-command", and "Bad-response" in the directory
 containing the resolved schema. Create good and invalid test messages in these locations.
 Using a standard directory structure allows testing software to locate and validate test data for multiple profiles.
+Note that in some cases a message may be either good or bad depending on the capabilities of the device and whether
+conformance requires support for the capability.
 
 #### 8. Validate test data
 The Python script [test-poc.py](test-poc.py) will validate test data against the schema for all projects.
