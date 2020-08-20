@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://oasis-open.org/openc2/slpf-device/v1.1",
+  "title": "Stateless Packet Filtering Device Schema",
+  "description": "OpenC2 v1.1 schema for devices that support the Blinky actuator profile",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {},
+  "definitions": {}
+}

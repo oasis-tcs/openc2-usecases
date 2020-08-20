@@ -1,0 +1,3 @@
+       title: "Stateless Packet Filtering Device Schema"
+      module: "https://oasis-open.org/openc2/slpf-device/v1.1"
+ description: "OpenC2 v1.1 schema for devices that support the Blinky actuator profile"
