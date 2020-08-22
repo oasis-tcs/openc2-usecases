@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://oasis-open.org/openc2/slpf-device/v1.1",
   "title": "Stateless Packet Filtering Device Schema",
-  "description": "OpenC2 v1.1 schema for devices that support the Blinky actuator profile",
+  "description": "OpenC2 v1.1 schema for devices that support the SLPF actuator profile",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -17,6 +17,7 @@
     "OpenC2-Command": {
       "title": "OpenC2 Command",
       "type": "object",
+      "description": "The Command defines an Action to be performed on a Target",
       "additionalProperties": false,
       "required": [
         "action",
@@ -26,23 +27,23 @@
       "properties": {
         "action": {
           "$ref": "#/definitions/Action",
-          "description": "The task or activity to be performed"
+          "description": "The task or activity to be performed (i.e., the 'verb')."
         },
         "target": {
           "$ref": "#/definitions/Target",
-          "description": "The object referenced by the Action"
+          "description": "The object of the Action. The Action is performed on the Target."
         },
         "args": {
           "$ref": "#/definitions/Args",
-          "description": "Additional information that applies to the Command"
+          "description": "Additional information that applies to the Command."
         },
         "actuator": {
           "$ref": "#/definitions/Actuator",
-          "description": "The profile that defines the Command"
+          "description": "The subject of the Action. The Actuator executes the Action on the Target."
         },
         "command_id": {
           "$ref": "#/definitions/Command-ID",
-          "description": "An identifier of this Command"
+          "description": "An identifier of this Command."
         }
       }
     },
@@ -57,81 +58,79 @@
       "properties": {
         "status": {
           "$ref": "#/definitions/Status-Code",
-          "description": "Integer status code"
+          "description": "An integer status code."
         },
         "status_text": {
           "type": "string",
-          "description": "Free-form description of the Response status",
+          "description": "A free-form human-readable description of the Response status.",
           "maxLength": 255
         },
         "results": {
           "$ref": "#/definitions/Results",
-          "description": "Results returned by the invoked Command"
+          "description": "Map of key:value pairs that contain additional results based on the invoking Command."
         }
       }
     },
     "Action": {
       "title": "Action",
       "type": "string",
-      "description": "Actions used in this profile",
       "oneOf": [
         {
           "const": "query",
-          "description": "Initiate a request for information"
+          "description": "Initiate a request for information."
         },
         {
           "const": "deny",
-          "description": "Prevent a certain event or action from completion, such as preventing a flow from reaching a destination or preventing access"
+          "description": "Prevent a certain event or action from completion, such as preventing a flow from reaching a destination or preventing access."
         },
         {
           "const": "allow",
-          "description": "Permit access to or execution of a Target"
+          "description": "Permit access to or execution of a Target."
         },
         {
           "const": "update",
-          "description": "Instruct a component to retrieve, install, process, and operate in accordance with a software update, reconfiguration, or other update"
+          "description": "Instruct a component to retrieve, install, process, and operate in accordance with a software update, reconfiguration, or other update."
         },
         {
           "const": "delete",
-          "description": "Remove an entity (e.g., data, files, flows)"
+          "description": "Remove an entity (e.g., data, files, flows)."
         }
       ]
     },
     "Target": {
       "title": "Target",
       "type": "object",
-      "description": "Targets used in this profile",
       "additionalProperties": false,
       "minProperties": 1,
       "maxProperties": 1,
       "properties": {
         "features": {
           "$ref": "#/definitions/Features",
-          "description": "A set of items used with the query Action to determine an Actuator's capabilities"
+          "description": "A set of items used with the query Action to determine an Actuator's capabilities."
         },
         "file": {
           "$ref": "#/definitions/File",
-          "description": "Properties of a file"
+          "description": "Properties of a file."
         },
         "ipv4_net": {
           "$ref": "#/definitions/IPv4-Net",
-          "description": "An IPv4 address range including CIDR prefix length"
+          "description": "An IPv4 address range including CIDR prefix length."
         },
         "ipv6_net": {
           "$ref": "#/definitions/IPv6-Net",
-          "description": "An IPv6 address range including prefix length"
+          "description": "An IPv6 address range including prefix length."
         },
         "ipv4_connection": {
           "$ref": "#/definitions/IPv4-Connection",
-          "description": "A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol"
+          "description": "A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol."
         },
         "ipv6_connection": {
           "$ref": "#/definitions/IPv6-Connection",
-          "description": "A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol"
+          "description": "A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol."
         },
         "slpf": {
           "$ref": "#/definitions/AP-Target$slpf",
-          "description": "Targets defined in this profile"
+          "description": "Profile-defined targets"
         }
       }
     },
@@ -160,7 +159,7 @@
         },
         "slpf": {
           "$ref": "#/definitions/AP-Args$slpf",
-          "description": "Command Arguments defined in this profile"
+          "description": "Profile-defined command arguments"
         }
       }
     },
@@ -169,11 +168,11 @@
       "type": "object",
       "additionalProperties": false,
       "minProperties": 1,
-      "maxProperties": 100,
+      "maxProperties": 1,
       "properties": {
         "slpf": {
           "$ref": "#/definitions/AP-Specifiers$slpf",
-          "description": "Actuator Specifiers defined in this profile"
+          "description": "Profile-defined actuator specifiers"
         }
       }
     },
@@ -241,14 +240,14 @@
               },
               {
                 "const": "slpf",
-                "description": "Command Arguments defined in this profile"
+                "description": "Profile-defined command arguments"
               }
             ]
           }
         },
         "slpf": {
           "$ref": "#/definitions/AP-Results$slpf",
-          "description": "Results defined in this profile"
+          "description": "Profile-defined results"
         }
       }
     },
@@ -721,27 +720,27 @@
       "oneOf": [
         {
           "const": "features",
-          "description": "A set of items used with the query Action to determine an Actuator's capabilities"
+          "description": "A set of items used with the query Action to determine an Actuator's capabilities."
         },
         {
           "const": "file",
-          "description": "Properties of a file"
+          "description": "Properties of a file."
         },
         {
           "const": "ipv4_net",
-          "description": "An IPv4 address range including CIDR prefix length"
+          "description": "An IPv4 address range including CIDR prefix length."
         },
         {
           "const": "ipv6_net",
-          "description": "An IPv6 address range including prefix length"
+          "description": "An IPv6 address range including prefix length."
         },
         {
           "const": "ipv4_connection",
-          "description": "A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol"
+          "description": "A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol."
         },
         {
           "const": "ipv6_connection",
-          "description": "A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol"
+          "description": "A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol."
         },
         {
           "const": "slpf/rule_number",

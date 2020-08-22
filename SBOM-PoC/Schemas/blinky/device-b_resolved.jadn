@@ -31,14 +31,14 @@
     [2000, "blinky", "AP-Target$led", ["<"], "Profile-defined targets"]
   ]],
 
-  ["Args", "Map", ["{1"], "", [
+  ["Args", "Map", ["{1"], "Profile-defined command arguments", [
     [1, "start_time", "Date-Time", ["[0"], "The specific date/time to initiate the Command"],
     [2, "stop_time", "Date-Time", ["[0"], "The specific date/time to terminate the Command"],
     [2000, "blinky", "AP-Args$led", ["[0", "<"], "Profile-defined command arguments"]
   ]],
 
   ["Actuator", "Choice", [], "", [
-    [2000, "blinky", "AP-Specifiers$led", ["<"], "Actuator specifiers defined in this profile"]
+    [2000, "blinky", "AP-Specifiers$led", ["<"], "Profile-defined actuator specifiers"]
   ]],
 
   ["Results", "Map", ["{1"], "Response Results", [
@@ -47,7 +47,7 @@
     [3, "pairs", "Action-Targets", ["[0"], "List of targets applicable to each supported Action"],
     [4, "rate_limit", "Number", ["y0.0", "[0"], "Maximum number of requests per minute supported by design or policy"],
     [5, "args", "Enumerated", ["#Args", "[0", "]0"], "List of supported Command Arguments"],
-    [2000, "blinky", "AP-Results$led", ["[0", "<"], "Profile-defined response results"]
+    [2000, "blinky", "AP-Results$led", ["[0", "<"], "Profile-defined results"]
   ]],
 
   ["Action-Targets", "MapOf", ["+Action", "*Targets", "{1"], "Targets applicable to each action supported by this device", []],

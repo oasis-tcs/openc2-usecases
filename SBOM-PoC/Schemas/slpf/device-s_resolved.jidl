@@ -1,45 +1,45 @@
        title: "Stateless Packet Filtering Device Schema"
       module: "https://oasis-open.org/openc2/slpf-device/v1.1"
- description: "OpenC2 v1.1 schema for devices that support the Blinky actuator profile"
+ description: "OpenC2 v1.1 schema for devices that support the SLPF actuator profile"
      exports: ["OpenC2-Command", "OpenC2-Response"]
 
-OpenC2-Command = Record
-   1 action           Action                           // The task or activity to be performed
-   2 target           Target                           // The object referenced by the Action
-   3 args             Args optional                    // Additional information that applies to the Command
-   4 actuator         Actuator optional                // The profile that defines the Command
-   5 command_id       Command-ID optional              // An identifier of this Command
+OpenC2-Command = Record                                // The Command defines an Action to be performed on a Target
+   1 action           Action                           // The task or activity to be performed (i.e., the 'verb').
+   2 target           Target                           // The object of the Action. The Action is performed on the Target.
+   3 args             Args optional                    // Additional information that applies to the Command.
+   4 actuator         Actuator optional                // The subject of the Action. The Actuator executes the Action on the Target.
+   5 command_id       Command-ID optional              // An identifier of this Command.
 
-OpenC2-Response = Map
-   1 status           Status-Code                      // Integer status code
-   2 status_text      String optional                  // Free-form description of the Response status
-   3 results          Results optional                 // Results returned by the invoked Command
+OpenC2-Response = Record
+   1 status           Status-Code                      // An integer status code.
+   2 status_text      String optional                  // A free-form human-readable description of the Response status.
+   3 results          Results optional                 // Map of key:value pairs that contain additional results based on the invoking Command.
 
-Action = Enumerated                                    // Actions used in this profile
-   3 query                                             // Initiate a request for information
-   6 deny                                              // Prevent a certain event or action from completion, such as preventing a flow from reaching a destination or preventing access
-   8 allow                                             // Permit access to or execution of a Target
-  16 update                                            // Instruct a component to retrieve, install, process, and operate in accordance with a software update, reconfiguration, or other update
-  20 delete                                            // Remove an entity (e.g., data, files, flows)
+Action = Enumerated
+   3 query                                             // Initiate a request for information.
+   6 deny                                              // Prevent a certain event or action from completion, such as preventing a flow from reaching a destination or preventing access.
+   8 allow                                             // Permit access to or execution of a Target.
+  16 update                                            // Instruct a component to retrieve, install, process, and operate in accordance with a software update, reconfiguration, or other update.
+  20 delete                                            // Remove an entity (e.g., data, files, flows).
 
-Target = Choice                                        // Targets used in this profile
-   9 features         Features                         // A set of items used with the query Action to determine an Actuator's capabilities
-  10 file             File                             // Properties of a file
-  13 ipv4_net         IPv4-Net                         // An IPv4 address range including CIDR prefix length
-  14 ipv6_net         IPv6-Net                         // An IPv6 address range including prefix length
-  15 ipv4_connection  IPv4-Connection                  // A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol
-  16 ipv6_connection  IPv6-Connection                  // A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol
-1024 slpf/            AP-Target$slpf                   // Targets defined in this profile
+Target = Choice
+   9 features         Features                         // A set of items used with the query Action to determine an Actuator's capabilities.
+  10 file             File                             // Properties of a file.
+  13 ipv4_net         IPv4-Net                         // An IPv4 address range including CIDR prefix length.
+  14 ipv6_net         IPv6-Net                         // An IPv6 address range including prefix length.
+  15 ipv4_connection  IPv4-Connection                  // A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol.
+  16 ipv6_connection  IPv6-Connection                  // A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol.
+1024 slpf/            AP-Target$slpf                   // Profile-defined targets
 
 Args = Map{1..*}
    1 start_time       Date-Time optional               // The specific date/time to initiate the Command
    2 stop_time        Date-Time optional               // The specific date/time to terminate the Command
    3 duration         Duration optional                // The length of time for an Command to be in effect
    4 response_requested Response-Type optional         // The type of Response required for the Command: none, ack, status, complete
-1024 slpf/            AP-Args$slpf optional            // Command Arguments defined in this profile
+1024 slpf/            AP-Args$slpf optional            // Profile-defined command arguments
 
-Actuator = Map{1..*}
-1024 slpf/            AP-Specifiers$slpf optional      // Actuator Specifiers defined in this profile
+Actuator = Choice
+1024 slpf/            AP-Specifiers$slpf               // Profile-defined actuator specifiers
 
 Results = Map{1..*}                                    // Response Results
    1 versions         Version unique [0..10]           // List of OpenC2 language versions supported by this Actuator
@@ -47,7 +47,7 @@ Results = Map{1..*}                                    // Response Results
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
    4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-1024 slpf/            AP-Results$slpf optional         // Results defined in this profile
+1024 slpf/            AP-Results$slpf optional         // Profile-defined results
 
 Action-Targets = MapOf(Action, Targets){1..*}          // Targets applicable to each action supported by this device
 
@@ -166,10 +166,10 @@ FieldName = String (%^[a-z][_A-Za-z0-9]{0,31}$%)       // Property name syntax, 
 Command-ID = String (%^\S{0,36}$%)                     // Command Identifier
 
 Target$Pointer = Enumerated
-   1 features                                          // A set of items used with the query Action to determine an Actuator's capabilities
-   2 file                                              // Properties of a file
-   3 ipv4_net                                          // An IPv4 address range including CIDR prefix length
-   4 ipv6_net                                          // An IPv6 address range including prefix length
-   5 ipv4_connection                                   // A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol
-   6 ipv6_connection                                   // A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol
+   1 features                                          // A set of items used with the query Action to determine an Actuator's capabilities.
+   2 file                                              // Properties of a file.
+   3 ipv4_net                                          // An IPv4 address range including CIDR prefix length.
+   4 ipv6_net                                          // An IPv6 address range including prefix length.
+   5 ipv4_connection                                   // A 5-tuple of source and destination IPv4 address ranges, source and destination ports, and protocol.
+   6 ipv6_connection                                   // A 5-tuple of source and destination IPv6 address ranges, source and destination ports, and protocol.
    7 slpf/rule_number                                  // Immutable identifier assigned when a rule is created. Identifies a rule to be deleted.

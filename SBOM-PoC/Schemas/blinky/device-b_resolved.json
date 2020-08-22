@@ -105,6 +105,7 @@
     "Args": {
       "title": "Args",
       "type": "object",
+      "description": "Profile-defined command arguments",
       "additionalProperties": false,
       "minProperties": 1,
       "maxProperties": 100,
@@ -132,7 +133,7 @@
       "properties": {
         "blinky": {
           "$ref": "#/definitions/AP-Specifiers$led",
-          "description": "Actuator specifiers defined in this profile"
+          "description": "Profile-defined actuator specifiers"
         }
       }
     },
@@ -199,7 +200,7 @@
         },
         "blinky": {
           "$ref": "#/definitions/AP-Results$led",
-          "description": "Profile-defined response results"
+          "description": "Profile-defined results"
         }
       }
     },

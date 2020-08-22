@@ -41,7 +41,7 @@ def find_tests(api_url):    # Search for GitHub folders containing schemas and t
 
 def run_test(tdir):         # Check correct validation of good and bad commands and responses
     json_schema = gh_get(tdir['schema'])
-    print(f'\nSchema: {json_schema["$id"]}')
+    print(f'\nSchema: {tdir["schema"]}\nNamespace: {json_schema["$id"]}')
     tcount = defaultdict(int)       # Total instances tested
     ecount = defaultdict(int)       # Error instances
     for cr in ('command', 'response'):
