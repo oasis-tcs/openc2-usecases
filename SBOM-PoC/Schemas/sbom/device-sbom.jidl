@@ -1,9 +1,9 @@
-       title: "OpenC2 Actuator Profile Template"
-      module: "http://oasis-open.org/openc2/sbom/v1.0"
- description: "Adapted from the OpenC2 Language Profile version 1.1"
-     imports: {"ls": "http://oasis-open.org/openc2/oc2ls-types/v1.1"}
+       title: "OpenC2 Language and Device Template"
+      module: "https://oasis-open.org/openc2/oc2ls/v1.1"
+ description: "Template for creating OpenC2 v1.1 device schemas"
+     imports: {"ls": "https://oasis-open.org/openc2/oc2ls-types/v1.1", "nsid1": "https://example.org/profile1"}
      exports: ["OpenC2-Command", "OpenC2-Response"]
-     comment: "Replace 'xyz' with property name chosen for the profile, delete unused actions/targets/args/results"
+     comment: "To use, delete unused Action/Target/Args/Results, update module, and assign id, name, and nsid for each profile"
 
 OpenC2-Command = Record                                // The Command defines an Action to be performed on a Target
    1 action           Action                           // The task or activity to be performed (i.e., the 'verb').
@@ -58,47 +58,26 @@ Target = Choice
   18 process          ls:Process                       // Common properties of an instance of a computer program as executed on an operating system.
   25 properties       ls:Properties                    // Data attribute associated with an Actuator.
   19 uri              ls:URI                           // A uniform resource identifier (URI).
-2000 sbom/             AP-Target                        // Profile-defined targets
+   0 ap_name/         nsid1:AP-Target                  // Profile-defined targets
 
 Args = Map{1..*}
    1 start_time       ls:Date-Time optional            // The specific date/time to initiate the Command
    2 stop_time        ls:Date-Time optional            // The specific date/time to terminate the Command
    3 duration         ls:Duration optional             // The length of time for an Command to be in effect
    4 response_requested ls:Response-Type optional      // The type of Response required for the Command: none, ack, status, complete
-2000 sbom/             AP-Args optional                 // Profile-defined command arguments
+   0 ap_name/         nsid1:AP-Args optional           // Profile-defined command arguments
 
 Actuator = Choice
-2000 sbom/             AP-Specifiers                    // Profile-defined actuator specifiers
+   0 ap_name/         nsid1:AP-Specifiers              // Profile-defined actuator specifiers
 
 Results = Map{1..*}                                    // Response Results
    1 versions         ls:Version unique [0..10]        // List of OpenC2 language versions supported by this Actuator
-   2 profiles         ls:Namespace unique [0..*]       // List of profiles supported by this Actuator
+   2 profiles         ls:FieldName unique [0..*]       // List of profiles supported by this Actuator
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
    4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-2000 sbom/             AP-Results optional              // Profile-defined response results
+   0 ap_name/         nsid1:AP-Results optional        // Profile-defined results
 
-Action-Targets = Map{1..*}                             // Map of each action supported by this actuator to the list of targets applicable to that action.
-   3 query            Targets-query unique [0..10]
-  15 set              Targets-set unique [0..10]
+Action-Targets = MapOf(Action, Targets){1..*}          // Targets applicable to each action supported by this device
 
-Targets-query = Enumerated                             // All targets supported by this actuator's query command
-   1 features
-   2 sbom/foo
-   3 sbom/bar
-
-Targets-set = Enumerated                               // All targets supported by this actuator's set command
-   1 sbom/bar
-
-AP-Target = Choice                                     // Profile-defined targets
-   1 foo              String
-   2 bar              String
-
-AP-Specifiers = Map                                    // Profile-defined actuator specifiers
-   1 foo              String optional
-
-AP-Args = Map{1..*}                                    // Profile-defined command arguments
-   1 foo              String optional
-
-AP-Results = Map{1..*}                                 // Profile-defined response results
-   1 foo              String optional
+Targets = ArrayOf(Pointer[Target]){1..*} unique        // Target pointers

@@ -44,13 +44,13 @@ The first section of the profile is a set of string enumerations (Action, Target
 that represent information about a profile. They do not appear in OpenC2 messages, they select which OpenC2 types
 are used by devices that support the profile.
 Types are defined in the language specification and cannot be modified by profiles,
-but cmments may be included to describe any profile-specific meaning of OpenC2-defined types.
+but comments may be included to describe any profile-specific meaning of OpenC2-defined types.
 
 #### 4. Define profile-specific types
 We mentioned two profile-defined targets (device and display) above.  Define their contents as fields of AP-Target.
 Define the desired response format for these commands as fields of AP-Results. ([Show](images/ap-template-device.jpg)).
 Note that this example defines a "Device" type, which also happens to be the name of an OpenC2 Target.
-Namspaced type references (ls:Device, led:Device) allows both definitions to be used without conflict.
+Namespaced type references (ls:Device, led:Device) allows both definitions to be used without conflict.
 
 The Pairs list allows a Producer or Consumer to construct the Map
 returned by "query features pairs". It is a set of strings, each containing an action followed by the targets
