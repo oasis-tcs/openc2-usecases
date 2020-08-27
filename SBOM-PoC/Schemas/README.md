@@ -95,7 +95,8 @@ After deleting unused language elements and filling in profile data, the example
 #### 6. Resolve device schema
 With suitable infrastructure the "device-b" schema is used directly, with the device retrieving all referenced
 type definitions by namespace. If the device cannot resolve references it will need a single schema
-([device-b_resolved](blinky/device-b_resolved.jidl)) containing all referenced definitions.
+([device-b_resolved](blinky/device-b_resolved.jidl)) containing all referenced definitions
+([Show](images/ap-template-resolved-targets.jpg)).
 The resolved schema is normally generated using schema tools, but can be created manually by copying
 definitions from the referenced schemas. For testing convenience the resolved
 schema may also be stored in machine-readable [JADN](blinky/device-b_resolved.jadn) or
