@@ -1,0 +1,114 @@
+CREATE TABLE `Action = Enumerated` (
+  `3 query` <type>,
+  `6 deny` <type>,
+  `8 allow` <type>,
+  `16 update` <type>,
+  `20 delete` <type>
+);
+
+CREATE TABLE `Actuator = Choice` (
+  `slpf/` slpf:AP-Specifiers,
+  KEY `1024` (`slpf/`)
+);
+
+CREATE TABLE `Args = Map{1..*}` (
+  `start_time` ls:Date-Time optional,
+  `stop_time` ls:Date-Time optional,
+  `duration` ls:Duration optional,
+  `response_requested` ls:Response-Type optional,
+  `ipv4_connection` ls:IPv4-Connection,
+  `ipv6_connection` ls:IPv6-Connection,
+  `slpf/` splf:AP-Args optional,
+  KEY `1` (`start_time`),
+  KEY `2` (`stop_time`),
+  KEY `3` (`duration`),
+  KEY `4` (`response_requested`),
+  KEY `15` (`ipv4_connection`),
+  KEY `16` (`ipv6_connection`),
+  KEY `1024` (`slpf/`)
+);
+
+CREATE TABLE `target = Choice` (
+  `features` ls:Features,
+  `file` ls:File,
+  `ipv4_net` ls:IPv4-Net,
+  `ipv6_net` ls:IPv6-Net,
+  `ipv4_connection` ls:IPv4-Connection,
+  `ipv6_connection` ls:IPv6-Connection,
+  `slpf/` slpf:AP-Target,
+  KEY `9` (`features`),
+  KEY `10` (`file`),
+  KEY `13` (`ipv4_net`),
+  KEY `14` (`ipv6_net`),
+  KEY `15` (`ipv4_connection`),
+  KEY `16` (`ipv6_connection`),
+  KEY `1024` (`slpf/`)
+);
+
+CREATE TABLE `OpenC2-Command = Record` (
+  `action` Action,
+  `target` Target,
+  `args` Args,
+  `actuator` Actuator,
+  `command_id` ls:Command-ID,
+  KEY `1` (`action`),
+  KEY `2` (`target`),
+  KEY `3` (`args`),
+  KEY `4` (`actuator`),
+  KEY `5` (`command_id`)
+);
+
+CREATE TABLE `OpenC2-Repsonse = Record` (
+  `status` ls:Status-Code,
+  `status_text` String optional,
+  `results` Results optional,
+  KEY `1` (`status`),
+  KEY `2` (`status_text`),
+  KEY `3` (`results`)
+);
+
+CREATE TABLE `Results = Map{1..*}` (
+  `versions` ls:Version [1..10] unique,
+  `profiles` ls:FieldName [0..10] unique,
+  `pairs` Action-Targets optional,
+  `rate_limit` Number{0.0..*} optional,
+  `slpf/` slpf:AP-Results optionsl,
+  KEY `1` (`versions`),
+  KEY `2` (`profiles`),
+  KEY `3` (`pairs`),
+  KEY `4` (`rate_limit`),
+  KEY `5` (`slpf/`)
+);
+
+CREATE TABLE `slpf:AP-Args = Map{1..*}` (
+  `drop_process` Drop-Process optional,
+  `persistent` Boolean optional,
+  `direction` Direction optional,
+  `insert_rule` Rule-ID optional,
+  KEY `1` (`drop_process`),
+  KEY `2` (`persistent`),
+  KEY `3` (`direction`),
+  KEY `4` (`insert_rule`)
+);
+
+CREATE TABLE `slpf:AP-Target = Map{1..*}` (
+  `rule_number` Rule-ID,
+  KEY `1` (`rule_number`)
+);
+
+CREATE TABLE `slpf:AP-Specifiers = Map` (
+  `hostname` String optional,
+  `named_group` String optional,
+  `asset_id` String optional,
+  `asset_tuple` String [0..10],
+  KEY `1` (`hostname`),
+  KEY `2` (`named_group`),
+  KEY `3` (`asset_id`),
+  KEY `4` (`asset_tuple`)
+);
+
+CREATE TABLE `slpf:AP-Results = Map` (
+  `rule_number` Rule-ID optional,
+  KEY `1` (`rule_number`)
+);
+

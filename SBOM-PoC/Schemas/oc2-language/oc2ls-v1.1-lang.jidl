@@ -1,7 +1,7 @@
        title: "OpenC2 Language and Device Template"
       module: "https://oasis-open.org/openc2/oc2ls/v1.1"
  description: "Template for creating OpenC2 v1.1 device schemas"
-     imports: {"ls": "https://oasis-open.org/openc2/oc2ls-types/v1.1", "nsid1": "https://example.org/profile1"}
+     imports: {"ls": "https://oasis-open.org/openc2/oc2ls-types/v1.1"}
      exports: ["OpenC2-Command", "OpenC2-Response"]
      comment: "To use, delete unused Action/Target/Args/Results, update module, and assign id, name, and nsid for each profile"
 
@@ -58,17 +58,14 @@ Target = Choice
   18 process          ls:Process                       // Common properties of an instance of a computer program as executed on an operating system.
   25 properties       ls:Properties                    // Data attribute associated with an Actuator.
   19 uri              ls:URI                           // A uniform resource identifier (URI).
-   0 ap_name/         nsid1:AP-Target                  // Profile-defined targets
 
 Args = Map{1..*}
    1 start_time       ls:Date-Time optional            // The specific date/time to initiate the Command
    2 stop_time        ls:Date-Time optional            // The specific date/time to terminate the Command
    3 duration         ls:Duration optional             // The length of time for an Command to be in effect
    4 response_requested ls:Response-Type optional      // The type of Response required for the Command: none, ack, status, complete
-   0 ap_name/         nsid1:AP-Args optional           // Profile-defined command arguments
 
 Actuator = Choice
-   0 ap_name/         nsid1:AP-Specifiers              // Profile-defined actuator specifiers
 
 Results = Map{1..*}                                    // Response Results
    1 versions         ls:Version unique [0..10]        // List of OpenC2 language versions supported by this Actuator
@@ -76,7 +73,6 @@ Results = Map{1..*}                                    // Response Results
    3 pairs            Action-Targets optional          // List of targets applicable to each supported Action
    4 rate_limit       Number{0.0..*} optional          // Maximum number of requests per minute supported by design or policy
    5 args             Enumerated(Enum[Args]) [0..*]    // List of supported Command Arguments
-   0 ap_name/         nsid1:AP-Results optional        // Profile-defined results
 
 Action-Targets = MapOf(Action, Targets){1..*}          // Targets applicable to each action supported by this device
 
