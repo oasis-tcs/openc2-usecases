@@ -88,9 +88,10 @@ at
 where a physical in-person meetup/mashup will
 hopefully repeat the virtual accomplishments
 and further advance the work with aspects that require being on the same LAN.
-The effort from now until October
+The effort from now until 27-October
 is being called Phase 1 with the hope
-there will be follow on work after TDD that can be accomplished virtually.
+there will be follow on work after the [28-Oct Meetup](../TTD-PlugfestHackathon) that can be accomplished virtually
+(i.e. that there will be a Phase 2 after the meetup).
 
 ## 1.2 Communications & Coordination
 
