@@ -10,28 +10,69 @@
 # 1 - Intro
 ![Plugfest](./Plugfest.png)
 
-The Software Bill Of Materials (SBOM) Proof of Concept (PoC)
+The intent is to show the value of
+automated cyber defense,
+which is best shown as complete usecases
+involving many concepts.
+SBOM-PoC is shorthand for a mashup of the
+SBOM/OpenC2/SCAPv2/IACD/CACAO/OCA
+virtual
+Proof-of-Concept(PoC)/plugfest/hackathon.
+
+This SBOM PoC is a combination of many efforts:
+- [OpenC2](https://openc2.org/) - Open Command and Control
+- [NTIA SBOM](https://www.ntia.gov/sbom) - Software Bill of Materials
+- [NIST SCAPv2](https://csrc.nist.gov/Projects/Security-Content-Automation-Protocol-v2) - Security Content Automation Protocol Version 2
+- [IACD](https://www.iacdautomate.org/) - Integrated Adaptive Cyber Defense
+- [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) - Collaborative Automated Course of Action Operations
+- [OCA](https://opencybersecurityalliance.org/) - Open Cybersecurity Alliance
+
+The SBOM PoC welcomes any who would like to participate.
+
+The SBOM PoC
 sets out to prove several concepts e.g.
-- SBOMs
-   - may be used in protecting organizational systems, networks, data, and users
+- [SBOM](https://www.ntia.gov/sbom)
+   - may be used in protecting organizational systems,
+   networks, data, and users
    - may be created
    - may be obtained
-   - may be used to make security decisions
-- Openc2
-   - may be used in protecting organizational systems, networks, data, and users
+   - may be used as input in making security decisions
+      - e.g. as the "sensing" data feeding "sense-making"
+      of vulnerability analysis) using the [IACD architecture](https://www.iacdautomate.org/iacd101)
+      - e.g. "Obtain SBOM" may be used as an SCAPv2 application in the [SCAPv2 Prototype Architecture](https://docs.google.com/presentation/d/11EtTqBsSlfGVnjmudNrTSTpk3-tUUxn90AuucZpenD8)
+      - e.g. how "Obtain SBOM" may be done with OpenC2, and how "analyse SBOM" may result in action commands to be carried out with OpenC2
+      - e.g. how "analyse SBOM" may be done within OCA framework
+      - e.g. how "Obtain SBOM", "analyse SBOM", and subsequent actions may be represented using CACAO playbooks
+- [OpenC2](https://openc2.org/)
+   - may be used in protecting organizational systems,
+   networks, data, and users
+   - may be used to command and control (C2) security functions
    - may be used to obtain SBOMs
-   - may be used to command and control security functions
-- CACAO playbooks
-   - may be used in protecting organizational systems, networks, data, and users
+   - may be C2 in the 'Act' function of IACD
+   - develop OpenC2 profiles to support interactions
+   within the [SCAPv2 Data Collection Architecture](https://github.com/oasis-tcs/openc2-usecases/blob/master/SBOM-PoC/DoD/07-scap/scap-v2-data-collection-architecture.md)
+   - may be used for "Obtain SBOM" as an SCAPv2 application in the [SCAPv2 Prototype Architecture](https://docs.google.com/presentation/d/11EtTqBsSlfGVnjmudNrTSTpk3-tUUxn90AuucZpenD8)
+- [SCAPv2](https://csrc.nist.gov/Projects/Security-Content-Automation-Protocol-v2)
+   - may be used in protecting organizational systems,
+   networks, data, and users
+   - demonstrate "Obtain SBOM" as an SCAPv2 application in the [SCAPv2 Prototype Architecture](https://docs.google.com/presentation/d/11EtTqBsSlfGVnjmudNrTSTpk3-tUUxn90AuucZpenD8)
+- [IACD](https://www.iacdautomate.org/)
+   - may be used in protecting organizational systems,
+   networks, data, and users
+   - may prove useful in architecting the PoC (e.g.
+     sensing/sense-making/decision-making/acting)
+   - shows the value of automated defenses.
+- [CACAO playbooks](https://docs.oasis-open.org/cacao/security-playbooks/v1.0/csd01/security-playbooks-v1.0-csd01.html)
+   - may be used in protecting organizational systems,
+   networks, data, and users
    - may be used to identify, create, document, and test detection, investigation, prevention, mitigation, and remediation steps
-
-This SBOM PoC is a combination of several efforts:
-- OpenC2 virtual plugfest/hackathon
-- NTIA SBOM Transfer PoC - see [here](https://www.ntia.gov/sbom) and [here](https://www.ntia.gov/SoftwareTransparency)
-- others TBD including potentially
-   - [Integrated Adaptive Cyber Defense or IACD](https://www.iacdautomate.org/) SOAR PoC showing playbooks and automated orchestration
-  - [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) playbook PoC
-  - [Open Cybersecurity Alliance](https://opencybersecurityalliance.org/) PoC
+   - may be used to define the use cases and scenarios of the PoC
+- [OCA](https://opencybersecurityalliance.org/)
+   - may be used in protecting organizational systems,
+   networks, data, and users
+   - demonstrate OCA integration and interoperability
+   - projects (e.g. [stix-shifter](https://github.com/opencybersecurityalliance/stix-shifter/blob/master/OVERVIEW.md),
+   [OpenDXL Ontology](https://github.com/opencybersecurityalliance/opendxl-ontology), and SCAPv2 Prototype)
 
 See [Section 2](#2---organizations-participating)
 for organizations participating
@@ -42,7 +83,8 @@ for goals and objectives of each of these.
 
 See [Section 4](#4-work-plan) on how the work will be organized
 
-See Sections 5 - N on blah blah with the details
+See [Section 1.2](#12-communications--coordination)
+and [Sections 5](#5---participants) for details for the participants
 
 ## 1.1 Vision
 The vision of this activity is that it will prove several concepts
