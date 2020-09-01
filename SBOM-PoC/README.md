@@ -15,7 +15,7 @@ automated cyber defense,
 which is best shown as complete usecases
 involving many concepts.
 SBOM-PoC is shorthand for a mashup of the
-SBOM/OpenC2/SCAPv2/IACD/CACAO/OCA
+SBOM/OpenC2/SCAPv2/IACD/CACAO/OCA/MUD/DBOM
 virtual
 Proof-of-Concept(PoC)/plugfest/hackathon.
 
@@ -26,6 +26,8 @@ This SBOM PoC is a combination of many efforts:
 - [IACD](https://www.iacdautomate.org/) - Integrated Adaptive Cyber Defense
 - [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) - Collaborative Automated Course of Action Operations
 - [OCA](https://opencybersecurityalliance.org/) - Open Cybersecurity Alliance
+- [MUD](https://www.mudmaker.org/) - Manufacturer Useage Description
+- [DBOM](https://www.linuxfoundation.org/) Digital Bill of Materials
 
 The SBOM PoC welcomes any who would like to participate.
 
@@ -39,8 +41,10 @@ sets out to prove several concepts e.g.
    - may be used as input in making security decisions
       - e.g. as the "sensing" data feeding "sense-making"
       of vulnerability analysis) using the [IACD architecture](https://www.iacdautomate.org/iacd101)
+      - e.g. how SBOMs may be discovered with MUD
       - e.g. "Obtain SBOM" may be used as an SCAPv2 application in the [SCAPv2 Prototype Architecture](https://docs.google.com/presentation/d/11EtTqBsSlfGVnjmudNrTSTpk3-tUUxn90AuucZpenD8)
       - e.g. how "Obtain SBOM" may be done with OpenC2, and how "analyse SBOM" may result in action commands to be carried out with OpenC2
+      - e.g. how SBOMs may be part of DBOM
       - e.g. how "analyse SBOM" may be done within OCA framework
       - e.g. how "Obtain SBOM", "analyse SBOM", and subsequent actions may be represented using CACAO playbooks
 - [OpenC2](https://openc2.org/)
@@ -73,6 +77,15 @@ sets out to prove several concepts e.g.
    - demonstrate OCA integration and interoperability
    - projects (e.g. [stix-shifter](https://github.com/opencybersecurityalliance/stix-shifter/blob/master/OVERVIEW.md),
    [OpenDXL Ontology](https://github.com/opencybersecurityalliance/opendxl-ontology), and SCAPv2 Prototype)
+- [MUD](https://www.mudmaker.org/)
+   - may be used in protecting organizational systems,
+   networks, data, and users
+   - use of MUD for SBOM discovery in both OpenC2 and non-OpenC2 usecases
+- [DBOM](https://www.linuxfoundation.org/) Digital Bill of Materials
+   - may be used in protecting organizational systems,
+   networks, data, and users
+   - use of DBOM for SBOM in both OpenC2 and non-OpenC2 usecases
+
 
 See [Section 2](#2---organizations-participating)
 for organizations participating
