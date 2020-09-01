@@ -31,7 +31,7 @@ The SBOM PoC welcomes any who would like to participate.
 
 The SBOM PoC
 sets out to prove several concepts e.g.
-- [SBOM](https://www.ntia.gov/sbom)
+- [SBOMs](https://www.ntia.gov/sbom)
    - may be used in protecting organizational systems,
    networks, data, and users
    - may be created
@@ -88,7 +88,8 @@ and [Sections 5](#5---participants) for details for the participants
 
 ## 1.1 Vision
 The vision of this activity is that it will prove several concepts
-associated with several independent efforts (e.g. OpenC2, NTIA SBOM, ...).
+associated with several independent efforts (e.g. OpenC2, NTIA SBOM,
+SCAPv2, IACD, OCA, ...).
 This work is intended to be virtual
 (ie no physical meetings needed)
 and consist of many pairwise
@@ -119,17 +120,14 @@ with draw.io
 [source](./ParticipantInfo/sFractal/sFractal.1.drawio)),
 human readable scenario (e.g.
 [sFractal Scenario 1](./ParticipantInfo/sFractal/README.md#31---comply-to-connect))
-and CACAO playbooks (e.g.
+and ideally CACAO playbooks (e.g.
 [sFractal playbook 1](./ParticipantInfo/sFractal/cacaoPlaybook.01.json)).
 
-This effort is scheduled from June thru October 25, 2020
+This effort is scheduled from June thru October 27, 2020
 and will terminate just prior to
 [TTD-PlugfestHackathon](../TTD-PlugfestHackathon)
-at
-[Tech Transfer Days](https://techtransferdays.org/)
-where a physical in-person meetup/mashup will
-hopefully repeat the virtual accomplishments
-and further advance the work with aspects that require being on the same LAN.
+when there will be a virtual meetup/mashup
+will an all-day zoom of all participants.
 The effort from now until 27-October
 is being called Phase 1 with the hope
 there will be follow on work after the [28-Oct Meetup](../TTD-PlugfestHackathon) that can be accomplished virtually
@@ -197,11 +195,30 @@ will be combined into individual pages per effort:
 # 4 - Work Plan
 The work will be organized using the following terms,
 mostly cribbed from SBOM Healthcare PoC:
-- Phase 1- The work done virtually from now until [TTD-PlugfestHackathon](https://github.com/sparrell/openc2-lsc-usecases/tree/master/TTD-PlugfestHackathon)
-- Sprint - the interval between the biweekly status meeting (e.g 4-June-2020 to 18-June-2020)
-- Interval - An interval consists of several sprints. Phase 1 will be broken into at least 3 intervals described [here](./WorkPlanIntervals.md) with discrete objectives (e.g. interval 1 focus is on 'within an organization', interval 2 on between an organization lab and a cloud, interval 3 on org1-cloud-org2, ...)
-- Wave - a subset of an interval meeting a subset of the objectives. An Interval is broken into waves usually due to different organizations having deliverables arriving at different times. E.g. in the Healthcare SBOM PoC, Interval 1 was broken into two waves so the initial 13 MDD SBOMs could start being evaluated by the HDOs without having to wait for the 'wave 2' SBOMs.
-- Use case/Scenario - for this effort, the terms will be used somewhat interchangeably to describe the scenarios being simulated in this PoC to simulate the real life uses of the concepts trying to be proved. The expectation is the scenarios will start out simply in pair-wise interactions and grow to complex scenarios involving all aspects of the IACD architecture (ie sensing, sense-making, decision making, acting) showing cyber defense at machine speed.
+- Phase 1- The work done virtually from now
+until [TTD-PlugfestHackathon](https://github.com/sparrell/openc2-lsc-usecases/tree/master/TTD-PlugfestHackathon)
+- Sprint - the interval between the biweekly status
+meeting (e.g 4-June-2020 to 18-June-2020)
+- Interval - An interval consists of several sprints.
+Phase 1 will be broken into at least 3 intervals
+described [here](./WorkPlanIntervals.md)
+with discrete objectives (e.g. interval 1 focus
+is on 'within an organization',
+interval 2 on between an organization lab and a cloud,
+interval 3 on org1-cloud-org2, ...)
+- Wave - a subset of an interval meeting a subset of the objectives.
+An Interval is broken into waves usually due to different
+organizations having deliverables arriving at different times. E.g.
+in the Healthcare SBOM PoC, Interval 1 was broken into two waves so
+the initial 13 MDD SBOMs could start being evaluated by the HDOs
+without having to wait for the 'wave 2' SBOMs.
+- Use case/Scenario - for this effort, the terms will be used
+somewhat interchangeably to describe the scenarios being simulated
+in this PoC to simulate the real life uses of the concepts being
+proved. The expectation is the scenarios will start out simply in
+pair-wise interactions and grow to complex scenarios involving all
+aspects of the IACD architecture (ie sensing, sense-making, decision
+making, acting) showing cyber defense at machine speed.
 
 See the [Work Plan](./WorkPlan.md) for more details.
 
