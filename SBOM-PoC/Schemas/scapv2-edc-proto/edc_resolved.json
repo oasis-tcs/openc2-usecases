@@ -1,0 +1,436 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://scap.org/edc-prototype/v0.1",
+  "title": "",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "assessment_instructions": {
+      "$ref": "#/definitions/Assessment-Instructions"
+    },
+    "cancel_assessment": {
+      "$ref": "#/definitions/Cancel-Assessment"
+    },
+    "assessment_ack": {
+      "$ref": "#/definitions/Assessment-Ack"
+    },
+    "collection_request": {
+      "$ref": "#/definitions/Collection-Request"
+    },
+    "collection_results": {
+      "$ref": "#/definitions/Collection-Results"
+    },
+    "query": {
+      "$ref": "#/definitions/Query"
+    },
+    "results": {
+      "$ref": "#/definitions/Results"
+    },
+    "store_assessment_info": {
+      "$ref": "#/definitions/Store-Assessment-Info"
+    }
+  },
+  "definitions": {
+    "Assessment-Instructions": {
+      "title": "Assessment Instructions",
+      "type": "object",
+      "description": "1",
+      "additionalProperties": false,
+      "required": [
+        "content",
+        "targeting",
+        "oldest",
+        "latest",
+        "get_fresh",
+        "method",
+        "formats",
+        "params",
+        "requestor"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/Content",
+          "description": "with IDs"
+        },
+        "targeting": {
+          "$ref": "#/definitions/Targeting",
+          "description": ""
+        },
+        "oldest": {
+          "$ref": "#/definitions/Oldest-Valid-Results",
+          "description": ""
+        },
+        "latest": {
+          "$ref": "#/definitions/Latest-Return",
+          "description": ""
+        },
+        "get_fresh": {
+          "type": "boolean"
+        },
+        "method": {
+          "$ref": "#/definitions/PCE-Filters",
+          "description": ""
+        },
+        "formats": {
+          "$ref": "#/definitions/Format-Filters",
+          "description": ""
+        },
+        "params": {
+          "$ref": "#/definitions/Collection-Parameters",
+          "description": ""
+        },
+        "requestor": {
+          "$ref": "#/definitions/Requestor-ID",
+          "description": ""
+        }
+      }
+    },
+    "Cancel-Assessment": {
+      "title": "Cancel Assessment",
+      "type": "object",
+      "description": "1",
+      "additionalProperties": false,
+      "required": [
+        "transaction",
+        "requestor"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "transaction": {
+          "$ref": "#/definitions/Transaction-ID",
+          "description": ""
+        },
+        "requestor": {
+          "$ref": "#/definitions/Requestor-ID",
+          "description": ""
+        }
+      }
+    },
+    "Assessment-Ack": {
+      "title": "Assessment Ack",
+      "type": "object",
+      "description": "2",
+      "additionalProperties": false,
+      "required": [
+        "transaction"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "transaction": {
+          "$ref": "#/definitions/Transaction-ID",
+          "description": ""
+        }
+      }
+    },
+    "Collection-Request": {
+      "title": "Collection Request",
+      "type": "object",
+      "description": "11",
+      "additionalProperties": false,
+      "required": [
+        "content_ids",
+        "target_ids",
+        "latest_return",
+        "method",
+        "formats",
+        "params",
+        "transaction",
+        "requestor"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "content_ids": {
+          "$ref": "#/definitions/Content-IDs",
+          "description": ""
+        },
+        "target_ids": {
+          "$ref": "#/definitions/Target-IDs",
+          "description": ""
+        },
+        "latest_return": {
+          "$ref": "#/definitions/Latest-Return",
+          "description": ""
+        },
+        "method": {
+          "$ref": "#/definitions/Collection-Method",
+          "description": "PCE filters"
+        },
+        "formats": {
+          "$ref": "#/definitions/Format-Filters",
+          "description": ""
+        },
+        "params": {
+          "$ref": "#/definitions/Collection-Parameters",
+          "description": ""
+        },
+        "transaction": {
+          "$ref": "#/definitions/Transaction-ID",
+          "description": ""
+        },
+        "requestor": {
+          "$ref": "#/definitions/Requestor-ID",
+          "description": ""
+        }
+      }
+    },
+    "Collection-Results": {
+      "title": "Collection Results",
+      "type": "object",
+      "description": "15",
+      "additionalProperties": false,
+      "required": [
+        "assessment",
+        "transaction",
+        "requestor"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "assessment": {
+          "$ref": "#/definitions/Assessment",
+          "description": ""
+        },
+        "transaction": {
+          "$ref": "#/definitions/Transaction-ID",
+          "description": ""
+        },
+        "requestor": {
+          "$ref": "#/definitions/Requestor-ID",
+          "description": ""
+        }
+      }
+    },
+    "Query": {
+      "title": "Query",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "query",
+        "query_id",
+        "requestor"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "query": {
+          "$ref": "#/definitions/Query-Info",
+          "description": ""
+        },
+        "query_id": {
+          "$ref": "#/definitions/Query-ID",
+          "description": ""
+        },
+        "requestor": {
+          "$ref": "#/definitions/Requestor-ID",
+          "description": ""
+        }
+      }
+    },
+    "Results": {
+      "title": "Results",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "results",
+        "query_id",
+        "requestor"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "results": {
+          "$ref": "#/definitions/Results-Info",
+          "description": ""
+        },
+        "query_id": {
+          "$ref": "#/definitions/Query-ID",
+          "description": ""
+        },
+        "requestor": {
+          "$ref": "#/definitions/Requestor-ID",
+          "description": ""
+        }
+      }
+    },
+    "Store-Assessment-Info": {
+      "title": "Store Assessment Info",
+      "type": "object",
+      "description": "3",
+      "additionalProperties": false,
+      "required": [
+        "info",
+        "requestor"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "info": {
+          "$ref": "#/definitions/Assessment-Info",
+          "description": "Is this same as 15 report results?"
+        },
+        "requestor": {
+          "$ref": "#/definitions/Requestor-ID",
+          "description": ""
+        }
+      }
+    },
+    "Query-Info": {
+      "title": "Query Info",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "applicability": {
+          "$ref": "#/definitions/Applicability",
+          "description": "4"
+        },
+        "prior": {
+          "$ref": "#/definitions/Prior-Query-ID",
+          "description": "6"
+        },
+        "collectors": {
+          "$ref": "#/definitions/Collectors",
+          "description": "9"
+        },
+        "content": {
+          "$ref": "#/definitions/Content-IDs",
+          "description": "12"
+        }
+      }
+    },
+    "Results-Info": {
+      "title": "Results Info",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "applicability": {
+          "$ref": "#/definitions/Applicability-Results",
+          "description": "5"
+        },
+        "prior": {
+          "$ref": "#/definitions/Prior-Results",
+          "description": "7"
+        },
+        "collectors": {
+          "$ref": "#/definitions/Collectors-Results",
+          "description": "10"
+        },
+        "content": {
+          "$ref": "#/definitions/Content-Results",
+          "description": "13"
+        }
+      }
+    },
+    "Transaction-ID": {
+      "title": "Transaction ID",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Requestor-ID": {
+      "title": "Requestor ID",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Query-ID": {
+      "title": "Query ID",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Content": {
+      "title": "Content",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Targeting": {
+      "title": "Targeting",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Oldest-Valid-Results": {
+      "title": "Oldest Valid Results",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Latest-Return": {
+      "title": "Latest Return",
+      "type": "string",
+      "maxLength": 255
+    },
+    "PCE-Filters": {
+      "title": "PCE Filters",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Format-Filters": {
+      "title": "Format Filters",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Collection-Parameters": {
+      "title": "Collection Parameters",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Collection-Method": {
+      "title": "Collection Method",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Assessment-Info": {
+      "title": "Assessment Info",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Applicability": {
+      "title": "Applicability",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Prior-Query-ID": {
+      "title": "Prior Query ID",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Collectors": {
+      "title": "Collectors",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Content-IDs": {
+      "title": "Content IDs",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Applicability-Results": {
+      "title": "Applicability Results",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Prior-Results": {
+      "title": "Prior Results",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Collectors-Results": {
+      "title": "Collectors Results",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Content-Results": {
+      "title": "Content Results",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Assessment": {
+      "title": "Assessment",
+      "type": "string",
+      "description": "timestamp, PCE make/model, Target-IDs, etc",
+      "maxLength": 255
+    },
+    "Target-IDs": {
+      "title": "Target IDs",
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}
