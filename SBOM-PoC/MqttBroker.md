@@ -40,7 +40,7 @@ context.load_verify_locations(cafile=CA_CERTS)
 client.tls_set_context(context)
 # ... now connect client
 ```
-# OpenC2 MQTT Transfer Specification
+# Use Draft OpenC2 MQTT Transfer Specification
 
 The plugfest will use WD04 of the in-development OpenC2 Transfer Specification as the working standard of use of MQTT.  This version of the document can be found at:
 
