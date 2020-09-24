@@ -42,7 +42,7 @@ client.tls_set_context(context)
 ```
 # Use Draft OpenC2 MQTT Transfer Specification
 
-The plugfest will use WD04 of the in-development OpenC2 Transfer Specification as the working standard of use of MQTT.  This version of the document can be found at:
+The plugfest will use WD04 of the in-development OpenC2 Transfer Specification as the working standard for use of MQTT.  This version of the document can be found at:
 
 https://github.com/oasis-tcs/openc2-transf-mqtt/blob/v1.0_wd04/transf-mqtt-v1.0.md
 
