@@ -46,9 +46,9 @@ The plugfest will use WD04 of the in-development OpenC2 Transfer Specification a
 
 https://github.com/oasis-tcs/openc2-transf-mqtt/blob/v1.0_wd04/transf-mqtt-v1.0.md
 
-This specification incorporates, [Section 2.3](https://github.com/oasis-tcs/openc2-transf-mqtt/blob/v1.0_wd04/transf-mqtt-v1.0.md#23-message-format) a proposed new OpenC2 message format with more complete contents, originally presented in [issue #353](https://github.com/oasis-tcs/openc2-oc2ls/issues/353) for the OpenC2 Language Specification, along with an initial 2-byte field to specify the serialization and message type contained in an MQTT PUBLISH control packet.
+This specification incorporates, in [Section 2.3](https://github.com/oasis-tcs/openc2-transf-mqtt/blob/v1.0_wd04/transf-mqtt-v1.0.md#23-message-format), a proposed new OpenC2 message format with more complete contents, originally presented in [issue #353](https://github.com/oasis-tcs/openc2-oc2ls/issues/353) for the OpenC2 Language Specification, along with an initial 2-byte field in the message payload to specify the serialization and message type contained in the remainder of the MQTT PUBLISH control packet payload.
 
-This approach means using MQTT v3.1.1 clients and applying the concepts described in the specification for topics structure, message format, etc.  Any gaps in the spec should be addressed in the context of the plug fest, with the understanding that solutions developed there will be considered for later incorporation into the spec as it develops.  I also believe that most of the concepts within the MQTT spec could also be applied to using OpenDXL as a transfer protocol and we welcome feedback regarding that.
+This approach means using MQTT v3.1.1 clients and applying the concepts described in the specification for topics structure, message format, etc.  Any gaps in the spec should be addressed in the context of the plug fest to achieve interoperability, with the understanding that solutions developed there will be considered for later incorporation into the spec as it develops.
 
 
 # Topic Structure and Namespaces for Separation
