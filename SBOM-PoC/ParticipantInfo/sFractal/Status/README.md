@@ -34,10 +34,8 @@ There are potentially many types of sFractal devices which consist of 4 environm
    + [2. Interworking](#2-interworking)
       - [2.1 HII/sFractal](#21-hiisfractal)
       - [2.2 OPEN/sFractal](#22-opensfractal)
-      - [2.3 others/sFractal](#223-otherssfractal)
+      - [2.3 others/sFractal](#23-otherssfractal)
    + [3. Status](#3-statussbomsfractalcom)
-      - status.sbom.sfractal.com
-- [Sprint ending 12-Aug](#sprint-ending-12-aug)
 
 ## Sprint ending 24-Sep
 TL:DR
@@ -72,6 +70,7 @@ TL:DR
 - :white_check_mark: http OpenC2 blink lights
 - :white_check_mark: works locally
 - :construction: GCP
+   - awaiting dockerization of twinklymaha process
 
 #### 1.3 TwinklyMaHa
 - cloud web page, MQTT, OpenC2, SBOM
@@ -92,11 +91,12 @@ TL:DR
 
 #### 1.4 BlinkyMaHa
 - Raspberry Pi (ie physical device), MQTT, OpenC2, SBOM
-- :soon: (after TwinklyMaHa)
+- :soon: (after MaHa working in TwinklyMaHa)
 
 #### 1.5 X-DaHa
 - OpenDxl versions of Blinky and TwinklyDaHa
 - :soon: (after GCP, MAHA, HAHA's)
+   - erlang OpenDxl repo found (https://github.com/waymirec/opendxl-client-erlang) but it needs work
 #### 1.6 Stinky-X
 - :soon: - versions of all devices above, but with alternate fictional SBOMs to simulate vulnerable devices
 #### 1.7 Cloudy-X
@@ -114,12 +114,13 @@ TL:DR
 #### 2.2 OPEN/sFractal
 - :white_check_mark: - obtained sensor DIY kits
 - :white_check_mark: - obtained network DIY kits
-   - :new: issue. new hardware on order. May not arrive in time 
+   - :new: issue. new hardware on order. May not arrive in time
 - :construction: - build kits and integrate
 - :soon: - SBOM analysis
 - :soon: - OpenC2 analysis
-#### 2.23 others/sFractal
+#### 2.3 others/sFractal
 - :soon: - let me know who else wants to interwork
 
 ### 3. status.sbom.sfractal.com
 - :construction: - website for overall plugfest status
+   - awaiting dockerization of twinklymaha process
