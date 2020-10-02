@@ -193,6 +193,7 @@ and what they plan to contribute to this effort:
 - [Google](./ParticipantInfo/GoogleGoals.md)
 - [Podii](./ParticipantInfo/PodiiGoals.md)
 - [University of Oslo](./ParticipantInfo/UiOGoals.md)
+- [Lucd](./ParticipantInfo/LucidGoals.md)
 
 Editor's Note - This list probably needs to move to it's own page
 since it will probably grow to 50+ entries.
