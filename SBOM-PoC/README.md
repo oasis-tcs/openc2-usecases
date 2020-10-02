@@ -188,6 +188,7 @@ and what they plan to contribute to this effort:
 - [BTS](./ParticipantInfo/BtsGoals.md)
 - [Google](./ParticipantInfo/GoogleGoals.md)
 - [Podii](./ParticipantInfo/PodiiGoals.md)
+- [Lucd](./ParticipantInfo/LucdGoals.md)
 
 Editor's Note - This list probably needs to move to it's own page
 since it will probably grow to 50+ entries.
