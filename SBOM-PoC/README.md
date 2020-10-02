@@ -59,7 +59,11 @@ sets out to prove several concepts e.g.
 - [SCAPv2](https://csrc.nist.gov/Projects/Security-Content-Automation-Protocol-v2)
    - may be used in protecting organizational systems,
    networks, data, and users
-   - demonstrate "Obtain SBOM" as an SCAPv2 application in the [SCAPv2 Prototype Architecture](https://docs.google.com/presentation/d/11EtTqBsSlfGVnjmudNrTSTpk3-tUUxn90AuucZpenD8)
+   - demonstrate "Obtain SBOM" as an SCAPv2 application in the
+   [SCAPv2 Prototype Architecture](https://docs.google.com/presentation/d/11EtTqBsSlfGVnjmudNrTSTpk3-tUUxn90AuucZpenD8)
+   - revised [Architecture](Schemas/scapv2-edc-proto/edc-09-02-2020.pdf) is used to create the
+   EDC [schema](Schemas/scapv2-edc-proto/edc.jidl), which in turn is used iteratively to refine the architecture.
+   - EDC Application messages become the Targets and Results of the OpenC2 EDC Actuator Profile.
 - [IACD](https://www.iacdautomate.org/)
    - may be used in protecting organizational systems,
    networks, data, and users
@@ -188,7 +192,8 @@ and what they plan to contribute to this effort:
 - [BTS](./ParticipantInfo/BtsGoals.md)
 - [Google](./ParticipantInfo/GoogleGoals.md)
 - [Podii](./ParticipantInfo/PodiiGoals.md)
-- [Lucd](./ParticipantInfo/LucdGoals.md)
+- [University of Oslo](./ParticipantInfo/UiOGoals.md)
+- [Lucd](./ParticipantInfo/LucidGoals.md)
 
 Editor's Note - This list probably needs to move to it's own page
 since it will probably grow to 50+ entries.

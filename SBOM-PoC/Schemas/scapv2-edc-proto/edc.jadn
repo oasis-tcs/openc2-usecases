@@ -1,0 +1,121 @@
+{
+ "info": {
+  "package": "https://scap.org/edc-prototype/v0.1",
+  "exports": ["Assessment-Instructions", "Cancel-Assessment", "Assessment-Ack", "Collection-Request", "Collection-Results", "Query", "Results", "Store-Assessment-Info"]
+ },
+
+ "types": [
+  ["Assessment-Instructions", "Record", [], "1", [
+    [1, "content", "Content", [], "with IDs"],
+    [2, "targeting", "Targeting", [], ""],
+    [3, "oldest", "Oldest-Valid-Results", [], ""],
+    [4, "latest", "Latest-Return", [], ""],
+    [5, "get_fresh", "Boolean", [], ""],
+    [6, "method", "PCE-Filters", [], ""],
+    [7, "formats", "Format-Filters", [], ""],
+    [8, "params", "Collection-Parameters", [], ""],
+    [9, "requestor", "Requestor-ID", [], ""]
+  ]],
+
+  ["Cancel-Assessment", "Record", [], "1", [
+    [1, "transaction", "Transaction-ID", [], ""],
+    [2, "requestor", "Requestor-ID", [], ""]
+  ]],
+
+  ["Assessment-Ack", "Record", [], "2", [
+    [1, "transaction", "Transaction-ID", [], ""]
+  ]],
+
+  ["Store-Assessment-Info", "Record", [], "3", [
+    [1, "info", "Assessment-Info", [], "Is this same as 15 report results?"],
+    [2, "requestor", "Requestor-ID", [], ""]
+  ]],
+
+  ["Query", "Record", [], "", [
+    [1, "query", "Query-Info", [], ""],
+    [2, "query_id", "Query-ID", [], ""],
+    [3, "requestor", "Requestor-ID", [], ""]
+  ]],
+
+  ["Results", "Record", [], "", [
+    [1, "results", "Results-Info", [], ""],
+    [2, "query_id", "Query-ID", [], ""],
+    [3, "requestor", "Requestor-ID", [], ""]
+  ]],
+
+  ["Query-Info", "Choice", [], "", [
+    [1, "applicability", "Applicability", [], "4"],
+    [2, "prior", "Prior-Query-ID", [], "6"],
+    [3, "collectors", "Collectors", [], "9"],
+    [4, "content", "Content-IDs", [], "12"]
+  ]],
+
+  ["Results-Info", "Choice", [], "", [
+    [1, "applicability", "Applicability-Results", [], "5"],
+    [2, "prior", "Prior-Results", [], "7"],
+    [3, "collectors", "Collectors-Results", [], "10"],
+    [4, "content", "Content-Results", [], "13"]
+  ]],
+
+  ["Collection-Request", "Record", [], "11", [
+    [1, "content_ids", "Content-IDs", [], ""],
+    [2, "target_ids", "Target-IDs", [], ""],
+    [3, "latest_return", "Latest-Return", [], ""],
+    [4, "method", "Collection-Method", [], "PCE filters"],
+    [5, "formats", "Format-Filters", [], ""],
+    [6, "params", "Collection-Parameters", [], ""],
+    [7, "transaction", "Transaction-ID", [], ""],
+    [8, "requestor", "Requestor-ID", [], ""]
+  ]],
+
+  ["Collection-Results", "Record", [], "15", [
+    [1, "assessment", "Assessment", [], ""],
+    [2, "transaction", "Transaction-ID", [], ""],
+    [3, "requestor", "Requestor-ID", [], ""]
+  ]],
+
+  ["Transaction-ID", "String", [], "", []],
+
+  ["Requestor-ID", "String", [], "", []],
+
+  ["Query-ID", "String", [], "", []],
+
+  ["Content", "String", [], "", []],
+
+  ["Targeting", "String", [], "", []],
+
+  ["Oldest-Valid-Results", "String", [], "", []],
+
+  ["Latest-Return", "String", [], "", []],
+
+  ["PCE-Filters", "String", [], "", []],
+
+  ["Format-Filters", "String", [], "", []],
+
+  ["Collection-Parameters", "String", [], "", []],
+
+  ["Collection-Method", "String", [], "", []],
+
+  ["Assessment-Info", "String", [], "", []],
+
+  ["Applicability", "String", [], "", []],
+
+  ["Prior-Query-ID", "String", [], "", []],
+
+  ["Collectors", "String", [], "", []],
+
+  ["Content-IDs", "String", [], "", []],
+
+  ["Applicability-Results", "String", [], "", []],
+
+  ["Prior-Results", "String", [], "", []],
+
+  ["Collectors-Results", "String", [], "", []],
+
+  ["Content-Results", "String", [], "", []],
+
+  ["Assessment", "String", [], "timestamp, PCE make/model, Target-IDs, etc", []],
+
+  ["Target-IDs", "String", [], "", []]
+ ]
+}
