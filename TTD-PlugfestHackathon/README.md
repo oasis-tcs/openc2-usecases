@@ -12,7 +12,7 @@ need to do this
 # 1 - Intro
 
 There is no better time
-to be in the cyber-security profession than today.  
+to be in the cyber-security profession than today.
 We are faced with interesting problems
 and we address the needs of new functionality
 within evolving cyber-ecosystems.  
