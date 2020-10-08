@@ -1,8 +1,6 @@
 # Table Of Contents
 need to do this
 - [1. Intro](#1---intro)
-  - [1.1 Vision](#11-vision)
-  - [1.2 Communications & Coordination](#12-communications--coordination)
 - [2. Organizations Participating](#2---organizations-participating)
 - [3. Goals and Objectives](#3---goals-and-objectives)
 - [4. Work Plan](4---work-plan)
@@ -15,22 +13,22 @@ There is no better time
 to be in the cyber-security profession than today.
 We are faced with interesting problems
 and we address the needs of new functionality
-within evolving cyber-ecosystems.  
+within evolving cyber-ecosystems.
 We are seeing an expansion in the
 cyber-physical (such as robotics and self driving cars)
 and an increase in the abstract (such as cloud migration,
-artificial intelligence and machine learning).  
+artificial intelligence and machine learning).
 Cyber-security is a most rewarding profession to be in,
-but there are associated challenges.  
+but there are associated challenges.
 We need the experts to be able
 to focus their efforts and permit their innovations
 to be applied to a range of uses regardless of the cyber-ecosystem.
 
 This is where efforts such as
-OpenC2, SBOM, IACD, OCA, SCAPv2 come in.  
+OpenC2, SBOM, IACD, OCA, SCAPv2 come in.
 The OpenC2 Plugfest/SBOM PoC/Hackathon
 is a mashup of combining all these concepts
-to demonstrate usecases showing the value of automated defense.  
+to demonstrate usecases showing the value of automated defense.
 
 OpenC2 is a standardized language
 for the command and control of technologies
@@ -47,11 +45,11 @@ the programming language they are written in
 or the function they are designed to fulfill.
 OpenC2 has an initial suite of specifications written
 and we are at the point where we are applying it to
-real world use cases on real cyber security products.   
+real world use cases on real cyber security products. 
 
 OpenC2 organized a Plug Fest that was to take place
 in conjunction with
-[Technology Transfer Days](https://techtransferdays.org/).  
+[Technology Transfer Days](https://techtransferdays.org/).
 The Plug Fest was intended to encourage participation
 beyond the individuals from 39 different organizations
 that are on the OpenC2 effort within OASIS,
@@ -75,7 +73,7 @@ Plugfest will be shorthand for the
 SBOM/SCAPv2/IACD/OCA/CACAO/...
 virtual PoC/plugfest/hackathon
 event on Oct 28th
-but realistically it will probable get called SBOM-PoC as well.
+but realistically it will probably be called SBOM-PoC as well.
 
 For organizations participating, see
 ../SBOM-Poc/README.md##2---organizations-participating
