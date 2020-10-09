@@ -134,15 +134,18 @@ See (add link) for broker details.
 See (add link) for broker details.
 
 ## 3.3 Projects to interwork
-- HII OIF
-- HII Yuuki
-- sFractal Blinky et al
-- DoD JADN
-- DoD Actuator Profile Tool
-- New Context whatisname
-- Ion Channel SaaS
-- BTS Centurion
-- BTS Legion
+- [Huntington Ingalls OIF](needtoaddlink)
+- [Huntington Ingalls Yuuki](needtoaddlink)
+- [sFractal Blinky et al](needtoaddlink)
+- [DoD JADN](needtoaddlink)
+- [DoD Actuator Profile Tool](needtoaddlink)
+- [MoD/CACI  whatisname](needtoaddlink)
+- [New Context whatisname](needtoaddlink)
+- [Ion Channel SaaS](needtoaddlink)
+- [BTS Centurion](needtoaddlink)
+- [BTS Legion](needtoaddlink)
+- [UNC Honeypots?](needtoaddlink)
+- [Univ of Oslo fw?](needtoaddlink)
 
 ## 3.4 Open Source Repos of interest
-- fill in with repos from ATT, New Context, HII, Google, etc
+- fill in with repos from ATT lycan-python/lycan-java, New Context AWS/newp, HII yuuki, DoD tools, Google, etc
