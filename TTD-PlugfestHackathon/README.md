@@ -1,11 +1,10 @@
 # Table Of Contents
 need to do this
 - [1. Intro](#1---intro)
-- [2. Organizations Participating](#2---organizations-participating)
-- [3. Goals and Objectives](#3---goals-and-objectives)
-- [4. Work Plan](4---work-plan)
-- [5. Participants](#5---participants)
-
+   * [1.1](#11-openc2)
+   * [1.1](#1?-impact-of-covid)
+- [2. ](#2-)
+- [3. ](#3-)
 
 # 1 - Intro
 
@@ -30,6 +29,7 @@ The OpenC2 Plugfest/SBOM PoC/Hackathon
 is a mashup of combining all these concepts
 to demonstrate usecases showing the value of automated defense.
 
+## 1.1 OpenC2
 OpenC2 is a standardized language
 for the command and control of technologies
 that provide or support cyber defenses.
@@ -45,8 +45,20 @@ the programming language they are written in
 or the function they are designed to fulfill.
 OpenC2 has an initial suite of specifications written
 and we are at the point where we are applying it to
-real world use cases on real cyber security products. 
+real world use cases on real cyber security products.
 
+## 1.2 SBOM
+blah blah to be filled in
+## 1.3 IACD
+blah blah to be filled in
+## 1.4 OCA
+blah blah to be filled in
+## 1.5 SCAPv2
+blah blah to be filled in
+## 1.6 CACAO
+blah blah to be filled in
+
+## 1.7 Impact of Covid
 OpenC2 organized a Plug Fest that was to take place
 in conjunction with
 [Technology Transfer Days](https://techtransferdays.org/).
@@ -57,7 +69,7 @@ and to include the larger ecosystems
 OpenC2 operates in (IACD, OCAS, SCAPv2, OCA, …).
 
 The physical OpenC2 plugfest was cancelled
-when TechTransferDays (TTD see https://techtransferdays.org/)
+when TechTransferDays
 was cancelled due to the pandemic.
 It is being replaced with a virtual Meetup on October 28th.
 More details will be published here as they are determined.
@@ -75,20 +87,62 @@ virtual PoC/plugfest/hackathon
 event on Oct 28th
 but realistically it will probably be called SBOM-PoC as well.
 
-For organizations participating, see
-../SBOM-Poc/README.md##2---organizations-participating
+For organizations participating, see [here](../SBOM-Poc/README.md##2---organizations-participating).
 
-# 2 - SBOM Proof of Concept
-See [SBOM Proof of Concept](../SBOM-PoC/)
-for the virtual plugfest/hackathon/proof-of-concept leading up to physically getting together in NYC at TTD. This PoC is a virtual meetup-mashup of it's own of several different efforts.
+# 2 - Agenda
+The draft agenda is [here](./poc_agenda.md)
+
+# 3 - Registration
+Registration will be via Eventbrite.
+You may register at link-to-be-provided beginning 12-October.
+You can register as a participant
+(i.e. you have software for interworking/hackathon)
+or as an attendee
+(i.e. you will be listening to plenary sessions but
+do not plan to be hands-on).
+There are several questions that need to be answered to register.
+This will help us with planning.
+
 
 # 3 - Meetup Logistics
-This section will get more detail
-closer to the event.
+## 3.1 - Conference Tools
+The plenary sessions will via zoom and
+access to zoom will be provided via the Eventbrite tickets.
+Breakout sessions for the hands-on breakout sessions
+will be using Discord.
+Participants (and attendees if they request) will be provided
+Discord information after they register.
 
-# 4 - Meetup Prep
-This section will get more detail
-closer to the event.
-For now, see [SBOM Proof of Concept](#sbom-proof-of-concept)
-which is the virtual plugfest/hackathon/proof-of-concept
-leading up to the October 28th meetup.
+## 3.2 Ecosystems
+Unlike previous OpenC2 plugfests,
+we will not be physically in the same room
+and therefore will not be on the same network.
+Therefore we will need to interwork our devices remotely.
+
+At the moment, 3 ecosystems are planned:
+- HTTP HTTPS - OpenC2 producers interact with OpenC2 consumers virtual HTTP or HTTPS.
+This may be challenging for consumers behind firewalls
+since the consumer performs the sever role
+so it would require opening up either port 80 (HTTP) or port 443 (HTTPS).
+For HTTPS, participants should work our certificates
+prior to the plugfest.
+- MQTT MQTT/TLS - This is the preferred ecosystem.
+Since MQTT is a simple pub/sub protocol,
+it avoids the firewall issues of HTTP/HTTPS.
+See (add link) for broker details.
+- OpenDXL - an OpenDXL broker has been established in GCP for the SBOM PoC.
+See (add link) for broker details.
+
+## 3.3 Projects to interwork
+- HII OIF
+- HII Yuuki
+- sFractal Blinky et al
+- DoD JADN
+- DoD Actuator Profile Tool
+- New Context whatisname
+- Ion Channel SaaS
+- BTS Centurion
+- BTS Legion
+
+## 3.4 Open Source Repos of interest
+- fill in with repos from ATT, New Context, HII, Google, etc
