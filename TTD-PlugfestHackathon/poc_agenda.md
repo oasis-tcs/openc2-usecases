@@ -5,7 +5,9 @@ attendance, will of the group,
 and whim of the moderator.
 
 * 7:45 AM - 8:00 AM - Zoom open, watercooler conversation
-* 8:00 AM - 9:45 AM - Breakout Sesson #1 - Topics arranged pre-plugfest
+* 8:00 AM - 9:45 AM - Breakout Sesson #1
+   - Topics arranged pre-plugfest 
+   - [Details](./breakouts.md)
 * 9:45 AM - 10:00 AM - Break
 * 10 AM - 11 AM or longer? - Opening Plenary Session
    - Kickoff - Duncan Sparrell
@@ -32,6 +34,7 @@ and whim of the moderator.
       * One Planet Education Network
       * BTS
 * 11:00 - 12:30 Breakout Sessions #2
+   - [Details](./breakouts.md)
 * 12:30 - 1:00 Lunch Break
 * 1:00 - 2:30 Keynote Plenary Session
    - ? introducing financial speaker
@@ -40,6 +43,7 @@ and whim of the moderator.
    - 2:00 - 2:30 Neal Ziring "?talk title?"
 * 2:30 - 2:45 Break
 * 2:45 - 4:00 Breakout Sessions #3
+    - [Details](./breakouts.md)
 * 4:00 - 5:00 Closing Plenary
    - Breakout Session Readouts
    - Accomplishments Recap

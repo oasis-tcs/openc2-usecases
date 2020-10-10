@@ -148,4 +148,7 @@ See (add link) for broker details.
 - [Univ of Oslo fw?](needtoaddlink)
 
 ## 3.4 Open Source Repos of interest
-- fill in with repos from ATT lycan-python/lycan-java, New Context AWS/newp, HII yuuki, DoD tools, Google, etc
+- fill in with repos from ATT lycan-python/lycan-java, New Context AWS/newp, HII yuuki, DoD tools, SEI SBOM generator, Google, etc
+
+## 3.5 Breakout sessions
+see [Breakouts](./breakouts.md)
