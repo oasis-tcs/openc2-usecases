@@ -30,7 +30,7 @@ is a mashup of combining all these concepts
 to demonstrate usecases showing the value of automated defense.
 
 ## 1.1 OpenC2
-OpenC2 is a standardized language
+[OpenC2](https://openc2.org/) is a standardized language
 for the command and control of technologies
 that provide or support cyber defenses.
 By providing a common language for
@@ -48,15 +48,32 @@ and we are at the point where we are applying it to
 real world use cases on real cyber security products.
 
 ## 1.2 SBOM
-blah blah to be filled in
+A [Software Bill of Materials](https://www.ntia.doc.gov/SBOM) (SBOM) is a formal record containing the details andsupply chain relationships of various components used in building software.
+
 ## 1.3 IACD
-blah blah to be filled in
+[Integrated Adaptive Cyber Defense](https://www.iacdautomate.org/) (IACD) is accelerating the speed and scale of cyberdefense through automation, orchestration, and information sharing. IACD defines a strategy and framework to adopt an extensible, adaptive, commercial off-the-shelf (COTS)-based approach. Our goal is to dramatically change the timeline and effectiveness of cyber defense via integration, automation, orchestration and sharing of machine-readable cyber threat information.
+
 ## 1.4 OCA
-blah blah to be filled in
+The Open Cybersecurity Alliance](https://opencybersecurityalliance.org/)
+(OCA) is an open ecosystem
+where cybersecurity products interoperate
+without the need for customized integrations.
+Using community-developed standards and practices,
+OCA is simplifying integration across the threat lifecycle.
+
 ## 1.5 SCAPv2
-blah blah to be filled in
+[Version 2 of the Security Content Automation Protocol](https://csrc.nist.gov/projects/security-content-automation-protocol-v2)
+(SCAPv2) is a major update to the SCAP 1.x publications.
+SCAP v2 covers a broader scope in an attempt
+to further improve enterprise security through
+standardization and automation.
+
 ## 1.6 CACAO
-blah blah to be filled in
+[Collaborative Automated Course of Action Operations](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao)
+(CACAO) defines the schema and taxonomy for cybersecurity
+playbooks and how cybersecurity playbooks can be created,
+documented, and shared in a structured and standardized way
+across organizational boundaries and technological solutions.
 
 ## 1.7 Impact of Covid
 OpenC2 organized a Plug Fest that was to take place
