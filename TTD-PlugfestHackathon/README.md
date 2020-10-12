@@ -54,7 +54,7 @@ A [Software Bill of Materials](https://www.ntia.doc.gov/SBOM) (SBOM) is a formal
 [Integrated Adaptive Cyber Defense](https://www.iacdautomate.org/) (IACD) is accelerating the speed and scale of cyberdefense through automation, orchestration, and information sharing. IACD defines a strategy and framework to adopt an extensible, adaptive, commercial off-the-shelf (COTS)-based approach. Our goal is to dramatically change the timeline and effectiveness of cyber defense via integration, automation, orchestration and sharing of machine-readable cyber threat information.
 
 ## 1.4 OCA
-The Open Cybersecurity Alliance](https://opencybersecurityalliance.org/)
+The [Open Cybersecurity Alliance](https://opencybersecurityalliance.org/)
 (OCA) is an open ecosystem
 where cybersecurity products interoperate
 without the need for customized integrations.
