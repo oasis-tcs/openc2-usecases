@@ -119,6 +119,7 @@ or as an attendee
 do not plan to be hands-on).
 There are several questions that need to be answered to register.
 This will help us with planning.
+To register, click [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-tickets-124335150783).
 
 
 # 3 - Meetup Logistics
