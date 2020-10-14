@@ -1,3 +1,4 @@
+![Plugfest](./Plugfest.png)
 # Agenda 28-Oct-2020
 All times are Eastern US and
 subject to change based on
@@ -6,7 +7,7 @@ and whim of the moderator.
 
 * 7:45 AM - 8:00 AM - Zoom open, watercooler conversation
 * 8:00 AM - 9:45 AM - Breakout Sesson #1
-   - Topics arranged pre-plugfest 
+   - Topics arranged pre-plugfest
    - [Details](./breakouts.md)
 * 9:45 AM - 10:00 AM - Break
 * 10 AM - 11 AM or longer? - Opening Plenary Session

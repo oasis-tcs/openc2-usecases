@@ -1,10 +1,22 @@
+![Plugfest](./Plugfest.png)
+
 # Table Of Contents
-need to do this
 - [1. Intro](#1---intro)
    * [1.1](#11-openc2)
-   * [1.1](#1?-impact-of-covid)
-- [2. ](#2-)
-- [3. ](#3-)
+   * [1.2](#12-sbom)
+   * [1.3](#13-iacd)
+   * [1.4](#14-oca)
+   * [1.5](#15-scapv2)
+   * [1.6](#16-cacao)
+   * [1.7](#17-impact-of-covid)
+- [2. Agenda](#2-agenda)
+- [3. Registration](#3---registration)
+- [4. Meetup Logistics](#4---meetup-logistics)
+   * [4.1 - Conference Tools](#41-conference-tools)
+   * [4.2 Ecosystems ](#42-ecosystems)
+   * [4.3 Projects to interwork ](#43-projects-to-interwork)
+   * [4.4 Open Source Repos of interest](#44-open-source-repos-of-interest)
+   * [4.5 Breakout sessions ](#45-breakout-sessions)
 
 # 1 - Intro
 
@@ -122,8 +134,8 @@ This will help us with planning.
 To register, click [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-tickets-124335150783).
 
 
-# 3 - Meetup Logistics
-## 3.1 - Conference Tools
+# 4 - Meetup Logistics
+## 4.1 Conference Tools
 The plenary sessions will via zoom and
 access to zoom will be provided via the Eventbrite tickets.
 Breakout sessions for the hands-on breakout sessions
@@ -131,7 +143,7 @@ will be using Discord.
 Participants (and attendees if they request) will be provided
 Discord information after they register.
 
-## 3.2 Ecosystems
+## 4.2 Ecosystems
 Unlike previous OpenC2 plugfests,
 we will not be physically in the same room
 and therefore will not be on the same network.
@@ -151,7 +163,7 @@ See (add link) for broker details.
 - OpenDXL - an OpenDXL broker has been established in GCP for the SBOM PoC.
 See (add link) for broker details.
 
-## 3.3 Projects to interwork
+## 4.3 Projects to interwork
 - [Huntington Ingalls OIF](needtoaddlink)
 - [Huntington Ingalls Yuuki](needtoaddlink)
 - [sFractal Blinky et al](needtoaddlink)
@@ -165,8 +177,8 @@ See (add link) for broker details.
 - [UNC Honeypots?](needtoaddlink)
 - [Univ of Oslo fw?](needtoaddlink)
 
-## 3.4 Open Source Repos of interest
+## 4.4 Open Source Repos of interest
 - fill in with repos from ATT lycan-python/lycan-java, New Context AWS/newp, HII yuuki, DoD tools, SEI SBOM generator, Google, etc
 
-## 3.5 Breakout sessions
+## 4.5 Breakout sessions
 see [Breakouts](./breakouts.md)
