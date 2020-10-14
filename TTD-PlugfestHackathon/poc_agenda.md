@@ -5,6 +5,8 @@ subject to change based on
 attendance, will of the group,
 and whim of the moderator.
 
+Please note that on 28-Oct the US will still be on Daylight Savings Time but Europe will have switched to standard time on 25-Oct. We unfortunately scheduled during the confusing week.
+
 * 7:45 AM - 8:00 AM - Zoom open, watercooler conversation
 * 8:00 AM - 9:45 AM - Breakout Sesson #1
    - Topics arranged pre-plugfest
