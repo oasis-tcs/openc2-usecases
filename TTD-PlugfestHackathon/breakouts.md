@@ -14,11 +14,16 @@ Potential tracks include:
    * for PoC Projects
    * for upstream open source components
    * for common platforms
- - Cyberdefense Automation Use cases
- - using CACAO for PoC/Plugfest Playbooks
+- SBOM analysis
+- Cyberdefense Automation Use cases
+- using CACAO for PoC/Plugfest Playbooks
+- organization specific breakouts (e.g. to provide a tutuorial on how an application fits in one of the ecosystems for a set of use cases)
 
 ## Breakout Session #1
+TBD. See Discord "Breakout Admin" channel for more details
 
 ## Breakout Session #2
+TBD. See Discord "Breakout Admin" channel for more details
 
 ## Breakout Session #3
+TBD. See Discord "Breakout Admin" channel for more details

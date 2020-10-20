@@ -1,5 +1,7 @@
 ![Plugfest](./Plugfest.png)
 
+Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-tickets-124335150783)
+
 # Table Of Contents
 - [1. Intro](#1---intro)
    * [1.1 OpenC2](#11-openc2)
@@ -116,32 +118,31 @@ virtual PoC/plugfest/hackathon
 event on Oct 28th
 but realistically it will probably be called SBOM-PoC as well.
 
-For organizations participating, see [here](../SBOM-Poc/README.md##2---organizations-participating).
+Organizations participating include:
+![Participating](./participating.png)
 
 # 2 - Agenda
 The draft agenda is [here](./poc_agenda.md)
 
 # 3 - Registration
-Registration will be via Eventbrite.
-You may register at link-to-be-provided beginning 12-October.
+Registration will be via Eventbrite and is open. Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-tickets-124335150783)
+
 You can register as a participant
-(i.e. you have software for interworking/hackathon)
+(i.e. you want to attend at least one of the breakout sessions)
 or as an attendee
-(i.e. you will be listening to plenary sessions but
-do not plan to be hands-on).
+(i.e. you will just be listening to plenary sessions).
 There are several questions that need to be answered to register.
 This will help us with planning.
-To register, click [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-tickets-124335150783).
-
 
 # 4 - Meetup Logistics
 ## 4.1 Conference Tools
 The plenary sessions will via zoom and
-access to zoom will be provided via the Eventbrite tickets.
-Breakout sessions for the hands-on breakout sessions
-will be using Discord.
+access to Zoom will be provided via the Eventbrite tickets.
+Breakout sessions
+will be using Discord,
+and maybe Zoom rooms.
 Participants (and attendees if they request) will be provided
-Discord information after they register.
+Discord information after they register and before the event starts.
 
 ## 4.2 Ecosystems
 Unlike previous OpenC2 plugfests,
@@ -178,7 +179,7 @@ See (add link) for broker details.
 - [Univ of Oslo fw?](needtoaddlink)
 
 ## 4.4 Open Source Repos of interest
-- fill in with repos from ATT lycan-python/lycan-java, New Context AWS/newp, HII yuuki, DoD tools, SEI SBOM generator, Google, etc
+- fill in with repos from OASIS, ATT lycan-python/lycan-java, New Context AWS/newp, HII yuuki, DoD tools, SEI SBOM generator, Google, etc
 
 ## 4.5 Breakout sessions
 see [Breakouts](./breakouts.md)
