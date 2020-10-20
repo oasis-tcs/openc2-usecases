@@ -116,7 +116,8 @@ virtual PoC/plugfest/hackathon
 event on Oct 28th
 but realistically it will probably be called SBOM-PoC as well.
 
-For organizations participating, see [here](../SBOM-Poc/README.md##2---organizations-participating).
+Organizations participating include:
+![Participating](./participating.png)
 
 # 2 - Agenda
 The draft agenda is [here](./poc_agenda.md)

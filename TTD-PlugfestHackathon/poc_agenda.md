@@ -36,6 +36,8 @@ Please note that on 28-Oct the US will still be on Daylight Savings Time but Eur
       * UNC
       * One Planet Education Network
       * BTS
+      * Vigilant Ops
+      * CERT
 * 11:00 - 12:30 Breakout Sessions #2
    - [Details](./breakouts.md)
 * 12:30 - 1:00 Lunch Break
