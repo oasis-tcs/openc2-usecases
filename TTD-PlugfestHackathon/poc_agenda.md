@@ -44,10 +44,12 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
    - [Details](./breakouts.md)
 * 12:30 - 1:00 Lunch Break
 * 1:00 - 2:30 Keynote Plenary Session
-   - ? introducing financial speaker
-   - Name-awaiting-corporate-approval - Financial Industry Speaker - "?Talk Title?"
-   - Microsoft speaker, Microsoft talk?, intro Neal
-   - 2:00 - 2:30 Neal Ziring "?talk title?"
+   - ? introducing all the speakers
+   - Wende Peters - SVP Information Security DevOps at Bank of America - "?Talk Title?"
+   - Michael Powell - NIST - "Securing integrated ICS and IT"
+   - Allan Friedman - Director of Cybersecurity Initiatives, NTIA - "?SBOM Talk Title?"
+   - Microsoft speaker, Microsoft talk?
+   - Neal Ziring - Technical Director, Cyber, NSA - "Automating Cyberdefense"
 * 2:30 - 2:45 Break
 * 2:45 - 4:00 Breakout Sessions #3
     - [Details](./breakouts.md)
