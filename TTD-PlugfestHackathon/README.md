@@ -11,7 +11,7 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
    * [1.5 SCAPv2](#15-scapv2)
    * [1.6 CACAO](#16-cacao)
    * [1.7 Impact of Covid](#17-impact-of-covid)
-- [2. Agenda](#2-agenda)
+- [2. Agenda](#2---agenda)
 - [3. Registration](#3---registration)
 - [4. Meetup Logistics](#4---meetup-logistics)
    * [4.1 - Conference Tools](#41-conference-tools)
