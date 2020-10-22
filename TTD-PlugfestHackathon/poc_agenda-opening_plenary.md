@@ -7,7 +7,10 @@ github chops to know it's here
       * Review/Rearrange Agenda
    - 3-4 min Lightning Project/Company/Usecase roundrobin
       * OpenC2 - Duncan owes
-      * SBOM - Duncan to pick from NTIA set
+      * SBOM - 3 part, with cutouts, at 1.5 speed
+         - https://drive.google.com/file/d/1iVRY4Fm7j9ecfPAPtiNcozFLkZWjAXuH/view?usp=sharing
+         - https://drive.google.com/file/d/1KXkHj8ifzSMXm7RTUdbTvW-TeamoeQfE/view?usp=sharing
+         - https://drive.google.com/file/d/18zOFprSwZ-IJDYIDiQzSOhikD0ul4nyX/view?usp=sharing
       * IACD
       * SCAPv2 - DaveK owes
       * OCA
