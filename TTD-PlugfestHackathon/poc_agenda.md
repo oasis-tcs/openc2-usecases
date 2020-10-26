@@ -39,7 +39,6 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * Vigilant Ops :construction:
       * McAfee :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin Live
-      * Google :question: :information_desk_person:
       * Univ of Oslo :information_desk_person:
       * UNC :information_desk_person:
       * NEC :question: :information_desk_person:
