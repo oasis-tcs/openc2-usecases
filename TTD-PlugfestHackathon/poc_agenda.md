@@ -64,7 +64,7 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * *Linux Foundation Red Team Project: Using Offensive TTPs to Make Open Source Software Safer to Use*
       * Google
    - Allan Friedman
-      * *How I learned to Stop Worrying and Love the SBOM*
+      * *How We Learned to Stop Worrying and Love the SBOM*
       * Director of Cybersecurity Initiatives, NTIA
    - Neal Ziring
       * *Automating Cyberdefense*
