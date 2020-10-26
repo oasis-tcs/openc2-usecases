@@ -28,9 +28,11 @@ for more information.
 
 ## Breakout Session #1
 TBD. See Discord "Breakout Admin" channel for more details
+- OpenC2 MQTT interworking
 
 ## Breakout Session #2
 TBD. See Discord "Breakout Admin" channel for more details
 
 ## Breakout Session #3
 TBD. See Discord "Breakout Admin" channel for more details
+- OnePlanetEducationNetwork Interworking and SBOM creation

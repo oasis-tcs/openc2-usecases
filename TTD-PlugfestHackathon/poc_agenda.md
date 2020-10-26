@@ -18,28 +18,32 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
    - Kickoff - Duncan Sparrell
       * Review Logistics
       * Review/Rearrange Agenda
-   - 3-4 min Lightning Project/Company/Usecase roundrobin
-      * OpenC2
-      * SBOM
-      * IACD
-      * SCAPv2
-      * OCA
-      * CACAO
-      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos
-      * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa
-      * Huntington Ingalls - OIF, Yuuki
-      * NSA/DoD - JADN, Actuator Profile Tool, ...
-      * Google
-      * UK MoD
-      * CACI
-      * New Context
-      * Ion Channel
-      * Univ of Oslo
-      * UNC
-      * One Planet Education Network
-      * BTS
-      * Vigilant Ops
-      * CERT
+   - 3-4 min Ecoystem Lightning Roundrobin
+      * OpenC2 :construction:
+      * SBOM :white_check_mark:
+      * IACD :question:
+      * SCAPv2 :white_check_mark:
+      * OCA :white_check_mark:
+      * CACAO :white_check_mark:
+      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos :construction:
+   - 3-4 min Project/Company/Usecase Lightning roundrobin videos
+      * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa :construction:
+      * CERT :white_check_mark:
+      * Huntington Ingalls - OIF, Yuuki :construction:
+      * NSA/DoD - JADN, Actuator Profile Tool, ... :construction:
+      * * Hereuco :construction:
+      * New Context :construction:
+      * Ion Channel :construction:
+      * One Planet Education Network  :construction:
+      * BTS  :construction:
+      * Vigilant Ops :construction:
+      * McAfee :construction:
+   - 3-4 min Project/Company/Usecase Lightning roundrobin Live
+      * Google :question: :information_desk_person:
+      * Univ of Oslo :information_desk_person:
+      * UNC :information_desk_person:
+      * NEC :question: :information_desk_person:
+      * Linux Foundation :question: :information_desk_person:
 * 11:00 - 12:30 Breakout Sessions #2
    - [Details](./breakouts.md)
 * 12:30 - 1:00 Lunch Break
