@@ -48,15 +48,30 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
    - [Details](./breakouts.md)
 * 12:30 - 1:00 Lunch Break
 * 1:00 - 2:30 Keynote Plenary Session
-   - Sally Grant - Lucd.ai - Introduction
-   - Audrey Long - Microsoft- moderator
-   - Wende Peters - SVP Information Security DevOps at Bank of America - "?Talk Title?"
-   - Michael Powell - NIST - "Securing integrated ICS and IT"
-   - Allan Friedman - Director of Cybersecurity Initiatives, NTIA - "?SBOM Talk Title?"
-   - Neal Ziring - Technical Director, Cyber, NSA - "Automating Cyberdefense"
+   - Sally Grant
+      * Introduction
+      * Lucd.ai
+   - Audrey Long
+      * Moderator
+      * Microsoft
+   - Wende Peters
+      * "A View from the Other Side of the Valley:  Operational and Business Drivers for Automation and Open Standards"
+      * Senior Vice President, Global Information Security, Technology Strategy, Orchestration and Production Delivery
+   - Michael Powell
+      * "Securing integrated ICS and IT"
+      * NIST
+   - Allan Friedman
+      * "SBOM"
+      * Director of Cybersecurity Initiatives, NTIA
+   - Neal Ziring
+      * "Automating Cyberdefense"
+      * Technical Director, Cyber, NSA
 * 2:30 - 2:45 Break
 * 2:45 - 4:00 Breakout Sessions #3
     - [Details](./breakouts.md)
 * 4:00 - 5:00 Closing Plenary
    - Breakout Session Readouts
    - Accomplishments Recap
+   - Do it again?
+      * As part of RSA Supply Chain Sandbox?
+      * RSA is 17-20 May, 2021 in San Francisco & Virtual
