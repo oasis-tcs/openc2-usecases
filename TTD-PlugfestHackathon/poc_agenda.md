@@ -65,10 +65,13 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * Director of Cybersecurity Initiatives, NTIA
    - Neal Ziring
       * "Automating Cyberdefense"
-      * Technical Director, Cyber, NSA 
+      * Technical Director, Cyber, NSA
 * 2:30 - 2:45 Break
 * 2:45 - 4:00 Breakout Sessions #3
     - [Details](./breakouts.md)
 * 4:00 - 5:00 Closing Plenary
    - Breakout Session Readouts
    - Accomplishments Recap
+   - Do it again?
+      * As part of RSA Supply Chain Sandbox?
+      * RSA is 17-20 May, 2021 in San Francisco & Virtual
