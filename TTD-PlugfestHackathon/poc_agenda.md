@@ -73,5 +73,9 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
    - Breakout Session Readouts
    - Accomplishments Recap
    - Do it again?
+      * Virtual in Feb 2021?
       * As part of RSA Supply Chain Sandbox?
-      * RSA is 17-20 May, 2021 in San Francisco & Virtual
+         - RSA is 17-20 May, 2021 in San Francisco & Virtual
+      * As part of TTD?
+         - TTD is 20-24 Sep, 2021 in NYC
+      * all of the above!
