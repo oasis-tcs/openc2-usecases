@@ -49,22 +49,25 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
 * 12:30 - 1:00 Lunch Break
 * 1:00 - 2:30 Keynote Plenary Session
    - Sally Grant
-      * Introduction
+      * *Session Chair*
       * Lucd.ai
    - Audrey Long
-      * Moderator
+      * *Moderator*
       * Microsoft
    - Wende Peters
-      * "A View from the Other Side of the Valley:  Operational and Business Drivers for Automation and Open Standards"
+      * *A View from the Other Side of the Valley:  Operational and Business Drivers for Automation and Open Standards*
       * Senior Vice President, Global Information Security, Technology Strategy, Orchestration and Production Delivery
    - Michael Powell
-      * "Securing integrated ICS and IT"
+      * *Securing integrated ICS and IT*
       * NIST
+   - Jason Calloway
+      * *Linux Foundation Red Team Project: Using Offensive TTPs to Make Open Source Software Safer to Use*
+      * Google
    - Allan Friedman
-      * "SBOM"
+      * *How I learned to Stop Worrying and Love the SBOM*
       * Director of Cybersecurity Initiatives, NTIA
    - Neal Ziring
-      * "Automating Cyberdefense"
+      * *Automating Cyberdefense*
       * Technical Director, Cyber, NSA
 * 2:30 - 2:45 Break
 * 2:45 - 4:00 Breakout Sessions #3
