@@ -5,33 +5,32 @@ github chops to know it's here
    - Kickoff - Duncan Sparrell
       * Review Logistics
       * Review/Rearrange Agenda
-   - 3-4 min Lightning Project/Company/Usecase roundrobin
+   - 3-4 min Ecoystem Lightning Roundrobin
+      * Automation https://youtu.be/ddWxBJFbuxI?t=943 15:43 to 18:48
       * OpenC2 - Duncan owes
       * SBOM - 3 part, with cutouts, at 1.5 speed
          - https://drive.google.com/file/d/1iVRY4Fm7j9ecfPAPtiNcozFLkZWjAXuH/view?usp=sharing
          - https://drive.google.com/file/d/1KXkHj8ifzSMXm7RTUdbTvW-TeamoeQfE/view?usp=sharing
          - https://drive.google.com/file/d/18zOFprSwZ-IJDYIDiQzSOhikD0ul4nyX/view?usp=sharing
-      * IACD
+      * IACD - https://youtu.be/YFRMHGUDU7U 1.5X, cut at 5 min
+      * SCAPv2 - https://youtu.be/3b1FdCTXUDs?t=1369 to 27.25
       * SCAPv2 - DaveK owes
-      * OCA
+      * OCA - https://youtu.be/qZgeJ01cqeQ
       * CACAO - https://www.youtube.com/watch?v=hi6vXKc_9ZE @ 1.5 speed ~4 min
-      * OASIS - Jane owes
+      * OASIS - have file
       * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos
+      * Cert - SwiftBom - https://youtu.be/pmqGp8TWoF4
+    - 3-4 min Lightning Project/Company/Usecase video roundrobin
       * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa Duncan owes
       * Huntington Ingalls - OIF DaveL owes
       * Huntington Ingalls - Yuuki DaveL owes
       * Huntington Ingalls - brokers DaveL owes
       * NSA/DoD - JADN, Actuator Profile Tool, ...
-      * Google - Jason hasn't replied?
-      * UK MoD - probably not due to permissions issue
-      * CACI - probably not due to permissions issue
+      * One Planet Education Network - https://www.youtube.com/watch?v=YpUSXLIgphg
+      * BTS - https://youtu.be/cOzp0bxRQSg
       * New Context - OpenC2 cloud tool - Andrew/JMG owe
       * Ion Channel
       * Univ of Oslo - probably not
       * UNC - ask Alex
-      * One Planet Education Network - George owes
-      * BTS - promised
       * Vigilant Ops - promised
-      * CERT - use Vijay's?
-      * SBOM - spdx - ask Kate
-      * SBOM - cyclonedx - ask Steve
+    - 3-4 min Project/Company/Usecase Lightning roundrobin Live

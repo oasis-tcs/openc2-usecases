@@ -19,9 +19,10 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * Review Logistics
       * Review/Rearrange Agenda
    - 3-4 min Ecoystem Lightning Roundrobin
+      * Automation :white_check_mark:
       * OpenC2 :construction:
       * SBOM :white_check_mark:
-      * IACD :question:
+      * IACD :white_check_mark:
       * SCAPv2 :white_check_mark:
       * OCA :white_check_mark:
       * CACAO :white_check_mark:
@@ -29,17 +30,16 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
    - 3-4 min Project/Company/Usecase Lightning roundrobin videos
       * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa :construction:
       * CERT :white_check_mark:
+      * One Planet Education Network :white_check_mark:
+      * BTS :white_check_mark:
       * Huntington Ingalls - OIF, Yuuki :construction:
       * NSA/DoD - JADN, Actuator Profile Tool, ... :construction:
-      * * Hereuco :construction:
+      * Hereuco :construction:
       * New Context :construction:
       * Ion Channel :construction:
-      * One Planet Education Network  :construction:
-      * BTS  :construction:
       * Vigilant Ops :construction:
       * McAfee :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin Live
-      * Google :question: :information_desk_person:
       * Univ of Oslo :information_desk_person:
       * UNC :information_desk_person:
       * NEC :question: :information_desk_person:
