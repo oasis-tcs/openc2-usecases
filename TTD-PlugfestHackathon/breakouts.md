@@ -28,11 +28,25 @@ for more information.
 
 ## Breakout Session #1
 TBD. See Discord "Breakout Admin" channel for more details
-- OpenC2 MQTT interworking
+- OpenC2 MQTT Interworking
+- CACAO playbook creation
+
 
 ## Breakout Session #2
 TBD. See Discord "Breakout Admin" channel for more details
+- OpenC2 MQTT interworking
+- OpenDxl MQTT interworking
+- SBOM creation
+- SBOM analysis
+- CACAO playbook creation
+
+## Breakout Session #2 Zoom
+- Hereuco SBOM tool extended live demo
+- Vigilant Ops extended live demo
+- McAfee OpenC2 over OpenDxl
 
 ## Breakout Session #3
 TBD. See Discord "Breakout Admin" channel for more details
+- Hereuco
+-
 - OnePlanetEducationNetwork Interworking and SBOM creation
