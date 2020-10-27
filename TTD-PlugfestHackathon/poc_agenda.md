@@ -72,7 +72,7 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
 * 2:30 - 2:45 Break
 * 2:45 - 4:00 Breakout Sessions #3
     - [Details](./breakouts.md)
-* 4:00 - 5:00 Closing Plenary
+* 4:00 - 5:00 Closing Plenary & Virtual Happy Hour
    - Breakout Session Readouts
    - Accomplishments Recap
    - Do it again?
@@ -82,3 +82,4 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * As part of TTD?
          - TTD is 20-24 Sep, 2021 in NYC
       * all of the above!
+    - Happy Hour!
