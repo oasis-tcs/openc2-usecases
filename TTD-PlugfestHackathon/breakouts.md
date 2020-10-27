@@ -27,13 +27,13 @@ See (somebody needs to fill this out)
 for more information.
 
 ## Breakout Session #1
-TBD. See Discord "Breakout Admin" channel for more details
+TBD. See Discord "#Plugfest" channel for more details
 - OpenC2 MQTT Interworking
 - CACAO playbook creation
 
 
 ## Breakout Session #2
-TBD. See Discord "Breakout Admin" channel for more details
+TBD. See Discord "Plugfest" channel for more details
 - OpenC2 MQTT interworking
 - OpenDxl MQTT interworking
 - SBOM creation
@@ -46,7 +46,6 @@ TBD. See Discord "Breakout Admin" channel for more details
 - McAfee OpenC2 over OpenDxl
 
 ## Breakout Session #3
-TBD. See Discord "Breakout Admin" channel for more details
-- Hereuco
--
+TBD. See Discord "Plugfest" channel for more details
+- Embedded/Nerves SBOM Creation
 - OnePlanetEducationNetwork Interworking and SBOM creation
