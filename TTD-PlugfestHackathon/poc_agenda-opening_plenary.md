@@ -24,7 +24,7 @@ github chops to know it's here
       * Huntington Ingalls - OIF DaveL owes
       * Huntington Ingalls - Yuuki DaveL owes
       * Huntington Ingalls - brokers DaveL owes
-      * NSA/DoD - JADN, Actuator Profile Tool, ...
+      * NSA/DoD - https://docs.google.com/presentation/d/15huEOiGChV2chSM82q_r3grfpkxqkPn4wvObvpZMC9k
       * One Planet Education Network - https://www.youtube.com/watch?v=YpUSXLIgphg
       * BTS - https://youtu.be/cOzp0bxRQSg
       * Vigilant Ops - https://youtu.be/yeUyoa1vj_8
