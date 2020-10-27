@@ -32,13 +32,13 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa :construction:
       * One Planet Education Network :white_check_mark:
       * BTS :white_check_mark:
+      * Vigilant Ops :white_check_mark:
       * Podii :construction:
       * Huntington Ingalls - OIF, Yuuki :construction:
       * NSA/DoD - JADN, Actuator Profile Tool, ... :construction:
       * Hereuco :construction:
       * New Context :construction:
       * Ion Channel :construction:
-      * Vigilant Ops :construction:
       * McAfee :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin Live
       * Univ of Oslo :information_desk_person:

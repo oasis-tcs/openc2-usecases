@@ -20,17 +20,18 @@ github chops to know it's here
       * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos
       * Cert - SwiftBom - https://youtu.be/pmqGp8TWoF4
     - 3-4 min Lightning Project/Company/Usecase video roundrobin
-      * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa file
+      * sFractal file
       * Huntington Ingalls - OIF DaveL owes
       * Huntington Ingalls - Yuuki DaveL owes
       * Huntington Ingalls - brokers DaveL owes
       * NSA/DoD - JADN, Actuator Profile Tool, ...
       * One Planet Education Network - https://www.youtube.com/watch?v=YpUSXLIgphg
       * BTS - https://youtu.be/cOzp0bxRQSg
+      * Vigilant Ops - https://youtu.be/yeUyoa1vj_8
       * Podii Sigu owes
       * New Context - OpenC2 cloud tool - Andrew/JMG owe
       * Ion Channel
       * Univ of Oslo - probably not
       * UNC - ask Alex
-      * Vigilant Ops - promised
+
     - 3-4 min Project/Company/Usecase Lightning roundrobin Live
