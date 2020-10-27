@@ -6,8 +6,7 @@ github chops to know it's here
       * Review Logistics
       * Review/Rearrange Agenda
    - 3-4 min Ecoystem Lightning Roundrobin
-      * Automation https://youtu.be/ddWxBJFbuxI?t=943 15:43 to 18:48
-      * OpenC2 - Duncan owes
+      * OpenC2 - file
       * SBOM - 3 part, with cutouts, at 1.5 speed
          - https://drive.google.com/file/d/1iVRY4Fm7j9ecfPAPtiNcozFLkZWjAXuH/view?usp=sharing
          - https://drive.google.com/file/d/1KXkHj8ifzSMXm7RTUdbTvW-TeamoeQfE/view?usp=sharing
@@ -21,7 +20,7 @@ github chops to know it's here
       * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos
       * Cert - SwiftBom - https://youtu.be/pmqGp8TWoF4
     - 3-4 min Lightning Project/Company/Usecase video roundrobin
-      * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa Duncan owes
+      * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa file
       * Huntington Ingalls - OIF DaveL owes
       * Huntington Ingalls - Yuuki DaveL owes
       * Huntington Ingalls - brokers DaveL owes

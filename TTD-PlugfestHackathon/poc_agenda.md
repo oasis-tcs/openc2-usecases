@@ -19,17 +19,17 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * Review Logistics
       * Review/Rearrange Agenda
    - 3-4 min Ecoystem Lightning Roundrobin
-      * Automation :white_check_mark:
-      * OpenC2 :construction:
+      * OpenC2 :white_check_mark:
       * SBOM :white_check_mark:
       * IACD :white_check_mark:
       * SCAPv2 :white_check_mark:
       * OCA :white_check_mark:
       * CACAO :white_check_mark:
+      * OASIS :white_check_mark:
       * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos :construction:
+      * CERT SwiftBom :white_check_mark:
    - 3-4 min Project/Company/Usecase Lightning roundrobin videos
       * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa :construction:
-      * CERT :white_check_mark:
       * One Planet Education Network :white_check_mark:
       * BTS :white_check_mark:
       * Huntington Ingalls - OIF, Yuuki :construction:
@@ -43,7 +43,6 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * Univ of Oslo :information_desk_person:
       * UNC :information_desk_person:
       * NEC :question: :information_desk_person:
-      * Linux Foundation :question: :information_desk_person:
 * 11:00 - 12:30 Breakout Sessions #2
    - [Details](./breakouts.md)
 * 12:30 - 1:00 Lunch Break
