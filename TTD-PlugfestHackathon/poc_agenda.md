@@ -5,7 +5,7 @@ subject to change based on
 attendance, will of the group,
 and whim of the moderator.
 
-Please note that on 28-Oct the US will still be on Daylight Savings Time but Europe will have switched to standard time on 25-Oct. We unfortunately scheduled during the confusing week.
+Please note that on 28-Oct the US is still be on Daylight Savings Time but Europe has switched to standard time on 25-Oct. We unfortunately scheduled during the confusing week.
 
 Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-tickets-124335150783)
 
@@ -26,25 +26,25 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * OCA :white_check_mark:
       * CACAO :white_check_mark:
       * OASIS :white_check_mark:
-      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos :construction:
       * CERT SwiftBom :white_check_mark:
+      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin videos
-      * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa :construction:
-      * One Planet Education Network :white_check_mark:
+      * sFractal :white_check_mark:
       * BTS :white_check_mark:
       * Vigilant Ops :white_check_mark:
-      * Podii :construction:
+      * McAfee :white_check_mark:
       * Huntington Ingalls - Yuuki :white_check_mark:
-      * NSA/DoD - JADN, Actuator Profile Tool, ... :construction:
+      * One Planet Education Network :white_check_mark:
+      * Podii :construction:
+      * NSA/DoD - :white_check_mark:
       * Hereuco :construction:
-      * New Context :construction:
-      * Ion Channel :construction:
-      * McAfee :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin Live
       * Huntington Ingalls - OIF :information_desk_person:
-      * Univ of Oslo :information_desk_person:
-      * UNC :information_desk_person:
+      * New Context :information_desk_person:
+      * Univ of Oslo :question: :information_desk_person:
+      * UNC :question: :information_desk_person:
       * NEC :question: :information_desk_person:
+      * Ion Channel :construction:
 * 11:00 - 12:30 Breakout Sessions #2
    - [Details](./breakouts.md)
 * 12:30 - 1:00 Lunch Break
