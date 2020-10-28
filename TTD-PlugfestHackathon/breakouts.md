@@ -42,10 +42,12 @@ TBD. See Discord "Plugfest" channel for more details
 
 ## Breakout Session #2 Zoom
 - Hereuco SBOM tool extended live demo
-- Vigilant Ops extended live demo
-- McAfee OpenC2 over OpenDxl
 
 ## Breakout Session #3
 TBD. See Discord "Plugfest" channel for more details
 - Embedded/Nerves SBOM Creation
 - OnePlanetEducationNetwork Interworking and SBOM creation
+
+## Breakout Session #3 Zoom
+- Vigilant Ops extended live demo
+- McAfee OpenC2 over OpenDxl extended live demo

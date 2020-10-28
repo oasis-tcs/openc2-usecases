@@ -32,15 +32,16 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa :construction:
       * One Planet Education Network :white_check_mark:
       * BTS :white_check_mark:
+      * Vigilant Ops :white_check_mark:
       * Podii :construction:
-      * Huntington Ingalls - OIF, Yuuki :construction:
+      * Huntington Ingalls - Yuuki :white_check_mark:
       * NSA/DoD - JADN, Actuator Profile Tool, ... :construction:
       * Hereuco :construction:
       * New Context :construction:
       * Ion Channel :construction:
-      * Vigilant Ops :construction:
       * McAfee :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin Live
+      * Huntington Ingalls - OIF :information_desk_person:
       * Univ of Oslo :information_desk_person:
       * UNC :information_desk_person:
       * NEC :question: :information_desk_person:
@@ -72,7 +73,7 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
 * 2:30 - 2:45 Break
 * 2:45 - 4:00 Breakout Sessions #3
     - [Details](./breakouts.md)
-* 4:00 - 5:00 Closing Plenary
+* 4:00 - 5:00 Closing Plenary & Virtual Happy Hour
    - Breakout Session Readouts
    - Accomplishments Recap
    - Do it again?
@@ -82,3 +83,4 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * As part of TTD?
          - TTD is 20-24 Sep, 2021 in NYC
       * all of the above!
+    - Happy Hour!
