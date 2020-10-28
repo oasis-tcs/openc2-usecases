@@ -13,12 +13,11 @@ github chops to know it's here
          - https://drive.google.com/file/d/18zOFprSwZ-IJDYIDiQzSOhikD0ul4nyX/view?usp=sharing
       * IACD - https://youtu.be/YFRMHGUDU7U 1.5X, cut at 5 min
       * SCAPv2 - https://youtu.be/3b1FdCTXUDs?t=1369 to 27.25
-      * SCAPv2 - DaveK owes
       * OCA - https://youtu.be/qZgeJ01cqeQ
       * CACAO - https://www.youtube.com/watch?v=hi6vXKc_9ZE @ 1.5 speed ~4 min
       * OASIS - have file
-      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos
       * Cert - SwiftBom - https://youtu.be/pmqGp8TWoF4
+      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos
     - 3-4 min Lightning Project/Company/Usecase video roundrobin
       * sFractal file
       * NSA/DoD - https://docs.google.com/presentation/d/15huEOiGChV2chSM82q_r3grfpkxqkPn4wvObvpZMC9k

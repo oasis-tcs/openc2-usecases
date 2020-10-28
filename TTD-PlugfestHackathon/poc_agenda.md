@@ -26,24 +26,24 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * OCA :white_check_mark:
       * CACAO :white_check_mark:
       * OASIS :white_check_mark:
-      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos :construction:
       * CERT SwiftBom :white_check_mark:
+      * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin videos
-      * sFractal Blinky/Twinkly/Stinky/Finky - HaHa/MaHa/DaHa :construction:
-      * One Planet Education Network :white_check_mark:
+      * sFractal :white_check_mark:
       * BTS :white_check_mark:
       * Vigilant Ops :white_check_mark:
-      * Podii :construction:
+      * McAfee :white_check_mark:
       * Huntington Ingalls - Yuuki :white_check_mark:
-      * NSA/DoD - JADN, Actuator Profile Tool, ... :construction:
+      * One Planet Education Network :white_check_mark:
+      * Podii :construction:
+      * NSA/DoD - :white_check_mark:
       * Hereuco :construction:
       * New Context :construction:
       * Ion Channel :construction:
-      * McAfee :construction:
    - 3-4 min Project/Company/Usecase Lightning roundrobin Live
       * Huntington Ingalls - OIF :information_desk_person:
-      * Univ of Oslo :information_desk_person:
-      * UNC :information_desk_person:
+      * Univ of Oslo :question: :information_desk_person:
+      * UNC :question: :information_desk_person:
       * NEC :question: :information_desk_person:
 * 11:00 - 12:30 Breakout Sessions #2
    - [Details](./breakouts.md)
