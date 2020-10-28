@@ -20,17 +20,22 @@ github chops to know it's here
       * Infrastructures - Http/MQTT/OpenDxl, OASIS Open source repos
     - 3-4 min Lightning Project/Company/Usecase video roundrobin
       * sFractal file
-      * NSA/DoD - https://docs.google.com/presentation/d/15huEOiGChV2chSM82q_r3grfpkxqkPn4wvObvpZMC9k
-      * One Planet Education Network - https://www.youtube.com/watch?v=YpUSXLIgphg
       * BTS - https://youtu.be/cOzp0bxRQSg
       * Vigilant Ops - https://youtu.be/yeUyoa1vj_8
-      * Podii Sigu owes
       * McAfee https://youtu.be/QIX8xlAfxxQ
       * HII - Yuuki file
-      * New Context - OpenC2 cloud tool - Andrew/JMG owe
-      * Ion Channel
-      * UNC - ask Alex
-
+      * One Planet Education Network - https://www.youtube.com/watch?v=YpUSXLIgphg
+      * Podii file
+      * NSA/DoD - https://docs.google.com/presentation/d/15huEOiGChV2chSM82q_r3grfpkxqkPn4wvObvpZMC9k
+      * Hereuco :construction:
+      * any videos I missed (HII and NewContext voiceovers)
     - 3-4 min Project/Company/Usecase Lightning roundrobin Live
        * Huntington Ingalls - OIF - ppt file
-       * U Olso on CACAO?
+       * New Context file + jmg voice
+       * U Olso on CACAO?* Ion Channel
+       * UNC - ask Alex
+       * NEC - ask
+       * Ion Channel - ask
+       * CACI ask
+       * UK Ministry of Defense - ask
+       * anyone esle
