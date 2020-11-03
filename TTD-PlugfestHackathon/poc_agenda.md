@@ -57,7 +57,7 @@ Register [here](https://www.eventbrite.com/e/sbom-poc-openc2-plugfest-hackathon-
       * Microsoft
    - Wende Peters
       * *A View from the Other Side of the Valley:  Operational and Business Drivers for Automation and Open Standards*
-      * Senior Vice President, Global Information Security, Technology Strategy, Orchestration and Production Delivery
+      * Senior Vice President, Global Information Security, Technology Strategy, Orchestration and Production Delivery; Bank of America
    - Michael Powell
       * *Securing integrated ICS and IT*
       * NIST
