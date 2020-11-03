@@ -12,7 +12,7 @@ breakouts via discord see below
 Feedback blah blah see below
 
 Table of Contents:
-- 1 Keynotes
+- [1 Keynotes](#1-keynotes)
    - 1.1 Session Chair, Sally Grant, Lucd.ai
    - 1.2 Moderator, Audrey Long, Microsoft
    - 1.3 A View from the Other Side of the Valley, Wende Peters, Bank of America
@@ -20,7 +20,7 @@ Table of Contents:
    - 1.5 Red Team Project, Jason Calloway, Google
    - 1.6 How We Learned to Stop Worrying and Love the SBOM, Allan Friedman, NTIA
    - 1.7 Automating Cyberdefense, Neal Ziring, NSA
-- 2 Opening Plenary & Session 3 Tutorials
+- [2 Opening Plenary & Session 3 Tutorials](#2-opening-plenary--session-3-tutorials)
    - 2.1 OpenC2
    - 2.2 SBOM
    - 2.3 IACD
@@ -43,7 +43,7 @@ Table of Contents:
    - 2.22 Univ of Oslo
    - 2.23 UNC
    - 2.24 Ion Channel
-- 3 Breakout sessions
+- [3 Breakout sessions](#3-breakout-sessions)
    - 3.1 HTTP OpenC2 Interworking
    - 3.2 MQTT OpenC2 Interworking
    - 3.3 OpenDxl OpenC2 Interworking
@@ -52,8 +52,8 @@ Table of Contents:
    - 3.6 Hackathon
    - 3.7 LoRaWAN
    - 3.8 CACAO
-- 4 Participants/Attendees
-- 5 Feedback
+- [4 Participants/Attendees](#4-participantsattendees)
+- [5 Feedback](#5-feedback)
 
 ## 1. Keynotes
 brief summary of each talk being sought by speakers (since AHC rules)
@@ -150,6 +150,7 @@ Hereuco presented
 in the opening plenary
 as well as gave an in-depth tutorial
 in Breakout Session 3.
+
 HereUco LLC presented an open source OpenC2
 file querying producer and consumer tool
 to test multi-vendor interoperability.
@@ -159,6 +160,7 @@ and to generate sample OpenC2 commands.
 They found the event extremely rewarding as
 HereUco gathered a lot of input on their OpenC2
 implementation.
+
 HereUco was gracious enough to create a cloud
 instance of their tool so that other attendees
 could test their https OpenC2 implementations.
@@ -166,6 +168,7 @@ A couple of companies commented that they were
 able to test against the cloud OpenC2 listening
 instance and were successful in inter openc2
 system communications.
+
 HereUco was represented by Efrain Ortiz. He said,
 "I really enjoyed talking and coding for the other
 participants,
@@ -173,7 +176,9 @@ recoding live to get multiple vendor
 internetworking was a great exercise. Learned more
 in a few hours than I could have accomplished in a
 week.
-I'm looking forward to the next one." HereUco
+I'm looking forward to the next one."
+
+HereUco
 published their code at
 https://github.com/netcoredor/OpenC2-FileQuery-PoC
 
@@ -194,8 +199,16 @@ https://github.com/netcoredor/OpenC2-FileQuery-PoC
 ### 3.8 CACAO
 
 ## 4. Participants/Attendees
-
+“I enjoyed the interactions with other vendors in getting their systems to talk to my OpenC2 tool. It was stressful to code and recode live, but it was a blast. I’m looking forward to the next hackathon/plugfest.”
+- Efrain Ortiz (SBOM/Plugfest/Hackathon October 2020)
 
 ## 5. Feedback
 - avoid eventbrite/zoom issues by dry run ahead of time
 - have all videos on youtube and make a playlist to avoid switching/display issues
+- since virtual, consider several shorter sessions over several days instead of one long day
+- there was issue of zoom talking over discord voice channels.
+- need better way for 'birds of a feather' to find each other. Maybe have set times for certain channels to meet
+- It goes without saying that the morning started rough, not much could’ve been done about that except testing a “beta” version before hand and having a backup ready to go.
+- My first suggestion for future events would be to have all the video hyperlinks ready to go. For example, if I were presenting that many videos I would line them up in a document and have that document on a second monitor waiting to be clicked.
+- My second suggestion is to have an assistant to act as the coordinator to monitor all the different channels. There was a lot going on that day,  I had to manage the audio from zoom and discord feeding into my headset and surround sound speakers so I could keep track of you asking for folks to come back.
+The assistant could blast a message to all the groups in discord to gather all the cats.
