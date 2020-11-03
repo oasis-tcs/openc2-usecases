@@ -101,16 +101,37 @@ brief summary from each org that
 brought something to workshop
 on what they got out of it
 ### 2.1 OpenC2
-[This video](https://youtu.be/O78Qx_6PK9s)
+[This explanatory video](https://youtu.be/O78Qx_6PK9s)
 was presented in the opening plenary.
 
-someone draft more blahblah here
-for value OpenC2 got out of the
-day (and prep for the day)
+Section 3 has more on the value
+OpenC2
+received from the workshop.
+
 ### 2.2 SBOM
+Three explanatory videos were presented in the opening plenary:
+- [SBOM Part 1](https://drive.google.com/file/d/1iVRY4Fm7j9ecfPAPtiNcozFLkZWjAXuH)
+- [SBOM Part 2](https://drive.google.com/file/d/1KXkHj8ifzSMXm7RTUdbTvW-TeamoeQfE)
+- [SBOM Part 3](https://drive.google.com/file/d/18zOFprSwZ-IJDYIDiQzSOhikD0ul4nyX)
+
+Section 3 has more on the value
+SBOM
+received from the workshop.
+
 ### 2.3 IACD
+[This explanatory video](https://youtu.be/YFRMHGUDU7U)
+(first 5 minutes)
+was presented in the opening plenary.
+
 ### 2.4 SCAPv2
+[This explanatory video](https://youtu.be/3b1FdCTXUDs?t=1369)
+(stopped after 4 min)
+was presented in the opening plenary.
+
 ### 2.6 OCA
+[This explanatory video](https://youtu.be/qZgeJ01cqeQ)
+was presented in the opening plenary.
+
 ### 2.7 CACAO
 Portions of
 [this video](https://www.youtube.com/watch?v=hi6vXKc_9ZE)
@@ -135,15 +156,48 @@ https://docs.google.com/presentation/d/1jPTm8oyO9Pc6i6Q7ua0R4N98whJ140Pb6D8o1wOj
 https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-October
 
 ### 2.8 OASIS
+[This explanatory video](./oasis.Cybersecurity Automation Mashup_Trim.mp4)
+was presented in the opening plenary.
+
 ### 2.9 CERT SwiftBom
+[This video](https://youtu.be/pmqGp8TWoF4)
+was presented in the opening plenary,
+explaining how to create SBOMs using SwiftBom.
+
 ### 2.10 sFractal
+[This explanatory video](https://youtu.be/uTr9HyRXnGw)
+was presented in the opening plenary.
+This video explains BlinkyMaHa, TwinklyMaHa,
+TwinklyHaHa, sbompoc.sfractal.com, etc
+
 ### 2.11 BTS
+[This explanatory video](https://youtu.be/cOzp0bxRQSg)
+was presented in the opening plenary.
+
 ### 2.12 Vigilant Ops
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.13 McAfee
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.14 Huntington Ingalls - Yuuki
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.15 One Planet Education Network
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.16 Podii
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.17 NSA/DoD
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.18 Hereuco
 Hereuco presented
 [this video](https://youtu.be/q4p5-k2ZUX4)
@@ -183,7 +237,13 @@ published their code at
 https://github.com/netcoredor/OpenC2-FileQuery-PoC
 
 ### 2.20 Huntington Ingalls - OIF
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.21 New Context
+[This explanatory video]()
+was presented in the opening plenary.
+
 ### 2.22 Univ of Oslo
 ### 2.23 UNC
 ### 2.24 Ion Channel
