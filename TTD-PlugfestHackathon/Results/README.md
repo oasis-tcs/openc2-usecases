@@ -12,7 +12,7 @@ breakouts via discord see below
 Feedback blah blah see below
 
 Table of Contents:
-- 1. Keynotes
+- 1 Keynotes
    - 1.1 Session Chair, Sally Grant, Lucd.ai
    - 1.2 Moderator, Audrey Long, Microsoft
    - 1.3 A View from the Other Side of the Valley, Wende Peters, Bank of America
@@ -20,8 +20,8 @@ Table of Contents:
    - 1.5 Red Team Project, Jason Calloway, Google
    - 1.6 How We Learned to Stop Worrying and Love the SBOM, Allan Friedman, NTIA
    - 1.7 Automating Cyberdefense, Neal Ziring, NSA
-- 2. Opening Plenary & Session 3 Tutorials
-   - 2.1 OpenC2 
+- 2 Opening Plenary & Session 3 Tutorials
+   - 2.1 OpenC2
    - 2.2 SBOM
    - 2.3 IACD
    - 2.4 SCAPv2
@@ -43,7 +43,7 @@ Table of Contents:
    - 2.22 Univ of Oslo
    - 2.23 UNC
    - 2.24 Ion Channel
-- 3. Breakout sessions
+- 3 Breakout sessions
    - 3.1 HTTP OpenC2 Interworking
    - 3.2 MQTT OpenC2 Interworking
    - 3.3 OpenDxl OpenC2 Interworking
@@ -52,8 +52,8 @@ Table of Contents:
    - 3.6 Hackathon
    - 3.7 LoRaWAN
    - 3.8 CACAO
-- 4. Participants/Attendees
-- 5. Feedback
+- 4 Participants/Attendees
+- 5 Feedback
 
 ## 1. Keynotes
 brief summary of each talk being sought by speakers (since AHC rules)
