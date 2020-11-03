@@ -103,6 +103,7 @@ on what they got out of it
 ### 2.1 OpenC2
 [This video](https://youtu.be/O78Qx_6PK9s)
 was presented in the opening plenary.
+
 someone draft more blahblah here
 for value OpenC2 got out of the
 day (and prep for the day)
@@ -111,6 +112,28 @@ day (and prep for the day)
 ### 2.4 SCAPv2
 ### 2.6 OCA
 ### 2.7 CACAO
+Portions of
+[this video](https://www.youtube.com/watch?v=hi6vXKc_9ZE)
+were shown in the opening plenary
+to explain CACAO playbooks
+and the rationale for using them.
+
+The workshop proved the concept that
+CACAO playbooks could be used for
+plugfest scenarios.
+A playbook was livecoded during a breakout session.
+
+Enriching IPv4 IOC:
+demonstrated one simple use case
+where a CACAO Playbook
+integrates an OpenC2 command
+for retrieving the autonomous system number
+for an IPv4 address.
+
+https://docs.google.com/presentation/d/1jPTm8oyO9Pc6i6Q7ua0R4N98whJ140Pb6D8o1wOjwMU
+
+https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-October
+
 ### 2.8 OASIS
 ### 2.9 CERT SwiftBom
 ### 2.10 sFractal
