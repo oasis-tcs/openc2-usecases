@@ -12,7 +12,7 @@ breakouts via discord see below
 Feedback blah blah see below
 
 Table of Contents:
-- 1. Keynotes
+- 1 Keynotes
    - 1.1 Session Chair, Sally Grant, Lucd.ai
    - 1.2 Moderator, Audrey Long, Microsoft
    - 1.3 A View from the Other Side of the Valley, Wende Peters, Bank of America
@@ -20,8 +20,8 @@ Table of Contents:
    - 1.5 Red Team Project, Jason Calloway, Google
    - 1.6 How We Learned to Stop Worrying and Love the SBOM, Allan Friedman, NTIA
    - 1.7 Automating Cyberdefense, Neal Ziring, NSA
-- 2. Opening Plenary & Session 3 Tutorials
-   - 2.1 OpenC2 
+- 2 Opening Plenary & Session 3 Tutorials
+   - 2.1 OpenC2
    - 2.2 SBOM
    - 2.3 IACD
    - 2.4 SCAPv2
@@ -43,7 +43,7 @@ Table of Contents:
    - 2.22 Univ of Oslo
    - 2.23 UNC
    - 2.24 Ion Channel
-- 3. Breakout sessions
+- 3 Breakout sessions
    - 3.1 HTTP OpenC2 Interworking
    - 3.2 MQTT OpenC2 Interworking
    - 3.3 OpenDxl OpenC2 Interworking
@@ -52,8 +52,8 @@ Table of Contents:
    - 3.6 Hackathon
    - 3.7 LoRaWAN
    - 3.8 CACAO
-- 4. Participants/Attendees
-- 5. Feedback
+- 4 Participants/Attendees
+- 5 Feedback
 
 ## 1. Keynotes
 brief summary of each talk being sought by speakers (since AHC rules)
@@ -97,8 +97,15 @@ input requested
 input requested
 
 ## 2. Opening Plenary & Session 3 Tutorials
-brief summary from each org that brought something to workshop on what they got out of it
+brief summary from each org that
+brought something to workshop
+on what they got out of it
 ### 2.1 OpenC2
+[This video](https://youtu.be/O78Qx_6PK9s)
+was presented in the opening plenary.
+someone draft more blahblah here
+for value OpenC2 got out of the
+day (and prep for the day)
 ### 2.2 SBOM
 ### 2.3 IACD
 ### 2.4 SCAPv2
@@ -115,6 +122,38 @@ brief summary from each org that brought something to workshop on what they got 
 ### 2.16 Podii
 ### 2.17 NSA/DoD
 ### 2.18 Hereuco
+Hereuco presented
+[this video](https://youtu.be/q4p5-k2ZUX4)
+in the opening plenary
+as well as gave an in-depth tutorial
+in Breakout Session 3.
+HereUco LLC presented an open source OpenC2
+file querying producer and consumer tool
+to test multi-vendor interoperability.
+Their openc2 tool is primarily focused
+on helping others test interoperability
+and to generate sample OpenC2 commands.
+They found the event extremely rewarding as
+HereUco gathered a lot of input on their OpenC2
+implementation.
+HereUco was gracious enough to create a cloud
+instance of their tool so that other attendees
+could test their https OpenC2 implementations.
+A couple of companies commented that they were
+able to test against the cloud OpenC2 listening
+instance and were successful in inter openc2
+system communications.
+HereUco was represented by Efrain Ortiz. He said,
+"I really enjoyed talking and coding for the other
+participants,
+recoding live to get multiple vendor
+internetworking was a great exercise. Learned more
+in a few hours than I could have accomplished in a
+week.
+I'm looking forward to the next one." HereUco
+published their code at
+https://github.com/netcoredor/OpenC2-FileQuery-PoC
+
 ### 2.20 Huntington Ingalls - OIF
 ### 2.21 New Context
 ### 2.22 Univ of Oslo
