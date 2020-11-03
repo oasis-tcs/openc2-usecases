@@ -40,14 +40,15 @@ TBD. See Discord "Plugfest" channel for more details
 - SBOM analysis
 - CACAO playbook creation
 
-## Breakout Session #2 Zoom
-- Hereuco SBOM tool extended live demo
-
 ## Breakout Session #3
 TBD. See Discord "Plugfest" channel for more details
-- Embedded/Nerves SBOM Creation
+- OpenC2 MQTT interworking
+- OpenDxl MQTT interworking
+- SBOM creation
+- SBOM analysis
 - OnePlanetEducationNetwork Interworking and SBOM creation
 
 ## Breakout Session #3 Zoom
 - Vigilant Ops extended live demo
 - McAfee OpenC2 over OpenDxl extended live demo
+- Hereuco SBOM tool extended live demo
