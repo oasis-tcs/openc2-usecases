@@ -156,7 +156,7 @@ https://docs.google.com/presentation/d/1jPTm8oyO9Pc6i6Q7ua0R4N98whJ140Pb6D8o1wOj
 https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-October
 
 ### 2.8 OASIS
-[This explanatory video](./oasis.Cybersecurity Automation Mashup_Trim.mp4)
+[This explanatory video](./OasisCybersecurityAutomationMashup_Trim.mp4)
 was presented in the opening plenary.
 
 ### 2.9 CERT SwiftBom
