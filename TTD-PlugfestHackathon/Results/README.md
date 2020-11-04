@@ -1,17 +1,5 @@
 # Summary  of Results
-blah blah
-toc
 
-blah blah
-over 40 participants from 7 countries on 5 continents
-
-keynotes blah blah see below
-
-breakouts via discord see below
-
-Feedback blah blah see below
-
-Table of Contents:
 - [1 Keynotes](#1-keynotes)
    - 1.1 Session Chair, Sally Grant, Lucd.ai
    - 1.2 Moderator, Audrey Long, Microsoft
@@ -261,10 +249,25 @@ was presented in the opening plenary.
 ### 3.8 CACAO
 
 ## 4. Participants/Attendees
-“I enjoyed the interactions with other vendors in getting their systems to talk to my OpenC2 tool. It was stressful to code and recode live, but it was a blast. I’m looking forward to the next hackathon/plugfest.”
-- Efrain Ortiz (SBOM/Plugfest/Hackathon October 2020)
+Results are being collected in three editable Google Docs.  Please enter your results and observations.
+
+1) [Participant sign-in sheet:](https://docs.google.com/document/d/19EF-XPMwwCtYBB6yFif3kwtw8rH2ympFjOJNltXk2Wo)
+    Over 40 participants from 7 countries on 5 continents.
+
+2) [Interoperability results matrix:](https://docs.google.com/spreadsheets/d/1iYglZqGW7N_IivIUFqvx4TALWwOeaciUTMQSoTtrRtc)
+    Captures the results of "A" attempting to talk to "B". The existing sheet is OpenC2-oriented;
+    feel free to add additional sheets for other kinds of interoperability results if needed.
+
+3) [General notes:](https://docs.google.com/document/d/1iGMzbyavVB_W7w4szrqos5R1j6h08hNSFW7_f6iitxs)
+    Use this for capturing useful information that doesn't lend itself to the interoperability matrix format,
+    for example suggestions for improvement of specifications.
 
 ## 5. Feedback
+“I enjoyed the interactions with other vendors in getting their systems to talk to my OpenC2 tool.
+It was stressful to code and recode live, but it was a blast. I’m looking forward to the next hackathon/plugfest.”
+
+  -- Efrain Ortiz (SBOM/Plugfest/Hackathon October 2020)
+
 - avoid eventbrite/zoom issues by dry run ahead of time
 - have all videos on youtube and make a playlist to avoid switching/display issues
 - since virtual, consider several shorter sessions over several days instead of one long day
