@@ -76,6 +76,8 @@ input requested
 *Securing integrated ICS and IT*
 NIST
 
+[Slides presented](./Keynote-Powell-manufacturing-20-Oct-slides.pptx)
+
 input requested
 
 ### 1.5 Red Team Project, Jason Calloway, Google
