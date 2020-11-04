@@ -156,7 +156,7 @@ https://docs.google.com/presentation/d/1jPTm8oyO9Pc6i6Q7ua0R4N98whJ140Pb6D8o1wOj
 https://github.com/Vasileios-Mavroeidis/openc2-plugfest/tree/master/2020-October
 
 ### 2.8 OASIS
-[This explanatory video](./oasis.Cybersecurity Automation Mashup_Trim.mp4)
+[This explanatory video](./OasisCybersecurityAutomationMashup_Trim.mp4)
 was presented in the opening plenary.
 
 ### 2.9 CERT SwiftBom
@@ -175,28 +175,28 @@ TwinklyHaHa, sbompoc.sfractal.com, etc
 was presented in the opening plenary.
 
 ### 2.12 Vigilant Ops
-[This explanatory video]()
+[This explanatory video](https://youtu.be/yeUyoa1vj_8)
 was presented in the opening plenary.
 
 ### 2.13 McAfee
-[This explanatory video]()
+[This explanatory video](https://youtu.be/QIX8xlAfxxQ)
 was presented in the opening plenary.
 
 ### 2.14 Huntington Ingalls - Yuuki
-[This explanatory video]()
+[This explanatory video](./plugfest_yuuki_hii.m4v)
 was presented in the opening plenary.
 
 ### 2.15 One Planet Education Network
-[This explanatory video]()
+[This explanatory video](https://www.youtube.com/watch?v=YpUSXLIgphg)
 was presented in the opening plenary.
 
 ### 2.16 Podii
-[This explanatory video]()
+[This explanatory video](podii.plugfest.intro.mov)
 was presented in the opening plenary.
 
 ### 2.17 NSA/DoD
-[This explanatory video]()
-was presented in the opening plenary.
+[This explanatory voice-annotated slideshow](https://docs.google.com/presentation/d/15huEOiGChV2chSM82q_r3grfpkxqkPn4wvObvpZMC9k)
+on "Information Modeling and C4" was presented in the opening plenary.
 
 ### 2.18 Hereuco
 Hereuco presented
@@ -237,11 +237,11 @@ published their code at
 https://github.com/netcoredor/OpenC2-FileQuery-PoC
 
 ### 2.20 Huntington Ingalls - OIF
-[This explanatory video]()
-was presented in the opening plenary.
+[This explanatory popwerpoint](./OIF_Plugfest.pptx)
+was presented in the opening plenary with a voice over presented live.
 
 ### 2.21 New Context
-[This explanatory video]()
+[This explanatory video](./NewContext.OpenC2ControlofCloudCompute-cut2.mp4)
 was presented in the opening plenary.
 
 ### 2.22 Univ of Oslo
@@ -269,6 +269,6 @@ was presented in the opening plenary.
 - there was issue of zoom talking over discord voice channels.
 - need better way for 'birds of a feather' to find each other. Maybe have set times for certain channels to meet
 - It goes without saying that the morning started rough, not much could’ve been done about that except testing a “beta” version before hand and having a backup ready to go.
-- My first suggestion for future events would be to have all the video hyperlinks ready to go. For example, if I were presenting that many videos I would line them up in a document and have that document on a second monitor waiting to be clicked.
-- My second suggestion is to have an assistant to act as the coordinator to monitor all the different channels. There was a lot going on that day,  I had to manage the audio from zoom and discord feeding into my headset and surround sound speakers so I could keep track of you asking for folks to come back.
-The assistant could blast a message to all the groups in discord to gather all the cats.
+-Suggestion for future events would be to have all the video hyperlinks ready to go. For example, if I were presenting that many videos I would line them up in a document and have that document on a second monitor waiting to be clicked.
+- Suggestion is to have an assistant to act as the coordinator to monitor all the different channels. There was a lot going on that day,  I had to manage the audio from zoom and discord feeding into my headset and surround sound speakers so I could keep track of you asking for folks to come back. The assistant could blast a message to all the groups in discord to gather all the cats.
+- Each breakout channel should have a preassigned chairperson to herd cats getting together at same time, to elicit participation, assign people to record results, etc.
