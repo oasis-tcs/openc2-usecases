@@ -278,7 +278,11 @@ was presented in the opening plenary.
 ### 3.8 CACAO
 
 ## 4. Participants/Attendees
-Results are being collected in three editable Google Docs.  Please enter your results and observations.
+Results were collected in three editable Google Docs
+from emails from participants, and from PR's against this.
+Feed backback is still being sought
+through any of these channels.
+The google docs are at:
 
 1) [Participant sign-in sheet:](https://docs.google.com/document/d/19EF-XPMwwCtYBB6yFif3kwtw8rH2ympFjOJNltXk2Wo)
     Over 40 participants from 7 countries on 5 continents.
