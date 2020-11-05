@@ -40,8 +40,10 @@
    - 3.6 Hackathon
    - 3.7 LoRaWAN
    - 3.8 CACAO
-- [4 Participants/Attendees](#4-participantsattendees)
-- [5 Feedback](#5-feedback)
+- [4 Feedback from Participants/Attendees](#4-feedback-from-participantsattendees)
+   - [4.1 Collecting Feedback](#41-collecting-feedback)
+   - [4.2 Participants/Attendees Quotes](#42-participantsattendees-quotes)
+   - [4.3 Feedback](#43-feedback)
 
 ## 1. Keynotes
 brief summary of each talk being sought by speakers (since AHC rules)
@@ -287,7 +289,7 @@ of who was present without permission
 and no quoting or sharing content without permission.
 We did this so everyone could speak freely
 and it made it easier for some
-to have permission to speak. 
+to have permission to speak.
 However, we did ask for permission and was granted it
 for some cases and that is what is presented here.
 
