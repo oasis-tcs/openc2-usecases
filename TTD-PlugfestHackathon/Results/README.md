@@ -7,14 +7,14 @@
    - 1.4 Securing integrated ICS and IT, Michael Powell, NIST
    - 1.5 Red Team Project, Jason Calloway, Google
    - 1.6 How We Learned to Stop Worrying and Love the SBOM, Allan Friedman, NTIA
-   - 1.7 Automating Cyberdefense, Neal Ziring, NSA
+   - 1.7 [Automating Cyberdefense, Neal Ziring, NSA](#17-automating-cyberdefense-neal-ziring-nsa)
 - [2 Opening Plenary & Session 3 Tutorials](#2-opening-plenary--session-3-tutorials)
    - 2.1 OpenC2
    - 2.2 SBOM
    - 2.3 IACD
    - 2.4 SCAPv2
    - 2.6 OCA
-   - 2.7 CACAO
+   - 2.7 [CACAO](#27-cacao)
    - 2.8 OASIS
    - 2.9 CERT SwiftBom
    - 2.10 sFractal
@@ -25,7 +25,7 @@
    - 2.15 One Planet Education Network
    - 2.16 Podii
    - 2.17 NSA/DoD
-   - 2.18 Hereuco
+   - 2.18 [Hereuco](#218-hereuco)
    - 2.20 Huntington Ingalls - OIF
    - 2.21 New Context
    - 2.22 Univ of Oslo
