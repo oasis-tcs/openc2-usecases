@@ -26,7 +26,7 @@ Table of Contents:
    - 2.3 IACD
    - 2.4 SCAPv2
    - 2.6 OCA
-   - 2.7 CACAO
+   - 2.7 [CACAO](#27-cacao)
    - 2.8 OASIS
    - 2.9 CERT SwiftBom
    - 2.10 sFractal
