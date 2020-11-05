@@ -283,6 +283,8 @@ was presented in the opening plenary.
 There were over 40 participants
 from 7 countries on 5 continents.
 
+![Countries](./7_countries.png)
+
 We ran the conference under Austin Hacker Anonymous rules.
 This included no attribution
 of who was present without permission
@@ -323,8 +325,15 @@ It was stressful to code and recode live, but it was a blast. I’m looking forw
 - have all videos on youtube and make a playlist to avoid switching/display issues
 - since virtual, consider several shorter sessions over several days instead of one long day
 - there was issue of zoom talking over discord voice channels.
-- need better way for 'birds of a feather' to find each other. Maybe have set times for certain channels to meet
+- need better way for 'birds of a feather' to find each other.
+Maybe have set times for certain channels to meet
 - It goes without saying that the morning started rough, not much could’ve been done about that except testing a “beta” version before hand and having a backup ready to go.
 -Suggestion for future events would be to have all the video hyperlinks ready to go. For example, if I were presenting that many videos I would line them up in a document and have that document on a second monitor waiting to be clicked.
 - Suggestion is to have an assistant to act as the coordinator to monitor all the different channels. There was a lot going on that day,  I had to manage the audio from zoom and discord feeding into my headset and surround sound speakers so I could keep track of you asking for folks to come back. The assistant could blast a message to all the groups in discord to gather all the cats.
 - Each breakout channel should have a preassigned chairperson to herd cats getting together at same time, to elicit participation, assign people to record results, etc.
+- record keynotes (if speaker allows)
+- have speaker wrangler independent of the MC
+- have a video wrangle independent of the MC
+- make a youtube channel and only do those videos in opening plenary
+(instead of switching between links, files, live).
+- Issue instructions a priori on how to make the videos (Toby has a set of instructions from another con)
