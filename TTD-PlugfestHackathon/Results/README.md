@@ -19,7 +19,7 @@ Table of Contents:
    - 1.4 Securing integrated ICS and IT, Michael Powell, NIST
    - 1.5 Red Team Project, Jason Calloway, Google
    - 1.6 How We Learned to Stop Worrying and Love the SBOM, Allan Friedman, NTIA
-   - 1.7 Automating Cyberdefense, Neal Ziring, NSA
+   - 1.7 [Automating Cyberdefense, Neal Ziring, NSA](#17-automating-cyberdefense-neal-ziring-nsa)
 - [2 Opening Plenary & Session 3 Tutorials](#2-opening-plenary--session-3-tutorials)
    - 2.1 OpenC2
    - 2.2 SBOM
