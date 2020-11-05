@@ -277,7 +277,21 @@ was presented in the opening plenary.
 ### 3.7 LoRaWAN
 ### 3.8 CACAO
 
-## 4. Participants/Attendees
+## 4. Feedback from Participants/Attendees
+There were over 40 participants
+from 7 countries on 5 continents.
+
+We ran the conference under Austin Hacker Anonymous rules.
+This included no attribution
+of who was present without permission
+and no quoting or sharing content without permission.
+We did this so everyone could speak freely
+and it made it easier for some
+to have permission to speak. 
+However, we did ask for permission and was granted it
+for some cases and that is what is presented here.
+
+### 4.1 Collecting Feedback
 Results were collected in three editable Google Docs
 from emails from participants, and from PR's against this.
 Feed backback is still being sought
@@ -295,12 +309,14 @@ The google docs are at:
     Use this for capturing useful information that doesn't lend itself to the interoperability matrix format,
     for example suggestions for improvement of specifications.
 
-## 5. Feedback
+### 4.2 Participants/Attendees Quotes
+
 “I enjoyed the interactions with other vendors in getting their systems to talk to my OpenC2 tool.
 It was stressful to code and recode live, but it was a blast. I’m looking forward to the next hackathon/plugfest.”
 
   -- Efrain Ortiz (SBOM/Plugfest/Hackathon October 2020)
 
+### 4.3 Feedback
 - avoid eventbrite/zoom issues by dry run ahead of time
 - have all videos on youtube and make a playlist to avoid switching/display issues
 - since virtual, consider several shorter sessions over several days instead of one long day
