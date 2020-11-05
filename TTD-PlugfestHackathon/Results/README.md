@@ -37,7 +37,7 @@ Table of Contents:
    - 2.15 One Planet Education Network
    - 2.16 Podii
    - 2.17 NSA/DoD
-   - 2.18 Hereuco
+   - 2.18 [Hereuco](#218-hereuco)
    - 2.20 Huntington Ingalls - OIF
    - 2.21 New Context
    - 2.22 Univ of Oslo
