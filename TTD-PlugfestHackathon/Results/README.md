@@ -86,10 +86,10 @@ input requested
 The last speaker of the mid-day plenary sessions
 was Neal Ziring,
 Technical Director of the
-Cybersecurity Directorate at NSA.  
+Cybersecurity Directorate at NSA.
 A long-time supporter  of security automation
 technologies and standards,
-Neal gave a short, high-level talk.  
+Neal gave a short, high-level talk.
 Attendees were encouraged by his observations
 on the steady progress of security automation
 and the current state of the community.
@@ -97,7 +97,7 @@ and the current state of the community.
 Neal observed that the range of security automation
 technologies has grown in the last few years,
 and now offers sufficient breadth of functionality
-to support many different operational use cases.  
+to support many different operational use cases.
 To illustrate this, he sketched a scenario involving
 information sharing (IACD), software inventories (SBOM),
 playbooks (CACAO),
@@ -108,7 +108,7 @@ of the plugfest were community efforts.
 Emphasizing the need for security automation,
 Neal pointed to cyber attacker’s use of automation –
 our defenses must also take advantage of
-automation for speed and scale.  
+automation for speed and scale.
 Interoperable automation standards are essential,
 he asserted,
 to permit defenders to collaborate
