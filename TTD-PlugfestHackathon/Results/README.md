@@ -47,10 +47,18 @@
 
 ## 1. Keynotes
 brief summary of each talk being sought by speakers (since AHC rules)
+
 ### 1.1 Session Chair, Sally Grant, Lucd.ai
 Session Chair, Sally Grant, Lucd.ai
 
-input requested
+On behalf of the OpenC2 Plugfest, an open standards cybersecurity hack-a-thon, we would like to thank Lucd AI for participating as the acclaimed artificial intelligence and machine learning company serving the U.S. Department of Defense and Intelligence Communities.
+ 
+Sally Kenyon Grant, Vice President of Federal Affairs for Lucd AI, participated as Session Chair for this fall’s “Open C2 Plugfest” highlighting such speakers from Microsoft, Google, Bank of America, NIST, the U.S. Department of Commerce and the National Security Agency.  Lucd AI’s Vice President Grant was honored to be with such esteemed company as Audrey Long from Microsoft, Jason Calloway from Google, Allan Friedman of the U.S. Department of Commerce’s NTIA, Wende Peters from Bank of America, Michael Powell at NIST, and Neal Ziring from the National Security Agency.  In fact, Allan Friedman from NTIA was quite astute and sharp-witted speaking about the transparency into our software supply chain and Wende Peters from Bank of America gave a compelling presentation on open common architectures and the need for integrated cyber defense public and private partnerships with emerging solutions for adoption and adaptability.
+ 
+The Chairmen of the Open C2 Plugfest noted that “Ms. Grant’s introduction to Microsoft’s Audrey Long was clever and charismatic complimenting her as an advanced and inspiring Microsoft security engineer”.  In fact, Ms. Grant’s leadership to the Open C2 Plugfest empowered attendance and industry sponsorship from the cybersecurity and machine learning domain.
+ 
+The OpenC2 Plugfest was quite successful with Chairmen Duncan Sparrell and Joe Brule championing cybersecurity stakeholders who can orchestrate automated tactical threat responses across a wide range of cyber-defense technologies at speeds significantly greater than previously imagined.  The next OpenC2 Plugfest initiative will be posted soon, until then, thank you to everyone for supporting the practical use and standardization of security automation technologies.
+
 
 ### 1.2 Moderator, Audrey Long, Microsoft
 Moderator, Audrey Long, Microsoft
