@@ -15,14 +15,14 @@
    - [2.4 SCAPv2](#24-scapv2)
    - [2.6 OCA](#26-oca)
    - [2.7 CACAO](#27-cacao)
-   - 2.8 OASIS
-   - 2.9 CERT SwiftBom
-   - 2.10 sFractal
+   - [2.8 OASIS](#28-oasis)
+   - [2.9 CERT SwiftBom](#29-cert-swiftbom)
+   - [2.10 sFractal](#210-sfractal)
    - 2.11 BTS
    - 2.12 Vigilant Ops
    - 2.13 McAfee
    - 2.14 Huntington Ingalls - Yuuki
-   - 2.15 One Planet Education Network
+   - [2.15 One Planet Education Network](#215-one-planet-education-network)
    - 2.16 Podii
    - 2.17 NSA/DoD
    - 2.18 [Hereuco](#218-hereuco)
@@ -209,12 +209,52 @@ was presented in the opening plenary.
 [This video](https://youtu.be/pmqGp8TWoF4)
 was presented in the opening plenary,
 explaining how to create SBOMs using SwiftBom.
+The SwiftBom tool was used by some participants
+(e.g. sFractal) for creatig SBOMs to use in
+Workshop scenarios.
 
 ### 2.10 sFractal
 [This explanatory video](https://youtu.be/uTr9HyRXnGw)
 was presented in the opening plenary.
 This video explains BlinkyMaHa, TwinklyMaHa,
-TwinklyHaHa, sbompoc.sfractal.com, etc
+TwinklyHaHa, sbompoc.sfractal.com, etc.
+
+BlinkyHaHa is a Raspberry Pi
+with a LED panel
+controlled with OpenC2 commands via HTTP.
+This physical device was interworked
+with devices from HII as part of preparation
+for this workshop.
+But it involved physical colocation.
+
+BlinkyMaHa is BlinkyHaHa but controlled
+with OpenC2 commands via MQTT.
+
+For the workshop, digital twins were created on the web.
+TwinklyHaHa is the twin for BlinkyHaHa.
+[TwinklyMaHa](http://twinklymaha.sbompoc.sfractal.com:4000/twinkly)
+is the twin for BlinkyMaHa.
+See https://github.com/sparrell/TwinklyMaHa for more info.
+
+sFractal also contributed
+http://sbompoc.sfractal.com:4000/events
+which monitored and displayed
+all the workshop MQTT traffic.
+
+sFractal also stood up
+http://analysis.sbompoc.sfractal.com:8080/login
+which has SBOMs loaded from sbompoc.sfractal.com
+and twinklymaha.sbompoc.sfractal.com;
+and displays both components and vulnerabilities
+for those SBOMs.
+
+All the instances were stood up in GCP
+using the resources graciously provided by Google.
+
+All the instances were supposed to have
+SBOMs created for them but not all SBOMs were created a priori.
+Some were, and some were created at the workshop
+(using SEI SwiftBom tool) and some still need to be done.
 
 ### 2.11 BTS
 [This explanatory video](https://youtu.be/cOzp0bxRQSg)
