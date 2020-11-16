@@ -230,18 +230,19 @@ But it involved physical colocation.
 BlinkyMaHa is BlinkyHaHa but controlled
 with OpenC2 commands via MQTT.
 
-For the workshop, digital twins were created on the web.
+For the workshop, digital twins were created on the web
+with the help of [Podii](#216-podii).
 TwinklyHaHa is the twin for BlinkyHaHa.
 [TwinklyMaHa](http://twinklymaha.sbompoc.sfractal.com:4000/twinkly)
 is the twin for BlinkyMaHa.
 See https://github.com/sparrell/TwinklyMaHa for more info.
 
-sFractal also contributed
+sFractal also contributed (with [Podii](#216-podii)'s help)
 http://sbompoc.sfractal.com:4000/events
 which monitored and displayed
 all the workshop MQTT traffic.
 
-sFractal also stood up
+sFractal (again with [Podii](#216-podii)'s help) also stood up
 http://analysis.sbompoc.sfractal.com:8080/login
 which has SBOMs loaded from sbompoc.sfractal.com
 and twinklymaha.sbompoc.sfractal.com;
@@ -385,6 +386,10 @@ It was stressful to code and recode live, but it was a blast. I’m looking forw
 
   -- Efrain Ortiz (SBOM/Plugfest/Hackathon October 2020)
 
+“Overall I thought Duncan (with some backup support) did an amazing job, giving all the breakouts, time-sensitive switching, public display Zoom keynotes, etc.  I concur with many of the helpful suggestions already posted on how to manage the logistical aspects next time, and take the burden off D-Man, so he can contribute more as an overseer/advisor on the programming and content aspects.  As a newcomer to the realm of cybersecurity with a global LoRaWAN use case in education it was a steep learning curve.  But it was enough to be able to convey the importance of your work to my vendor colleagues who need to be there next time for subsequent Hackathons.”
+
+  -- George Newman, One Planet Education Network (Global Education IoT LoRaWAN use case)
+
 ### 4.3 Feedback
 - avoid eventbrite/zoom issues by dry run ahead of time
 - have all videos on youtube and make a playlist to avoid switching/display issues
@@ -402,3 +407,4 @@ Maybe have set times for certain channels to meet
 - make a youtube channel and only do those videos in opening plenary
 (instead of switching between links, files, live).
 - Issue instructions a priori on how to make the videos (Toby has a set of instructions from another con)
+- Spread out the keynotes, have a great industry authority from a commercial organization as first to get everyone charged.  Then the short YouTube videos for all to watch.  Then breakouts spanning a good chunk of the day, but broken in the middle by second keynote – government agency official.  Then at end of breakouts no summary of each.  Instead have the spokesperson for each breakout do a 3 minute video of the upshot/summary of the breakouts and post in Discord with links to each Breakout Summary YouTube posted after, for everyone who wishes to see.  Just close at the end of the breakouts/day with another kickass standards body authority keynote. This would make it easier for the MC and wrangler to manage I think to set up the day this way.  It will keep people more engaged and less flipping about for everyone.
