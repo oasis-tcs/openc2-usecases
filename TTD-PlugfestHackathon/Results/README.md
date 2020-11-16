@@ -85,10 +85,49 @@ Google
 input requested
 
 ### 1.6 How We Learned to Stop Worrying and Love the SBOM, Allan Friedman, NTIA
-*How We Learned to Stop Worrying and Love the SBOM*
-   * Director of Cybersecurity Initiatives, NTIA
 
-input requested
+Dr. Allan Friedman shared an overview
+and update of the broader SBOM initiative
+being coordinated by NTIA, part of the
+US Department of Commerce.
+His slides are
+[here](./FriedmanSBOM.pdf).
+He emphasized the value of transparency
+in the software supply chain,
+and how this data can be used by roles
+and tasks across the security ecosystem,
+particularly for security automation.  
+
+Friedman began with a range of fun analogies,
+from Dr. Strangelove to twinkies to the
+challenges of trying to coordinate vulnerability
+disclosure before a Def Con talk.
+He described the international,
+cross-sector initiaive attempting to define the basics
+of what transparency can look like in the software world,
+and stressed the importance of relatively simple approaches
+that are modular, scalable, and can work across a wide range
+of contexts.
+He repeated a mantra of "crawl, walk, run."
+
+The diverse SBOM community has defined the basics
+of the "what," the "why," and the "how" of SBOM,
+including the identification of three data formats
+that are already being used today.
+This is both a technical issue,
+but also involves operational and business considerations.
+At the same time, he was careful to acknowledge that this
+wasn't a completely solved issue, and that important
+considerations are still being worked through, such as how to
+share SBOM data--an issue of great relevance to the OpenC2
+community.
+
+Dr. Friedman closed by underscoring the need for
+demonstrations and proofs-of-concept for SBOM.
+Borrowing from the IETF,
+he stressed "rough consensus and running code"
+in a range of concepts,
+especially in the world of security automation.
 
 ### 1.7 Automating Cyberdefense, Neal Ziring, NSA
 The last speaker of the mid-day plenary sessions
