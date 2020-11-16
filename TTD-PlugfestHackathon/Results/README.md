@@ -9,12 +9,12 @@
    - [1.6 How We Learned to Stop Worrying and Love the SBOM, Allan Friedman, NTIA](#16-how-we-learned-to-stop-worrying-and-love-the-sbom-allan-friedman-ntia)
    - [1.7 Automating Cyberdefense, Neal Ziring, NSA](#17-automating-cyberdefense-neal-ziring-nsa)
 - [2 Opening Plenary & Session 3 Tutorials](#2-opening-plenary--session-3-tutorials)
-   - 2.1 OpenC2
-   - 2.2 SBOM
-   - 2.3 IACD
-   - 2.4 SCAPv2
-   - 2.6 OCA
-   - 2.7 [CACAO](#27-cacao)
+   - [2.1 OpenC2](#21-openc2)
+   - [2.2 SBOM](#22-sbom)
+   - [2.3 IACD](#23-iacd)
+   - [2.4 SCAPv2](#24-scapv2)
+   - [2.6 OCA](#26-oca)
+   - [2.7 CACAO](#27-cacao)
    - 2.8 OASIS
    - 2.9 CERT SwiftBom
    - 2.10 sFractal
@@ -136,7 +136,13 @@ was presented in the opening plenary.
 
 Section 3 has more on the value
 OpenC2
-received from the workshop.
+received from the workshop including:
+- demonstrated how OpenC2 can be used to command and control security functionality
+- demonstrated how OpenC2 can be used to retrieve SBOMs
+- demonstrated OpenC2 working over HTTP/S
+- demonstrated OpenC2 working over MQTT
+- demonstrated OpenC2 working over OpenDXL
+- highlighted work that needs to be done on OpenC2 specifications (eg where text still needed, or drafts that need approving)
 
 ### 2.2 SBOM
 Three explanatory videos were presented in the opening plenary:
@@ -146,7 +152,11 @@ Three explanatory videos were presented in the opening plenary:
 
 Section 3 has more on the value
 SBOM
-received from the workshop.
+received from the workshop including:
+- demonstrated SBOMs can be created
+- demonstrated how SBOMs can be retrieved using OpenC2
+- demonstrated how SBOMs can be analyzed for vulnerabilities
+- demonstrated how SBOM analysis results can be used to drive command and control of security functionality
 
 ### 2.3 IACD
 [This explanatory video](https://youtu.be/YFRMHGUDU7U)
