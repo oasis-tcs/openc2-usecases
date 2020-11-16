@@ -230,18 +230,19 @@ But it involved physical colocation.
 BlinkyMaHa is BlinkyHaHa but controlled
 with OpenC2 commands via MQTT.
 
-For the workshop, digital twins were created on the web.
+For the workshop, digital twins were created on the web
+with the help of [Podii](#216-podii).
 TwinklyHaHa is the twin for BlinkyHaHa.
 [TwinklyMaHa](http://twinklymaha.sbompoc.sfractal.com:4000/twinkly)
 is the twin for BlinkyMaHa.
 See https://github.com/sparrell/TwinklyMaHa for more info.
 
-sFractal also contributed
+sFractal also contributed (with [Podii](#216-podii)'s help)
 http://sbompoc.sfractal.com:4000/events
 which monitored and displayed
 all the workshop MQTT traffic.
 
-sFractal also stood up
+sFractal (again with [Podii](#216-podii)'s help) also stood up
 http://analysis.sbompoc.sfractal.com:8080/login
 which has SBOMs loaded from sbompoc.sfractal.com
 and twinklymaha.sbompoc.sfractal.com;
