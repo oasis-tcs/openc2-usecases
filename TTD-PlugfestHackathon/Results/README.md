@@ -158,6 +158,12 @@ received from the workshop including:
 - demonstrated how SBOMs can be analyzed for vulnerabilities
 - demonstrated how SBOM analysis results can be used to drive command and control of security functionality
 
+See [Section 1.6](#16-how-we-learned-to-stop-worrying-and-love-the-sbom-allan-friedman-ntia)
+for a keynote on SBOM and
+[Section 1.7](#17-automating-cyberdefense-neal-ziring-nsa)
+for a keynote tying SBOM into
+the larger cybersecurity automation picture.
+
 ### 2.3 IACD
 [This explanatory video](https://youtu.be/YFRMHGUDU7U)
 (first 5 minutes)
