@@ -271,7 +271,8 @@ with OpenC2 commands via MQTT.
 
 For the workshop, digital twins were created on the web
 with the help of [Podii](#216-podii).
-TwinklyHaHa is the twin for BlinkyHaHa.
+[TwinklyHaHa](http://twinklyhaha.sbompoc.sfractal.com:4000/twinkly)
+is the twin for BlinkyHaHa.
 [TwinklyMaHa](http://twinklymaha.sbompoc.sfractal.com:4000/twinkly)
 is the twin for BlinkyMaHa.
 See https://github.com/sparrell/TwinklyMaHa for more info.
