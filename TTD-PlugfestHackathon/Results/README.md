@@ -448,3 +448,10 @@ Maybe have set times for certain channels to meet
 (instead of switching between links, files, live).
 - Issue instructions a priori on how to make the videos (Toby has a set of instructions from another con)
 - Spread out the keynotes, have a great industry authority from a commercial organization as first to get everyone charged.  Then the short YouTube videos for all to watch.  Then breakouts spanning a good chunk of the day, but broken in the middle by second keynote – government agency official.  Then at end of breakouts no summary of each.  Instead have the spokesperson for each breakout do a 3 minute video of the upshot/summary of the breakouts and post in Discord with links to each Breakout Summary YouTube posted after, for everyone who wishes to see.  Just close at the end of the breakouts/day with another kickass standards body authority keynote. This would make it easier for the MC and wrangler to manage I think to set up the day this way.  It will keep people more engaged and less flipping about for everyone.
+- SBOM Actuator Profile needs work
+- SBOM Actuator Profile needs JSON choice for CycloneDS, not just XML
+- Language Spec needs to add targets associated with patching software use case used in plugfest
+- Actuator needed for update software use case used in plugfest. Should it part of SBOM AP, part of each existing AP, or it's own AP? Ie the functionality to update a device's software is part of what?
+- Language Spec needs to address OpenDXL functionality like altering (ie we have kicked the async can down the road and now it's time to deal with it)
+- Language Spec needs to address functionality like compound commands (another item we had kicked to post 1.0 and now it's post 1.0)
+- in his detailed presentation in the breakout session, Chris Smith of McAfee mentioned other interworking items between OpenDXL and OpenC2. Hopefully someone wrote them down, or someone should contact him for more detail.
