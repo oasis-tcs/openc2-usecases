@@ -18,19 +18,19 @@
    - [2.8 OASIS](#28-oasis)
    - [2.9 CERT SwiftBom](#29-cert-swiftbom)
    - [2.10 sFractal](#210-sfractal)
-   - 2.11 BTS
-   - 2.12 Vigilant Ops
-   - 2.13 McAfee
-   - 2.14 Huntington Ingalls - Yuuki
+   - [2.11 BTS](#211-bts)
+   - [2.12 Vigilant Ops](#212-vigilant-ops)
+   - [2.13 McAfee](#213-mcafee)
+   - [2.14 Huntington Ingalls - Yuuki](#214-huntington-ingalls---yuuki)
    - [2.15 One Planet Education Network](#215-one-planet-education-network)
-   - 2.16 Podii
-   - 2.17 NSA/DoD
-   - 2.18 [Hereuco](#218-hereuco)
-   - 2.20 Huntington Ingalls - OIF
-   - 2.21 New Context
-   - 2.22 Univ of Oslo
-   - 2.23 UNC
-   - 2.24 Ion Channel
+   - [2.16 Podii](#216-podii)
+   - [2.17 NSA/DoD](#217-nsadod)
+   - [2.18 Hereuco](#218-hereuco)
+   - [2.20 Huntington Ingalls - OIF](#220-huntington-ingalls---oif)
+   - [2.21 New Context](#221-new-context)
+   - [2.22 Univ of Oslo](#222-univ-of-oslo)
+   - [2.23 UNC](#223-unc)
+   - [2.24 Ion Channel](#224-ion-channel)
 - [3 Breakout sessions](#3-breakout-sessions)
    - 3.1 HTTP OpenC2 Interworking
    - 3.2 MQTT OpenC2 Interworking
