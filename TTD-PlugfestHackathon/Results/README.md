@@ -32,21 +32,22 @@
    - [2.23 UNC](#223-unc)
    - [2.24 Ion Channel](#224-ion-channel)
 - [3 Breakout sessions](#3-breakout-sessions)
-   - 3.1 HTTP OpenC2 Interworking
-   - 3.2 MQTT OpenC2 Interworking
-   - 3.3 OpenDxl OpenC2 Interworking
-   - 3.4 SBOM Creation
-   - 3.5 SBOM Analysis
-   - 3.6 Hackathon
-   - 3.7 LoRaWAN
-   - 3.8 CACAO
+   - [3.1 HTTP OpenC2 Interworking](#31-http-openc2-interworking)
+   - [3.2 MQTT OpenC2 Interworking](#32-mqtt-openc2-interworking)
+   - [3.3 OpenDxl OpenC2 Interworking](#33-opendxl-openc2-interworking)
+   - [3.4 SBOM Creation](#34-sbom-creation)
+   - [3.5 SBOM Analysis](#35-sbom-analysis)
+   - [3.6 Hackathon](#36-hackathon)
+   - [3.7 LoRaWAN](#37-lorawan)
+   - [3.8 CACAO](#38-cacao)
 - [4 Feedback from Participants/Attendees](#4-feedback-from-participantsattendees)
    - [4.1 Collecting Feedback](#41-collecting-feedback)
    - [4.2 Participants/Attendees Quotes](#42-participantsattendees-quotes)
    - [4.3 Feedback](#43-feedback)
 
 ## 1. Keynotes
-brief summary of each talk being sought by speakers (since AHC rules)
+brief summary of each talk being sought by speakers
+(since AHA rules)
 
 ### 1.1 Session Chair, Sally Grant, Lucd.ai
 Session Chair, Sally Grant, Lucd.ai
@@ -61,9 +62,38 @@ The OpenC2 Plugfest was quite successful with Chairmen Duncan Sparrell and Joe B
 
 
 ### 1.2 Moderator, Audrey Long, Microsoft
-Moderator, Audrey Long, Microsoft
+Audrey Long, Security Software Engineer for Microsoft
+participated as keynote moderator in Fall of 2020’s Open C2
+Plugfest by introducing keynote speakers, moderating
+questions, and presenting a bit about the commercial software
+engineering sector at Microsoft.
+The speakers were all very
+senior in the realm of security and had a lot of wonderful
+insights to share to anyone just starting out
+to senior levels in security.
+The content of the keynotes reached all over from
+Industry to Government with an emphasis on the ever
+so changing world of security.
+It was an honor and a privilege to meet such powerful leaders
+in Cybersecurity as well as an inspiration on where I would
+like to take me own career.
 
-input requested
+Hackathons are a great way to inspire participates
+to learn new technologies and expand their growth mindset as
+well as taking steps in the right direction to further gain
+insights on important topics such as security.
+I personally have participated as a developer in many
+hackathon and have mentored in my fair share of Hackathons as
+well, and I can tell you that on either side of the fence you
+will always learn something new and something you will take
+with you to any career.
+Expanding your mind, taking on projects you are unfamiliar
+with, experimenting with new hardware is a very fun and
+challenging thing to tinker in, especially if you get a few
+elements of the project working as anticipated.
+OpenC2 Plugfest is a great hackathon to expand upon your
+knowledge of IoT and security and I would strongly encourage
+everyone to try their hand at hacking away at something new!
 
 ### 1.3 A View from the Other Side of the Valley, Wende Peters, Bank of America
 *A View from the Other Side of the Valley:  Operational and Business Drivers for Automation and Open Standards* by Wende Peters, Senior Vice President, Global Information Security, Technology Strategy, Orchestration and Production Delivery; Bank of America
