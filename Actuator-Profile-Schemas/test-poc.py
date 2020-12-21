@@ -6,11 +6,28 @@ from jsonschema.exceptions import ValidationError
 import os
 
 """
-Validate OpenC2 commands and responses stored on GitHub under "base"
-Use credential stored in environment variable "GitHubToken" to prevent rate limiting
+Validate OpenC2 commands and responses for profiles stored on GitHub under "base"
+Environment variable "GitHubToken" must have a Personal Access Token to prevent rate limiting
+
+/base
+|-- profile-A
+|   |-- schema-A.json
+|   |-- Good-command
+|   |   |-- command.json
+|   |   |-- command.json
+|   |-- Bad-command
+|   |   |-- command.json
+|   |-- Good-response
+|   |   |-- response.json
+|   |-- Bad-response
+|   |   |-- response.json
+|-- profile-B
+|   |-- schema-B.json
+     ...
 """
 
-base = 'https://api.github.com/repos/oasis-tcs/openc2-usecases/contents/SBOM-PoC/Schemas/'
+base = 'https://api.github.com/repos/oasis-tcs/openc2-usecases/contents/Actuator-Profile-Schemas/'
+auth = {'Authorization': f'token {os.environ["GitHubToken"]}'}
 
 
 def gh_get(url):            # Read contents from GitHub API
@@ -29,7 +46,7 @@ def find_tests(api_url):    # Search for GitHub folders containing schemas and t
             if len(json_url) == 1:      # Must have exactly one .json file
                 tests.append({'dirs': dirs, 'files': files, 'schema': json_url[0]})
             else:
-                print('Did not find json schema in dir', gdir['name'])
+                print('No json schema in', url)
         else:
             for child in dirs.values():
                 _ft(child, tests)
@@ -71,6 +88,5 @@ def run_test(tdir):         # Check correct validation of good and bad commands 
 
 
 print(f'Test Data: {base}')
-auth = {'Authorization': f'token {os.environ["GitHubToken"]}'}
 for test in find_tests(base):
     run_test(test)

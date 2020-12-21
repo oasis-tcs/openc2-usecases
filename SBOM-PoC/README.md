@@ -61,8 +61,8 @@ sets out to prove several concepts e.g.
    networks, data, and users
    - demonstrate "Obtain SBOM" as an SCAPv2 application in the
    [SCAPv2 Prototype Architecture](https://docs.google.com/presentation/d/11EtTqBsSlfGVnjmudNrTSTpk3-tUUxn90AuucZpenD8)
-   - revised [Architecture](Schemas/scapv2-edc-proto/edc-09-02-2020.pdf) is used to create the
-   EDC [schema](Schemas/scapv2-edc-proto/edc.jidl), which in turn is used iteratively to refine the architecture.
+   - revised [Architecture](../Actuator-Profile-Schemas/scapv2-edc-proto/edc-09-02-2020.pdf) is used to create the
+   EDC [schema](../Actuator-Profile-Schemas/scapv2-edc-proto/edc.jidl), which in turn is used iteratively to refine the architecture.
    - EDC Application messages become the Targets and Results of the OpenC2 EDC Actuator Profile.
 - [IACD](https://www.iacdautomate.org/)
    - may be used in protecting organizational systems,
