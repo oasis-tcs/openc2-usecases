@@ -1,0 +1,10 @@
+{
+  "action": "deny",
+  "target": {
+    "file": {
+      "hashes": {
+        "sha512": "96b74959340df1680ea15d9f66a907e0bf55f059e2e4184190aa1271021003bcefd02a9f924164b22954b54fc0fff36a68eae36d189173ca2df30fa4b1535700"
+      }
+    }
+  }
+}
