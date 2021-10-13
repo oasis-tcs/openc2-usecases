@@ -1,8 +1,0 @@
-{
-  "action": "query",
-  "target": {
-    "sbom": {
-      "type": ["CycloneDX", "SPDX","SWID"]
-    }
-  }
-}

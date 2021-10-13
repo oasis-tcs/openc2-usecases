@@ -1,9 +1,0 @@
-{
-  "action": "deny",
-  "target": {
-    "file": {
-      "hashes": {
-      }
-    }
-  }
-}

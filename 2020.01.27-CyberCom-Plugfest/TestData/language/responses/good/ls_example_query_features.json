@@ -1,8 +1,0 @@
-{
-  "status": 200,
-  "results": {
-    "versions": ["1.0"],
-    "profiles": ["slpf", "x-lock"],
-    "rate_limit": 30
-  }
-}
