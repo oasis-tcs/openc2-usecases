@@ -39,7 +39,7 @@ future use cases that could be implemented.
    message concept.
   
  * The [18 October 2021 Status
-   Update](https://github.com/opencybersecurityalliance/PACE/blob/main/docs/SACM_and_OpenC2_Concept.pdf)
+   Update](https://github.com/opencybersecurityalliance/PACE/blob/main/docs/2021-10-18_HII_PACE-Prototype-Update.pdf)
    illustrates messages flows and gives an overview of the
    prototyping network environment.
 
