@@ -1,9 +1,24 @@
+# Posture Attribute Collection and Evaluation (PACE) Prototype
+
+## Overview
+
 **Posture Attribute Collection and Evaluation (PACE)** is an
 [Open Cybersecurity Alliance
-(OCA)](https://opencybersecurityalliance.org/) project. It is a
-conceptual successor to prototyping previously done related to
-the [Security Content Automation Protocol,
-v2](https://csrc.nist.gov/projects/security-content-automation-protocol-v2/scapv2-community).
+(OCA)](https://opencybersecurityalliance.org/) project. Posture
+assessment generally consists of understanding, for a given
+computing resource (or set of computing resources), software
+load, composition of that software load, patch levels,
+vulnerability (implied to be software vulnerability), and
+configuration state. Together, these attributes of a computing
+resource represent its cybersecurity posture. PACE will leverage
+and/or contribute to Open Cybersecurity Alliance (OCA) Ontology
+and OpenC2 for command and control. PACE will be an instantiation
+of the IETF Security Automation and Continuous Monitoring (SACM)
+group’s architecture.
+
+Initially, the project intends to focus on building the pipes and connectors between components, leveraging existing payload formats such as SCAP/OVAL, SBOM, etc. Later phases of the project may consider updating payload formats to include other types (i.e. NETCONF/RESTCONF, InSpec, Puppet, Ansible, etc.)
+
+## Status
 
 As of October 2021, the PACE prototyping effort is focused on
 implementing a version of the [**Security Automation and
@@ -22,6 +37,8 @@ collection using open source tools such as
 using OpenC2 to control collection activities. An OpenC2 Actuator
 Profile (AP) for Security Posture Attribute Collection is an
 anticipated product of this work. 
+
+## Documentation
 
 Documentation related to PACE protoptyping is maintained in the
 OCA [PACE](https://github.com/opencybersecurityalliance/PACE)
@@ -64,3 +81,9 @@ objects that play a role in various cybersecurity scenarios, such
 as this vision for a [Comply to Connect
 implementation](https://github.com/oasis-tcs/openc2-usecases/tree/main/PlugFests/2021.06.22-BC-SBOM-PoC#11-vision)
 captured for a previous OpenC2 plugfest.
+
+The PACE prototyping effort is a conceptual successor to
+prototyping previously done related to the [Security Content
+Automation Protocol,
+v2](https://csrc.nist.gov/projects/security-content-automation-protocol-v2/scapv2-community).
+
