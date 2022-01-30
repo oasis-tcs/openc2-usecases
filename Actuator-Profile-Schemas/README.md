@@ -18,7 +18,7 @@ profile, but it is intended to support a range of LED matrix displays including 
 #### 1. Select Namespace
 OpenC2 (and other specifications) reference each actuator profile's definitions using its unique identifier,
 aka namespace. Select a namespace for this profile as described in the OpenC2
-[Namespace Registry](https://github.com/oasis-tcs/oc2arch/blob/master/namespace-registry.md):
+[Namespace Registry](https://github.com/oasis-tcs/openc2-oc2arch/blob/working/namespace-registry.md):
 
 * **Specification:** Hello-World LED Display Custom Actuator Profile
 * **Namespace:** https://oasis-open.org/openc2/custom/blinky/v1.1
@@ -78,14 +78,14 @@ NSIDs are local to the device schema and may be chosen arbitrarily.
 A profile name may be used as its NSID, but NSIDs should be short. Assign an NSID other than the profile name
 to illustrate the difference:
 
-* **Profile ID, Name:** 2000, blinky
+* **Profile ID, Name:** 9001, blinky
 * **Namespace ID:** led
 
 In the device schema:
 
 * delete actions, targets, args and results that are not used by any of the referenced profiles.
 * in Target, Args, Specifiers, and Results replace the id and name (0, ap_name) placeholders
-with actual values (e.g., 2000, blinky) chosen for each supported profile.
+with actual values (e.g., 9001, blinky) chosen for each supported profile.
 * in AP-Target, AP-Args, AP-Specifiers and AP-Results, and in the "imports" section, replace the nsid placeholders
 with the NSIDs for each supported profile.
  
