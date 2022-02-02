@@ -4,7 +4,8 @@ blah blah on overall
 ## PACE-centric use cases and sw/devices
 - blah blah referencing PACE use cases in PACE repo
 
-pace pic
+
+![PaceArch](./PaceArch.png)
 
 
 
