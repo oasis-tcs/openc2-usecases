@@ -18,7 +18,7 @@ pic
 
 ### Ogres, Foad, for PACE
 - sFractal will instantiate Open Graph Repository in Elixir for Sboms (OGRES) [repo](https://github.com/sparrell/Ogres) as a PACE system loaded with data from the [SBOM/VEX/NVD examples repo](needlink) which sFractal will populate
-- sFractal will instantiate Fake Orchestrator, Actuators, Decision-Makers (FOAD) [repo](needlink) to test Ogres (and hopefull other PACE systems).
+- sFractal will instantiate Fake Orchestrator, Actuators, Decision-Makers (FOAD) [repo](https://github.com/sparrell/Foad) to test Ogres (and hopefully other PACE systems).
 
 Ogres will be P1 (and maybe multiple instantiations so P2 also) in Figure 1.
 Foad will simulate the left-hand side of the figure (ie the systems outside PACE).
