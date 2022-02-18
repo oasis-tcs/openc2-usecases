@@ -176,9 +176,34 @@ In no one else does,
 then sFractal will instantiate a DependencyTrack website
 for use at the plugfest
 
+### 2.9 Lycans
+Probably outrunning my headlights
+but ideally I'll be using some of the existing lycans
+and make some new ones.
+"Lycan" is our word for software that "transforms"
+OpenC2 commands back and forth to proprietary API's.
+It's synonomous with "shifters" that STIX refers to.
+
+Ideally I'd add some simple lycans as proof-of-concept
+for PACE PCS- and/or PAR- and/or PES- OpenC2 interfaces to commercial
+SBOM products like:
+- Cybeats [SBOM Studio](https://www.cybeats.com/sbom-studio)
+- Ion Channel [Platform](https://ionchannel.io/#/products)
+- Adolus [FACT](https://adolus.com/fact/overview/)
+- Vigilant Ops [Insight](https://www.vigilant-ops.com/products/)
+- Jitsuin [RKVST](https://www.rkvst.com/)
+- and probably a bunch of others I am forgetting.
+
+These new lycans would sit between the bus
+and the "interfaces" box
+in P1 in the Pace picture in section 3.2.
+
 ## 3. Which interfaces in which usecases
 
 ### 3.1 Comply to Connect Use cases
+
+![Comply to Connect](./Images/c2c.01.png)
+
 need to fill in with
 which interfaces in which
 example usecases showing
