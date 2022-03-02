@@ -36,7 +36,7 @@ collection using open source tools such as
 [osquery](https://osquery.io/) and [nmap](https://nmap.org/),
 using OpenC2 to control collection activities. An OpenC2 Actuator
 Profile (AP) for Security Posture Attribute Collection is an
-anticipated product of this work. 
+anticipated product of this work.
 
 ## Documentation
 
@@ -54,7 +54,7 @@ future use cases that could be implemented.
    to its implemenation. This concept document also illustrates a
    potential use for the presently-undefined OpenC2 notification
    message concept.
-  
+
  * The [18 October 2021 Status
    Update](https://github.com/opencybersecurityalliance/PACE/blob/main/docs/2021-10-18_HII_PACE-Prototype-Update.pdf)
    illustrates messages flows and gives an overview of the
@@ -87,3 +87,31 @@ prototyping previously done related to the [Security Content
 Automation Protocol,
 v2](https://csrc.nist.gov/projects/security-content-automation-protocol-v2/scapv2-community).
 
+At the 2-Mar-2022 OpenC2 TC meeting,
+the process to create PACE SBOM commands was discussed.
+The process agree to was:
+(1) start with a use case
+(2) validate use case against existing products
+(3) do example for use case
+(4) either property table or JADN since either can create the other. Plan is to try the new process of starting with JADN
+
+This repo will be used to store the use cases in #1 including examples from #3
+
+At the 2-Mar-2022 OpenC2 TC meeting,
+the following OC2 Use Cases
+were discussed in the context of PACE:
+1 query PACE for what SBOMs available that meet certain criteria
+   - same as command to device (see below) or different?
+2 query PACE to return a certain sbom in a certain format with a certain serialization
+   - allow all serializations? only json? "prefer" or "default to" json?
+3 insert an sbom into PACE
+4 query PACE for what Vexs available that meet certain criteria
+5 query PACE to return a certain VEX in a certain format with a certain serialization
+6 insert a VEX into PACE
+7 command an evaluation of a particular type on a particular set of attributes
+   - eg what CVE's of what CVSS affect what SBOMs
+8 command from PACE to device for what SBOMs available
+   - same as command to PACE or different?
+9 command from PACE to device for a particular SBOM
+10 command to PACE telling PACE to go get SBOM elsewhere
+   - eg fetch from website
